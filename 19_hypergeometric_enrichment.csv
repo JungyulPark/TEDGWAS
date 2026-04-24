@@ -1,6 +1,0 @@
-test,set_A_size,set_B_size,universe,observed_overlap,expected_overlap,fold_enrichment,hypergeom_p,overlap_genes,BH_q
-IGF-1R pathway (n=36) ∩ TED genes,36,59,20000,12,0.11,112.99,1.5605048755706174e-22,"ARRB1, CEBPA, CXCL8, HAS1, HAS2, HAS3, IGF1, IGF1R, IL1B, IL6, PPARG, TNF",3.9012621889265434e-22
-TSHR pathway (n=33) ∩ TED genes,33,59,20000,11,0.1,112.99,1.0085126593879018e-20,"ADIPOQ, ARRB1, CEBPA, FABP4, HAS1, HAS2, HAS3, IL6, PPARG, TNF, TSHR",1.6808544323131698e-20
-(IGF-1R ∩ TSHR) pathways ∩ TED genes,9,59,20000,8,0.03,301.32,3.140532339358724e-20,"ARRB1, CEBPA, HAS1, HAS2, HAS3, IL6, PPARG, TNF",3.925665424198404e-20
-IGF-1R downstream (n=359) ∩ Hearing loss (n=855),359,855,20000,38,15.35,2.48,2.7298268117834436e-07,(not listed here — see Supp Table S5),2.7298268117834436e-07
-IGF-1R downstream (n=359) ∩ KEGG hsa04910 Insulin (n=137),359,137,20000,51,2.46,20.74,8.29653844138236e-54,(not listed here — see Supp Table S5),4.14826922069118e-53
