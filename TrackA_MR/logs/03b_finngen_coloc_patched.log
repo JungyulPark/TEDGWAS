@@ -1,0 +1,23 @@
+=== Step 3b (Patched): FinnGen R12 Coloc at TSHR locus ===
+
+--- Reading FinnGen GRAVES_OPHT, TSHR locus ---
+           used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells  2119197 113.2   28432756 1518.5  22717030 1213.3
+Vcells 20400017 155.7  295789563 2256.7 333208737 2542.2
+FinnGen TSHR locus: 8789 SNPs (raw)
+FinnGen after strict cleaning: 8456 SNPs
+
+--- Fetching eQTL TSHR from OpenGWAS ---
+eQTL raw: 5351 SNPs
+eQTL after strict cleaning: 5351 SNPs
+
+Common SNPs: 2474
+After ordering + verification: 2474 SNPs in both datasets
+
+--- Validating inputs ---
+  eQTL: 2474 SNPs, type=quant, any NA: FALSE
+  FG:   2474 SNPs, type=cc, s=0.00171, any NA: FALSE
+NULL
+NULL
+
+--- Running coloc.abf ---

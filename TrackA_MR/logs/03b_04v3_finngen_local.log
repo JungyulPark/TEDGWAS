@@ -1,0 +1,118 @@
+=== Step 3b + 4v3: FinnGen R12 local analysis ===
+Date: 2026-04-23 16:56:17.140835
+
+Configuration:
+  FG_DIR: c:/ProjectTEDGWAS
+  TED_main    : finngen_R12_GRAVES_OPHT.gz (cases=858)
+  GD_exposure : finngen_R12_E4_GRAVES_STRICT.gz (cases=3962)
+  TED_strict  : finngen_R12_E4_GRAVES_OPHT_STRICT.gz (cases=753)
+  TSHR locus (GRCh37): chr14:80921085-82081779
+
+
+======================================================================
+PART 1: Colocalization at TSHR locus (FinnGen R12 GRAVES_OPHT)
+======================================================================
+
+  Extracting GRAVES_OPHT at chr14:80921085-82081779
+    Total SNPs in file: 21327060
+    SNPs in locus: 8789
+    After cleaning: 8456 SNPs
+
+  Fetching eQTL TSHR from OpenGWAS...
+    eQTL SNPs: 5351
+
+  Common SNPs: 2474
+  FinnGen s = 0.00171 (valid: TRUE)
+
+  Running coloc.abf...
+  [ERROR] dataset1 and dataset2 should contain the same snps in the same order, or should contain snp names through which the common snps can be identified
+
+
+======================================================================
+PART 2: MVMR with FinnGen R12 TED outcome
+======================================================================
+
+=== 4.1 Extracting instruments ===
+
+Exposure 1: TSHR cis-eQTL (OpenGWAS)
+  TSHR IVs: 1
+
+Exposure 2: GD liability (FinnGen R12 E4_GRAVES_STRICT local)
+  Reading full file and extracting P<5e-8 SNPs...
+  GD significant SNPs (P<5e-8): 18125
+  Clumping (r²<0.001, 10Mb)...
+  LD-clumped: 20 SNPs
+           used  (Mb) gc trigger   (Mb)  max used   (Mb)
+Ncells  2215374 118.4   26722188 1427.2  23318806 1245.4
+Vcells 20866238 159.2  437438088 3337.4 517007667 3944.5
+
+=== 4.2 Retrieving TSHR eQTL effects for all IVs ===
+  Total unique IVs: 21
+  TSHR effects retrieved: 11
+
+=== 4.3 Retrieving GD effects for all IVs (local) ===
+
+  Looking up 21 SNPs in E4_GRAVES_STRICT
+    Matched: 21 / 21 SNPs (100.0%)
+
+=== 4.4 Retrieving TED outcome effects for all IVs (local) ===
+
+  Looking up 21 SNPs in GRAVES_OPHT
+    Matched: 21 / 21 SNPs (100.0%)
+
+=== 4.5 Harmonizing alleles ===
+  SNPs in all 3 datasets: 11
+  Final harmonized SNPs: 11
+  Flipped GD: 1; Flipped TED: 1
+
+=== 4.6 MVMR-IVW ===
+
+
+Call:
+lm(formula = beta_Y ~ 0 + beta_T + beta_G, data = mvmr_df, weights = wt)
+
+Weighted Residuals:
+    Min      1Q  Median      3Q     Max 
+-1.5361 -1.3645 -0.6442 -0.1344  1.3233 
+
+Coefficients:
+       Estimate Std. Error t value Pr(>|t|)    
+beta_T  0.12703    0.27696   0.459    0.657    
+beta_G  0.96217    0.07354  13.084 3.67e-07 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 1.156 on 9 degrees of freedom
+Multiple R-squared:  0.9582,	Adjusted R-squared:  0.949 
+F-statistic: 103.3 on 2 and 9 DF,  p-value: 6.214e-07
+
+
+=== 4.7 Conditional F-statistics ===
+  Cond. F (TSHR | GD): 25.35 ✅
+  Cond. F (GD | TSHR): 99.28 ✅
+
+=== 4.8 Univariable MR (TSHR → TED) reference ===
+  TSHR-only IVs used: 1
+  Wald ratio: β=-1.5657  SE=0.3049  P=2.819e-07
+
+
+======================================================================
+SE1 VERDICT — TED-SPECIFIC SIGNAL (FinnGen R12 TED outcome)
+======================================================================
+
+MVMR estimates:
+  TSHR       β_adj = +0.1270  SE = 0.2770  P = 6.574e-01  
+  GD liab    β     = +0.9622  SE = 0.0735  P = 3.673e-07  ***
+
+Univariable TSHR → TED reference:
+  TSHR       β_uv  = -1.5657  SE = 0.3049  P = 2.819e-07
+
+Attenuation: |β_adj / β_uv| = 0.081
+
+--- SE1 Interpretation ---
+⚠️  TSHR → TED effect largely mediated by GD liability.
+   Narrative: TSHR → GD → TED (sequential pathway).
+
+💾 Saved:
+  TrackA_MR/results/03b_coloc_FinnGen_GRAVES_OPHT.csv
+  TrackA_MR/results/04v3_mvmr_finngen_summary.csv

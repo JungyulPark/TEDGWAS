@@ -1,0 +1,68 @@
+=== IGF1R Cross-phenotype MR — started 2026-04-23 19:26:57.291109 ===
+
+Loaded existing IGF1R IVs from TSV: 10 SNPs
+IGF1R instruments:
+           SNP beta.exposure pval.exposure
+1    rs2654980    -0.2697120   1.54739e-83
+2    rs7181339    -0.2944540   9.03858e-27
+3  rs149007767     0.1226860   1.72425e-13
+4  rs117212126    -0.2870200   5.57057e-13
+5   rs16895831     0.0965187   3.78181e-11
+6    rs6893300    -0.0828699   1.84400e-10
+7    rs9480866     0.1010790   4.11510e-10
+8   rs56388170    -0.0803087   9.02298e-10
+9    rs1531070    -0.0729884   1.47021e-09
+10  rs59467480    -0.0755571   9.08406e-09
+
+Outcomes:
+# A tibble: 4 × 4
+  label           category         opengwas_id        trait_type
+  <chr>           <chr>            <chr>              <chr>     
+1 Height          Positive control ieu-a-89           continuous
+2 Fasting glucose Glycemic         ebi-a-GCST90002232 continuous
+3 HbA1c           Glycemic         ebi-a-GCST90002244 continuous
+4 Type 2 diabetes Glycemic         ebi-a-GCST90018926 binary    
+
+==================================================
+Outcome: Height ( ieu-a-89 )
+==================================================
+  Harmonised IVs: 8 
+
+MR results:
+                     method nsnp           b         se       pval
+1 Inverse variance weighted    8 -0.05473704 0.03709522 0.14005617
+2           Weighted median    8 -0.02883882 0.01138781 0.01132751
+3                  MR Egger    8 -0.11787921 0.07093403 0.14761343
+
+==================================================
+Outcome: Fasting glucose ( ebi-a-GCST90002232 )
+==================================================
+  Harmonised IVs: 10 
+
+MR results:
+                     method nsnp          b          se        pval
+1 Inverse variance weighted   10 0.01841093 0.007833327 0.018756637
+2           Weighted median   10 0.02142421 0.006998522 0.002204164
+3                  MR Egger   10 0.02967625 0.015332474 0.088960053
+
+==================================================
+Outcome: HbA1c ( ebi-a-GCST90002244 )
+==================================================
+  Harmonised IVs: 10 
+
+MR results:
+                     method nsnp            b          se      pval
+1 Inverse variance weighted   10 0.0005098637 0.005782599 0.9297399
+2           Weighted median   10 0.0003126308 0.005303577 0.9529942
+3                  MR Egger   10 0.0130673653 0.010638809 0.2542514
+
+==================================================
+Outcome: Type 2 diabetes ( ebi-a-GCST90018926 )
+==================================================
+  Harmonised IVs: 10 
+
+MR results:
+                     method nsnp           b         se      pval
+1 Inverse variance weighted   10 -0.01922882 0.02140339 0.3689720
+2           Weighted median   10 -0.04133608 0.02920482 0.1569555
+3                  MR Egger   10 -0.01572926 0.04165624 0.7155511

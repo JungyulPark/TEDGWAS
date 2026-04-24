@@ -1,0 +1,102 @@
+=== Step 4: MVMR — TED-specific signal isolation ===
+Date: 2026-04-23 13:00:06.869231
+
+Design:
+  Exposure 1: TSHR cis-eQTL (eqtl-a-ENSG00000165409)
+  Exposure 2: GD liability (ebi-a-GCST90018627)
+  Outcome:    TED/GO (finn-b-E4_GRAVES_OPHT)
+
+=== 4.1 Extracting instruments ===
+
+Exposure 1: TSHR cis-eQTL
+  TSHR IVs: 1 SNPs
+
+Exposure 2: Graves disease liability
+  GD IVs at P<5e-8: 19 SNPs
+
+Combined unique IVs: 20 SNPs
+
+=== 4.2 Harmonizing IV effects across both exposures ===
+  TSHR effects retrieved: 9 SNPs
+  GD effects retrieved: 19 SNPs
+  SNPs in both exposures: 9
+
+=== 4.3 Retrieving outcome data (TED/FinnGen) ===
+  Trying finn-b-E4_GRAVES_OPHT ...
+  Trying finn-b-E4_GRAVES_STRICT ...
+  Trying finn-b-E4_THYROID ...
+    ✅ finn-b-E4_THYROID returned 9 SNPs
+
+Final outcome used: finn-b-E4_THYROID
+
+=== 4.4 Building MVMR input matrix ===
+SNPs in all 3 datasets: 9
+Final harmonized SNPs: 9
+
+=== 4.5 Running MVMR (MVMR package) ===
+
+--- Conditional F-statistics (instrument strength) ---
+  (F > 10 indicates strong instruments)
+
+
+Conditional F-statistics for instrument strength
+
+            exposure1 exposure2
+F-statistic  23.44649  20.91934
+            exposure1 exposure2
+F-statistic  23.44649  20.91934
+
+--- MVMR-IVW causal estimates ---
+
+Multivariable MR
+
+            Estimate Std. Error   t value  Pr(>|t|)
+exposure1 0.02139409 0.18657849 0.1146654 0.9119301
+exposure2 0.11685465 0.06803622 1.7175360 0.1295809
+
+Residual standard error: 3.289 on 7 degrees of freedom
+
+
+            Estimate Std. Error   t value  Pr(>|t|)
+exposure1 0.02139409 0.18657849 0.1146654 0.9119301
+exposure2 0.11685465 0.06803622 1.7175360 0.1295809
+
+--- Heterogeneity (Cochran's Q_A) ---
+Q-Statistic for instrument validity:
+67.45294 on 6 DF , p-value: 1.359665e-12
+$Qstat
+[1] 67.45294
+
+$Qpval
+[1] 1.359665e-12
+
+
+
+=== 4.6 Comparison: Univariable vs Multivariable ===
+
+Univariable MR (TSHR → TED):
+                     method nsnp          b        se      pval
+1 Inverse variance weighted    9 -0.1581211 0.1723648 0.3589524
+
+
+======================================================================
+SE1 — TED-SPECIFIC SIGNAL (MVMR)
+======================================================================
+
+Primary MVMR estimate (TSHR adjusted for GD liability):
+  TSHR β_adj = +0.0214 (SE=0.1866)  P=9.119e-01
+  GD liability β = +0.1169 (SE=0.0680)  P=1.296e-01
+
+Univariable reference (TSHR → TED):
+  TSHR β_uv  = -0.1581  P=3.590e-01
+
+Attenuation ratio: β_adj / β_uv = -0.135
+
+--- SE1 Verdict ---
+⚠️  SE1 NOT ACHIEVED: TSHR effect largely mediated via GD liability.
+   Narrative: 'TSHR → GD → TED; direct TED effect is modest.'
+
+💾 Saved:
+  TrackA_MR/results/04_mvmr_summary.csv
+  TrackA_MR/results/04_mvmr_Fstats.csv
+  TrackA_MR/results/04_mvmr_full.rds

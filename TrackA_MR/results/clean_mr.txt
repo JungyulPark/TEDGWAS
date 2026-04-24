@@ -1,0 +1,10 @@
+======== RUNNING PRIMARY (Graves) (ebi-a-GCST90018627) ========
+--- IGF1R ---
+[IGF1R] IVW: 棺=0.217, SE=0.112, P=5.27e-02
+--- TSHR ---
+[TSHR] IVW: 棺=-1.394, SE=0.167, P=6.79e-17
+======== RUNNING REPLICATION (Hyperthyroidism) (ebi-a-GCST90038636) ========
+--- IGF1R ---
+[IGF1R] IVW: 棺=0.001, SE=0.001, P=4.12e-02
+--- TSHR ---
+[TSHR] IVW: 棺=-0.012, SE=0.001, P=3.88e-29

@@ -1,0 +1,18 @@
+=== Check 1: MR Results Original Data ===
+[IGF1R] IVW: 棺=0.217, SE=0.112, P=5.27e-02
+[TSHR] IVW: 棺=-1.394, SE=0.167, P=6.79e-17
+[IGF1R] IVW: 棺=0.001, SE=0.001, P=4.12e-02
+[TSHR] IVW: 棺=-0.012, SE=0.001, P=3.88e-29
+
+[TNF Replication]
+Gene               GWAS         b        p  nsnp
+ TNF Replication(Hyper) -0.003977 0.000036     5
+
+=== Check 3: Network Gene Lists ===
+IGF1R-only (N=4): ['IGF1R', 'IGF1', 'IL1B', 'CXCL8']
+TSHR-only (N=3): ['ADIPOQ', 'TSHR', 'FABP4']
+Shared (N=8): ['HAS2', 'HAS1', 'TNF', 'ARRB1', 'IL6', 'HAS3', 'PPARG', 'CEBPA']
+
+=== Check 4: Off-target intersection ===
+Cochlear off-target (N=0): []
+Insulin off-target (N=0): []

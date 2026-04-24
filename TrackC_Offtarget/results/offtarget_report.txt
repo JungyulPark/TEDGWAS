@@ -1,0 +1,11 @@
+=== Rebuilt Sets ===
+IGF1R downstream (expanded): 359
+Hearing loss genes (DisGeNET): 855
+Insulin pathway genes (KEGG): 137
+
+=== High-Confidence Intersections ===
+Cochlear intersection: 38
+Genes: ['COL1A2', 'FGFR1', 'BRAF', 'FGFR2', 'PDGFRB', 'FGF3', 'COL9A2', 'PIK3R1', 'EPHA2', 'FGFR3', 'ITGB6', 'FGF9', 'NFKB1', 'G6PC3', 'RAF1', 'NOS3', 'KITLG', 'TGFA', 'HGF', 'COL1A1'] ...
+
+Insulin intersection: 51
+Genes: ['PCK2', 'TSC2', 'G6PC1', 'BRAF', 'GRB2', 'SOS2', 'RPS6KB2', 'PRKAA2', 'AKT2', 'GYS2', 'PIK3CD', 'SHC1', 'MAP2K2', 'PDPK1', 'EIF4EBP1', 'RPS6', 'NRAS', 'PIK3R1', 'INS', 'PIK3R2'] ...

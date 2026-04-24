@@ -1,0 +1,4 @@
+"id.exposure","id.outcome","outcome","exposure","method","nsnp","b","se","pval","n_iv","gene"
+"eqtl-a-ENSG00000165409","DiZ67P","outcome","ENSG00000165409 || id:eqtl-a-ENSG00000165409","Inverse variance weighted",2,-1.45251121493976,0.292443479837421,6.80631957229003e-07,2,"TSHR"
+"eqtl-a-ENSG00000140443","DiZ67P","outcome","ENSG00000140443 || id:eqtl-a-ENSG00000140443","Inverse variance weighted",10,0.232686453597313,0.188028087067845,0.215898168057384,10,"IGF1R"
+"eqtl-a-ENSG00000232810","DiZ67P","outcome","ENSG00000232810 || id:eqtl-a-ENSG00000232810","Inverse variance weighted",4,-0.54267747600854,0.340331732220844,0.110811906774899,4,"TNF"

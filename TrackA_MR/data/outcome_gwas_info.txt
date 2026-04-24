@@ -1,0 +1,3 @@
+Outcome GWAS ID: ieu-a-1098
+Trait: Graves disease
+Note: If ieu-a-1098 does not respond well due to OpenGWAS API issues or low power, we should fallback to FinnGen R10 summary statistics for Graves disease.

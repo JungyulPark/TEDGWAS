@@ -1,0 +1,111 @@
+=== Step 6: Pre-specified Candidate Gene Tissue Validation ===
+Date: 2026-04-23 17:35:10.644568
+
+--- Loading RNA-seq data ---
+Loaded: 46427 rows × 40 cols
+First 5 columns:
+ [1] "Gene_ID"       "Transcript_ID" "Gene_Symbol"   "Description"  
+ [5] "gene_biotype"  "Protein_ID"    "HGNC"          "MIM"          
+ [9] "Ensembl"       "IMGT/GENE-DB" 
+
+Detected count columns (10):
+ [1] "10__1_Read_Count" "10__2_Read_Count" "11__1_Read_Count" "11__2_Read_Count"
+ [5] "2__1_Read_Count"  "2__2_Read_Count"  "7__1_Read_Count"  "7__2_Read_Count" 
+ [9] "8__1_Read_Count"  "8__2_Read_Count" 
+
+Gene column: Gene_Symbol
+
+Count matrix: 35087 genes × 10 libraries
+
+--- Collapsing technical replicates ---
+Unique patients: 5
+Patient IDs:
+[1] "10" "11" "2"  "7"  "8" 
+After collapsing: 35087 genes × 5 samples
+
+--- Sample assignment (from TSHR TPM) ---
+   patient condition
+10      10       TED
+11      11       TED
+2        2   Control
+7        7       TED
+8        8       TED
+
+Control samples: 1
+TED samples: 4
+
+Pre-specified candidate set: 20 genes in 4 groups
+Present in data: 20 (TSHR, IGF1R, IGF1, ARRB1, PPARG, IRS1, AKT1, TNF, CTLA4, INSR, IRS2, FOXO1, PIK3R1, PDPK1, HAS1, HAS2, HAS3, ADIPOQ, FABP4, CEBPA)
+
+--- DESeq2 normalization & testing ---
+After low-count filter: 29638 genes
+DESeq2 model fit complete.
+LFC shrinkage complete.
+
+--- Candidate-specific BH-FDR adjustment ---
+
+--- Candidate-set DESeq2 results (BH-FDR within 20 genes) ---
+   gene            group baseMean log2FoldChange lfcSE   pvalue padj_candidate
+   TSHR       MR_Primary    414.9          1.836 0.851 0.000313        0.00625
+  FOXO1 Insulin_Cassette  10042.4          0.022 0.079 0.067600        0.57900
+  ARRB1     MR_Secondary  10162.5         -0.028 0.081 0.107000        0.57900
+  CTLA4     MR_Secondary     75.1          0.009 0.076 0.116000        0.57900
+   HAS3      TED_Biology     97.4          0.012 0.076 0.157000        0.62800
+   HAS1      TED_Biology    230.4          0.001 0.075 0.208000        0.69300
+  PPARG     MR_Secondary  26172.0         -0.018 0.076 0.257000        0.71000
+   IRS2 Insulin_Cassette  10908.7          0.013 0.075 0.383000        0.71000
+  IGF1R       MR_Primary   9585.3          0.008 0.075 0.429000        0.71000
+ ADIPOQ      TED_Biology 181218.9         -0.015 0.076 0.443000        0.71000
+   HAS2      TED_Biology   5225.2          0.007 0.075 0.488000        0.71000
+   IGF1       MR_Primary  17095.7         -0.017 0.076 0.492000        0.71000
+   INSR Insulin_Cassette  13015.2          0.013 0.074 0.494000        0.71000
+  CEBPA      TED_Biology  22214.7          0.002 0.072 0.497000        0.71000
+   IRS1     MR_Secondary   2610.7          0.005 0.075 0.644000        0.84400
+   AKT1     MR_Secondary  10274.3         -0.009 0.072 0.675000        0.84400
+ PIK3R1 Insulin_Cassette  60936.0          0.004 0.074 0.783000        0.92100
+  FABP4      TED_Biology 225518.9          0.001 0.074 0.914000        0.96100
+  PDPK1 Insulin_Cassette   5254.4          0.002 0.071 0.942000        0.96100
+    TNF     MR_Secondary     39.6          0.000 0.075 0.961000        0.96100
+
+--- CAMERA gene-set test: Insulin Cassette ---
+Insulin cassette genes tested: 5 (INSR, IRS2, FOXO1, PIK3R1, PDPK1)
+
+CAMERA result:
+                 NGenes Direction    PValue
+Insulin_Cassette      5        Up 0.1279359
+
+
+======================================================================
+SE3 VERDICT — Orbital Insulin Cassette (INSR + co-effectors)
+======================================================================
+
+Insulin cassette gene directionality (log2FC):
+  FOXO1   ⬆️ log2FC=+0.022 (p=0.0676, padj=0.579)
+  IRS2    ⬆️ log2FC=+0.013 (p=0.383, padj=0.71)
+  INSR    ⬆️ log2FC=+0.013 (p=0.494, padj=0.71)
+  PIK3R1  ⬆️ log2FC=+0.004 (p=0.783, padj=0.921)
+  PDPK1   ⬆️ log2FC=+0.002 (p=0.942, padj=0.961)
+
+Upregulated: 5 / 5
+CAMERA gene-set test P: 0.128
+
+--- SE3 Interpretation ---
+🟡 SE3 PARTIAL: Directional concordance confirmed, CAMERA test marginal.
+
+🔑 INSR highlight: log2FC = +0.013 (p = 0.494, padj = 0.71)
+
+
+--- Direction Concordance with MR findings ---
+
+Triangulation table (MR × RNA-seq direction):
+  gene        group MR_beta MR_dir log2FoldChange RNAseq_dir concordance
+  AKT1 MR_Secondary   0.081      +         -0.009          -           ✖
+ ARRB1 MR_Secondary  -0.177      -         -0.028          -          ✅
+ CTLA4 MR_Secondary  -0.943      -          0.009          +           ✖
+ IGF1R   MR_Primary   0.200      +          0.008          +          ✅
+  IRS1 MR_Secondary  -0.138      -          0.005          +           ✖
+ PPARG MR_Secondary  -0.097      -         -0.018          -          ✅
+  TSHR   MR_Primary  -1.408      -          1.836          +           ✖
+
+--- Generating forest plot ---
+  Saved: 06_candidate_forest.pdf / .png

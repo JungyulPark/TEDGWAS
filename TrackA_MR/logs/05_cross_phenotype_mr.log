@@ -1,0 +1,113 @@
+=== Step 5: Cross-Phenotype MR for IGF1R Off-Target ===
+Date: 2026-04-23 17:16:20.100278
+
+Design:
+  Exposure: IGF1R cis-eQTL (eqtl-a-ENSG00000140443)
+
+  Outcomes:
+    [primary_offtarget   ] Hearing_Difficulty (ukb-b-12002)
+    [primary_offtarget   ] Hearing_AidUse (ukb-b-14135)
+    [secondary_offtarget ] Fasting_Glucose (ieu-b-113)
+    [secondary_offtarget ] HbA1c (ieu-b-103)
+    [secondary_offtarget ] Type2_Diabetes (ebi-a-GCST006867)
+    [negative_control    ] Height (ieu-a-89)
+    [negative_control    ] Skin_Color (ukb-b-19560)
+
+
+=== 5.1 Extracting IGF1R IVs ===
+IGF1R IVs (strict, P<5e-8): 10 SNPs
+After F≥10 filter: 10 SNPs
+Mean F-statistic: 82.7
+
+
+=== 5.2 Running MR across outcomes ===
+
+------------------------------------------------------------
+Hearing_Difficulty → Self-reported hearing difficulty (UKB) [primary_offtarget]
+------------------------------------------------------------ 
+  [SKIP] No outcome data
+
+------------------------------------------------------------
+Hearing_AidUse → Hearing aid use (UKB) [primary_offtarget]
+------------------------------------------------------------ 
+  [SKIP] No outcome data
+
+------------------------------------------------------------
+Fasting_Glucose → Fasting glucose (MAGIC) [secondary_offtarget]
+------------------------------------------------------------ 
+  SNPs post-harmonise: 8
+    [Inverse variance weighted] n=8  β=+0.0083 (SE=0.0134)  P=5.333e-01  
+    [MR Egger                 ] n=8  β=+0.0327 (SE=0.0252)  P=2.413e-01  
+    [Weighted median          ] n=8  β=+0.0140 (SE=0.0116)  P=2.262e-01  
+    [Weighted mode            ] n=8  β=+0.0169 (SE=0.0615)  P=7.911e-01  
+
+------------------------------------------------------------
+HbA1c → HbA1c (MAGIC) [secondary_offtarget]
+------------------------------------------------------------ 
+  SNPs post-harmonise: 8
+    [Inverse variance weighted] n=8  β=+0.0086 (SE=0.0130)  P=5.094e-01  
+    [MR Egger                 ] n=8  β=+0.0191 (SE=0.0266)  P=4.995e-01  
+    [Weighted median          ] n=8  β=+0.0150 (SE=0.0137)  P=2.734e-01  
+    [Weighted mode            ] n=8  β=+0.0160 (SE=0.0468)  P=7.430e-01  
+
+------------------------------------------------------------
+Type2_Diabetes → Type 2 diabetes (Xue 2018) [secondary_offtarget]
+------------------------------------------------------------ 
+  SNPs post-harmonise: 7
+    [Inverse variance weighted] n=7  β=+0.0125 (SE=0.0326)  P=7.017e-01  
+    [MR Egger                 ] n=7  β=+0.0307 (SE=0.0660)  P=6.610e-01  
+    [Weighted median          ] n=7  β=-0.0069 (SE=0.0307)  P=8.222e-01  
+    [Weighted mode            ] n=7  β=-0.0122 (SE=0.1242)  P=9.247e-01  
+
+------------------------------------------------------------
+Height → Height (negative control) [negative_control]
+------------------------------------------------------------ 
+  SNPs post-harmonise: 8
+    [Inverse variance weighted] n=8  β=-0.0547 (SE=0.0371)  P=1.401e-01  
+    [MR Egger                 ] n=8  β=-0.1179 (SE=0.0709)  P=1.476e-01  
+    [Weighted median          ] n=8  β=-0.0288 (SE=0.0123)  P=1.873e-02  *
+    [Weighted mode            ] n=8  β=-0.0270 (SE=0.0835)  P=7.556e-01  
+
+------------------------------------------------------------
+Skin_Color → Skin color (negative control) [negative_control]
+------------------------------------------------------------ 
+  SNPs post-harmonise: 10
+    [Inverse variance weighted] n=10  β=+0.0071 (SE=0.0041)  P=8.450e-02  
+    [MR Egger                 ] n=10  β=+0.0186 (SE=0.0070)  P=2.859e-02  *
+    [Weighted median          ] n=10  β=+0.0132 (SE=0.0044)  P=2.894e-03  *
+    [Weighted mode            ] n=10  β=+0.0135 (SE=0.0207)  P=5.298e-01  
+
+
+=== 5.3 Consolidating results ===
+
+
+======================================================================
+SE2 CROSS-PHENOTYPE MR RESULTS (IGF1R → Off-Target Phenotypes)
+======================================================================
+
+         Outcome                Role N_IV                    Method    Beta
+      Skin_Color    negative_control   10 Inverse variance weighted  0.0071
+          Height    negative_control    8 Inverse variance weighted -0.0547
+           HbA1c secondary_offtarget    8 Inverse variance weighted  0.0086
+ Fasting_Glucose secondary_offtarget    8 Inverse variance weighted  0.0083
+  Type2_Diabetes secondary_offtarget    7 Inverse variance weighted  0.0125
+     SE      P Signif
+ 0.0041 0.0845       
+ 0.0371 0.1400       
+ 0.0130 0.5090       
+ 0.0134 0.5330       
+ 0.0326 0.7020       
+
+
+======================================================================
+SE2 VERDICT — IGF1R Off-Target Cross-Phenotype Evidence
+======================================================================
+
+Primary off-target (hearing):      ⚪ Null 
+Secondary off-target (metabolic):  ⚪ Null 
+Negative controls (specificity):   ✅ Null (good specificity) 
+
+--- SE2 Overall Interpretation ---
+⚪ SE2 NULL: No significant genetic effect of IGF1R on off-target
+   phenotypes at population level. Does NOT preclude therapeutic
+   off-target effects, which reflect acute pharmacologic blockade.

@@ -1,0 +1,3 @@
+"Outcome","N_SNPs","PP_H0","PP_H1","PP_H2","PP_H3","PP_H4","Top_SNP","Interpretation"
+"GD_Primary_BBJ",2707,0,0,0,0.0489,0.9511,"rs179252","Very Strong"
+"GD_Repl_UKB",3376,0,0,0,0.7735,0.2265,"rs1023586","No Evidence"

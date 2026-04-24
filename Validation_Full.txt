@@ -1,0 +1,65 @@
+=== MR SENSITIVITY ===
+=== 2-2. Sensitivity Analysis ===
+
+--- TSHR (Primary, nSNP=2) ---
+nSNP < 3, cannot run pleiotropy/heterogeneity.
+Steiger correct direction: TRUE, P: 3.41e-22
+
+=== 2-3. TSHR IV 상세 ===
+        SNP chr.exposure pos.exposure effect_allele.exposure beta.exposure
+1  rs179252           14     81435985                      G      0.157524
+2 rs7143914           14     81568600                      G     -0.070384
+  pval.exposure beta.outcome pval.outcome
+1   2.85891e-40   -0.2210290  1.09370e-14
+2   4.50516e-06    0.0944527  1.53947e-03
+
+--- IGF1R (Primary, nSNP=11) ---
+Egger intercept P: 0.8056
+Cochran Q P (IVW): 0.5930
+Steiger correct direction: TRUE, P: 9.51e-154
+
+--- TNF (Replication, nSNP=5) ---
+Egger intercept P: 0.2369
+Cochran Q P (IVW): 0.0278
+Steiger correct direction: TRUE, P: 1.29e-128
+
+=== 3. Coloc 상세 검증 ===
+       nsnps    PP.H0.abf    PP.H1.abf    PP.H2.abf    PP.H3.abf    PP.H4.abf 
+4.046000e+03 1.047844e-37 1.697128e-04 9.706965e-36 1.473667e-02 9.850936e-01 
+Type of eQTL dataset: quant
+Type of GWAS dataset: cc
+s (case proportion): 0.016
+Top GWAS SNP: rs3783947, Top eQTL SNP: rs179252 (Match? FALSE)
+
+=== ENRICHR & FIG 4 ===
+=== Rebuilding Fig 4 ===
+
+=== Enrichment ===
+
+[IGF1R-only] Top 3 KEGG:
+  Transcriptional misregulation in cancer: P=3.46e-06
+  MAPK signaling pathway: P=1.24e-05
+  Malaria: P=3.66e-05
+[IGF1R-only] Top 3 LINCS L1000 (Down):
+  CPC018 HEPG2 6H-papaverine hydrochloride-10.0: P=1.05e-05
+  CPC006 NCIH1694 6H-bx-795-10.0: P=6.21e-05
+  LJP009 PC3 24H-XMD-892-3.33: P=8.28e-05
+
+[TSHR-only] Top 3 KEGG:
+  Regulation of lipolysis in adipocytes: P=2.22e-05
+  PPAR signaling pathway: P=4.04e-05
+  Type II diabetes mellitus: P=6.88e-03
+[TSHR-only] Top 3 LINCS L1000 (Down):
+  LJP006 LNCAP 3H-WYE-125132-0.12: P=6.08e-06
+  LJP006 HME1 3H-BI-2536-0.12: P=7.43e-06
+  LJP009 HA1E 24H-dabrafenib-10: P=1.35e-05
+
+[Shared] Top 3 KEGG:
+  Non-alcoholic fatty liver disease: P=2.37e-07
+  Transcriptional misregulation in cancer: P=4.71e-05
+  Lipid and atherosclerosis: P=6.59e-05
+[Shared] Top 3 LINCS L1000 (Down):
+  LJP005 HCC515 24H-torin-2-0.37: P=1.42e-06
+  LJP006 HME1 3H-CGP-60474-10: P=1.18e-05
+  CPC006 HT29 24H-narciclasine-10.0: P=7.15e-05
+Done.
