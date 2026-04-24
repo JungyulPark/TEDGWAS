@@ -1,0 +1,24 @@
+# Environment
+.venv/
+.env
+.Renviron
+__pycache__/
+
+# Document and Figure Assets (Instructed to exclude)
+*.docx
+*.pdf
+*.xlsx
+*.zip
+*.png
+*.tiff
+*.jpg
+
+# Specific Output Directories
+TrackA_MR/figures/
+TrackA_MR/manuscript/
+
+# Huge data files (over GitHub 100MB chunk limits)
+*.gz
+
+# Log files, if needed (keep small text logs, exclude large dumps)
+docs_dump.txt

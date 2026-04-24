@@ -1,0 +1,5 @@
+"gene","outcome_role","n_iv","global_test_p","n_outliers","raw_beta","raw_p","corrected_beta","corrected_p"
+"IGF1R","Primary",10,0.69,0,0.200117510323808,0.0835181735644902,NA,NA
+"IGF1R","Replication",10,0.114,0,0.00115773186383212,0.128306183050062,NA,NA
+"ARRB1","Primary",5,0.509,0,-0.176657783876566,0.224691843343727,NA,NA
+"ARRB1","Replication",6,0.282,0,-0.000690896748161642,0.315459564710332,NA,NA

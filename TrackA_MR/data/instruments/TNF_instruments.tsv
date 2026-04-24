@@ -1,0 +1,4 @@
+id.exposure	chr.exposure	SNP	effect_allele.exposure	other_allele.exposure	eaf.exposure	beta.exposure	se.exposure	pval.exposure	exposure	mr_keep.exposure	pval_origin.exposure	F_stat
+eqtl-a-ENSG00000232810	6	rs1121800	T	A	0.601256	-0.29148	0.0119052	2.22844e-132	exposure	TRUE	reported	599.437806428064
+eqtl-a-ENSG00000232810	6	rs9469017	A	G	0.0804146	0.124855	0.0218615	1.12181e-08	exposure	TRUE	reported	32.6175970715969
+eqtl-a-ENSG00000232810	6	rs72855945	T	C	0.135401	-0.0947661	0.0173768	4.93049e-08	exposure	TRUE	reported	29.741742615711

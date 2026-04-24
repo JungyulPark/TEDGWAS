@@ -1,0 +1,7 @@
+"id","trait","sample_size","ncase","nsnp","year"
+"ebi-a-GCST90038636","Hyperthyroidism or thyrotoxicosis",484598,3731,9587836,2021
+"ebi-a-GCST90018860","Hyperthyroidism",460499,3557,24189279,2021
+"ebi-a-GCST90018640","Hyperthyroidism",173650,994,12453784,2021
+"ukb-b-20289","Non-cancer illness code, self-reported: hyperthyroidism/thyrotoxicosis",462933,3545,9851867,2018
+"ukb-a-76","Non-cancer illness code  self-reported: hyperthyroidism/thyrotoxicosis",337159,2547,10894596,2017
+"finn-b-AUTOIMMUNE_HYPERTHYROIDISM","Autoimmune hyperthyroidism",NA,962,16380189,2021

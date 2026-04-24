@@ -1,0 +1,2 @@
+﻿locus_id	good_cs	chrom	pos	pval	mlogp	lead_beta	lead_sebeta	lead_enrichment	lead_af_alt	lead_most_severe_gene	functional_variants_strict	cs_size	cs_log_bayes_factor	all_traits_strict	all_traits_relaxed
+chr7_9088452_G_A	true	7	9088452	4.39e-8	7.36	0.984	0.18	0.631	0.0123	AC004852.2	NA	3	1.22	NA	NA

@@ -1,0 +1,5 @@
+library(ieugwasr)
+info <- tryCatch(gwasinfo("ebi-a-GCST90018627"), error = function(e) NULL)
+info2 <- tryCatch(gwasinfo("ebi-a-GCST90038636"), error = function(e) NULL)
+if (!is.null(info)) print(paste("90018627 Unit:", info$unit))
+if (!is.null(info2)) print(paste("90038636 Unit:", info2$unit))

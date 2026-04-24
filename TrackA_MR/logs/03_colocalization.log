@@ -1,0 +1,93 @@
+=== Step 3: Colocalization at TSHR locus ===
+Date: 2026-04-23 12:52:11.346828
+
+Locus: chr14 : 80,921,085 - 82,081,779 (1161 kb window)
+
+=== Fetching locus data via OpenGWAS API ===
+
+  Fetching: eQTL_TSHR [eqtl-a-ENSG00000165409]
+    ✅ 5351 SNPs retrieved
+
+  Fetching: GD_Primary_BBJ [ebi-a-GCST90018627]
+    ✅ 5721 SNPs retrieved
+
+  Fetching: GD_Repl_UKB [ebi-a-GCST90038636]
+    ✅ 3952 SNPs retrieved
+
+  Fetching: GD_Sens_FinnGen [finn-b-E4_GRAVES_OPHT]
+    ⚠️ No data returned
+
+=== Preparing coloc inputs ===
+  eQTL (TSHR)         : 5351 SNPs prepared
+  GD_Primary_BBJ      : 5721 SNPs prepared
+  GD_Repl_UKB         : 3948 SNPs prepared
+
+=== Running coloc.abf ===
+
+
+--------------------------------------------------
+Coloc: eQTL TSHR × GD_Primary_BBJ
+--------------------------------------------------
+Common SNPs: 2707
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 8.36e-45  1.34e-11  3.10e-35  4.89e-02  9.51e-01 
+[1] "PP abf for shared variant: 95.1%"
+
+  PP.H0 (no causal):           0.0000
+  PP.H1 (eQTL only):           0.0000
+  PP.H2 (GWAS only):           0.0000
+  PP.H3 (different causals):   0.0489
+  PP.H4 (SHARED causal):       0.9511  ⭐⭐⭐ VERY STRONG
+
+  Top colocalized SNP: rs179252 (SNP-level PP.H4 = 0.548)
+
+--------------------------------------------------
+Coloc: eQTL TSHR × GD_Repl_UKB
+--------------------------------------------------
+Common SNPs: 3376
+PP.H0.abf PP.H1.abf PP.H2.abf PP.H3.abf PP.H4.abf 
+ 3.02e-69  4.85e-36  4.81e-34  7.74e-01  2.26e-01 
+[1] "PP abf for shared variant: 22.6%"
+
+  PP.H0 (no causal):           0.0000
+  PP.H1 (eQTL only):           0.0000
+  PP.H2 (GWAS only):           0.0000
+  PP.H3 (different causals):   0.7735
+  PP.H4 (SHARED causal):       0.2265  ❌ NO EVIDENCE
+
+  Top colocalized SNP: rs1023586 (SNP-level PP.H4 = 0.488)
+
+
+======================================================================
+FINAL COLOCALIZATION TABLE (Table 2 Panel B)
+======================================================================
+
+        Outcome N_SNPs PP_H0 PP_H1 PP_H2  PP_H3  PP_H4   Top_SNP Interpretation
+ GD_Primary_BBJ   2707     0     0     0 0.0489 0.9511  rs179252    Very Strong
+    GD_Repl_UKB   3376     0     0     0 0.7735 0.2265 rs1023586    No Evidence
+
+💾 Saved: TrackA_MR/results/03_coloc_TSHR.csv
+💾 Saved: TrackA_MR/results/03_coloc_full_results.rds
+
+
+=== Prior Sensitivity Analysis (Wallace 2020) ===
+Testing robustness of PP.H4 > 0.8 to different prior choices.
+
+
+-- GD_Primary_BBJ --
+  ✅ Sensitivity plot saved: TrackA_MR/figures/03_sensitivity_GD_Primary_BBJ.pdf
+
+-- GD_Repl_UKB --
+  ✅ Sensitivity plot saved: TrackA_MR/figures/03_sensitivity_GD_Repl_UKB.pdf
+
+
+======================================================================
+SCIENTIFIC INTERPRETATION
+======================================================================
+
+✅ GD_Primary_BBJ: eQTL and GWAS share a SINGLE causal variant (PP.H4 = 0.951).
+   This overcomes the single-IV limitation of Wald ratio MR.
+
+⚠️  GD_Repl_UKB: Evidence for DIFFERENT causal variants (PP.H3 = 0.774).
+   MR signal may reflect locus-specific pleiotropy, not direct causality.
+
