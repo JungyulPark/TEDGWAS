@@ -22,3 +22,17 @@ TrackA_MR/manuscript/
 
 # Log files, if needed (keep small text logs, exclude large dumps)
 docs_dump.txt
+
+# ==========================================
+# Phase B: Aggressive Root Clutter Cleanup
+# ==========================================
+# Exclude root directory Python diagnostic scripts and old execution scripts
+/*.py
+# Exclude root directory internal plans and notes (keep only README or public guides)
+/*.md
+!/README.md
+!/INSTALLATION_AND_EXECUTION_GUIDE.md
+# Exclude root directory data dumps
+/*.csv
+/*.txt
+/*.xml
