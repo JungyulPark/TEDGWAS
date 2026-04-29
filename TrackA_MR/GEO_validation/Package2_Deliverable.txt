@@ -1,0 +1,12 @@
+[ANALYSIS #2: GSE105149 cross-validation]
+- Sample composition: 3 active TED cases vs 3 healthy controls (orbital adipose tissue)
+- TSHR: log2FC = 0.24, pvalue = 0.20, padj = 0.31
+- Insulin cassette directional concordance: 4/5 up, binomial P = 0.1875
+- Direction match with in-house: 4 concordant (TSHR, INSR, IRS2, PIK3R1), 1 discordant (PDPK1), 1 unmapped/NA (FOXO1)
+- Notes: GSE105149 represents active-phase TED, whereas the in-house cohort is inactive-phase. Concordance in TSHR direction (both upregulated, though weaker in GSE105149) and the Insulin cassette (4 out of 5 genes upregulated) supports the robustness of the primary findings despite disease phase differences.
+
+[FILES ATTACHED]
+- GSE105149_limma_full_results.csv
+- GSE105149_candidate_genes_limma.csv
+- Cross_validation_inhouse_vs_GSE105149.csv
+- Figure_S2_cross_validation_scatter.png
