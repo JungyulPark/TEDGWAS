@@ -1,0 +1,15 @@
+[ANALYSIS #1 v2: GTEx Thyroid TSHR MR]
+Data source: gtexr (and confirmed via direct GTEx v2 REST API)
+Significant TSHR cis-eQTL in GTEx Thyroid (P < 5e-8): N = 0
+After clumping (r² < 0.001, 10 Mb): N = 0
+
+BBJ outcome: β = NA, SE = NA, P = NA, method = NA
+UKB outcome: β = NA, SE = NA, P = NA, method = NA
+FinnGen outcome: β = NA, SE = NA, P = NA, method = NA
+
+Direction concordance vs blood eQTL: BBJ [N/A], UKB [N/A], FinnGen [N/A]
+Egger intercept P (if multi-IV): NA
+Cochran Q P (if multi-IV): NA
+Steiger directionality P: NA
+
+Notes/issues: Successfully connected to GTEx Portal API through gtexr (and verified directly). However, there are exactly 0 significant eQTLs for TSHR (ENSG00000165409.13) in GTEx v8 Thyroid tissue. Because there are no conditionally significant eQTLs to act as instruments, Mendelian Randomization cannot be performed for this proxy. The absence is consistent with the interpretation framework "Power limitation" for GTEx Thyroid (n=574) vs eQTLGen (n>31k).

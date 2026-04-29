@@ -1,0 +1,2 @@
+exposure,outcome,n_iv,ivw_beta,ivw_se,ivw_pval,wm_beta,wm_se,wm_pval,egger_beta,egger_se,egger_pval,egger_intercept,egger_intercept_p,cochran_q,cochran_q_pval,steiger_correct,steiger_pval
+GD_liability_FinnGen_R12_strict,GravesOphthalmopathy_FinnGen_R12,20,0.952294915534657,0.0589244390807039,9.45628202937388e-59,1.0637028880171,0.0815264422445527,6.58085059348735e-39,1.15721010431022,0.109864848460244,3.99282645404811e-09,-0.0622827886408336,0.046098669134371,25.7779241302357,0.136496789218246,,

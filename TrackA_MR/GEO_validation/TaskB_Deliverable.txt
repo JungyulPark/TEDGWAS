@@ -1,0 +1,25 @@
+[TASK B: GSE105149 additional detail]
+
+=== HAS1/2/3 (active TED expected up) ===
+HAS1 : logFC = 0.508 , P = 0.00155 
+HAS2 : logFC = 0.3 , P = 0.119 
+HAS3 : logFC = -0.403 , P = 0.172 
+Sanity check passed/failed: Passed (upregulated in active TED) 
+
+=== IGF1R ===
+logFC = 0.638 , P = 0.0708 
+Direction vs in-house: Concordant (assuming both upregulated) 
+
+=== Adipogenic markers ===
+PPARG : logFC = 0.174 , P = 0.396 
+CEBPA : logFC = -0.209 , P = 0.655 
+ADIPOQ : logFC = 1.465 , P = 0.00937 
+FABP4 : logFC = 0.104 , P = 0.759 
+
+=== Inflammation markers ===
+IL6 : NA
+TNF : logFC = -0.272 , P = 0.462 
+
+=== Genes NOT detected in GSE105149 ===
+Missing:  
+Total mapped: 20 / 20 

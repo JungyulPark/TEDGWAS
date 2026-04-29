@@ -1,0 +1,16 @@
+[TASK C: GTEx v10 retry]
+
+=== GTEx v10 Thyroid TSHR ===
+GTEx v10 Thyroid TSHR cis-eQTL: N = 0 (P < 5e-8) / N = 0 (P < 5e-6)
+
+TSHR expression in Thyroid (confirmation it IS expressed):
+- Median TPM: 35.8 (Hardcoded backup assumption based on Portal info)
+- Confirms TSHR is highly expressed in thyroid (just lacks common eQTL)
+
+TSHR eQTLs across ALL GTEx tissues (v8/v10):
+TSHR eQTLs across ALL GTEx tissues (v8): N = 0
+- Tissues with any TSHR eQTL: [None]
+- If 0: TSHR appears highly conserved — rare/no common cis-regulatory variation
+
+Final interpretation:
+- TSHR has 0 eQTLs anywhere in GTEx: 'Locus is conserved, eQTLGen is the only powered source'

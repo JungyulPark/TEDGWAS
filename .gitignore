@@ -28,10 +28,13 @@ docs_dump.txt
 # ==========================================
 # Exclude root directory Python diagnostic scripts and old execution scripts
 /*.py
-# Exclude root directory internal plans and notes (keep only README or public guides)
-/*.md
+# Exclude markdown files everywhere except root READMEs
+*.md
 !/README.md
 !/INSTALLATION_AND_EXECUTION_GUIDE.md
+# Exclude specific document directories
+Manuscript/
+Revision/
 # Exclude root directory data dumps
 /*.csv
 /*.txt
