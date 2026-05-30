@@ -1,0 +1,14 @@
+Gene,Chr,Position (Mb),Instruments (N),Method,BBJ Discovery Beta (P),UKB Replication Beta (P),UKB same dir,UKB nominal,FinnGen Sensitivity Beta (P),FinnGen same dir,FinnGen nominal,Class
+HLA-A,6,29.6,4,IVW,+0.68 (2.60e-23),-0.17 (0.470),No,No,+0.18 (0.427),Yes,No,MHC spillover
+HLA-DQA2,6,32.5,1,Wald,+0.87 (8.30e-17),-0.25 (0.454),No,No,+0.83 (1.82e-07),Yes,Yes,MHC spillover
+CTLA4,2,204.6,1,Wald,-1.74 (5.45e-15),-1.57 (0.002),Yes,Yes,-1.77 (0.012),Yes,Yes,Known anchor (positive control)
+TSHR,14,81.4,1,Wald,-2.10 (1.09e-14),-2.44 (8.77e-28),Yes,Yes,-2.33 (2.82e-07),Yes,Yes,Known anchor
+C4A,6,32,1,Wald,-0.80 (2.23e-10),-0.14 (0.237),Yes,No,-1.02 (1.41e-11),Yes,Yes,MHC spillover
+HSD3B7,16,30.4,1,Wald,-1.23 (2.04e-07),-0.28 (0.020),Yes,Yes,+0.27 (0.269),No,No,chr16p11.2 LD cluster
+TUBB,6,30.1,2,IVW,+0.40 (3.14e-07),+1.04 (3.09e-06),Yes,Yes,+1.24 (5.90e-05),Yes,Yes,MHC spillover
+VKORC1,16,31.1,1,Wald,-2.02 (6.35e-07),-0.37 (0.073),Yes,No,- (-),NA,NA,chr16p11.2 LD cluster
+TNFSF14,19,6.7,1,Wald,-0.47 (1.48e-06),-0.30 (0.006),Yes,Yes,+0.03 (0.855),No,No,Single-IV (unverifiable)
+PRSS36,16,31.2,1,Wald,+1.79 (2.02e-06),+0.45 (0.014),Yes,Yes,+0.44 (0.226),Yes,No,chr16p11.2 LD cluster
+MAPKAPK5,12,112,4,IVW,-0.02 (5.28e-06),-0.19 (0.078),Yes,No,-0.10 (0.164),Yes,No,Discovery only
+PSMB8,6,32.8,1,Wald,+0.22 (6.86e-06),-0.04 (0.549),No,No,-0.07 (0.569),No,No,MHC spillover
+IFNGR1,6,137.2,1,Wald,+0.74 (9.41e-06),+0.30 (0.070),Yes,No,+0.14 (0.677),Yes,No,Single-IV (unverifiable)

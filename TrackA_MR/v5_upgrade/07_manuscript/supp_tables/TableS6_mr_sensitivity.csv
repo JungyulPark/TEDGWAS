@@ -1,0 +1,19 @@
+Gene,Outcome,Method,Instruments (N),Beta (SE),P-value,Cochran Q (P),Egger Intercept (P)
+CTLA4,BBJ Graves' Disease,Wald ratio,1,-1.74 (0.22),5.45e-15,-,-
+CTLA4,UKB Hyperthyroidism,Inverse variance weighted,2,-1.57 (0.51),0.002,10.33 (0.001),-
+CTLA4,FinnGen Graves' Ophthalmopathy,Inverse variance weighted,2,-1.77 (0.70),0.012,3.89 (0.049),-
+IGF1R,BBJ Graves' Disease,Inverse variance weighted,4,+0.45 (0.19),0.021,0.57 (0.902),0.022 (0.663)
+IGF1R,BBJ Graves' Disease,MR Egger,4,+0.31 (0.34),0.457,0.57 (0.902),0.022 (0.663)
+IGF1R,BBJ Graves' Disease,Weighted median,4,+0.44 (0.20),0.029,0.57 (0.902),0.022 (0.663)
+IGF1R,BBJ Graves' Disease,Weighted mode,4,+0.35 (0.47),0.512,0.57 (0.902),0.022 (0.663)
+IGF1R,UKB Hyperthyroidism,Inverse variance weighted,4,+0.30 (0.12),0.012,4.11 (0.250),0.031 (0.562)
+IGF1R,UKB Hyperthyroidism,MR Egger,4,+0.14 (0.27),0.652,4.11 (0.250),0.031 (0.562)
+IGF1R,UKB Hyperthyroidism,Weighted median,4,+0.35 (0.12),0.002,4.11 (0.250),0.031 (0.562)
+IGF1R,UKB Hyperthyroidism,Weighted mode,4,+0.37 (0.35),0.367,4.11 (0.250),0.031 (0.562)
+IGF1R,FinnGen Graves' Ophthalmopathy,Inverse variance weighted,3,+0.34 (0.26),0.182,2.35 (0.309),-0.098 (0.433)
+IGF1R,FinnGen Graves' Ophthalmopathy,MR Egger,3,+0.87 (0.49),0.325,2.35 (0.309),-0.098 (0.433)
+IGF1R,FinnGen Graves' Ophthalmopathy,Weighted median,3,+0.38 (0.25),0.124,2.35 (0.309),-0.098 (0.433)
+IGF1R,FinnGen Graves' Ophthalmopathy,Weighted mode,3,+0.37 (0.67),0.633,2.35 (0.309),-0.098 (0.433)
+TSHR,BBJ Graves' Disease,Wald ratio,1,-2.10 (0.27),1.09e-14,-,-
+TSHR,UKB Hyperthyroidism,Wald ratio,1,-2.44 (0.22),8.77e-28,-,-
+TSHR,FinnGen Graves' Ophthalmopathy,Wald ratio,1,-2.33 (0.45),2.82e-07,-,-

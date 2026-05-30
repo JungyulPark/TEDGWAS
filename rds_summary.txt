@@ -1,0 +1,173 @@
+=== Column names ===
+ [1] "title"                   "geo_accession"          
+ [3] "status"                  "submission_date"        
+ [5] "last_update_date"        "type"                   
+ [7] "channel_count"           "source_name_ch1"        
+ [9] "organism_ch1"            "characteristics_ch1"    
+[11] "characteristics_ch1.1"   "characteristics_ch1.2"  
+[13] "treatment_protocol_ch1"  "molecule_ch1"           
+[15] "extract_protocol_ch1"    "label_ch1"              
+[17] "label_protocol_ch1"      "taxid_ch1"              
+[19] "hyb_protocol"            "scan_protocol"          
+[21] "description"             "data_processing"        
+[23] "platform_id"             "contact_name"           
+[25] "contact_email"           "contact_phone"          
+[27] "contact_department"      "contact_institute"      
+[29] "contact_address"         "contact_city"           
+[31] "contact_state"           "contact_zip/postal_code"
+[33] "contact_country"         "supplementary_file"     
+[35] "data_row_count"          "diagnosis:ch1"          
+[37] "gender:ch1"              "tissue:ch1"             
+[39] "group"                  
+
+=== Table of group ===
+
+Control 
+     49 
+
+=== Table of diagnosis ===
+
+        GPA      Normal        NSOI Sarcoidosis         TED 
+          3           7          27           8           4 
+
+=== First few rows ===
+              title geo_accession                status submission_date
+GSM2823303    GPA 1    GSM2823303 Public on Oct 20 2017     Oct 19 2017
+GSM2823304    GPA 2    GSM2823304 Public on Oct 20 2017     Oct 19 2017
+GSM2823305    GPA 3    GSM2823305 Public on Oct 20 2017     Oct 19 2017
+GSM2823306 Normal 1    GSM2823306 Public on Oct 20 2017     Oct 19 2017
+GSM2823307 Normal 3    GSM2823307 Public on Oct 20 2017     Oct 19 2017
+GSM2823308 Normal 4    GSM2823308 Public on Oct 20 2017     Oct 19 2017
+           last_update_date type channel_count        source_name_ch1
+GSM2823303      Jan 23 2018  RNA             1    GPA, lacrimal gland
+GSM2823304      Jan 23 2018  RNA             1    GPA, lacrimal gland
+GSM2823305      Jan 23 2018  RNA             1    GPA, lacrimal gland
+GSM2823306      Jan 23 2018  RNA             1 Normal, lacrimal gland
+GSM2823307      Jan 23 2018  RNA             1 Normal, lacrimal gland
+GSM2823308      Jan 23 2018  RNA             1 Normal, lacrimal gland
+           organism_ch1 characteristics_ch1 characteristics_ch1.1
+GSM2823303 Homo sapiens      gender: Female        diagnosis: GPA
+GSM2823304 Homo sapiens      gender: Female        diagnosis: GPA
+GSM2823305 Homo sapiens      gender: Female        diagnosis: GPA
+GSM2823306 Homo sapiens      gender: Female     diagnosis: Normal
+GSM2823307 Homo sapiens      gender: Female     diagnosis: Normal
+GSM2823308 Homo sapiens      gender: Female     diagnosis: Normal
+            characteristics_ch1.2
+GSM2823303 tissue: lacrimal gland
+GSM2823304 tissue: lacrimal gland
+GSM2823305 tissue: lacrimal gland
+GSM2823306 tissue: lacrimal gland
+GSM2823307 tissue: lacrimal gland
+GSM2823308 tissue: lacrimal gland
+                                                                          treatment_protocol_ch1
+GSM2823303 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+GSM2823304 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+GSM2823305 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+GSM2823306 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+GSM2823307 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+GSM2823308 Specimens were formalin-fixed and paraffin embedded as soon as possible after surgery
+           molecule_ch1
+GSM2823303    total RNA
+GSM2823304    total RNA
+GSM2823305    total RNA
+GSM2823306    total RNA
+GSM2823307    total RNA
+GSM2823308    total RNA
+                                                                                                               extract_protocol_ch1
+GSM2823303 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+GSM2823304 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+GSM2823305 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+GSM2823306 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+GSM2823307 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+GSM2823308 After deparaffinization, total RNA was extracted from tissue sections with the miRNeasy FFPE kit (Qiagen, Valencia, CA).
+           label_ch1
+GSM2823303    biotin
+GSM2823304    biotin
+GSM2823305    biotin
+GSM2823306    biotin
+GSM2823307    biotin
+GSM2823308    biotin
+                                                                                                                                                      label_protocol_ch1
+GSM2823303 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+GSM2823304 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+GSM2823305 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+GSM2823306 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+GSM2823307 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+GSM2823308 Approximately 20 to 50 ng of RNA were amplified and labeled with the SensationPlus FFPE Amplification and 3’ IVT Labeling kit (Affymetrix, Santa Clara, CA).
+           taxid_ch1
+GSM2823303      9606
+GSM2823304      9606
+GSM2823305      9606
+GSM2823306      9606
+GSM2823307      9606
+GSM2823308      9606
+                                                                                                                                                                                                                                                             hyb_protocol
+GSM2823303 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+GSM2823304 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+GSM2823305 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+GSM2823306 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+GSM2823307 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+GSM2823308 Biotin-labeled cDNA targets were hybridized with a GeneChip Human Genome U133 Plus 2.0 array (Affymetrix, Santa Clara, CA) according to standard Affymetrix protocol. Following hybridization, arrays were washed and stained with streptavidin-phycoerythrin.
+                                                                                                                           scan_protocol
+GSM2823303 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+GSM2823304 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+GSM2823305 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+GSM2823306 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+GSM2823307 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+GSM2823308 Arrays scanned using the GeneChip Scanner 3000 7G system (Affymetrix) and Affymetrix GeneChip Command Console (AGCC) v. 3.1.1
+                                                                   description
+GSM2823303 Gene expression data from formalin-fixed, paraffin-embedded tissues
+GSM2823304 Gene expression data from formalin-fixed, paraffin-embedded tissues
+GSM2823305 Gene expression data from formalin-fixed, paraffin-embedded tissues
+GSM2823306 Gene expression data from formalin-fixed, paraffin-embedded tissues
+GSM2823307 Gene expression data from formalin-fixed, paraffin-embedded tissues
+GSM2823308 Gene expression data from formalin-fixed, paraffin-embedded tissues
+                                                                                                                                                                                                            data_processing
+GSM2823303 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+GSM2823304 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+GSM2823305 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+GSM2823306 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+GSM2823307 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+GSM2823308 Initial quality control analysis was performed using Affymetrix Expression Console v. 1.1 software. Affymetrix CEL files preprocessed by the Robust Multi-array Analysis algorithm for R for expression analysis
+           platform_id     contact_name     contact_email contact_phone
+GSM2823303      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+GSM2823304      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+GSM2823305      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+GSM2823306      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+GSM2823307      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+GSM2823308      GPL570 James,,Rosenbaum rosenbaj@ohsu.edu  503-494-5023
+            contact_department                  contact_institute
+GSM2823303 Casey Eye Institute Oregon Health & Science University
+GSM2823304 Casey Eye Institute Oregon Health & Science University
+GSM2823305 Casey Eye Institute Oregon Health & Science University
+GSM2823306 Casey Eye Institute Oregon Health & Science University
+GSM2823307 Casey Eye Institute Oregon Health & Science University
+GSM2823308 Casey Eye Institute Oregon Health & Science University
+                         contact_address contact_city contact_state
+GSM2823303 3181 SW Sam Jackson Park Road     Portland            OR
+GSM2823304 3181 SW Sam Jackson Park Road     Portland            OR
+GSM2823305 3181 SW Sam Jackson Park Road     Portland            OR
+GSM2823306 3181 SW Sam Jackson Park Road     Portland            OR
+GSM2823307 3181 SW Sam Jackson Park Road     Portland            OR
+GSM2823308 3181 SW Sam Jackson Park Road     Portland            OR
+           contact_zip/postal_code contact_country
+GSM2823303                   97239             USA
+GSM2823304                   97239             USA
+GSM2823305                   97239             USA
+GSM2823306                   97239             USA
+GSM2823307                   97239             USA
+GSM2823308                   97239             USA
+                                                                                        supplementary_file
+GSM2823303 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823303/suppl/GSM2823303_209A_549JR.CEL.gz
+GSM2823304 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823304/suppl/GSM2823304_010B_549JR.CEL.gz
+GSM2823305 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823305/suppl/GSM2823305_224A_549JR.CEL.gz
+GSM2823306 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823306/suppl/GSM2823306_179A_549JR.CEL.gz
+GSM2823307 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823307/suppl/GSM2823307_197A_549JR.CEL.gz
+GSM2823308 ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM2823nnn/GSM2823308/suppl/GSM2823308_178A_549JR.CEL.gz
+           data_row_count diagnosis:ch1 gender:ch1     tissue:ch1   group
+GSM2823303          54675           GPA     Female lacrimal gland Control
+GSM2823304          54675           GPA     Female lacrimal gland Control
+GSM2823305          54675           GPA     Female lacrimal gland Control
+GSM2823306          54675        Normal     Female lacrimal gland Control
+GSM2823307          54675        Normal     Female lacrimal gland Control
+GSM2823308          54675        Normal     Female lacrimal gland Control

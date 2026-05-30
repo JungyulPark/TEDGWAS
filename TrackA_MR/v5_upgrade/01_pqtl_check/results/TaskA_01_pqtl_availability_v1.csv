@@ -1,0 +1,9 @@
+gene_symbol,gene_ensembl,platform,platform_version,availability_status,protein_measured,has_cis_pqtl,lead_cis_snp,chr,pos_original,genome_build,pos_hg19,pos_hg38,liftover_required,liftover_chain,effect_allele,other_allele,eaf,beta,se,pvalue,n_samples,ancestry,n_independent_signals,sumstats_file,source_pmid,access_date,notes
+TSHR,ENSG00000165409,UKBPPP,Olink_Explore_3072,pending,,,,,,,,,,,,,,,,,54219,EUR,,,37794186,2026-05-22,패널 목록 원본 확인 후 확정 요망
+IGF1R,ENSG00000140443,UKBPPP,Olink_Explore_3072,pending,,,,,,,,,,,,,,,,,54219,EUR,,,37794186,2026-05-22,패널 목록 원본 확인 후 확정 요망
+IGF1,ENSG00000017427,UKBPPP,Olink_Explore_3072,not_measured,,,,,,,,,,,,,,,,,54219,EUR,,,37794186,2026-05-22,Olink Explore 3072 패널 부재 (web search 확인)
+INSR,ENSG00000171105,UKBPPP,Olink_Explore_3072,pending,,,,,,,,,,,,,,,,,54219,EUR,,,37794186,2026-05-22,패널 목록 원본 확인 후 확정 요망
+TSHR,ENSG00000165409,deCODE,SOMAscan_v4,pending,,,,,,,,,,,,,,,,,35559,EUR_Icelandic,,,34857953,2026-05-22,패널 목록 원본 확인 후 확정 요망
+IGF1R,ENSG00000140443,deCODE,SOMAscan_v4,pending,,,,,,,,,,,,,,,,,35559,EUR_Icelandic,,,34857953,2026-05-22,패널 목록 원본 확인 후 확정 요망
+IGF1,ENSG00000017427,deCODE,SOMAscan_v4,cis_pqtl_available,,,,,,,,,,,,,,,,,35559,EUR_Icelandic,,,34857953,2026-05-22,web search 기반 잠정; deCODE 패널 목록 원본 대조 필요
+INSR,ENSG00000171105,deCODE,SOMAscan_v4,pending,,,,,,,,,,,,,,,,,35559,EUR_Icelandic,,,34857953,2026-05-22,패널 목록 원본 확인 후 확정 요망

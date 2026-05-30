@@ -1,0 +1,10 @@
+analysis,ld_reference,signal_or_cs,lead_snp,effect_allele,other_allele,marginal_p,conditional_or_pip,r2_with_rs179252,verdict,note
+COJO,EUR,signal_1,rs179252,G,T,2.85e-40,1.23e-22,1.000,primary,Single causal signal
+COJO,EUR,signal_2,rs72695026,T,C,5.79e-27,2.52e-11,0.134,secondary_weak,r2 with rs179252 >0.1 borderline; not usable as independent IV
+COJO,EUR,signal_3,rs12590764,G,A,7.05e-06,2.52e-06,0.0004,secondary_weak,Low r2 but fails SuSiE PIP>0.5; not in credible set
+COJO,EAS,signal_1to16,multiple,NA,NA,variable,variable,variable,ARTIFACT,LD mismatch (eQTLGen EUR-based conditioned on EAS reference) - DO NOT USE
+SuSiE,EUR,CS1,rs179252,G,T,2.859e-40,1.000,1.000,primary,PIP=1.0
+SuSiE,EUR,CS2,rs179248,NA,NA,1.64e-39,1.000,0.965,collinear,r2=0.965 with rs179252 - same signal
+SuSiE,EAS,CS1,rs3783950,NA,NA,7.75e-23,1.000,0.808,collinear,r2=0.808 with rs179252 - same signal; SuSiE did not converge
+SuSiE,EAS,CS2,rs3783949,NA,NA,2.38e-20,1.000,0.808,collinear,r2=0.808 with rs179252 - same signal; SuSiE did not converge
+FINAL,both,decision,rs179252,G,T,2.859e-40,NA,NA,SINGLE_IV_CONFIRMED,0 usable independent secondary IVs. Framing = locus-level prioritization.

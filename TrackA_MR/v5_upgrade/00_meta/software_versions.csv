@@ -1,0 +1,6 @@
+software,version,source_url,installation_path
+R,4.3.3,https://cran.r-project.org/,c:\R\R-4.3.3\bin\Rscript.exe
+GCTA,1.95.1 (Windows x86_64),https://yanglab.westlake.edu.cn/software/gcta/,c:\ProjectTEDGWAS\tools\gcta-1.95.1-windows-x86_64\bin\gcta64.exe
+PLINK,1.9.0-b.7.11 64-bit (19 Aug 2025),https://www.cog-genomics.org/plink/1.9/,c:\ProjectTEDGWAS\tools\plink.exe
+1000G_EUR_Phase3,b37/hg19,https://ctg.cncr.nl/software/magma (SurfSara),c:\ProjectTEDGWAS\TrackA_MR\v5_upgrade\data\1000G_EUR_phase3
+1000G_EAS_Phase3,b37/hg19,https://ctg.cncr.nl/software/magma (SurfSara),c:\ProjectTEDGWAS\TrackA_MR\v5_upgrade\data\1000G_EAS_phase3

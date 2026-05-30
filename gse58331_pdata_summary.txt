@@ -1,0 +1,419 @@
+=== Column names ===
+ [1] "title"                   "geo_accession"          
+ [3] "status"                  "submission_date"        
+ [5] "last_update_date"        "type"                   
+ [7] "channel_count"           "source_name_ch1"        
+ [9] "organism_ch1"            "characteristics_ch1"    
+[11] "characteristics_ch1.1"   "characteristics_ch1.2"  
+[13] "treatment_protocol_ch1"  "molecule_ch1"           
+[15] "extract_protocol_ch1"    "label_ch1"              
+[17] "label_protocol_ch1"      "taxid_ch1"              
+[19] "hyb_protocol"            "scan_protocol"          
+[21] "description"             "description.1"          
+[23] "data_processing"         "platform_id"            
+[25] "contact_name"            "contact_email"          
+[27] "contact_phone"           "contact_department"     
+[29] "contact_institute"       "contact_address"        
+[31] "contact_city"            "contact_state"          
+[33] "contact_zip/postal_code" "contact_country"        
+[35] "supplementary_file"      "data_row_count"         
+[37] "relation"                "diagnosis:ch1"          
+[39] "gender:ch1"              "tissue:ch1"             
+
+=== Sample summary table ===
+
+Column: title 
+
+          GPA Anterior Orbit 1 Technical replicate 1_1.1AWe 
+                                                          1 
+          GPA Anterior Orbit 1 Technical replicate 2_1.2AWe 
+                                                          1 
+                                  GPA Anterior Orbit 3_3AWe 
+                                                          1 
+          GPA Anterior Orbit 4 Technical replicate 1_4.1AWe 
+                                                          1 
+          GPA Anterior Orbit 4 Technical replicate 2_4.2AWe 
+                                                          1 
+          GPA Anterior Orbit 5 Technical replicate 1_5.1AWe 
+                                                          1 
+          GPA Anterior Orbit 5 Technical replicate 2_5.2AWe 
+                                                          1 
+                                  GPA Anterior Orbit 6_6AWe 
+                                                          1 
+          GPA Anterior Orbit 7 Technical replicate 1_7.1AWe 
+                                                          1 
+          GPA Anterior Orbit 7 Technical replicate 2_7.2AWe 
+                                                          1 
+                                  GPA Lacrimal gland 2_2AWe 
+                                                          1 
+                             Lymphoma Anterior Orbit 1_1ALy 
+                                                          1 
+                               Normal Anterior Orbit 1_1ANo 
+                                                          1 
+                             Normal Anterior Orbit 10_10ANo 
+                                                          1 
+                             Normal Anterior Orbit 11_11ANo 
+                                                          1 
+                             Normal Anterior Orbit 12_12ANo 
+                                                          1 
+                             Normal Anterior Orbit 13_13ANo 
+                                                          1 
+     Normal Anterior Orbit 14 Technical replicate 1_14.1ANo 
+                                                          1 
+     Normal Anterior Orbit 14 Technical replicate 2_14.2ANo 
+                                                          1 
+                             Normal Anterior Orbit 16_16ANo 
+                                                          1 
+                               Normal Anterior Orbit 2_2ANo 
+                                                          1 
+                             Normal Anterior Orbit 21_21ANo 
+                                                          1 
+                             Normal Anterior Orbit 23_23ANo 
+                                                          1 
+                             Normal Anterior Orbit 24_24ANo 
+                                                          1 
+                             Normal Anterior Orbit 26_26ANo 
+                                                          1 
+                             Normal Anterior Orbit 27_27ANo 
+                                                          1 
+                             Normal Anterior Orbit 28_28ANo 
+                                                          1 
+                               Normal Anterior Orbit 3_3ANo 
+                                                          1 
+                               Normal Anterior Orbit 4_4BNo 
+                                                          1 
+                               Normal Anterior Orbit 5_5ANo 
+                                                          1 
+                               Normal Anterior Orbit 6_6ANo 
+                                                          1 
+                               Normal Anterior Orbit 7_7ANo 
+                                                          1 
+                               Normal Anterior Orbit 8_8ANo 
+                                                          1 
+                               Normal Anterior Orbit 9_9ANo 
+                                                          1 
+                             Normal Lacrimal gland 15_15ANo 
+                                                          1 
+                             Normal Lacrimal gland 17_17ANo 
+                                                          1 
+                             Normal Lacrimal gland 18_18ANo 
+                                                          1 
+                             Normal Lacrimal gland 19_19ANo 
+                                                          1 
+                             Normal Lacrimal gland 20_20ANo 
+                                                          1 
+                             Normal Lacrimal gland 22_22ANo 
+                                                          1 
+                             Normal Lacrimal gland 25_25ANo 
+                                                          1 
+                                 NSOI Anterior Orbit 1_1ANS 
+                                                          1 
+                               NSOI Anterior Orbit 10_10BNS 
+                                                          1 
+       NSOI Anterior Orbit 12 Technical replicate 1_12.1CNS 
+                                                          1 
+       NSOI Anterior Orbit 12 Technical replicate 2_12.2CNS 
+                                                          1 
+       NSOI Anterior Orbit 15 Technical replicate 1_15.1ANS 
+                                                          1 
+       NSOI Anterior Orbit 15 Technical replicate 2_15.2ANS 
+                                                          1 
+                               NSOI Anterior Orbit 15_15DNS 
+                                                          1 
+                               NSOI Anterior Orbit 18_18ANS 
+                                                          1 
+                               NSOI Anterior Orbit 19_19BNS 
+                                                          1 
+                                 NSOI Anterior Orbit 2_2ANS 
+                                                          1 
+                               NSOI Anterior Orbit 20_20ANS 
+                                                          1 
+                               NSOI Anterior Orbit 21_21ANS 
+                                                          1 
+                               NSOI Anterior Orbit 26_26ANS 
+                                                          1 
+                               NSOI Anterior Orbit 32_32ANS 
+                                                          1 
+                               NSOI Anterior Orbit 33_33ANS 
+                                                          1 
+                               NSOI Anterior Orbit 33_33BNS 
+                                                          1 
+                               NSOI Anterior Orbit 36_36ANS 
+                                                          1 
+                               NSOI Anterior Orbit 37_37ANS 
+                                                          1 
+                               NSOI Anterior Orbit 45_45ANS 
+                                                          1 
+                               NSOI Anterior Orbit 48_48ANS 
+                                                          1 
+                                 NSOI Anterior Orbit 5_5ANS 
+                                                          1 
+                               NSOI Anterior Orbit 50_50ANS 
+                                                          1 
+                               NSOI Anterior Orbit 52_52ANS 
+                                                          1 
+                               NSOI Anterior Orbit 55_55ANS 
+                                                          1 
+                               NSOI Anterior Orbit 56_56ANS 
+                                                          1 
+                               NSOI Anterior Orbit 57_57ANS 
+                                                          1 
+                               NSOI Anterior Orbit 58_58ANS 
+                                                          1 
+                               NSOI Anterior Orbit 60_60ANS 
+                                                          1 
+                                 NSOI Anterior Orbit 7_7ANS 
+                                                          1 
+         NSOI Anterior Orbit 8 Technical replicate 1_8.1ANS 
+                                                          1 
+         NSOI Anterior Orbit 8 Technical replicate 1_8.1BNS 
+                                                          1 
+         NSOI Anterior Orbit 8 Technical replicate 2_8.2ANS 
+                                                          1 
+         NSOI Anterior Orbit 8 Technical replicate 2_8.2BNS 
+                                                          1 
+                               NSOI Lacrimal gland 10_10CNS 
+                                                          1 
+       NSOI Lacrimal gland 11 Technical replicate 1_11.1ANS 
+                                                          1 
+       NSOI Lacrimal gland 11 Technical replicate 2_11.2ANS 
+                                                          1 
+                               NSOI Lacrimal gland 12_12ANS 
+                                                          1 
+                               NSOI Lacrimal gland 13_13ANS 
+                                                          1 
+                               NSOI Lacrimal gland 14_14ANS 
+                                                          1 
+                               NSOI Lacrimal gland 16_16ANS 
+                                                          1 
+                               NSOI Lacrimal gland 17_17ANS 
+                                                          1 
+                               NSOI Lacrimal gland 18_18BNS 
+                                                          1 
+                               NSOI Lacrimal gland 19_19ANS 
+                                                          1 
+                               NSOI Lacrimal gland 22_22ANS 
+                                                          1 
+       NSOI Lacrimal gland 23 Technical replicate 1_23.1ANS 
+                                                          1 
+       NSOI Lacrimal gland 23 Technical replicate 2_23.2ANS 
+                                                          1 
+                               NSOI Lacrimal gland 24_24BNS 
+                                                          1 
+                               NSOI Lacrimal gland 25_25ANS 
+                                                          1 
+                               NSOI Lacrimal gland 27_27ANS 
+                                                          1 
+                               NSOI Lacrimal gland 28_28ANS 
+                                                          1 
+                               NSOI Lacrimal gland 29_29ANS 
+                                                          1 
+                               NSOI Lacrimal gland 29_29BNS 
+                                                          1 
+                                 NSOI Lacrimal gland 3_3ANS 
+                                                          1 
+                               NSOI Lacrimal gland 30_30ANS 
+                                                          1 
+                               NSOI Lacrimal gland 30_30BNS 
+                                                          1 
+                               NSOI Lacrimal gland 31_31ANS 
+                                                          1 
+                               NSOI Lacrimal gland 34_34ANS 
+                                                          1 
+                               NSOI Lacrimal gland 35_35ANS 
+                                                          1 
+                               NSOI Lacrimal gland 38_38ANS 
+                                                          1 
+                               NSOI Lacrimal gland 39_39ANS 
+                                                          1 
+       NSOI Lacrimal gland 40 Technical replicate 1_40.1ANS 
+                                                          1 
+       NSOI Lacrimal gland 40 Technical replicate 2_40.2ANS 
+                                                          1 
+                               NSOI Lacrimal gland 41_41ANS 
+                                                          1 
+                               NSOI Lacrimal gland 42_42ANS 
+                                                          1 
+                               NSOI Lacrimal gland 43_43ANS 
+                                                          1 
+                               NSOI Lacrimal gland 46_46ANS 
+                                                          1 
+                               NSOI Lacrimal gland 47_47ANS 
+                                                          1 
+                               NSOI Lacrimal gland 49_49ANS 
+                                                          1 
+                               NSOI Lacrimal gland 51_51ANS 
+                                                          1 
+                               NSOI Lacrimal gland 53_53ANS 
+                                                          1 
+                               NSOI Lacrimal gland 54_54ANS 
+                                                          1 
+                               NSOI Lacrimal gland 59_59ANS 
+                                                          1 
+                                 NSOI Lacrimal gland 6_6ANS 
+                                                          1 
+                               NSOI Lacrimal gland 61_61ANS 
+                                                          1 
+                                 NSOI Lacrimal gland 9_9ANS 
+                                                          1 
+                        Sarcoidosis Anterior Orbit 10_10ASa 
+                                                          1 
+                        Sarcoidosis Anterior Orbit 13_13ASa 
+                                                          1 
+  Sarcoidosis Anterior Orbit 2 Technical replicate 1_2.1ASa 
+                                                          1 
+  Sarcoidosis Anterior Orbit 2 Technical replicate 2_2.2ASa 
+                                                          1 
+                          Sarcoidosis Anterior Orbit 3_3BSa 
+                                                          1 
+                          Sarcoidosis Anterior Orbit 6_6ASa 
+                                                          1 
+                          Sarcoidosis Anterior Orbit 7_7ASa 
+                                                          1 
+                          Sarcoidosis Anterior Orbit 9_9ASa 
+                                                          1 
+                          Sarcoidosis Lacrimal gland 1_1ASa 
+                                                          1 
+Sarcoidosis Lacrimal gland 11 Technical replicate 1_11.1ASa 
+                                                          1 
+Sarcoidosis Lacrimal gland 11 Technical replicate 2_11.2ASa 
+                                                          1 
+Sarcoidosis Lacrimal gland 12 Technical replicate 1_12.1ASa 
+                                                          1 
+Sarcoidosis Lacrimal gland 12 Technical replicate 2_12.2ASa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 3 Technical replicate 1_3.1ASa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 3 Technical replicate 2_3.2ASa 
+                                                          1 
+                          Sarcoidosis Lacrimal gland 3_3CSa 
+                                                          1 
+                          Sarcoidosis Lacrimal gland 3_3DSa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 4 Technical replicate 1_4.1ASa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 4 Technical replicate 2_4.2ASa 
+                                                          1 
+                          Sarcoidosis Lacrimal gland 5_5ASa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 8 Technical replicate 1_8.1ASa 
+                                                          1 
+  Sarcoidosis Lacrimal gland 8 Technical replicate 2_8.2ASa 
+                                                          1 
+                                TED Anterior Orbit 10_10AGr 
+                                                          1 
+                                TED Anterior Orbit 11_11AGr 
+                                                          1 
+                                TED Anterior Orbit 12_12AGr 
+                                                          1 
+                                TED Anterior Orbit 13_13AGr 
+                                                          1 
+                                TED Anterior Orbit 15_15AGr 
+                                                          1 
+                                TED Anterior Orbit 16_16AGr 
+                                                          1 
+                                TED Anterior Orbit 18_18AGr 
+                                                          1 
+                                  TED Anterior Orbit 2_2AGr 
+                                                          1 
+                                  TED Anterior Orbit 2_2BGr 
+                                                          1 
+                                TED Anterior Orbit 20_20AGr 
+                                                          1 
+                                TED Anterior Orbit 22_22AGr 
+                                                          1 
+                                TED Anterior Orbit 22_22BGr 
+                                                          1 
+                                TED Anterior Orbit 23_23AGr 
+                                                          1 
+                                TED Anterior Orbit 24_24AGr 
+                                                          1 
+                                TED Anterior Orbit 25_25AGr 
+                                                          1 
+        TED Anterior Orbit 26 Technical replicate 1_26.1BGr 
+                                                          1 
+        TED Anterior Orbit 26 Technical replicate 2_26.2BGr 
+                                                          1 
+                                TED Anterior Orbit 26_26AGr 
+                                                          1 
+        TED Anterior Orbit 28 Technical replicate 1_28.1AGr 
+                                                          1 
+        TED Anterior Orbit 28 Technical replicate 2_28.2AGr 
+                                                          1 
+                                  TED Anterior Orbit 3_3AGr 
+                                                          1 
+          TED Anterior Orbit 4 Technical replicate 2_4.2AGr 
+                                                          1 
+                                  TED Anterior Orbit 5_5AGr 
+                                                          1 
+                                  TED Anterior Orbit 6_6AGr 
+                                                          1 
+                                  TED Anterior Orbit 7_7AGr 
+                                                          1 
+                                  TED Anterior Orbit 8_8AGr 
+                                                          1 
+                                  TED Anterior Orbit 9_9AGr 
+                                                          1 
+        TED Lacrimal gland 14 Technical replicate 1_14.1AGr 
+                                                          1 
+        TED Lacrimal gland 14 Technical replicate 2_14.2AGr 
+                                                          1 
+        TED Lacrimal gland 17 Technical replicate 1_17.1AGr 
+                                                          1 
+        TED Lacrimal gland 17 Technical replicate 2_17.2AGr 
+                                                          1 
+        TED Lacrimal gland 19 Technical replicate 1_19.1BGr 
+                                                          1 
+        TED Lacrimal gland 19 Technical replicate 2_19.2BGr 
+                                                          1 
+                                TED Lacrimal gland 19_19AGr 
+                                                          1 
+                                TED Lacrimal gland 21_21AGr 
+                                                          1 
+                      Xanthogranuloma Anterior Orbit 1_1AXa 
+                                                          1 
+                      Xanthogranuloma Lacrimal gland 2_2AXa 
+                                                          1 
+
+Column: status 
+
+Public on Jun 06 2015 
+                  175 
+
+Column: source_name_ch1 
+
+Anterior Orbit Lacrimal gland 
+           102             73 
+
+Column: characteristics_ch1 
+
+            diagnosis: GPA        diagnosis: Lymphoma 
+                        11                          1 
+         diagnosis: Normal            diagnosis: NSOI 
+                        29                         75 
+    diagnosis: Sarcoidosis             diagnosis: TED 
+                        22                         35 
+diagnosis: Xanthogranuloma 
+                         2 
+
+Column: characteristics_ch1.1 
+
+gender: Female   gender: Male 
+           132             43 
+
+Column: characteristics_ch1.2 
+
+tissue: Anterior Orbit tissue: Lacrimal gland 
+                   102                     73 
+
+Column: diagnosis:ch1 
+
+            GPA        Lymphoma          Normal            NSOI     Sarcoidosis 
+             11               1              29              75              22 
+            TED Xanthogranuloma 
+             35               2 
+
+Column: tissue:ch1 
+
+Anterior Orbit Lacrimal gland 
+           102             73 

@@ -1,0 +1,4 @@
+Gene,Chr,Gene position (Mb),Top eQTL SNP,Top SNP position (Mb),BBJ Discovery Beta (P),UKB Replication Beta (P),FinnGen Sensitivity Beta (P),Class
+HSD3B7,16,30.4,rs4889606,31.011183,-1.23 (2.04e-07),-0.28 (0.020),+0.27 (0.269),chr16p11.2 LD cluster
+VKORC1,16,31.1,rs34649473,31.066538,-2.02 (6.35e-07),-0.37 (0.073),- (-),chr16p11.2 LD cluster
+PRSS36,16,31.2,rs78924645,31.154358,+1.79 (2.02e-06),+0.45 (0.014),+0.44 (0.226),chr16p11.2 LD cluster

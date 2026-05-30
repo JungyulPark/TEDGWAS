@@ -1,0 +1,20 @@
+file_path,file_role,generated_by_script,input_dependency,file_size_bytes,md5_hash,created_at,status,notes
+00_meta/data_sources.csv,metadata,manual,none,4511,ea6ab9db4d448935300ff1c208fa8fa5,2026-05-22 13:40:39,locked,Verified PMIDs/DOIs + SurfSara 1000G URLs
+00_meta/software_versions.csv,metadata,manual,none,633,30a6de1b0735284e3baee55f4b270f3f,2026-05-22 15:06:42,locked,R 4.3.3 / GCTA 1.95.1 / PLINK 20250819
+00_meta/analytical_log.md,log,manual+scripts,none,4192,b728141f1b6dbb5778f29b7ff59825fe,2026-05-22 15:16:02,locked,Run log + eqtl extraction command + beta/se derivation note
+02_tshr_finemap/data/eqtl_TSHR_all.csv,raw_input,manual_extraction,eQTLGen_full_sumstats,783597,4c10643b49f325119ee86b4868663cb9,2026-04-14 17:26:49,locked,CRITICAL ORIGIN. rs179252 effect=G other=T. 7309 variants.
+02_tshr_finemap/data/TSHR_eqtlgen_locus.ma,intermediate,taskB_03_helper_make_ma.R,eqtl_TSHR_all.csv + EUR_chr14_freq.frq,550921,d09598b24c41fde7150d80d5764a1636,2026-05-22 14:55:51,locked,COJO input. eaf from 1000G EUR.
+02_tshr_finemap/data/EUR_chr14_freq.frq,reference,plink --freq,1000G_EUR_phase3,TBD_by_Gemini,FILE_NOT_FOUND,TBD,locked,Used for beta/se derivation
+02_tshr_finemap/data/EAS_chr14_freq.frq,reference,plink --freq,1000G_EAS_phase3,TBD_by_Gemini,FILE_NOT_FOUND,TBD,locked,EAS allele frequencies
+02_tshr_finemap/results/TaskB_00_ld_reference_metadata_v1.csv,result,manual,none,729,47fc30ad442a02ba999a925716cf1e50,2026-05-22 14:47:00,VERIFY_CONTENT,LD reference documentation - Claude to verify content
+02_tshr_finemap/results/TaskB_01_tshr_locus_extraction_v1.tsv,result,taskB_01_locus_extract.R,eqtl_TSHR_all.csv,716136,7cf07849fec297ae32b2f3d1d490bc19,2026-05-22 14:55:42,verified,7309 variants. Claude-verified.
+02_tshr_finemap/results/TaskB_02_ld_clumping_sensitivity_v1.csv,result,taskB_02_ld_clumping.R,TaskB_01 + 1000G refs,1296,51c9d6474ce6e0ae1b932084c686394c,2026-05-22 14:55:49,VERIFY_CONTENT,12-cell sensitivity - Claude to verify content
+02_tshr_finemap/results/TaskB_03_tshr_cojo_independent_signals_v1.tsv,result,taskB_03_gcta_cojo.sh,TSHR_eqtlgen_locus.ma + 1000G refs,3107,870c38d81f671ff765374bd24b0f1572,2026-05-22 15:15:27,verified,19 signals. other_allele restored. Claude-verified.
+02_tshr_finemap/results/TaskB_04_tshr_susie_credible_sets_v1.tsv,result,taskB_04_susie_finemap.R,TaskB_01 + 1000G refs,503,33fc8d11d1802af67b182818fbb08385,2026-05-22 14:59:23,verified,4 CS all collinear. Claude-verified.
+02_tshr_finemap/results/TaskB_05_tshr_finemap_summary_v1.csv,result,taskB_05_integration.R,TaskB_03 + TaskB_04,3542,3f327454582b1de398793672ff2db381,2026-05-22 14:59:24,verified,21 rows. 0 usable IVs. Claude-verified.
+01_pqtl_check/results/TaskA_01_pqtl_availability_v1.csv,result,taskA_01_pqtl_check.R,none(panel files missing),1537,e683e5eefb2329972c995e43428adcbb,2026-05-22 15:03:16,pending,8 cells pending - Week 2 Day 1
+03_decision/TaskC_decision_table_v1.csv,decision,manual,all TaskB results,1083,06e5706b28e12fa441360440662d2765,2026-05-22 15:04:17,verified,Claude-verified
+03_decision/TaskC_pre_analysis_plan_v1.md,decision,manual,all TaskB results,2516,d3bca02a14f507df2520390c16f4f363,2026-05-22 15:06:18,locked,Pre-registered - prevents cherry-picking. DO NOT edit after Week 2 starts.
+03_decision/TaskC_week1_summary_memo.md,decision,manual,all results,2295,d7431abd2d0f7d537c1fff76cc56c40e,2026-05-22 15:06:30,verified,Claude-verified
+WEEK1_MANIFEST.md,documentation,Claude,all,6679,3dcdb0e87c529371b0cf43f9bb53b2c2,2026-05-22 15:26:57,locked,Single-page recovery reference
+WEEK1_RESULTS_consolidated.csv,documentation,Claude,all TaskB results,1171,cbee1300f4b365838018b82ca02a932c,2026-05-22 15:26:59,locked,Future Supp Table source. Includes allele-direction audit.

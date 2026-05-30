@@ -1,0 +1,14 @@
+gene,chr,pos_mb,n_iv,method,bbj_beta,bbj_p,ukb_beta,ukb_p,ukb_samedir,fin_beta,fin_p,fin_samedir,in_mhc,chr16p11,class
+HLA-A,6,29.6,4,IVW,+0.685,2.60e-23,-0.168,4.70e-01,False,+0.182,4.27e-01,True,True,False,MHC_spillover
+HLA-DQA2,6,32.5,1,Wald,+0.870,8.30e-17,-0.249,4.54e-01,False,+0.832,1.82e-07,True,True,False,MHC_spillover
+CTLA4,2,204.6,1,Wald,-1.740,5.45e-15,-1.569,2.20e-03,True,-1.768,1.18e-02,True,False,False,known_anchor
+TSHR,14,81.4,1,Wald,-2.096,1.09e-14,-2.436,8.77e-28,True,-2.331,2.82e-07,True,False,False,known_anchor
+C4A,6,32.0,1,Wald,-0.803,2.23e-10,-0.140,2.37e-01,False,-1.019,1.41e-11,True,True,False,MHC_spillover
+HSD3B7,16,30.4,1,Wald,-1.227,2.04e-07,-0.279,1.97e-02,True,+0.272,2.69e-01,False,False,True,chr16p11_LDcluster
+TUBB,6,30.1,2,IVW,+0.399,3.14e-07,+1.040,3.09e-06,True,+1.241,5.90e-05,True,True,False,MHC_spillover
+VKORC1,16,31.1,1,Wald,-2.017,6.35e-07,-0.371,7.28e-02,False,None,None,False,False,True,chr16p11_LDcluster
+TNFSF14,19,6.7,1,Wald,-0.468,1.48e-06,-0.298,5.60e-03,True,+0.034,8.55e-01,False,False,False,single_IV_unverifiable
+PRSS36,16,31.2,1,Wald,+1.792,2.02e-06,+0.452,1.37e-02,True,+0.442,2.26e-01,True,False,True,chr16p11_LDcluster
+MAPKAPK5,12,112.0,4,IVW,-0.023,5.28e-06,-0.194,7.81e-02,False,-0.098,1.64e-01,True,False,False,discovery_only
+PSMB8,6,32.8,1,Wald,+0.222,6.86e-06,-0.044,5.49e-01,False,-0.075,5.69e-01,False,True,False,MHC_spillover
+IFNGR1,6,137.2,1,Wald,+0.741,9.41e-06,+0.301,7.02e-02,False,+0.145,6.77e-01,True,False,False,single_IV_unverifiable

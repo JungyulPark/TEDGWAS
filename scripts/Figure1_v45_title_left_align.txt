@@ -1,0 +1,44 @@
+═══════════════════════════════════════════════════════════
+  Figure 1 v4.5 Update — Title 왼쪽 정렬
+═══════════════════════════════════════════════════════════
+
+Figure 1의 schematic title을 가운데에서 → 왼쪽으로 이동.
+
+방법 A) PowerPoint에서 직접: 
+   Title text box를 드래그해서 좌측 상단으로 이동
+   (text-align: left)
+
+방법 B) Image LLM에 다음 prompt 입력:
+
+──────────────────────────────────────────────────────────
+Please update the attached scientific workflow diagram (Figure 1)
+with the following layout change ONLY. Keep all other elements
+(boxes, arrows, content, INTEGRATION text, etc.) exactly the same.
+
+LAYOUT CHANGE: Move the figure title from center to LEFT alignment.
+
+If the figure currently has a title at the top (e.g., "Figure 1.
+Study design and analytical workflow"):
+- Move it to the LEFT side of the top margin
+- Change text alignment to LEFT-ALIGN
+- Match the style of journal figures where panel titles are
+  left-aligned (e.g., "(A) ...", "(B) ...")
+
+Do not change anything else. Output: PNG, same dimensions
+as input (~4900 × 2800 px), high resolution.
+──────────────────────────────────────────────────────────
+
+방법 C) Figure 1을 그대로 두고 Manuscript caption만 의존:
+   → ScholarOne에서 figure caption은 manuscript에 있으므로
+     실제로 figure 자체에 title이 없어도 됨
+   → 가장 간단한 옵션
+
+═══════════════════════════════════════════════════════════
+  💡 추천: 방법 A 또는 C
+═══════════════════════════════════════════════════════════
+
+Sage Thyroid 같은 journal에서는 figure 자체에 큰 title보다
+panel labels (A, B, C)만 있는 경우가 많음.
+→ 방법 C 가장 간단 (figure 그대로 두고 caption만 사용)
+→ 또는 방법 A로 PowerPoint에서 5분 내 수정
+═══════════════════════════════════════════════════════════

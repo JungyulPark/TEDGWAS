@@ -1,0 +1,15 @@
+=== Task D.2 Bonferroni Denominator (REAL DATA) ===
+Total druggable genes screened: 4462
+Genes with >=1 valid cis-eQTL instrument (P<5e-8, EUR-clumped): 2545
+  - Single-IV genes (Wald ratio only): 990
+  - Multi-IV genes (IVW + sensitivity): 1555
+Genes with CLUMP_FAILED (need attention): 2
+
+Bonferroni denominator = 2545
+Bonferroni threshold = 0.05 / 2545 = 1.965e-05
+
+This denominator was pre-specified in the Week 2 spec (count of genes with a
+valid instrument) BEFORE MR results were examined, to prevent post-hoc adjustment.
+eQTLGen anchor (rs179252/TSHR) check: see run log.
+Generated: 2026-05-23 02:07
+

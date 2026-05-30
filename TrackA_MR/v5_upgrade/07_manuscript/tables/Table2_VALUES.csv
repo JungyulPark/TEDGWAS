@@ -1,0 +1,4 @@
+Gene,"MR β (P), BBJ","MR β (P), UKB","MR β (P), FinnGen",Coloc PP.H4 (BBJ/FinnGen),Tissue log2FC (padj),Integrated role
+TSHR,-2.10 (1.09e-14),-2.44 (8.77e-28),-2.33 (2.82e-07),0.951 / 0.986,+2.33 (0.032),Susceptibility anchor; expression-colocalized (3-layer convergent)
+IGF1R,+0.45 (0.021),+0.30 (0.012),+0.34 (0.182),0.043 / 0.036,+0.41 (1.000),Pharmacologic effector axis; MR risk-direction but not expression-colocalized susceptibility
+CTLA4,-1.74 (5.45e-15),-1.57 (0.002),-1.77 (0.012),0.206 / 0.978,+1.27 (0.815),Known autoimmune locus (positive control)

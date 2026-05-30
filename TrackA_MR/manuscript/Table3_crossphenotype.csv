@@ -1,0 +1,7 @@
+"Outcome","Category","N_IV","IVW_beta","IVW_SE","IVW_P","WM_beta","WM_P","Egger_int_P","Cochran_Q_P","Verdict"
+"Self-reported hearing difficulty (UKB)","Primary off-target (Hearing)",0,"—","—","—","—","—","—","—","N/A"
+"Hearing aid use (UKB)","Primary off-target (Hearing)",0,"—","—","—","—","—","—","—","N/A"
+"Fasting_Glucose","Primary off-target (Metabolic)",8,"+0.008","0.013","0.533","+0.014","0.226","0.300","0.068","Null"
+"HbA1c","Primary off-target (Metabolic)",8,"+0.009","0.013","0.509","+0.015","0.273","0.660","0.217","Null"
+"Type2_Diabetes","Primary off-target (Metabolic)",7,"+0.012","0.033","0.702","-0.007","0.822","0.757","0.114","Null"
+"Height","Positive control (Biological anchor)",8,"-0.055","0.037","0.140","-0.029","0.019","0.338","6.50e-21","WM only"

@@ -1,0 +1,5 @@
+LD reference panel,Credible Set ID,SNPs in CS,Purity,Top SNP,Top SNP PIP,Position (hg19),eQTL P-value,LD (r²) with rs179252 (EUR),LD (r²) with rs179252 (EAS)
+European (1000G),CS_1,1,1,rs179252,1,81435985,2.86e-40,1,1
+European (1000G),CS_2,1,1,rs179248,1,81433038,1.64e-39,0.965,0.992
+East Asian (1000G),CS_1,1,1,rs3783950,1,81448282,7.75e-23,0.229,0.808
+East Asian (1000G),CS_2,1,1,rs3783949,1,81448382,2.38e-20,0.207,0.808

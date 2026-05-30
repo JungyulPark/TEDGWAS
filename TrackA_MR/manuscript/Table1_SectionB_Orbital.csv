@@ -1,0 +1,8 @@
+"Variable","Description"
+"Total samples","n = 5 patients (10 libraries)"
+"TED samples","n = 4 (inactive TED, orbital adipose tissue during rehabilitative surgery)"
+"Control sample","n = 1 (nasal fat pad, non-TED blepharoplasty)"
+"Sample type","Bulk RNA-seq from orbital adipose tissue"
+"Sequencing","Illumina platform; paired-end 100-150 bp"
+"Technical replication","2 technical replicates per patient (averaged for analysis)"
+"Ethics approval","Catholic University of Korea IRB; written informed consent"

@@ -1,0 +1,6 @@
+"Role","Dataset","Ancestry","Sample_Size","Access","Reference"
+"Exposure (cis-eQTL)","eQTLGen (blood cis-eQTL)","European (87.5%)","n = 31,684","OpenGWAS: eqtl-a-*","Võsa et al., 2021 Nat Genet"
+"Primary outcome","Graves disease (BBJ)","East Asian","n = 212,453 (2,809 cases)","OpenGWAS: ebi-a-GCST90018627","Sakaue et al., 2021 Nat Genet"
+"Replication outcome","Hyperthyroidism (UKB)","European","n = 484,598 (3,731 cases)","OpenGWAS: ebi-a-GCST90038636","Dönertaş et al., 2021 Nat Aging"
+"Sensitivity outcome","Graves ophthalmopathy (FinnGen R12)","European (Finnish)","n = 500,348 (858 cases)","FinnGen R12 public download","Kurki et al., 2023 Nature"
+"MVMR Exposure 2","Graves disease, strict (FinnGen R12)","European (Finnish)","n = 500,348 (3,962 cases)","FinnGen R12 public download","Kurki et al., 2023 Nature"

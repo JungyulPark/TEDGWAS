@@ -1,0 +1,5 @@
+"Group","Genes","Rationale"
+"MR Primary (3 genes)","TSHR, IGF1R, IGF1","Primary drug targets (TSHR; IGF1R = teprotumumab target) + ligand"
+"MR Secondary (6 genes)","ARRB1, PPARG, IRS1, AKT1, TNF, CTLA4","Secondary MR candidates from prior TED literature and autoimmunity pathways"
+"Insulin Signaling Cassette (5 genes)","INSR, IRS2, FOXO1, PIK3R1, PDPK1","Receptor + downstream adapters (IR/IGF-1R hybrid receptor + signaling)"
+"TED-Specific Biology (6 genes)","HAS1, HAS2, HAS3, ADIPOQ, FABP4, CEBPA","TED orbital pathology hallmarks: HA synthesis + adipogenesis"

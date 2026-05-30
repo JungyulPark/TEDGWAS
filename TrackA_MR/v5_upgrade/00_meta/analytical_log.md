@@ -1,0 +1,187 @@
+## 2026-05-22 08:27 — Task B.1 run
+- Script: taskB_01_locus_extract.R
+- Input: eQTLGen 2019-12-11 release
+- Locus: TSHR (ENSG00000165409) hg19 chr14:81421333-81612646 ±1Mb
+- Output: TaskB_01_tshr_locus_extraction_v1.tsv
+- Rows: 7309
+- rs179252 present: TRUE
+
+## 2026-05-22 13:40 — Task A run
+- Script: taskA_01_pqtl_check.R
+- Output: TaskA_01_pqtl_availability_v1.csv (8 rows)
+- Genes checked: TSHR, IGF1R, IGF1, INSR
+- Platforms: UKB-PPP, deCODE
+
+## 2026-05-22 14:36 — Task B.1 run
+- Script: taskB_01_locus_extract.R
+- Input: eQTLGen 2019-12-11 release
+- Locus: TSHR (ENSG00000165409) hg19 chr14:81421333-81612646 ±1Mb
+- Output: TaskB_01_tshr_locus_extraction_v1.tsv
+- Rows: 7309
+- rs179252 present: TRUE
+
+## 2026-05-22 14:47 — Task B.2 run
+- Script: taskB_02_ld_clumping.R
+- Grid: 2 P × 3 r2 × 2 ancestries = 12 cells
+- Output: TaskB_02_ld_clumping_sensitivity_v1.csv
+- rs179252 retained in any clump: TRUE
+
+## 2026-05-22 14:53 — Task B.4 run
+- Script: taskB_04_susie_finemap.R
+- Method: SuSiE-RSS (Wang 2020 / Zou 2022)
+- L=10, coverage=0.95, N=31684
+- Output: TaskB_04_tshr_susie_credible_sets_v1.tsv
+- Total credible sets (EUR+EAS): 4
+
+## 2026-05-22 14:55 — Task B.5 integration
+- Output: TaskB_05_tshr_finemap_summary_v1.csv
+- Total candidate signals: 21
+- Usable as independent IVs: 0
+- Decision: UNRESOLVED: No independent signals beyond rs179252. TSHR remains single-IV. Reframe as 'locus-level prioritization' not 'robust multi-IV MR'.
+
+## 2026-05-22 14:55 — Task B.5 integration
+- Output: TaskB_05_tshr_finemap_summary_v1.csv
+- Total candidate signals: 21
+- Usable as independent IVs: 0
+- Decision: UNRESOLVED: No independent signals beyond rs179252. TSHR remains single-IV. Reframe as 'locus-level prioritization' not 'robust multi-IV MR'.
+
+
+## Week 1 master run started: 2026-05-22 14:55:28
+
+## Week 1 master run started: 2026-05-22 14:55:41
+## 2026-05-22 14:55 — Task A run
+- Script: taskA_01_pqtl_check.R
+- Output: TaskA_01_pqtl_availability_v1.csv (8 rows)
+- Genes checked: TSHR, IGF1R, IGF1, INSR
+- Platforms: UKB-PPP, deCODE
+
+## 2026-05-22 14:55 — Task B.1 run
+- Script: taskB_01_locus_extract.R
+- Input: eQTLGen 2019-12-11 release
+- Locus: TSHR (ENSG00000165409) hg19 chr14:81421333-81612646 ±1Mb
+- Output: TaskB_01_tshr_locus_extraction_v1.tsv
+- Rows: 7309
+- rs179252 present: TRUE
+
+## 2026-05-22 14:55 — Task B.2 run
+- Script: taskB_02_ld_clumping.R
+- Grid: 2 P × 3 r2 × 2 ancestries = 12 cells
+- Output: TaskB_02_ld_clumping_sensitivity_v1.csv
+- rs179252 retained in any clump: TRUE
+
+## 2026-05-22 14:59 — Task B.4 run
+- Script: taskB_04_susie_finemap.R
+- Method: SuSiE-RSS (Wang 2020 / Zou 2022)
+- L=10, coverage=0.95, N=31684
+- Output: TaskB_04_tshr_susie_credible_sets_v1.tsv
+- Total credible sets (EUR+EAS): 4
+
+## 2026-05-22 14:59 — Task B.5 integration
+- Output: TaskB_05_tshr_finemap_summary_v1.csv
+- Total candidate signals: 21
+- Usable as independent IVs: 0
+- Decision: UNRESOLVED: No independent signals beyond rs179252. TSHR remains single-IV. Reframe as 'locus-level prioritization' not 'robust multi-IV MR'.
+
+
+## Week 1 master run ended: 2026-05-22 14:59:24
+## 2026-05-22 15:02 — Task A run
+- Script: taskA_01_pqtl_check.R
+- Output: TaskA_01_pqtl_availability_v1.csv (8 rows)
+- Genes checked: TSHR, IGF1R, IGF1, INSR
+- Platforms: UKB-PPP, deCODE
+
+## 2026-05-22 15:03 — Task A run
+- Script: taskA_01_pqtl_check.R
+- Output: TaskA_01_pqtl_availability_v1.csv (8 rows)
+- Genes checked: TSHR, IGF1R, IGF1, INSR
+- Platforms: UKB-PPP, deCODE
+
+
+## Data Extraction Log
+- **eqtl_TSHR_all.csv**: Extracted from the full eQTLGen cis-eQTL summary statistics (2019-12-11 release) using bash command (e.g., zcat | awk). It contains the raw Z-scores and Assessed/Other alleles for all variants within the TSHR cis-window.
+
+## Note on TaskB_01_tshr_locus_extraction_v1.tsv
+- TaskB_01 outputs raw Z-scores and leaves beta/se/eaf blank by design. These columns are derived downstream by helper_make_ma.R utilizing 1000G EUR Minor Allele Frequencies (MAF) to convert the Z-scores into betas and standard errors required for COJO and SuSiE analysis.
+## 2026-05-22 16:20 — Task D.1
+- Finan 2017 input: 4479 genes
+- Mapped to GRCh37: 4462
+- Final master list: 4462 genes
+- Output: TaskD_01_druggable_gene_master_v1.csv
+
+## 2026-05-23 02:07 — Task D.2 (revised, 2-output)
+- Genes screened: 4462
+- Valid instrument: 2545 (single 990 / multi 1555)
+- Clump failed: 2
+- Bonferroni threshold: 1.965e-05
+- Outputs: TaskD_02a (snp), TaskD_02b (gene), denominator_note
+
+## 2026-05-26 15:47 — Task D.3 FULL
+- Genes: 2545 | rows: 13042 | Bonf threshold: 1.965e-05
+- Outputs: 03a-03e
+
+## 2026-05-26 16:33 — Task E.1 coloc
+   gene_symbol    outcome n_snps_overlap        pp_h0        pp_h1        pp_h2
+        <char>     <char>          <int>        <num>        <num>        <num>
+1:        TSHR BBJ_Graves           3756 8.294775e-45 3.079422e-35 1.332589e-11
+2:        TSHR FinnGen_GO           5561 9.923411e-38 8.938435e-36 1.594235e-04
+3:       IGF1R BBJ_Graves           4456 6.451469e-77 1.336939e-77 7.928482e-01
+4:       IGF1R FinnGen_GO           5856 5.460349e-77 2.334401e-77 6.750272e-01
+5:       CTLA4 BBJ_Graves           1982 2.224776e-76 1.726729e-64 1.022819e-12
+6:       CTLA4 FinnGen_GO           3230 1.598808e-68 4.948381e-66 7.350362e-05
+        pp_h3      pp_h4   top_snp coloc_verdict  notes
+        <num>      <num>    <char>        <char> <char>
+1: 0.04852065 0.95147935  rs179252        strong       
+2: 0.01337348 0.98646709  rs179252        strong       
+3: 0.16425922 0.04289259 rs2654980          weak       
+4: 0.28855030 0.03642253 rs2654980          weak       
+5: 0.79364059 0.20635941  rs231811          weak       
+6: 0.02177155 0.97815495 rs1863800        strong       
+
+
+## Note on FinnGen GO Coloc Parameters
+- Total N used: 520,387
+- Case count used: 858
+- Computed s (case proportion): 858 / 520,387 = 0.001648
+## 2026-05-26 17:31 — Task E.2 candidate coloc
+    gene_symbol    outcome n_snps_overlap         pp_h0         pp_h1
+         <char>     <char>          <int>         <num>         <num>
+ 1:     TNFSF14 BBJ_Graves           4788 6.982428e-189 5.748112e-188
+ 2:     TNFSF14 FinnGen_GO           7696 5.711754e-186 3.238892e-186
+ 3:      IFNGR1 BBJ_Graves           3958  1.758315e-63  2.789013e-63
+ 4:      IFNGR1 FinnGen_GO           5859  2.490305e-61  1.313663e-61
+ 5:    MAPKAPK5 BBJ_Graves           1909 7.351130e-137 2.606898e-133
+ 6:    MAPKAPK5 FinnGen_GO           2979 1.758236e-133 7.724368e-134
+ 7:      HSD3B7 BBJ_Graves           1625 1.152445e-125 5.609753e-122
+ 8:      HSD3B7 FinnGen_GO           3095 1.038463e-121 3.402944e-122
+ 9:      PRSS36 BBJ_Graves           1479  4.199930e-46  2.044397e-42
+10:      PRSS36 FinnGen_GO           2820  1.800601e-42  5.338233e-43
+11:      VKORC1 BBJ_Graves           1512  2.638942e-31  1.284556e-27
+12:      VKORC1 FinnGen_GO           2950  3.165104e-27  9.892568e-28
+           pp_h2       pp_h3        pp_h4    top_snp coloc_verdict  notes
+           <num>       <num>        <num>     <char>        <char> <char>
+ 1: 7.656684e-04 0.005309252 9.939251e-01  rs2291668        strong       
+ 2: 6.263308e-01 0.355146921 1.852231e-02  rs2291668          weak       
+ 3: 4.534460e-03 0.006203231 9.892623e-01 rs11754268        strong       
+ 4: 6.422164e-01 0.338757197 1.902644e-02 rs11754268          weak       
+ 5: 2.819059e-04 0.999709908 8.185940e-06 rs79271898      distinct       
+ 6: 6.742595e-01 0.296189460 2.955108e-02 rs79271898          weak       
+ 7: 7.908964e-05 0.384368810 6.155521e-01  rs4889606     ambiguous       
+ 8: 7.333453e-01 0.240283917 2.637077e-02  rs4889606          weak       
+ 9: 1.731430e-04 0.842649676 1.571772e-01 rs78924645      distinct       
+10: 7.423177e-01 0.220036989 3.764529e-02 rs78924645          weak       
+11: 1.314264e-04 0.639382778 3.604858e-01 rs34649473     ambiguous       
+12: 7.397659e-01 0.231185635 2.904847e-02  rs2884737          weak       
+
+
+## 2026-05-26 18:00 — Task F.1 & F.2 tissue RNA-seq integration
+Re-confirmed orbital tissue expression for TSHR, IGF1R, CTLA4.
+- TSHR: log2FoldChange = +2.33, padj = 0.032 (significant upregulation, properly collapsed replicates for biological sample size n=5 [4 TED vs 1 Control])
+- IGF1R: log2FoldChange = +0.41, padj = 1.00 (non-significant)
+- CTLA4: log2FoldChange = +1.27, padj = 0.815 (non-significant)
+
+Integrated genetic and tissue evidence into a single cohesive layer:
+- TSHR: 3-layer convergence (MR protective + coloc strong + tissue UP) -> upstream anchor.
+- IGF1R: 2-layer consistency (MR risk + coloc weak + tissue UP-but-NS) -> effector.
+- CTLA4: positive control.
+
+Directionality paradox for TSHR resolved using three pillars (tissue specificity, germline susceptibility vs. acquired disease-state, and etiological cause vs. consequence).

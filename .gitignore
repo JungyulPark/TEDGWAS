@@ -1,41 +1,73 @@
-# Environment
+# =============================================================
+# TED-TRAP v5 .gitignore — updated 2026-05-30
+# =============================================================
+
+# ---- Environment / IDE ----
 .venv/
 .env
 .Renviron
 __pycache__/
+.Rhistory
+.RData
 
-# Document and Figure Assets (Instructed to exclude)
+# ---- Large binary data (exceed GitHub 100 MB limit) ----
+*.gz
+finngen_R12_*.gz
+data.txt
+
+# ---- PLINK genetic references and raw outputs ----
+*.bed
+*.bim
+*.fam
+*.synonyms
+*.frq
+*.ld
+*.log
+
+# ---- Exclude data directories containing massive reference files ----
+TrackA_MR/archives/
+TrackA_MR/v5_upgrade/data/
+TrackA_MR/v5_upgrade/02_tshr_finemap/data/
+TrackA_MR/v5_upgrade/04_druggable_mr/data/
+
+# ---- Binary tools (should not be in repo) ----
+tools/
+gcta-1.95.1-windows-x86_64.zip
+plink_test.zip
+plink_win64_20250819.zip
+
+# ---- Temporary extraction / zip directories ----
+temp_zip/
+temp_zip_4/
+temp_zip_5/
+temp_zip_6/
+temp_extracted_4/
+temp_extracted_5/
+temp_extracted_6/
+v5_handoff_temp/
+v5_handoff_parallel/
+v5_handoff_parallel_10/
+
+# ---- Document binaries (Word/Excel/PDF) ----
 *.docx
-*.pdf
 *.xlsx
-*.zip
+*.pdf
+
+# ---- Image binaries (figures tracked separately in v5_upgrade/07_manuscript/figures) ----
 *.png
 *.tiff
 *.jpg
+!TrackA_MR/v5_upgrade/**/*.png
 
-# Specific Output Directories
-TrackA_MR/figures/
-TrackA_MR/manuscript/
+# ---- Archive of stale manuscripts ----
+_ARCHIVE_STALE/
 
-# Huge data files (over GitHub 100MB chunk limits)
-*.gz
-
-# Log files, if needed (keep small text logs, exclude large dumps)
+# ---- Misc temp/diagnostic files ----
+test_ld.ld
+test_ld.log
+test_extract.txt
 docs_dump.txt
 
-# ==========================================
-# Phase B: Aggressive Root Clutter Cleanup
-# ==========================================
-# Exclude root directory Python diagnostic scripts and old execution scripts
-/*.py
-# Exclude markdown files everywhere except root READMEs
-*.md
-!/README.md
-!/INSTALLATION_AND_EXECUTION_GUIDE.md
-# Exclude specific document directories
-Manuscript/
-Revision/
-# Exclude root directory data dumps
-/*.csv
-/*.txt
-/*.xml
+# ---- Uploaded zip handoffs (already extracted) ----
+files (*.zip
+files*.zip

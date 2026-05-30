@@ -1,0 +1,3 @@
+"Gene","Method","N_IV","Beta_rescaled","SE_rescaled","P_value","Sig"
+"TSHR","Wald ratio",1,"-1.629","0.149","1.07e-27","***"
+"IGF1R","Inverse variance weighted",10,"+0.152","0.090","0.094",""

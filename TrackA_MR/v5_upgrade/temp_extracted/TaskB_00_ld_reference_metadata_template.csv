@@ -1,0 +1,3 @@
+ld_reference_id,ancestry,source,genome_build,n_individuals,n_snps_chr14,plink_bfile_prefix,download_url,access_date,md5_hash,notes
+1000G_phase3_EUR_hg19,EUR,1000 Genomes Project Phase 3,hg19,503,TBD_by_Gemini,TBD_by_Gemini,https://ctg.cncr.nl/software/MAGMA/ref_data/,TBD_by_Gemini,TBD,Standard EUR LD reference for clumping and COJO. Used for UKB hyperthyroid and FinnGen GO outcomes.
+1000G_phase3_EAS_hg19,EAS,1000 Genomes Project Phase 3,hg19,504,TBD_by_Gemini,TBD_by_Gemini,https://ctg.cncr.nl/software/MAGMA/ref_data/,TBD_by_Gemini,TBD,Standard EAS LD reference. Used for BBJ Graves outcome analysis. Cross-ancestry comparison sensitivity at TSHR locus.

@@ -1,0 +1,4 @@
+"Exposure","Method","N_IV","Beta","SE","Conditional_F","P_value","Sig"
+"TSHR (adj. GD liability)","MVMR-IVW",11,"+0.127","0.277","25.4","0.657",""
+"GD liability (adj. TSHR)","MVMR-IVW",11,"+0.962","0.074","99.3","3.67e-07","***"
+"TSHR — Univariable reference","Univariable IVW",1,"-1.566","0.305","—","2.82e-07","***"

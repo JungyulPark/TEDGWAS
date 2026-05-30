@@ -1,0 +1,4 @@
+"Outcome","Cohort_N","Common_SNPs","PP_H3","PP_H4","Top_SNP","Note"
+"Graves disease (BBJ)","212,453 (2,809 cases)","2,707","0.049","0.951 ⭐⭐⭐","rs179252","Shared causal variant"
+"Hyperthyroidism (UKB)","484,598 (3,731 cases)","3,376","0.774","0.227","rs1023586","Different lead tag; LD r²=0.85 in EAS with rs179252"
+"TED/GO (FinnGen R12)","500,348 (858 cases)","Technical limitation","NA","NA","—","Technical limitation (attempted)"

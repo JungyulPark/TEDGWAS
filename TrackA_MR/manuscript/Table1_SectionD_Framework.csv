@@ -1,0 +1,7 @@
+"Endpoint","Description","Method","Correction"
+"Primary EP","Cis-MR causal effect: TSHR vs IGF1R on Graves disease","Inverse variance weighted + 4 sensitivity","Bonferroni: α = 0.05 / 24 = 2.08×10⁻³"
+"SE1 — Mediation","MVMR of TSHR on TED, adjusted for GD liability","MVMR-IVW (Sanderson 2019)","—"
+"SE2 — Off-target","IGF1R → glucose/HbA1c/T2D/hearing","IVW + MR Egger + Weighted median + mode","—"
+"SE3 — Tissue validation","Pre-specified 20-gene DESeq2 in orbital tissue","DESeq2 raw + TPM; binomial direction test","BH within 20-gene set"
+"SE4 — Colocalization","Shared causal variant at TSHR locus (eQTL × GD)","coloc.abf (Giambartolomei 2014)","PP.H4 ≥ 0.80 threshold"
+"SE5 — Triangulation","Integration of genetic + locus + tissue evidence","Concordance matrix","—"

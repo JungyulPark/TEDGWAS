@@ -1,0 +1,59 @@
+=== Group Counts ===
+group
+Control     TED    <NA> 
+     45       4       0 
+
+=== Control Samples ===
+                             title diagnosis:ch1
+GSM2823303                   GPA 1           GPA
+GSM2823304                   GPA 2           GPA
+GSM2823305                   GPA 3           GPA
+GSM2823306                Normal 1        Normal
+GSM2823307                Normal 3        Normal
+GSM2823308                Normal 4        Normal
+GSM2823309                Normal 6        Normal
+GSM2823310                Normal 2        Normal
+GSM2823311                Normal 5        Normal
+GSM2823312                Normal 7        Normal
+GSM2823313                 NSOI 10          NSOI
+GSM2823314                 NSOI 11          NSOI
+GSM2823315                 NSOI 12          NSOI
+GSM2823316                 NSOI 14          NSOI
+GSM2823317                 NSOI 15          NSOI
+GSM2823318                 NSOI 16          NSOI
+GSM2823319                 NSOI 17          NSOI
+GSM2823320                 NSOI 18          NSOI
+GSM2823321                 NSOI 19          NSOI
+GSM2823322                  NSOI 1          NSOI
+GSM2823323                 NSOI 20          NSOI
+GSM2823324                 NSOI 21          NSOI
+GSM2823325                 NSOI 24          NSOI
+GSM2823326                 NSOI 26          NSOI
+GSM2823327                  NSOI 2          NSOI
+GSM2823328                  NSOI 6          NSOI
+GSM2823329                  NSOI 7          NSOI
+GSM2823330                  NSOI 8          NSOI
+GSM2823331                 NSOI 13          NSOI
+GSM2823332                 NSOI 22          NSOI
+GSM2823333                 NSOI 23          NSOI
+GSM2823334                 NSOI 25          NSOI
+GSM2823335                 NSOI 27          NSOI
+GSM2823336                  NSOI 3          NSOI
+GSM2823337                  NSOI 4          NSOI
+GSM2823338                  NSOI 5          NSOI
+GSM2823339                  NSOI 9          NSOI
+GSM2823340          Sarcoidosis 28   Sarcoidosis
+GSM2823341          Sarcoidosis 29   Sarcoidosis
+GSM2823342 Sarcoidosis 30  block A   Sarcoidosis
+GSM2823343 Sarcoidosis 30  block D   Sarcoidosis
+GSM2823344          Sarcoidosis 33   Sarcoidosis
+GSM2823345          Sarcoidosis 34   Sarcoidosis
+GSM2823346          Sarcoidosis 31   Sarcoidosis
+GSM2823347          Sarcoidosis 32   Sarcoidosis
+
+=== TED Samples ===
+           title diagnosis:ch1
+GSM2823348 TED 1           TED
+GSM2823349 TED 2           TED
+GSM2823350 TED 3           TED
+GSM2823351 TED 4           TED

@@ -1,0 +1,13 @@
+Gene,Outcome,Overlapping SNPs,PP.H0 (Null),PP.H1 (eQTL),PP.H2 (GWAS),PP.H3 (Distinct),PP.H4 (Shared),Top SNP,Verdict
+TNFSF14,BBJ Graves' Disease,4788,6.98e-189,5.75e-188,7.66e-04,0.005,0.994,rs2291668,Strong colocalization
+TNFSF14,FinnGen Graves' Ophthalmopathy,7696,5.71e-186,3.24e-186,0.626,0.355,0.019,rs2291668,Weak colocalization
+IFNGR1,BBJ Graves' Disease,3958,1.76e-63,2.79e-63,0.005,0.006,0.989,rs11754268,Strong colocalization
+IFNGR1,FinnGen Graves' Ophthalmopathy,5859,2.49e-61,1.31e-61,0.642,0.339,0.019,rs11754268,Weak colocalization
+MAPKAPK5,BBJ Graves' Disease,1909,7.35e-137,2.61e-133,2.82e-04,1.000,8.19e-06,rs79271898,Distinct signals
+MAPKAPK5,FinnGen Graves' Ophthalmopathy,2979,1.76e-133,7.72e-134,0.674,0.296,0.030,rs79271898,Weak colocalization
+HSD3B7,BBJ Graves' Disease,1625,1.15e-125,5.61e-122,7.91e-05,0.384,0.616,rs4889606,Ambiguous
+HSD3B7,FinnGen Graves' Ophthalmopathy,3095,1.04e-121,3.40e-122,0.733,0.240,0.026,rs4889606,Weak colocalization
+PRSS36,BBJ Graves' Disease,1479,4.20e-46,2.04e-42,1.73e-04,0.843,0.157,rs78924645,Distinct signals
+PRSS36,FinnGen Graves' Ophthalmopathy,2820,1.80e-42,5.34e-43,0.742,0.220,0.038,rs78924645,Weak colocalization
+VKORC1,BBJ Graves' Disease,1512,2.64e-31,1.28e-27,1.31e-04,0.639,0.360,rs34649473,Ambiguous
+VKORC1,FinnGen Graves' Ophthalmopathy,2950,3.17e-27,9.89e-28,0.740,0.231,0.029,rs2884737,Weak colocalization

@@ -1,0 +1,9 @@
+                 
+                  Anterior Orbit Lacrimal gland
+  GPA                         10              1
+  Lymphoma                     1              0
+  Normal                      22              7
+  NSOI                        33             42
+  Sarcoidosis                  8             14
+  TED                         27              8
+  Xanthogranuloma              1              1

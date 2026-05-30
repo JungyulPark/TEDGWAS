@@ -1,0 +1,4 @@
+Gene,MR_beta_P_BBJ,MR_beta_P_UKB,Coloc_PP.H4_BBJ_FinnGen,Coloc_verdict,Tissue_log2FC_padj_DESeq2,Tissue_direction,Integrated_role
+TSHR,-2.10 (1.1e-14),-2.44 (8.8e-28),0.951 / 0.986,strong,+2.33 (0.032),UP in TED,upstream anchor, expression-driven
+IGF1R,+0.45 (0.021),+0.30 (0.012),0.043 / 0.036,weak (H2 dominant),+0.41 (1.00 NS),UP (NS),effector, not expression-mediated
+CTLA4,-1.74 (5.5e-15),-1.57 (0.002),0.206 / 0.978,weak (BBJ) / strong (FinnGen),+1.27 (0.815 NS),UP (NS),known autoimmune locus

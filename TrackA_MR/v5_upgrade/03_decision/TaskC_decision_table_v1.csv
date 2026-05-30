@@ -1,0 +1,15 @@
+Metric,Value,Notes
+TSHR pQTL availability_status (UKB-PPP),pending,Panel file missing
+TSHR pQTL availability_status (deCODE),pending,Panel file missing
+IGF1R pQTL availability_status (UKB-PPP),pending,Panel file missing
+IGF1R pQTL availability_status (deCODE),pending,Panel file missing
+IGF1 pQTL availability_status (UKB-PPP),pending,Panel file missing
+IGF1 pQTL availability_status (deCODE),pending,Panel file missing
+INSR pQTL availability_status (UKB-PPP),pending,Panel file missing
+INSR pQTL availability_status (deCODE),pending,Panel file missing
+TSHR independent signals (COJO EUR count),3,eQTLGen and EUR LD matched
+TSHR independent signals (COJO EAS count),16,False positives due to LD mismatch
+TSHR independent signals (SuSiE EUR count),2,CS2 is highly collinear with rs179252 (r2=0.96)
+TSHR independent signals (SuSiE EAS count),2,Both CS are highly collinear with rs179252 (r2=0.81)
+Is rs179252 the single SuSiE top-PIP variant?,yes,All CS lead SNPs are highly collinear with rs179252
+Druggable-gene-wide MR extension justified?,yes,Proceed to Week 2 for novel discovery

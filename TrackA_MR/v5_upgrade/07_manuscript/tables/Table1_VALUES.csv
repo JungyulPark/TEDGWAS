@@ -1,0 +1,6 @@
+Role,Dataset,Ancestry,Sample
+Exposure (instruments),eQTLGen blood cis-eQTL,Predominantly European,"up to 31,684 participants"
+Discovery (primary),BBJ Graves disease (GCST90018627),East Asian,"2,809 cases"
+Replication,UKB hyperthyroidism (GCST90038636),European,"3,731 cases"
+Sensitivity (TED-specific),FinnGen R12 Graves ophthalmopathy,European,858 cases
+Target tissue,In-house orbital RNA-seq,Korean,4 TED + 1 control
