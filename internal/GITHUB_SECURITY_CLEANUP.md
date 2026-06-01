@@ -14,6 +14,16 @@ removed in `361ced6`. Deletion alone left the file recoverable from git history.
    branch. Tracked file count unchanged (529); `data.txt` was never in the
    current tree, only in history.
 
+## Verified status (2026-06-01)
+- Branches on GitHub are **clean**: `main` → `4abfb6d`, `claude/brave-sagan-R84Lj`
+  → `01653dd` (both on purged history; no `data.txt`).
+- The old commit `88eabcb` is **still reachable by direct SHA** via the GitHub
+  API/web — confirmed today. So `data.txt` remains retrievable server-side until
+  GitHub garbage-collects it. **Action below is still required.**
+- Note: the final v5 work lives on branch `claude/brave-sagan-R84Lj`; `main` holds
+  only the purged original (no submission package). Decide the final `main` state
+  (merge the branch) before or as part of the recreate.
+
 ## ⚠️ Remaining action — REQUIRED, only the repo owner can do this
 A force-push does **not** immediately erase the old commit from GitHub's servers.
 The dangling commit `88eabcb` (and therefore `data.txt`) can still be retrieved
