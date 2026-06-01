@@ -223,15 +223,15 @@ In a druggable-gene-wide Mendelian randomization, colocalization, and orbital ti
 
 | Gene | Outcome | N IV | OR (95% CI) | IVW/Wald *P* | Weighted median *P* | MR-Egger intercept *P* | Cochran's Q *P* | Coloc PP.H4 | Tissue log2FC (adj *P*) |
 |---|---|---|---|---|---|---|---|---|---|
-| ***TSHR*** | BBJ Graves | 1 | 0.123 (0.072–0.209) | 1.1×10⁻¹⁴ | NA (single IV) | NA (single IV) | NA (single IV) | 0.951 | +2.33 (0.032) |
-| | UKB hyperthyroid | 1 | 0.087 (0.057–0.135) | 8.8×10⁻²⁸ | NA | NA | NA | — | |
-| | FinnGen GO | 1 | 0.097 (0.040–0.237) | 2.8×10⁻⁷ | NA | NA | NA | 0.986 | |
-| ***IGF1R*** | BBJ Graves | 4 | 1.562 (1.069–2.283) | 0.021 | 0.029 | 0.663 | 0.902 | 0.043 | +0.41 (1.00, NS) |
-| | UKB hyperthyroid | 4 | 1.349 (1.069–1.702) | 0.012 | 0.002 | 0.562 | 0.250 | — | |
-| | FinnGen GO | 3 | 1.408 (0.852–2.326) | 0.182 | 0.124 | 0.433 | 0.309 | 0.036 | |
-| ***CTLA4*** | BBJ Graves | 1 | 0.176 (0.114–0.272) | 5.5×10⁻¹⁵ | NA (single IV) | NA (single IV) | NA (single IV) | 0.206 | +1.27 (0.815, NS) |
-| | UKB hyperthyroid | 2 | 0.208 (0.076–0.569) | 0.002 | — | NA (2 IV) | 0.001 | — | |
-| | FinnGen GO | 2 | 0.171 (0.043–0.676) | 0.012 | — | NA (2 IV) | 0.049 | 0.978 | |
+| ***TSHR*** | BBJ Graves | 1 | 0.12 (0.07–0.21) | 1.1×10⁻¹⁴ | NA (single IV) | NA (single IV) | NA (single IV) | 0.951 | +2.33 (0.032) |
+| | UKB hyperthyroid | 1 | 0.09 (0.06–0.14) | 8.8×10⁻²⁸ | NA | NA | NA | — | |
+| | FinnGen GO | 1 | 0.10 (0.04–0.24) | 2.8×10⁻⁷ | NA | NA | NA | 0.986 | |
+| ***IGF1R*** | BBJ Graves | 4 | 1.56 (1.07–2.28) | 0.021 | 0.029 | 0.663 | 0.902 | 0.043 | +0.41 (>0.99, NS) |
+| | UKB hyperthyroid | 4 | 1.35 (1.07–1.70) | 0.012 | 0.002 | 0.562 | 0.250 | — | |
+| | FinnGen GO | 3 | 1.41 (0.85–2.33) | 0.182 | 0.124 | 0.433 | 0.309 | 0.036 | |
+| ***CTLA4*** | BBJ Graves | 1 | 0.18 (0.11–0.27) | 5.5×10⁻¹⁵ | NA (single IV) | NA (single IV) | NA (single IV) | 0.206 | +1.27 (0.815, NS) |
+| | UKB hyperthyroid | 2 | 0.21 (0.08–0.57) | 0.002 | — | NA (2 IV) | 0.001 | — | |
+| | FinnGen GO | 2 | 0.17 (0.04–0.68) | 0.012 | — | NA (2 IV) | 0.049 | 0.978 | |
 
 *MR effect estimates are odds ratios (OR) per unit increase in genetically proxied gene expression, by Wald ratio (single instrument) or inverse-variance weighted (IVW; multiple instruments). Sensitivity estimators (weighted median, weighted mode, MR-Egger intercept) and the Cochran's Q heterogeneity test are reported only where estimable; single-instrument loci are marked NA. The MR-Egger intercept P values for IGF1R (all > 0.43) indicate no detectable directional pleiotropy; Cochran's Q indicates significant between-instrument heterogeneity for CTLA4 in the UKB and FinnGen analyses (Q P = 0.001 and 0.049), consistent with cross-ancestry/phenotype locus complexity. Colocalization (coloc.abf): PP.H4 ≥ 0.80 indicates strong evidence for a shared causal variant; IGF1R is PP.H2-dominant (outcome association without a shared eQTL signal). Tissue by DESeq2 (in-house orbital RNA-seq, n = 1 control — exploratory). NS, not significant; —, not applicable/not computed. All values verified against source analysis files.*
 

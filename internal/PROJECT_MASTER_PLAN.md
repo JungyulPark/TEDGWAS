@@ -24,7 +24,7 @@ thyroid eye disease.
   cross-ancestry/cross-outcome, with exploratory in-house tissue support.
 - **Strength profile:** high rigor, low discovery-novelty. Value = methodological
   rigor + conceptual framework + honest consolidation (see strength assessment).
-- **Status:** master `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (md5 `d3c5db46…`),
+- **Status:** master `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (md5 `a3662985…`),
   placeholders = 0, 12 cross-document audits passed. Package in `submission/`.
 - **IN scope:** TSHR / IGF1R / CTLA4 backbone; 2,545-gene MR; coloc; fine-mapping;
   13 Bonferroni hits; exploratory backbone tissue (3 genes only).
