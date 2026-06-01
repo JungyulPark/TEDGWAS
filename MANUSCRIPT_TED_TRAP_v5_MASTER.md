@@ -155,6 +155,8 @@ In a druggable-gene-wide Mendelian randomization, colocalization, and orbital ti
 
 **Ethics approval.** This study used publicly available, de-identified summary statistics and an institutionally approved orbital tissue dataset. The in-house orbital transcriptomic component was approved by the Institutional Review Board of Pusan National University Hospital (approval number 2104-018-102) and was conducted in accordance with the Declaration of Helsinki.
 
+**Informed consent.** Written informed consent was obtained from all individual participants included in the in-house orbital tissue study.
+
 **Data availability.** Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 Graves ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
 
 **Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. Y.-E.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript. All authors read and approved the final manuscript.
