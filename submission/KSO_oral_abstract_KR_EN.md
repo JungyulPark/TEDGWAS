@@ -7,8 +7,9 @@
 
 ## English (oral abstract, ~250 words)
 
-**Title:** Druggable-gene-wide Mendelian randomization distinguishes TSHR-anchored
-susceptibility from IGF1R effector biology in Graves disease and thyroid eye disease
+**Title:** A drug target that is not a susceptibility locus: druggable-gene-wide
+Mendelian randomization distinguishes TSHR anchoring from IGF1R effector biology in
+Graves disease and thyroid eye disease
 
 **Purpose:** Teprotumumab targets IGF-1R in thyroid eye disease (TED), yet whether
 *IGF1R* is a genetically anchored susceptibility locus or a pharmacologic effector
@@ -43,8 +44,8 @@ Absence of colocalization does not argue against IGF-1R's therapeutic relevance.
 
 ## 국문 (구연 초록)
 
-**제목:** 약물표적 유전체 전반의 멘델리안 무작위화 분석: 그레이브스병과 갑상선눈병증에서
-TSHR 기반 감수성과 IGF1R 효과기 생물학의 구분
+**제목:** 감수성 유전자가 아닌 약물 표적: 약물표적 유전체 전반의 멘델리안 무작위화로 본
+그레이브스병과 갑상선눈병증에서 TSHR 앵커링과 IGF1R 효과기 생물학의 구분
 
 **목적:** 테프로투무맙은 갑상선눈병증(TED)에서 IGF-1R를 표적하지만, IGF1R이 유전적으로
 고정된 감수성 유전자좌인지 자가항원 TSHR과 구별되는 약리학적 효과기 축인지는 불분명하다.

@@ -1,6 +1,6 @@
 **Running head:** TSHR vs IGF-1R in Graves Disease and TED
 
-# Druggable-gene-wide Mendelian randomization distinguishes TSHR-anchored susceptibility from IGF1R effector biology in Graves disease and thyroid eye disease
+# A drug target that is not a susceptibility locus: druggable-gene-wide Mendelian randomization distinguishes TSHR anchoring from IGF1R effector biology in Graves disease and thyroid eye disease
 
 Jungyul Park¹, Yae-Eun Kang², Kyung-Hwa Shin³⁎, Suk-Woo Yang¹⁎
 
