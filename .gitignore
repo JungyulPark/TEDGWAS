@@ -52,6 +52,9 @@ v5_handoff_parallel_10/
 *.docx
 *.xlsx
 *.pdf
+# Exception: track the final JEI submission deliverables
+!MANUSCRIPT_TED_TRAP_v5_SUBMISSION.docx
+!COVER_LETTER_JEI.docx
 
 # ---- Image binaries (figures tracked separately in v5_upgrade/07_manuscript/figures) ----
 *.png
@@ -71,3 +74,4 @@ docs_dump.txt
 # ---- Uploaded zip handoffs (already extracted) ----
 files (*.zip
 files*.zip
+!submission/figures/*.png
