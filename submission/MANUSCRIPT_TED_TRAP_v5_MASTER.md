@@ -2,7 +2,7 @@
 
 # A drug target that is not a susceptibility locus: druggable-gene-wide Mendelian randomization distinguishes TSHR anchoring from IGF1R effector biology in Graves disease and thyroid eye disease
 
-Jungyul Park¹, Yae-Eun Kang², Kyung-Hwa Shin³⁎, Suk-Woo Yang¹⁎
+Jungyul Park¹, Min-Seon Kim², Kyung-Hwa Shin³⁎, Suk-Woo Yang¹⁎
 
 ¹ Department of Ophthalmology, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
 ² Department of Ophthalmology, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
@@ -159,7 +159,7 @@ In a druggable-gene-wide Mendelian randomization, colocalization, and orbital ti
 
 **Data availability.** Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 Graves ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
 
-**Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. Y.-E.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript. All authors read and approved the final manuscript.
+**Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript. All authors read and approved the final manuscript.
 
 **Acknowledgements.** We thank the eQTLGen Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
 
