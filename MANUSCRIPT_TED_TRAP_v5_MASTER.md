@@ -75,7 +75,7 @@ For prioritized loci, we tested whether the *cis*-eQTL and outcome-association s
 
 ### Orbital tissue transcriptomic analysis
 
-Exploratory tissue-level support was assessed using an in-house bulk RNA-seq dataset of orbital tissue from a Korean cohort comprising four TED patients and one control. Technical replicates were collapsed to the biological-sample level by summing raw counts before differential expression analysis with DESeq2 [24]; Benjamini–Hochberg adjusted P values were obtained from the transcriptome-wide DESeq2 analysis, and results for the prespecified backbone genes (*TSHR*, *IGF1R*, *CTLA4*) were extracted for tissue triangulation (Figure 3C; Table 2). This dataset was used only for exploratory tissue-level support, not for genetic instrument selection, and no external transcriptomic dataset was incorporated.
+Exploratory tissue-level support was assessed using an in-house bulk RNA-seq dataset of orbital tissue from a Korean cohort comprising four TED patients and one control. Technical replicates were collapsed to the biological-sample level by summing raw counts, and gene-level differential expression was estimated with DESeq2 [24] with Benjamini–Hochberg correction computed across genes. This study reports only the three prespecified backbone genes (*TSHR*, *IGF1R*, *CTLA4*) for hypothesis-driven tissue triangulation (Figure 3C; Table 2); no genome-wide transcriptomic catalogue, differential-expression list, or pathway-enrichment result is presented here. The dataset was used solely for exploratory tissue-level support of the genetically prioritized backbone genes, not for genetic instrument selection, and no external transcriptomic dataset was incorporated.
 
 ### Software, reporting, and data availability
 
