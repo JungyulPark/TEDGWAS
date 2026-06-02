@@ -75,3 +75,4 @@ docs_dump.txt
 files (*.zip
 files*.zip
 !submission/figures/*.png
+!KSO_oral_abstract_KR_EN.docx
