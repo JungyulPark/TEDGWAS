@@ -61,7 +61,7 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `42199cab697a926e507ec3f65b1aadda`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `a112b854f11b61eaa0b1824274078fc1`
   (placeholders = 0).
 
 ## Repo layout (actual)
