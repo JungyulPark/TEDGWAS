@@ -29,8 +29,11 @@ from genetic *susceptibility* (which Paper 1 shows IGF1R lacks).
 ## Specific aims
 1. **Tissue signature + external concordance.** Characterize the INSR/insulin
    cassette signature in in-house TED orbital RNA-seq and test direction
-   concordance in **public TED orbital snRNA-seq** (active disease, correct
-   tissue). *Directly remedies the n=1-control weakness that limits the in-house data.*
+   concordance in a **public orbital-adipose dataset**. ⚠️ Per the 2026 dataset scan
+   (`PAPER2_SNRNASEQ_DATASET_SCAN.md`), no open + active + orbital-fat + single-cell
+   dataset exists; **GATE A is therefore GSE308553-first (open bulk orbital adipose,
+   modality-matched to the in-house bulk RNA-seq)**, with controlled-access single-cell
+   (Li 2022, GSA HRA000870) only if access is obtained. *Aims to remedy the n=1-control weakness.*
 2. **Genetic anchoring (is INSR a signal or a pure off-target?).** Test INSR and
    insulin-axis genes with **pQTL-MR (UKB-PPP, deCODE)** and cis-eQTL MR +
    colocalization on the same GD/TED outcome hierarchy used in Paper 1. Expected/
