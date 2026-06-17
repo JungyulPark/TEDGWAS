@@ -32,8 +32,39 @@ Replace "public snRNA-seq" with **"public orbital-adipose external direction che
 GSE308553-first (bulk, modality-matched); single-cell (HRA000870) only if access
 obtained."** Confirm modality/activity from the source PDFs before running.
 
+## Round 2 (deeper sweep) — verified-OPEN leads + a key activity-matching correction
+
+**Decisive context:** the in-house TED orbital RNA-seq is **inactive-stage** (companion
+RNA-seq paper: "clinically stable, inactive TED, CAS < 3, orbital decompression").
+So the correct external comparator is **inactive orbital fat**, not active — which is
+exactly what is openly available. This makes GATE A materially MORE tractable.
+
+| Dataset | Accession | Tissue / modality | Activity | Open? | Note |
+|---|---|---|---|---|---|
+| **Rosenberg-group orbital fat** | **GSE174139** (bulk **+ snRNA-seq**, intraconal fat/differentiating orbital fibroblasts) & **GSE158464** (bulk) | orbital fat | inactive | **GEO OPEN** ✅ | **best open lead** — modality-matched (bulk) to in-house + a snRNA layer; verify snRNA contents in GEO record |
+| Cheng et al. 2025 Adv Sci | accession **unverified** (likely China GSA/OMIX) | orbital fat SVF, scRNA (58k cells; fibroblasts/preadipocytes) | inactive (fibrotic) | unverified | strong single-cell fit if matrix is public |
+| iScience 2024 (CD169+ monocyte GO) | NGDC **HRA005673** | orbit + blood, 10x | — | controlled (HRA) | partial |
+| medRxiv 2026 SPARC / bioRxiv 2026 sorafenib | none confirmed | orbital fat/fibroblast scRNA | mixed | preprint, no accession | low immediacy |
+
+**Corrections:** Hua 2025 *Sci Rep* **GSE308553 is confirmed BULK** (not single-cell); the
+"31,353-cell / 27 TAO+21 control pooled atlas" description is **unverified / a likely
+conflation** — do not rely on it. Li 2022 (GSA HRA000870) and Kim 2024 (non-public)
+unchanged.
+
+### GATE A — revised again (final)
+- In-house is **inactive** → compare against **open inactive orbital-fat GEO sets**.
+- **Run order:** **GSE174139 + GSE158464 (open, orbital fat, bulk + snRNA) first**, then
+  GSE308553 (open bulk) as a second open check; Cheng/HRA005673 only if matrices prove public.
+- Check **INSR / IGF1R / insulin-cassette direction** (bulk, modality-matched to in-house).
+  Concordant → legitimate external direction support; discordant/absent → hypothesis/shelve.
+- Verify each GEO record's modality, group labels, and gene presence **before** running
+  (audit-first; do not assume snRNA contents of GSE174139 without checking).
+
 ## Sources
 - Li 2022 CRM: https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(22)00235-X ; GSA: https://ngdc.cncb.ac.cn/gsa-human/browse/HRA000870
 - Kim 2024 JCI Insight: https://insight.jci.org/articles/view/182352 (data on request)
 - SPARC scRNA-seq: https://www.medrxiv.org/content/10.64898/2026.02.24.26346524v1.full
 - Sci Rep orbital tissue / GSE308553: https://www.nature.com/articles/s41598-025-30716-9 ; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE308553
+- Cheng 2025 Adv Sci orbital-fat SVF scRNA: https://doi.org/10.1002/advs.202511404
+- iScience 2024 (orbit+blood, NGDC HRA005673): https://doi.org/10.1016/j.isci.2024.109213
+- Rosenberg orbital-fat GEO (OPEN): https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE174139 ; https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE158464
