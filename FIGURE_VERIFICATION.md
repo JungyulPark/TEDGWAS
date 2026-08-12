@@ -40,3 +40,33 @@ Canonical rendered figures (tracked, on remote):
   `make_fig3_panelC.py` at the repo root contain the insulin cassette
   (INSR/IRS2/…), which belongs to Track C and was removed from v5. The canonical
   v5 composite is built by `build_figure3_composite.R` (uses TaskE_01 backbone).
+
+---
+
+## 2026-08 correction: colocalization H2 label was inverted
+
+**Defect.** `taskE_01_coloc.R` and `taskE_02_coloc_candidates.R` call `coloc.abf` with
+`dataset1 = outcome GWAS` and `dataset2 = cis-eQTL`. In coloc.abf, H1 = trait-1-only and
+H2 = trait-2-only, so **PP.H2 = "cis-eQTL association only"**. The manuscript text (Methods,
+Results, Table 2 footnote, Table S2 footnote, Figure 3 and S2 legends) and the ggplot builders
+(`build_figure3_composite.R` L37, `TrackA_MR/v5_upgrade/build_figureS2_coloc.R` L32/L40) all
+described PP.H2 as "GWAS/outcome association only" — inverted. Only the Table S2 inline header
+was correct, so the paper contradicted itself.
+
+**Fix.** 10 text occurrences corrected in the master; Figure 3 and Figure S2 regenerated with the
+label **"H2 (eQTL assoc. only)"** by `scripts/23_rebuild_figures_coloc_label_fix.py` (matplotlib;
+R unavailable in this environment). All plotted values are read from the locked result tables —
+no plotted number changed. Figure 3C now shows IGF1R `padj > 0.99` instead of `1.0e+00`, matching
+the text.
+
+**Interpretation impact (no conclusion reversed).**
+- IGF1R PP.H2 = 0.79 (BBJ) / 0.68 (FinnGen) now correctly reads as *a cis-eQTL at the locus with no
+  detectable disease association* — a cleaner statement of "not a susceptibility locus" than the
+  previous wording, and consistent with its sub-threshold MR effect (Table S8).
+- TNFSF14/IFNGR1 and the chr16p11.2 cluster "fail" in the TED outcome with PP.H2 ≈ 0.63–0.74, i.e.
+  eQTL present but no TED-GWAS association — consistent with limited power in an 858-case GWAS
+  rather than established distinct causal architecture.
+- TSHR (PP.H4 0.951/0.986) and CTLA4 are unaffected.
+
+**Verified values re-plotted (unchanged):** TSHR H4 0.951/0.986; IGF1R H2 0.793/0.675, H4 0.043/0.036;
+CTLA4 H3 0.794 (BBJ) / H4 0.978 (FinnGen); TNFSF14 H4 0.994→0.019; IFNGR1 0.989→0.019.
