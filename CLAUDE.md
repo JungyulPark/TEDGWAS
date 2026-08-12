@@ -42,6 +42,14 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   collapsed). Correct TSHR padj = 0.032; earlier pseudoreplicated padj values
   (6.6e-5 / 0.006) are WRONG.
 - **No "first systematic" claim** — druggable GD MR is already published.
+- **FinnGen Graves ophthalmopathy is NOT a TED-specific contrast.** Cases are ascertained among Graves
+  disease patients and compared with population controls, so its associations substantially re-measure GD
+  susceptibility. TSHR is an anchor **for GD**, "whose signal is also recovered in a TED-enriched case
+  series" — never claim a TED-specific effect separable from GD liability. See
+  `internal/MVMR_FORENSIC_VERDICT.md`.
+- **MVMR results in the repo are UNREPORTABLE** (100% sample overlap with the outcome nested in the
+  exposure, correlated/trans/MHC instruments, sign instability). Never import
+  `04v3_mvmr_finngen_summary.csv`, `04_mvmr_summary.csv`, or `Table2_PanelC_MVMR.csv` into any manuscript.
 
 ## Framing rules (reviewer-proof, locked)
 - "Replicated" → "directionally reproduced".
@@ -61,7 +69,7 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `f8c7c4137982ac0f6a9aaa6df8c5ccc7`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `a532313e58953373f573dfe1d8ef5a90`
   (placeholders = 0).
 
 ## Repo layout (actual)

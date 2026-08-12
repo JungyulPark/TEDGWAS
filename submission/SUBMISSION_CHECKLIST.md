@@ -5,7 +5,7 @@ TSHR-anchored susceptibility from IGF1R effector biology in Graves disease and
 thyroid eye disease.
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `f8c7c4137982ac0f6a9aaa6df8c5ccc7`, placeholders = 0).
+(md5 `a532313e58953373f573dfe1d8ef5a90`, placeholders = 0).
 
 ## Files to upload
 
