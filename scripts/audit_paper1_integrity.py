@@ -63,7 +63,7 @@ for d in ["Funding","Conflict of interest","Ethics approval","Informed consent",
     ok(f"**{d}.**" in t, f"declaration present: {d}")
 for fig in ["Figure 1.","Figure 2.","Figure 3.","Figure S1.","Figure S2."]:
     ok(f"**{fig}" in t, f"figure legend present: {fig}")
-ok(all(f"Table S{i}" in t for i in range(1,8)), "Supplementary Tables S1-S7 all referenced")
+ok(all(f"Table S{i}" in t for i in range(1,9)), "Supplementary Tables S1-S8 all referenced")
 
 # 7. stale names
 stale = [n for n in ["Yae-Eun Kang","강예은","박정율"] if n in t]
