@@ -17,7 +17,8 @@ See `../internal/SUBMISSION_VENUE_CASCADE.md`.
 | Item | File | Status |
 |---|---|---|
 | Main manuscript (Word) | `MANUSCRIPT_TED_TRAP_v5_SUBMISSION.docx` | ✅ final — 13 tables embedded (Tables 1–3 + S1–S8), LibreOffice-validated |
-| Cover letter | `COVER_LETTER_JEI.docx` | ⚠️ addressed to JEI — **retarget if submitting elsewhere** |
+| Cover letter (1st choice) | `COVER_LETTER_EndocrineConnections.docx` | ✅ **Endocrine Connections version** — sound-science framing, power/limitations, dual-use disclosure |
+| Cover letter (fallback) | `COVER_LETTER_JEI.docx` | ⚠️ JEI version — **author list still says Yae-Eun Kang; fix before use** |
 | Figure 1 | `figures/Figure1.png` | ✅ study design schematic |
 | Figure 2 | `figures/Figure2.png` | ✅ BBJ MR volcano (2,235 genes, 13 hits, P = 1.965×10⁻⁵) |
 | Figure 3 | `figures/Figure3.png` | ✅ composite A/B/C — **regenerated 2026-08** with corrected coloc legend |
@@ -58,7 +59,7 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
    within-disease demonstration.
 
 ## Author to-do before clicking submit
-1. **Cover letter** — currently addressed to JEI. Retarget to the chosen journal.
+1. **Cover letter** — use `COVER_LETTER_EndocrineConnections.docx` for Endocrine Connections. The JEI fallback letter still carries the superseded author name and must be corrected before reuse.
 2. **Word count** — ~5,195 words of main text. Fine for Endocrine Connections; **over the JEI
    "preferably 4,500"** guidance. If submitting to JEI, trim Discussion (the newest limitation
    items are the least compressible; the "broader principle" paragraph is the most).
