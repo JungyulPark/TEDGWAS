@@ -70,3 +70,25 @@ the text.
 
 **Verified values re-plotted (unchanged):** TSHR H4 0.951/0.986; IGF1R H2 0.793/0.675, H4 0.043/0.036;
 CTLA4 H3 0.794 (BBJ) / H4 0.978 (FinnGen); TNFSF14 H4 0.994→0.019; IFNGR1 0.989→0.019.
+
+---
+
+## 2026-08: Figure 1 rebuilt as a claim figure
+
+**Why.** The original Figure 1 was a data-sources → analysis → integration workflow diagram: it
+listed what was done rather than what was found, so the paper's argument was not readable from the
+figure alone. It also had a rendering defect (the FinnGen outcome text overflowed its box and was
+cut by the border) and carried the superseded "TED-specific" label.
+
+**Replacement** (`scripts/25_rebuild_figure1_claim.py`, matplotlib):
+- **Panel A — screening funnel with reasons.** 4,462 druggable → 2,545 MR-testable (6,136 IVs) →
+  2,235 estimable in BBJ → 13 Bonferroni hits → **0 robust novel targets**, with the 13 hits resolved
+  by *why* they were removed: 5 MHC, 3 chr16p11.2 LD block, 2 discovery-only colocalization
+  (TNFSF14/IFNGR1 0.99 → 0.02), 1 distinct causal variant (MAPKAPK5), 2 established loci retained.
+  The verdict strip states the null together with its detectable range (median OR 2.55, Table S8).
+- **Panel B — the divergence.** The same three evidence layers (MR / colocalization / orbital tissue)
+  scored side by side for TSHR and IGF1R, so the title's claim is visible at a glance.
+
+Counts are parsed from Table 3 of the locked master and asserted to sum to 13; backbone values are
+read from TaskD_03d, TaskE_01 and TaskF_01. Nothing is hard-coded. The legend was rewritten to match
+and every number in it was checked against the source tables.
