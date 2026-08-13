@@ -56,6 +56,12 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 - IGF1R: present as *effector axis*, never as susceptibility anchor. Absence of
   coloc for IGF1R is *not* evidence against its therapeutic role.
 - Tissue evidence is *exploratory* (single control), never confirmatory.
+- **Call the FinnGen outcome "TED-enriched", never "TED-specific"** (it is GO cases vs population
+  controls). "TED-specific" survives ONLY where it denotes the *concept* of a TED-specific effect or
+  the field's future TED GWAS — never as a label for our outcome.
+- **IGF1R wording is comparative, never categorical**: "more compatible with an effector-target
+  interpretation than with the TSHR-like expression-colocalized susceptibility architecture" —
+  do not write that IGF1R "is not a susceptibility locus".
 - External GEO is **not** included (Option A): three external cohorts did not
   reproduce the TSHR tissue direction (lacrimal-enriched / inactive TED). The
   "not externally replicated" limitation is honest and stays. Record:
@@ -69,7 +75,7 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `a0f5ce91f93b5dad89435df8966da6b8`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `93d7143dd8dc8d8a47e97f7791c43c73`
   (placeholders = 0).
 
 ## Repo layout (actual)

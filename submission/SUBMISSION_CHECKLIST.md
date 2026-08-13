@@ -1,13 +1,12 @@
 # Submission package — TED-TRAP Paper 1 (v5, final)
 
-**Manuscript:** A drug target that is not a susceptibility locus: druggable-gene-wide
-Mendelian randomization distinguishes TSHR anchoring from IGF1R effector biology in
-Graves disease and thyroid eye disease.
+**Manuscript:** Genetic susceptibility and therapeutic target biology diverge at TSHR and
+IGF1R in Graves disease and thyroid eye disease.
 
 **Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `a0f5ce91f93b5dad89435df8966da6b8`, placeholders = 0, integrity audit ALL PASS).
+(md5 `93d7143dd8dc8d8a47e97f7791c43c73`, placeholders = 0, integrity audit ALL PASS).
 
 **Target venue:** Endocrine Connections (1st choice) → Endocrine → JEI → Frontiers-Endo/BMC.
 See `../internal/SUBMISSION_VENUE_CASCADE.md`.
