@@ -44,8 +44,8 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 - **No "first systematic" claim** — druggable GD MR is already published.
 - **FinnGen Graves ophthalmopathy is NOT a TED-specific contrast.** Cases are ascertained among Graves
   disease patients and compared with population controls, so its associations substantially re-measure GD
-  susceptibility. TSHR is an anchor **for GD**, "whose signal is also recovered in a TED-enriched case
-  series" — never claim a TED-specific effect separable from GD liability. See
+  susceptibility. TSHR is an anchor **for GD**, "whose signal is also recovered in a TED-enriched
+  Graves ophthalmopathy outcome" — never claim a TED-specific effect separable from GD liability. See
   `internal/MVMR_FORENSIC_VERDICT.md`.
 - **MVMR results in the repo are UNREPORTABLE** (100% sample overlap with the outcome nested in the
   exposure, correlated/trans/MHC instruments, sign instability). Never import
@@ -55,6 +55,17 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 - "Replicated" → "directionally reproduced".
 - IGF1R: present as *effector axis*, never as susceptibility anchor. Absence of
   coloc for IGF1R is *not* evidence against its therapeutic role.
+- **IGF1R significance is outcome-specific**: nominal in BBJ (P=0.021) and UKB (P=0.012), **not** in
+  FinnGen (P=0.182). Never write "nominal across outcomes" — say "directionally consistent, nominally
+  significant in BBJ and UKB but not FinnGen".
+- **Never call the FinnGen outcome a "case series"** — it is a case–control GWAS with population
+  controls. Use "TED-enriched Graves ophthalmopathy outcome".
+- **"Prespecified" applies ONLY to the outcome hierarchy** (documented in
+  `TrackA_MR/v5_upgrade/03_decision/TaskC_pre_analysis_plan_v1.md`, which covers the BBJ/UKB/FinnGen
+  hierarchy and TSHR — *not* IGF1R or CTLA4). The backbone genes were designated **a priori on
+  biological and therapeutic grounds**; write it that way, never "prespecified backbone genes".
+- **TSHR and IGF1R do NOT share instruments** (TSHR = 1 IV, IGF1R = 4 IVs). What is shared is the
+  outcome hierarchy and the analytic framework — never write "identical/same instruments".
 - Tissue evidence is *exploratory* (single control), never confirmatory.
 - **Call the FinnGen outcome "TED-enriched", never "TED-specific"** (it is GO cases vs population
   controls). "TED-specific" survives ONLY where it denotes the *concept* of a TED-specific effect or
@@ -75,8 +86,11 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `ade746389fd0c8f8bc3847db7bc4bfec`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `7f0786f3d8e6939bd39bf701fb46053b`
   (placeholders = 0).
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,886. Abstract is a
+  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 241 words (≤250).
+  Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)
 ```

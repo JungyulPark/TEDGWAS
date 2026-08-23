@@ -153,7 +153,7 @@ def build():
     axB.text(0.035, 1.02, "Where the two receptors diverge", fontsize=13,
              fontweight="bold", va="top")
     axB.text(0.035, 0.945,
-             "The same three evidence layers, the same instruments, outcomes and filters — read across each row.",
+             "The same three evidence layers and the same outcome hierarchy, with gene-specific instruments — read across each row.",
              fontsize=9.5, color=MUTED, va="top")
 
     T, I = bb["TSHR"], bb["IGF1R"]
@@ -195,7 +195,7 @@ def build():
     axB.plot([0.035, 0.965], [0.075, 0.075], color=RULE, lw=1.1)
     axB.text(0.5, 0.028,
              "Genetic susceptibility architecture and therapeutic target biology do not have to coincide: "
-             "TSHR carries both,\nIGF1R carries the therapy without the susceptibility architecture.",
+             "TSHR carries both,\nwhereas IGF1R does not display the same expression-colocalized susceptibility architecture.",
              ha="center", va="center", fontsize=9.6, color=INK, fontweight="bold",
              linespacing=1.5)
 
