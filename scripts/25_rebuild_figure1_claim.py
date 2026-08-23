@@ -142,8 +142,8 @@ def build():
              fontweight="bold", color=INK, va="center")
     axA.text(0.135, 0.086,
              "No non-established gene showed shared-variant colocalization in both outcomes. "
-             "At 80% power the screen\ncould detect a median OR of 2.55 (Table S8), so this excludes "
-             "further large — not moderate — effects.",
+             "At 80% power the screen\ncould detect a median OR of 2.55 (Table S8), so this constrains "
+             "further large effects, not moderate ones.",
              fontsize=8.5, color=MUTED, va="center", linespacing=1.45)
 
     # ================= PANEL B — the divergence verdict =================
@@ -163,7 +163,7 @@ def build():
          f"β = {I['beta_bbj']:+.2f}\nP = {I['p_bbj']:.3f}", None),
         ("Shared causal variant\n(colocalization)",
          f"PP.H4 = {T['h4_bbj']:.3f} / {T['h4_fin']:.3f}\nshared variant rs179252", True,
-         f"PP.H2 = {I['h2_bbj']:.2f} / {I['h2_fin']:.2f}\ncis-eQTL only,\nno disease signal", False),
+         f"PP.H2 = {I['h2_bbj']:.2f} / {I['h2_fin']:.2f}\ncis-eQTL only,\nno shared variant", False),
         ("Orbital tissue\n(exploratory, 4 vs 1)",
          f"log2FC = {T['tis_fc']:+.2f}\nadj P = {T['tis_p']:.3f}", True,
          f"log2FC = {I['tis_fc']:+.2f}\nadj P > 0.99", False),

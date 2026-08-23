@@ -205,13 +205,13 @@ def main():
 {CSS}
 <header class="masthead">
   <div class="inner">
-    <p class="eyebrow"><span>Manuscript · v5</span><span class="dot"></span><span>Under review — not for circulation</span><span class="dot"></span><span>Endocrine Connections</span></p>
+    <p class="eyebrow"><span>Manuscript · v5</span><span class="dot"></span><span>Review copy — the journal file is the .docx, not this page</span><span class="dot"></span><span>Endocrine Connections</span></p>
     <h1 class="title">Genetic susceptibility and therapeutic target biology diverge at <em>TSHR</em> and <em>IGF1R</em> in Graves disease and thyroid eye disease</h1>
     <p class="byline"><b>Jungyul Park</b><sup>1</sup> · <b>Min-Seon Kim</b><sup>2</sup> · <b>Kyung-Hwa Shin</b><sup>3</sup>* · <b>Suk-Woo Yang</b><sup>1</sup>*<br>
     <sup>1</sup>Seoul St. Mary's Hospital, The Catholic University of Korea · <sup>2</sup>College of Medicine, The Catholic University of Korea · <sup>3</sup>Pusan National University Hospital · *corresponding</p>
     <dl class="glance">
       <div class="g-anchor"><dt>TSHR — anchor</dt><dd>0.951 / 0.986<small>coloc PP.H4, BBJ / FinnGen · shared variant rs179252</small></dd></div>
-      <div class="g-effector"><dt>IGF1R — effector</dt><dd>0.79 / 0.68<small>coloc PP.H2 — <em>cis</em>-eQTL only, no detectable disease association</small></dd></div>
+      <div class="g-effector"><dt>IGF1R — effector-compatible profile</dt><dd>0.79 / 0.68<small>coloc PP.H2 — no shared-variant expression colocalization</small></dd></div>
       <div><dt>Druggable genes screened</dt><dd>2,545<small>6,136 instruments · 13 Bonferroni hits</small></dd></div>
       <div><dt>Robust novel targets</dt><dd>0<small>after cross-outcome colocalization filtering</small></dd></div>
       <div><dt>Detectable effect</dt><dd>OR 2.55<small>median, 80% power at the discovery threshold (Table S8)</small></dd></div>

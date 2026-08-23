@@ -14,6 +14,13 @@ Checks (all against the locked master MANUSCRIPT_TED_TRAP_v5_MASTER.md):
   6. structural completeness: Abstract/Methods/Results/Discussion/Declarations,
      6 declarations incl. Informed consent, Figure legends 1-3/S1/S2, Tables S1-S7
   7. no stale author names (Yae-Eun Kang / 강예은 / 박정율)
+  8. single master — no stale duplicate copy elsewhere in the repo
+  9. PP.H2 never described as "no detectable disease association" (IGF1R has a
+     nominal MR association; PP.H2 is about the shared-variant hypothesis only)
+ 10. power language hedged ("constrains"), never "excludes"
+ 11. no "identical instruments" claim (TSHR = 1 IV, IGF1R = 4 IVs)
+ 12. FinnGen Graves ophthalmopathy never called a "case series"
+ 13. the same banned phrases absent from README and the submission checklist
 """
 import re, sys, hashlib, os
 
@@ -68,6 +75,60 @@ ok(all(f"Table S{i}" in t for i in range(1,9)), "Supplementary Tables S1-S8 all 
 # 7. stale names
 stale = [n for n in ["Yae-Eun Kang","강예은","박정율"] if n in t]
 ok(not stale, f"no stale author names (found: {stale or 'none'})")
+
+# 8. one master only -- a second copy silently goes stale (it did once, in submission/)
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dupes = []
+for dirpath, dirnames, filenames in os.walk(root):
+    dirnames[:] = [d for d in dirnames if d not in (".git", "archives", "node_modules")]
+    for fn in filenames:
+        full = os.path.join(dirpath, fn)
+        if os.path.abspath(full) == os.path.abspath(M) or not fn.endswith(".md"):
+            continue
+        if fn.startswith("MANUSCRIPT_TED_TRAP") or "_MASTER.md" in fn:
+            dupes.append(os.path.relpath(full, root))
+ok(not dupes, f"single master, no stale duplicate copies (found: {dupes or 'none'})")
+
+# 9. IGF1R: PP.H2 must never be described as absence of a disease association
+overread = [q for q in ["without a detectable disease association",
+                        "without a detectable outcome association",
+                        "no detectable disease association"] if q in t]
+ok(not overread, f"PP.H2 not over-read as 'no disease association' (found: {overread or 'none'})")
+
+# 10. the null constrains, it does not exclude (only 35.6% of genes powered for OR>=2.0)
+overclaim = [q for q in ["null excludes", "evidence against additional large"] if q in t]
+ok(not overclaim, f"power language hedged, not 'excludes' (found: {overclaim or 'none'})")
+
+# 11. TSHR and IGF1R do not share instruments
+ok("identical instruments" not in t, "no 'identical instruments' claim")
+# 12. FinnGen GO is a case-control GWAS, not a case series
+ok("case series" not in t, "FinnGen outcome not called a 'case series'")
+
+# 13. the same banned phrases in the reader-facing package docs, not just the master.
+#     ("case series" once survived in SUBMISSION_CHECKLIST.md while this audit said PASS,
+#      because checks 1-12 only ever read the master.)
+# FIGURE_VERIFICATION.md is deliberately excluded: it is the defect log, and its job is to
+# quote the wording that was removed. README and the checklist are read as current statements.
+PACKAGE = ["README.md", "submission/SUBMISSION_CHECKLIST.md"]
+BANNED = ["identical instruments", "TED-specific sensitivity",
+          "no detectable disease association", "without a detectable outcome association"]
+leaks = []
+for rel in PACKAGE:
+    fp = os.path.join(root, rel)
+    if not os.path.exists(fp):
+        continue
+    body = open(fp, encoding="utf-8").read()
+    for phrase in BANNED + ["case series"]:
+        for ln, line in enumerate(body.splitlines(), 1):
+            if phrase not in line:
+                continue
+            # these files legitimately quote the banned wording when recording its removal
+            if any(m in line for m in ("Never call", "never call", "Stop calling",
+                                       "it still carried", "previously said", "was being over-read",
+                                       "| Was |", "read \"", "The footnote read")):
+                continue
+            leaks.append(f"{rel}:{ln} {phrase!r}")
+ok(not leaks, f"package docs free of banned phrasing (found: {leaks or 'none'})")
 
 print("\nRESULT:", "ALL PASS ✅" if not fails else f"{len(fails)} FAIL ❌")
 sys.exit(0 if not fails else 1)

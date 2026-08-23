@@ -6,7 +6,7 @@ IGF1R in Graves disease and thyroid eye disease.
 **Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `7f0786f3d8e6939bd39bf701fb46053b`, placeholders = 0, integrity audit ALL PASS).
+(md5 `a672b8e202a4ec37296eb37d01f1d306`, placeholders = 0, integrity audit ALL PASS).
 
 **Target venue:** Endocrine Connections (1st choice) → Endocrine → JEI → Frontiers-Endo/BMC.
 See `../internal/SUBMISSION_VENUE_CASCADE.md`.
@@ -31,8 +31,8 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
 - References 27; in-text citations [1]→[27], all cited.
 - Main tables 3; Supplementary tables **S1–S8**; figure legends 5.
 - OR = exp(β) verified for all 9 backbone estimates.
-- Abstract **241 words, single paragraph** with inline structured headings (Endocrine Connections format).
-- Main text **4,886 words** (Intro 655 / Methods 1,062 / Results 1,495 / Discussion 1,674) — under the 5,000-word
+- Abstract **235 words, single paragraph** with inline structured headings (Endocrine Connections format).
+- Main text **4,772 words** (Intro 655 / Methods 1,075 / Results 1,506 / Discussion 1,536) — under the 5,000-word
   Endocrine Connections limit. Recount with `python3 ../scripts/26_wordcount_main_text.py`.
 
 ## Substantive upgrades applied in the final round (2026-08)
@@ -48,7 +48,7 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
    `../FIGURE_VERIFICATION.md`.
 3. **FinnGen GO ascertainment overclaim removed.** GO cases are ascertained among Graves disease
    patients and compared with population controls, so that outcome re-measures GD susceptibility.
-   TSHR is now framed as an anchor **for GD** whose signal is recovered in a TED-enriched case series,
+   TSHR is now framed as an anchor **for GD** whose signal is recovered in a TED-enriched Graves ophthalmopathy outcome,
    with a TED-specific effect explicitly not established (new Limitation "Sixth").
 4. **New Limitations "Seventh" and "Eighth":** colocalization method limits (single-causal-variant
    assumption; one European allele-frequency vector used for both datasets including the East Asian
@@ -63,8 +63,8 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
 
 | # | Item | Applied |
 |---|---|---|
-| 1 | Main text ≤ 5,000 words | ✅ 5,155 → **4,886** (Intro gaps paragraph, Results Methods-restatement, Discussion general-principle and TSHR paragraphs, Limitations duplication) |
-| 2 | Abstract as a single paragraph | ✅ one paragraph, inline `Purpose:/Methods:/Results:/Conclusion:` headings, 241 words |
+| 1 | Main text ≤ 5,000 words | ✅ 5,155 → **4,772** (Intro gaps paragraph, Results Methods-restatement, Discussion general-principle and TSHR paragraphs, Limitations duplication) |
+| 2 | Abstract as a single paragraph | ✅ one paragraph, inline `Purpose:/Methods:/Results:/Conclusion:` headings, 235 words |
 | 3 | IGF1R "nominal" precision | ✅ Abstract, Figure 1 and Figure 3 legends now say nominal in **BBJ and UKB but not FinnGen** (P = 0.18) |
 | 4 | Soften the final Conclusion | ✅ Conclusion and the IGF1R Discussion paragraph now read "more compatible with … than with …", explicitly not establishing effector status nor excluding a modest genetic contribution |
 | 5 | Figure 1 "identical instruments" error | ✅ **factual fix** — TSHR and IGF1R do not share instruments. Legend and the rendered Panel B subtitle now read "the same outcome hierarchy and analytic framework, with gene-specific *cis*-eQTL instruments"; Figure 1 regenerated |
@@ -73,6 +73,20 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
 | 8 | Soften single-control tissue "significance" | ✅ Results and Figure 3 legend now report an *exploratory differential-expression signal* that "is not confirmatory because the analysis included only one control sample" |
 | 9 | Stop calling FinnGen a "case series" | ✅ all 3 occurrences → "TED-enriched Graves ophthalmopathy outcome" |
 | 10 | Update STROBE-MR Table S7 limitation row | ✅ item 18 now lists all ten limitations carried in the Discussion |
+
+## External review round 3 — applied 2026-08
+
+| # | Item | Applied |
+|---|---|---|
+| 1 | IGF1R summary overstated | ✅ **PP.H2 was being over-read as "no disease association" in 6 places.** IGF1R *does* have a nominal MR association (BBJ P = 0.021, UKB P = 0.012); PP.H2 concerns only the shared-variant hypothesis. Fixed in the Results paragraph, the Figure 3 legend, the Table 2 footnote (which sat directly under a row printing P = 0.021), the Figure 1 Panel B cell (rendered one row below "β = +0.45, P = 0.021"), the web review card, and `FIGURE_VERIFICATION.md` — the record that had seeded the wording. The web card now reads "IGF1R — effector-compatible profile / coloc PP.H2 — no shared-variant expression colocalization" |
+| 2 | "every evidence layer" is not true | ✅ fine-mapping (SuSiE) was run only at *TSHR*. Methods now: "evaluated across the MR, colocalization, and orbital tissue layers … with additional fine-mapping performed for the single-instrument *TSHR* locus" |
+| 3 | Power "excludes" too strong | ✅ only 35.6% of genes were powered for OR ≥ 2.0. Results and the Figure 1 legend and rendered verdict strip now say the null **constrains** additional large effects, particularly among well-powered genes, and **does not exclude** moderate ones — matching Table S8's own footnote |
+| 4 | Corresponding-author details | ⛔ still outstanding (to-do 1) |
+| 5 | Main text further trimmed | ✅ 4,886 → **4,772** words; Abstract 241 → **235** |
+| 6 | Review page vs submission file | ✅ verified: the submission `.docx` opens on the running head → title → authors → Abstract, with **no** web chrome (checked all 16 zip parts: 0 hits for "Under review", "claudeusercontent", "Jump to", "at a glance"; no external hyperlink targets). The web page's masthead now states "Review copy — the journal file is the .docx, not this page" |
+| 7 | **Stale duplicate master removed** | ✅ `submission/MANUSCRIPT_TED_TRAP_v5_MASTER.md` was a tracked mirror frozen at commit `35c8c22` (md5 `ade74638…`) — it still carried "identical instruments" and "case series". Deleted; the markdown source of truth is `../MANUSCRIPT_TED_TRAP_v5_MASTER.md`. The integrity audit now **fails** if a second master copy reappears |
+| 8 | **Table S6 footnote credited *CTLA4* with support it does not have** | ✅ found by adversarial verification, not by the reviewer. The footnote read "Single-instrument loci (TSHR all outcomes; CTLA4 in BBJ) are supported by colocalization and fine-mapping" — but *CTLA4* was never fine-mapped (SuSiE was run only at *TSHR*) and its BBJ posterior favours **distinct** causal variants (PP.H3 = 0.794, PP.H4 = 0.206). Rewritten to state exactly what supports what |
+| 9 | Table 2 footnote defined PP.H2 incorrectly | ✅ a sentence added earlier in this same round said "PP.H2 concerns the shared-variant hypothesis". PP.H2 is the *cis*-eQTL-only hypothesis (PP.H4 is the shared-variant one), which contradicted Methods, the Figure 3 and S2 legends and the Table S2 header. Now: "Colocalization tests only the shared-causal-variant hypothesis, so a PP.H2-dominant posterior does not contradict the nominal MR association reported above" |
 
 ## Author to-do before clicking submit
 1. **Author and corresponding-author details — BLOCKING, needs the author's own information.**

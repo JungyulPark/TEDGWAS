@@ -66,6 +66,19 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   biological and therapeutic grounds**; write it that way, never "prespecified backbone genes".
 - **TSHR and IGF1R do NOT share instruments** (TSHR = 1 IV, IGF1R = 4 IVs). What is shared is the
   outcome hierarchy and the analytic framework — never write "identical/same instruments".
+- **PP.H2 is NOT "no disease association".** IGF1R has a nominal MR association (BBJ P=0.021, UKB
+  P=0.012). PP.H2 = 0.79/0.68 says the *cis*-eQTL signal does not resolve to a variant shared with
+  the outcome. Never write "no detectable disease/outcome association" for IGF1R — it contradicts
+  the paper's own Table 2 row. Say "does not resolve to a variant shared with the outcome".
+- **The null CONSTRAINS, it does not EXCLUDE.** Only 35.6% of genes were powered for OR≥2.0 and
+  14.6% for OR≥1.5. Write "constrains additional large expression-mediated effects, particularly
+  among well-powered genes, but does not exclude moderate effects" — never "excludes" / "evidence
+  against" / "rules out".
+- **Fine-mapping was run only at TSHR.** Never write that all three backbone genes went through
+  "every evidence layer" — the shared layers are MR, colocalization and orbital tissue.
+- **One master, one copy.** `submission/` must not hold a second copy of the manuscript markdown; a
+  mirror there went stale once and re-introduced fixed errors. `scripts/audit_paper1_integrity.py`
+  now fails if a duplicate reappears.
 - Tissue evidence is *exploratory* (single control), never confirmatory.
 - **Call the FinnGen outcome "TED-enriched", never "TED-specific"** (it is GO cases vs population
   controls). "TED-specific" survives ONLY where it denotes the *concept* of a TED-specific effect or
@@ -86,10 +99,10 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `7f0786f3d8e6939bd39bf701fb46053b`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `a672b8e202a4ec37296eb37d01f1d306`
   (placeholders = 0).
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,886. Abstract is a
-  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 241 words (≤250).
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,772. Abstract is a
+  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 235 words (≤250).
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)

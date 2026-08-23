@@ -21,7 +21,7 @@ disease (TED).
 | Path | Contents |
 |---|---|
 | `submission/` | **Final JEI package** — manuscript .docx, cover letter, 5 figures, checklist |
-| `MANUSCRIPT_TED_TRAP_v5_MASTER.md` | Markdown source of truth (md5 `7f0786f3…`) |
+| `MANUSCRIPT_TED_TRAP_v5_MASTER.md` | Markdown source of truth (md5 `a672b8e2…`) |
 | `FIGURE_VERIFICATION.md` | Figure-vs-master data verification record |
 | `TrackA_MR/v5_upgrade/` | Core v5 analysis results + canonical figures |
 | `scripts/` | Numbered R analysis + public-data download scripts (no data) |
@@ -33,7 +33,7 @@ disease (TED).
 | eQTLGen blood cis-eQTL | Exposure instruments | Public (download via script) |
 | Biobank Japan Graves (GCST90018627) | Primary discovery | GWAS Catalog |
 | UK Biobank hyperthyroidism (GCST90038636) | Replication | GWAS Catalog |
-| FinnGen R12 Graves ophthalmopathy | TED-specific sensitivity | FinnGen |
+| FinnGen R12 Graves ophthalmopathy | TED-enriched sensitivity | FinnGen |
 | In-house orbital RNA-seq (4 TED + 1 ctrl) | Exploratory tissue | **IRB-restricted, on request** |
 
 > ⚠️ Raw RNA-seq, patent material, and license-bound data are **never** committed

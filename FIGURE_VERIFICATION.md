@@ -60,9 +60,13 @@ no plotted number changed. Figure 3C now shows IGF1R `padj > 0.99` instead of `1
 the text.
 
 **Interpretation impact (no conclusion reversed).**
-- IGF1R PP.H2 = 0.79 (BBJ) / 0.68 (FinnGen) now correctly reads as *a cis-eQTL at the locus with no
-  detectable disease association* — a cleaner statement of "not a susceptibility locus" than the
-  previous wording, and consistent with its sub-threshold MR effect (Table S8).
+- IGF1R PP.H2 = 0.79 (BBJ) / 0.68 (FinnGen) reads as *a cis-eQTL at the locus whose signal does not
+  resolve to a variant shared with disease association* — consistent with its sub-threshold MR effect
+  (Table S8). **Corrected 2026-08 (see the round-3 note below):** this bullet previously said "no
+  detectable disease association" and called it a cleaner statement of "not a susceptibility locus".
+  Both were wrong. IGF1R *does* have a nominal MR association (BBJ P = 0.021, UKB P = 0.012); PP.H2
+  concerns the shared-variant hypothesis only. And "not a susceptibility locus" is categorical, which
+  CLAUDE.md forbids for IGF1R.
 - TNFSF14/IFNGR1 and the chr16p11.2 cluster "fail" in the TED outcome with PP.H2 ≈ 0.63–0.74, i.e.
   eQTL present but no TED-GWAS association — consistent with limited power in an 858-case GWAS
   rather than established distinct causal architecture.
@@ -111,3 +115,37 @@ architecture" to "whereas IGF1R does not display the same expression-colocalized
 architecture", matching the manuscript's comparative framing. **No plotted value changed** — all
 numbers are still read from TaskD_03d, TaskE_01 and TaskF_01 and the funnel counts are still parsed
 from Table 3 with an assertion that they sum to 13.
+
+
+---
+
+## 2026-08 round 3: PP.H2 was being over-read as "no disease association"
+
+**Defect.** Six places stated or implied that the IGF1R locus had *no detectable disease
+association*, while the same documents report a nominal MR association (BBJ β = +0.45, P = 0.021;
+UKB β = +0.30, P = 0.012). PP.H2 is a statement about the *shared-variant* hypothesis — a cis-eQTL
+whose signal does not resolve to a variant shared with the outcome — not about the absence of any
+association. Flagged by external review; located exhaustively by a repo-wide scan.
+
+| Location | Was | Now |
+|---|---|---|
+| Master, Results (IGF1R paragraph) | "without a detectable disease association" | "whose signal does not resolve to a variant shared with disease association" |
+| Master, Figure 3 legend Panel A | "a cis-eQTL signal without a detectable outcome association" | "a cis-eQTL signal that does not resolve to a variant shared with the outcome" |
+| Master, Table 2 footnote | same denial, printed directly under a row reporting IVW P = 0.021 | corrected, plus an explicit note that PP.H2 does not contradict the nominal MR association |
+| `scripts/25_rebuild_figure1_claim.py` Panel B cell | "cis-eQTL only, no disease signal" — rendered one row *below* "β = +0.45, P = 0.021" | "cis-eQTL only, no shared variant" |
+| `scripts/24_build_review_artifact.py` at-a-glance card | "IGF1R — effector / coloc PP.H2 — cis-eQTL only, no detectable disease association" | "IGF1R — effector-compatible profile / coloc PP.H2 — no shared-variant expression colocalization" |
+| This file (the record that seeded the wording) | see the corrected bullet above | corrected |
+
+**Also corrected in the same pass.**
+- *Power language.* Table S8's footnote already said the null "constrains" large effects, but the
+  Results paragraph said "evidence against" and the Figure 1 legend and rendered verdict strip said
+  "excludes". Only 35.6% of genes were powered for OR ≥ 2.0, so "excludes" overstates it. All now
+  read "constrains … particularly among well-powered genes … does not exclude moderate effects".
+- *Evidence layers.* Methods said all three backbone genes "were carried through every evidence
+  layer". Fine-mapping (SuSiE) was run only at the TSHR locus. Now: "evaluated across the MR,
+  colocalization, and orbital tissue layers … with additional fine-mapping performed for the
+  single-instrument TSHR locus".
+
+**No plotted value changed.** Figure 1 was regenerated; all numbers still come from TaskD_03d,
+TaskE_01 and TaskF_01, and the funnel counts are still parsed from Table 3 with the sum-to-13
+assertion.
