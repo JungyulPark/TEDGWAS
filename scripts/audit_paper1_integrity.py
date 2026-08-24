@@ -21,6 +21,8 @@ Checks (all against the locked master MANUSCRIPT_TED_TRAP_v5_MASTER.md):
  11. no "identical instruments" claim (TSHR = 1 IV, IGF1R = 4 IVs)
  12. FinnGen Graves ophthalmopathy never called a "case series"
  13. the same banned phrases absent from README and the submission checklist
+ 14. outcome hierarchy described as functional (case counts 2,809 / 3,731 / 858 are
+     not monotonically decreasing, and TED specificity dips at the UKB step)
 """
 import re, sys, hashlib, os
 
@@ -129,6 +131,15 @@ for rel in PACKAGE:
                 continue
             leaks.append(f"{rel}:{ln} {phrase!r}")
 ok(not leaks, f"package docs free of banned phrasing (found: {leaks or 'none'})")
+
+# 14. the outcome hierarchy is FUNCTIONAL, not monotone. Case counts run
+#     2,809 (BBJ) -> 3,731 (UKB) -> 858 (FinnGen), so sample size does not decrease
+#     monotonically, and TED specificity dips at the UKB hyperthyroidism step.
+counts = [("2,809", "BBJ Graves"), ("3,731", "UKB hyperthyroidism"), ("858", "FinnGen GO")]
+missing_counts = [f"{n} ({who})" for n, who in counts if n not in t]
+ok(not missing_counts, f"outcome case counts present (missing: {missing_counts or 'none'})")
+monotone = [q for q in ["decreasing sample size", "increasing TED specificity"] if q in t]
+ok(not monotone, f"hierarchy described functionally, not as monotone (found: {monotone or 'none'})")
 
 print("\nRESULT:", "ALL PASS ✅" if not fails else f"{len(fails)} FAIL ❌")
 sys.exit(0 if not fails else 1)

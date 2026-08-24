@@ -149,3 +149,24 @@ association. Flagged by external review; located exhaustively by a repo-wide sca
 **No plotted value changed.** Figure 1 was regenerated; all numbers still come from TaskD_03d,
 TaskE_01 and TaskF_01, and the funnel counts are still parsed from Table 3 with the sum-to-13
 assertion.
+
+---
+
+## 2026-08 round 4: the outcome hierarchy was described as monotone; it is not
+
+**Defect.** Methods read "a prespecified hierarchy of **decreasing sample size but increasing TED
+specificity**". Neither ordering holds. Case counts run 2,809 (BBJ Graves) → **3,731** (UKB
+hyperthyroidism) → 858 (FinnGen Graves ophthalmopathy), so sample size rises at the second step; and
+TED specificity *falls* at that step, because UKB hyperthyroidism is a broader phenotype than BBJ
+Graves disease. The hierarchy is functional — discovery, then cross-ancestry/broader-phenotype
+replication, then TED-enriched sensitivity — not monotone in either quantity. Flagged by external
+review.
+
+**Fix.** Methods now says "a prespecified **functional** hierarchy" and names each outcome's role
+explicitly; the follow-on sentence was rewritten to describe the three steps rather than assert an
+ordering. The same sentence survived in two superseded cover-letter drafts (`COVER_LETTER.md` and
+`TrackA_MR/v5_upgrade/07_manuscript/COVER_LETTER.md`) and was corrected there too. The letter
+actually being submitted never carried it.
+
+**Guard.** `scripts/audit_paper1_integrity.py` check 14 asserts 2,809 / 3,731 / 858 are all present
+in the master and fails on "decreasing sample size" or "increasing TED specificity".

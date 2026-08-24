@@ -6,7 +6,7 @@ IGF1R in Graves disease and thyroid eye disease.
 **Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `a672b8e202a4ec37296eb37d01f1d306`, placeholders = 0, integrity audit ALL PASS).
+(md5 `fa27b83bb5111cb47b5d8e1ccd8189dd`, placeholders = 0, integrity audit ALL PASS).
 
 **Target venue:** Endocrine Connections (1st choice) → Endocrine → JEI → Frontiers-Endo/BMC.
 See `../internal/SUBMISSION_VENUE_CASCADE.md`.
@@ -32,7 +32,7 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
 - Main tables 3; Supplementary tables **S1–S8**; figure legends 5.
 - OR = exp(β) verified for all 9 backbone estimates.
 - Abstract **235 words, single paragraph** with inline structured headings (Endocrine Connections format).
-- Main text **4,772 words** (Intro 655 / Methods 1,075 / Results 1,506 / Discussion 1,536) — under the 5,000-word
+- Main text **4,774 words** (Intro 655 / Methods 1,077 / Results 1,506 / Discussion 1,536) — under the 5,000-word
   Endocrine Connections limit. Recount with `python3 ../scripts/26_wordcount_main_text.py`.
 
 ## Substantive upgrades applied in the final round (2026-08)
@@ -87,6 +87,17 @@ Tables 1–3 and Supplementary S1–S8 are embedded in the main `.docx` (no sepa
 | 7 | **Stale duplicate master removed** | ✅ `submission/MANUSCRIPT_TED_TRAP_v5_MASTER.md` was a tracked mirror frozen at commit `35c8c22` (md5 `ade74638…`) — it still carried "identical instruments" and "case series". Deleted; the markdown source of truth is `../MANUSCRIPT_TED_TRAP_v5_MASTER.md`. The integrity audit now **fails** if a second master copy reappears |
 | 8 | **Table S6 footnote credited *CTLA4* with support it does not have** | ✅ found by adversarial verification, not by the reviewer. The footnote read "Single-instrument loci (TSHR all outcomes; CTLA4 in BBJ) are supported by colocalization and fine-mapping" — but *CTLA4* was never fine-mapped (SuSiE was run only at *TSHR*) and its BBJ posterior favours **distinct** causal variants (PP.H3 = 0.794, PP.H4 = 0.206). Rewritten to state exactly what supports what |
 | 9 | Table 2 footnote defined PP.H2 incorrectly | ✅ a sentence added earlier in this same round said "PP.H2 concerns the shared-variant hypothesis". PP.H2 is the *cis*-eQTL-only hypothesis (PP.H4 is the shared-variant one), which contradicted Methods, the Figure 3 and S2 legends and the Table S2 header. Now: "Colocalization tests only the shared-causal-variant hypothesis, so a PP.H2-dominant posterior does not contradict the nominal MR association reported above" |
+
+## External review round 4 — applied 2026-08
+
+| # | Item | Applied |
+|---|---|---|
+| 1 | **Methods outcome-hierarchy sentence was factually wrong** | ✅ it read "a prespecified hierarchy of decreasing sample size but increasing TED specificity", but the case counts run 2,809 (BBJ) → **3,731** (UKB) → 858 (FinnGen) — not monotonically decreasing — and TED specificity *dips* at the UKB hyperthyroidism step. Replaced with "a prespecified **functional** hierarchy", and the follow-on sentence now reads "Because adequately powered TED-specific GWAS are unavailable, this design prioritized discovery in Graves disease, assessed generalizability in a broader hyperthyroidism phenotype, and finally examined signal recovery in a smaller TED-enriched outcome" |
+| 2 | Same claim in superseded cover-letter drafts | ✅ `COVER_LETTER.md` and `TrackA_MR/v5_upgrade/07_manuscript/COVER_LETTER.md` carried the identical sentence. Both corrected. The letter actually being submitted (`COVER_LETTER_EndocrineConnections.md`) never contained it |
+| 3 | Corresponding-author details | ⛔ still outstanding (to-do 1) |
+
+The integrity audit now asserts the three case counts are present and **fails** if the hierarchy is
+described as monotone in sample size or TED specificity.
 
 ## Author to-do before clicking submit
 1. **Author and corresponding-author details — BLOCKING, needs the author's own information.**
