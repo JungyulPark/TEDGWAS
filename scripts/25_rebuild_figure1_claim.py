@@ -9,7 +9,7 @@ replacement carries the paper's argument on its own:
   (A) the screening funnel, with every attrition step labelled by WHY genes were removed
       (MHC/LD spillover, single-outcome colocalization, distinct-variant) — ending at
       0 robust novel targets;
-  (B) the verdict panel — the same three evidence layers scored for TSHR vs IGF1R, so the
+  (B) the verdict panel — the same two evidence layers scored for TSHR vs IGF1R, so the
       divergence that titles the paper is visible at a glance.
 
 Every number is read from the locked master and result tables; nothing is hard-coded
@@ -26,9 +26,8 @@ from matplotlib.patches import FancyBboxPatch, Polygon
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MASTER = f"{ROOT}/MANUSCRIPT_TED_TRAP_v5_MASTER.md"
-COLOC = f"{ROOT}/TrackA_MR/v5_upgrade/05_coloc_candidates/TaskE_01_coloc_results_v1.csv"
+COLOC = f"{ROOT}/TrackA_MR/v5_upgrade/05_coloc_candidates/TaskE_01b_coloc_v2_20260904.csv"
 MR = f"{ROOT}/TrackA_MR/v5_upgrade/04_druggable_mr/results/TaskD_03d_MR_all_outcomes_merged_v1.csv"
-TISSUE = f"{ROOT}/TrackA_MR/v5_upgrade/06_tissue_integration/TaskF_01_backbone_tissue_inhouse_v1.csv"
 OUT = [f"{ROOT}/TrackA_MR/v5_upgrade/07_manuscript/figures/Figure1_study_design.png",
        f"{ROOT}/submission/figures/Figure1.png"]
 
@@ -39,7 +38,7 @@ plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10})
 
 def master_counts():
     t = open(MASTER).read()
-    for n in ("4,462", "2,545", "2,235", "6,136"):
+    for n in ("4,462", "2,544", "2,234", "6,135"):
         assert n in t, f"count {n} not in master"
     sec = t.split("**Table 3.")[1].split("\n\n")[1]
     rows = [r for r in sec.split("\n") if r.startswith("|") and "---" not in r]
@@ -53,21 +52,20 @@ def master_counts():
 
 
 def backbone_values():
-    co = {(r["gene_symbol"], r["outcome"]): r
-          for r in csv.DictReader(open(COLOC))}
+    co = {(r["gene"], r["outcome"]): r
+          for r in csv.DictReader(open(COLOC)) if r["p12"] in ("1e-05", "1e-5")}
     mr = {(r["gene_symbol"], r["outcome"]): r for r in csv.DictReader(open(MR))
           if r["method"] in ("Inverse variance weighted", "Wald ratio")}
-    ti = {r["gene"]: r for r in csv.DictReader(open(TISSUE))}
     out = {}
     for g in ("TSHR", "IGF1R"):
         out[g] = dict(
             beta_bbj=float(mr[(g, "BBJ_Graves")]["beta"]),
             p_bbj=float(mr[(g, "BBJ_Graves")]["pvalue"]),
-            h4_bbj=float(co[(g, "BBJ_Graves")]["pp_h4"]),
-            h4_fin=float(co[(g, "FinnGen_GO")]["pp_h4"]),
-            h2_bbj=float(co[(g, "BBJ_Graves")]["pp_h2"]),
-            h2_fin=float(co[(g, "FinnGen_GO")]["pp_h2"]),
-            tis_fc=float(ti[g]["deseq2_log2fc"]), tis_p=float(ti[g]["deseq2_padj"]),
+            h4_bbj=float(co[(g, "BBJ_Graves")]["PP.H4"]),
+            h4_ukb=float(co[(g, "UKB_hyperthyroid")]["PP.H4"]),
+            h4_fin=float(co[(g, "FinnGen_GO")]["PP.H4"]),
+            h2_bbj=float(co[(g, "BBJ_Graves")]["PP.H2"]),
+            h2_fin=float(co[(g, "FinnGen_GO")]["PP.H2"]),
         )
     return out
 
@@ -102,8 +100,8 @@ def build():
 
     steps = [
         ("4,462", "druggable genes\n(Finan et al.)", 0.86, 1.00),
-        ("2,545", "MR-testable with a valid\neQTLGen cis instrument (6,136 IVs)", 0.66, 0.84),
-        ("2,235", "estimable against the\nBBJ discovery outcome", 0.46, 0.68),
+        ("2,544", "MR-testable with a valid\neQTLGen cis instrument (6,135 IVs)", 0.66, 0.84),
+        ("2,234", "estimable against the\nBBJ discovery outcome", 0.46, 0.68),
         ("13", "Bonferroni-significant\ndiscovery hits (P < 1.965×10⁻⁵)", 0.26, 0.50),
     ]
     for i, (n, lab, y, wfrac) in enumerate(steps):
@@ -138,10 +136,10 @@ def build():
     # verdict strip
     box(axA, 0.055, 0.055, 0.89, 0.105, "#fdf3f3", ANCHOR, 1.4)
     axA.text(0.077, 0.108, "0", fontsize=25, fontweight="bold", color=ANCHOR, va="center")
-    axA.text(0.135, 0.128, "robust novel druggable targets", fontsize=11.5,
+    axA.text(0.135, 0.128, "qualifying novel druggable candidates", fontsize=11.5,
              fontweight="bold", color=INK, va="center")
     axA.text(0.135, 0.086,
-             "No non-established gene showed shared-variant colocalization in both outcomes. "
+             "No non-established gene showed shared-variant colocalization in more than one outcome. "
              "At 80% power the screen\ncould detect a median OR of 2.55 (Table S8), so this constrains "
              "further large effects, not moderate ones.",
              fontsize=8.5, color=MUTED, va="center", linespacing=1.45)
@@ -153,7 +151,7 @@ def build():
     axB.text(0.035, 1.02, "Where the two receptors diverge", fontsize=13,
              fontweight="bold", va="top")
     axB.text(0.035, 0.945,
-             "The same three evidence layers and the same outcome hierarchy, with gene-specific instruments — read across each row.",
+             "The same two evidence layers and the same outcome hierarchy, with gene-specific instruments — read across each row.",
              fontsize=9.5, color=MUTED, va="top")
 
     T, I = bb["TSHR"], bb["IGF1R"]
@@ -161,12 +159,9 @@ def build():
         ("Genetic association\n(MR, BBJ discovery)",
          f"β = {T['beta_bbj']:+.2f}\nP = 1.1×10⁻¹⁴", True,
          f"β = {I['beta_bbj']:+.2f}\nP = {I['p_bbj']:.3f}", None),
-        ("Shared causal variant\n(colocalization)",
-         f"PP.H4 = {T['h4_bbj']:.3f} / {T['h4_fin']:.3f}\nshared variant rs179252", True,
-         f"PP.H2 = {I['h2_bbj']:.2f} / {I['h2_fin']:.2f}\ncis-eQTL only,\nno shared variant", False),
-        ("Orbital tissue\n(exploratory, 4 vs 1)",
-         f"log2FC = {T['tis_fc']:+.2f}\nadj P = {T['tis_p']:.3f}", True,
-         f"log2FC = {I['tis_fc']:+.2f}\nadj P > 0.99", False),
+        ("Shared causal variant\n(colocalization:\nBBJ / UKB / FinnGen)",
+         f"PP.H4 = {T['h4_bbj']:.2f} / {T['h4_ukb']:.2f} / {T['h4_fin']:.2f}\nrs179252 shared in both\nGraves phenotypes", True,
+         f"PP.H4 = {I['h4_bbj']:.2f} / {I['h4_ukb']:.2f} / {I['h4_fin']:.2f}\ncis-eQTL only in Graves\n(PP.H2 = {I['h2_bbj']:.2f} / {I['h2_fin']:.2f})", False),
     ]
     # header
     axB.text(0.3225, 0.865, "TSHR", ha="center", fontsize=12.5, fontweight="bold", color=ANCHOR)
@@ -175,7 +170,7 @@ def build():
     axB.text(0.7425, 0.815, "teprotumumab target", ha="center", fontsize=8.8, color=MUTED)
     axB.plot([0.035, 0.965], [0.785, 0.785], color=RULE, lw=1.1)
 
-    y = 0.70
+    y = 0.60
     for lab, tv, tok, iv, iok in rows:
         axB.text(0.035, y, lab, va="center", fontsize=9, color=INK, linespacing=1.4)
         box(axB, 0.215, y - 0.078, 0.215, 0.156, "#fdf3f3", ANCHOR, 1.1)
@@ -190,7 +185,7 @@ def build():
         axB.text(0.875, y, "✓" if iok else ("~" if iok is None else "✗"),
                  ha="center", va="center", fontsize=13,
                  color=EFFECTOR if iok is not False else MUTED)
-        y -= 0.235
+        y -= 0.320
 
     axB.plot([0.035, 0.965], [0.075, 0.075], color=RULE, lw=1.1)
     axB.text(0.5, 0.028,
@@ -203,7 +198,7 @@ def build():
         fig.savefig(p, dpi=300, facecolor="white", bbox_inches="tight")
     plt.close(fig)
     print("Figure 1 rebuilt as a claim figure")
-    print(f"  funnel: 4,462 -> 2,545 -> 2,235 -> 13 -> 0 robust novel")
+    print(f"  funnel: 4,462 -> 2,544 -> 2,234 -> 13 -> 0 qualifying novel candidates")
     print(f"  13 hits = {n_mhc} MHC + {n_ld} chr16 LD + {n_single} single-outcome + "
           f"{n_distinct} distinct-variant + {n_known} established")
 
