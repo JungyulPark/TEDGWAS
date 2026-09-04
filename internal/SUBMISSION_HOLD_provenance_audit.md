@@ -364,3 +364,98 @@ Only after 1–4 pass should tables, figures and the abstract be regenerated.
 are licence-bound and not in this repository. The v5 scripts point at
 `c:/ProjectTEDGWAS/`. These re-runs must happen on the machine that holds those
 files; this container can prepare and verify the scripts but cannot execute them.
+
+---
+
+# Task 3 addendum — remote verification (2026-09-04)
+
+The local session's Task 3 forensics were re-checked here. Three findings verified
+independently, plus one analytical result that bounds how far the new bug reaches.
+
+## Verified: the fabricated block was written at packaging time
+
+`git log -S"rs11603529"` returns exactly one commit, and its diff is unambiguous.
+Commit **`e72f84c` "Finalize JEI submission package"** replaced this —
+
+```
+[Per-credible-set PIP values from the SuSiE output to be tabulated in the final
+supplementary file.]
+```
+
+— with the five-variant PIP table, "single 95% credible set (purity = 0.993)",
+"log₁₀ Bayes factor = 88.2" and the "~116-kb window". Its own commit message states
+the goal: *"S3 PIP table + S5 chr16 coords/r2 filled (placeholders now 0)"*.
+
+**A placeholder was closed by inventing its contents rather than by reading the
+SuSiE output.** This is the same failure mode as Task 2's FinnGen denominator, one
+step worse: Task 2 produced a wrong number, this produced a whole results table.
+
+The immediately preceding version said the credible-set leads fell within a
+**~15-kb** window — which matches the real lead span the local session measured
+(15.3 kb). The "~116-kb" figure is arithmetic on the two fabricated coordinates.
+
+## Verified: the same commit's other placeholder was filled correctly
+
+`e72f84c` also filled Table S5's chr16 coordinates. Those **are** genuine — all
+three match `TaskD_02a_eqtl_instruments_snp_level_v1.csv` exactly:
+
+```
+HSD3B7  rs4889606   31,011,183      VKORC1  rs34649473  31,066,538
+PRSS36  rs78924645  31,154,358
+```
+
+So the commit is not uniformly untrustworthy. The difference is that S5's values sat
+in an accessible CSV while S3's PIPs required opening the SuSiE output.
+**Still unverified from that commit: the S5 pairwise r² values (0.90 / 0.19 / 0.20).
+Task 5 must confirm them from an LD computation, not assume them.**
+
+## Verified: there is no allele harmonization in the SuSiE script
+
+`TrackA_MR/v5_upgrade/scripts/taskB_04_susie_finemap.R`, checked line by line:
+
+- **L62** `plink --r square --keep-allele-order` — produces **signed** correlations,
+  oriented to the 1000G `.bim` A1.
+- **L106** `sub <- sub[match(retained, snp)]` — reorders the z-vector to the LD
+  matrix **by rsID only**.
+- Nothing anywhere compares eQTLGen's `effect_allele` to the `.bim` A1. Greps for
+  `allele`, `flip`, `harmon`, `strand`, `sign` return only those two lines.
+
+So z is on eQTLGen's orientation and R is on the `.bim` orientation, with no
+reconciliation. The local session's diagnosis is correct.
+
+## New: how far the bug actually reaches
+
+Sign errors in R do not propagate everywhere, and the boundary matters for what has
+to be re-run.
+
+| consumer | uses | affected? |
+|---|---|---|
+| PLINK **clumping** (Table S3 clumping half, `TaskB_02`) | **r²** — sign-invariant | **No.** This is why that half verified row-for-row against source. |
+| `ld_with_rs179252_eur/eas` in `TaskB_05` (0.965, 0.808) | **r²** — sign-invariant | **No.** |
+| `susie_rss` (credible sets, PIPs) | **signed R** | **Yes.** |
+| `coloc.abf` under the single-causal-variant assumption | **no LD matrix at all** — only per-SNP p-values, MAF, N, s | **No.** PP.H4 = 0.951 / 0.986 are not contaminated by this bug. |
+| `coloc.susie` (proposed as a Task 4 option) | **signed LD** | **Yes — would inherit it.** Harmonize before running, or do not run it. |
+
+Two consequences:
+
+1. **Task 4's `coloc.abf` re-run is not blocked by Task 3.** The colocalization
+   defects (p-value-based ABF, European MAF on the East Asian outcome, missing UKB
+   arm) are independent of the allele bug and can proceed in parallel.
+2. **The single-IV decision survives either way.** It rests on r² — every other lead
+   at the locus sits at r² ≥ 0.808 (EAS) / 0.965 (EUR) with rs179252 — and r² is
+   sign-invariant. So whether harmonization merges the two European credible sets
+   into one or leaves them at two, *TSHR* remains a single-instrument, locus-level
+   anchor. What changes is the **stated** fine-mapping result, not the instrument
+   choice built on it.
+
+## Still open, pending the local session's harmonization test
+
+- Whether the two European credible sets collapse to one after harmonization.
+  The local session found rs179252 (mismatched) and rs179248 (matched) sit in
+  *opposite* orientation groups, so the signed LD between the two credible-set leads
+  is the pair most likely to be wrong. Neither outcome is being claimed until the
+  test returns.
+- `rs179252` carrying **EAS PIP = 0** while the discovery outcome is East Asian.
+  This needs an explanation in the manuscript regardless of how the harmonization
+  test resolves, and the EAS run did not converge (`converged = FALSE`,
+  `estimate_s_rss` 0.868 vs 0.763 in EUR).
