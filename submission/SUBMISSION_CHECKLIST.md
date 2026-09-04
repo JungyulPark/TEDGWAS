@@ -28,7 +28,7 @@ IGF1R in Graves disease and thyroid eye disease.
 **Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `fa27b83bb5111cb47b5d8e1ccd8189dd`, placeholders = 0, integrity audit ALL PASS).
+(md5 `355bb88562dba62feb020bc457c32b9f`, placeholders = 0, integrity audit ALL PASS).
 
 **Target venue:** Endocrine Connections (1st choice) → Endocrine → JEI → Frontiers-Endo/BMC.
 See `../internal/SUBMISSION_VENUE_CASCADE.md`.

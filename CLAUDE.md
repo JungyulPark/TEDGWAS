@@ -99,10 +99,10 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
 - Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `fa27b83bb5111cb47b5d8e1ccd8189dd`
+  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `355bb88562dba62feb020bc457c32b9f`
   (placeholders = 0).
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,774. Abstract is a
-  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 235 words (≤250).
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,861. Abstract is a
+  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 237 words (≤250).
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)

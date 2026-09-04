@@ -21,7 +21,7 @@ disease (TED).
 | Path | Contents |
 |---|---|
 | `submission/` | **Final JEI package** — manuscript .docx, cover letter, 5 figures, checklist |
-| `MANUSCRIPT_TED_TRAP_v5_MASTER.md` | Markdown source of truth (md5 `fa27b83b…`) |
+| `MANUSCRIPT_TED_TRAP_v5_MASTER.md` | Markdown source of truth (md5 `355bb885…`) |
 | `FIGURE_VERIFICATION.md` | Figure-vs-master data verification record |
 | `TrackA_MR/v5_upgrade/` | Core v5 analysis results + canonical figures |
 | `scripts/` | Numbered R analysis + public-data download scripts (no data) |

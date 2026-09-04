@@ -23,6 +23,11 @@ Checks (all against the locked master MANUSCRIPT_TED_TRAP_v5_MASTER.md):
  13. the same banned phrases absent from README and the submission checklist
  14. outcome hierarchy described as functional (case counts 2,809 / 3,731 / 858 are
      not monotonically decreasing, and TED specificity dips at the UKB step)
+ 15. the fine-mapping layer stays withdrawn (the SuSiE run was invalid)
+ 16. no P value is reported for the single-control orbital tissue data
+ 17. the null is phrased as a criterion failure, not "no robust novel target"
+ 18. corrected screening figures present, superseded ones absent
+ 19. TSHR's UKB non-colocalization is disclosed wherever PP.H4 = 0.951 appears
 """
 import re, sys, hashlib, os
 
@@ -140,6 +145,33 @@ missing_counts = [f"{n} ({who})" for n, who in counts if n not in t]
 ok(not missing_counts, f"outcome case counts present (missing: {missing_counts or 'none'})")
 monotone = [q for q in ["decreasing sample size", "increasing TED specificity"] if q in t]
 ok(not monotone, f"hierarchy described functionally, not as monotone (found: {monotone or 'none'})")
+
+# 15. the fine-mapping layer was withdrawn (invalid SuSiE run — no allele
+#     harmonisation between the z-scores and the LD reference). Nothing in the
+#     manuscript may reintroduce it.
+finemap = [q for q in ["fine-map", "fine map", "SuSiE", "susieR", "credible set",
+                       "credible-set", "posterior inclusion probability"] if q in t]
+ok(not finemap, f"fine-mapping layer stays withdrawn (found: {finemap or 'none'})")
+
+# 16. the orbital tissue data are descriptive only — no P value may reappear
+#     alongside them (one control cannot support differential-expression inference)
+tissue_p = [q for q in ["adjusted *P* = 0.032", "adjusted P=0.032", "log2FC=+2.33, adjusted",
+                        "padj = 0.032"] if q in t]
+ok(not tissue_p, f"no tissue P value reported (found: {tissue_p or 'none'})")
+
+# 17. the null is a criterion failure, not an absence of targets
+ok("robust novel target" not in t, "null stated as a criterion, not 'robust novel target'")
+
+# 18. corrected screening figures, and the superseded ones absent
+for n in ("2,544", "6,135", "2,234", "29.7"):
+    ok(n in t, f"corrected screening figure present: {n}")
+stale_counts = [n for n in ("2,545", "6,136", "2,235") if n in t]
+ok(not stale_counts, f"superseded screening figures absent (found: {stale_counts or 'none'})")
+
+# 19. TSHR colocalization must not be stated without the UKB counterexample
+if "0.951" in t:
+    ok("0.774" in t or "rs1023586" in t,
+       "TSHR UKB non-colocalization disclosed alongside PP.H4 = 0.951")
 
 print("\nRESULT:", "ALL PASS ✅" if not fails else f"{len(fails)} FAIL ❌")
 sys.exit(0 if not fails else 1)
