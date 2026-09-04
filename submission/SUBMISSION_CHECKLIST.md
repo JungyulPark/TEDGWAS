@@ -7,7 +7,7 @@
 
 **Target venue:** Endocrine Connections
 
-Built from `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (md5 `6bdb94330108bb4620bcf3d33b1ab84f`) by
+Built from `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (md5 `8ead93d32c35404a5bd30974e192b73c`) by
 `python3 scripts/29_build_submission_package.py`. The master is the only source of truth;
 every file below is derived from it and must be rebuilt, never hand-edited.
 
@@ -30,7 +30,7 @@ EC 버전에서 다시 만드십시오.
 
 ## 내용 확인 (자동 검사 통과)
 
-- 본문 **4,933 단어** (한도 5,000) · Abstract **237 단어, 한 문단**
+- 본문 **4,959 단어** (한도 5,000) · Abstract **237 단어, 한 문단**
 - 참고문헌 **26개**, 전부 인용, 범위 밖 없음
 - 본문 표 3개 / 부록 표 9개 (S1–S9) / 그림 5개
 - 근거층 **2개** — MR과 colocalization. Fine-mapping은 철회, 조직은 서술적 관찰
@@ -57,7 +57,7 @@ IGF1R in Graves disease and thyroid eye disease.
 **Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
 Master source of truth: `MANUSCRIPT_TED_TRAP_v5_MASTER.md`
-(md5 `6bdb94330108bb4620bcf3d33b1ab84f`, placeholders = 0, integrity audit ALL PASS).
+(md5 `8ead93d32c35404a5bd30974e192b73c`, placeholders = 0, integrity audit ALL PASS).
 
 **Target venue:** Endocrine Connections (1st choice) → Endocrine → JEI → Frontiers-Endo/BMC.
 See `../internal/SUBMISSION_VENUE_CASCADE.md`.

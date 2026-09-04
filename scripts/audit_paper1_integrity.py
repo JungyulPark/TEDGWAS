@@ -162,6 +162,20 @@ ok(not tissue_p, f"no tissue P value reported (found: {tissue_p or 'none'})")
 # 17. the null is a criterion failure, not an absence of targets
 ok("robust novel target" not in t, "null stated as a criterion, not 'robust novel target'")
 
+# 23. no significance language for the untested tissue data
+sig_tissue = [q for q in ["significantly differentially expressed",
+                          "not significantly differentially"] if q in t]
+ok(not sig_tissue, f"no differential-expression significance claimed (found: {sig_tissue or 'none'})")
+
+# 24. candidate and CTLA4 posteriors must be the v2 values everywhere
+stale_pp = [q for q in ["PP.H3 = 0.794", "PP.H4 = 0.206", "PP.H2 = 0.63 and 0.64",
+                        "PP.H2 = 0.73\u20130.74", "PP.H4 \u2264 0.62"] if q in t]
+ok(not stale_pp, f"no superseded colocalization posteriors (found: {stale_pp or 'none'})")
+
+# 25. Table S4's relaxed-threshold column is a variant count, not an instrument count
+ok("Variants (P < 5\u00d710\u207b\u2076, unclumped)" in t,
+   "Table S4 relaxed column labelled as unclumped variants")
+
 # 20. DESeq2 was withdrawn with the inferential tissue analysis; its fold-change
 #     estimates must not be quoted either (TPM values are +2.59/+0.80/+1.58)
 deseq = [q for q in ["DESeq2", "+2.33", "+0.41", "+1.27"] if q in t]

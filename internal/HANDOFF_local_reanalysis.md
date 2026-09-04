@@ -391,3 +391,51 @@ Task 2와 3은 서로 독립이라 병렬 가능합니다. **Task 4는 Task 2의
 확정되어야 시작할 수 있습니다.**
 
 Task 4까지 통과하면 원고 재생성으로 넘어갑니다. 그 전에는 원고를 건드리지 않습니다.
+
+---
+
+# Task 6 (open) — eQTLGen allele-frequency sensitivity
+
+The one item from external review round 7 that cannot be closed in the remote
+container, because it needs the licence-bound eQTLGen allele-frequency file.
+
+**The issue.** Exposure effect sizes were reconstructed from eQTLGen Z-scores and
+per-SNP sample sizes using **1000 Genomes European allele frequencies (n = 503)**,
+not the allele-frequency file eQTLGen distributes (n = 26,609). The manuscript now
+states this and its consequence, but the check itself is missing.
+
+**What is and is not affected** (this reasoning is now in Limitations, so the
+re-analysis only has to confirm the magnitude):
+
+- **Single-instrument loci** — β and SE both scale with the same factor, so β/SE,
+  the direction and the *P* value are invariant. *TSHR* and the *CTLA4* discovery
+  arm fall here, and their MR results cannot move.
+- **Multi-instrument loci** — inverse-variance weights are 1/SE², so a per-SNP
+  frequency error reweights the pooled estimate. *IGF1R* (4 instruments) is the
+  case that matters.
+- **Colocalization** — the v2 run uses beta and varbeta, both of which carry the
+  frequency, so every posterior depends on it.
+- **Table S8 power** — computed from the observed SEs, so it moves with them.
+
+**What to run.**
+
+1. Download the eQTLGen allele-frequency file
+   (https://www.eqtlgen.org/cis-eqtls.html) and join it to the instrument manifest
+   on rsID, checking allele orientation against the eQTLGen effect allele.
+2. Re-derive β and SE for all 6,135 instruments with those frequencies.
+3. Re-run: MR for the three backbone genes and the thirteen discovery hits across
+   all three outcomes; colocalization for the nine genes in `taskE_01b_coloc_v2.R`;
+   and Table S8.
+4. Report, in `internal/EQTLGEN_MAF_SENSITIVITY.md`, a side-by-side table of β, SE,
+   OR, *P* and PP.H4 under both frequency sources, plus the maximum absolute change
+   in PP.H4 and whether any estimate crosses a reporting threshold.
+
+**Acceptance.** If nothing crosses a threshold, add one sentence to Limitations
+recording that the sensitivity analysis was performed and the conclusions were
+unchanged, and the caveat can be shortened. If something does move, the affected
+numbers are re-reported from the eQTLGen-frequency run, which is the better
+primary analysis in any case.
+
+**Note.** The instrument manifest to join against is
+`TaskD_02a_eqtl_instruments_snp_level_v2_verified.csv` (6,135 rows), not the v1
+file — v1 still contains the GAN row that failed the selection threshold.
