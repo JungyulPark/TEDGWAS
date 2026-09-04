@@ -1,3 +1,25 @@
+# ⛔ 제출 보류 — SUBMISSION ON HOLD
+
+**이 패키지를 업로드하지 마십시오.** 외부 리뷰 5차에서 제기된 8개 항목을 원본 데이터로
+검증한 결과, **provenance 결함 5건이 확인**되었습니다. 상세: `../internal/SUBMISSION_HOLD_provenance_audit.md`
+
+| 확인된 결함 | 요약 |
+|---|---|
+| 도구변수 1개가 선정 기준 위반 | `GAN`/`rs310019`, P = 1.6×10⁻⁴ → 보고된 min F 14.2의 정체. 정정: 6,135 instruments / 2,544 genes / 2,234 estimable / min F 29.72 |
+| Table S3 fine-mapping 수치 재현 불가 | 원본은 EUR credible set **2개**(각 1 SNP, purity 1). 원고의 "단일 CS, purity 0.993, log₁₀BF 88.2"와 5개 PIP 목록은 저장소 어느 파일에도 없음 (`rs11603529`, `rs10137255` 미존재) |
+| FinnGen endpoint·증례수 미확정 | v5 스크립트는 `GRAVES_OPHT`(broader), 다른 스크립트는 `E4_GRAVES_OPHT`(strict). 858이 두 분모(500,348 / 520,387)에 동시 사용. `taskE_01_coloc.R`에 `# Placeholder — CONFIRM control count` 주석이 그대로 남아 있음 |
+| coloc 입력이 p-value 기반 + 단일 EUR MAF | beta/varbeta 미사용 → MAF·N·s가 사후확률에 직접 반영. 동아시아 BBJ에 유럽 MAF 벡터 적용 |
+| UKB colocalization 미실시 | `TaskE_01` outcome은 BBJ와 FinnGen 둘뿐. eQTLGen과 인종이 가장 맞고 IGF1R MR이 가장 강한 outcome이 빠짐 |
+
+추가로 chr16p11.2 "단일 LD 신호" 주장(PRSS36 r² = 0.19/0.20)과
+"no robust novel target" 결론(TNFSF14는 UKB에서 P = 0.0056으로 방향 일치 복제)이 과도합니다.
+
+**작업 순서는 문장 수정이 아니라 ① instrument manifest 재검증 → ② FinnGen 파일 확정 →
+③ SuSiE 재실행 → ④ 세 outcome colocalization 재분석입니다.** ②–④는 라이선스 데이터가
+있는 로컬 머신에서만 가능합니다.
+
+---
+
 # Submission package — TED-TRAP Paper 1 (v5, final)
 
 **Manuscript:** Genetic susceptibility and therapeutic target biology diverge at TSHR and
