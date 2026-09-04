@@ -40,7 +40,13 @@ SUBDIR = f"{ROOT}/submission/figures"
 INK, MUTED, RULE = "#1a1d23", "#5c6673", "#c9d0d9"
 ANCHOR, EFFECTOR = "#a4262c", "#2e75b6"
 H2C, H3C, H4C = "#b9c0c9", "#e0a458", "#3f6f3f"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10})
+plt.rcParams.update({
+    "font.family": "serif",
+    "font.serif": ["Times New Roman", "Liberation Serif", "Nimbus Roman",
+                   "FreeSerif", "DejaVu Serif"],
+    "mathtext.fontset": "stix",
+})
+plt.rcParams["font.size"] = 10
 
 BACKBONE = ["TSHR", "IGF1R", "CTLA4"]
 CANDIDATES = ["TNFSF14", "IFNGR1", "MAPKAPK5", "HSD3B7", "VKORC1", "PRSS36"]
@@ -167,8 +173,11 @@ def figure3(co, mr):
             axB.errorbar(b, y, xerr=1.96 * se, fmt="o", ms=5.5, color=c,
                          ecolor=c, elinewidth=1.5, capsize=3)
             pv = float(r["pvalue"])
-            ptxt = (f"P = {pv:.3f}" if pv >= 1e-3
-                    else f"P = {pv:.1e}".replace("e-0", " \u00d7 10\u207b").replace("e-", " \u00d7 10\u207b"))
+            if pv >= 1e-3:
+                ptxt = f"$P$ = {pv:.3f}"
+            else:
+                mant, exp = f"{pv:.1e}".split("e")
+                ptxt = f"$P$ = {mant} $\\times$ 10$^{{{int(exp)}}}$"
             axB.text(1.015, y, ptxt, transform=axB.get_yaxis_transform(),
                      va="center", ha="left", fontsize=7.8, color=c)
             lab.append(l.replace("\n", " "))
@@ -185,7 +194,7 @@ def figure3(co, mr):
     axB.set_yticklabels(lab, fontsize=8.4)
     for t, c in zip(axB.get_yticklabels(), col):
         t.set_color(c)
-    axB.set_xlabel("MR effect on disease (β, log-odds per unit genetically proxied expression)",
+    axB.set_xlabel("MR effect on disease ($\\beta$, log-odds per unit genetically proxied expression)",
                    fontsize=9.2)
     for sp in ("top", "right", "left"):
         axB.spines[sp].set_visible(False)

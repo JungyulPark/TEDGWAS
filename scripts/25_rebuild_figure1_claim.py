@@ -28,7 +28,13 @@ OUT = [f"{ROOT}/TrackA_MR/v5_upgrade/07_manuscript/figures/Figure1_study_design.
        f"{ROOT}/submission/figures/Figure1.png"]
 
 INK, RULE = "#000000", "#555555"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8.5})
+plt.rcParams.update({
+    "font.family": "serif",
+    "font.serif": ["Times New Roman", "Liberation Serif", "Nimbus Roman",
+                   "FreeSerif", "DejaVu Serif"],
+    "mathtext.fontset": "stix",
+})
+plt.rcParams["font.size"] = 8.5
 
 
 def master_counts():
@@ -90,18 +96,20 @@ def build():
         (0.720, 0.130, "MR-testable\n\u22651 valid cis-eQTL instrument (6,135 total)",
          "n = 2,544 genes"),
         (0.515, 0.110, "Estimable against discovery outcome", "n = 2,234 genes"),
-        (0.305, 0.130, "Bonferroni-significant in discovery\nP < 1.965 \u00d7 10\u207b\u2075",
+        (0.305, 0.130, "Bonferroni-significant in discovery\n$P$ < 1.965 $\\times$ 10$^{-5}$",
          "n = 13 genes"),
         (0.085, 0.110, "Met the colocalization criterion", "n = 0 novel candidates"),
     ]
+    LH = 0.0295                      # line height in axis units
     for k, (cy, h, lab, num) in enumerate(main):
         last = (k == len(main) - 1)
         box(ax, MX, cy, MW, h, lw=1.6 if last else 1.1)
-        nlines = lab.count("\n") + 1
-        ax.text(MX, cy + (0.020 if nlines == 1 else 0.032), lab, ha="center", va="center",
-                fontsize=LAB, linespacing=1.35, color=INK)
-        ax.text(MX, cy - (0.026 if nlines == 1 else 0.036), num, ha="center", va="center",
-                fontsize=NUM, fontweight="bold", color=INK)
+        lines_ = lab.split("\n") + [num]
+        top = cy + (len(lines_) - 1) / 2 * LH
+        for li, txt in enumerate(lines_):
+            is_num = (li == len(lines_) - 1)
+            ax.text(MX, top - li * LH, txt, ha="center", va="center",
+                    fontsize=NUM if is_num else LAB, color=INK)
         if not last:
             ny, nh = main[k + 1][0], main[k + 1][1]
             ax.annotate("", xy=(MX, ny + nh / 2), xytext=(MX, cy - h / 2),
@@ -116,9 +124,8 @@ def build():
                     arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.1,
                                     mutation_scale=14))
         box(ax, EX, cy, EW, 0.085)
-        ax.text(EX, cy + 0.018, lab, ha="center", va="center", fontsize=9.6, color=INK)
-        ax.text(EX, cy - 0.022, num, ha="center", va="center", fontsize=10.8,
-                fontweight="bold", color=INK)
+        ax.text(EX, cy + 0.0135, lab, ha="center", va="center", fontsize=9.6, color=INK)
+        ax.text(EX, cy - 0.0135, num, ha="center", va="center", fontsize=10.6, color=INK)
 
     # resolution of the 13, branching sideways from that box
     cy = 0.245
@@ -134,8 +141,7 @@ def build():
             (n["known"], "established loci")]
     yy = cy + 0.040
     for k, lab in rows:
-        ax.text(EX - EW / 2 + 0.030, yy, str(k), fontsize=9.8, va="center",
-                fontweight="bold", color=INK)
+        ax.text(EX - EW / 2 + 0.030, yy, str(k), fontsize=9.8, va="center", color=INK)
         ax.text(EX - EW / 2 + 0.062, yy, lab, fontsize=9.4, va="center", color=INK)
         yy -= 0.031
 
@@ -156,8 +162,8 @@ def build():
     axb.plot([x0, xR], [0.665, 0.665], color=INK, lw=1.0)
 
     body = [
-        ("Discovery MR", f"\u03b2 = {T['beta']:+.2f}\nP = 1.1 \u00d7 10\u207b\u00b9\u2074",
-         f"\u03b2 = {I['beta']:+.2f}\nP = {I['p']:.3f}"),
+        ("Discovery MR", f"$\\beta$ = {T['beta']:+.2f}\n$P$ = 1.1 $\\times$ 10$^{{-14}}$",
+         f"$\\beta$ = {I['beta']:+.2f}\n$P$ = {I['p']:.3f}"),
         ("Colocalization PP.H4\ndiscovery / replication /\nTED-enriched",
          " / ".join(f"{v:.2f}" for v in T["h4"]),
          " / ".join(f"{v:.2f}" for v in I["h4"])),
