@@ -459,3 +459,120 @@ Two consequences:
   This needs an explanation in the manuscript regardless of how the harmonization
   test resolves, and the EAS run did not converge (`converged = FALSE`,
   `estimate_s_rss` 0.868 vs 0.763 in EUR).
+
+---
+
+# Task 4 + 5 addendum — remote verification (2026-09-04)
+
+All headline v2 numbers re-checked here against
+`TrackA_MR/v5_upgrade/05_coloc_candidates/TaskE_01b_coloc_v2_20260904.csv`
+(81 rows = 9 genes × 3 outcomes × 3 priors). They match the local session's report
+exactly. Two things need adding.
+
+## The core claim holds
+
+`TSHR` PP.H4: BBJ **0.951 → 0.951**, FinnGen **0.986 → 0.986**, unchanged to three
+decimals after switching to beta/varbeta, correcting the FinnGen denominator and
+removing the ancestry-MAF problem. The paper's central colocalization result is
+robust to every input defect found so far.
+
+## Gap in the local report: PP.H2 moved more than PP.H4
+
+The summary tracked PP.H4 changes ("max +0.030"). **PP.H2 moved 3.4× further**, and
+PP.H2 is what the manuscript actually prints for *IGF1R*:
+
+| | v1 | v2 | Δ |
+|---|---|---|---|
+| *IGF1R* × BBJ PP.H2 | 0.793 | **0.690** | −0.103 |
+| *IGF1R* × FinnGen PP.H2 | 0.675 | **0.623** | −0.052 |
+| *IGF1R* × BBJ PP.H4 | 0.043 | 0.073 | +0.030 |
+
+`"PP.H2 = 0.79 and 0.68"` appears in the Results *IGF1R* paragraph, the Figure 1
+legend and the Figure 3 legend, and `0.79 / 0.68` is baked into the rendered
+Figure 1 Panel B cell and the review page's summary card. **All must become
+0.69 / 0.62.** `CTLA4` BBJ PP.H3 also moves 0.794 → 0.799, so "PP.H3 = 0.79" becomes
+0.80.
+
+## The positive control now behaves better, not worse
+
+Adding UKB changes the picture recorded in Limitation "Eighth". `CTLA4` colocalizes
+in **two of three** outcomes — UKB **PP.H4 = 0.953** (new, lead rs3087243) and
+FinnGen 0.978 — failing only in the East Asian discovery arm (PP.H3 = 0.799).
+
+The current limitation says the single control "did not behave uniformly" and that
+"the sensitivity of the combined MR-plus-colocalization filter is not established by
+one control locus". The first clause should be **softened** and reframed as
+ancestry-dependence rather than control failure; the second still stands, since one
+control is still one control.
+
+## The genuinely new problem: TSHR does not colocalize in UKB
+
+| outcome | PP.H3 | PP.H4 | lead |
+|---|---|---|---|
+| BBJ | 0.049 | 0.951 | rs179252 |
+| **UKB** | **0.774** | **0.226** | **rs1023586** |
+| FinnGen | 0.014 | 0.986 | rs179252 |
+
+This is **not** a power problem — UKB carries the strongest signal at the locus of
+the three outcomes (minimum *P* = 1.40×10⁻⁴³) and the largest overlap (5,667 SNPs).
+The posterior positively favours a *distinct* causal variant, and the lead is not
+rs179252.
+
+Consequence for the text: "shared-variant colocalization at rs179252" cannot be
+stated without naming this counterexample. The defensible form is that *TSHR*
+colocalizes with the Graves disease and Graves ophthalmopathy outcomes but not with
+the broader UKB hyperthyroidism phenotype, where the posterior favours a distinct
+variant — which is consistent with UKB being a heterogeneous hyperthyroidism
+phenotype rather than Graves disease, and is worth saying plainly rather than
+omitting.
+
+## Prior sensitivity: two crossings, and they are the right two
+
+| | p12=1e-6 | 5e-6 | 1e-5 |
+|---|---|---|---|
+| *TSHR* × BBJ | **0.661** | 0.907 | 0.951 |
+| *CTLA4* × UKB | **0.672** | 0.911 | 0.953 |
+| *TSHR* × FinnGen | 0.875 | 0.972 | 0.986 |
+
+Only these two cross 0.80. The TED-enriched arm is the more robust one, which
+happens to favour the paper's thesis and therefore must be disclosed, not buried.
+
+## Citation defect confirmed via PubMed
+
+Checked independently here. According to PubMed:
+
+- **GCST90038636 (UKB hyperthyroidism)** → Dönertaş HM et al., "Common genetic
+  associations between age-related diseases," *Nat Aging* 2021;**1**(4):400–412,
+  PMID 33959723, [10.1038/s43587-021-00051-5](https://doi.org/10.1038/s43587-021-00051-5).
+  Keywords include "UK Biobank"; abstract: "116 diseases in the UK Biobank data".
+- **GCST90018627 (BBJ Graves)** → Sakaue S et al., *Nat Genet* 2021;**53**(10):1415–1424,
+  PMID 34594039, [10.1038/s41588-021-00931-x](https://doi.org/10.1038/s41588-021-00931-x).
+
+The local session's volume/issue/page entries are correct. Sakaue's abstract does say
+"Meta-analyses with the UK Biobank and FinnGen", which plausibly explains the
+misattribution.
+
+The manuscript cites **[13] for both** BBJ and UKB (Methods §Outcome data, Table 1).
+[13] is right for BBJ and wrong for UKB. Fixing it **adds a 28th reference and
+renumbers [14]–[27]**, which in turn means:
+
+- `scripts/audit_paper1_integrity.py` currently asserts `references listed = 27`.
+  That expectation must move to 28 **at the same commit** that adds the reference,
+  or the audit will fail.
+- Every in-text citation from [14] onward shifts by one.
+
+## Status after Tasks 1–5
+
+| defect | status |
+|---|---|
+| 1. instrument manifest | fixed remotely (6,135 / 2,544 / 2,234 / F 29.72) |
+| 2. FinnGen endpoint | resolved — 858 correct, denominator was not; no numerical effect |
+| 3. Table S3 fine-mapping | fabricated block identified (`e72f84c`); real output recovered; allele-harmonisation bug found; harmonisation test still running |
+| 4. colocalization | re-run for three outcomes; core result robust; three new findings above |
+| 5. chr16p11.2 | conclusion correct, rationale must be replaced (EAS r² + COJO, not EUR r²) |
+| — genome build | outcomes GRCh38 vs eQTLGen/1000G GRCh37; v2 switched to rsID matching; posteriors unchanged |
+| — UKB citation | wrong reference; adds a 28th reference |
+
+Manuscript regeneration is now unblocked except for the pending SuSiE
+harmonisation test, which affects only the Table S3 wording, not the instrument
+choice (r² is sign-invariant).
