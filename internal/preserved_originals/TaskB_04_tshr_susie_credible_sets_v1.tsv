@@ -1,0 +1,5 @@
+ld_reference_id	cs_id	n_snps_in_cs	cs_purity	top_snp	top_snp_pip	top_snp_pos_hg19	top_snp_p	ld_top_with_rs179252_eur	ld_top_with_rs179252_eas	coverage	converged
+1000G_phase3_EUR_hg19	1	1	1	rs179252	1	81435985	2.859e-40	1	1	0.95	TRUE
+1000G_phase3_EUR_hg19	2	1	1	rs179248	1	81433038	1.6399e-39	0.965053	0.991625	0.95	TRUE
+1000G_phase3_EAS_hg19	1	1	1	rs3783950	1	81448282	7.7538e-23	0.228995	0.808032	0.95	FALSE
+1000G_phase3_EAS_hg19	2	1	1	rs3783949	1	81448382	2.3834e-20	0.206849	0.808032	0.95	FALSE

@@ -142,22 +142,6 @@
 - Total N used: 520,387
 - Case count used: 858
 - Computed s (case proportion): 858 / 520,387 = 0.001648
-
-> **SUPERSEDED 2026-09-04 (Task 2).** The N recorded above is wrong and has no source anywhere in
-> this repository. The file actually used was `finngen_R12_GRAVES_OPHT.gz`
-> (md5 `1b26a77e1e4eb451e80ead00e4ec6f28`) = FinnGen R12 endpoint **`GRAVES_OPHT`**, whose official
-> GWAS analysis set is **858 cases / 499,490 controls, N = 500,348**, giving
-> **s = 858/500,348 = 0.001714810**. Confirmed three independent ways: (a) derived from the
-> `af_alt` / `af_alt_cases` / `af_alt_controls` columns inside the .gz itself, (b) already recorded
-> in `TrackA_MR/scripts/03b_04v3_finngen_local.R:51-53`, (c) FinnGen R12 PheWeb
-> `r12.finngen.fi/pheno/GRAVES_OPHT`. The value 520,387 matches no FinnGen figure and was an
-> unreplaced placeholder.
->
-> **The posteriors recorded above still stand.** coloc's `Var.data.cc` depends on N and s only
-> through `N*s*(1-s)`, and both parameterizations encode the same 858 cases, so PP.H4 moves by
-> ~1.3e-08. This is a provenance defect, not a numerical one. Task 4 will re-run with the confirmed
-> parameters together with the separate, substantive fixes (beta/varbeta input, ancestry-matched
-> MAF, UKB outcome). See `internal/FINNGEN_endpoint_provenance.md`.
 ## 2026-05-26 17:31 — Task E.2 candidate coloc
     gene_symbol    outcome n_snps_overlap         pp_h0         pp_h1
          <char>     <char>          <int>         <num>         <num>
