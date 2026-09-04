@@ -60,11 +60,9 @@ def backbone_values():
     return out
 
 
-def flowbox(ax, cx, y, w, h, lines, fs=8.3):
-    ax.add_patch(Rectangle((cx - w / 2, y - h / 2), w, h, facecolor="white",
-                           edgecolor=INK, linewidth=0.8))
-    ax.text(cx, y, "\n".join(lines), ha="center", va="center",
-            fontsize=fs, linespacing=1.45, color=INK)
+def box(ax, cx, cy, w, h, lw=1.1):
+    ax.add_patch(Rectangle((cx - w / 2, cy - h / 2), w, h,
+                           facecolor="white", edgecolor=INK, linewidth=lw))
 
 
 def build():
@@ -75,102 +73,112 @@ def build():
     n["known"] = sum(1 for v in cls.values() if v.startswith("Established"))
     assert sum(n.values()) == 13
 
-    fig = plt.figure(figsize=(7.1, 8.9), dpi=300)
+    fig = plt.figure(figsize=(7.2, 9.6), dpi=300)
     fig.patch.set_facecolor("white")
 
-    # ---------------- (a) study flow ----------------
-    ax = fig.add_axes([0.02, 0.400, 0.96, 0.580]); ax.axis("off")
+    # ============ (a) study flow — CONSORT style ============
+    ax = fig.add_axes([0.015, 0.395, 0.97, 0.590]); ax.axis("off")
     ax.set_xlim(0, 1); ax.set_ylim(0, 1)
-    ax.text(0.01, 1.00, "(a)", fontsize=10, fontweight="bold", va="top")
+    ax.text(0.00, 1.005, "(a)", fontsize=13, fontweight="bold", va="top")
 
-    CX, W, H = 0.33, 0.50, 0.105
-    steps = [
-        (0.930, ["Druggable genome", "n = 4,462 genes"]),
-        (0.735, ["MR-testable: \u22651 valid cis-eQTL instrument", "n = 2,544 genes (6,135 instruments)"]),
-        (0.540, ["Estimable against discovery outcome", "n = 2,234 genes"]),
-        (0.335, ["Bonferroni-significant in discovery", "P < 1.965 \u00d7 10\u207b\u2075", "n = 13 genes"]),
-        (0.110, ["0 novel candidates met the", "colocalization criterion"]),
+    MX, MW = 0.285, 0.50          # main spine
+    EX, EW = 0.775, 0.40          # exclusion column
+    LAB, NUM = 10.5, 12.0
+
+    main = [
+        (0.925, 0.110, "Druggable genome", "n = 4,462 genes"),
+        (0.720, 0.130, "MR-testable\n\u22651 valid cis-eQTL instrument (6,135 total)",
+         "n = 2,544 genes"),
+        (0.515, 0.110, "Estimable against discovery outcome", "n = 2,234 genes"),
+        (0.305, 0.130, "Bonferroni-significant in discovery\nP < 1.965 \u00d7 10\u207b\u2075",
+         "n = 13 genes"),
+        (0.085, 0.110, "Met the colocalization criterion", "n = 0 novel candidates"),
     ]
-    for i, (y, lines) in enumerate(steps):
-        hh = H * (1.22 if len(lines) > 2 else 1.0)
-        bold = (i == len(steps) - 1)
-        ax.add_patch(Rectangle((CX - W / 2, y - hh / 2), W, hh, facecolor="white",
-                               edgecolor=INK, linewidth=1.2 if bold else 0.8))
-        ax.text(CX, y, "\n".join(lines), ha="center", va="center",
-                fontsize=8.3, linespacing=1.45, color=INK,
-                fontweight="bold" if bold else "normal")
-        if i < len(steps) - 1:
-            nh = H * (1.22 if len(steps[i + 1][1]) > 2 else 1.0)
-            ax.annotate("", xy=(CX, steps[i + 1][0] + nh / 2), xytext=(CX, y - hh / 2),
-                        arrowprops=dict(arrowstyle="-|>", color=INK, lw=0.8))
+    for k, (cy, h, lab, num) in enumerate(main):
+        last = (k == len(main) - 1)
+        box(ax, MX, cy, MW, h, lw=1.6 if last else 1.1)
+        nlines = lab.count("\n") + 1
+        ax.text(MX, cy + (0.020 if nlines == 1 else 0.032), lab, ha="center", va="center",
+                fontsize=LAB, linespacing=1.35, color=INK)
+        ax.text(MX, cy - (0.026 if nlines == 1 else 0.036), num, ha="center", va="center",
+                fontsize=NUM, fontweight="bold", color=INK)
+        if not last:
+            ny, nh = main[k + 1][0], main[k + 1][1]
+            ax.annotate("", xy=(MX, ny + nh / 2), xytext=(MX, cy - h / 2),
+                        arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.3,
+                                        mutation_scale=16))
 
-    # exclusions bracketed to the right of each transition
-    for y, lines in [(0.835, ["Excluded: no valid instrument", "n = 1,918"]),
-                     (0.640, ["Not estimable in discovery outcome", "n = 310"]),
-                     (0.445, ["Not Bonferroni-significant", "n = 2,221"])]:
-        ax.plot([CX, 0.615], [y, y], color=INK, lw=0.8)
-        ax.text(0.625, y, "\n".join(lines), va="center", fontsize=7.6,
-                linespacing=1.4, color=INK)
+    # exclusion boxes, branching from each transition
+    for cy, lab, num in [(0.822, "No valid cis-eQTL instrument", "n = 1,918"),
+                         (0.617, "Not estimable in discovery outcome", "n = 310"),
+                         (0.428, "Not Bonferroni-significant", "n = 2,221")]:
+        ax.annotate("", xy=(EX - EW / 2, cy), xytext=(MX, cy),
+                    arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.1,
+                                    mutation_scale=14))
+        box(ax, EX, cy, EW, 0.085)
+        ax.text(EX, cy + 0.018, lab, ha="center", va="center", fontsize=9.6, color=INK)
+        ax.text(EX, cy - 0.022, num, ha="center", va="center", fontsize=10.8,
+                fontweight="bold", color=INK)
 
-    # resolution of the 13, bracketed from the 13-gene box
-    ax.plot([CX + W / 2, 0.615], [0.335, 0.335], color=INK, lw=0.8)
-    ax.text(0.625, 0.395, "Resolution of the 13 genes", fontsize=8.0,
-            fontweight="bold", va="center", color=INK)
+    # resolution of the 13, branching sideways from that box
+    cy = 0.245
+    ax.annotate("", xy=(EX - EW / 2, 0.290), xytext=(MX + MW / 2, 0.290),
+                arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.1, mutation_scale=14))
+    box(ax, EX, cy, EW, 0.200)
+    ax.text(EX, cy + 0.076, "Resolution of the 13 genes", ha="center",
+            fontsize=9.8, fontweight="bold", color=INK)
     rows = [(n["MHC"], "MHC region"),
-            (n["chr16p11.2"], "chr16p11.2, single conditional signal"),
-            (n["single-outcome"], "colocalized in discovery only"),
+            (n["chr16p11.2"], "chr16p11.2 (one signal)"),
+            (n["single-outcome"], "discovery-only colocalization"),
             (n["distinct-variant"], "distinct causal variant"),
-            (n["known"], "established loci (TSHR, CTLA4)")]
-    yy = 0.350
+            (n["known"], "established loci")]
+    yy = cy + 0.040
     for k, lab in rows:
-        ax.text(0.632, yy, f"{k}", fontsize=8.0, va="center", color=INK)
-        ax.text(0.664, yy, lab, fontsize=7.6, va="center", color=INK)
-        yy -= 0.038
+        ax.text(EX - EW / 2 + 0.030, yy, str(k), fontsize=9.8, va="center",
+                fontweight="bold", color=INK)
+        ax.text(EX - EW / 2 + 0.062, yy, lab, fontsize=9.4, va="center", color=INK)
+        yy -= 0.031
 
-    # ---------------- (b) comparison ----------------
-    axb = fig.add_axes([0.02, 0.035, 0.96, 0.325]); axb.axis("off")
+    # ============ (b) comparison table ============
+    axb = fig.add_axes([0.015, 0.030, 0.97, 0.330]); axb.axis("off")
     axb.set_xlim(0, 1); axb.set_ylim(0, 1)
-    axb.text(0.01, 1.00, "(b)", fontsize=10, fontweight="bold", va="top")
+    axb.text(0.00, 1.005, "(b)", fontsize=13, fontweight="bold", va="top")
 
     T, I = bb["TSHR"], bb["IGF1R"]
-    x0, xT, xI = 0.055, 0.475, 0.775
-    axb.plot([x0, 0.965], [0.855, 0.855], color=INK, lw=0.9)
-    axb.text(xT, 0.895, "TSHR", ha="center", fontsize=9.5, style="italic",
+    x0, xT, xI, xR = 0.030, 0.560, 0.845, 0.985
+    axb.plot([x0, xR], [0.880, 0.880], color=INK, lw=1.5)
+    axb.text(xT, 0.800, "TSHR", ha="center", fontsize=12, style="italic",
              fontweight="bold", color=INK)
-    axb.text(xI, 0.895, "IGF1R", ha="center", fontsize=9.5, style="italic",
+    axb.text(xI, 0.800, "IGF1R", ha="center", fontsize=12, style="italic",
              fontweight="bold", color=INK)
-    axb.text(xT, 0.795, "autoantigen", ha="center", fontsize=7.6, color=RULE)
-    axb.text(xI, 0.795, "teprotumumab target", ha="center", fontsize=7.6, color=RULE)
-    axb.plot([x0, 0.965], [0.755, 0.755], color=INK, lw=0.6)
+    axb.text(xT, 0.720, "autoantigen", ha="center", fontsize=9.4, color=INK)
+    axb.text(xI, 0.720, "teprotumumab target", ha="center", fontsize=9.4, color=INK)
+    axb.plot([x0, xR], [0.665, 0.665], color=INK, lw=1.0)
 
     body = [
-        ("Discovery MR",
-         f"β = {T['beta']:+.2f}, P = 1.1 × 10⁻¹⁴",
-         f"β = {I['beta']:+.2f}, P = {I['p']:.3f}"),
-        ("Colocalization, PP.H4\n(discovery / replication /\nTED-enriched)",
+        ("Discovery MR", f"\u03b2 = {T['beta']:+.2f}\nP = 1.1 \u00d7 10\u207b\u00b9\u2074",
+         f"\u03b2 = {I['beta']:+.2f}\nP = {I['p']:.3f}"),
+        ("Colocalization PP.H4\ndiscovery / replication /\nTED-enriched",
          " / ".join(f"{v:.2f}" for v in T["h4"]),
          " / ".join(f"{v:.2f}" for v in I["h4"])),
-        ("Shared-variant support",
-         "both Graves phenotypes",
-         "none"),
+        ("Shared-variant support", "both Graves\nphenotypes", "none"),
     ]
-    yy = 0.620
+    yy = 0.545
     for lab, tv, iv in body:
-        axb.text(x0, yy, lab, va="center", fontsize=8.0, linespacing=1.4, color=INK)
-        axb.text(xT, yy, tv, ha="center", va="center", fontsize=8.0, color=INK)
-        axb.text(xI, yy, iv, ha="center", va="center", fontsize=8.0, color=INK)
-        yy -= 0.195
-    axb.plot([x0, 0.965], [0.115, 0.115], color=INK, lw=0.9)
-    axb.text(x0, 0.055,
-             "Genetic susceptibility and therapeutic target biology need not coincide.",
-             fontsize=8.2, va="center", color=INK)
+        axb.text(x0, yy, lab, va="center", fontsize=10.2, linespacing=1.35, color=INK)
+        axb.text(xT, yy, tv, ha="center", va="center", fontsize=10.2,
+                 linespacing=1.35, color=INK)
+        axb.text(xI, yy, iv, ha="center", va="center", fontsize=10.2,
+                 linespacing=1.35, color=INK)
+        yy -= 0.185
+    axb.plot([x0, xR], [0.070, 0.070], color=INK, lw=1.5)
 
-    for p in OUT:
-        fig.savefig(p, dpi=300, facecolor="white", bbox_inches="tight")
+    for path in OUT:
+        fig.savefig(path, dpi=300, facecolor="white", bbox_inches="tight")
     plt.close(fig)
-    print("Figure 1 rebuilt in journal format")
+    print("Figure 1 rebuilt (CONSORT-style, monochrome)")
     print(f"  flow: 4,462 -> 2,544 -> 2,234 -> 13 -> 0")
-    print(f"  13 = {n['MHC']} MHC + {n['chr16p11.2']} chr16 + {n['single-outcome']} single-outcome"
+    print(f"  13 = {n['MHC']} MHC + {n['chr16p11.2']} chr16 + {n['single-outcome']} discovery-only"
           f" + {n['distinct-variant']} distinct + {n['known']} established")
 
 
