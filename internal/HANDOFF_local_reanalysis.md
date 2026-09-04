@@ -439,3 +439,24 @@ primary analysis in any case.
 **Note.** The instrument manifest to join against is
 `TaskD_02a_eqtl_instruments_snp_level_v2_verified.csv` (6,135 rows), not the v1
 file — v1 still contains the GAN row that failed the selection threshold.
+
+**Runnable script.** `internal/scripts/taskG_eqtlgen_maf_sensitivity.R` implements
+steps 1–4 end to end: it joins eQTLGen's own allele frequencies to the v2 verified
+manifest, re-derives β/SE under both frequency sources, re-runs MR (9 genes × 3
+outcomes) and `coloc.abf`, asserts `max|ΔZ| < 1e-8` as a self-check on the algebra,
+and writes the report plus five comparison CSVs under
+`TrackA_MR/v5_upgrade/08_maf_sensitivity/`.
+
+Set `EQTLGEN_AF` at the top of the script to the downloaded allele-frequency file,
+then run from the repository root:
+
+```
+Rscript internal/scripts/taskG_eqtlgen_maf_sensitivity.R
+```
+
+The script was written in the remote container **without access to the data**, so
+it is untested against real inputs. It asserts its assumptions loudly on purpose —
+a failing assertion means a path or a column name to fix, not an assertion to
+remove. In particular the allele-frequency file's column names and its allele
+orientation (frequency is for AlleleB / the assessed allele) must be checked
+against the header before trusting the join.
