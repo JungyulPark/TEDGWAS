@@ -1,22 +1,51 @@
-# ⛔ 제출 보류 — SUBMISSION ON HOLD
+# 제출 패키지 — TED-TRAP Paper 1
 
-**이 패키지를 업로드하지 마십시오.** 외부 리뷰 5차에서 제기된 8개 항목을 원본 데이터로
-검증한 결과, **provenance 결함 5건이 확인**되었습니다. 상세: `../internal/SUBMISSION_HOLD_provenance_audit.md`
+**Manuscript:** Genetic susceptibility and therapeutic target biology diverge at *TSHR* and
+*IGF1R* in Graves disease and thyroid eye disease
 
-| 확인된 결함 | 요약 |
-|---|---|
-| 도구변수 1개가 선정 기준 위반 | `GAN`/`rs310019`, P = 1.6×10⁻⁴ → 보고된 min F 14.2의 정체. 정정: 6,135 instruments / 2,544 genes / 2,234 estimable / min F 29.72 |
-| Table S3 fine-mapping 수치 재현 불가 | 원본은 EUR credible set **2개**(각 1 SNP, purity 1). 원고의 "단일 CS, purity 0.993, log₁₀BF 88.2"와 5개 PIP 목록은 저장소 어느 파일에도 없음 (`rs11603529`, `rs10137255` 미존재) |
-| ~~FinnGen endpoint·증례수 미확정~~ **해결 (Task 2)** | `GRAVES_OPHT` / R12 / **858 cases** / 499,490 controls / N = **500,348**. **858은 옳고 분모 520,387이 틀렸습니다** — 원고의 "858 cases"는 수정 대상이 아님. `coloc`에서 N·s = cases 로만 들어가 PP.H4 영향은 1.25×10⁻⁸ (무시 가능). 리뷰어의 786/894는 Risteys 수치로 PheWeb 분석셋과 다른 단계를 셈 |
-| coloc 입력이 p-value 기반 + 단일 EUR MAF | beta/varbeta 미사용 → MAF·N·s가 사후확률에 직접 반영. 동아시아 BBJ에 유럽 MAF 벡터 적용 |
-| UKB colocalization 미실시 | `TaskE_01` outcome은 BBJ와 FinnGen 둘뿐. eQTLGen과 인종이 가장 맞고 IGF1R MR이 가장 강한 outcome이 빠짐 |
+**Authors:** Jungyul Park¹; Min-Seon Kim²; Kyung-Hwa Shin³\*; Suk-Woo Yang¹\* (\*corresponding)
 
-추가로 chr16p11.2 "단일 LD 신호" 주장(PRSS36 r² = 0.19/0.20)과
-"no robust novel target" 결론(TNFSF14는 UKB에서 P = 0.0056으로 방향 일치 복제)이 과도합니다.
+**Target venue:** Endocrine Connections
 
-**작업 순서는 문장 수정이 아니라 ① instrument manifest 재검증 → ② FinnGen 파일 확정 →
-③ SuSiE 재실행 → ④ 세 outcome colocalization 재분석입니다.** ②–④는 라이선스 데이터가
-있는 로컬 머신에서만 가능합니다.
+Built from `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (md5 `6bdb94330108bb4620bcf3d33b1ab84f`) by
+`python3 scripts/29_build_submission_package.py`. The master is the only source of truth;
+every file below is derived from it and must be rebuilt, never hand-edited.
+
+## 업로드할 파일
+
+| # | 파일 | 내용 |
+|---|---|---|
+| 1 | `MANUSCRIPT_TED_TRAP_v5_SUBMISSION.docx` | 표제지 · 초록 · 본문 · 선언 · 참고문헌 26 · 그림 범례 · Tables 1–3 |
+| 2 | `SUPPLEMENTARY_MATERIAL.docx` | Tables S1–S9 + Supplementary Figure 범례 |
+| 3 | `COVER_LETTER_EndocrineConnections.docx` | 커버레터 |
+| 4 | `figures/Figure1.png` | 연구 흐름도 + TSHR/IGF1R 비교 (흑백, CONSORT 방식) |
+| 5 | `figures/Figure2.png` | BBJ discovery MR volcano |
+| 6 | `figures/Figure3.png` | 3 outcome colocalization + MR forest (P값 표기) |
+| 7 | `figures/FigureS1.png` | 안와조직 TPM (서술적) |
+| 8 | `figures/FigureS2.png` | 후보 유전자 colocalization, 3 outcome |
+
+`KSO_oral_abstract_KR_EN.docx`는 학회 초록으로, **저널에 업로드하지 않습니다.**
+JEI용 커버레터는 삭제했습니다 — 구 저자명과 4층 근거 기준이라 재사용 불가. 필요하면
+EC 버전에서 다시 만드십시오.
+
+## 내용 확인 (자동 검사 통과)
+
+- 본문 **4,933 단어** (한도 5,000) · Abstract **237 단어, 한 문단**
+- 참고문헌 **26개**, 전부 인용, 범위 밖 없음
+- 본문 표 3개 / 부록 표 9개 (S1–S9) / 그림 5개
+- 근거층 **2개** — MR과 colocalization. Fine-mapping은 철회, 조직은 서술적 관찰
+- `scripts/audit_paper1_integrity.py` 42개 검사 ALL PASS
+- `scripts/29_build_submission_package.py` 패키지 검사 ALL PASS
+
+## 제출 전 저자가 채워야 할 것
+
+1. **Kyung-Hwa Shin (공동교신)** — 이메일, 전화번호, 학위(`MD` vs `MD, PhD`)
+2. **Min-Seon Kim** — 소속에 병원명 (현재 "Department of Ophthalmology, College of
+   Medicine, The Catholic University of Korea"로 병원 누락)
+3. 저자 4인 **ORCID**, 공동교신저자 표기가 포털에서 허용되는지 확인
+4. 포털이 생성한 PDF에서 표·그림·수식·줄번호 육안 확인
+5. **GitHub 옛 커밋 `88eabcb`** — IRB 데이터가 서버에 잔존. 저장소 공유 전 처리
+   (`../internal/GITHUB_SECURITY_CLEANUP.md`)
 
 ---
 

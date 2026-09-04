@@ -77,3 +77,4 @@ files*.zip
 !submission/figures/*.png
 !KSO_oral_abstract_KR_EN.docx
 !COVER_LETTER_EndocrineConnections.docx
+submission/_build/
