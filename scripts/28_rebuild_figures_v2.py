@@ -12,7 +12,8 @@ Both are gone:
     ancestry-matched allele frequencies (TaskE_01b_coloc_v2), so Figure 3A and
     Figure S2 now show three bars per gene rather than two;
   * the orbital tissue data cannot support inference with a single control, so
-    it leaves Figure 3 entirely and becomes Figure S1, drawn without p-values
+    it leaves Figure 3 entirely and becomes Figure S1, drawn from TPM (not the
+    DESeq2 shrunken estimate, since DESeq2 is no longer used), without p-values
     and labelled as a descriptive observation.
 
 Every plotted number is read from the locked result tables. Nothing is hard-coded.
@@ -202,7 +203,7 @@ def figure_s1(ti):
         ax.set_ylim(0, max(max(ted), ctrl) * 1.35)
         ax.set_title(g, fontsize=11.5, fontweight="bold", style="italic",
                      color=ANCHOR if g == "TSHR" else EFFECTOR if g == "IGF1R" else INK)
-        ax.text(0.5, 0.94, f"log2FC = {float(r['deseq2_log2fc']):+.2f}",
+        ax.text(0.5, 0.94, f"log2FC = {float(r['log2fc_tpm']):+.2f}",
                 transform=ax.transAxes, ha="center", fontsize=8.4, color=MUTED)
         for s in ("top", "right"):
             ax.spines[s].set_visible(False)

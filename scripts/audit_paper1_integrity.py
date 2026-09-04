@@ -8,7 +8,7 @@ Exit code 0 = all pass; 1 = at least one FAIL (so it can wire into a hook/CI).
 Checks (all against the locked master MANUSCRIPT_TED_TRAP_v5_MASTER.md):
   1. master exists; print current md5 (integrity anchor)
   2. zero placeholders (to be tabulated / TODO / [ ])
-  3. references: 27 listed, all cited (incl. grouped [a, b]) in body
+  3. references: 26 listed, all cited (incl. grouped [a, b]) in body
   4. OR = exp(beta) for the 3 backbone genes x 3 outcomes (2-dp display)
   5. IGF1R tissue adj-P stated consistently (no bare "= 1.00")
   6. structural completeness: Abstract/Methods/Results/Discussion/Declarations,
@@ -53,7 +53,7 @@ nref = len(re.findall(r'(?m)^\d+\.\s', refs.split("## ")[0]))
 cited = set()
 for grp in re.findall(r'\[([\d,\s]+)\]', body):
     for n in re.findall(r'\d+', grp): cited.add(int(n))
-ok(nref == 27, f"references listed = {nref} (expect 27)")
+ok(nref == 26, f"references listed = {nref} (expect 26)")
 missing = [i for i in range(1, nref+1) if i not in cited]
 ok(not missing, f"all refs cited in body (missing: {missing or 'none'})")
 
@@ -77,7 +77,7 @@ for d in ["Funding","Conflict of interest","Ethics approval","Informed consent",
     ok(f"**{d}.**" in t, f"declaration present: {d}")
 for fig in ["Figure 1.","Figure 2.","Figure 3.","Figure S1.","Figure S2."]:
     ok(f"**{fig}" in t, f"figure legend present: {fig}")
-ok(all(f"Table S{i}" in t for i in range(1,9)), "Supplementary Tables S1-S8 all referenced")
+ok(all(f"Table S{i}" in t for i in range(1,10)), "Supplementary Tables S1-S9 all referenced")
 
 # 7. stale names
 stale = [n for n in ["Yae-Eun Kang","강예은","박정율"] if n in t]
@@ -161,6 +161,19 @@ ok(not tissue_p, f"no tissue P value reported (found: {tissue_p or 'none'})")
 
 # 17. the null is a criterion failure, not an absence of targets
 ok("robust novel target" not in t, "null stated as a criterion, not 'robust novel target'")
+
+# 20. DESeq2 was withdrawn with the inferential tissue analysis; its fold-change
+#     estimates must not be quoted either (TPM values are +2.59/+0.80/+1.58)
+deseq = [q for q in ["DESeq2", "+2.33", "+0.41", "+1.27"] if q in t]
+ok(not deseq, f"DESeq2 and its shrunken fold changes absent (found: {deseq or 'none'})")
+
+# 21. the clumping footnote must not cite the withdrawn SuSiE credible-set LD
+ok("0.808" not in t and "0.965" not in t,
+   "no SuSiE-derived credible-set r-squared cited")
+
+# 22. Table 1 must carry the analysis-set sample sizes that feed coloc
+for n in ("175,465", "484,598", "500,348", "499,490", "172,656", "480,867"):
+    ok(n in t, f"Table 1 sample size present: {n}")
 
 # 18. corrected screening figures, and the superseded ones absent
 for n in ("2,544", "6,135", "2,234", "29.7"):
