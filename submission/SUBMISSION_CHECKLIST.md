@@ -7,7 +7,7 @@
 |---|---|
 | 도구변수 1개가 선정 기준 위반 | `GAN`/`rs310019`, P = 1.6×10⁻⁴ → 보고된 min F 14.2의 정체. 정정: 6,135 instruments / 2,544 genes / 2,234 estimable / min F 29.72 |
 | Table S3 fine-mapping 수치 재현 불가 | 원본은 EUR credible set **2개**(각 1 SNP, purity 1). 원고의 "단일 CS, purity 0.993, log₁₀BF 88.2"와 5개 PIP 목록은 저장소 어느 파일에도 없음 (`rs11603529`, `rs10137255` 미존재) |
-| FinnGen endpoint·증례수 미확정 | v5 스크립트는 `GRAVES_OPHT`(broader), 다른 스크립트는 `E4_GRAVES_OPHT`(strict). 858이 두 분모(500,348 / 520,387)에 동시 사용. `taskE_01_coloc.R`에 `# Placeholder — CONFIRM control count` 주석이 그대로 남아 있음 |
+| ~~FinnGen endpoint·증례수 미확정~~ **해결 (Task 2)** | `GRAVES_OPHT` / R12 / **858 cases** / 499,490 controls / N = **500,348**. **858은 옳고 분모 520,387이 틀렸습니다** — 원고의 "858 cases"는 수정 대상이 아님. `coloc`에서 N·s = cases 로만 들어가 PP.H4 영향은 1.25×10⁻⁸ (무시 가능). 리뷰어의 786/894는 Risteys 수치로 PheWeb 분석셋과 다른 단계를 셈 |
 | coloc 입력이 p-value 기반 + 단일 EUR MAF | beta/varbeta 미사용 → MAF·N·s가 사후확률에 직접 반영. 동아시아 BBJ에 유럽 MAF 벡터 적용 |
 | UKB colocalization 미실시 | `TaskE_01` outcome은 BBJ와 FinnGen 둘뿐. eQTLGen과 인종이 가장 맞고 IGF1R MR이 가장 강한 outcome이 빠짐 |
 

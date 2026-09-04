@@ -168,44 +168,96 @@ reads as selective analysis.
 
 ---
 
-## Confirmed 5 — the FinnGen endpoint and case count are not pinned down
+## Confirmed 5 — RESOLVED by Task 2: the case count is right, the denominator is wrong
 
-The 858 figure cannot be traced to a confirmed source. What the repository shows:
+_Status updated 2026-09-04 after the local session's Task 2 (commit `a7e5cbc`).
+Every claim below was re-verified in this container against the repository._
 
-| file | endpoint referenced | denominator |
-|---|---|---|
-| `v5_upgrade/scripts/taskD_03_mr_3outcomes.R` | `finngen_R12_GRAVES_OPHT.gz` (broader) | `n_case = 858` |
-| `v5_upgrade/scripts/taskE_01_coloc.R` | `finngen_R12_GRAVES_OPHT.gz` (broader) | `858 / 520387` |
-| `v5_upgrade/scripts/taskE_02_coloc_candidates.R` | `finngen_R12_GRAVES_OPHT.gz` (broader) | `858 / 520387` |
-| `scripts/03_mr_all_genes_full_sensitivity.R` | `finngen_R12_E4_GRAVES_OPHT` (**strict**) | `858 / 500348` |
-| `scripts/06_coloc_all_loci.R` | `E4_GRAVES_OPHT` (**strict**) | `858 / 500348` |
-| `scripts/08`, `scripts/17` | `E4_GRAVES_OPHT` (**strict**) | — |
+**The reviewer was wrong on this point, and the manuscript's "858 cases" stands.**
 
-So two different endpoints and two different totals circulate, with the same 858
-attached to both. Worse, `taskE_01_coloc.R` carries this immediately above the
-value that feeds the posterior:
+### What Task 2 established
 
-```r
-# FinnGen s/N: CONFIRM control count. R12 GO ~858 cases. Total from file rows or meta.
-# Placeholder — Gemini sets these from FinnGen R12 GRAVES_OPHT documentation:
-FINNGEN_S <- 858 / 520387
+The FinnGen file carries `af_alt`, `af_alt_cases` and `af_alt_controls`, so the
+case fraction can be recovered from the file itself with no external dependency:
+
+```
+af_alt = s·af_cases + (1−s)·af_controls   ⇒   s = (af_alt − af_ctrl)/(af_case − af_ctrl)
 ```
 
-**The case fraction was never confirmed.** It is labelled a placeholder in the
-script that produced PP.H4 = 0.986.
+Re-checked here: the identity recovers `s` to within 5×10⁻¹⁷. Applied to the three
+FinnGen files it yields **858.01 / 752.98 / 3962.02** cases at N = 500,348 — integers.
 
-**Not verifiable from this container.** The FinnGen summary file is licence-bound
-and gitignored; the scripts point at `c:/ProjectTEDGWAS/` on the author's own
-machine. I cannot check FinnGen's official R12 counts from here and will not
-assert them. The reviewer states `E4_GRAVES_OPHT_STRICT` = 786 and `GRAVES_OPHT`
-= 894; that must be checked against Risteys and against the header of the actual
-downloaded file.
+Those exact numbers were **already in the repository**, in
+`TrackA_MR/scripts/03b_04v3_finngen_local.R:50-54`, verified here:
 
-**Required action.** Fix, from the file actually analysed: filename, endpoint
-code, release, cases, controls, and the `s` and `N` passed to `coloc.abf`. Then
-re-run colocalization and re-derive Table S8, both of which consume these numbers.
+```r
+TED_main    = list(N = 500348, cases = 858,  controls = 499490, label = "GRAVES_OPHT"),
+GD_exposure = list(N = 500348, cases = 3962, controls = 496386, label = "E4_GRAVES_STRICT"),
+TED_strict  = list(N = 500348, cases = 753,  controls = 499595, label = "E4_GRAVES_OPHT_STRICT")
+```
 
----
+The local session additionally confirmed against FinnGen R12 PheWeb (rendered in a
+browser; PheWeb is a JS app and does not serve content to a plain fetch):
+`GRAVES_OPHT` = **858 cases / 499,490 controls**. That web check is theirs, not mine;
+the three internal lines of evidence above are what I verified directly.
+
+### The actual defect
+
+| | value |
+|---|---|
+| file used by v5 | `finngen_R12_GRAVES_OPHT.gz` (**broader** endpoint), md5 `1b26a77e1e4eb451e80ead00e4ec6f28` |
+| endpoint / release | `GRAVES_OPHT` / R12 |
+| cases / controls / N | 858 / 499,490 / **500,348** |
+| `taskE_01_coloc.R` used | `858 / **520,387**` ← wrong denominator |
+| provenance of 520,387 | **none.** `analytical_log.md:142` records "Total N used: 520,387" with no source. The placeholder was never replaced. |
+
+**The correct value was in the repository the whole time; `taskE_01_coloc.R` wrote a
+placeholder instead of referencing it.** That is the defect — a provenance failure,
+not an arithmetic one.
+
+### Numerical impact: negligible, and here is why
+
+`coloc:::Var.data.cc = 1/(2·N·f·(1−f)·s·(1−s))`, so N and s enter **only as the
+product** `N·s·(1−s)`. Both parameterisations encode the same numerator
+(`N·s = 858` exactly, since s was defined as 858/N in each), so only the `(1−s)`
+factor differs. Re-computed here:
+
+```
+correct : N=500,348  s=0.001714806  N·s(1−s) = 856.5287
+used    : N=520,387  s=0.001648773  N·s(1−s) = 856.5854   → 0.0066% apart
+lABF difference at z = 2 / 5 / 8 : 2.2e-05 / 2.5e-05 / 1.1e-04
+```
+
+**PP.H4 = 0.986 does not move from this defect.** It says nothing, however, about
+the *other* Task 4 defects (p-value-based ABF, a European MAF vector on the East
+Asian outcome, and the missing UKB arm), which remain open.
+
+### Why the reviewer's 786 / 894 were wrong
+
+They are **Risteys** figures, which count a different stage from the **PheWeb**
+summary statistics that were actually analysed:
+
+| endpoint | Risteys R12 | PheWeb R12 = the analysed GWAS |
+|---|---|---|
+| `GRAVES_OPHT` | 894 | **858 cases** |
+| `E4_GRAVES_OPHT_STRICT` | 786 | **753 cases** |
+
+The β, SE and p-values in the file come from the 858 analysis set. **No change is
+needed to Table 1 or to any "858 cases" statement in the manuscript.**
+
+### New defect found during Task 2
+
+`TrackA_MR/v5_upgrade/00_meta/data_sources.csv` row `FinnGen_R12_GO_v1` points at the
+**broader** file while labelling it with the **strict** endpoint name
+(`E4_GRAVES_OPHT_STRICT`) and giving controls as **376,419** (actual: 499,490); it
+also still carries a literal `TBD_by_Gemini` field. Verified here. No evidence it fed
+any calculation, but it is a reproducibility document and must be corrected.
+
+### Remaining action
+
+- Set `FINNGEN_S <- 858/500348`, `FINNGEN_N <- 500348` in the Task 4 rewrite.
+- Fix the `data_sources.csv` row.
+- Delete the stale `520,387` from `analytical_log.md` or annotate it as superseded.
 
 ## Confirmed 6 — chr16p11.2 is not established as a single LD signal
 
@@ -284,7 +336,7 @@ abstract and conclusion, or replicate in an external orbital dataset.
 | Instrument counts, minimum *F*, screening denominator | **wrong — one invalid instrument** |
 | Table S3 fine-mapping numbers | **not reproducible from the repository** |
 | "rs179252 resolved as the shared causal variant" | **withdraw** — eQTL-only fine-mapping cannot establish it |
-| FinnGen endpoint, cases, `s` | **unconfirmed placeholder** |
+| FinnGen endpoint, cases, `s` | **resolved (Task 2)** — 858 cases correct; denominator 520,387 wrong, should be 500,348; numerically negligible |
 | BBJ PP.H4 = 0.951 | **conditional** on a European MAF vector applied to an East Asian GWAS |
 | UKB colocalization | **never run** |
 | "no robust novel target" | **over-stated** — *TNFSF14* replicates nominally in UKB |
@@ -297,8 +349,8 @@ abstract and conclusion, or replicate in an external orbital dataset.
 1. **Rebuild the instrument manifest** with automated assertions
    (`P < 5e-8` and `F = Z² ≥ 29.7` for every primary instrument). Repropagate
    6,135 / 2,544 / 2,234 / 29.72.
-2. **Pin the FinnGen file** — endpoint code, release, cases, controls, header —
-   from the file actually analysed.
+2. ~~**Pin the FinnGen file**~~ — **done** (Task 2, commit `a7e5cbc`):
+   `GRAVES_OPHT` / R12 / 858 cases / 499,490 controls / N = 500,348 / s = 858/500348.
 3. **Re-run SuSiE** and report the real credible sets, PIPs, coverage, purity and
    an LD-consistency diagnostic.
 4. **Re-run colocalization for all three outcomes** with beta/varbeta where
