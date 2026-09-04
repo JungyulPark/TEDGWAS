@@ -104,6 +104,8 @@ def stacked_coloc(ax, genes, co):
     ax.bar(x, h3, bottom=h2, color=H3C, label="PP.H3 (distinct variants)")
     ax.bar(x, h4, bottom=[a + b for a, b in zip(h2, h3)], color=H4C,
            label="PP.H4 (shared variant)")
+    for xi, v in enumerate(h4):
+        ax.text(xi, 1.02, f"{v:.2f}", ha="center", fontsize=7.2, color=INK)
     ax.axhline(0.8, color=ANCHOR, ls="--", lw=1.1)
     ax.text(len(labels) - 0.4, 0.815, "PP.H4 = 0.8", fontsize=7.5,
             color=ANCHOR, ha="right")
@@ -151,7 +153,7 @@ def figure3(co, mr):
                            "nominally significant in BBJ and UKB only.",
              fontsize=8.8, color=MUTED, va="top")
 
-    axB = fig.add_axes([0.275, 0.075, 0.685, 0.335])
+    axB = fig.add_axes([0.235, 0.075, 0.615, 0.335])
     ys, lab, col = [], [], []
     y = 0
     for g in BACKBONE:
@@ -164,12 +166,17 @@ def figure3(co, mr):
             c = ANCHOR if g == "TSHR" else EFFECTOR if g == "IGF1R" else INK
             axB.errorbar(b, y, xerr=1.96 * se, fmt="o", ms=5.5, color=c,
                          ecolor=c, elinewidth=1.5, capsize=3)
+            pv = float(r["pvalue"])
+            ptxt = (f"P = {pv:.3f}" if pv >= 1e-3
+                    else f"P = {pv:.1e}".replace("e-0", " \u00d7 10\u207b").replace("e-", " \u00d7 10\u207b"))
+            axB.text(1.015, y, ptxt, transform=axB.get_yaxis_transform(),
+                     va="center", ha="left", fontsize=7.8, color=c)
             lab.append(l.replace("\n", " "))
             col.append(c)
             ys.append(y); gy.append(y)
             y -= 1
         c = ANCHOR if g == "TSHR" else EFFECTOR if g == "IGF1R" else INK
-        axB.text(-0.315, sum(gy) / len(gy), g, transform=axB.get_yaxis_transform(),
+        axB.text(-0.355, sum(gy) / len(gy), g, transform=axB.get_yaxis_transform(),
                  ha="left", va="center", fontsize=11, fontweight="bold",
                  style="italic", color=c)
         y -= 0.8
@@ -203,15 +210,11 @@ def figure_s1(ti):
         ax.set_ylim(0, max(max(ted), ctrl) * 1.35)
         ax.set_title(g, fontsize=11.5, fontweight="bold", style="italic",
                      color=ANCHOR if g == "TSHR" else EFFECTOR if g == "IGF1R" else INK)
-        ax.text(0.5, 0.94, f"log2FC = {float(r['log2fc_tpm']):+.2f}",
-                transform=ax.transAxes, ha="center", fontsize=8.4, color=MUTED)
         for s in ("top", "right"):
             ax.spines[s].set_visible(False)
         if ax is axes[0]:
             ax.set_ylabel("transcript abundance (TPM)", fontsize=9)
             ax.legend(fontsize=7.4, frameon=False, loc="upper left")
-    fig.suptitle("Orbital tissue transcript abundance — descriptive observation, no inference drawn",
-                 fontsize=10.5, y=1.06, color=MUTED)
     return save(fig, "FigureS1")
 
 

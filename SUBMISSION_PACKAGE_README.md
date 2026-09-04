@@ -2,7 +2,7 @@
 
 **Target journal:** Journal of Endocrinological Investigation (JEI)
 **Article type:** Original Article
-**Master MD5:** `5a2c0250d87f379f552809ab14ab240c` (Discussion compressed)
+**Master MD5:** `6bdb94330108bb4620bcf3d33b1ab84f` (Discussion compressed)
 **Date assembled:** 2026-05-28
 
 ---

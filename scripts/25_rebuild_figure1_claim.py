@@ -1,19 +1,15 @@
 #!/usr/bin/env python3
 """
-Rebuild Figure 1 as a CLAIM figure, not a generic workflow diagram.
+Figure 1 — study flow and the TSHR/IGF1R comparison, in journal format.
 
-The previous Figure 1 was a data-sources -> analysis -> integration flowchart: it listed
-what was done rather than what was found, and its FinnGen box overflowed its border. The
-replacement carries the paper's argument on its own:
+Redesigned 2026-09 for a conventional manuscript figure: a plain study-flow
+diagram in the style journals expect (hairline rectangles, no fills, exclusions
+bracketed to the right), and a compact comparison panel. The earlier version used
+coloured verdict strips and display copy, which read as a slide rather than a
+figure.
 
-  (A) the screening funnel, with every attrition step labelled by WHY genes were removed
-      (MHC/LD spillover, single-outcome colocalization, distinct-variant) — ending at
-      0 robust novel targets;
-  (B) the verdict panel — the same two evidence layers scored for TSHR vs IGF1R, so the
-      divergence that titles the paper is visible at a glance.
-
-Every number is read from the locked master and result tables; nothing is hard-coded
-except the classification labels, which are parsed from Table 3.
+Every number is read from the locked master and result tables; nothing is
+hard-coded except the classification labels, which are parsed from Table 3.
 
 Out: TrackA_MR/v5_upgrade/07_manuscript/figures/Figure1_study_design.png
      submission/figures/Figure1.png
@@ -22,7 +18,7 @@ import csv, os, re
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, Polygon
+from matplotlib.patches import Rectangle
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MASTER = f"{ROOT}/MANUSCRIPT_TED_TRAP_v5_MASTER.md"
@@ -31,9 +27,8 @@ MR = f"{ROOT}/TrackA_MR/v5_upgrade/04_druggable_mr/results/TaskD_03d_MR_all_outc
 OUT = [f"{ROOT}/TrackA_MR/v5_upgrade/07_manuscript/figures/Figure1_study_design.png",
        f"{ROOT}/submission/figures/Figure1.png"]
 
-INK, MUTED, RULE = "#1a1d23", "#5c6673", "#c9d0d9"
-ANCHOR, EFFECTOR, DROP, KEEP = "#a4262c", "#2e75b6", "#b9c0c9", "#3f6f3f"
-plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 10})
+INK, RULE = "#000000", "#555555"
+plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 8.5})
 
 
 def master_counts():
@@ -44,163 +39,139 @@ def master_counts():
     rows = [r for r in sec.split("\n") if r.startswith("|") and "---" not in r]
     hdr = [c.strip() for c in rows[0].strip("|").split("|")]
     ci = hdr.index("Classification")
-    cls = {}
-    for r in rows[1:]:
-        c = [x.strip() for x in r.strip("|").split("|")]
-        cls[re.sub(r"[*]", "", c[0])] = c[ci]
-    return cls
+    return {re.sub(r"[*]", "", [x.strip() for x in r.strip("|").split("|")][0]):
+            [x.strip() for x in r.strip("|").split("|")][ci] for r in rows[1:]}
 
 
 def backbone_values():
-    co = {(r["gene"], r["outcome"]): r
-          for r in csv.DictReader(open(COLOC)) if r["p12"] in ("1e-05", "1e-5")}
+    co = {(r["gene"], r["outcome"]): r for r in csv.DictReader(open(COLOC))
+          if r["p12"] in ("1e-05", "1e-5")}
     mr = {(r["gene_symbol"], r["outcome"]): r for r in csv.DictReader(open(MR))
           if r["method"] in ("Inverse variance weighted", "Wald ratio")}
     out = {}
     for g in ("TSHR", "IGF1R"):
         out[g] = dict(
-            beta_bbj=float(mr[(g, "BBJ_Graves")]["beta"]),
-            p_bbj=float(mr[(g, "BBJ_Graves")]["pvalue"]),
-            h4_bbj=float(co[(g, "BBJ_Graves")]["PP.H4"]),
-            h4_ukb=float(co[(g, "UKB_hyperthyroid")]["PP.H4"]),
-            h4_fin=float(co[(g, "FinnGen_GO")]["PP.H4"]),
-            h2_bbj=float(co[(g, "BBJ_Graves")]["PP.H2"]),
-            h2_fin=float(co[(g, "FinnGen_GO")]["PP.H2"]),
+            beta=float(mr[(g, "BBJ_Graves")]["beta"]),
+            p=float(mr[(g, "BBJ_Graves")]["pvalue"]),
+            h4=[float(co[(g, o)]["PP.H4"]) for o in
+                ("BBJ_Graves", "UKB_hyperthyroid", "FinnGen_GO")],
+            h2=[float(co[(g, o)]["PP.H2"]) for o in ("BBJ_Graves", "FinnGen_GO")],
         )
     return out
 
 
-def box(ax, x, y, w, h, fc, ec, lw=1.0, r=0.012):
-    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle=f"round,pad=0,rounding_size={r}",
-                                facecolor=fc, edgecolor=ec, linewidth=lw))
+def flowbox(ax, cx, y, w, h, lines, fs=8.3):
+    ax.add_patch(Rectangle((cx - w / 2, y - h / 2), w, h, facecolor="white",
+                           edgecolor=INK, linewidth=0.8))
+    ax.text(cx, y, "\n".join(lines), ha="center", va="center",
+            fontsize=fs, linespacing=1.45, color=INK)
 
 
 def build():
     cls = master_counts()
     bb = backbone_values()
-    n_mhc = sum(1 for v in cls.values() if "MHC" in v)
-    n_ld = sum(1 for v in cls.values() if "chr16p11.2" in v)
-    n_single = sum(1 for v in cls.values() if "single-outcome" in v)
-    n_distinct = sum(1 for v in cls.values() if "distinct-variant" in v)
-    n_known = sum(1 for v in cls.values() if v.startswith("Established"))
-    assert n_mhc + n_ld + n_single + n_distinct + n_known == 13
+    n = {k: sum(1 for v in cls.values() if k in v) for k in
+         ("MHC", "chr16p11.2", "single-outcome", "distinct-variant")}
+    n["known"] = sum(1 for v in cls.values() if v.startswith("Established"))
+    assert sum(n.values()) == 13
 
-    fig = plt.figure(figsize=(10.5, 12.2), dpi=300)
+    fig = plt.figure(figsize=(7.1, 8.9), dpi=300)
     fig.patch.set_facecolor("white")
 
-    # ================= PANEL A — screening funnel =================
-    axA = fig.add_axes([0.06, 0.505, 0.90, 0.455]); axA.axis("off")
-    axA.set_xlim(0, 1); axA.set_ylim(0, 1)
-    axA.text(0, 1.00, "A", fontsize=16, fontweight="bold", va="top")
-    axA.text(0.035, 1.00, "What survives a two-filter druggable-genome screen",
-             fontsize=13, fontweight="bold", va="top")
-    axA.text(0.035, 0.945,
-             "Attrition is labelled by the reason genes were removed, not merely by count.",
-             fontsize=9.5, color=MUTED, va="top")
+    # ---------------- (a) study flow ----------------
+    ax = fig.add_axes([0.02, 0.400, 0.96, 0.580]); ax.axis("off")
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1)
+    ax.text(0.01, 1.00, "(a)", fontsize=10, fontweight="bold", va="top")
 
+    CX, W, H = 0.33, 0.50, 0.105
     steps = [
-        ("4,462", "druggable genes\n(Finan et al.)", 0.86, 1.00),
-        ("2,544", "MR-testable with a valid\neQTLGen cis instrument (6,135 IVs)", 0.66, 0.84),
-        ("2,234", "estimable against the\nBBJ discovery outcome", 0.46, 0.68),
-        ("13", "Bonferroni-significant\ndiscovery hits (P < 1.965×10⁻⁵)", 0.26, 0.50),
+        (0.930, ["Druggable genome", "n = 4,462 genes"]),
+        (0.735, ["MR-testable: \u22651 valid cis-eQTL instrument", "n = 2,544 genes (6,135 instruments)"]),
+        (0.540, ["Estimable against discovery outcome", "n = 2,234 genes"]),
+        (0.335, ["Bonferroni-significant in discovery", "P < 1.965 \u00d7 10\u207b\u2075", "n = 13 genes"]),
+        (0.110, ["0 novel candidates met the", "colocalization criterion"]),
     ]
-    for i, (n, lab, y, wfrac) in enumerate(steps):
-        w = 0.46 * wfrac; x = 0.055 + (0.46 - w) / 2
-        box(axA, x, y - 0.075, w, 0.115, "#f2f5f8", RULE, 1.0)
-        axA.text(x + w / 2, y + 0.008, n, ha="center", va="center",
-                 fontsize=17, fontweight="bold", color=INK)
-        axA.text(x + w / 2, y - 0.048, lab, ha="center", va="center",
-                 fontsize=8.4, color=MUTED, linespacing=1.35)
+    for i, (y, lines) in enumerate(steps):
+        hh = H * (1.22 if len(lines) > 2 else 1.0)
+        bold = (i == len(steps) - 1)
+        ax.add_patch(Rectangle((CX - W / 2, y - hh / 2), W, hh, facecolor="white",
+                               edgecolor=INK, linewidth=1.2 if bold else 0.8))
+        ax.text(CX, y, "\n".join(lines), ha="center", va="center",
+                fontsize=8.3, linespacing=1.45, color=INK,
+                fontweight="bold" if bold else "normal")
         if i < len(steps) - 1:
-            ny = steps[i + 1][2]
-            axA.annotate("", xy=(0.285, ny + 0.045), xytext=(0.285, y - 0.078),
-                         arrowprops=dict(arrowstyle="-|>", color=RULE, lw=1.4))
+            nh = H * (1.22 if len(steps[i + 1][1]) > 2 else 1.0)
+            ax.annotate("", xy=(CX, steps[i + 1][0] + nh / 2), xytext=(CX, y - hh / 2),
+                        arrowprops=dict(arrowstyle="-|>", color=INK, lw=0.8))
 
-    # the 13 hits, split by why they do or do not survive
-    axA.text(0.575, 0.795, "The 13 hits, resolved", fontsize=10.5, fontweight="bold", va="top")
-    bars = [
-        (f"{n_mhc}", "MHC-region signal", DROP, "removed"),
-        (f"{n_ld}", "chr16p11.2 — one LD block,\nnot three signals", DROP, "removed"),
-        (f"{n_single}", "colocalized in discovery only\n(TNFSF14, IFNGR1: 0.99 → 0.02)", DROP, "removed"),
-        (f"{n_distinct}", "distinct causal variant\n(MAPKAPK5)", DROP, "removed"),
-        (f"{n_known}", "established loci retained\n(TSHR anchor, CTLA4 control)", KEEP, "kept"),
-    ]
-    y = 0.720
-    for n, lab, col, tag in bars:
-        box(axA, 0.575, y - 0.052, 0.055, 0.062, col, col)
-        axA.text(0.6025, y - 0.021, n, ha="center", va="center", fontsize=13,
-                 fontweight="bold", color="white")
-        axA.text(0.645, y - 0.005, lab, va="top", fontsize=8.6, color=INK, linespacing=1.35)
-        y -= 0.105
+    # exclusions bracketed to the right of each transition
+    for y, lines in [(0.835, ["Excluded: no valid instrument", "n = 1,918"]),
+                     (0.640, ["Not estimable in discovery outcome", "n = 310"]),
+                     (0.445, ["Not Bonferroni-significant", "n = 2,221"])]:
+        ax.plot([CX, 0.615], [y, y], color=INK, lw=0.8)
+        ax.text(0.625, y, "\n".join(lines), va="center", fontsize=7.6,
+                linespacing=1.4, color=INK)
 
-    # verdict strip
-    box(axA, 0.055, 0.055, 0.89, 0.105, "#fdf3f3", ANCHOR, 1.4)
-    axA.text(0.077, 0.108, "0", fontsize=25, fontweight="bold", color=ANCHOR, va="center")
-    axA.text(0.135, 0.128, "qualifying novel druggable candidates", fontsize=11.5,
-             fontweight="bold", color=INK, va="center")
-    axA.text(0.135, 0.086,
-             "No non-established gene showed shared-variant colocalization in more than one outcome. "
-             "At 80% power the screen\ncould detect a median OR of 2.55 (Table S8), so this constrains "
-             "further large effects, not moderate ones.",
-             fontsize=8.5, color=MUTED, va="center", linespacing=1.45)
+    # resolution of the 13, bracketed from the 13-gene box
+    ax.plot([CX + W / 2, 0.615], [0.335, 0.335], color=INK, lw=0.8)
+    ax.text(0.625, 0.395, "Resolution of the 13 genes", fontsize=8.0,
+            fontweight="bold", va="center", color=INK)
+    rows = [(n["MHC"], "MHC region"),
+            (n["chr16p11.2"], "chr16p11.2, single conditional signal"),
+            (n["single-outcome"], "colocalized in discovery only"),
+            (n["distinct-variant"], "distinct causal variant"),
+            (n["known"], "established loci (TSHR, CTLA4)")]
+    yy = 0.350
+    for k, lab in rows:
+        ax.text(0.632, yy, f"{k}", fontsize=8.0, va="center", color=INK)
+        ax.text(0.664, yy, lab, fontsize=7.6, va="center", color=INK)
+        yy -= 0.038
 
-    # ================= PANEL B — the divergence verdict =================
-    axB = fig.add_axes([0.06, 0.035, 0.90, 0.435]); axB.axis("off")
-    axB.set_xlim(0, 1); axB.set_ylim(0, 1)
-    axB.text(0, 1.02, "B", fontsize=16, fontweight="bold", va="top")
-    axB.text(0.035, 1.02, "Where the two receptors diverge", fontsize=13,
-             fontweight="bold", va="top")
-    axB.text(0.035, 0.945,
-             "The same two evidence layers and the same outcome hierarchy, with gene-specific instruments — read across each row.",
-             fontsize=9.5, color=MUTED, va="top")
+    # ---------------- (b) comparison ----------------
+    axb = fig.add_axes([0.02, 0.035, 0.96, 0.325]); axb.axis("off")
+    axb.set_xlim(0, 1); axb.set_ylim(0, 1)
+    axb.text(0.01, 1.00, "(b)", fontsize=10, fontweight="bold", va="top")
 
     T, I = bb["TSHR"], bb["IGF1R"]
-    rows = [
-        ("Genetic association\n(MR, BBJ discovery)",
-         f"β = {T['beta_bbj']:+.2f}\nP = 1.1×10⁻¹⁴", True,
-         f"β = {I['beta_bbj']:+.2f}\nP = {I['p_bbj']:.3f}", None),
-        ("Shared causal variant\n(colocalization:\nBBJ / UKB / FinnGen)",
-         f"PP.H4 = {T['h4_bbj']:.2f} / {T['h4_ukb']:.2f} / {T['h4_fin']:.2f}\nrs179252 shared in both\nGraves phenotypes", True,
-         f"PP.H4 = {I['h4_bbj']:.2f} / {I['h4_ukb']:.2f} / {I['h4_fin']:.2f}\ncis-eQTL only in Graves\n(PP.H2 = {I['h2_bbj']:.2f} / {I['h2_fin']:.2f})", False),
+    x0, xT, xI = 0.055, 0.475, 0.775
+    axb.plot([x0, 0.965], [0.855, 0.855], color=INK, lw=0.9)
+    axb.text(xT, 0.895, "TSHR", ha="center", fontsize=9.5, style="italic",
+             fontweight="bold", color=INK)
+    axb.text(xI, 0.895, "IGF1R", ha="center", fontsize=9.5, style="italic",
+             fontweight="bold", color=INK)
+    axb.text(xT, 0.795, "autoantigen", ha="center", fontsize=7.6, color=RULE)
+    axb.text(xI, 0.795, "teprotumumab target", ha="center", fontsize=7.6, color=RULE)
+    axb.plot([x0, 0.965], [0.755, 0.755], color=INK, lw=0.6)
+
+    body = [
+        ("Discovery MR",
+         f"β = {T['beta']:+.2f}, P = 1.1 × 10⁻¹⁴",
+         f"β = {I['beta']:+.2f}, P = {I['p']:.3f}"),
+        ("Colocalization, PP.H4\n(discovery / replication /\nTED-enriched)",
+         " / ".join(f"{v:.2f}" for v in T["h4"]),
+         " / ".join(f"{v:.2f}" for v in I["h4"])),
+        ("Shared-variant support",
+         "both Graves phenotypes",
+         "none"),
     ]
-    # header
-    axB.text(0.3225, 0.865, "TSHR", ha="center", fontsize=12.5, fontweight="bold", color=ANCHOR)
-    axB.text(0.3225, 0.815, "susceptibility anchor", ha="center", fontsize=8.8, color=MUTED)
-    axB.text(0.7425, 0.865, "IGF1R", ha="center", fontsize=12.5, fontweight="bold", color=EFFECTOR)
-    axB.text(0.7425, 0.815, "teprotumumab target", ha="center", fontsize=8.8, color=MUTED)
-    axB.plot([0.035, 0.965], [0.785, 0.785], color=RULE, lw=1.1)
-
-    y = 0.60
-    for lab, tv, tok, iv, iok in rows:
-        axB.text(0.035, y, lab, va="center", fontsize=9, color=INK, linespacing=1.4)
-        box(axB, 0.215, y - 0.078, 0.215, 0.156, "#fdf3f3", ANCHOR, 1.1)
-        axB.text(0.3225, y, tv, ha="center", va="center", fontsize=8.7,
-                 color=INK, linespacing=1.45)
-        icol = EFFECTOR if iok is None else "#eef2f6"
-        box(axB, 0.635, y - 0.078, 0.215, 0.156, "#eef4fa", EFFECTOR, 1.1)
-        axB.text(0.7425, y, iv, ha="center", va="center", fontsize=8.7,
-                 color=INK, linespacing=1.45)
-        mark = "✓" if tok else "—"
-        axB.text(0.455, y, mark, ha="center", va="center", fontsize=13, color=ANCHOR)
-        axB.text(0.875, y, "✓" if iok else ("~" if iok is None else "✗"),
-                 ha="center", va="center", fontsize=13,
-                 color=EFFECTOR if iok is not False else MUTED)
-        y -= 0.320
-
-    axB.plot([0.035, 0.965], [0.075, 0.075], color=RULE, lw=1.1)
-    axB.text(0.5, 0.028,
-             "Genetic susceptibility architecture and therapeutic target biology do not have to coincide: "
-             "TSHR carries both,\nwhereas IGF1R does not display the same expression-colocalized susceptibility architecture.",
-             ha="center", va="center", fontsize=9.6, color=INK, fontweight="bold",
-             linespacing=1.5)
+    yy = 0.620
+    for lab, tv, iv in body:
+        axb.text(x0, yy, lab, va="center", fontsize=8.0, linespacing=1.4, color=INK)
+        axb.text(xT, yy, tv, ha="center", va="center", fontsize=8.0, color=INK)
+        axb.text(xI, yy, iv, ha="center", va="center", fontsize=8.0, color=INK)
+        yy -= 0.195
+    axb.plot([x0, 0.965], [0.115, 0.115], color=INK, lw=0.9)
+    axb.text(x0, 0.055,
+             "Genetic susceptibility and therapeutic target biology need not coincide.",
+             fontsize=8.2, va="center", color=INK)
 
     for p in OUT:
         fig.savefig(p, dpi=300, facecolor="white", bbox_inches="tight")
     plt.close(fig)
-    print("Figure 1 rebuilt as a claim figure")
-    print(f"  funnel: 4,462 -> 2,544 -> 2,234 -> 13 -> 0 qualifying novel candidates")
-    print(f"  13 hits = {n_mhc} MHC + {n_ld} chr16 LD + {n_single} single-outcome + "
-          f"{n_distinct} distinct-variant + {n_known} established")
+    print("Figure 1 rebuilt in journal format")
+    print(f"  flow: 4,462 -> 2,544 -> 2,234 -> 13 -> 0")
+    print(f"  13 = {n['MHC']} MHC + {n['chr16p11.2']} chr16 + {n['single-outcome']} single-outcome"
+          f" + {n['distinct-variant']} distinct + {n['known']} established")
 
 
 if __name__ == "__main__":
