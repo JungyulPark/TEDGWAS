@@ -17,7 +17,7 @@ The manuscript reports limitations that affect clinical interpretation: FinnGen 
 
 An earlier, narrower version was considered at thyroid-focused journals. Following editorial feedback, the work was restructured around a druggable-gene-wide discovery analysis and multi-outcome evaluation. The in-house orbital dataset is also used for a different, whole-transcriptome question in a separate manuscript under review elsewhere. Here, only the three backbone genes are described; no genome-wide expression catalogue or pathway-enrichment result is presented. The companion manuscript can be provided to the editors to assess overlap.
 
-This manuscript has not been published and is not under consideration elsewhere. The authors report no specific funding or competing interests. The orbital tissue component received approval from the Institutional Review Board of Pusan National University Hospital (2104-018-102), with written informed consent. Author contributions, data access, reporting coverage and use of AI-assisted tools are disclosed in the manuscript. Instrument-level data and primary MR and colocalization results accompany the submission.
+This manuscript has not been published and is not under consideration elsewhere. The authors report no specific funding or competing interests. The orbital tissue component received approval from the Institutional Review Board of Pusan National University Hospital (2104-018-102), with written informed consent. Author contributions, data access and reporting coverage are disclosed in the manuscript. Instrument-level data and primary MR and colocalization results accompany the submission.
 
 Thank you for considering this work.
 

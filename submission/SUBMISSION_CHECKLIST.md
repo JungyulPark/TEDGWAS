@@ -1,4 +1,4 @@
-> **Superseded by the 2026-09-05 candidate.** Use [candidate_20260905/README.md](candidate_20260905/README.md) and its revision report. The older files and build instructions below are historical.
+> **Superseded by the 2026-09-05 candidate.** Use [candidate_20260905/README.md](candidate_20260905/README.md) and its revision report. The older files and build instructions below are historical. The older Word files, cover letter and figure copies were moved to `archives/submission_pre20260905/` on 2026-09-05 so that only one submission package remains under `submission/`; `scripts/29_build_submission_package.py` was retired with them and the builder is now `candidate_20260905/reproducibility/build_documents.py`.
 
 # 제출 패키지 — TED-TRAP Paper 1
 

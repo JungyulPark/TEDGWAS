@@ -1,4 +1,4 @@
-> **2026-09-05 reviewed revision:** The current master and `submission/candidate_20260905/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the candidate revision report and source verification before editing. In particular, outdated SuSiE/tissue P-value claims must not be restored, the current IGF1R UKB posterior is split H2/H4, and eQTLGen frequency sensitivity remains unperformed. The non-negotiable data-management rules below remain in force.
+> **2026-09-05 reviewed revision:** The current master and `submission/candidate_20260905/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the candidate revision report and source verification before editing. In particular, outdated SuSiE/tissue P-value claims must not be restored, the current IGF1R UKB posterior is split H2/H4, and eQTLGen frequency sensitivity remains unperformed **on the GitHub copy** (a run completed on the local machine on 2026-09-05 has not been pushed; see `internal/HANDOFF_local_reanalysis.md`, Task 6). The manuscript carries **no AI-tool declaration** by author decision (audit check 27), and "prespecified" is reserved for the outcome hierarchy (check 26). The only submission package is `submission/candidate_20260905/`; the older root package is archived under `archives/submission_pre20260905/`. The non-negotiable data-management rules below remain in force.
 
 # CLAUDE.md — TED-TRAP project rules
 
@@ -100,11 +100,12 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 - Figures are built by the R/Python scripts in the repo; **verify figure inputs
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
   Figure 3B β-axis scale MUST match Table 2.
-- Master integrity is tracked by MD5. Current final master
-  `MANUSCRIPT_TED_TRAP_v5_MASTER.md` = `8ead93d32c35404a5bd30974e192b73c`
-  (placeholders = 0).
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,959. Abstract is a
-  **single paragraph** with inline `Purpose:/Methods:/Results:/Conclusion:` headings, 237 words (≤250).
+- Master integrity is tracked by MD5. The master is stored with CRLF line endings
+  (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `d6b944ecedbe091b3453492ae536304d`,
+  normalised `eb72ed12849aaa48236457163244aa05` (placeholders = 0).
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,423 (Introduction–Discussion,
+  headings excluded; 4,501 with headings). Abstract is a **single unstructured paragraph**, 245 words (≤250).
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)

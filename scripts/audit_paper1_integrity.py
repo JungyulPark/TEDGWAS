@@ -200,5 +200,17 @@ if "0.951" in t:
     ok("0.774" in t or "rs1023586" in t,
        "TSHR UKB non-colocalization disclosed alongside PP.H4 = 0.951")
 
+# 26. "prespecified" is reserved for the outcome hierarchy. The PP.H4 >= 0.80 threshold
+#     and the backbone genes were not pre-registered, and the manuscript itself says no
+#     registration identifier exists -- calling a threshold "prespecified" contradicts it.
+presp = [ln.strip()[:80] for ln in t.splitlines()
+         if "prespecified" in ln and "outcome hierarchy" not in ln]
+ok(not presp, f"'prespecified' only for the outcome hierarchy (found: {presp or 'none'})")
+
+# 27. no AI-tool declaration or vendor names in the manuscript (author decision 2026-09-05)
+ai_terms = [q for q in ["AI-assisted", "artificial intelligence", "language model",
+                        "Codex", "OpenAI", "Claude", "ChatGPT"] if q in t]
+ok(not ai_terms, f"no AI-tool wording in the manuscript (found: {ai_terms or 'none'})")
+
 print("\nRESULT:", "ALL PASS ✅" if not fails else f"{len(fails)} FAIL ❌")
 sys.exit(0 if not fails else 1)
