@@ -1,0 +1,184 @@
+[
+  {
+    "number": 1,
+    "reference": "1. Bahn RS. Graves' ophthalmopathy. N Engl J Med. 2010;362:726-738. doi:10.1056/nejmra0905750.",
+    "doi": "10.1056/nejmra0905750",
+    "id": "20181974",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Graves%27+ophthalmopathy%22+AND+FIRST_PDATE%3A2010+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 2,
+    "reference": "2. Smith TJ, Hegedüs L. Graves' Disease. N Engl J Med. 2016;375:1552-1565. doi:10.1056/nejmra1510030.",
+    "doi": "10.1056/nejmra1510030",
+    "id": "27797318",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Graves%27+disease%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 3,
+    "reference": "3. Douglas RS, Kahaly GJ, Patel A, Sile S, Thompson EHZ, Perdok R, Fleming JC, Fowler BT, Marcocci C, Marinò M, et al. Teprotumumab for the Treatment of Active Thyroid Eye Disease. N Engl J Med. 2020;382:341-352. doi:10.1056/nejmoa1910434.",
+    "doi": "10.1056/nejmoa1910434",
+    "id": "31971679",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Teprotumumab+for+the+treatment+of+active+thyroid+eye+disease%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 4,
+    "reference": "4. Smith TJ. The insulin-like growth factor-I receptor and its role in thyroid-associated ophthalmopathy. Eye (Lond). 2019;33:200-205. doi:10.1038/s41433-018-0265-2.",
+    "doi": "10.1038/s41433-018-0265-2",
+    "id": "30385883",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A30385883+AND+SRC%3AMED&format=json&resultType=core"
+  },
+  {
+    "number": 5,
+    "reference": "5. Krieger CC, Boutin A, Jang D, Morgan SJ, Banga JP, Kahaly GJ, Klubo-Gwiezdzinska J, Neumann S, Gershengorn MC. Arrestin-β-1 Physically Scaffolds TSH and IGF1 Receptors to Enable Crosstalk. Endocrinology. 2019;160:1468-1479. doi:10.1210/en.2019-00055.",
+    "doi": "10.1210/en.2019-00055",
+    "id": "31127272",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Arrestin-%CE%B2-1+physically+scaffolds+TSH+and+IGF1+receptors+to+enable+crosstalk%22+AND+FIRST_PDATE%3A2019+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 6,
+    "reference": "6. Smith TJ. Potential Roles of CD34+ Fibrocytes Masquerading as Orbital Fibroblasts in Thyroid-Associated Ophthalmopathy. J Clin Endocrinol Metab. 2019;104:581-594. doi:10.1210/jc.2018-01493.",
+    "doi": "10.1210/jc.2018-01493",
+    "id": "30445529",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Potential+roles+of+CD34%2B+fibrocytes+masquerading+as+orbital+fibroblasts+in+thyroid-associated+ophthalmopathy%22+AND+FIRST_PDATE%3A2019+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 7,
+    "reference": "7. Sanderson E, Glymour MM, Holmes MV, Kang H, Morrison J, Munafò MR, Palmer T, Schooling CM, Wallace C, Zhao Q, et al. Mendelian randomization. Nat Rev Methods Primers. 2022;2:6. doi:10.1038/s43586-021-00092-5.",
+    "doi": "10.1038/s43586-021-00092-5",
+    "id": "37325194",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A10.1038%2Fs43586-021-00092-5&format=json&resultType=core"
+  },
+  {
+    "number": 8,
+    "reference": "8. Giambartolomei C, Vukcevic D, Schadt EE, Franke L, Hingorani AD, Wallace C, Plagnol V. Bayesian test for colocalisation between pairs of genetic association studies using summary statistics. PLoS Genet. 2014;10:e1004383. doi:10.1371/journal.pgen.1004383.",
+    "doi": "10.1371/journal.pgen.1004383",
+    "id": "24830394",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Bayesian+test+for+colocalisation+between+pairs+of+genetic+association+studies+using+summary+statistics%22+AND+FIRST_PDATE%3A2014+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 9,
+    "reference": "9. Ji Q, Xu H, Chen H, Chen X, Wang S, Zou J. Pathogenic genes associated with immune-related genes in graves' disease: a multi-omics Mendelian randomization analysis. Sci Rep. 2025;15:37875. doi:10.1038/s41598-025-21754-4.",
+    "doi": "10.1038/s41598-025-21754-4",
+    "id": "41162548",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Pathogenic+genes+associated+with+immune-related+genes+in+Graves%27+disease%3A+a+multi-omics+Mendelian+randomization+analysis%22+AND+FIRST_PDATE%3A2025+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 10,
+    "reference": "10. Li Y, Chen L, Lin S, An W, Miao L, Wan M, Zhang B. Inflammatory Proteins Mediate the Effect of Gut Microbiota on Graves' Ophthalmopathy: A Mendelian Randomization Study. Transl Vis Sci Technol. 2025;14:34. doi:10.1167/tvst.14.6.34.",
+    "doi": "10.1167/tvst.14.6.34",
+    "id": "40576426",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Inflammatory+proteins+mediate+the+effect+of+gut+microbiota+on+Graves%27+ophthalmopathy%3A+a+Mendelian+randomization+study%22+AND+FIRST_PDATE%3A2025+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 11,
+    "reference": "11. Skrivankova VW, Richmond RC, Woolf BAR, Yarmolinsky J, Davies NM, Swanson SA, VanderWeele TJ, Higgins JPT, Timpson NJ, Dimou N, et al. Strengthening the Reporting of Observational Studies in Epidemiology Using Mendelian Randomization: The STROBE-MR Statement. JAMA. 2021;326:1614-1621. doi:10.1001/jama.2021.18236.",
+    "doi": "10.1001/jama.2021.18236",
+    "id": "34698778",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Strengthening+the+reporting+of+observational+studies+in+epidemiology+using+Mendelian+randomization%3A+the+STROBE-MR+statement%22+AND+FIRST_PDATE%3A2021+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 12,
+    "reference": "12. Võsa U, Claringbould A, Westra HJ, Bonder MJ, Deelen P, Zeng B, Kirsten H, Saha A, Kreuzhuber R, Yazar S, et al. Large-scale cis- and trans-eQTL analyses identify thousands of genetic loci and polygenic scores that regulate blood gene expression. Nat Genet. 2021;53:1300-1310. doi:10.1038/s41588-021-00913-z.",
+    "doi": "10.1038/s41588-021-00913-z",
+    "id": "34475573",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Large-scale+cis-+and+trans-eQTL+analyses+identify+thousands+of+genetic+loci+and+polygenic+scores+that+regulate+blood+gene+expression%22+AND+FIRST_PDATE%3A2021+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 13,
+    "reference": "13. Sakaue S, Kanai M, Tanigawa Y, Karjalainen J, Kurki M, Koshiba S, Narita A, Konuma T, Yamamoto K, Akiyama M, et al. A cross-population atlas of genetic associations for 220 human phenotypes. Nat Genet. 2021;53:1415-1424. doi:10.1038/s41588-021-00931-x.",
+    "doi": "10.1038/s41588-021-00931-x",
+    "id": "34594039",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22A+cross-population+atlas+of+genetic+associations+for+220+human+phenotypes%22+AND+FIRST_PDATE%3A2021+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 14,
+    "reference": "14. Dönertaş HM, Fabian DK, Valenzuela MF, Partridge L, Thornton JM. Common genetic associations between age-related diseases. Nat Aging. 2021;1:400-412. doi:10.1038/s43587-021-00051-5.",
+    "doi": "10.1038/s43587-021-00051-5",
+    "id": "33959723",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Common+genetic+associations+between+age-related+diseases%22+AND+FIRST_PDATE%3A2021+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 15,
+    "reference": "15. Kurki MI, Karjalainen J, Palta P, Sipilä TP, Kristiansson K, Donner KM, Reeve MP, Laivuori H, Aavikko M, Kaunisto MA, et al. FinnGen provides genetic insights from a well-phenotyped isolated population. Nature. 2023;613:508-518. doi:10.1038/s41586-022-05473-8.",
+    "doi": "10.1038/s41586-022-05473-8",
+    "id": "36653562",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22FinnGen+provides+genetic+insights+from+a+well-phenotyped+isolated+population%22+AND+FIRST_PDATE%3A2023+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 16,
+    "reference": "16. Finan C, Gaulton A, Kruger FA, Lumbers RT, Shah T, Engmann J, Galver L, Kelley R, Karlsson A, Santos R, et al. The druggable genome and support for target identification and validation in drug development. Sci Transl Med. 2017;9:eaag1166. doi:10.1126/scitranslmed.aag1166.",
+    "doi": "10.1126/scitranslmed.aag1166",
+    "id": "28356508",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+druggable+genome+and+support+for+target+identification+and+validation+in+drug+development%22+AND+FIRST_PDATE%3A2017+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 17,
+    "reference": "17. Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM, et al. Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. Nat Genet. 2016;48:481-487. doi:10.1038/ng.3538.",
+    "doi": "10.1038/ng.3538",
+    "id": "27019110",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Integration+of+summary+data+from+GWAS+and+eQTL+studies+predicts+complex+trait+gene+targets%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 18,
+    "reference": "18. Chang CC, Chow CC, Tellier LC, Vattikuti S, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7. doi:10.1186/s13742-015-0047-8.",
+    "doi": "10.1186/s13742-015-0047-8",
+    "id": "25722852",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Second-generation+PLINK%3A+rising+to+the+challenge+of+larger+and+richer+datasets%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 19,
+    "reference": "19. Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R, et al. The MR-Base platform supports systematic causal inference across the human phenome. Elife. 2018;7:e34408. doi:10.7554/elife.34408.",
+    "doi": "10.7554/elife.34408",
+    "id": "29846171",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+MR-Base+platform+supports+systematic+causal+inference+across+the+human+phenome%22+AND+FIRST_PDATE%3A2018+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 20,
+    "reference": "20. Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int J Epidemiol. 2015;44:512-525. doi:10.1093/ije/dyv080.",
+    "doi": "10.1093/ije/dyv080",
+    "id": "26050253",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mendelian+randomization+with+invalid+instruments%3A+effect+estimation+and+bias+detection+through+Egger+regression%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 21,
+    "reference": "21. Bowden J, Davey Smith G, Haycock PC, Burgess S. Consistent Estimation in Mendelian Randomization with Some Invalid Instruments Using a Weighted Median Estimator. Genet Epidemiol. 2016;40:304-314. doi:10.1002/gepi.21965.",
+    "doi": "10.1002/gepi.21965",
+    "id": "27061298",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Consistent+estimation+in+Mendelian+randomization+with+some+invalid+instruments+using+a+weighted+median+estimator%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 22,
+    "reference": "22. Hemani G, Tilling K, Davey Smith G. Orienting the causal relationship between imprecisely measured traits using GWAS summary data. PLoS Genet. 2017;13:e1007081. doi:10.1371/journal.pgen.1007081.",
+    "doi": "10.1371/journal.pgen.1007081",
+    "id": "29149188",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Orienting+the+causal+relationship+between+imprecisely+measured+traits+using+GWAS+summary+data%22+AND+FIRST_PDATE%3A2017+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 23,
+    "reference": "23. Wallace C. Eliciting priors and relaxing the single causal variant assumption in colocalisation analyses. PLoS Genet. 2020;16:e1008720. doi:10.1371/journal.pgen.1008720.",
+    "doi": "10.1371/journal.pgen.1008720",
+    "id": "32310995",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Eliciting+priors+and+relaxing+the+single+causal+variant+assumption+in+colocalisation+analyses%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 24,
+    "reference": "24. Ueda H, Howson JM, Esposito L, Heward J, Snook H, Chamberlain G, Rainbow DB, Hunter KM, Smith AN, Di Genova G, et al. Association of the T-cell regulatory gene CTLA4 with susceptibility to autoimmune disease. Nature. 2003;423:506-511. doi:10.1038/nature01621.",
+    "doi": "10.1038/nature01621",
+    "id": "12724780",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Association+of+the+T-cell+regulatory+gene+CTLA4+with+susceptibility+to+autoimmune+disease%22+AND+FIRST_PDATE%3A2003+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 25,
+    "reference": "25. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318-1330. doi:10.1126/science.aaz1776.",
+    "doi": "10.1126/science.aaz1776",
+    "id": "32913098",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+GTEx+Consortium+atlas+of+genetic+regulatory+effects+across+human+tissues%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 26,
+    "reference": "26. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.",
+    "doi": "10.1038/ng.3314",
+    "id": "26121088",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+support+of+human+genetic+evidence+for+approved+drug+indications%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  }
+]

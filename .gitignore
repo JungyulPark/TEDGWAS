@@ -78,3 +78,8 @@ files*.zip
 !KSO_oral_abstract_KR_EN.docx
 !COVER_LETTER_EndocrineConnections.docx
 submission/_build/
+
+# Reviewed 2026-09-05 submission artifacts only; raw/reference exclusions remain.
+!submission/candidate_20260905/*.docx
+!submission/candidate_20260905/figures/*.png
+!submission/candidate_20260905/figures/*.pdf

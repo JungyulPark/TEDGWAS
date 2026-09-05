@@ -1,0 +1,75 @@
+{
+  "checked_at_utc": "2026-09-05T03:13:26.811705+00:00",
+  "documents": [
+    {
+      "file": "MANUSCRIPT_Submission.docx",
+      "sha256": "60368a9b34e94e27b0ab63475d9ce7a8e6af5d38b2b1e60dab7794e8c85d3062",
+      "rendered_pages": 27,
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "renderer": "LibreOffice via documents render_docx.py; PNG page inspection",
+      "result": "PASS: readable text, tables, symbols and figures; no observed clipping or overlapping content."
+    },
+    {
+      "file": "SUPPLEMENTARY_MATERIAL.docx",
+      "sha256": "26b0308fc9aa33507f71d7880153e623877d034d267ea923752e844862e1d823",
+      "rendered_pages": 13,
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "renderer": "LibreOffice via documents render_docx.py; PNG page inspection",
+      "result": "PASS: readable text, tables, symbols and figures; no observed clipping or overlapping content."
+    },
+    {
+      "file": "COVER_LETTER_EndocrineConnections.docx",
+      "sha256": "65e13bf05a703ba55c73ac8eef2ef471880bfd89f6cd000b0bf91cecda1c2c80",
+      "rendered_pages": 1,
+      "visually_inspected_pages": [
+        1
+      ],
+      "renderer": "LibreOffice via documents render_docx.py; PNG page inspection",
+      "result": "PASS: readable text, tables, symbols and figures; no observed clipping or overlapping content."
+    }
+  ],
+  "supplement_final_change": "Figure S1 title spacing corrected; rerender changed only page 12, inspected again. All other page images were byte-identical.",
+  "scope": "Layout inspection only. Author details, declarations, journal-specific requirements and unperformed MAF sensitivity remain subject to the review report."
+}

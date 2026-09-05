@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/JungyulPark/TEDGWAS",
+  "branch": "claude/brave-sagan-R84Lj",
+  "commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
+  "sources": {
+    "canonical_coloc": {
+      "path": "TrackA_MR\\v5_upgrade\\05_coloc_candidates\\TaskE_01b_coloc_v2_20260904.csv",
+      "sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba"
+    },
+    "instrument_manifest": {
+      "path": "TrackA_MR\\v5_upgrade\\04_druggable_mr\\results\\TaskD_02a_eqtl_instruments_snp_level_v2_verified.csv",
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+    },
+    "historical_MR": {
+      "path": "TrackA_MR\\v5_upgrade\\04_druggable_mr\\results\\TaskD_03d_MR_all_outcomes_merged_v1.csv",
+      "sha256": "003d13243beacea347049e1e0445bbf3400b2fd9da3606e22a4b0dd4407af62e"
+    },
+    "manuscript_before_edit": {
+      "path": "MANUSCRIPT_TED_TRAP_v5_MASTER.md",
+      "sha256": "98b78d6267bf8b1e8af4a3290403fc17b12eeae41366e73bc678addce0e0e4b0"
+    }
+  },
+  "MR_filter": "Primary estimates and supplementary estimator evidence restricted to genes in the verified 2544-gene instrument manifest; GAN excluded. Historical source preserved."
+}

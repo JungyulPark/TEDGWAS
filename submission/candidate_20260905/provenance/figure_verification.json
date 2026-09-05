@@ -1,0 +1,103 @@
+{
+  "checked_at_utc": "2026-09-05T03:13:26.811705+00:00",
+  "canonical_csv_sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba",
+  "CTLA4_BBJ_default_prior": {
+    "PP.H3": 0.799063341407313,
+    "PP.H4": 0.200936658591635
+  },
+  "figures": [
+    {
+      "name": "Figure1",
+      "sources": {
+        "coloc_canonical_v2.csv": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba",
+        "MR_primary_canonical.csv": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2",
+        "instruments_verified.csv": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+      },
+      "png_sha256": "bf987dbc1ab893bb5fc1dd8aa3fdcbd129cb922bcc60812e1b22afe2302d0359",
+      "pdf_sha256": "6924331f9749625320012f18beefef8c873d2f11aeb31d7f9a7ebb740e004275",
+      "png_pixels": [
+        2155,
+        2818
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_inspection": "PASS",
+      "data_note": "All plotted data come from these verified tables; scientific interpretation and unperformed sensitivity limits remain in manuscript."
+    },
+    {
+      "name": "Figure2",
+      "sources": {
+        "MR_primary_canonical.csv": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
+      },
+      "png_sha256": "1d22ccd5caa18ee34a08b0536e447381bae3233cd775c3c51f5a5e4f2895e75b",
+      "pdf_sha256": "f1a3d197551c74f2e3bf30b1cca332fe9be0cdc29972b9345bdfb15e0c51a3ac",
+      "png_pixels": [
+        2157,
+        2608
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_inspection": "PASS",
+      "data_note": "All plotted data come from these verified tables; scientific interpretation and unperformed sensitivity limits remain in manuscript."
+    },
+    {
+      "name": "Figure3",
+      "sources": {
+        "coloc_canonical_v2.csv": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba",
+        "MR_primary_canonical.csv": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
+      },
+      "png_sha256": "a4f6c9ac678ca78ba1335364b9ac16d4d6128cbacd586ca76bc9df0d0bbbcc0b",
+      "pdf_sha256": "7b9a459dcfafb5e635b9a85ec5bfb9809829c6a7ea82be647eff039db3a4bf4a",
+      "png_pixels": [
+        2818,
+        1562
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_inspection": "PASS",
+      "data_note": "All plotted data come from these verified tables; scientific interpretation and unperformed sensitivity limits remain in manuscript."
+    },
+    {
+      "name": "FigureS1",
+      "sources": {
+        "tissue_descriptive.csv": "36fc61f7e07ccaf057f860294b4861fdddb5bae5d201d09f48aabfcee9cd937c"
+      },
+      "png_sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b",
+      "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
+      "png_pixels": [
+        2128,
+        988
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_inspection": "PASS",
+      "data_note": "All plotted data come from these verified tables; scientific interpretation and unperformed sensitivity limits remain in manuscript."
+    },
+    {
+      "name": "FigureS2",
+      "sources": {
+        "coloc_canonical_v2.csv": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba"
+      },
+      "png_sha256": "a79fac2586474927247a9d6ad11d73bb00145a31453e11d6cbdbad61cdc7f8e9",
+      "pdf_sha256": "952efe4b915790a96cfb6dc2b0978de422b1da11f9aebe85fcdf2d38485bc155",
+      "png_pixels": [
+        2067,
+        2111
+      ],
+      "png_dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_inspection": "PASS",
+      "data_note": "All plotted data come from these verified tables; scientific interpretation and unperformed sensitivity limits remain in manuscript."
+    }
+  ]
+}

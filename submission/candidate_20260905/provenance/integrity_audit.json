@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "numeric_cells_compared": 463,
+  "checks": 580,
+  "errors": [],
+  "scope": "Source-to-table consistency and DOCX structural checks; author declarations and unperformed sensitivity are not validated by this pass."
+}

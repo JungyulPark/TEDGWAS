@@ -1,3 +1,5 @@
+> **Superseded by the 2026-09-05 candidate.** Use [candidate_20260905/README.md](candidate_20260905/README.md) and its revision report. The older files and build instructions below are historical.
+
 # 제출 패키지 — TED-TRAP Paper 1
 
 **Manuscript:** Genetic susceptibility and therapeutic target biology diverge at *TSHR* and

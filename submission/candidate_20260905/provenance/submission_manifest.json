@@ -1,0 +1,243 @@
+{
+  "created_at_utc": "2026-09-05T03:20:40.311173+00:00",
+  "status": "Submission candidate; author verification and final journal checks pending",
+  "target_journal_assumed": "Endocrine Connections",
+  "source_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
+  "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
+  "manuscript_md5": "dfd24c67fb07c30d128c42c95ed45a37",
+  "numeric_audit": {
+    "status": "PASS",
+    "numeric_cells_compared": 463,
+    "checks": 580,
+    "errors": [],
+    "scope": "Source-to-table consistency and DOCX structural checks; author declarations and unperformed sensitivity are not validated by this pass."
+  },
+  "MAF_sensitivity": "Not performed; limitation retained",
+  "distribution": "GitHub copy: source-data extracts excluded under CLAUDE.md; authorized inputs remain local",
+  "excluded_inputs": [
+    {
+      "path": "reproducibility/inputs/BBJ_byrsid.tsv",
+      "bytes": 2603377,
+      "sha256": "b17ee0909cab0b85d4a305224df5f57e334c94155859793bf564255778b110b0"
+    },
+    {
+      "path": "reproducibility/inputs/eqtlgen_9genes.tsv",
+      "bytes": 2923806,
+      "sha256": "3b9094f12f8ae917a7e8662ab815959a7e1f61e533b52002e7cf094f33572d5f"
+    },
+    {
+      "path": "reproducibility/inputs/eur_freq_subset.tsv",
+      "bytes": 1304270,
+      "sha256": "196a2c3d7b7ce512b62a6fdbb347bd6040cd3a6265315b65b2ba5812fb17d7b2"
+    },
+    {
+      "path": "reproducibility/inputs/FinnGen_byrsid.tsv",
+      "bytes": 2597758,
+      "sha256": "67bc3af631e8d944c8d196f8675c95b5c61b926716ac864d56aa67f5eedf7f35"
+    },
+    {
+      "path": "reproducibility/inputs/UKB_byrsid.tsv",
+      "bytes": 2411135,
+      "sha256": "604a80e00afdf66a623e892dafc678bf420588c72a8cee2fc4cc81b5228af06c"
+    }
+  ],
+  "files": {
+    "COVER_LETTER_EndocrineConnections.docx": {
+      "bytes": 14017,
+      "sha256": "65e13bf05a703ba55c73ac8eef2ef471880bfd89f6cd000b0bf91cecda1c2c80"
+    },
+    "COVER_LETTER_EndocrineConnections.md": {
+      "bytes": 3456,
+      "sha256": "4f43041a9b4d4e26a99aaed1da7de952755f112f19783e21a5cfe5541ac773f8"
+    },
+    "figures/Figure1.pdf": {
+      "bytes": 87184,
+      "sha256": "6924331f9749625320012f18beefef8c873d2f11aeb31d7f9a7ebb740e004275"
+    },
+    "figures/Figure1.png": {
+      "bytes": 275159,
+      "sha256": "bf987dbc1ab893bb5fc1dd8aa3fdcbd129cb922bcc60812e1b22afe2302d0359"
+    },
+    "figures/Figure2.pdf": {
+      "bytes": 100855,
+      "sha256": "f1a3d197551c74f2e3bf30b1cca332fe9be0cdc29972b9345bdfb15e0c51a3ac"
+    },
+    "figures/Figure2.png": {
+      "bytes": 232860,
+      "sha256": "1d22ccd5caa18ee34a08b0536e447381bae3233cd775c3c51f5a5e4f2895e75b"
+    },
+    "figures/Figure3.pdf": {
+      "bytes": 79909,
+      "sha256": "7b9a459dcfafb5e635b9a85ec5bfb9809829c6a7ea82be647eff039db3a4bf4a"
+    },
+    "figures/Figure3.png": {
+      "bytes": 152263,
+      "sha256": "a4f6c9ac678ca78ba1335364b9ac16d4d6128cbacd586ca76bc9df0d0bbbcc0b"
+    },
+    "figures/FigureS1.pdf": {
+      "bytes": 56247,
+      "sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b"
+    },
+    "figures/FigureS1.png": {
+      "bytes": 92994,
+      "sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b"
+    },
+    "figures/FigureS2.pdf": {
+      "bytes": 52349,
+      "sha256": "952efe4b915790a96cfb6dc2b0978de422b1da11f9aebe85fcdf2d38485bc155"
+    },
+    "figures/FigureS2.png": {
+      "bytes": 129461,
+      "sha256": "a79fac2586474927247a9d6ad11d73bb00145a31453e11d6cbdbad61cdc7f8e9"
+    },
+    "MANUSCRIPT_Submission.docx": {
+      "bytes": 36509,
+      "sha256": "60368a9b34e94e27b0ab63475d9ce7a8e6af5d38b2b1e60dab7794e8c85d3062"
+    },
+    "provenance/clumping_sensitivity.csv": {
+      "bytes": 1296,
+      "sha256": "c26f86887474c7a89ee91ec7925573d755a31100d9c0edffe3a5cfa8d35f52c8"
+    },
+    "provenance/coloc_canonical_v2.csv": {
+      "bytes": 19201,
+      "sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba"
+    },
+    "provenance/coloc_independent_reproduction.csv": {
+      "bytes": 12042,
+      "sha256": "4e3eb4aab6fe87f07637e94acb4e7de6f4625adebbefc1f49966d631c8857e76"
+    },
+    "provenance/coloc_verification.json": {
+      "bytes": 539,
+      "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
+    },
+    "provenance/document_visual_qa.json": {
+      "bytes": 2192,
+      "sha256": "6189073c1725dc7abc9118154fafe3dd2240de9b328e6af0933d371186469db6"
+    },
+    "provenance/figure_verification.json": {
+      "bytes": 3954,
+      "sha256": "fc224fb35c360dfec027263bd367cf6307a375ab7d2c74672a5460161bca22e1"
+    },
+    "provenance/instruments_verified.csv": {
+      "bytes": 507694,
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+    },
+    "provenance/integrity_audit.json": {
+      "bytes": 244,
+      "sha256": "66cfc9daa09856581288569a69cc092d83b12f1c9cbd73580d5a490223036d29"
+    },
+    "provenance/MR_all_estimators_verified.csv": {
+      "bytes": 3210783,
+      "sha256": "4fcf79fca8e52febb04fde2412d63d66646b37015592627bf40cc1e0daa354e8"
+    },
+    "provenance/MR_primary_canonical.csv": {
+      "bytes": 1665839,
+      "sha256": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
+    },
+    "provenance/power_summary_verified.csv": {
+      "bytes": 706,
+      "sha256": "cac6cebcf3b2fe88ce683f9627284a16a05b3371bb43afc179fa7fd9686338ab"
+    },
+    "provenance/references_verified.json": {
+      "bytes": 15180,
+      "sha256": "fb9a75b66e827c702a836b01bc87632401c312ae9556345af3212bd5bc2e94d3"
+    },
+    "provenance/source_manifest.json": {
+      "bytes": 1218,
+      "sha256": "046250f732165af1a599f7681edf4b3e1646c8220c74f659bb7fcaae87d2a719"
+    },
+    "provenance/tissue_descriptive.csv": {
+      "bytes": 255,
+      "sha256": "36fc61f7e07ccaf057f860294b4861fdddb5bae5d201d09f48aabfcee9cd937c"
+    },
+    "provenance/word_counts.json": {
+      "bytes": 231,
+      "sha256": "487cf54cd824d2fd6d8f71f4d787811033b56d2133b1ed17188ba180f864e7e3"
+    },
+    "README.md": {
+      "bytes": 1667,
+      "sha256": "c71d1466dcad4297e786381bfc6b38587f55969c2a5001bbc2a9c2c5c8c785f4"
+    },
+    "reproducibility/audit_submission.py": {
+      "bytes": 6986,
+      "sha256": "5f469b6d9883617185b81c623baecb44373585659a6dfaf04f20243e2b60bdee"
+    },
+    "reproducibility/build_documents.py": {
+      "bytes": 17981,
+      "sha256": "c47d6528a8c3a1106b4e4e0c712716dd83a31fbff532d7ad08e86eaa75213bcd"
+    },
+    "reproducibility/build_figures.py": {
+      "bytes": 7007,
+      "sha256": "4ed079bf707603158c97d1f24bc9ba1336ff53c2942df73dc33862b67f13d922"
+    },
+    "reproducibility/figure1_layout.py": {
+      "bytes": 8972,
+      "sha256": "c39d364955cd690ef7088eda520b399508701f7064f690974b0a821ad453538d"
+    },
+    "reproducibility/inputs/.gitignore": {
+      "bytes": 28,
+      "sha256": "385638635cc622d30ddeaee23db477e481354e4a96c60905d3b77bdb4f6a7a8d"
+    },
+    "reproducibility/inputs/README.md": {
+      "bytes": 823,
+      "sha256": "dac9435177e73e8d3ac9fff76791b05ce80712577876e1322d017340cedd64d6"
+    },
+    "reproducibility/inputs_manifest.json": {
+      "bytes": 1013,
+      "sha256": "6b3c4e9ff2f99073523ea46eb8560ce071271d83b030a022c8da330509cc64b3"
+    },
+    "reproducibility/Prepare_MAF_inputs.ps1": {
+      "bytes": 1946,
+      "sha256": "6470d6a6f4f248d4d26ac3205c341e6609f0a939a1ef97286a7bfd6cc41bbafc"
+    },
+    "reproducibility/README.md": {
+      "bytes": 4112,
+      "sha256": "02fadfc4a8e88e1b4ab11e7a49b5fee054c6fcbc7500ce08cf6af42d56fb5e8b"
+    },
+    "reproducibility/reproduce_colocalization.py": {
+      "bytes": 3939,
+      "sha256": "33d2a700810834791ace9efab7dd0bfe1dab9f319ef2fcb4758eb6e8b2b04508"
+    },
+    "reproducibility/requirements.txt": {
+      "bytes": 64,
+      "sha256": "6bf50247d38a26f49b519eed65347d3ae45d9d0d8f189ac8d4d50d29d232669e"
+    },
+    "reproducibility/rerun_verification/coloc_independent_reproduction.csv": {
+      "bytes": 12042,
+      "sha256": "4e3eb4aab6fe87f07637e94acb4e7de6f4625adebbefc1f49966d631c8857e76"
+    },
+    "reproducibility/rerun_verification/coloc_verification.json": {
+      "bytes": 539,
+      "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
+    },
+    "REVIEW_REPORT_KO.md": {
+      "bytes": 8036,
+      "sha256": "f90aa1339a794afc24fc188493b86253159986471d5de4f52dd232ff9ce3cd11"
+    },
+    "Supplementary_Data_1_Instruments.csv": {
+      "bytes": 507694,
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+    },
+    "Supplementary_Data_2_MR.csv": {
+      "bytes": 1665839,
+      "sha256": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
+    },
+    "Supplementary_Data_3_Colocalization.csv": {
+      "bytes": 19201,
+      "sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba"
+    },
+    "SUPPLEMENTARY_DATA_README.md": {
+      "bytes": 2798,
+      "sha256": "e22ddb3f9eb11ba43d44bb26650b377ed08feb318b45cf476baad5bfdbec7985"
+    },
+    "SUPPLEMENTARY_MATERIAL.docx": {
+      "bytes": 214857,
+      "sha256": "26b0308fc9aa33507f71d7880153e623877d034d267ea923752e844862e1d823"
+    },
+    "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md": {
+      "bytes": 76894,
+      "sha256": "74965c5f17e73b4ad650c5e0a9f369572dbf52262fffa9b2edd4cea83bc09e07"
+    }
+  },
+  "manifest_note": "Paths are relative to this candidate directory, not provenance. Excludes this manifest. The master exists only at repository root."
+}
