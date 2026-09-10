@@ -1,0 +1,28 @@
+{
+  "baseline_rows": 81,
+  "max_baseline_posterior_difference": 2.1371793224034263e-15,
+  "comparisons": [
+    {
+      "comparison": "frequency_only",
+      "max_abs_delta_H4": 0.0,
+      "n_threshold_crossings": 0,
+      "n_primary_prior_crossings": 0
+    },
+    {
+      "comparison": "frequency_and_coverage",
+      "max_abs_delta_H4": 0.0,
+      "n_threshold_crossings": 0,
+      "n_primary_prior_crossings": 0
+    }
+  ],
+  "dataset1": "outcome",
+  "dataset2": "eQTL",
+  "eQTL_sdY": 1,
+  "p1": 0.0001,
+  "p2": 0.0001,
+  "p12": [
+    1e-06,
+    5e-06,
+    1e-05
+  ]
+}

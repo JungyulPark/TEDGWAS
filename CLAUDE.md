@@ -1,4 +1,4 @@
-> **2026-09-05 reviewed revision:** The current master and `submission/candidate_20260905/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the candidate revision report and source verification before editing. In particular, outdated SuSiE/tissue P-value claims must not be restored, the current IGF1R UKB posterior is split H2/H4, and eQTLGen frequency sensitivity remains unperformed. The non-negotiable data-management rules below remain in force.
+> **2026-09-05 reviewed revision:** The current master and `submission/candidate_20260905_maf/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the candidate revision report and source verification before editing. In particular, outdated SuSiE/tissue P-value claims must not be restored, the current IGF1R UKB posterior is split H2/H4, and the requested eQTLGen frequency sensitivity is now completed (Tables S10–S12 and Supplementary Data 4–6). The non-negotiable data-management rules below remain in force.
 
 # CLAUDE.md — TED-TRAP project rules
 

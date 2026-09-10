@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "numeric_cells_compared": 652,
+  "checks": 854,
+  "errors": [],
+  "scope": "Source-to-table consistency including completed frequency sensitivity and DOCX structure; causal assumptions, author declarations and journal requirements are not validated by this pass."
+}

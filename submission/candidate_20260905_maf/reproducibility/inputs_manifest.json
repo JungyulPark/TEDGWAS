@@ -1,0 +1,30 @@
+{
+  "policy": "Local-only; excluded from GitHub under CLAUDE.md data rules",
+  "files": [
+    {
+      "path": "reproducibility/inputs/BBJ_byrsid.tsv",
+      "bytes": 2603377,
+      "sha256": "b17ee0909cab0b85d4a305224df5f57e334c94155859793bf564255778b110b0"
+    },
+    {
+      "path": "reproducibility/inputs/eqtlgen_9genes.tsv",
+      "bytes": 2923806,
+      "sha256": "3b9094f12f8ae917a7e8662ab815959a7e1f61e533b52002e7cf094f33572d5f"
+    },
+    {
+      "path": "reproducibility/inputs/eur_freq_subset.tsv",
+      "bytes": 1304270,
+      "sha256": "196a2c3d7b7ce512b62a6fdbb347bd6040cd3a6265315b65b2ba5812fb17d7b2"
+    },
+    {
+      "path": "reproducibility/inputs/FinnGen_byrsid.tsv",
+      "bytes": 2597758,
+      "sha256": "67bc3af631e8d944c8d196f8675c95b5c61b926716ac864d56aa67f5eedf7f35"
+    },
+    {
+      "path": "reproducibility/inputs/UKB_byrsid.tsv",
+      "bytes": 2411135,
+      "sha256": "604a80e00afdf66a623e892dafc678bf420588c72a8cee2fc4cc81b5228af06c"
+    }
+  ]
+}

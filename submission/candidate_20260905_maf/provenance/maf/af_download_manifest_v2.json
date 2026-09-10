@@ -1,0 +1,12 @@
+{
+  "url": "https://download.gcc.rug.nl/downloads/eqtlgen/cis-eqtl/2018-07-18_SNP_AF_for_AlleleB_combined_allele_counts_and_MAF_pos_added.txt.gz",
+  "bytes": 240045342,
+  "sha256": "edffd43094598d08db6b423f7b3ce68b000a02f0b993ea4cfcf1f61a8175485d",
+  "downloaded_utc": "2026-09-05T03:55:42.313514+00:00",
+  "tls_exception": "Explicitly user-approved for this file after certificate-expired failures in Python and Windows Schannel. No redirects or global settings changes.",
+  "peer_certificate_sha256": "b15254a2d438ce44db2b1d02f2adb1ea24a99caa880e8ec4b4e09188a866cff4",
+  "server_identity_verified": false,
+  "compressed_integrity_check": "pending full gzip read",
+  "source_authenticity_note": "Checksum records this download; it is not a publisher-supplied authenticity checksum.",
+  "subsequent_integrity_verification": "Completed: af_input_verification_v1.json reports full gzip CRC PASS and 10,823,015 rows read."
+}

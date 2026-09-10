@@ -1,0 +1,4 @@
+outcome,added,removed,retained_outcome_sign_changed,affected_gene_outcome_pairs
+BBJ_Graves,5,5,0,10
+FinnGen_GO,6,3,0,9
+UKB_hyperthyroid,5,3,0,8

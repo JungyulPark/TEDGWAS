@@ -1,0 +1,15 @@
+{
+  "rows": 81,
+  "genes": 9,
+  "outcomes": 3,
+  "priors": 3,
+  "max_abs_posterior_difference": 2.1371793224034263e-15,
+  "all_overlap_counts_identical": true,
+  "all_top_snps_identical": true,
+  "canonical_sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba",
+  "dataset1": "outcome GWAS",
+  "dataset2": "eQTLGen cis-eQTL",
+  "H2": "eQTL only",
+  "verified_against": "coloc 5.2.3 beta/varbeta equations",
+  "equation_source": "https://raw.githubusercontent.com/chr1swallace/coloc/v5.2.3/R/claudia.R"
+}

@@ -1,4 +1,4 @@
-> **Current figure verification:** [candidate_20260905/provenance/figure_verification.json](submission/candidate_20260905/provenance/figure_verification.json). All five current figures use the reviewed v2 and aggregate result tables. CTLA4 BBJ PP.H3 is 0.799, PP.H4 is 0.201. The record below is historical and must not be used to rebuild the current candidate.
+> **Current figure verification:** [candidate_20260905_maf/provenance/figure_verification.json](submission/candidate_20260905_maf/provenance/figure_verification.json). All five current figures use the reviewed v2 and aggregate result tables. CTLA4 BBJ PP.H3 is 0.799, PP.H4 is 0.201. The record below is historical and must not be used to rebuild the current candidate.
 
 # Figure verification against locked master (v5)
 

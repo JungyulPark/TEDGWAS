@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-09-05T03:57:35.392617+00:00",
+  "source_filename": "2018-07-18_SNP_AF_for_AlleleB_combined_allele_counts_and_MAF_pos_added.txt.gz",
+  "source_bytes": 240045342,
+  "source_sha256": "edffd43094598d08db6b423f7b3ce68b000a02f0b993ea4cfcf1f61a8175485d",
+  "source_rows": 10823015,
+  "requested_unique_snps": 50245,
+  "requested_found": 50245,
+  "usable_selected": 50245,
+  "absent_rsids": [],
+  "coordinate_mismatches": [],
+  "invalid_frequency_rsids": [],
+  "max_selected_AF_count_error": 5.551115123125783e-16,
+  "full_gzip_crc": "PASS (read to EOF)",
+  "selected_sha256": "b9297697997bdd366e506e1da38e92e803f38ea4a510d1bea7b07b6b74af5024",
+  "official_source": "https://www.eqtlgen.org/cis-eqtls.html",
+  "frequency_cohort": "26,609 eQTLGen samples; FHS excluded by provider",
+  "effect_frequency_column": "AlleleB_all",
+  "authorization_manifest": "work/data/af_download_manifest_v2.json",
+  "local_only": true
+}
