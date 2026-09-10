@@ -83,6 +83,8 @@ for r in fs['Figure2']:
 check(not re.search(r'\b(?:Table|Tables) S(?:[5-9]|1[0-2])\b',text),'No old supplementary table references')
 check('Figure 3.' not in text and 'Figure S2.' not in text,'No removed figure references')
 check('{{' not in text and 'TODO' not in text,'No unresolved generation placeholders')
+check(not any(q in text for q in ['AI-assisted','artificial intelligence','language model','Codex','OpenAI','Claude','ChatGPT']),'Remote author decision: no manuscript AI-tool declaration')
+check(not any('prespecified' in line and 'outcome hierarchy' not in line for line in text.splitlines()),'No unregistered threshold described as prespecified')
 check('Vattikuti S, Vattikuti S' not in text,'Duplicated reference author corrected')
 check('All authors read and approved the final manuscript.' not in text,'No claim that this new revision has already been approved')
 check('not a P value' in text and 'not treatment effects' in text,'Probability and treatment-effect interpretation retained')

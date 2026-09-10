@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "numeric_cells_compared": 311,
-  "checks": 981,
+  "checks": 983,
   "errors": [],
   "scope": "Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review."
 }

@@ -119,8 +119,6 @@ Within these limits, *TSHR* showed a supported expression–disease association 
 
 **Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript.
 
-**Use of AI-assisted tools.** OpenAI Codex assisted with manuscript editing, code preparation, execution and verification of allele-frequency sensitivity analyses, figure rebuilding and document formatting. Scientific interpretation and responsibility for the submitted work remain with the authors.
-
 **Acknowledgements.** We thank the eQTLGen Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
 
 ## References

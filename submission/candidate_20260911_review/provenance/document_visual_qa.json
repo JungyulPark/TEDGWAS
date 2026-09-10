@@ -3,11 +3,11 @@
   "review_date": "2026-09-11",
   "renderer": "LibreOffice plus Poppler via documents skill render_docx.py; 120 dpi",
   "total_pages": 32,
-  "review_scope": "Every page inspected for clipping, overlap, page breaks, tables, legends, symbols and footers. Eight unchanged supplement pages were reused only after byte-identical PNG hashes were confirmed. Corrected S1 header and checklist alignment were re-inspected.",
+  "review_scope": "Every page inspected for clipping, overlap, page breaks, tables, legends, symbols and footers. Eight unchanged supplement pages were reused only after byte-identical PNG hashes were confirmed. Corrected S1 header and checklist alignment were re-inspected. After remote author changes were integrated, the revised main manuscript pages 12–20 and the cover letter were re-inspected; main pages 1–11 were byte-identical to inspected pages. All final files remain 32 pages in total.",
   "documents": [
     {
       "document": "MANUSCRIPT_Submission.docx",
-      "sha256": "42b830c2bd16ffef1bec0b3e4f28e0b3d9de16a0f0ee424417b679f0177f68fe",
+      "sha256": "033b403f7e62af447f70abe502ffb1e07346f83e457b2a75d7994a2d78720202",
       "page_count": 20,
       "all_pages_visually_reviewed": true,
       "page_images": [
@@ -57,42 +57,42 @@
         },
         {
           "page": 12,
-          "sha256": "55202731161b2ebf69805136612b835724f235c2f7960445a577073c98420db5"
+          "sha256": "82396abff6e70595bfd800d0679a9a0168eaf40ee504fe0b2dabac48b247c322"
         },
         {
           "page": 13,
-          "sha256": "8ba652f8e03b88cf06fec3dc5d8dd1bcb075c3fa9a8183d3e6bbd3c1423269a0"
+          "sha256": "c8dceff05cb0fff228643772fc1b532d1f72a564bc2cb145a33439cf5d9a5076"
         },
         {
           "page": 14,
-          "sha256": "3b303fc5fdbfb3e90d1b58b367009d2f7326e3aaa87ad233c2a8cbbfbfb3973f"
+          "sha256": "4b9e14f5e76b28eb36ed23df0c69a51dae271d2c689f864d409a2ca9404d487e"
         },
         {
           "page": 15,
-          "sha256": "73602320f52132e1b2fb28f231c5486ed16a934b8bcf869191e1c66a1ba60240"
+          "sha256": "e5377c1d625c4df1a1705c4d23200002cec5d8448ed2627d7d63da6e75b256e3"
         },
         {
           "page": 16,
-          "sha256": "4b201c918bf96e041cb806ca1fb4f8e48fccb8538a50dae3a5885eb90aa8bdda"
+          "sha256": "9199a61f55165de943e4b0ead41e210692532a9df82199b01cbc80154b22337a"
         },
         {
           "page": 17,
-          "sha256": "85656d841dca39175df82c6b833f8e961b0ffc6a882bba8e350859bb19908848"
+          "sha256": "1df97dc8885b84151b08d032dc406c16733d58cc440a1ea8940e1c2985ce0915"
         },
         {
           "page": 18,
-          "sha256": "368ab691ef908d7ded0dbec221865198c313c95e171f276a540df95eed8b6f8f"
+          "sha256": "1d6237dcf595d133a5d18d0061551abd5759f0ddf72fcf5bc228b9bd64a5075d"
         },
         {
           "page": 19,
-          "sha256": "e81e991956f8730782506277bb6eb9743a8cc59992d99d2b255db5d8a9676d8d"
+          "sha256": "2602e0b8b791a2a7ebf1b39cc389e8cec00a185fa98bcacf39f10124968effd6"
         },
         {
           "page": 20,
-          "sha256": "42f0d3af6d7afe51ae40aded6eafdac8e3b3d06da7ea7e6e81482db917ebab97"
+          "sha256": "60c2054238062922733b2cd6d878ad71b867821b1a345685fad1cfab9af4f069"
         }
       ],
-      "render_pdf_sha256": "395812de565d0e90643eaf0b5bf4e40265f785d42ea512aa1698f2479d5f51c3"
+      "render_pdf_sha256": "c1c7d23290d16215412225141d76e71429e796eedea6369e2631bcfb05eb0fec"
     },
     {
       "document": "SUPPLEMENTARY_MATERIAL.docx",
@@ -141,16 +141,16 @@
     },
     {
       "document": "COVER_LETTER_EndocrineConnections.docx",
-      "sha256": "c6c0cc13426d71212b59baebc87bf84001693d850e52bf77d46002f8897c306b",
+      "sha256": "a3ea2c071632ad730993ee37ef6ffeae73f28364c8a4c28f54760e725cce346d",
       "page_count": 1,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "482b0b2195a9299da2956a10c116e91edca7e6341e61ceb3a5f65b374eb0972b"
+          "sha256": "6ac3348973c1f7d0c4a8d5ae9d40a59f057f7c7601139e330a32039a9ddf6791"
         }
       ],
-      "render_pdf_sha256": "2eead3bae1536eb724d3a2511ff0f8a10fb55d829db2dca8c79a34b7af51ea4c"
+      "render_pdf_sha256": "da17b3ce56ac71837d22420cda3485f912ec18f2f2b7a88e84cec4451a7d0f21"
     },
     {
       "document": "STROBE_MR_CHECKLIST.docx",

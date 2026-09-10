@@ -17,6 +17,13 @@
     "Author affiliations, degrees and co-corresponding email",
     "All author approval of interpretation and declarations",
     "Related manuscript status and overlap disclosure",
-    "Live submission requirements and publication charges"
-  ]
+    "Live submission requirements and publication charges",
+    "AI-use disclosure: remote author deletion preserved in reading copy; ICMJE recommends disclosure, so journal requirements and final wording must be resolved before submission."
+  ],
+  "AI_guidance": {
+    "source": "https://www.icmje.org/recommendations/browse/artificial-intelligence/",
+    "checked_on": "2026-09-11",
+    "finding": "Disclose the tool used and its purpose. Journal-specific ethics page inaccessible (HTTP 403).",
+    "remote_author_decision_commit": "33f8e25b685a28f5fda28dcdf7f94a3fc87e35b4"
+  }
 }

@@ -25,7 +25,7 @@ The clinical revision contains 2,319 main-text words, 217 abstract words, three 
 | `TrackA_MR/v5_upgrade/` | Historical analysis outputs used as evidence |
 | `internal/` | Internal records, not journal upload files |
 
-The current numerical audit compares 311 displayed values and passes 981 checks. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
+The current numerical audit compares 311 displayed values and passes 983 checks. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
 
 Run the current audit from the repository root after installing the packages in the candidate's `reproducibility/requirements.txt`:
 

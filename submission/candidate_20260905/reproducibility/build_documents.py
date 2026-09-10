@@ -24,8 +24,11 @@ t=t.replace('| +0.14 (0.68) | rs11754268 |','| +0.15 (0.68) | rs11754268 |')
 t=t.replace('| 0.021 | 0.029 | 0.118 |','| 0.021 | 0.029 | 0.512 |').replace('| 0.012 | 0.002 | 0.040 |','| 0.012 | 0.002 | 0.367 |').replace('| 0.182 | 0.124 | 0.241 |','| 0.182 | 0.124 | 0.633 |')
 # Avoid nested asterisk delimiters in long table footnotes and isolate every caption.
 t='\n'.join(line[:len(line)-len(line.lstrip())]+line.strip()[1:-1] if re.match(r'^\s{0,2}\*[^*].*\*\s*$',line) else line for line in t.split('\n'))
-t=re.sub(r'\n(?:- )?(\*\*Table S)',r'\n\n\1',t)
-master.write_text(t,encoding='utf-8')
+# Idempotent: normalise to exactly one blank line before each supplementary caption.
+t=re.sub(r'\n+(?:- )?(\*\*Table S)',r'\n\n\1',t)
+# The master is read-only here: a build must never rewrite the source of truth
+# (an earlier version wrote it back, converting line endings and inserting a blank
+# line before every supplementary caption on each run).
 main,sup=t.split('## Supplementary Material',1)
 main=main.rstrip('-\n ')+'\n'
 title=t.split('\n# ')[1].split('\n')[0]
@@ -112,6 +115,7 @@ for name,txt in texts.items():
         st.paragraph_format.line_spacing=1.0 if iscover else 2
         st.paragraph_format.space_after=Pt(5 if iscover else 0)
     for nm in ['Title','Heading 1','Heading 2','Heading 3','Heading 4']:
+        if nm not in d.styles:continue
         st=d.styles[nm];st.font.name='Times New Roman';st.font.color.rgb=RGBColor(0,0,0);st.font.bold=True;st.font.size=Pt(15 if nm=='Title' else 12)
         st.paragraph_format.space_before=Pt(12);st.paragraph_format.space_after=Pt(6);st.paragraph_format.keep_with_next=True
         st.paragraph_format.line_spacing=1.15

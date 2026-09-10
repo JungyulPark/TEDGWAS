@@ -4,7 +4,7 @@
   "target_journal_assumed": "Endocrine Connections",
   "source_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "dfd24c67fb07c30d128c42c95ed45a37",
+  "manuscript_md5": "d6b944ecedbe091b3453492ae536304d",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 463,
@@ -43,12 +43,12 @@
   ],
   "files": {
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 14017,
-      "sha256": "65e13bf05a703ba55c73ac8eef2ef471880bfd89f6cd000b0bf91cecda1c2c80"
+      "bytes": 13386,
+      "sha256": "120398fd016638620e3ab46cf6a49bf38092d35a4ee30eb5eb076475e29e5c51"
     },
     "COVER_LETTER_EndocrineConnections.md": {
-      "bytes": 3456,
-      "sha256": "4f43041a9b4d4e26a99aaed1da7de952755f112f19783e21a5cfe5541ac773f8"
+      "bytes": 3400,
+      "sha256": "7591e6a82df34cd7c6d445fc229f6d756a6165a0020cd06591e6211a82fd5b26"
     },
     "figures/Figure1.pdf": {
       "bytes": 87184,
@@ -91,8 +91,8 @@
       "sha256": "a79fac2586474927247a9d6ad11d73bb00145a31453e11d6cbdbad61cdc7f8e9"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 36509,
-      "sha256": "60368a9b34e94e27b0ab63475d9ce7a8e6af5d38b2b1e60dab7794e8c85d3062"
+      "bytes": 35836,
+      "sha256": "709ff38119ec51ff01f1de9a97ba7dbc8c6f836d1eaa28c27e776253607387b9"
     },
     "provenance/clumping_sensitivity.csv": {
       "bytes": 1296,
@@ -123,8 +123,8 @@
       "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
     },
     "provenance/integrity_audit.json": {
-      "bytes": 244,
-      "sha256": "66cfc9daa09856581288569a69cc092d83b12f1c9cbd73580d5a490223036d29"
+      "bytes": 238,
+      "sha256": "b292aef3e959128a388b1bbe0242daefde8bdeea37f56eef16cee30221f8994c"
     },
     "provenance/MR_all_estimators_verified.csv": {
       "bytes": 3210783,
@@ -151,8 +151,8 @@
       "sha256": "36fc61f7e07ccaf057f860294b4861fdddb5bae5d201d09f48aabfcee9cd937c"
     },
     "provenance/word_counts.json": {
-      "bytes": 231,
-      "sha256": "487cf54cd824d2fd6d8f71f4d787811033b56d2133b1ed17188ba180f864e7e3"
+      "bytes": 227,
+      "sha256": "c419ff7dd734d75d7ceef861df4d5248cb70d0c0cbf9fb3ee7b0a8a60dd33e18"
     },
     "README.md": {
       "bytes": 1667,
@@ -163,8 +163,8 @@
       "sha256": "5f469b6d9883617185b81c623baecb44373585659a6dfaf04f20243e2b60bdee"
     },
     "reproducibility/build_documents.py": {
-      "bytes": 17981,
-      "sha256": "c47d6528a8c3a1106b4e4e0c712716dd83a31fbff532d7ad08e86eaa75213bcd"
+      "bytes": 18077,
+      "sha256": "6e56992ca9ca808c327f9c7e924ea41f7a1cf2fd01238f1b900a33592efb00c2"
     },
     "reproducibility/build_figures.py": {
       "bytes": 7007,
@@ -211,8 +211,8 @@
       "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 8036,
-      "sha256": "f90aa1339a794afc24fc188493b86253159986471d5de4f52dd232ff9ce3cd11"
+      "bytes": 8030,
+      "sha256": "1e7880480ff48a997c1f43bf02daa0032ed1bab749ed43a39417319943fe33df"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -231,13 +231,15 @@
       "sha256": "e22ddb3f9eb11ba43d44bb26650b377ed08feb318b45cf476baad5bfdbec7985"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 214857,
-      "sha256": "26b0308fc9aa33507f71d7880153e623877d034d267ea923752e844862e1d823"
+      "bytes": 214415,
+      "sha256": "4573c2e34a256f83f3401a99af226a504631e9e744d4adea0fc54c1b03a86447"
     },
     "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md": {
-      "bytes": 76894,
-      "sha256": "74965c5f17e73b4ad650c5e0a9f369572dbf52262fffa9b2edd4cea83bc09e07"
+      "bytes": 76653,
+      "sha256": "f5de11ec815eefcc1bc5b6a8c2857bfb45838e1ae2bc6c1cb0509804918dc5a5"
     }
   },
-  "manifest_note": "Paths are relative to this candidate directory, not provenance. Excludes this manifest. The master exists only at repository root."
+  "manifest_note": "Paths are relative to this candidate directory, not provenance. Excludes this manifest. The master exists only at repository root.",
+  "revised_at_utc": "2026-09-05T05:25:23.718787+00:00",
+  "revision_note": "2026-09-05 remote revision: AI-tool declaration removed from the manuscript and cover letter; 'prespecified' no longer applied to the PP.H4 threshold; Word files rebuilt with build_documents.py (pandoc 3.1.3). Visual page QA in document_visual_qa.json predates this rebuild and was not repeated."
 }

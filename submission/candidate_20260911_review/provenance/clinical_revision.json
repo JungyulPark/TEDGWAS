@@ -15,5 +15,14 @@
     "number": 18,
     "change": "Removed duplicated Vattikuti S author",
     "source": "https://pubmed.ncbi.nlm.nih.gov/25722852/"
+  },
+  "remote_changes_integrated": {
+    "commit": "33f8e25b685a28f5fda28dcdf7f94a3fc87e35b4",
+    "retained": [
+      "Author removal of AI declaration from manuscript and cover letter, with disclosure policy left for final author review",
+      "No prespecified wording for unregistered thresholds",
+      "Archive of old root submission package and retirement of its builder"
+    ],
+    "analytical_estimates_changed": false
   }
 }

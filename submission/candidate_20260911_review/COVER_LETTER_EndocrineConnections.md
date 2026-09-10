@@ -17,7 +17,7 @@ The manuscript presents odds ratios, confidence intervals and P values, with sup
 
 An earlier, narrower version was considered at thyroid-focused journals. The work was subsequently restructured around the broader genetic screen. The orbital dataset is also used for a different, whole-transcriptome question in a separate manuscript under review elsewhere. Here, only three genes are described; no genome-wide expression or pathway catalogue is presented. The companion manuscript can be provided for assessment of overlap.
 
-This manuscript has not been published and is not under consideration elsewhere. The authors report no specific funding or competing interests. The orbital component received Pusan National University Hospital IRB approval 2104-018-102, with written informed consent. Author contributions, data access and AI-assisted work are disclosed. Instruments and complete primary and sensitivity results accompany the submission.
+This manuscript has not been published and is not under consideration elsewhere. The authors report no specific funding or competing interests. The orbital component received Pusan National University Hospital IRB approval 2104-018-102, with written informed consent. Author contributions and data access are disclosed. Instruments and complete primary and sensitivity results accompany the submission.
 
 Sincerely,
 

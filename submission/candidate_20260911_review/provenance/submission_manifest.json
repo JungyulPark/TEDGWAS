@@ -1,16 +1,16 @@
 {
-  "created_at_utc": "2026-09-10T23:32:32.137822+00:00",
+  "created_at_utc": "2026-09-10T23:38:37.398801+00:00",
   "status": "Ready for final author review; author details/declarations and live journal checks pending",
   "target_journal_assumed": "Endocrine Connections",
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "887890e97ede9565b8737ee5499de7b2",
-  "manuscript_sha256": "e6bdcad720e8325a4ff6dbf78c953bb36716ef1d6810f08f9d91ecd43c174f36",
+  "manuscript_md5": "581e939055d221991a3e3b3771e66ada",
+  "manuscript_sha256": "97ba4860d18f458aa26ccd85494171368ebf12672f3b729276fa78faeb18941a",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 311,
-    "checks": 981,
+    "checks": 983,
     "errors": [],
     "scope": "Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review."
   },
@@ -32,12 +32,12 @@
   ],
   "files": {
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13634,
-      "sha256": "c6c0cc13426d71212b59baebc87bf84001693d850e52bf77d46002f8897c306b"
+      "bytes": 13624,
+      "sha256": "a3ea2c071632ad730993ee37ef6ffeae73f28364c8a4c28f54760e725cce346d"
     },
     "COVER_LETTER_EndocrineConnections.md": {
-      "bytes": 2821,
-      "sha256": "5a9918904e11dc69664bec69eb74778d97e12a85edb96aa6bac61a091c66462a"
+      "bytes": 2803,
+      "sha256": "24e653598dc204bf8b3e966d292e4bb178feaf1140d4406259657e64aaadf2cd"
     },
     "figures/Figure1.pdf": {
       "bytes": 41229,
@@ -64,8 +64,8 @@
       "sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 28022,
-      "sha256": "42b830c2bd16ffef1bec0b3e4f28e0b3d9de16a0f0ee424417b679f0177f68fe"
+      "bytes": 27888,
+      "sha256": "033b403f7e62af447f70abe502ffb1e07346f83e457b2a75d7994a2d78720202"
     },
     "provenance/clinical_data_consolidation.json": {
       "bytes": 1228,
@@ -80,8 +80,8 @@
       "sha256": "1f4df715ed294b55c747cf1d25de6542816d88aaf49674d4d017addfc08635e9"
     },
     "provenance/clinical_revision.json": {
-      "bytes": 631,
-      "sha256": "c204862344358106172802194e9d0b7415482316787a51bc16ac5f037501cab8"
+      "bytes": 1071,
+      "sha256": "b7e5629f4b91d5b60e78dcd6a2ed12b57de469df2e43629ceef0f570dd4d9fa2"
     },
     "provenance/clumping_sensitivity.csv": {
       "bytes": 1296,
@@ -100,8 +100,8 @@
       "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
     },
     "provenance/document_visual_qa.json": {
-      "bytes": 6127,
-      "sha256": "a2113f86377c23b043de9baa6a6f3fa4a097c0f13cff23b8ffcc50cef472ffcb"
+      "bytes": 6354,
+      "sha256": "ad17c021066b2e0d3e7357cba6166a0125bb4f249bca45bf87b2e029f40957a3"
     },
     "provenance/figure_verification.json": {
       "bytes": 1606,
@@ -113,11 +113,11 @@
     },
     "provenance/integrity_audit.json": {
       "bytes": 329,
-      "sha256": "7a98f1aaa2ebd5aa4ecc33e30e8e1d16cb7f92cadafedd7727837528171d0a7d"
+      "sha256": "736c1ab9eea88abd3fdf7c3815d867f6bc08fc6090211056889430fe65b14597"
     },
     "provenance/journal_checks.json": {
-      "bytes": 946,
-      "sha256": "d799aa9cd7f2100ff490702b0dee2b9633d82c75fefd8a5cbdefd44e72bdbb59"
+      "bytes": 1471,
+      "sha256": "9d03f43bbd7086370b7311a7949d19ef674c673fb8d8476d0f963fb46350ba6f"
     },
     "provenance/maf/additional_Z_and_software_checks.json": {
       "bytes": 473,
@@ -209,7 +209,7 @@
     },
     "README.md": {
       "bytes": 1876,
-      "sha256": "3b261cdb0cbeff4f6359603a1fb574d5afd3af578c8e5943f170e0b52f0dadd9"
+      "sha256": "a8cd2f0003264e2b049afa79504cedf07c03332951455df530d0fa43f15ead90"
     },
     "reproducibility/analysis_scripts/export_maf_validation_inputs_v1.R": {
       "bytes": 399,
@@ -244,8 +244,8 @@
       "sha256": "4d53ffff80df4bf879c7dde83a2a554472ecce5debe89a1558a8f0d61ed99af7"
     },
     "reproducibility/audit_submission.py": {
-      "bytes": 8825,
-      "sha256": "b94ac7f01f75dbf8f90e60fc3ab570e7b4efad5d26226ab3fca7bde6ad87ebc2"
+      "bytes": 9269,
+      "sha256": "302722c0e60305342eeb70e6f51e505febf75f2d073b426a87400f9be43f1a4e"
     },
     "reproducibility/build_documents.py": {
       "bytes": 9618,
@@ -264,8 +264,8 @@
       "sha256": "6bf50247d38a26f49b519eed65347d3ae45d9d0d8f189ac8d4d50d29d232669e"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 6397,
-      "sha256": "3c5caa721e1aabacfa19f291b72d8ec0a21ec08931c82876d304fab07c7dad12"
+      "bytes": 7320,
+      "sha256": "4c6ae5be0986f43582f45011544b84ee3a69147dec44f27555c7ea21d06f2109"
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 15242,

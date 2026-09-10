@@ -1,4 +1,4 @@
-> **Superseded by the 2026-09-11 final author-review candidate.** Use [candidate_20260911_review/README.md](candidate_20260911_review/README.md) and its revision report. Author information/declarations and live journal requirements still need confirmation. The older files and build instructions below are historical.
+> **Superseded by the 2026-09-11 final author-review candidate.** Use [candidate_20260911_review/README.md](candidate_20260911_review/README.md) and its revision report. Author information/declarations and live journal requirements still need confirmation. The older files and build instructions below are historical. The older root package remains in `archives/submission_pre20260905/`.
 
 # 제출 패키지 — TED-TRAP Paper 1
 

@@ -36,7 +36,7 @@
 
 ## 수치와 해석 점검
 
-표시 수치 311개와 문서 전사·자료 보존 등을 포함한 981개 검사가 통과했습니다. 기존 MR 7,219건과 colocalization 81개 설정이 통합 자료에도 유지됩니다. 별도의 빈도 민감도 분석 검증도 보존했습니다. 민감도 MR 22,896개 행도 이전 결과와 대조해 전부 보존됐음을 확인했습니다.
+표시 수치 311개와 문서 전사·자료 보존 등을 포함한 983개 검사가 통과했습니다. 기존 MR 7,219건과 colocalization 81개 설정이 통합 자료에도 유지됩니다. 별도의 빈도 민감도 분석 검증도 보존했습니다. 민감도 MR 22,896개 행도 이전 결과와 대조해 전부 보존됐음을 확인했습니다.
 
 Word 문서 4개, 총 32쪽(본문 20쪽·보충자료 9쪽·커버레터 1쪽·체크리스트 2쪽)을 실제 렌더링해 전 페이지를 확인했습니다. 표의 머리글과 페이지 배치를 바로잡았으며, 그림 3개의 표시와 최종 파일 해시도 기록했습니다.
 
@@ -50,6 +50,8 @@ TSHR의 OR을 치료 효과로 해석하지 않으며, IGF1R의 낮은 공유변
 2. 모든 저자가 새 원고의 해석·저자 기여·연구비·이해상충·IRB 및 동의서 적용 범위를 확인해야 합니다. 아직 이루어지지 않은 이번 수정본의 최종 승인을 원고에서 기정사실로 적지 않았습니다.
 3. 별도 심사 중인 조직 원고의 현재 상태와 중복 설명, 이전 투고 이력을 커버레터와 대조해야 합니다.
 4. Endocrine Connections의 실제 제출 화면에서 필수 항목·파일 형식·게재료를 확인해야 합니다. 이번에 확인한 [출판사 제출 안내](https://www.bioscientifica.com/publishing/authors/author-resource-centre/how-to-publish/prepare-for-submission/)에 따라 줄 간격·줄 번호·참고문헌을 정리했습니다. 저널별 상세 안내 페이지는 접근 제한으로 최신 세부 요건 전체를 직접 검증하지 못했습니다.
+
+5. 원격 커밋 `33f8e25`에 기록된 저자 결정에 따라 원고·커버레터의 AI 도구 선언문 삭제를 유지했습니다. 다만 [ICMJE 지침](https://www.icmje.org/recommendations/browse/artificial-intelligence/)은 사용한 도구와 목적의 공개를 권고하므로, 실제 투고 전 저널의 적용 규정을 확인하고 고지 위치·문구를 확정해야 합니다. 이는 이번 리뷰에서 해결해야 할 제출 항목이며, 고지 불필요가 확인됐다는 뜻이 아닙니다. 사용할 수 있는 사실 기반 초안은 다음과 같습니다: “OpenAI Codex assisted with manuscript editing, preparation and execution of allele-frequency sensitivity-analysis code, numerical verification, figure generation and document formatting. The authors take responsibility for the submitted work.” 최종 문구와 저자 검증 완료 여부는 저자가 확인해야 합니다.
 
 이번에 완료한 민감도 분석은 노출 빈도 교체에 대한 primary Wald/IVW·colocalization·검출력 평가입니다. 모든 대체 MR 방법의 빈도 재분석, Steiger 검정, 다중 원인변이 colocalization, 결합 필터 검출력, 표본 중복 편향 정량화까지 완료했다는 뜻은 아닙니다. 해당 한계는 원고에 남아 있습니다.
 

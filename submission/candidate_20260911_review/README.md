@@ -14,6 +14,6 @@ Prepared on 11 September 2026 for final author review before submission to Endoc
 
 The [repository-root master](../../MANUSCRIPT_TED_TRAP_v5_MASTER.md) is the sole editable manuscript source. The earlier candidate_20260905_maf version is preserved in Git and is the analytical baseline, not the current reading copy.
 
-The numerical audit checks 311 displayed values and passes 981 checks covering source agreement, DOCX tables and complete consolidated results. This does not certify author declarations, causal assumptions, or journal acceptance. Internal provenance and reproduction folders are for review; they are not journal manuscript uploads.
+The numerical audit checks 311 displayed values and passes 983 checks covering source agreement, DOCX tables and complete consolidated results. This does not certify author declarations, causal assumptions, or journal acceptance. Internal provenance and reproduction folders are for review; they are not journal manuscript uploads.
 
 All 32 pages of the four Word documents were rendered and visually reviewed. Full sensitivity-MR consolidation (22,896 rows) and byte-identical retention of the instrument, colocalization and power files also passed verification. File hashes and review scope are recorded in provenance.
