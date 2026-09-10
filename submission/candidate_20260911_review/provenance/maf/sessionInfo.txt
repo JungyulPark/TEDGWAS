@@ -1,0 +1,22 @@
+R version 4.3.3 (2024-02-29 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 11 x64 (build 26200)
+
+Matrix products: default
+
+
+locale:
+[1] C
+system code page: 65001
+
+time zone: Asia/Seoul
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] TwoSampleMR_0.7.4 data.table_1.15.2
+
+loaded via a namespace (and not attached):
+[1] compiler_4.3.3 magrittr_2.0.3 jsonlite_1.8.8

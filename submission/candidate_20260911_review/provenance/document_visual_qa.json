@@ -1,0 +1,173 @@
+{
+  "status": "PASS",
+  "review_date": "2026-09-11",
+  "renderer": "LibreOffice plus Poppler via documents skill render_docx.py; 120 dpi",
+  "total_pages": 32,
+  "review_scope": "Every page inspected for clipping, overlap, page breaks, tables, legends, symbols and footers. Eight unchanged supplement pages were reused only after byte-identical PNG hashes were confirmed. Corrected S1 header and checklist alignment were re-inspected.",
+  "documents": [
+    {
+      "document": "MANUSCRIPT_Submission.docx",
+      "sha256": "42b830c2bd16ffef1bec0b3e4f28e0b3d9de16a0f0ee424417b679f0177f68fe",
+      "page_count": 20,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "5b0df93ee55a85248e433fe6c91c2b61eaa82aff74a38d836f5ea6e576f11172"
+        },
+        {
+          "page": 2,
+          "sha256": "cd6ae46d05ba3fba5c8ad09e60e118402af306ee56259044e36eaaca7853eea7"
+        },
+        {
+          "page": 3,
+          "sha256": "8552d281b48e5301d6c646ef62e17cb37c317709b2e625da10a695d13755b492"
+        },
+        {
+          "page": 4,
+          "sha256": "cfde6f5ba1d4c293c060742a5c62f8e70348992d17f23273b37d9f2e220ba6cd"
+        },
+        {
+          "page": 5,
+          "sha256": "1199d785304723efaccb5ba9603177be5ea28e727cd084ddc65b7b05960a5560"
+        },
+        {
+          "page": 6,
+          "sha256": "886c4646e7431dfe14b29a919c52b8f7d2abcab297f5f4535b662e81e3e7dc7a"
+        },
+        {
+          "page": 7,
+          "sha256": "409b2c8b3c015d4225c5adab0b9dfdfdfc152c2f2de4946138465ff1f1138e31"
+        },
+        {
+          "page": 8,
+          "sha256": "a6615a72a2a0c1f834fe384f678585becdb47ed1420b32f5d65e757502372019"
+        },
+        {
+          "page": 9,
+          "sha256": "1ad0fb9abacaf825bb876178668fac93a076cc01922553350b55542b8c5f1306"
+        },
+        {
+          "page": 10,
+          "sha256": "9da21051e07fb371f2075cbf388b37c30f10877bca30b2b0fc0082be63740c49"
+        },
+        {
+          "page": 11,
+          "sha256": "1dc8ed3a3784f4a984a0744036ea43f28cc687afa36d69efc16cc7d05ef16f84"
+        },
+        {
+          "page": 12,
+          "sha256": "55202731161b2ebf69805136612b835724f235c2f7960445a577073c98420db5"
+        },
+        {
+          "page": 13,
+          "sha256": "8ba652f8e03b88cf06fec3dc5d8dd1bcb075c3fa9a8183d3e6bbd3c1423269a0"
+        },
+        {
+          "page": 14,
+          "sha256": "3b303fc5fdbfb3e90d1b58b367009d2f7326e3aaa87ad233c2a8cbbfbfb3973f"
+        },
+        {
+          "page": 15,
+          "sha256": "73602320f52132e1b2fb28f231c5486ed16a934b8bcf869191e1c66a1ba60240"
+        },
+        {
+          "page": 16,
+          "sha256": "4b201c918bf96e041cb806ca1fb4f8e48fccb8538a50dae3a5885eb90aa8bdda"
+        },
+        {
+          "page": 17,
+          "sha256": "85656d841dca39175df82c6b833f8e961b0ffc6a882bba8e350859bb19908848"
+        },
+        {
+          "page": 18,
+          "sha256": "368ab691ef908d7ded0dbec221865198c313c95e171f276a540df95eed8b6f8f"
+        },
+        {
+          "page": 19,
+          "sha256": "e81e991956f8730782506277bb6eb9743a8cc59992d99d2b255db5d8a9676d8d"
+        },
+        {
+          "page": 20,
+          "sha256": "42f0d3af6d7afe51ae40aded6eafdac8e3b3d06da7ea7e6e81482db917ebab97"
+        }
+      ],
+      "render_pdf_sha256": "395812de565d0e90643eaf0b5bf4e40265f785d42ea512aa1698f2479d5f51c3"
+    },
+    {
+      "document": "SUPPLEMENTARY_MATERIAL.docx",
+      "sha256": "405d765b7f9a233a2370deef82765a7002f145b84cef475db4be0e553a401784",
+      "page_count": 9,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "bbf0c54dbd6875f1a347a28d2767eb2d510836418de6c0132ca188693e2f60ce"
+        },
+        {
+          "page": 2,
+          "sha256": "45e86295f199406f025fbcdf3689d49aed0037973c8f8920c7b50715463e689c"
+        },
+        {
+          "page": 3,
+          "sha256": "c64b8da2112567223c9ca982890250223b91a0dc4f199a3e66d1aba460521d39"
+        },
+        {
+          "page": 4,
+          "sha256": "4a2a8a6150425b31e24a24175d5cc2451a4d6f153768777ccf65a13f03699469"
+        },
+        {
+          "page": 5,
+          "sha256": "c00408c4a02534045883c4dc467a26431e1945e38505e9edc9334337272a3150"
+        },
+        {
+          "page": 6,
+          "sha256": "09221fce97187c7ae496758f14aa6196d65ffab5048dc9381b588f28176b7845"
+        },
+        {
+          "page": 7,
+          "sha256": "5a678618f5aa1f2ac8bd124587bd29ea44634dde997788886249077c409f35c8"
+        },
+        {
+          "page": 8,
+          "sha256": "195bafb9ca52e8e1d1bf7e0c2b57a86a6e896fbafb721295290362db6b608a4f"
+        },
+        {
+          "page": 9,
+          "sha256": "9bafd2a105057c2a79c747bd788ae9fa5c1895a248d18c83ed1aafc8fc8cf608"
+        }
+      ],
+      "render_pdf_sha256": "26dd05484ce71fed94a3019c217296bff1c501389b55afbebba54f052a297c1f"
+    },
+    {
+      "document": "COVER_LETTER_EndocrineConnections.docx",
+      "sha256": "c6c0cc13426d71212b59baebc87bf84001693d850e52bf77d46002f8897c306b",
+      "page_count": 1,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "482b0b2195a9299da2956a10c116e91edca7e6341e61ceb3a5f65b374eb0972b"
+        }
+      ],
+      "render_pdf_sha256": "2eead3bae1536eb724d3a2511ff0f8a10fb55d829db2dca8c79a34b7af51ea4c"
+    },
+    {
+      "document": "STROBE_MR_CHECKLIST.docx",
+      "sha256": "1408334ee0d2c2b09888eff21528eccce19d902b509d6bb1f620df7439d8bb18",
+      "page_count": 2,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "eafa7dbbf076ee05929420cfd5ebabf8878f789d9a3227359335b8112812f68d"
+        },
+        {
+          "page": 2,
+          "sha256": "fa30f35a1bdc0e28826792d52004fc5fd74c3f4e90bb7cb1de9dd9a2169cf5de"
+        }
+      ],
+      "render_pdf_sha256": "e424bfc5010de64b15fa2f76d5cf4712406d2e47f83d0a0028806a45ef30b1e1"
+    }
+  ]
+}

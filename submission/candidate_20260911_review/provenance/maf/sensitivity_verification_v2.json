@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "eligible_genes": 2544,
+  "instrument_rows": 6135,
+  "instruments_with_AF": 6135,
+  "max_abs_delta_Z": 5.542233338928779e-13,
+  "independent_MR_rows": 7219,
+  "independent_MR_max_abs_differences": {
+    "beta": 1.021405182655144e-14,
+    "se": 4.796163466380676e-14,
+    "pvalue": 5.662137425588298e-15
+  },
+  "baseline_power_max_abs_difference": 4.884981308350689e-15,
+  "harmonization_changes": [
+    {
+      "outcome": "BBJ_Graves",
+      "added": 5,
+      "removed": 5,
+      "retained_outcome_sign_changed": 0,
+      "affected_gene_outcome_pairs": 10
+    },
+    {
+      "outcome": "FinnGen_GO",
+      "added": 6,
+      "removed": 3,
+      "retained_outcome_sign_changed": 0,
+      "affected_gene_outcome_pairs": 9
+    },
+    {
+      "outcome": "UKB_hyperthyroid",
+      "added": 5,
+      "removed": 3,
+      "retained_outcome_sign_changed": 0,
+      "affected_gene_outcome_pairs": 8
+    }
+  ],
+  "screen": {
+    "original_reference": {
+      "estimable_genes_by_outcome": {
+        "BBJ_Graves": 2234,
+        "FinnGen_GO": 2480,
+        "UKB_hyperthyroid": 2505
+      },
+      "BBJ_discovery_hits": [
+        "C4A",
+        "CTLA4",
+        "HLA-A",
+        "HLA-DQA2",
+        "HSD3B7",
+        "IFNGR1",
+        "MAPKAPK5",
+        "PRSS36",
+        "PSMB8",
+        "TNFSF14",
+        "TSHR",
+        "TUBB",
+        "VKORC1"
+      ],
+      "added_discovery_hits": [],
+      "lost_discovery_hits": []
+    },
+    "paired_reference": {
+      "estimable_genes_by_outcome": {
+        "BBJ_Graves": 2234,
+        "FinnGen_GO": 2480,
+        "UKB_hyperthyroid": 2505
+      },
+      "BBJ_discovery_hits": [
+        "C4A",
+        "CTLA4",
+        "HLA-A",
+        "HLA-DQA2",
+        "HSD3B7",
+        "IFNGR1",
+        "MAPKAPK5",
+        "PRSS36",
+        "PSMB8",
+        "TNFSF14",
+        "TSHR",
+        "TUBB",
+        "VKORC1"
+      ],
+      "added_discovery_hits": [],
+      "lost_discovery_hits": []
+    },
+    "paired_eqtlgen": {
+      "estimable_genes_by_outcome": {
+        "BBJ_Graves": 2234,
+        "FinnGen_GO": 2480,
+        "UKB_hyperthyroid": 2505
+      },
+      "BBJ_discovery_hits": [
+        "C4A",
+        "CTLA4",
+        "HLA-A",
+        "HLA-DQA2",
+        "HSD3B7",
+        "IFNGR1",
+        "MAPKAPK5",
+        "PRSS36",
+        "PSMB8",
+        "TNFSF14",
+        "TSHR",
+        "TUBB",
+        "VKORC1"
+      ],
+      "added_discovery_hits": [],
+      "lost_discovery_hits": []
+    },
+    "reharmonized_eqtlgen": {
+      "estimable_genes_by_outcome": {
+        "BBJ_Graves": 2232,
+        "FinnGen_GO": 2481,
+        "UKB_hyperthyroid": 2506
+      },
+      "BBJ_discovery_hits": [
+        "C4A",
+        "CTLA4",
+        "HLA-A",
+        "HLA-DQA2",
+        "HSD3B7",
+        "IFNGR1",
+        "MAPKAPK5",
+        "PRSS36",
+        "PSMB8",
+        "TNFSF14",
+        "TSHR",
+        "TUBB",
+        "VKORC1"
+      ],
+      "added_discovery_hits": [],
+      "lost_discovery_hits": []
+    }
+  },
+  "colocalization_conclusions": {
+    "original_reference": {
+      "BBJ_and_FinnGen_H4_ge_0_8": [
+        "TSHR"
+      ]
+    },
+    "paired_reference": {
+      "BBJ_and_FinnGen_H4_ge_0_8": [
+        "TSHR"
+      ]
+    },
+    "paired_eqtlgen": {
+      "BBJ_and_FinnGen_H4_ge_0_8": [
+        "TSHR"
+      ]
+    },
+    "available_eqtlgen": {
+      "BBJ_and_FinnGen_H4_ge_0_8": [
+        "TSHR"
+      ]
+    }
+  },
+  "unexpected_variant_decisions": 0,
+  "coloc_summary": {
+    "baseline_rows": 81,
+    "max_baseline_posterior_difference": 2.1371793224034263e-15,
+    "comparisons": [
+      {
+        "comparison": "frequency_only",
+        "max_abs_delta_H4": 0.0002453124665556805,
+        "n_threshold_crossings": 0,
+        "n_primary_prior_crossings": 0
+      },
+      {
+        "comparison": "frequency_and_coverage",
+        "max_abs_delta_H4": 0.002141608732717931,
+        "n_threshold_crossings": 0,
+        "n_primary_prior_crossings": 0
+      }
+    ],
+    "dataset1": "outcome",
+    "dataset2": "eQTL",
+    "eQTL_sdY": 1,
+    "p1": 0.0001,
+    "p2": 0.0001,
+    "p12": [
+      1e-06,
+      5e-06,
+      1e-05
+    ]
+  }
+}

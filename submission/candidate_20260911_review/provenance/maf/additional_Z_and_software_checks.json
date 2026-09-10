@@ -1,0 +1,10 @@
+{
+  "instrument_rows_checked_against_reported_Z": 6135,
+  "max_abs_new_Z_minus_reported_Z": 7.958078640513122e-13,
+  "Python": "3.12.14",
+  "numpy": "2.5.2",
+  "pandas": "3.0.1",
+  "scipy": "1.18.1",
+  "result": "PASS",
+  "Z_metric_note": "CSV readback beta/SE versus reported Z includes decimal serialization error; max_abs_delta_Z in sensitivity_verification_v2.json is the paired in-memory new-versus-reference reconstruction comparison. Both are below 1e-8."
+}

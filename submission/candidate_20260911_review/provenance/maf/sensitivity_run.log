@@ -1,0 +1,14 @@
+2026-09-05 03:59:41 UTC eQTLGen AF sensitivity started; input: C:/Users/ophjy/Documents/Codex/2026-09-05/prior-conversation-with-codex-conversation-role-4/work/maf_sensitivity_20260905/inputs/eqtlgen_af_selected_v1.csv 
+2026-09-05 03:59:42 UTC Usable AF rows 6135 / 6135 max |delta Z| 5.54223333892878e-13 
+2026-09-05 04:00:17 UTC Genes 250 / 2544 
+2026-09-05 04:00:53 UTC Genes 500 / 2544 
+2026-09-05 04:01:31 UTC Genes 750 / 2544 
+2026-09-05 04:02:13 UTC Genes 1000 / 2544 
+2026-09-05 04:02:51 UTC Genes 1250 / 2544 
+2026-09-05 04:03:30 UTC Genes 1500 / 2544 
+2026-09-05 04:04:08 UTC Genes 1750 / 2544 
+2026-09-05 04:04:45 UTC Genes 2000 / 2544 
+2026-09-05 04:05:28 UTC Genes 2250 / 2544 
+2026-09-05 04:06:08 UTC Genes 2500 / 2544 
+2026-09-05 04:06:14 UTC Genes 2544 / 2544 
+2026-09-05 04:06:15 UTC Completed MR sensitivity; same-variant single-IV direction/P invariance passed. 

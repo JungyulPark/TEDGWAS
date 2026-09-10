@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
+  "sensitivity_MR_rows_compared": 22896,
+  "max_abs_differences": {
+    "n_iv": 0.0,
+    "beta": 8.881784197001252e-16,
+    "se": 8.881784197001252e-16,
+    "pvalue": 2.220446049250313e-16
+  },
+  "primary_MR_rows_compared_in_main_audit": 7219,
+  "byte_identical_data_files": [
+    {
+      "baseline": "Supplementary_Data_1_Instruments.csv",
+      "current": "Supplementary_Data_1_Instruments.csv",
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97",
+      "byte_identical": true
+    },
+    {
+      "baseline": "Supplementary_Data_5_MAF_Colocalization.csv",
+      "current": "Supplementary_Data_3_Colocalization.csv",
+      "sha256": "b15a1c426740aa5024ffb2a54579045447cddd83e2d19cd98d51c8c6e76798ae",
+      "byte_identical": true
+    },
+    {
+      "baseline": "Supplementary_Data_6_MAF_Power.csv",
+      "current": "Supplementary_Data_4_Power.csv",
+      "sha256": "ff8a74be01b3aaab3ccc14ae26198e87f2f2dc14c291108ee8bbfc7d8cea63f4",
+      "byte_identical": true
+    }
+  ],
+  "note": "ORs and 95% CIs are presentation columns calculated from beta and SE, not new analyses."
+}

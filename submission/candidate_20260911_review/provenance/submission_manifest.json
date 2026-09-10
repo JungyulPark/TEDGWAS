@@ -1,0 +1,303 @@
+{
+  "created_at_utc": "2026-09-10T23:32:32.137822+00:00",
+  "status": "Ready for final author review; author details/declarations and live journal checks pending",
+  "target_journal_assumed": "Endocrine Connections",
+  "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
+  "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
+  "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
+  "manuscript_md5": "887890e97ede9565b8737ee5499de7b2",
+  "manuscript_sha256": "e6bdcad720e8325a4ff6dbf78c953bb36716ef1d6810f08f9d91ecd43c174f36",
+  "numeric_audit": {
+    "status": "PASS",
+    "numeric_cells_compared": 311,
+    "checks": 981,
+    "errors": [],
+    "scope": "Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review."
+  },
+  "visual_qa": "document_visual_qa.json; all 32 pages of four DOCX files visually reviewed",
+  "clinical_revision": "clinical_revision.json; no analytical estimates changed by clinical editing",
+  "MAF_sensitivity": {
+    "status": "Completed",
+    "scope": "Primary Wald/IVW with same-variant and re-harmonized comparisons, 81 colocalization settings and whole-screen power",
+    "verification": "maf/sensitivity_verification_v2.json",
+    "source_hashes": "maf/local_input_manifest.json; maf/af_input_verification_v1.json",
+    "no_claim_to_all_possible_sensitivity_tests": true
+  },
+  "distribution": "Public GitHub author-review candidate; source extracts and per-sample tissue CSV records excluded",
+  "excluded_data": [
+    "Full and selected GWAS/eQTL source rows",
+    "Cohort allele-frequency rows and genotype counts",
+    "Harmonized variant-level records",
+    "Raw and per-sample tissue CSV data"
+  ],
+  "files": {
+    "COVER_LETTER_EndocrineConnections.docx": {
+      "bytes": 13634,
+      "sha256": "c6c0cc13426d71212b59baebc87bf84001693d850e52bf77d46002f8897c306b"
+    },
+    "COVER_LETTER_EndocrineConnections.md": {
+      "bytes": 2821,
+      "sha256": "5a9918904e11dc69664bec69eb74778d97e12a85edb96aa6bac61a091c66462a"
+    },
+    "figures/Figure1.pdf": {
+      "bytes": 41229,
+      "sha256": "8b3b63954646a919e2d825a1a0928d06d4ea47962a19668c7b219db03f99a7c2"
+    },
+    "figures/Figure1.png": {
+      "bytes": 154385,
+      "sha256": "52583b6b6daac197cf60c744cc5fb6f628ee63f30e43b999c691cf3691c8d22e"
+    },
+    "figures/Figure2.pdf": {
+      "bytes": 86462,
+      "sha256": "736af09ebb60da308672a4ea646de3ddea7962136bc5b436272f31e7669c80f1"
+    },
+    "figures/Figure2.png": {
+      "bytes": 196754,
+      "sha256": "2383bc47ab8fc1d2477b3b1ef556dce059ea222a7a7a151197a7c5968ae3ddb4"
+    },
+    "figures/FigureS1.pdf": {
+      "bytes": 56247,
+      "sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b"
+    },
+    "figures/FigureS1.png": {
+      "bytes": 92994,
+      "sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b"
+    },
+    "MANUSCRIPT_Submission.docx": {
+      "bytes": 28022,
+      "sha256": "42b830c2bd16ffef1bec0b3e4f28e0b3d9de16a0f0ee424417b679f0177f68fe"
+    },
+    "provenance/clinical_data_consolidation.json": {
+      "bytes": 1228,
+      "sha256": "8543e72109593a4d47fdb806c4ffcfe2eed3b5d66d17cab9afb9797cd7c23d10"
+    },
+    "provenance/clinical_display_sources.json": {
+      "bytes": 15873,
+      "sha256": "4448f2eeb1cec4a87ad0936711cc35d75e5b658f403846d60449403542ccd518"
+    },
+    "provenance/clinical_figure_sources.json": {
+      "bytes": 2722,
+      "sha256": "1f4df715ed294b55c747cf1d25de6542816d88aaf49674d4d017addfc08635e9"
+    },
+    "provenance/clinical_revision.json": {
+      "bytes": 631,
+      "sha256": "c204862344358106172802194e9d0b7415482316787a51bc16ac5f037501cab8"
+    },
+    "provenance/clumping_sensitivity.csv": {
+      "bytes": 1296,
+      "sha256": "c26f86887474c7a89ee91ec7925573d755a31100d9c0edffe3a5cfa8d35f52c8"
+    },
+    "provenance/coloc_canonical_v2.csv": {
+      "bytes": 19201,
+      "sha256": "b481104678c9f7dfd29f8018d8dd1dcc8a11b9ac71c14295ec29e8bad6e1d9ba"
+    },
+    "provenance/coloc_independent_reproduction.csv": {
+      "bytes": 12042,
+      "sha256": "4e3eb4aab6fe87f07637e94acb4e7de6f4625adebbefc1f49966d631c8857e76"
+    },
+    "provenance/coloc_verification.json": {
+      "bytes": 539,
+      "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
+    },
+    "provenance/document_visual_qa.json": {
+      "bytes": 6127,
+      "sha256": "a2113f86377c23b043de9baa6a6f3fa4a097c0f13cff23b8ffcc50cef472ffcb"
+    },
+    "provenance/figure_verification.json": {
+      "bytes": 1606,
+      "sha256": "6a1aec9b01d5b1ab301b4176e3374fe296a2bdb1de5d9713f0543079933bf844"
+    },
+    "provenance/instruments_verified.csv": {
+      "bytes": 507694,
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+    },
+    "provenance/integrity_audit.json": {
+      "bytes": 329,
+      "sha256": "7a98f1aaa2ebd5aa4ecc33e30e8e1d16cb7f92cadafedd7727837528171d0a7d"
+    },
+    "provenance/journal_checks.json": {
+      "bytes": 946,
+      "sha256": "d799aa9cd7f2100ff490702b0dee2b9633d82c75fefd8a5cbdefd44e72bdbb59"
+    },
+    "provenance/maf/additional_Z_and_software_checks.json": {
+      "bytes": 473,
+      "sha256": "34acb9d015a74d004e28fdf77a651ddcfac6f0fe491aff8185ab89cda4a5335f"
+    },
+    "provenance/maf/af_download_manifest_v2.json": {
+      "bytes": 934,
+      "sha256": "9652d731bacbc75ab80d583bc4e53c9d70df8a45d555ef8b270a366bbefebb7f"
+    },
+    "provenance/maf/af_input_verification_v1.json": {
+      "bytes": 955,
+      "sha256": "c026fdbadfca51869d79943b5311a3c3a347f28e305c1bc21342e5e5701bb5fd"
+    },
+    "provenance/maf/baseline_MR_comparison.csv": {
+      "bytes": 1718384,
+      "sha256": "0d9420513dc865f3d6952ef5844c8e7ca0e635c6b3cacb20eee2e2eef4e692bb"
+    },
+    "provenance/maf/baseline_run.log": {
+      "bytes": 883,
+      "sha256": "f7968fae02babef13f51091e5112bf1b968a920a3879f9f95e789a3e72d91aa9"
+    },
+    "provenance/maf/baseline_verification.csv": {
+      "bytes": 187,
+      "sha256": "52189237ebfa24b225ccd33cfe493f19e1f12be6890cfe8bb4f0ce8a0b113f92"
+    },
+    "provenance/maf/coloc_summary.json": {
+      "bytes": 631,
+      "sha256": "03b5af838462dd2c1fcb54030ed71d76971e65d773fabc052e41ea53dc81c875"
+    },
+    "provenance/maf/coloc_variant_coverage.csv": {
+      "bytes": 1170,
+      "sha256": "f0bf7acd4ca68e7fc02874206a4aa3e0adbac81867035d9896e42efe6861144d"
+    },
+    "provenance/maf/harmonization_changes_summary.csv": {
+      "bytes": 148,
+      "sha256": "f8fc9221cceb3081625d5b3476cbec75a1fd5f9c7f248a188282ca3cda5fd239"
+    },
+    "provenance/maf/identity_coloc_verification.json": {
+      "bytes": 596,
+      "sha256": "22eb497d29d6114586c6b301a77957c9bd0ec228ed8e2021b57d066a40e638ec"
+    },
+    "provenance/maf/identity_MR_verification.json": {
+      "bytes": 266,
+      "sha256": "59e23bc75ffb8bdfcd7243ec42a6c19190d710f0d1ca4320ac90db51e8584f03"
+    },
+    "provenance/maf/local_input_manifest.json": {
+      "bytes": 4937,
+      "sha256": "8231c8289efbe2188573b9d256369e0b37d1dc19829b6ed8da54c1531962660e"
+    },
+    "provenance/maf/sensitivity_run.log": {
+      "bytes": 896,
+      "sha256": "4a361632dfa15baa324ee179d3acb1be7fed72ed2ce74074914a31f3ed7dc2bc"
+    },
+    "provenance/maf/sensitivity_verification_v2.json": {
+      "bytes": 4265,
+      "sha256": "efc16e75223786f3dd32d5d6eecee3a565766ed5256dbf8e5e275f3a1d094476"
+    },
+    "provenance/maf/sessionInfo.txt": {
+      "bytes": 513,
+      "sha256": "850d1766fa03b288cb12525fa6ec3b8844000818dd5ad5bb8ae51f1b3dedabe0"
+    },
+    "provenance/MR_all_estimators_verified.csv": {
+      "bytes": 3210783,
+      "sha256": "4fcf79fca8e52febb04fde2412d63d66646b37015592627bf40cc1e0daa354e8"
+    },
+    "provenance/MR_primary_canonical.csv": {
+      "bytes": 1665839,
+      "sha256": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
+    },
+    "provenance/power_summary_verified.csv": {
+      "bytes": 706,
+      "sha256": "cac6cebcf3b2fe88ce683f9627284a16a05b3371bb43afc179fa7fd9686338ab"
+    },
+    "provenance/references_verified.json": {
+      "bytes": 15367,
+      "sha256": "d2779639b1917c3124268498bb262bc8e6c07c4c87ea8522a31e8c36ded09eae"
+    },
+    "provenance/source_manifest.json": {
+      "bytes": 2037,
+      "sha256": "e1bf4d29ab42ad1ccb4008cc73feb2982ea5523cad3a936ed3f9723087ed5e6c"
+    },
+    "provenance/tissue_descriptive.csv": {
+      "bytes": 166,
+      "sha256": "ea6c5fc19ef4684502336b9a0b4cad0ea3e5e1fc7d95f21496e76d27af7b9837"
+    },
+    "provenance/word_counts.json": {
+      "bytes": 283,
+      "sha256": "aa695a20398655f9e7a5d56f1dbda0f3b11630fa6867ed298a98841ee6762f6b"
+    },
+    "README.md": {
+      "bytes": 1876,
+      "sha256": "3b261cdb0cbeff4f6359603a1fb574d5afd3af578c8e5943f170e0b52f0dadd9"
+    },
+    "reproducibility/analysis_scripts/export_maf_validation_inputs_v1.R": {
+      "bytes": 399,
+      "sha256": "d3eba0df598fc58763b706fce8abb9f6511ea86c3ee3e8bba393c06872abbc1e"
+    },
+    "reproducibility/analysis_scripts/extract_eqtlgen_af_v1.py": {
+      "bytes": 3326,
+      "sha256": "f7b7fd8e9f27b41aeeda34b4a97b5b0ca91d92161c144c5d5b5e2c0b0640e9bf"
+    },
+    "reproducibility/analysis_scripts/prepare_maf_sensitivity_inputs_v1.py": {
+      "bytes": 4973,
+      "sha256": "7cd6ae4dc773d8da41a3484d93d28fbaf6535de7a2d5dbea45f9607fa8208992"
+    },
+    "reproducibility/analysis_scripts/run_maf_baseline_v1.R": {
+      "bytes": 4877,
+      "sha256": "e2deecd5f41607af56957954cf632f4c508a6423237393bffb6446270731ea0e"
+    },
+    "reproducibility/analysis_scripts/run_maf_coloc_v1.py": {
+      "bytes": 5243,
+      "sha256": "ef9a8eb7a6956defbb17b2e231eccff6c67d14d4e1bbc305d21cd8354cc0fc6e"
+    },
+    "reproducibility/analysis_scripts/run_maf_sensitivity_v1.R": {
+      "bytes": 6353,
+      "sha256": "aaffa573ce426747a22f0ef593f8ee4443b7c4caa5c115ee46f9a13609bcb3f5"
+    },
+    "reproducibility/analysis_scripts/verify_maf_identity_v1.py": {
+      "bytes": 933,
+      "sha256": "592c3eb24f1c6e94cd22082aa2ec99533b5f423cb7962df2a19263d603c8f066"
+    },
+    "reproducibility/analysis_scripts/verify_maf_results_v2.py": {
+      "bytes": 6004,
+      "sha256": "4d53ffff80df4bf879c7dde83a2a554472ecce5debe89a1558a8f0d61ed99af7"
+    },
+    "reproducibility/audit_submission.py": {
+      "bytes": 8825,
+      "sha256": "b94ac7f01f75dbf8f90e60fc3ab570e7b4efad5d26226ab3fca7bde6ad87ebc2"
+    },
+    "reproducibility/build_documents.py": {
+      "bytes": 9618,
+      "sha256": "4af013206d96a72ccb5cfb7ced55583e9e8147d67fa3a92d62e36c1e4ab0bcb7"
+    },
+    "reproducibility/build_figures.py": {
+      "bytes": 4576,
+      "sha256": "fefd0d34ae657a2913af1735dd53124a03b046f3ceec74937fd718408742baa2"
+    },
+    "reproducibility/README.md": {
+      "bytes": 1797,
+      "sha256": "b35437b4e5464b05f0b1c5e8e1fd031bbe239f62aa1a7529fa31e8e79e11e1ac"
+    },
+    "reproducibility/requirements.txt": {
+      "bytes": 64,
+      "sha256": "6bf50247d38a26f49b519eed65347d3ae45d9d0d8f189ac8d4d50d29d232669e"
+    },
+    "REVIEW_REPORT_KO.md": {
+      "bytes": 6397,
+      "sha256": "3c5caa721e1aabacfa19f291b72d8ec0a21ec08931c82876d304fab07c7dad12"
+    },
+    "STROBE_MR_CHECKLIST.docx": {
+      "bytes": 15242,
+      "sha256": "1408334ee0d2c2b09888eff21528eccce19d902b509d6bb1f620df7439d8bb18"
+    },
+    "STROBE_MR_CHECKLIST.md": {
+      "bytes": 4890,
+      "sha256": "4b7f44b171f2c719b23b0ae5943959624f886aad9055c163cb20aa9e06cdccb2"
+    },
+    "Supplementary_Data_1_Instruments.csv": {
+      "bytes": 507694,
+      "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
+    },
+    "Supplementary_Data_2_MR.csv": {
+      "bytes": 5179919,
+      "sha256": "183bcd2e9c83fd0296e9231582ecfb80396daacaa317c2b1fbc0c121d5126cdf"
+    },
+    "Supplementary_Data_3_Colocalization.csv": {
+      "bytes": 53553,
+      "sha256": "b15a1c426740aa5024ffb2a54579045447cddd83e2d19cd98d51c8c6e76798ae"
+    },
+    "Supplementary_Data_4_Power.csv": {
+      "bytes": 1899,
+      "sha256": "ff8a74be01b3aaab3ccc14ae26198e87f2f2dc14c291108ee8bbfc7d8cea63f4"
+    },
+    "SUPPLEMENTARY_DATA_README.md": {
+      "bytes": 3498,
+      "sha256": "820f9f25f898c593ca1ed659ea03b803f13ba2912e76d12aab38b4c4d4c9f851"
+    },
+    "SUPPLEMENTARY_MATERIAL.docx": {
+      "bytes": 100099,
+      "sha256": "405d765b7f9a233a2370deef82765a7002f145b84cef475db4be0e553a401784"
+    }
+  }
+}

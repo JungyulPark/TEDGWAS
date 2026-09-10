@@ -1,0 +1,96 @@
+{
+  "Figure1": {
+    "druggable_genes": 4462,
+    "instrumented_genes": 2544,
+    "BBJ_estimable_genes": 2234,
+    "discovery_hits": 13,
+    "known_loci": 2,
+    "MHC_genes": 5,
+    "additional_candidates": 6,
+    "additional_qualifiers": 0
+  },
+  "Figure2": [
+    {
+      "gene": "TSHR",
+      "outcome": "BBJ_Graves",
+      "or": 0.1229530251658169,
+      "lower95": 0.07225567878622186,
+      "upper95": 0.20922156779058154,
+      "pvalue": 1.09364048102808e-14,
+      "displayed_p": "1.09\u00d710\u207b\u00b9\u2074"
+    },
+    {
+      "gene": "TSHR",
+      "outcome": "UKB_hyperthyroid",
+      "or": 0.08748970327868118,
+      "lower95": 0.056511385921817446,
+      "upper95": 0.1354496630180239,
+      "pvalue": 8.76922860229631e-28,
+      "displayed_p": "8.77\u00d710\u207b\u00b2\u2078"
+    },
+    {
+      "gene": "TSHR",
+      "outcome": "FinnGen_GO",
+      "or": 0.09715055410696023,
+      "lower95": 0.03990006811198512,
+      "upper95": 0.23654671808578612,
+      "pvalue": 2.8185167306492e-07,
+      "displayed_p": "2.82\u00d710\u207b\u2077"
+    },
+    {
+      "gene": "IGF1R",
+      "outcome": "BBJ_Graves",
+      "or": 1.5621784477568252,
+      "lower95": 1.0689168938068945,
+      "upper95": 2.2830600926743285,
+      "pvalue": 0.0212078300317169,
+      "displayed_p": "0.0212"
+    },
+    {
+      "gene": "IGF1R",
+      "outcome": "UKB_hyperthyroid",
+      "or": 1.3488037326968492,
+      "lower95": 1.0688254562001664,
+      "upper95": 1.702122174189913,
+      "pvalue": 0.0117111535884687,
+      "displayed_p": "0.0117"
+    },
+    {
+      "gene": "IGF1R",
+      "outcome": "FinnGen_GO",
+      "or": 1.4076434579075021,
+      "lower95": 0.851900913258346,
+      "upper95": 2.32592790282512,
+      "pvalue": 0.182060477180186,
+      "displayed_p": "0.182"
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "BBJ_Graves",
+      "or": 0.1755795957348923,
+      "lower95": 0.11350432265538225,
+      "upper95": 0.2716037038697431,
+      "pvalue": 5.45314198265834e-15,
+      "displayed_p": "5.45\u00d710\u207b\u00b9\u2075"
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "UKB_hyperthyroid",
+      "or": 0.20816079565627876,
+      "lower95": 0.07621651025082894,
+      "upper95": 0.5685240206571092,
+      "pvalue": 0.002201417858103,
+      "displayed_p": "0.0022"
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "FinnGen_GO",
+      "or": 0.17074854833101075,
+      "lower95": 0.0431056950565351,
+      "upper95": 0.6763622931705265,
+      "pvalue": 0.0118436767817885,
+      "displayed_p": "0.0118"
+    }
+  ],
+  "FigureS1": "Preserved, previously inspected descriptive figure; no inferential P values."
+}

@@ -1,0 +1,19 @@
+{
+  "baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
+  "baseline_candidate": "candidate_20260905_maf",
+  "date": "2026-09-11",
+  "analyses_changed": false,
+  "supplementary_tables_before": 12,
+  "supplementary_tables_after": 4,
+  "supplementary_figures_before": 2,
+  "supplementary_figures_after": 1,
+  "main_figures_before": 3,
+  "main_figures_after": 2,
+  "supplementary_data_files_before": 6,
+  "supplementary_data_files_after": 4,
+  "reference_correction": {
+    "number": 18,
+    "change": "Removed duplicated Vattikuti S author",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/25722852/"
+  }
+}

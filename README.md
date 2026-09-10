@@ -2,7 +2,9 @@
 
 Druggable-gene-wide Mendelian randomization and colocalization comparing genetically proxied TSHR and IGF1R expression across Graves disease, hyperthyroidism and a TED-enriched outcome.
 
-**Current manuscript: [5 September 2026 submission candidate](submission/candidate_20260905_maf/README.md).** Prepared for Endocrine Connections; final author information, declarations and journal checks remain pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
+**Current manuscript: [11 September 2026 final author-review candidate](submission/candidate_20260911_review/README.md).** Prepared for Endocrine Connections; final author information, declarations and journal checks remain pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
+
+The clinical revision contains 2,319 main-text words, 217 abstract words, three main tables, two main figures, four supplementary tables and one supplementary figure. ORs, 95% CIs and P values lead the presentation. All 32 Word pages were visually reviewed.
 
 ## Current evidence
 
@@ -17,18 +19,18 @@ Druggable-gene-wide Mendelian randomization and colocalization comparing genetic
 | Path | Purpose |
 |---|---|
 | `MANUSCRIPT_TED_TRAP_v5_MASTER.md` | Sole editable manuscript master |
-| `submission/candidate_20260905_maf/` | Current Word documents, figures, supplementary data and revision report |
-| `submission/candidate_20260905_maf/provenance/` | Source hashes, numerical checks, independent-coloc and visual-review records |
-| `submission/candidate_20260905_maf/reproducibility/` | Audit, figure/document builders and reproduction instructions |
+| `submission/candidate_20260911_review/` | Current Word documents, figures, supplementary data and revision report |
+| `submission/candidate_20260911_review/provenance/` | Source hashes, numerical checks, independent-coloc and visual-review records |
+| `submission/candidate_20260911_review/reproducibility/` | Audit, figure/document builders and reproduction instructions |
 | `TrackA_MR/v5_upgrade/` | Historical analysis outputs used as evidence |
 | `internal/` | Internal records, not journal upload files |
 
-The current numerical audit compares 652 displayed values and passes 854 checks. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
+The current numerical audit compares 311 displayed values and passes 981 checks. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
 
 Run the current audit from the repository root after installing the packages in the candidate's `reproducibility/requirements.txt`:
 
 ```powershell
-python submission/candidate_20260905_maf/reproducibility/audit_submission_v2.py
+python submission/candidate_20260911_review/reproducibility/audit_submission.py
 ```
 
 See the candidate reproduction README before rebuilding. Source-data extracts are local-only; the repository contains scripts and aggregate results. IRB raw RNA-seq, patent materials and restricted source datasets must not be committed. Earlier submission binaries, scientific summaries and build/audit instructions elsewhere are historical and may disagree with this reviewed candidate.

@@ -1,6 +1,6 @@
 **Running head:** TSHR and IGF1R genetics in Graves disease
 
-# Genetic susceptibility at TSHR and IGF1R in Graves disease and thyroid eye disease
+# Genetic evidence for TSHR and IGF1R in Graves disease and thyroid eye disease
 
 Jungyul Park¹, Min-Seon Kim², Kyung-Hwa Shin³⁎, Suk-Woo Yang¹⁎
 
@@ -13,151 +13,97 @@ Jungyul Park¹, Min-Seon Kim², Kyung-Hwa Shin³⁎, Suk-Woo Yang¹⁎
 **Corresponding author:** Suk-Woo Yang, MD, PhD, Department of Ophthalmology, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea. E-mail: yswoph@catholic.ac.kr; Tel: +82-2-2258-2847.  
 **Co-corresponding author:** Kyung-Hwa Shin, MD, Department of Laboratory Medicine, Pusan National University Hospital, Busan, Republic of Korea.
 
----
-
 ## Abstract
 
-Teprotumumab targets IGF-1R in thyroid eye disease (TED), but whether *IGF1R* carries the genetic architecture of a susceptibility locus, as the established autoantigen *TSHR* does, remains unclear. We applied a druggable-gene-wide Mendelian randomization (MR) and colocalization framework to separate susceptibility from effector axes in Graves disease (GD) and TED. eQTLGen blood *cis*-eQTL instruments were used for two-sample MR across 2,544 druggable genes. Outcomes were Biobank Japan (BBJ) Graves disease (discovery), UK Biobank (UKB) hyperthyroidism (replication), and FinnGen R12 Graves ophthalmopathy (TED-enriched sensitivity). Bonferroni-significant hits underwent cross-outcome evaluation and Bayesian colocalization against all three outcomes, with prior sensitivity analysis. Thirteen genes reached Bonferroni significance in discovery. *TSHR* showed protective MR effects across all three outcomes and strong colocalization in both Graves disease phenotypes (PP.H4=0.951 and 0.986; top-posterior variant rs179252), but not in the broader hyperthyroidism phenotype, where distinct causal variants were favoured (PP.H3=0.774). *IGF1R* showed directionally consistent risk-direction MR estimates, reaching nominal significance in BBJ and UKB but not in the smaller FinnGen outcome, and did not reach the colocalization threshold in any outcome (PP.H4=0.073, 0.404, 0.032). *CTLA4*, the positive control, colocalized in both European outcomes but not in discovery. No novel candidate satisfied the dual-phenotype colocalization criterion. These results support *TSHR* as an expression-colocalized susceptibility anchor for GD, while shared-variant evidence at *IGF1R* remains unresolved. The differing genetic profiles do not establish an exclusive effector role for *IGF1R* or exclude a modest inherited contribution.
+**Objective:** To compare genetic evidence linking blood expression of *TSHR* and *IGF1R* to Graves disease (GD) and thyroid eye disease (TED). **Methods:** We used genetic variants associated with blood gene expression to study 2,544 druggable genes by Mendelian randomization. Biobank Japan (BBJ) GD was the discovery outcome; UK Biobank (UKB) hyperthyroidism and FinnGen Graves ophthalmopathy provided additional comparisons. We reported odds ratios (ORs), 95% confidence intervals (CIs) and P values, and tested whether expression and disease associations shared a genetic variant. **Results:** Thirteen genes met the multiple-testing threshold. Higher genetically proxied *TSHR* expression was associated with lower odds of BBJ GD (OR 0.12, 95% CI 0.07–0.21; *P* = 1.09×10⁻¹⁴), with the same direction in UKB and FinnGen. Shared-variant support was strong in BBJ and FinnGen, but not UKB. *IGF1R* associations were nominal in BBJ (OR 1.56, 95% CI 1.07–2.28; *P* = 0.0212) and UKB (*P* = 0.0117), and inconclusive in FinnGen (*P* = 0.182); shared-variant support remained below threshold. No additional candidate met the combined BBJ and FinnGen shared-variant criterion. Cohort-frequency sensitivity analyses preserved these findings. **Conclusions:** Genetic evidence was stronger for *TSHR* than *IGF1R* in this analysis. These results do not exclude a modest *IGF1R* contribution or alter evidence supporting IGF-1R blockade. FinnGen comparisons with population controls cannot establish an effect specific to TED within GD.
 
 **Keywords:** Graves disease; Thyroid eye disease; *TSHR*; *IGF1R*; Mendelian randomization; Colocalization
 
----
-
 ## Introduction
 
-Thyroid eye disease (TED) is the most common extrathyroidal manifestation of Graves disease (GD), an autoimmune disorder in which orbital inflammation and tissue remodeling can impair quality of life, ocular function, and vision [1, 2]. For decades, treatment relied largely on corticosteroids, orbital radiotherapy, and surgery, with limited disease-modifying options. The introduction of teprotumumab, a monoclonal antibody targeting the insulin-like growth factor 1 receptor (IGF-1R), changed this therapeutic landscape: randomized trials demonstrated improvement in proptosis, clinical activity, and diplopia in active TED [3], establishing IGF-1R blockade as a viable therapeutic strategy. However, clinical response to IGF-1R blockade does not by itself resolve whether *IGF1R* represents a genetically anchored susceptibility locus for GD/TED or a pharmacologic effector target that can be modulated without being a primary driver of disease risk.
+Thyroid eye disease (TED) can cause proptosis, diplopia and visual impairment in patients with Graves disease (GD) [1, 2]. Teprotumumab, which blocks the insulin-like growth factor 1 receptor (IGF-1R), improves clinical outcomes in active TED [3]. Its therapeutic efficacy raises a related question: does inherited variation influencing *IGF1R* expression contribute to disease susceptibility in the same way as variation at *TSHR*, the established GD autoantigen and susceptibility locus?
 
-*TSHR* and IGF-1R occupy different but biologically connected positions in GD/TED pathogenesis and therapy. *TSHR* is the central autoantigen of GD: loss of immune tolerance to the thyrotropin receptor gives rise to TSHR-directed stimulating autoantibodies, and *TSHR* is among the most consistently replicated genetic susceptibility loci for the disease [2]. IGF-1R, by contrast, has emerged as both a mechanistic candidate and a therapeutic target in TED [4]. Experimental studies have reported that IGF-1R can associate with TSHR, including through β-arrestin 1–dependent receptor scaffolding, and that the two receptors engage in functional crosstalk in orbital fibroblasts [5, 6], providing a biological rationale for IGF-1R blockade. These observations leave open a fundamental question of interpretation: whether *IGF1R* should be regarded as an independent genetic susceptibility locus, a signaling partner of TSHR, or a pharmacologic effector node that is therapeutically tractable without being a primary determinant of inherited disease risk. This distinction is difficult to resolve from tissue expression or therapeutic-response data alone, because both can reflect disease-state activation, cellular remodeling, or downstream pathway modulation rather than germline susceptibility architecture.
+TSHR and IGF-1R interact in experimental models of orbital disease [4–6]. However, a receptor can be an effective treatment target without the genetic evidence for its role in disease susceptibility being equally strong. Treatment response, inherited gene regulation and gene expression in inflamed tissue address different biological questions. Distinguishing them can help clinicians interpret claims arising from genetic studies of therapeutic targets.
 
-Human genetics offers a way to address this question that is less susceptible to confounding and reverse causation than observational expression studies. Mendelian randomization (MR) uses germline genetic variants as instruments to infer whether genetically proxied molecular exposures—here, *cis*-regulated gene expression—are associated with disease liability in a manner consistent with causality [7], while colocalization tests whether the genetic signals for expression and disease share an underlying causal variant rather than reflecting distinct linked variants [8]. Applied across a predefined druggable-gene set, this combination can prioritize loci systematically without restricting inference to a small number of preselected candidates. Prior MR and multi-omics studies have begun to nominate molecular contributors to GD, including immune-related and other molecular signals [9, 10], but they have not directly resolved whether *TSHR* and *IGF1R* occupy different positions as genetically anchored susceptibility versus pharmacologic effector axes. Integrating MR with colocalization can further distinguish expression-colocalized susceptibility signals from non-colocalized or downstream effector biology.
+Mendelian randomization (MR) uses genetic variants associated with an exposure to study its relationship with disease [7]. Here, the exposure was blood gene expression. We also used colocalization, an analysis that asks whether the expression and disease associations are consistent with the same underlying genetic variant [8]. This additional check matters because neighbouring variants can be inherited together: an expression–disease association may otherwise reflect two linked signals rather than a shared signal. Prior MR and multi-omics studies have investigated molecular contributors to GD [9, 10], but the comparison between *TSHR* and *IGF1R* remains clinically relevant.
 
-We therefore applied a druggable-gene-wide *cis*-eQTL MR and colocalization framework across a defined GD/TED outcome hierarchy: Biobank Japan Graves disease as the primary discovery outcome, UK Biobank hyperthyroidism as replication, and FinnGen Graves ophthalmopathy as a TED-enriched sensitivity outcome. We evaluated *TSHR*, *IGF1R* and *CTLA4* — the autoantigen, the therapeutic target, and a positive-control autoimmune locus — across every outcome. Our aim was to distinguish expression-colocalized susceptibility anchors from pharmacologic effector axes across druggable genes relevant to GD/TED biology and therapeutic interpretation, rather than treating discovery MR hits alone as sufficient evidence for target nomination.
-
----
+We screened genes considered potentially druggable and compared *TSHR*, *IGF1R* and the known autoimmune gene *CTLA4*. Our primary question was whether genetically proxied expression was associated with GD and supported by a shared expression–disease variant. We then assessed broader hyperthyroidism and a Graves ophthalmopathy outcome. The study was designed to inform interpretation of genetic target evidence; it did not test a treatment or directly compare GD patients with and without TED.
 
 ## Methods
 
 ### Study design and data sources
 
-We performed a druggable-gene-wide Mendelian randomization (MR) study integrating MR and colocalization to distinguish genetically anchored susceptibility from pharmacologic effector biology in Graves disease (GD) and thyroid eye disease (TED) (Figure 1), following the STROBE-MR guideline [11] (Table S7). Exposures were blood *cis*-eQTL instruments from the eQTLGen Consortium (predominantly European; up to 31,684 participants) [12].
+We conducted a two-sample MR study using public genetic association summary statistics and followed STROBE-MR reporting guidance [11]. Blood gene-expression data came from the eQTLGen Consortium, comprising up to 31,684 participants, predominantly of European ancestry [12]. Disease outcomes were Biobank Japan (BBJ) GD, with 2,809 cases [13]; UK Biobank (UKB) hyperthyroidism, with 3,731 cases [14]; and FinnGen R12 Graves ophthalmopathy, with 858 cases [15] (Table 1).
 
-Disease outcomes followed a defined analytical hierarchy: Graves disease from Biobank Japan (BBJ; East Asian; 2,809 cases) served as the primary discovery outcome [13], hyperthyroidism from UK Biobank (UKB; European; 3,731 cases) as a cross-ancestry, broader-phenotype replication outcome [14], and Graves ophthalmopathy from FinnGen R12 (European; 858 cases) as the TED-enriched sensitivity outcome [15] (Table 1). Because adequately powered TED-specific GWAS are unavailable, this design prioritized discovery in Graves disease, assessed generalizability in a broader hyperthyroidism phenotype, and finally examined signal recovery in a smaller TED-enriched outcome. An in-house orbital RNA-seq dataset (Korean; four TED, one control) was included for descriptive context only and was not used for instrument selection. Three genes were selected as the interpretive backbone on biological and therapeutic grounds rather than on screen results: *TSHR* (the Graves disease autoantigen), *IGF1R* (the target of teprotumumab), and *CTLA4* (a positive-control autoimmune locus). All three were evaluated across both evidence layers — MR and colocalization — against every outcome, irrespective of their discovery *P* values, with an additional LD-clumping sensitivity assessment at the single-instrument *TSHR* locus.
+The defined outcome hierarchy used BBJ for discovery, UKB for comparison across ancestry and a broader phenotype, and FinnGen as a TED-enriched sensitivity outcome. FinnGen cases were compared with population controls. Consequently, that analysis includes susceptibility to GD and cannot isolate susceptibility to eye disease among people who already have GD. We selected *TSHR*, *IGF1R* and *CTLA4* on biological and therapeutic grounds and evaluated them across all outcomes, regardless of discovery significance.
 
-### Druggable gene set and instrument selection
+### Genetic instruments and statistical analysis
 
-Analyses were restricted to the druggable genome (Finan et al. [16]; 4,462 genes, GRCh37). For each gene, *cis*-eQTL variants within ±1 Mb reaching genome-wide significance (*P* < 5×10⁻⁸) were eligible as instruments; a relaxed threshold (*P* < 5×10⁻⁶) was used only for secondary or sensitivity analyses and did not define the primary denominator. Exposure effect sizes were reconstructed from the reported Z-scores and per-SNP sample sizes using 1000 Genomes Phase 3 European allele frequencies (n = 503) [17]; cohort-specific frequency substitution was evaluated separately as described below. Independent instruments were obtained by LD clumping (*r*² < 0.001, 10-Mb window) using local PLINK v1.9 [18] with the same reference panel. Instrument strength was quantified as *F* = *Z*². Selection at *P* < 5×10⁻⁸ implies |*Z*| > 5.45 and therefore *F* > 29.7; the observed minimum was 29.7 (no weak instruments).
+We considered 4,462 druggable genes [16]. Eligible instruments were genetic variants within 1 Mb of a gene that were associated with its blood expression at *P* < 5×10⁻⁸. We selected approximately independent variants using the 1000 Genomes European reference, which matched the exposure population [17, 18]. This left 6,135 instruments for 2,544 genes. The minimum instrument-strength F statistic was 29.7. Alleles were aligned between expression and disease datasets; ambiguous or unavailable variants were excluded. UKB estimates were converted from their reported linear-model scale to log-odds before analysis. Reconstruction formulas, selection parameters and exclusions are provided in Supplementary Methods.
 
-After clumping, 2,544 of 4,462 genes retained at least one valid instrument and formed the MR-testable denominator (6,135 SNP-level instruments; Table S4), which defined the study-wide significance threshold (Bonferroni *P* < 1.965×10⁻⁵; 0.05/2,544).
+We used the Wald ratio for genes with one instrument and inverse-variance weighting for genes with multiple instruments [19]. Results are reported as odds ratios (ORs), 95% confidence intervals (CIs) and two-sided *P* values. ORs are per unit increase in reconstructed, genetically proxied blood expression; they are not per drug dose and should not be interpreted as expected treatment effects. Discovery significance required *P* < 1.965×10⁻⁵, correcting for 2,544 eligible genes. Associations at *P* < 0.05 in the additional outcomes were considered nominal support only when their direction agreed with discovery. We report all estimates for the three selected genes, including non-significant results. Alternative MR estimators and tests for inconsistent instrument effects are presented in Table S1 [20, 21].
 
-### Outcome data and harmonization
+MR interpretation requires that instruments predict expression, are not associated with confounders, and do not affect disease through other pathways. Neither a small P value nor colocalization proves these assumptions. Single-instrument results, including *TSHR*, cannot undergo instrument-based tests of pleiotropy. We did not perform a formal genetic directionality test [22]. The reporting checklist records other analyses that were unavailable or not undertaken.
 
-Exposure and outcome data were harmonized with TwoSampleMR [19] (harmonise_data, action = 2), aligning alleles to a common effect allele and inferring strand for complementary alleles where possible; palindromic variants with intermediate frequency (MAF > 0.42) were removed to avoid strand ambiguity.
+### Shared genetic signals and sensitivity analyses
 
-Outcome estimates were placed on a common log-odds scale: BBJ and FinnGen were used directly, while UKB hyperthyroidism (reported on a linear mixed-model scale) was rescaled to log-odds using case prevalence before MR. Variants lacking usable outcome estimates or failing harmonization were omitted without imputation. Source-study GWAS covariate adjustments were retained; individual-level covariates were unavailable for common re-adjustment. Given differences in ancestry, phenotype, and effect-scale reconstruction across cohorts, cross-outcome interpretation emphasized direction, replication, and colocalization rather than exact equality of effect magnitudes.
+For the three selected genes and six additional candidates, colocalization assessed whether gene expression and disease shared a genetic variant [8]. We considered a shared-variant posterior probability of at least 0.80 to provide strong support. This probability is a model-based measure of support, not a P value. We report it alongside the MR results and tested more conservative assumptions (Table S2) [23]. The model assumes at most one causal variant per trait in the region; full model details and all probabilities are supplied in Supplementary Methods and Supplementary Data 3.
 
-### Mendelian randomization
+We checked instrument selection at *TSHR* and whether three neighbouring chromosome 16p11.2 hits represented independent findings. We also repeated the analyses using eQTLGen's own allele frequencies. Frequency substitution was assessed first with the same variants, then after repeating allele alignment. MR, colocalization and detectable effect sizes were compared with the primary analysis (Tables S3–S4). Details of these checks, including their limitations, are in Supplementary Methods.
 
-Two-sample MR was performed for each gene against all three outcomes. Interpretation as a causal effect requires instrument relevance, independence from exposure–outcome confounders, and no effect on the outcome through pathways other than the proxied expression (exclusion restriction). These assumptions are not established by statistical significance or colocalization alone. For single-instrument loci, the Wald ratio was used; for multi-instrument loci, the inverse-variance-weighted (IVW) method was the primary estimator, with MR-Egger [20], weighted median [21], and weighted mode as sensitivity estimators. Directional pleiotropy was assessed using the MR-Egger intercept, between-instrument heterogeneity using Cochran's Q, while Steiger directionality testing [22] was not applied (Table S6). Discovery significance was defined at the study-wide Bonferroni threshold (*P* < 1.965×10⁻⁵; 0.05/2,544). Replication and TED-enriched support were evaluated using direction-consistent nominal association (*P* < 0.05).
+A small orbital RNA-seq dataset comprising four TED samples and one control was retained solely as descriptive context (Figure S1). It did not contribute to gene selection or genetic conclusions, and no differential-expression P values were calculated for this manuscript. Technical replicates were combined at the biological-sample level.
 
-Because a screen that advances no novel target is interpretable only in relation to the effect sizes it could have detected, we quantified the detectable effect range of the screen itself. For each gene and outcome, the minimum effect detectable with 80% power at the applicable significance threshold was computed from the empirical standard error of the primary MR estimate as |β|min = (*z*1−α/2 + *z*0.80) × SE, using α = 1.965×10⁻⁵ for the discovery outcome and α = 0.05 for the replication and TED-enriched outcomes. This design-based approach uses the standard errors actually obtained after harmonization rather than reconstructed variance components, and is reported for all genes and for the three backbone loci (Table S8).
-
-### Instrument resolution at TSHR and colocalization
-
-To assess the stability of instrument selection at *TSHR*, LD clumping at the locus was repeated across a grid of *P*-value and *r*² thresholds in both 1000 Genomes Phase 3 panels (European, *n* = 503; East Asian, *n* = 504). At the primary threshold (*P* < 5×10⁻⁸, *r*² < 0.001) the European panel — the one matching the eQTL data and therefore used for selection — yielded exactly one independent instrument, rs179252. rs179252 was among the index variants under all twelve thresholds tested, though not the only one at relaxed thresholds or in the East Asian panel (Table S3). *TSHR* was accordingly treated as a single-instrument, locus-level anchor rather than reconstructed as a multi-instrument exposure (Table S3).
-
-For prioritized loci, we tested whether the *cis*-eQTL and outcome-association signals shared a causal variant using coloc.abf [8] (coloc) with the available gene-specific eQTLGen *cis*-variants, under the single-causal-variant assumption and default priors (p1 = p2 = 10⁻⁴, p12 = 10⁻⁵) [23]. In this implementation dataset 1 was the outcome GWAS and dataset 2 the *cis*-eQTL, so the posterior probabilities distinguish association with the outcome only (H1), with the *cis*-eQTL only (H2), with both traits at distinct causal variants (H3), and with both traits at a shared causal variant (H4). Colocalization used beta and varbeta for both datasets. Outcome effect estimates and standard errors came from each GWAS; exposure estimates were reconstructed from eQTLGen Z-scores, per-variant sample sizes and 1000 Genomes European frequencies, with expression variance set to one (sdY = 1). Variants were matched by rsID and allele pair, avoiding coordinate-window comparisons between GRCh37 eQTL and GRCh38 outcome files; duplicate rsIDs and allele-pair mismatches were removed. Outcome allele frequencies were not used in these Bayes factors. Strong colocalization was defined as PP.H4 ≥ 0.80, with prior sensitivity at p12 = 10⁻⁶ and 5×10⁻⁶ (Tables S2, S9; Figure S2).
-
-### Allele-frequency sensitivity analysis
-
-We substituted eQTLGen's published frequencies, derived from 26,609 participants excluding the Framingham Heart Study [12], for the European reference frequencies while retaining the selected 2,544-gene instrument set. Frequencies were aligned to the assessed allele after checking rsID, allele pair and GRCh37 position. Exposure β and SE were reconstructed with the original per-variant Z and sample size; preservation of Z was checked to 10⁻⁸. We compared primary MR on the same retained variants and then repeated harmonization (action = 2), reporting changed exclusions separately. Colocalization was repeated for all nine loci, three outcomes and three p12 priors, first on identical variants and then including additional variants with cohort frequencies; outcome estimates, sdY and priors were unchanged. We assessed PP.H4 = 0.80 crossings and recalculated Table S8 metrics (Tables S10–S12; Supplementary Data 4–6).
-
-### Chromosome 16p11.2 follow-up
-
-The three chromosome 16p11.2 discovery hits were evaluated with pairwise LD in the 1000 Genomes East Asian panel (n = 504). GCTA-COJO applied stepwise conditional selection to the available BBJ regional summary statistics using the same reference and a selection threshold of *P* < 5×10⁻⁶; marginal and conditional associations were compared (Table S5). This follow-up assessed regional dependence rather than identifying a specific causal gene.
-
-### Orbital tissue transcriptomic analysis
-
-Exploratory tissue-level support was assessed using an in-house bulk RNA-seq dataset of orbital tissue from a Korean cohort comprising four TED patients and one control. Technical replicates were collapsed to the biological-sample level and abundance expressed as transcripts per million (TPM). Descriptive log2 fold changes were calculated as log2[(mean TED TPM + 0.01)/(control TPM + 0.01)]. With one control, control-side biological variance cannot be estimated, so differential-expression tests are not used for inference or reported in this manuscript; abundance is described for the three backbone genes only (Figure S1). No transcriptomic catalogue, differential-expression list or pathway-enrichment result is presented, the dataset was not used for instrument selection, and it contributes to no inference here.
-
-### Software, reporting, and data availability
-
-Analyses used R 4.3.3, TwoSampleMR 0.7.4, coloc 5.2.3 and PLINK 1.9; Python reproduced coloc equations for baseline verification and frequency sensitivity. Reporting is mapped to the STROBE-MR guideline, including limitations in reporting coverage (Table S7). No prospective registration identifier is available for this analysis. Public eQTL and GWAS summary statistics are available from their original repositories, including eQTLGen, the GWAS Catalog, and FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions. The study used de-identified summary statistics and an institutionally approved orbital tissue dataset (IRB approval, Pusan National University Hospital, 2104-018-102).
-
----
+Analyses used R 4.3.3, TwoSampleMR 0.7.4, coloc 5.2.3 and PLINK 1.9. Python reproduced the colocalization calculations for verification and frequency sensitivity. The instruments and complete numerical results are supplied in Supplementary Data 1–4. No prospective study registration was available.
 
 ## Results
 
-### Druggable-gene-wide MR discovery
+### Discovery across druggable genes
 
-The attrition of the screen and the resulting contrast between the two backbone receptors are summarized in **Figure 1**. The analysis followed the defined outcome hierarchy of BBJ Graves disease (discovery), UKB hyperthyroidism (replication), and FinnGen R12 Graves ophthalmopathy (TED-enriched sensitivity), with data sources in **Table 1**.
+Of 2,544 genes with selected instruments, 2,234 had estimable MR results in BBJ; the corresponding numbers were 2,505 in UKB and 2,480 in FinnGen. Thirteen genes met the BBJ multiple-testing threshold (Table 3; Figure 1). These included *TSHR*, *CTLA4*, five genes in the major histocompatibility complex (MHC), and six additional candidates. The three biologically selected genes are compared in Table 2 and Figure 2.
 
-Of 4,462 druggable genes, 2,544 had at least one valid *cis*-eQTL instrument in eQTLGen and formed the MR-testable denominator; across these genes, 6,135 SNP-level instruments were retained, all exceeding conventional instrument-strength criteria (minimum F-statistic = 29.7, the value implied by the *P* < 5×10⁻⁸ selection threshold; **Table S4**). Primary MR estimates against the BBJ Graves disease discovery outcome were obtainable for 2,234 genes.
+### TSHR
 
-Applying a Bonferroni threshold corrected for the MR-testable denominator (*P* < 1.965×10⁻⁵; 0.05/2,544), 13 genes reached significance in discovery (**Figure 2**). These hits included the established Graves disease autoantigen *TSHR* and the known autoimmune locus *CTLA4*, both with strongly significant protective-direction estimates, together with additional loci that were carried forward for replication and colocalization-based filtering. The discovery volcano (**Figure 2**) shows the distribution of BBJ MR effect estimates and the 13 Bonferroni-significant hits; full per-hit statistics, cross-outcome colocalization, and classification are provided in **Table 3** (with extended detail in **Table S1**).
+Higher genetically proxied blood *TSHR* expression was associated with lower odds of BBJ GD (OR 0.12, 95% CI 0.07–0.21; *P* = 1.09×10⁻¹⁴). Estimates had the same direction in UKB (OR 0.09, 95% CI 0.06–0.14; *P* = 8.77×10⁻²⁸) and FinnGen (OR 0.10, 95% CI 0.04–0.24; *P* = 2.82×10⁻⁷).
 
-### Cross-outcome classification and colocalization filtering
+Expression and disease showed strong shared-variant support in BBJ and FinnGen, with probabilities of 0.951 and 0.986, respectively. The leading variant was rs179252 in both. UKB did not show the same support (0.226), despite a strong MR association. Its expression and disease signals were more consistent with distinct linked variants. Thus, a highly significant MR result alone did not establish a shared genetic signal in every outcome.
 
-The 13 discovery hits were not treated as putative targets on the strength of the discovery MR alone. Instead, each was classified according to prior biological status, genomic context, cross-outcome support, and colocalization with both the discovery and TED-enriched signals. Two hits—*TSHR* and *CTLA4*—were recognized as established Graves disease and autoimmune loci, respectively, and are examined in detail below. The remaining hits were evaluated as non-known candidates, including a cluster on chromosome 16p11.2 (*HSD3B7*, *VKORC1*, and *PRSS36*) whose top eQTL instruments were co-located within a narrow approximately 143-kb linkage-disequilibrium window (Table S5).
+### IGF1R
 
-Candidate colocalization was outcome-dependent (Table S2; Figure S2). *TNFSF14* and *IFNGR1* colocalized strongly with the BBJ discovery signal (PP.H4 = 0.994 and 0.989) but reached the threshold in neither secondary outcome (UKB 0.237 and 0.052; TED-enriched 0.017 and 0.020), where the posteriors were dominated by the *cis*-eQTL-only and distinct-variant hypotheses. *TNFSF14* retains a direction-consistent nominal MR association in UKB (*P* = 0.0056), so its exclusion reflects the colocalization criterion, not an absence of association. *MAPKAPK5* was distinct-variant-dominant in discovery (PP.H3 = 1.000), and the chr16p11.2 candidates reached at most PP.H4 = 0.636 in discovery and no more than 0.115 in either secondary outcome.
+Higher genetically proxied *IGF1R* expression was associated with higher odds of BBJ GD (OR 1.56, 95% CI 1.07–2.28; *P* = 0.0212) and UKB hyperthyroidism (OR 1.35, 95% CI 1.07–1.70; *P* = 0.0117). These were nominal associations and did not meet the study-wide discovery threshold. The FinnGen estimate was in the same direction but imprecise (OR 1.41, 95% CI 0.85–2.33; *P* = 0.182).
 
-Overall, no non-known candidate showed strong colocalization in both BBJ Graves disease and the TED-enriched outcome. Thus, after cross-outcome colocalization filtering, no novel candidate satisfied the dual-phenotype criterion. This filtering guarded against overinterpreting single-outcome or LD-driven discovery signals.
+Shared-variant support was below 0.80 in all three outcomes (BBJ 0.073, UKB 0.404 and FinnGen 0.032). The UKB result was divided between competing explanations and should be regarded as unresolved. Alternative MR estimators agreed in direction but differed in statistical significance (Table S1). Taken together, these results provide weaker genetic support for *IGF1R* than for *TSHR* in the two Graves disease outcomes; they do not show that *IGF1R* has no inherited contribution.
 
-The MR detection range varied substantially across genes (**Table S8**). At the study-wide discovery threshold and 80% power, the median detectable odds ratio was approximately 2.55 per unit genetically proxied expression (interquartile range 1.71–5.18). Only 35.6% of genes had at least 80% power at OR 2.0 and 14.6% at OR 1.5. In the TED-enriched outcome at nominal significance, the median detectable OR was approximately 2.12. TSHR and CTLA4 exceeded their gene-specific discovery thresholds, but these calculations quantify MR association power, not power to pass colocalization or the combined filter. The absence of a qualifying novel candidate therefore cannot exclude other large or moderate effects.
+### CTLA4 and additional candidates
 
-### TSHR: an expression-colocalized susceptibility anchor
+The known autoimmune locus *CTLA4* [24] was associated with lower odds of disease in BBJ (OR 0.18, 95% CI 0.11–0.27; *P* = 5.45×10⁻¹⁵), UKB (*P* = 0.0022) and FinnGen (*P* = 0.0118). Shared-variant support was strong in UKB and FinnGen, but not BBJ (Table 2). The screen therefore recovered a known autoimmune association, while *CTLA4* itself failed the combined BBJ-plus-FinnGen colocalization criterion.
 
-Among the established hits, *TSHR* showed the strongest convergence between the MR and colocalization layers of the framework (Table 2; Figure 3). In MR, the *TSHR* *cis*-eQTL instrument was associated with protective-direction estimates across all three outcomes: BBJ Graves disease (β = −2.10, *P* = 1.1×10⁻¹⁴), UKB hyperthyroidism (β = −2.44, *P* = 8.8×10⁻²⁸), and the TED-enriched outcome (β = −2.33, *P* = 2.8×10⁻⁷). The consistency of direction and approximate magnitude across the independently ascertained Graves disease and hyperthyroidism outcomes argues against an outcome-specific artifact (Figure 3B). The concordant estimate in the TED-enriched outcome is interpreted more conservatively, because Graves ophthalmopathy cases are ascertained among patients with Graves disease and compared with population controls, so that outcome substantially re-measures shared Graves disease susceptibility rather than liability specific to orbital involvement (see Limitations).
+None of the six additional candidates met the shared-variant criterion in both BBJ and FinnGen. *TNFSF14* and *IFNGR1* had strong support in BBJ only. *TNFSF14* nevertheless retained a direction-consistent UKB MR association (*P* = 0.0056); the absence of colocalization in that outcome was not an absence of association. The three neighbouring chromosome 16p11.2 hits were consistent with one regional signal rather than three independent findings. All 13 discovery estimates and their classification are shown in Table 3; full comparisons are in Supplementary Data 2–3.
 
-Colocalization supported a shared causal variant between *TSHR* expression and disease association in the Graves disease discovery outcome and in the TED-enriched outcome (PP.H4 = 0.951 and 0.986; rs179252 the top-posterior variant in both; Figure 3A), but not in the broader UKB hyperthyroidism phenotype, where the posterior instead favoured distinct causal variants (PP.H3 = 0.774; PP.H4 = 0.226; lead variant rs1023586). A weak outcome association alone does not explain this discordance: UKB carried a strong locus-wide association (minimum *P* = 1.4×10⁻⁴³), and 5,667 variants overlapped the eQTL data. Formal colocalization power was not evaluated. We therefore report *TSHR* colocalization as specific to the two Graves disease phenotypes rather than as a property of thyroid autoimmunity in general (Table 2).
+### Robustness and detectable effects
 
-In the in-house orbital dataset, *TSHR* transcript abundance was higher in the four TED samples than in the single control (log2 fold-change = +2.59; Figure S1). With one control, this dataset cannot support differential-expression inference; it is reported as a descriptive observation and no statistical claim is drawn from it. Together, the genetic results position *TSHR* as an expression-colocalized upstream susceptibility anchor for Graves disease whose signal is also recovered in a TED-enriched Graves ophthalmopathy outcome, although a TED-specific effect separable from Graves disease liability is not established by these data. The apparent contrast between the protective-direction germline MR estimate and higher orbital *TSHR* abundance in disease-state tissue is addressed in the Discussion.
+Using eQTLGen cohort frequencies preserved all 13 discovery hits. *IGF1R* remained nominally associated in BBJ and UKB (*P* = 0.022 and 0.016) and non-significant in FinnGen (*P* = 0.177; Table S3). None of the 81 colocalization comparisons crossed the 0.80 threshold; the maximum absolute change in shared-variant probability was 0.002142. However, the original prior sensitivity remained relevant: under the most conservative prior, *TSHR* support in BBJ fell from 0.951 to 0.661, while FinnGen remained above threshold (Table S2).
 
-### IGF1R: nominal genetic association without expression colocalization
-
-In contrast to *TSHR*, *IGF1R*, the therapeutic target of teprotumumab, showed a markedly different evidence profile (Table 2; Figure 3). *IGF1R* was instrumented by multiple independent *cis*-eQTL variants, with four instruments in the discovery and replication analyses. The inverse-variance-weighted MR estimate indicated a nominal positive-direction association with BBJ Graves disease (β = +0.45, *P* = 0.021) and UKB hyperthyroidism (β = +0.30, *P* = 0.012); the TED-enriched estimate was directionally consistent but non-significant (β = +0.34, *P* = 0.18). Sensitivity estimators were broadly concordant in direction, and the MR-Egger intercept did not detect directional pleiotropy, although this test has limited power with three or four instruments. Statistical significance was not uniform across estimators (Table S6). The magnitude of this effect lay below the gene-specific detection threshold of the discovery screen (minimum effect detectable with 80% power at the study-wide threshold, |β| = 0.99 for *IGF1R*; Table S8), so its failure to reach study-wide significance is expected for an effect of this size and does not by itself constitute evidence against a genetic contribution. This is one reason *IGF1R* was carried forward as a backbone gene evaluated across multiple evidence layers rather than judged on discovery significance alone.
-
-Critically, this nominal MR signal was not accompanied by expression colocalization in any outcome. At the *IGF1R* locus the posterior remained below the shared-variant threshold — PP.H4 = 0.073 (discovery), 0.404 (replication) and 0.032 (TED-enriched) — with an eQTL-only pattern dominating in the two Graves disease phenotypes (PP.H2 = 0.69 and 0.62; Figure 3A). In UKB, the posterior was divided between the eQTL-only and shared-variant hypotheses (PP.H2 = 0.400; PP.H4 = 0.404), so an eQTL-only interpretation does not apply uniformly. Descriptive orbital *IGF1R* abundance had a log2 fold-change of +0.80; no differential-expression inference is made.
-
-Thus, *IGF1R* showed nominal positive-direction MR evidence without reaching the prespecified eQTL–GWAS colocalization threshold. This profile differs from the colocalized *TSHR* signal in the two Graves disease phenotypes. The interpretation of this profile—in particular its relationship to the established therapeutic role of IGF-1R blockade—is considered in the Discussion.
-
-### CTLA4: a positive-control autoimmune locus
-
-*CTLA4* (chromosome 2q33), a well-established autoimmune susceptibility locus [24], was included as a positive control to calibrate the framework against a gene of known relevance to Graves disease. Consistent with its role as a known autoimmune locus, *CTLA4* showed strong protective-direction MR estimates in the discovery analysis (BBJ Graves disease, β = −1.74, *P* = 5.5×10⁻¹⁵), with concordant protective-direction estimates in replication (UKB hyperthyroidism, β = −1.57, *P* = 0.002) and the TED-enriched outcome (β = −1.77, *P* = 0.012). The recovery of *CTLA4* shows that the discovery screen detected this known autoimmune signal.
-
-Colocalization at *CTLA4* differed across outcomes: the posterior supported a shared causal variant in both European outcomes (UKB PP.H4 = 0.953, lead rs3087243; TED-enriched PP.H4 = 0.978, lead rs1863800) but favoured distinct causal variants in the East Asian discovery outcome (PP.H3 = 0.799; Figure 3A). Together with between-instrument heterogeneity in the replication analysis (Table S6), this pattern is consistent with cross-ancestry locus complexity at *CTLA4*. This locus illustrates detection of known autoimmune biology, but it does not pass the required discovery-plus-TED colocalization criterion and therefore cannot validate the sensitivity of that combined filter. Ancestry, phenotype and locus complexity cannot be separated by these three comparisons. Descriptive orbital *CTLA4* abundance had a log2 fold-change of +1.58; no differential-expression inference is made.
-
-### Sensitivity to exposure allele frequencies
-
-All 50,245 requested variants, including all 6,135 instrument records, had usable eQTLGen frequencies with matching GRCh37 coordinates. Reconstructed Z differed by at most 5.54×10⁻¹³. The same thirteen discovery genes remained significant after substitution and re-harmonization. *IGF1R* retained positive IVW estimates in BBJ (β = 0.458, SE = 0.200, *P* = 0.022), UKB (β = 0.317, SE = 0.131, *P* = 0.016) and FinnGen (β = 0.368, SE = 0.273, *P* = 0.177; Table S10). Across 81 colocalization comparisons, the largest absolute PP.H4 change was 0.000245 on identical variants and 0.002142 when additional frequency-covered variants were included; no comparison crossed 0.80 (Table S11). Re-harmonization changed 27 variant inclusion decisions: 24 involved palindromic variants and three restored previously unavailable reference frequencies. Estimable gene counts became 2,232, 2,506 and 2,481, respectively. Median detectable ORs changed from 2.55 to 2.61, 1.46 to 1.46 and 2.12 to 2.17; discovery power at OR 1.5 decreased from 14.6% to 12.5% (Table S12). The principal locus conclusions were maintained, while effect magnitudes and detection thresholds showed some frequency dependence.
-
----
+The screen had limited ability to detect smaller associations. At 80% power, only 14.6% of estimable BBJ genes could detect an OR of 1.5 at the discovery threshold; this decreased to 12.5% with cohort frequencies. The corresponding proportions for an OR of 2.0 were 35.6% and 34.2% (Table S4). These calculations describe MR association detection, not the probability of passing the complete colocalization filter. Failure to identify an additional candidate does not exclude moderate or other undetected genetic effects.
 
 ## Discussion
 
-This study compared genetically proxied expression and disease colocalization across Graves disease (GD), broader hyperthyroidism and a TED-enriched Graves ophthalmopathy outcome. *TSHR* showed consistent protective-direction MR estimates and strong expression colocalization in the two Graves disease phenotypes at the default prior. *IGF1R* showed nominal MR associations in BBJ and UKB, but its colocalization posteriors remained below the prespecified threshold in all three outcomes. No novel candidate met the combined discovery-plus-TED colocalization criterion. The contribution is a within-disease comparison of these genetic profiles; the analysis does not establish a pharmacologic mechanism or prove that a non-colocalized gene lacks a genetic role.
+This study found stronger genetic evidence linking blood *TSHR* expression to GD than linking *IGF1R* expression to the same outcomes. *TSHR* showed direction-consistent MR associations across all three datasets and shared expression–disease signals in BBJ GD and FinnGen Graves ophthalmopathy. *IGF1R* showed nominal associations in BBJ and UKB, but its shared-variant evidence remained unresolved. No additional candidate passed the combined BBJ and FinnGen criterion. Cohort-frequency sensitivity analyses preserved these findings while changing some effect sizes and detection thresholds.
 
-*TSHR* is an established GD autoantigen and susceptibility locus [2]. Its colocalized signal, with rs179252 as the top-posterior variant in BBJ and FinnGen, provides a reference for interpreting other genes. The UKB result bounds that interpretation: despite a strong locus-wide disease association, the posterior favoured distinct variants (PP.H3 = 0.774). A weak outcome association alone therefore does not explain the discordance, although phenotype differences, LD structure and the single-causal-variant assumption remain possible contributors. Colocalization support is specific to the two Graves disease phenotypes evaluated here, and the posterior does not establish rs179252 as the uniquely causal variant.
+For clinicians, the main implication concerns interpretation rather than treatment selection. The established efficacy of IGF-1R blockade in TED [3] does not require *IGF1R* to show the same inherited susceptibility pattern as *TSHR*. Blood gene-expression instruments may not capture receptor activity, protein abundance or regulation in orbital tissue [25]. The present findings neither challenge the treatment evidence for teprotumumab nor establish that *IGF1R* acts exclusively downstream of disease susceptibility. They leave open a modest inherited contribution and mechanisms not measured by this study.
 
-The protective-direction blood-expression MR estimate and descriptively higher orbital *TSHR* abundance concern different biological settings. The former indexes inherited blood regulatory variation; the latter measures disease-state tissue from four affected individuals and one control. Tissue-specific regulation [25], cell composition, inflammation and remodeling can produce different directions across these settings. The tissue observation cannot establish a causal direction, confirm the MR result or resolve the mechanism linking the locus to disease.
+Similarly, the *TSHR* ORs should not be read as evidence that increasing TSHR expression would prevent disease. They reflect lifelong genetic differences in reconstructed blood expression. A drug acts in a particular tissue, at a particular dose and stage of disease, and may affect signalling without reproducing a genetic expression difference [26]. The descriptive orbital dataset cannot resolve this distinction: four TED samples and a single control are insufficient for differential-expression inference or a causal comparison. The direction of blood-expression MR and disease-state orbital expression need not be the same.
 
-For *IGF1R*, the nominal MR associations were not accompanied by PP.H4 ≥ 0.80. BBJ and FinnGen favoured the eQTL-only hypothesis, whereas UKB split support between eQTL-only and shared-variant hypotheses (PP.H2 = 0.400; PP.H4 = 0.404). This is an unresolved shared-variant architecture under the tested model, not evidence that disease association is absent. Blood expression may also be an incomplete proxy for tissue-specific or protein-level receptor biology. The results are compatible with the established therapeutic efficacy of IGF-1R blockade [3] and receptor crosstalk with TSHR [4, 5], but neither demonstrate that *IGF1R* is exclusively an effector nor exclude a modest inherited contribution.
+The results also show why P values must be interpreted with the study design and supporting evidence. *TSHR* had a very small UKB MR P value, yet its expression and disease signals did not colocalize under the tested model. *IGF1R* had P values below 0.05 in two outcomes, but these were exploratory associations after a genome-wide druggable-gene screen. *CTLA4* was detected as expected for a known autoimmune locus, although it did not satisfy the combined criterion. These findings support reporting estimates, confidence intervals and the full evidence pattern rather than treating nominal significance as sufficient for target selection.
 
-Genetic susceptibility and therapeutic efficacy are related but distinct forms of evidence [26]. That general principle is established; our contribution is the comparison of *TSHR* and *IGF1R* using gene-specific instruments and a common analytic framework. A colocalized susceptibility signal does not show that manipulating expression will reproduce the effect of a drug, identify the appropriate tissue or treatment direction, or predict superiority over an established therapy.
+Several limitations constrain the clinical interpretation. First, the FinnGen outcome compares Graves ophthalmopathy cases with population controls, not GD patients without eye disease. Agreement with BBJ can therefore reflect GD susceptibility, and a TED-specific effect cannot be separated. The FinnGen analysis also included only 858 cases. UKB hyperthyroidism is broader than GD, so ancestry and phenotype differences are partly confounded across the comparisons.
 
-The absence of a qualifying novel candidate is specific to the filters and power of this screen. *TNFSF14* and *IFNGR1* colocalized in BBJ but not in either secondary outcome; *TNFSF14* nevertheless retained a direction-consistent UKB MR association. The chromosome 16p11.2 hits were consistent with one regional signal under the East Asian LD and conditional analysis. These results caution against promoting discovery significance alone to a target claim. Power varied substantially across genes: only about 36% could detect an OR of 2.0 at 80% power in discovery, and the median detectable OR was about 2.55. These thresholds concern MR association, not the probability of passing colocalization or the combined filter. Failure to pass the complete filter therefore does not rule out other large or moderate druggable effects.
+Second, the expression data came predominantly from European blood samples, whereas discovery used East Asian participants. Tissue regulation, linkage patterns and variant availability may differ. eQTLGen frequency substitution addressed one part of exposure-effect reconstruction, but did not resolve these differences; its published frequencies also exclude Framingham participants. Participant overlap between eQTLGen and the European outcomes could not be quantified. These uncertainties limit direct comparison of effect magnitudes across datasets.
 
-Several limitations determine the scope of inference. First, the exposure data were predominantly European blood *cis*-eQTLs [12], whereas BBJ discovery was East Asian [13]. Tissue context [25], LD differences and variant availability may affect instrument performance and colocalization. Participant overlap between eQTLGen and the European outcomes could not be quantified from the available summary data; overlapping samples can introduce bias, and its magnitude and direction were not assessed here. Second, exposure effect sizes were reconstructed from Z-scores and sample sizes rather than directly reported regression coefficients. Cohort-frequency substitution maintained the discovery-hit set and colocalization classifications, but altered some MR estimates, palindromic exclusions and detection thresholds (Tables S10–S12). For a fixed single-instrument Wald analysis, β and SE rescale together, preserving direction and *P* value; multi-instrument estimates need not be invariant. The published frequencies exclude Framingham participants and do not resolve blood-to-orbit transportability or cross-ancestry LD differences.
+Third, *TSHR* was represented by one instrument under the European selection reference. Instrument-based pleiotropy tests were therefore unavailable, and colocalization cannot rule out an effect through a neighbouring gene. The other selected genes had few instruments, limiting the reliability of pleiotropy tests. The *TSHR* instrument remained selected across the tested clumping settings, but the East Asian reference yielded two independent variants at the primary threshold. Single-instrument status should not be interpreted as proof of a single biological signal in every ancestry.
 
-Third, UKB hyperthyroidism is broader than GD. Fourth, *TSHR* used a single instrument selected with the European panel matching the eQTL data. The East Asian panel yields two index variants at the same primary threshold (Table S3); single-instrument status therefore follows from the selection reference and does not demonstrate a single signal in every ancestry. Single-instrument MR precludes instrument-based pleiotropy diagnostics, and colocalization cannot exclude effects through a neighbouring gene. MR-Egger also has limited power at the other backbone loci because instrument counts are small. Fifth, the FinnGen outcome includes only 858 cases and has limited locus-specific power; a low PP.H4 can reflect weak outcome evidence rather than distinct causal architecture.
+Fourth, colocalization assumes at most one causal variant per trait in a region, and its conclusions depend on prior assumptions. The *TSHR* BBJ result fell below the support threshold under the most conservative prior. Low shared-variant support can reflect limited information as well as distinct signals. Multi-variant colocalization, formal colocalization power and the detection probability of the combined filter were not evaluated. The screen's limited MR detection range also prevents its negative candidate result from excluding smaller genetic effects.
 
-Sixth, FinnGen compares Graves ophthalmopathy cases with population controls, not patients with GD without orbitopathy. Its associations therefore include GD susceptibility and do not isolate liability to orbital involvement. Agreement with BBJ should not be interpreted as a TED-specific causal effect. Seventh, coloc.abf assumes at most one causal variant per trait in the tested region, without a multi-variant extension or formal colocalization power analysis. Prior sensitivity was material: at p12 = 10⁻⁶, *TSHR* in BBJ and *CTLA4* in UKB fell below 0.80 (0.661 and 0.672), whereas *TSHR* in FinnGen remained above it (0.875; Table S9).
-
-Eighth, the single positive control, *CTLA4* [24], colocalized in UKB and FinnGen but not BBJ (PP.H3 = 0.799). It demonstrates detection in individual outcomes, not the sensitivity of the combined discovery-plus-TED rule, which it fails. Ancestry and phenotype are confounded across these comparisons. Finally, the orbital dataset has only one control, no external replication and no inferential role. Its descriptive fold changes must not be treated as evidence for or against differential expression.
-
-Within these limits, *TSHR* showed an expression-colocalized susceptibility profile in the two Graves disease phenotypes, while *IGF1R* showed nominal MR associations without meeting the shared-variant threshold. The contrast can inform interpretation of genetic target prioritization alongside established therapeutic evidence, while leaving the tissue-specific mechanism, modest genetic effects and TED-specific liability unresolved.
-
----
+Within these limits, *TSHR* showed a supported expression–disease association in the two Graves disease outcomes, whereas the genetic evidence at *IGF1R* was weaker and inconclusive. The findings help distinguish genetic susceptibility evidence from evidence of therapeutic efficacy. Confirmation in ancestry-matched data, relevant cell types and a direct comparison of GD patients with and without TED would be needed to clarify mechanisms and eye-disease specificity.
 
 ## Declarations
 
@@ -169,15 +115,13 @@ Within these limits, *TSHR* showed an expression-colocalized susceptibility prof
 
 **Informed consent.** Written informed consent was obtained from all individual participants included in the in-house orbital tissue study.
 
-**Data availability.** Instruments, primary MR and colocalization results, and frequency-sensitivity results are supplied as Supplementary Data 1–6. Analysis code is available from the corresponding author on reasonable request. Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 Graves ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
+**Data availability.** Instruments, primary MR and colocalization results, and frequency-sensitivity results are supplied as Supplementary Data 1–4. Analysis code is available from the corresponding author on reasonable request. Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 Graves ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
 
-**Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript. All authors read and approved the final manuscript.
+**Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript.
 
 **Use of AI-assisted tools.** OpenAI Codex assisted with manuscript editing, code preparation, execution and verification of allele-frequency sensitivity analyses, figure rebuilding and document formatting. Scientific interpretation and responsibility for the submitted work remain with the authors.
 
 **Acknowledgements.** We thank the eQTLGen Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
-
----
 
 ## References
 
@@ -215,7 +159,7 @@ Within these limits, *TSHR* showed an expression-colocalized susceptibility prof
 
 17. Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM, et al. Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. Nat Genet. 2016;48:481-487. doi:10.1038/ng.3538.
 
-18. Chang CC, Chow CC, Tellier LC, Vattikuti S, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7. doi:10.1186/s13742-015-0047-8.
+18. Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7. doi:10.1186/s13742-015-0047-8.
 
 19. Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R, et al. The MR-Base platform supports systematic causal inference across the human phenome. Elife. 2018;7:e34408. doi:10.7554/elife.34408.
 
@@ -233,406 +177,152 @@ Within these limits, *TSHR* showed an expression-colocalized susceptibility prof
 
 26. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.
 
----
-
 ## Figure Legends
 
-**Figure 1. Study flow and the *TSHR*–*IGF1R* comparison.** **(a)** Attrition from the druggable genome [16] to the thirteen genes reaching the study-wide Bonferroni threshold (*P* < 1.965 × 10⁻⁵), with exclusions at each step and the resolution of the thirteen at right. No novel candidate met the colocalization criterion. **(b)** Discovery MR estimates and colocalization posteriors for the two backbone receptors. *TSHR* shows shared-variant support in both Graves disease phenotypes; *IGF1R* does not reach PP.H4 ≥ 0.80 in any outcome.
+**Figure 1. Study design and discovery flow.** Genes with independent blood-expression instruments were evaluated across the outcome hierarchy. The discovery threshold was P < 0.05/2,544. Thirteen genes met this threshold; the six additional candidates were evaluated by colocalization, and none reached shared-variant support ≥0.80 in both BBJ and FinnGen. TSHR, IGF1R and CTLA4 were selected for detailed comparison on biological and therapeutic grounds, independently of screen significance.
 
-**Figure 2. Discovery Mendelian randomization across the druggable genome.** **(A)** All estimable genes. **(B)** Enlarged effect range containing all thirteen discovery hits. *Cis*-eQTL MR effects on Biobank Japan Graves disease (log-odds) for the 2,234 genes with estimable estimates, among 2,544 MR-testable genes. The dashed line marks the Bonferroni threshold (*P* = 1.965 × 10⁻⁵) computed against all 2,544. Thirteen genes exceed it: *TSHR* and *CTLA4* (red), five MHC-region signals (grey), three chromosome 16p11.2 variants forming one conditional signal (light purple; Table S5), and three further candidates. *IGF1R* (blue) lies below the threshold.
-
-**Figure 3. Colocalization and MR estimates for the backbone genes.** **(A)** Shared-variant posterior probabilities (PP.H4) against each outcome, computed from outcome beta/varbeta and exposure beta/varbeta reconstructed using European frequencies (sdY = 1). Numerical values are printed beside the points and the dashed line marks 0.80. *TSHR* colocalizes in both Graves disease phenotypes but not in UKB hyperthyroidism, where distinct variants are favoured. *IGF1R* reaches the threshold in no outcome; *CTLA4* colocalizes in both European outcomes. Default prior p12 = 10⁻⁵; sensitivity in Table S9. **(B)** MR estimates (β, log-odds) with 95% confidence intervals and *P* values.
-
----
+**Figure 2. Associations of the three selected genes with disease.** Points show primary ORs and horizontal lines their 95% CIs, with the exact displayed P values beside each estimate. The logarithmic OR axis has a reference line at 1. ORs refer to reconstructed genetically proxied blood expression, not treatment effects. All nine comparisons are included, including the non-significant IGF1R FinnGen result. Shared-variant support is reported separately in Table 2 and prior sensitivity in Table S2.
 
 ## Tables
 
-**Table 1. Study design and data sources.**
+**Table 1. Data sources and roles in the study**
 
-| Dataset | Accession / endpoint | Role | Ancestry | Cases | Controls | Total *N* | Case fraction |
-|---|---|---|---|---|---|---|---|
-| eQTLGen blood *cis*-eQTL [12] | — | Exposure (instruments) | Predominantly European | — | — | up to 31,684 | — |
-| Biobank Japan Graves disease [13] | GCST90018627 | Primary discovery outcome | East Asian | 2,809 | 172,656 | 175,465 | 0.01601 |
-| UK Biobank hyperthyroidism [14] | GCST90038636 | Cross-ancestry replication outcome | European | 3,731 | 480,867 | 484,598 | 0.00770 |
-| FinnGen R12 Graves ophthalmopathy [15] | GRAVES_OPHT (R12) | TED-enriched sensitivity outcome | European | 858 | 499,490 | 500,348 | 0.00171 |
-| In-house orbital RNA-seq | — | Descriptive tissue observation | Korean | 4 TED | 1 control | 5 | — |
+| Dataset | Ancestry | Cases | Controls | Role |
+|---|---|---|---|---|
+| eQTLGen blood expression [12] | Predominantly European | — | — | Exposure; up to 31,684 participants |
+| BBJ Graves disease [13] | East Asian | 2,809 | 172,656 | Discovery |
+| UKB hyperthyroidism [14] | European | 3,731 | 480,867 | Broader-phenotype comparison |
+| FinnGen R12 Graves ophthalmopathy [15] | European | 858 | 499,490 | TED-enriched sensitivity |
 
-eQTLGen sample size indicates the maximum available blood cis-eQTL sample size; SNP-level sample sizes vary across instruments (e.g., rs179252 NrSamples = 31,566). BBJ Graves disease was used as the primary discovery phenotype, UKB hyperthyroidism as cross-ancestry/broader-phenotype replication, and FinnGen Graves ophthalmopathy as the TED-enriched sensitivity outcome. UKB binary-trait effect estimates were rescaled from a linear mixed-model scale to log-odds using case prevalence.
+GWAS accessions are GCST90018627 (BBJ), GCST90038636 (UKB) and GRAVES_OPHT in FinnGen R12. eQTL sample size varies by variant. FinnGen uses population controls, so it cannot distinguish TED susceptibility from GD susceptibility. The small descriptive orbital dataset is detailed only in Supplementary Methods and Figure S1.
 
-**Table 2. Mendelian randomization and colocalization evidence for the backbone genes.**
+**Table 2. Primary associations for the three selected genes**
 
-| Gene | Outcome | N IV | OR (95% CI) | IVW/Wald *P* | Weighted median *P* | MR-Egger intercept *P* | Cochran's Q *P* | Coloc PP.H4 | Coloc PP.H3 | Coloc lead SNP |
-|---|---|---|---|---|---|---|---|---|---|---|
-| ***TSHR*** | BBJ Graves | 1 | 0.12 (0.07–0.21) | 1.1×10⁻¹⁴ | NA (single IV) | NA (single IV) | NA (single IV) | 0.951 | 0.049 | rs179252 |
-| | UKB hyperthyroid | 1 | 0.09 (0.06–0.14) | 8.8×10⁻²⁸ | NA | NA | NA | 0.226 | 0.774 | rs1023586 |
-| | FinnGen GO | 1 | 0.10 (0.04–0.24) | 2.8×10⁻⁷ | NA | NA | NA | 0.986 | 0.014 | rs179252 |
-| ***IGF1R*** | BBJ Graves | 4 | 1.56 (1.07–2.28) | 0.021 | 0.029 | 0.663 | 0.902 | 0.073 | 0.236 | rs2654980 |
-| | UKB hyperthyroid | 4 | 1.35 (1.07–1.70) | 0.012 | 0.002 | 0.562 | 0.250 | 0.404 | 0.196 | rs2654980 |
-| | FinnGen GO | 3 | 1.41 (0.85–2.33) | 0.182 | 0.124 | 0.433 | 0.309 | 0.032 | 0.346 | rs2654980 |
-| ***CTLA4*** | BBJ Graves | 1 | 0.18 (0.11–0.27) | 5.5×10⁻¹⁵ | NA (single IV) | NA (single IV) | NA (single IV) | 0.201 | 0.799 | rs231811 |
-| | UKB hyperthyroid | 2 | 0.21 (0.08–0.57) | 0.002 | — | NA (2 IV) | 0.001 | 0.953 | 0.047 | rs3087243 |
-| | FinnGen GO | 2 | 0.17 (0.04–0.68) | 0.012 | — | NA (2 IV) | 0.049 | 0.978 | 0.022 | rs1863800 |
+| Gene | Outcome | Instruments | OR (95% CI) | *P* value | Shared-variant support |
+|---|---|---|---|---|---|
+| *TSHR* | BBJ Graves disease | 1 | 0.12 (0.07–0.21) | 1.09×10⁻¹⁴ | 0.951 |
+| *TSHR* | UKB hyperthyroidism | 1 | 0.09 (0.06–0.14) | 8.77×10⁻²⁸ | 0.226 |
+| *TSHR* | FinnGen Graves ophthalmopathy | 1 | 0.10 (0.04–0.24) | 2.82×10⁻⁷ | 0.986 |
+| *IGF1R* | BBJ Graves disease | 4 | 1.56 (1.07–2.28) | 0.0212 | 0.073 |
+| *IGF1R* | UKB hyperthyroidism | 4 | 1.35 (1.07–1.70) | 0.0117 | 0.404 |
+| *IGF1R* | FinnGen Graves ophthalmopathy | 3 | 1.41 (0.85–2.33) | 0.182 | 0.032 |
+| *CTLA4* | BBJ Graves disease | 1 | 0.18 (0.11–0.27) | 5.45×10⁻¹⁵ | 0.201 |
+| *CTLA4* | UKB hyperthyroidism | 2 | 0.21 (0.08–0.57) | 0.0022 | 0.953 |
+| *CTLA4* | FinnGen Graves ophthalmopathy | 2 | 0.17 (0.04–0.68) | 0.0118 | 0.978 |
 
-MR effect estimates are odds ratios (OR) per unit increase in genetically proxied gene expression, by Wald ratio (single instrument) or inverse-variance weighted (IVW; multiple instruments). Sensitivity estimators (weighted median, weighted mode, MR-Egger intercept) and the Cochran's Q heterogeneity test are reported only where estimable; single-instrument loci are marked NA. MR-Egger intercept tests for IGF1R were non-significant (all P > 0.43), with limited power given the instrument counts; Cochran's Q indicates significant between-instrument heterogeneity for CTLA4 in the UKB and FinnGen analyses (Q P = 0.001 and 0.049), consistent with cross-ancestry/phenotype locus complexity. Colocalization (coloc.abf) used each outcome's beta and varbeta and exposure beta/varbeta reconstructed using European reference frequencies (sdY = 1), with dataset 1 = outcome and dataset 2 = eQTL; PP.H4 ≥ 0.80 indicates strong evidence for a shared causal variant and PP.H3 evidence for distinct causal variants. IGF1R is PP.H2-dominant in both Graves disease phenotypes (PP.H2 = 0.69 and 0.62), i.e. a cis-eQTL signal that does not resolve to a variant shared with the outcome; the five-hypothesis colocalization comparison does not negate the nominal MR association reported above. UKB instead splits support between H2 (0.400) and H4 (0.404). Posteriors shown are at the default prior p12 = 10⁻⁵; sensitivity at p12 = 10⁻⁶ and 5×10⁻⁶ is reported in Table S9 (backbone) and Table S2 (candidates). —, not applicable/not computed. All values verified against source analysis files.
+ORs are per unit increase in reconstructed, genetically proxied blood expression. Wald ratio was used for one instrument and IVW for multiple instruments. P values are two-sided and shown to three significant digits. BBJ discovery significance requires P < 1.965×10⁻⁵; P < 0.05 in other outcomes is nominal support. Shared-variant support is the colocalization posterior probability (PP.H4), not a P value; ≥0.80 was the criterion for strong support. All nine estimates are shown. Sensitivity results are in Tables S1–S3.
 
-**Table 3. All thirteen Bonferroni-significant druggable-gene-wide BBJ discovery hits, with cross-outcome colocalization and classification.**
+**Table 3. All thirteen discovery associations**
 
-| Gene | N IV | OR (95% CI) | BBJ *P* | Coloc PP.H4 (BBJ) | Coloc PP.H4 (UKB) | Coloc PP.H4 (FinnGen) | Classification |
-|---|---|---|---|---|---|---|---|
-| *HLA-A* | 4 | 1.98 (1.73–2.27) | 2.6×10⁻²³ | — | — | — | MHC region |
-| *HLA-DQA2* | 1 | 2.39 (1.95–2.93) | 8.3×10⁻¹⁷ | — | — | — | MHC region |
-| ***CTLA4*** | 1 | 0.18 (0.11–0.27) | 5.5×10⁻¹⁵ | 0.201 | 0.953 | 0.978 | Established autoimmune locus (positive control) |
-| ***TSHR*** | 1 | 0.12 (0.07–0.21) | 1.1×10⁻¹⁴ | 0.951 | 0.226 | 0.986 | Established GD locus (susceptibility anchor) |
-| *C4A* | 1 | 0.45 (0.35–0.57) | 2.2×10⁻¹⁰ | — | — | — | MHC region |
-| *HSD3B7* | 1 | 0.29 (0.18–0.47) | 2.0×10⁻⁷ | 0.636 | 0.095 | 0.026 | chr16p11.2 LD cluster |
-| *TUBB* | 2 | 1.49 (1.28–1.74) | 3.1×10⁻⁷ | — | — | — | MHC-region-linked |
-| *VKORC1* | 1 | 0.13 (0.06–0.29) | 6.4×10⁻⁷ | 0.388 | 0.030 | 0.030 | chr16p11.2 LD cluster |
-| *TNFSF14* | 1 | 0.63 (0.52–0.76) | 1.5×10⁻⁶ | 0.994 | 0.237 | 0.017 | Candidate (single-outcome coloc) |
-| *PRSS36* | 1 | 6.00 (2.87–12.57) | 2.0×10⁻⁶ | 0.168 | 0.115 | 0.037 | chr16p11.2 LD cluster |
-| *MAPKAPK5* | 4 | 0.98 (0.97–0.99) | 5.3×10⁻⁶ | <0.001 | 0.005 | 0.026 | Candidate (distinct-variant signal) |
-| *PSMB8* | 1 | 1.25 (1.13–1.38) | 6.9×10⁻⁶ | — | — | — | MHC region |
-| *IFNGR1* | 1 | 2.10 (1.51–2.91) | 9.4×10⁻⁶ | 0.989 | 0.052 | 0.020 | Candidate (single-outcome coloc) |
+| Gene | Instruments | BBJ OR (95% CI) | *P* value | Interpretation of the locus |
+|---|---|---|---|---|
+| *HLA-A* | 4 | 1.98 (1.73–2.27) | 2.6×10⁻²³ | MHC region |
+| *HLA-DQA2* | 1 | 2.39 (1.95–2.93) | 8.3×10⁻¹⁷ | MHC region |
+| *CTLA4* | 1 | 0.18 (0.11–0.27) | 5.45×10⁻¹⁵ | Known autoimmune locus |
+| *TSHR* | 1 | 0.12 (0.07–0.21) | 1.09×10⁻¹⁴ | Known GD locus |
+| *C4A* | 1 | 0.45 (0.35–0.57) | 2.23×10⁻¹⁰ | MHC region |
+| *HSD3B7* | 1 | 0.29 (0.18–0.47) | 2.04×10⁻⁷ | Shared regional signal at 16p11.2 |
+| *TUBB* | 2 | 1.49 (1.28–1.74) | 3.14×10⁻⁷ | MHC region |
+| *VKORC1* | 1 | 0.13 (0.06–0.29) | 6.35×10⁻⁷ | Shared regional signal at 16p11.2 |
+| *TNFSF14* | 1 | 0.63 (0.52–0.76) | 1.48×10⁻⁶ | Additional candidate |
+| *PRSS36* | 1 | 6.00 (2.87–12.57) | 2.02×10⁻⁶ | Shared regional signal at 16p11.2 |
+| *MAPKAPK5* | 4 | 0.98 (0.97–0.99) | 5.28×10⁻⁶ | Additional candidate |
+| *PSMB8* | 1 | 1.25 (1.13–1.38) | 6.86×10⁻⁶ | MHC region |
+| *IFNGR1* | 1 | 2.10 (1.51–2.91) | 9.41×10⁻⁶ | Additional candidate |
 
-Primary discovery estimates against BBJ Graves disease (Wald ratio for single-instrument loci, IVW for multi-instrument loci), ordered by discovery P value. OR per unit increase in genetically proxied expression. Colocalization (coloc.abf) was evaluated against all three outcomes; "—" denotes loci in the MHC region or otherwise not carried into formal colocalization. The two established loci (TSHR, CTLA4) and MHC-region signals are classified by prior biological knowledge. Among non-known candidates, TNFSF14 and IFNGR1 colocalized strongly in BBJ (PP.H4 = 0.994 and 0.989) but in neither secondary outcome, and the chr16p11.2 cluster resolves to a single conditional signal (Supplementary Table S5); no non-known candidate showed shared-variant colocalization in more than one outcome.
-
----
+All genes met the same multiple-testing threshold and are listed by discovery P value. The five MHC genes were not treated as new independent targets. The six additional candidates were TNFSF14, IFNGR1, MAPKAPK5, HSD3B7, VKORC1 and PRSS36; none showed strong shared-variant support in both BBJ and FinnGen. Full outcome comparisons and model probabilities remain in Supplementary Data 2–3.
 
 ## Supplementary Material
 
-**Supplementary Tables**
+## Supplementary Methods
 
+### Expression instruments and allele alignment
 
+Instrument selection used cis-eQTL *P* < 5×10⁻⁸, a ±1-Mb gene window, and LD clumping at r² < 0.001 within 10 Mb using 1000 Genomes Phase 3 European samples (n = 503). Exposure standard errors were reconstructed as SE = 1/√[2f(1−f)(N + Z²)] and β = Z × SE, where f is allele frequency and N is the variant-specific eQTL sample size [17]. This defines the reconstructed expression unit used for reported ORs.
 
+TwoSampleMR harmonise_data with action = 2 aligned exposure and outcome alleles. Palindromic variants with intermediate frequency (MAF > 0.42) were excluded. Missing estimates were not imputed. BBJ and FinnGen effect estimates were used on their reported log-odds scales. UKB linear-model β and SE were divided by μ(1−μ), where μ = 3,731/484,598, to approximate log-odds estimates. Original GWAS covariate adjustments were retained; participant-level re-adjustment was unavailable.
 
+### Checks using multiple instruments and regional linkage
 
+For multiple instruments, the primary IVW analysis used TwoSampleMR's multiplicative random-effects method with an under-dispersion correction. Weighted-median and weighted-mode estimates, the MR-Egger intercept and Cochran's Q were inspected where estimable (Table S1) [20, 21]. With three or four instruments, a non-significant intercept has limited ability to exclude pleiotropy. Steiger directionality [22], bidirectional MR and leave-one-out analyses were not reported. Single-instrument analyses were limited to the Wald ratio.
 
+At *TSHR*, clumping was repeated using eQTL thresholds of 5×10⁻⁸ and 5×10⁻⁶, r² thresholds of 0.001, 0.01 and 0.1, and European (n = 503) or East Asian (n = 504) reference panels. rs179252 remained an index variant in all 12 combinations. The primary settings selected one instrument in Europeans and two in East Asians; relaxed settings yielded up to 12. These checks support retention of the selected instrument, not a single-signal model in every ancestry. The full clumping counts are preserved with the analysis records.
 
+The chromosome 16p11.2 variants rs4889606, rs34649473 and rs78924645 span approximately 143 kb. Their East Asian pairwise r² values were 0.854, 0.761 and 0.863. GCTA-COJO conditional selection at *P* < 5×10⁻⁶ retained rs8050588 (*P* = 1.15×10⁻⁸). After conditioning, the three marginal associations had P values of 0.928, 0.839 and 0.806, respectively. This supports regional dependence and does not identify a particular causal gene.
 
+### Colocalization and prior assumptions
 
-**Table S1.** Extended cross-outcome detail for the thirteen Bonferroni-significant BBJ discovery hits. Whereas Table 3 summarizes the discovery (BBJ) effect sizes and colocalization, this table provides the per-hit Mendelian randomization estimates across all three outcomes (BBJ Graves disease, UKB hyperthyroidism, FinnGen Graves ophthalmopathy) together with the colocalization lead variant, supporting the cross-outcome reproducibility assessment.
+coloc.abf was applied to available gene-specific cis-eQTL variants matched to each outcome by rsID and allele pair, avoiding comparisons of genomic windows across GRCh37 expression and GRCh38 outcome coordinates. Duplicate rsIDs and allele-pair mismatches were excluded. Both datasets used β and its variance. Dataset 1 was the outcome GWAS and dataset 2 the expression exposure; expression sdY was set to 1. Outcome allele frequencies were not used in the Bayes factors.
 
-| Gene | BBJ β (*P*) | UKB β (*P*) | FinnGen β (*P*) | Coloc lead SNP | Classification |
-|---|---|---|---|---|---|
-| *HLA-A* | +0.68 (2.6×10⁻²³) | −0.17 (0.47) | +0.18 (0.43) | — | MHC region |
-| *HLA-DQA2* | +0.87 (8.3×10⁻¹⁷) | −0.25 (0.45) | +0.83 (1.8×10⁻⁷) | — | MHC region |
-| *CTLA4* | −1.74 (5.5×10⁻¹⁵) | −1.57 (2.2×10⁻³) | −1.77 (1.2×10⁻²) | rs231811 | Established autoimmune locus |
-| *TSHR* | −2.10 (1.1×10⁻¹⁴) | −2.44 (8.8×10⁻²⁸) | −2.33 (2.8×10⁻⁷) | rs179252 | Established GD locus |
-| *C4A* | −0.80 (2.2×10⁻¹⁰) | −0.14 (0.24) | −1.02 (1.4×10⁻¹¹) | — | MHC region |
-| *HSD3B7* | −1.23 (2.0×10⁻⁷) | −0.28 (0.020) | +0.27 (0.27) | rs4889606 | chr16p11.2 LD cluster |
-| *TUBB* | +0.40 (3.1×10⁻⁷) | +1.04 (3.1×10⁻⁶) | +1.24 (5.9×10⁻⁵) | — | MHC-region-linked |
-| *VKORC1* | −2.02 (6.4×10⁻⁷) | −0.37 (0.073) | — | rs34649473 | chr16p11.2 LD cluster |
-| *TNFSF14* | −0.47 (1.5×10⁻⁶) | −0.30 (5.6×10⁻³) | +0.03 (0.85) | rs2291668 | Candidate (single-outcome coloc) |
-| *PRSS36* | +1.79 (2.0×10⁻⁶) | +0.45 (0.014) | +0.44 (0.23) | rs78924645 | chr16p11.2 LD cluster |
-| *MAPKAPK5* | −0.02 (5.3×10⁻⁶) | −0.19 (0.078) | −0.10 (0.16) | rs79271898 | Candidate (distinct-variant signal) |
-| *PSMB8* | +0.22 (6.9×10⁻⁶) | −0.04 (0.55) | −0.07 (0.57) | — | MHC region |
-| *IFNGR1* | +0.74 (9.4×10⁻⁶) | +0.30 (0.070) | +0.15 (0.68) | rs11754268 | Candidate (single-outcome coloc) |
+The five model probabilities describe neither trait associated (H0), outcome only (H1), expression only (H2), both traits with distinct variants (H3), and both traits with a shared variant (H4). The default priors were p1 = p2 = 10⁻⁴ and p12 = 10⁻⁵; p12 values of 10⁻⁶ and 5×10⁻⁶ tested more conservative shared-association assumptions [23]. Table S2 presents the selected genes; Supplementary Data 3 retains all nine genes, three outcomes and three priors. Low H4 does not demonstrate that disease association is absent. Neither multi-variant colocalization nor formal colocalization power was evaluated.
 
-  Effect estimates (β, log-odds) by Wald ratio (single instrument) or inverse-variance weighted (multiple instruments). "—" for FinnGen *VKORC1* indicates no estimable instrument in that outcome; "—" in the colocalization column denotes MHC-region loci not carried into formal colocalization. Several discovery hits do not reproduce in the broader-phenotype (UKB) or TED-enriched (FinnGen) outcomes. Among non-MHC established anchors, *TSHR* and *CTLA4* showed consistent protective-direction estimates across all three outcomes; MHC-region signals were interpreted separately because of complex regional linkage disequilibrium.
+### Cohort-frequency sensitivity and detection limits
 
+The eQTLGen frequency release represents 26,609 participants and excludes the Framingham Heart Study. All 50,245 requested SNPs, including all 6,135 instrument records, had valid frequencies and matching GRCh37 positions. Frequencies were aligned to the assessed allele, then β and SE were reconstructed while retaining the original Z and sample size. The maximum change in Z was 5.54×10⁻¹³. We compared identical retained variants and then repeated action = 2 harmonization. Across outcomes, 27 inclusion decisions changed: 24 involved palindromic frequency decisions and three restored missing reference frequencies. No retained outcome estimate changed direction. Estimable counts became 2,232 BBJ, 2,506 UKB and 2,481 FinnGen genes; the multiple-testing denominator remained 2,544.
 
+The same frequency substitution was applied to all 81 colocalization settings. Maximum absolute H4 changes were 0.000245 on identical variants and 0.002142 after additionally including variants with newly available frequencies; none crossed 0.80. Primary MR was independently checked by a second implementation. Frequency substitution reran Wald/IVW estimates, colocalization and detection thresholds; it did not rerun every alternative MR estimator in Table S1.
 
+For comparison with the primary analysis, the minimum detectable absolute MR effect at 80% power was approximated as (z₁₋α/₂ + z₀.₈₀) × SE. Alpha was 0.05/2,544 in BBJ and 0.05 in UKB/FinnGen. Exponentiation gives the detectable OR. Percentages use the estimable-gene denominator for each scenario (Table S4). These are normal-approximation association-detection metrics based on observed standard errors, not the power of colocalization or of the combined selection rule. They do not turn a non-significant association into evidence of absence.
 
+### Descriptive orbital expression
 
+Orbital RNA-seq comprised four TED patients and one control. Technical replicates were combined by biological sample, and abundance was expressed as transcripts per million. The plotted log2 fold change was log2[(mean TED TPM + 0.01)/(control TPM + 0.01)]. With one control, control-group biological variance cannot be estimated; no differential-expression P value or confirmatory test is reported. The dataset was not externally replicated and contributes no inferential evidence to the genetic comparison (Figure S1).
 
+**Table S1. Sensitivity tests for genes with multiple instruments**
 
+| Gene | Outcome | Instruments | Primary *P* | Median *P* | Mode *P* | Egger intercept *P* | Heterogeneity *P* |
+|---|---|---|---|---|---|---|---|
+| *IGF1R* | BBJ Graves disease | 4 | 0.0212 | 0.0288 | 0.512 | 0.663 | 0.902 |
+| *IGF1R* | UKB hyperthyroidism | 4 | 0.0117 | 0.00244 | 0.367 | 0.562 | 0.25 |
+| *IGF1R* | FinnGen Graves ophthalmopathy | 3 | 0.182 | 0.124 | 0.633 | 0.433 | 0.309 |
+| *CTLA4* | UKB hyperthyroidism | 2 | 0.0022 | NA | NA | NA | 0.00131 |
+| *CTLA4* | FinnGen Graves ophthalmopathy | 2 | 0.0118 | NA | NA | NA | 0.0486 |
 
-**Table S2.** Candidate colocalization across all three outcomes for non-known candidate hits. Posterior probabilities are from coloc.abf using outcome beta/varbeta and exposure beta/varbeta reconstructed from European reference frequencies (sdY = 1) (H0 no association; H1 outcome only; H2 *cis*-eQTL only; H3 distinct causal variants; H4 shared causal variant). The last two columns give PP.H4 under more conservative priors.
+Median and mode denote weighted-median and weighted-mode MR. The Egger intercept assesses directional pleiotropy; heterogeneity uses Cochran’s Q. NA means not estimable, not a negative test. TSHR and CTLA4 in BBJ each used one instrument and are omitted from this diagnostic table. IGF1R estimates agreed in direction across estimators, but significance differed. Few instruments limit all these sensitivity checks. These are the original reference-frequency diagnostics; frequency substitution repeated primary Wald/IVW only.
 
-| Gene | Outcome | Overlapping SNPs | PP.H0 | PP.H1 | PP.H2 | PP.H3 | PP.H4 | Top SNP | PP.H4 (p12=10⁻⁶) | PP.H4 (p12=5×10⁻⁶) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| *TNFSF14* | BBJ Graves | 4,790 | 0.000 | 0.000 | 0.001 | 0.005 | 0.994 | rs2291668 | 0.941 | 0.988 |
-| *TNFSF14* | UKB hyperthyroid | 7,197 | 0.000 | 0.000 | 0.360 | 0.403 | 0.237 | rs2291668 | 0.030 | 0.134 |
-| *TNFSF14* | FinnGen GO | 7,703 | 0.000 | 0.000 | 0.626 | 0.357 | 0.017 | rs2291668 | 0.002 | 0.009 |
-| *IFNGR1* | BBJ Graves | 3,973 | 0.000 | 0.000 | 0.005 | 0.006 | 0.989 | rs11754268 | 0.899 | 0.978 |
-| *IFNGR1* | UKB hyperthyroid | 5,145 | 0.000 | 0.000 | 0.736 | 0.211 | 0.052 | rs11754268 | 0.005 | 0.027 |
-| *IFNGR1* | FinnGen GO | 5,891 | 0.000 | 0.000 | 0.641 | 0.339 | 0.020 | rs11754268 | 0.002 | 0.010 |
-| *MAPKAPK5* | BBJ Graves | 2,077 | 0.000 | 0.000 | 0.000 | 1.000 | 0.000 | rs79271898 | 0.000 | 0.000 |
-| *MAPKAPK5* | UKB hyperthyroid | 2,763 | 0.000 | 0.000 | 0.052 | 0.944 | 0.005 | rs79271898 | 0.000 | 0.002 |
-| *MAPKAPK5* | FinnGen GO | 3,294 | 0.000 | 0.000 | 0.663 | 0.311 | 0.026 | rs79271898 | 0.003 | 0.013 |
-| *HSD3B7* | BBJ Graves | 1,630 | 0.000 | 0.000 | 0.000 | 0.364 | 0.636 | rs4889606 | 0.149 | 0.467 |
-| *HSD3B7* | UKB hyperthyroid | 2,755 | 0.000 | 0.000 | 0.444 | 0.461 | 0.095 | rs4889606 | 0.010 | 0.050 |
-| *HSD3B7* | FinnGen GO | 3,104 | 0.000 | 0.000 | 0.733 | 0.240 | 0.026 | rs4889606 | 0.003 | 0.013 |
-| *VKORC1* | BBJ Graves | 1,516 | 0.000 | 0.000 | 0.000 | 0.612 | 0.388 | rs34649473 | 0.060 | 0.241 |
-| *VKORC1* | UKB hyperthyroid | 2,644 | 0.000 | 0.000 | 0.477 | 0.493 | 0.030 | rs34649473 | 0.003 | 0.015 |
-| *VKORC1* | FinnGen GO | 2,961 | 0.000 | 0.000 | 0.739 | 0.231 | 0.030 | rs2884737 | 0.003 | 0.015 |
-| *PRSS36* | BBJ Graves | 1,479 | 0.000 | 0.000 | 0.000 | 0.832 | 0.168 | rs78924645 | 0.020 | 0.092 |
-| *PRSS36* | UKB hyperthyroid | 2,577 | 0.000 | 0.000 | 0.436 | 0.449 | 0.115 | rs78924645 | 0.013 | 0.061 |
-| *PRSS36* | FinnGen GO | 2,821 | 0.000 | 0.000 | 0.744 | 0.219 | 0.037 | rs78924645 | 0.004 | 0.019 |
+**Table S2. Shared-variant support under different prior assumptions**
 
-  No non-known candidate reached shared-variant colocalization (PP.H4 ≥ 0.80) in more than one outcome. TNFSF14 and IFNGR1 colocalized strongly in the BBJ discovery outcome (PP.H4 = 0.994 and 0.989) but not in either replication outcome, and the chromosome 16p11.2 candidates showed only weak or ambiguous colocalization throughout. TNFSF14 retains a direction-consistent nominal MR association in UKB (P = 0.0056), so its exclusion reflects the colocalization criterion rather than absence of association; locus-specific power and phenotype heterogeneity across outcomes preclude a stronger interpretation. Default priors: p1 = p2 = 1×10⁻⁴, p12 = 1×10⁻⁵.
-
-
-
-
-
-
-
-
-**Table S3.** *TSHR* locus LD-clumping sensitivity. Independent-instrument counts at the *TSHR* locus under varying clumping thresholds, using ancestry-matched 1000 Genomes Phase 3 reference panels (European, n = 503; East Asian, n = 504). rs179252 (the primary instrument) is retained among the index variants under every threshold.
-
-| eQTL P threshold | Clumping *r*² | LD reference | Independent SNPs | Includes rs179252 |
+| Gene | Outcome | Default prior | Intermediate prior | Conservative prior |
 |---|---|---|---|---|
-| 5×10⁻⁸ | 0.001 | EUR | 1 | Yes |
-| 5×10⁻⁸ | 0.001 | EAS | 2 | Yes |
-| 5×10⁻⁸ | 0.01 | EUR | 1 | Yes |
-| 5×10⁻⁸ | 0.01 | EAS | 4 | Yes |
-| 5×10⁻⁸ | 0.1 | EUR | 6 | Yes |
-| 5×10⁻⁸ | 0.1 | EAS | 10 | Yes |
-| 5×10⁻⁶ | 0.001 | EUR | 2 | Yes |
-| 5×10⁻⁶ | 0.001 | EAS | 3 | Yes |
-| 5×10⁻⁶ | 0.01 | EUR | 3 | Yes |
-| 5×10⁻⁶ | 0.01 | EAS | 7 | Yes |
-| 5×10⁻⁶ | 0.1 | EUR | 12 | Yes |
-| 5×10⁻⁶ | 0.1 | EAS | 12 | Yes |
+| *TSHR* | BBJ Graves disease | 0.951 | 0.907 | 0.661 |
+| *TSHR* | UKB hyperthyroidism | 0.226 | 0.128 | 0.028 |
+| *TSHR* | FinnGen Graves ophthalmopathy | 0.986 | 0.972 | 0.875 |
+| *IGF1R* | BBJ Graves disease | 0.073 | 0.038 | 0.008 |
+| *IGF1R* | UKB hyperthyroidism | 0.404 | 0.253 | 0.063 |
+| *IGF1R* | FinnGen Graves ophthalmopathy | 0.032 | 0.016 | 0.003 |
+| *CTLA4* | BBJ Graves disease | 0.201 | 0.112 | 0.025 |
+| *CTLA4* | UKB hyperthyroidism | 0.953 | 0.911 | 0.672 |
+| *CTLA4* | FinnGen Graves ophthalmopathy | 0.978 | 0.957 | 0.816 |
 
-  rs179252 (chr14:81,435,985 hg19; marginal cis-eQTL P = 2.86×10⁻⁴⁰) is among the index variants retained under all twelve threshold combinations tested; it is the sole index variant only at the primary threshold in the European panel. At the primary instrument-selection threshold (P < 5×10⁻⁸, r² < 0.001) the European reference yields a single independent instrument; further index variants appear there only as r² is relaxed. The East Asian reference yields two at the same threshold — rs179252 and rs72690955 (chr14:81,160,405; marginal P = 1.04×10⁻¹⁷; pairwise r² with rs179252 = 0.0002) — so the single-instrument treatment of TSHR follows from the European reference used for instrument selection, which matches the predominantly European eQTL panel, and not from an absence of independent signal in every ancestry. This is stated as a limitation. Because r² is invariant to allele coding, the assessment is unaffected by effect-allele orientation.
+Entries are PP.H4, not P values. The shared-association prior p12 was 10⁻⁵ (default), 5×10⁻⁶ (intermediate) and 10⁻⁶ (conservative); p1 = p2 = 10⁻⁴. TSHR in BBJ and CTLA4 in UKB fall below 0.80 under the conservative prior. TSHR in FinnGen remains above it. Full H0–H4 probabilities, variant counts and all nine loci are in Supplementary Data 3.
 
+**Table S3. Associations before and after cohort-frequency substitution**
 
-
-
-
-
-
-
-
-**Table S4.** Instrument selection and strength for the backbone genes and all thirteen discovery hits. Instruments were genome-wide significant *cis*-eQTLs (P < 5×10⁻⁸); a secondary-threshold (P < 5×10⁻⁶) variant count, before clumping, is shown for reference only. Across all 2,544 MR-testable genes (6,135 instruments), the minimum F-statistic was 29.7, consistent with the *P* < 5×10⁻⁸ selection threshold (which implies |*Z*| > 5.45 and therefore *F* = *Z*² > 29.7); no weak instruments were present.
-
-| Gene | Chr | Instruments (P < 5×10⁻⁸, clumped) | Variants (P < 5×10⁻⁶, unclumped) | Single-instrument | Druggability tier |
+| Gene | Outcome | Reference OR (95% CI) | Reference *P* | eQTLGen OR (95% CI) | eQTLGen *P* |
 |---|---|---|---|---|---|
-| *TSHR* | 14 | 1 | 710 | Yes | Tier 1 |
-| *IGF1R* | 15 | 4 | 511 | No | Tier 1 |
-| *CTLA4* | 2 | 2 | 333 | No | Tier 1 |
-| *HLA-A* | 6 | 7 | 10,315 | No | Tier 1 |
-| *HLA-DQA2* | 6 | 2 | 9,971 | No | Tier 3A |
-| *C4A* | 6 | 5 | 8,175 | No | Tier 3A |
-| *HSD3B7* | 16 | 2 | 736 | No | Tier 3B |
-| *TUBB* | 6 | 3 | 1,476 | No | Tier 1 |
-| *VKORC1* | 16 | 1 | 489 | Yes | Tier 1 |
-| *TNFSF14* | 19 | 1 | 258 | Yes | Tier 1 |
-| *PRSS36* | 16 | 1 | 333 | Yes | Tier 3A |
-| *MAPKAPK5* | 12 | 4 | 1,349 | No | Tier 2 |
-| *PSMB8* | 6 | 1 | 1,060 | Yes | Tier 1 |
-| *IFNGR1* | 6 | 2 | 340 | No | Tier 1 |
-
-  Druggability tiers follow Finan et al. (Tier 1, approved drug targets or those in clinical development; Tier 2, targets of small molecules or biotherapeutics with druggable similarity; Tier 3, secreted or extracellular proteins and members of druggable gene families). The column labelled "Variants (P < 5×10⁻⁶, unclumped)" counts variants passing the relaxed threshold before clumping and is therefore not an instrument count; it is shown only to indicate signal density, which is why MHC-region genes reach five figures. Only the clumped-instrument column contributed instruments to the primary analyses; the number of instruments actually used in MR against a given outcome (N IV in Tables 2 and 3) may be smaller, reflecting outcome-specific SNP availability and harmonization (absence of a variant in the outcome GWAS, or removal of palindromic variants).
-
-
-
-
-
-
-
-
-**Table S5.** Chromosome 16p11.2 candidate cluster. Three discovery hits (*HSD3B7*, *VKORC1*, *PRSS36*) map to a narrow (~143-kb) window on chromosome 16p11.2 and behave as a single linkage-disequilibrium signal rather than three independent associations.
-
-| Gene | Chr | Position (hg19) | BBJ discovery *P* | Coloc PP.H4 (BBJ) | Coloc PP.H4 (UKB) | Coloc PP.H4 (FinnGen) | Top SNP |
-|---|---|---|---|---|---|---|---|
-| *HSD3B7* | 16 | 31,011,183 | 2.0×10⁻⁷ | 0.636 | 0.095 | 0.026 | rs4889606 |
-| *VKORC1* | 16 | 31,066,538 | 6.4×10⁻⁷ | 0.388 | 0.030 | 0.030 | rs34649473 |
-| *PRSS36* | 16 | 31,154,358 | 2.0×10⁻⁶ | 0.168 | 0.115 | 0.037 | rs78924645 |
-
-  All three lead variants lie within a 143.2-kb window on chromosome 16p11.2 (hg19 chr16:31,011,183–31,154,358) and none reaches strong colocalization (PP.H4 ≥ 0.80) in any outcome. Because these hits were discovered in the East Asian outcome, linkage disequilibrium was assessed in the ancestry-matched 1000 Genomes Phase 3 East Asian reference (n = 504), where all three lead variants are in substantial mutual LD (r² = 0.854, 0.761 and 0.863). Conditional analysis (GCTA-COJO, East Asian reference) selected exactly one independent signal at the locus, rs8050588 (P = 1.15×10⁻⁸); conditioning on it collapses all three associations (rs4889606, marginal P = 2.04×10⁻⁷ → conditional P = 0.928; rs34649473, 6.35×10⁻⁷ → 0.839; rs78924645, 2.02×10⁻⁶ → 0.806). Their co-significance in discovery therefore reflects a single regional signal rather than three independent causal effects. In the European reference the corresponding r² values are 0.896, 0.190 and 0.204, which is why the ancestry-matched panel is the appropriate one here.
-
-
-
-
-
-
-
-
-**Table S6.** Mendelian randomization sensitivity analyses for the backbone genes across all three outcomes. IVW, inverse-variance weighted; WM, weighted median; Wmode, weighted mode. MR-Egger intercept, Cochran's Q, and multi-estimator comparisons require multiple instruments and are not estimable (NA) at single-instrument loci.
-
-| Gene | Outcome | N IV | IVW/Wald *P* | WM *P* | Wmode *P* | MR-Egger intercept *P* | Cochran's Q *P* |
-|---|---|---|---|---|---|---|---|
-| *TSHR* | BBJ Graves | 1 | 1.1×10⁻¹⁴ | NA | NA | NA | NA |
-| *TSHR* | UKB hyperthyroid | 1 | 8.8×10⁻²⁸ | NA | NA | NA | NA |
-| *TSHR* | FinnGen GO | 1 | 2.8×10⁻⁷ | NA | NA | NA | NA |
-| *IGF1R* | BBJ Graves | 4 | 0.021 | 0.029 | 0.512 | 0.663 | 0.902 |
-| *IGF1R* | UKB hyperthyroid | 4 | 0.012 | 0.002 | 0.367 | 0.562 | 0.250 |
-| *IGF1R* | FinnGen GO | 3 | 0.182 | 0.124 | 0.633 | 0.433 | 0.309 |
-| *CTLA4* | BBJ Graves | 1 | 5.5×10⁻¹⁵ | NA | NA | NA | NA |
-| *CTLA4* | UKB hyperthyroid | 2 | 0.002 | NA | NA | NA | 0.001 |
-| *CTLA4* | FinnGen GO | 2 | 0.012 | NA | NA | NA | 0.049 |
-
-  For IGF1R (the only multi-instrument backbone gene with a full estimator set), all sensitivity estimators are directionally concordant with the IVW estimate and the MR-Egger intercept is non-significant in every outcome (P > 0.43), with limited power to assess directional pleiotropy given the small instrument counts. CTLA4 showed significant between-instrument heterogeneity in the UKB and FinnGen analyses (Cochran's Q P = 0.001 and 0.049), consistent with cross-ancestry/phenotype locus complexity. Steiger directionality testing was not applied; no formal directionality result is available. Single-instrument loci are not amenable to instrument-based pleiotropy diagnostics. TSHR is instead supported by colocalization (PP.H4 = 0.951 in BBJ and 0.986 in the TED-enriched outcome) and by LD-clumping sensitivity analysis (Table S3); the single-instrument CTLA4 discovery arm is not, its discovery posterior favouring distinct causal variants (PP.H3 = 0.799, PP.H4 = 0.201), consistent with its role as a positive control rather than a colocalized anchor.
-
-
-
-
-
-
-
-
-**Table S7. STROBE-MR reporting map.** Item numbering follows the official 20-item checklist; the descriptions below are adapted and explicitly identify unavailable analyses or information.
-
-| Item | Reporting topic | Location and coverage |
-|---|---|---|
-| 1 | MR design | Abstract explicitly names two-sample Mendelian randomization. |
-| 2 | Rationale | Introduction: blood expression, disease susceptibility and therapeutic interpretation. |
-| 3 | Objectives | Introduction final paragraph; Methods defines the hierarchy and biological backbone. No prospective registration identifier is available. |
-| 4a–b | Design, participants and sample size | Methods; Table 1; source reports [12–15]. Recruitment and eligibility details are those of the original studies; available sample sizes determined the analysis. Detection thresholds were calculated from observed MR standard errors, not for prospective recruitment. |
-| 4c–d | Variants and phenotype definitions | Methods instrument selection and harmonization; Table 1 accessions; Table S4. Source studies provide their genotyping and phenotype procedures. |
-| 4e | Ethics and consent | Declarations; in-house IRB approval and written consent. |
-| 5 | Instrument assumptions | Methods states relevance, independence and exclusion restriction; Discussion discusses limits of verification. |
-| 6a–b | Scales and variant weights | Methods: Z-score reconstruction, UKB log-odds rescaling, Wald/IVW and inverse-variance weighting. |
-| 6c–e | Estimation, covariates, missingness and multiplicity | Methods: source GWAS adjustments retained; no individual-level re-adjustment; unavailable or excluded variants omitted; Bonferroni denominator 2,544. |
-| 7 | Assumption assessment | Methods: instrument strength, harmonization, heterogeneity, MR-Egger and colocalization. These do not prove all instrument assumptions. |
-| 8 | Additional analyses | Methods; Tables S2–S3, S5–S6, S8–S12. eQTLGen frequency substitution and re-harmonization were performed. |
-| 9a–b | Software and registration | Methods lists R, TwoSampleMR, coloc and PLINK versions. No prospective registration identifier is available. |
-| 10a–c | Descriptive data | Table 1 gives source sample counts; Figure 1 gives gene attrition; Table S4 gives instrument counts. Participant-level distributions and cohort-specific eQTL meta-analysis heterogeneity were not reanalysed. |
-| 10d | Transportability and participant overlap | Discussion: European blood eQTL transfer to East Asian discovery is an assumption; overlap with European outcomes is unquantified. |
-| 11a–d | Main results and uncertainty | Tables 2–3 and S1; Figures 2–3. ORs/CIs are per reconstructed expression unit. Variant-level instruments and primary MR results are supplied as Supplementary Data 1–2. Absolute risks were not estimated. |
-| 12a–b | Results of assumption checks | Instrument strength in Table S4; heterogeneity and MR-Egger in Tables 2 and S6; clumping, colocalization and frequency sensitivity in Tables S2–S3 and S9–S12. |
-| 13a–e | Additional results | Tables S2–S3 and S5–S9; Figures S1–S2. Steiger and bidirectional MR were not applied; tissue data are descriptive; no leave-one-out result is reported. |
-| 14 | Key findings | Discussion opening paragraph. |
-| 15 | Limitations and bias | Discussion: tissue, ancestry, overlap, frequency reconstruction, phenotype, instrument counts, power, coloc model/priors and one tissue control; bias magnitudes were not quantified. |
-| 16a–c | Interpretation and clinical meaning | Discussion: genetic expression effects do not establish a pharmacologic mechanism, treatment direction or intervention effect size. |
-| 17 | Generalizability | Discussion: ancestry and tissue context, broad hyperthyroidism and population controls; inherited expression proxies do not estimate acute or dose-specific treatment effects. |
-| 18 | Funding | Declarations states no specific grant; original data-source funding is reported in the cited source publications. |
-| 19 | Data and code access | Declarations lists source repositories and access restrictions. Supplementary Data 1–6 provide instruments, primary results and frequency-sensitivity MR, coloc and power summaries. Analysis code is available from the corresponding author on request. |
-| 20 | Competing interests | Declarations. |
-
-Adapted from the STROBE-MR checklist (EQUATOR Network, CC BY 3.0), https://www.strobe-mr.org/download/strobe-mr-checklist/. The checklist is a reporting map, not a claim that all study limitations have been resolved.
-
-
-
-
-
-
-
-
-
-**Table S8.** Detectable effect range of the druggable-gene-wide screen. Minimum effect detectable with 80% power was computed per gene and outcome from the empirical standard error of the primary MR estimate as |β|min = (*z*1−α/2 + *z*0.80) × SE, with α = 1.965×10⁻⁵ (discovery) or α = 0.05 (replication, TED-enriched).
-
-  **Panel A. Screen-wide detectable range.**
-
-| Outcome | Significance threshold | Genes | Median absolute βmin (IQR) | Median detectable OR (IQR) | Genes with ≥80% power at OR 1.5 | At OR 2.0 | At OR 3.0 |
-|---|---|---|---|---|---|---|---|
-| BBJ Graves (discovery) | *P* < 1.965×10⁻⁵ | 2,234 | 0.94 (0.54–1.64) | 2.55 (1.71–5.18) | 14.6% | 35.6% | 57.7% |
-| UKB hyperthyroid (replication) | *P* < 0.05 | 2,505 | 0.38 (0.23–0.65) | 1.46 (1.26–1.91) | 53.7% | 77.4% | 93.1% |
-| FinnGen Graves ophthalmopathy (TED-enriched) | *P* < 0.05 | 2,480 | 0.75 (0.46–1.34) | 2.12 (1.58–3.81) | 19.4% | 45.5% | 67.3% |
-
-  **Panel B. Backbone genes: observed effect versus gene-specific detection threshold.**
-
-| Gene | Outcome | Observed β | SE | Absolute βmin (80% power) | Detectable OR | Observed magnitude ≥ threshold? |
-|---|---|---|---|---|---|---|
-| ***TSHR*** | BBJ Graves | −2.096 | 0.271 | 1.386 | 4.00 | Yes |
-| | UKB hyperthyroid | −2.436 | 0.223 | 0.625 | 1.87 | Yes |
-| | FinnGen GO | −2.331 | 0.454 | 1.272 | 3.57 | Yes |
-| ***IGF1R*** | BBJ Graves | +0.446 | 0.194 | 0.989 | 2.69 | No |
-| | UKB hyperthyroid | +0.299 | 0.119 | 0.333 | 1.39 | No |
-| | FinnGen GO | +0.342 | 0.256 | 0.718 | 2.05 | No |
-| ***CTLA4*** | BBJ Graves | −1.740 | 0.223 | 1.137 | 3.12 | Yes |
-| | UKB hyperthyroid | −1.569 | 0.513 | 1.436 | 4.20 | Yes |
-| | FinnGen GO | −1.768 | 0.702 | 1.968 | 7.15 | No |
-
-  Detection thresholds vary across genes. TSHR and CTLA4 exceeded their gene-specific discovery thresholds, but the CTLA4 FinnGen estimate was below its 80% power threshold. IGF1R effects fell below the corresponding thresholds in every outcome, so the absence of study-wide significance at IGF1R is expected for an effect of this size and is not evidence against a genetic contribution; IGF1R was therefore evaluated as a backbone gene across multiple evidence layers rather than on discovery significance alone. These calculations describe MR association power and do not quantify power to pass colocalization or the combined filter. Values use the primary MR standard errors restricted to the 2,544 genes in the verified instrument manifest and a discovery threshold of 0.05/2,544.
-
-
-
-
-
-
-
-
-
-
-**Table S9.** Full colocalization posteriors and prior sensitivity for the backbone genes, laid out as Table S2. Two rows fall below the PP.H4 ≥ 0.80 threshold under the most conservative prior: *TSHR* in the discovery outcome (0.951 → 0.661) and *CTLA4* in the replication outcome (0.953 → 0.672). The TED-enriched *TSHR* posterior stays above the threshold throughout (0.986 → 0.875).
-
-| Gene | Outcome | Overlapping SNPs | PP.H0 | PP.H1 | PP.H2 | PP.H3 | PP.H4 | Top SNP | PP.H4 (p12=10⁻⁶) | PP.H4 (p12=5×10⁻⁶) |
-|---|---|---|---|---|---|---|---|---|---|---|
-| *TSHR* | BBJ Graves | 4,336 | 0.000 | 0.000 | 0.000 | 0.049 | 0.951 | rs179252 | 0.661 | 0.907 |
-| *TSHR* | UKB hyperthyroid | 5,667 | 0.000 | 0.000 | 0.000 | 0.774 | 0.226 | rs1023586 | 0.028 | 0.128 |
-| *TSHR* | FinnGen GO | 6,579 | 0.000 | 0.000 | 0.000 | 0.014 | 0.986 | rs179252 | 0.875 | 0.972 |
-| *IGF1R* | BBJ Graves | 5,685 | 0.000 | 0.000 | 0.690 | 0.236 | 0.073 | rs2654980 | 0.008 | 0.038 |
-| *IGF1R* | UKB hyperthyroid | 7,394 | 0.000 | 0.000 | 0.400 | 0.196 | 0.404 | rs2654980 | 0.063 | 0.253 |
-| *IGF1R* | FinnGen GO | 7,740 | 0.000 | 0.000 | 0.623 | 0.346 | 0.032 | rs2654980 | 0.003 | 0.016 |
-| *CTLA4* | BBJ Graves | 3,014 | 0.000 | 0.000 | 0.000 | 0.799 | 0.201 | rs231811 | 0.025 | 0.112 |
-| *CTLA4* | UKB hyperthyroid | 4,283 | 0.000 | 0.000 | 0.000 | 0.047 | 0.953 | rs3087243 | 0.672 | 0.911 |
-| *CTLA4* | FinnGen GO | 4,924 | 0.000 | 0.000 | 0.000 | 0.022 | 0.978 | rs1863800 | 0.816 | 0.957 |
-
-  Default priors p1 = p2 = 1×10⁻⁴, p12 = 1×10⁻⁵. Posteriors use each GWAS's beta and varbeta, exposure beta/varbeta reconstructed with European reference frequencies and sdY = 1, and the sample definitions in Table 1.
-
-
-
-
-
-**Table S10.** Backbone primary MR estimates before and after eQTLGen frequency substitution.
-
-| Gene | Outcome | IVs | Reference β (SE) | Reference P | eQTLGen β (SE) | eQTLGen P |
-|---|---|---|---|---|---|---|
-| *TSHR* | BBJ Graves | 1 | -2.096 (0.271) | 1.09×10⁻¹⁴ | -2.091 (0.271) | 1.09×10⁻¹⁴ |
-| *TSHR* | UKB hyperthyroid | 1 | -2.436 (0.223) | 8.77×10⁻²⁸ | -2.431 (0.222) | 8.77×10⁻²⁸ |
-| *TSHR* | FinnGen GO | 1 | -2.331 (0.454) | 2.82×10⁻⁷ | -2.326 (0.453) | 2.82×10⁻⁷ |
-| *IGF1R* | BBJ Graves | 4 | +0.446 (0.194) | 0.021 | +0.458 (0.200) | 0.022 |
-| *IGF1R* | UKB hyperthyroid | 4 | +0.299 (0.119) | 0.012 | +0.317 (0.131) | 0.016 |
-| *IGF1R* | FinnGen GO | 3 | +0.342 (0.256) | 0.182 | +0.368 (0.273) | 0.177 |
-| *CTLA4* | BBJ Graves | 1 | -1.740 (0.223) | 5.45×10⁻¹⁵ | -1.726 (0.221) | 5.45×10⁻¹⁵ |
-| *CTLA4* | UKB hyperthyroid | 2 | -1.569 (0.513) | 0.002 | -1.596 (0.450) | 3.86×10⁻⁴ |
-| *CTLA4* | FinnGen GO | 2 | -1.768 (0.702) | 0.012 | -1.799 (0.635) | 0.005 |
-
-Reference uses 1000 Genomes European frequencies; eQTLGen uses the provider's AlleleB_all frequencies aligned to the assessed allele. Single-IV loci use Wald ratios; other rows use IVW. For these nine backbone comparisons, identical-variant and re-harmonized sensitivity estimates coincide. The full primary-estimator screen is in Supplementary Data 4. The thirteen discovery hits remained unchanged.
-
-
-
-
-
-**Table S11.** Colocalization sensitivity to exposure frequencies at the default shared-association prior.
-
-| Gene | Outcome | Reference SNPs | eQTLGen SNPs | Reference H4 | Same-SNP eQTLGen H4 | Full eQTLGen H4 |
-|---|---|---|---|---|---|---|
-| *TSHR* | BBJ Graves | 4,336 | 4,361 | 0.951169 | 0.951171 | 0.951171 |
-| *TSHR* | UKB hyperthyroid | 5,667 | 5,732 | 0.226177 | 0.226055 | 0.226055 |
-| *TSHR* | FinnGen GO | 6,579 | 6,675 | 0.985968 | 0.985968 | 0.985916 |
-| *IGF1R* | BBJ Graves | 5,685 | 5,715 | 0.073257 | 0.073264 | 0.073198 |
-| *IGF1R* | UKB hyperthyroid | 7,394 | 7,457 | 0.403887 | 0.404132 | 0.403176 |
-| *IGF1R* | FinnGen GO | 7,740 | 7,850 | 0.031598 | 0.031601 | 0.031466 |
-| *CTLA4* | BBJ Graves | 3,014 | 3,044 | 0.200937 | 0.200932 | 0.200932 |
-| *CTLA4* | UKB hyperthyroid | 4,283 | 4,321 | 0.953372 | 0.953369 | 0.953369 |
-| *CTLA4* | FinnGen GO | 4,924 | 4,993 | 0.977952 | 0.977951 | 0.977951 |
-| *TNFSF14* | BBJ Graves | 4,790 | 4,870 | 0.993740 | 0.993740 | 0.993735 |
-| *TNFSF14* | UKB hyperthyroid | 7,197 | 7,275 | 0.236882 | 0.236882 | 0.234740 |
-| *TNFSF14* | FinnGen GO | 7,703 | 7,823 | 0.016892 | 0.016892 | 0.016780 |
-| *IFNGR1* | BBJ Graves | 3,973 | 4,008 | 0.988893 | 0.988894 | 0.988878 |
-| *IFNGR1* | UKB hyperthyroid | 5,145 | 5,209 | 0.052343 | 0.052342 | 0.052191 |
-| *IFNGR1* | FinnGen GO | 5,891 | 5,983 | 0.019740 | 0.019740 | 0.019644 |
-| *MAPKAPK5* | BBJ Graves | 2,077 | 2,097 | 0.000000 | 0.000000 | 0.000000 |
-| *MAPKAPK5* | UKB hyperthyroid | 2,763 | 2,788 | 0.004535 | 0.004543 | 0.004526 |
-| *MAPKAPK5* | FinnGen GO | 3,294 | 3,346 | 0.026173 | 0.026173 | 0.026096 |
-| *HSD3B7* | BBJ Graves | 1,630 | 1,650 | 0.636336 | 0.636337 | 0.636336 |
-| *HSD3B7* | UKB hyperthyroid | 2,755 | 2,768 | 0.094608 | 0.094608 | 0.094577 |
-| *HSD3B7* | FinnGen GO | 3,104 | 3,135 | 0.026442 | 0.026442 | 0.026390 |
-| *VKORC1* | BBJ Graves | 1,516 | 1,536 | 0.388274 | 0.388269 | 0.388269 |
-| *VKORC1* | UKB hyperthyroid | 2,644 | 2,660 | 0.030020 | 0.030018 | 0.030003 |
-| *VKORC1* | FinnGen GO | 2,961 | 2,997 | 0.029574 | 0.029574 | 0.029508 |
-| *PRSS36* | BBJ Graves | 1,479 | 1,490 | 0.168168 | 0.168168 | 0.168168 |
-| *PRSS36* | UKB hyperthyroid | 2,577 | 2,593 | 0.114946 | 0.114945 | 0.114894 |
-| *PRSS36* | FinnGen GO | 2,821 | 2,852 | 0.036837 | 0.036837 | 0.036767 |
-
-p1 = p2 = 10⁻⁴, p12 = 10⁻⁵. Same-SNP estimates change frequencies only. Full eQTLGen estimates additionally include available variants previously lacking usable European reference frequencies; no reference variants were lost. Maximum absolute H4 changes over all three priors were 0.000245 and 0.002142, respectively, with zero crossings of 0.80. All 81 comparisons and the complete H0–H4 posteriors for each scenario are in Supplementary Data 5.
-
-
-
-
-
-**Table S12.** Frequency sensitivity of the screen's detectable effect range.
-
-| Outcome | Analysis | Genes | Median detectable OR (IQR) | Power ≥80% at OR 1.5 (%) | At OR 2.0 (%) | At OR 3.0 (%) |
-|---|---|---|---|---|---|---|
-| BBJ Graves | Reference | 2,234 | 2.55 (1.71–5.18) | 14.6 | 35.6 | 57.7 |
-| BBJ Graves | eQTLGen same IVs | 2,234 | 2.61 (1.76–5.15) | 12.4 | 34.2 | 56.9 |
-| BBJ Graves | eQTLGen re-harmonized | 2,232 | 2.61 (1.76–5.14) | 12.5 | 34.2 | 56.9 |
-| UKB hyperthyroid | Reference | 2,505 | 1.46 (1.26–1.91) | 53.7 | 77.4 | 93.1 |
-| UKB hyperthyroid | eQTLGen same IVs | 2,505 | 1.46 (1.26–1.94) | 53.1 | 76.5 | 93.1 |
-| UKB hyperthyroid | eQTLGen re-harmonized | 2,506 | 1.46 (1.26–1.94) | 53.1 | 76.4 | 93.1 |
-| FinnGen GO | Reference | 2,480 | 2.12 (1.58–3.81) | 19.4 | 45.5 | 67.3 |
-| FinnGen GO | eQTLGen same IVs | 2,480 | 2.17 (1.61–3.87) | 17.6 | 44.5 | 66.7 |
-| FinnGen GO | eQTLGen re-harmonized | 2,481 | 2.17 (1.60–3.87) | 17.6 | 44.5 | 66.7 |
-
-The same normal-approximation detection rule as Table S8 was used: α = 0.05/2,544 for BBJ and 0.05 for UKB/FinnGen; proportions use each row's estimable-gene count. The eligible-gene denominator remained 2,544. Re-harmonization added/removed 5/5 variant records in BBJ, 5/3 in UKB and 6/3 in FinnGen. Of 27 changes, 24 were palindromic-frequency decisions and three restored missing reference frequencies. No retained outcome effect changed sign. These are MR association-power estimates, not colocalization or combined-filter power. Full-precision results are in Supplementary Data 6.
-
-**Supplementary Figures**
-
-**Figure S1. Orbital tissue transcript abundance (descriptive).** Points represent individual samples; horizontal lines mark the mean TED abundance. Log2 fold changes use a 0.01-TPM pseudocount. Transcripts per million for the backbone genes in four TED samples and one control, with technical replicates collapsed to the biological-sample level. With one control, control-group biological variance cannot be estimated; no inferential test is reported and no conclusion depends on this panel. Axes are gene-specific.
-
-**Figure S2. Candidate colocalization across the three outcomes.** Shared-variant posterior probabilities for the six non-known candidates, plotted as in Figure 3A; full posteriors are reported in Table S2. *TNFSF14* and *IFNGR1* colocalize in discovery (PP.H4 = 0.994 and 0.989) but in neither secondary outcome; *TNFSF14* retains a direction-consistent nominal MR association in UKB (*P* = 0.0056). The chromosome 16p11.2 candidates are weak or ambiguous throughout and *MAPKAPK5* is PP.H3-dominant in discovery.
+| *TSHR* | BBJ Graves disease | 0.12 (0.07–0.21) | 1.09×10⁻¹⁴ | 0.12 (0.07–0.21) | 1.09×10⁻¹⁴ |
+| *TSHR* | UKB hyperthyroidism | 0.09 (0.06–0.14) | 8.77×10⁻²⁸ | 0.09 (0.06–0.14) | 8.77×10⁻²⁸ |
+| *TSHR* | FinnGen Graves ophthalmopathy | 0.10 (0.04–0.24) | 2.82×10⁻⁷ | 0.10 (0.04–0.24) | 2.82×10⁻⁷ |
+| *IGF1R* | BBJ Graves disease | 1.56 (1.07–2.28) | 0.0212 | 1.58 (1.07–2.34) | 0.022 |
+| *IGF1R* | UKB hyperthyroidism | 1.35 (1.07–1.70) | 0.0117 | 1.37 (1.06–1.78) | 0.0157 |
+| *IGF1R* | FinnGen Graves ophthalmopathy | 1.41 (0.85–2.33) | 0.182 | 1.44 (0.85–2.47) | 0.177 |
+| *CTLA4* | BBJ Graves disease | 0.18 (0.11–0.27) | 5.45×10⁻¹⁵ | 0.18 (0.12–0.27) | 5.45×10⁻¹⁵ |
+| *CTLA4* | UKB hyperthyroidism | 0.21 (0.08–0.57) | 0.0022 | 0.20 (0.08–0.49) | 3.86×10⁻⁴ |
+| *CTLA4* | FinnGen Graves ophthalmopathy | 0.17 (0.04–0.68) | 0.0118 | 0.17 (0.05–0.57) | 0.00458 |
+
+Reference estimates use 1000 Genomes European frequencies. eQTLGen estimates use cohort frequencies followed by repeat harmonization. For these nine comparisons, estimates using identical variants and repeat harmonization coincide; instrument counts are unchanged from Table 2. All 13 discovery genes remain significant. Results for every gene and each scenario are in Supplementary Data 2.
+
+**Table S4. Association detection limits before and after frequency substitution**
+
+| Outcome | Analysis | Estimable genes | Detectable OR median (IQR) | Detect OR 1.5 (%) | Detect OR 2.0 (%) |
+|---|---|---|---|---|---|
+| BBJ Graves disease | Reference | 2,234 | 2.55 (1.71–5.18) | 14.6 | 35.6 |
+| BBJ Graves disease | Cohort frequencies | 2,232 | 2.61 (1.76–5.14) | 12.5 | 34.2 |
+| UKB hyperthyroidism | Reference | 2,505 | 1.46 (1.26–1.91) | 53.7 | 77.4 |
+| UKB hyperthyroidism | Cohort frequencies | 2,506 | 1.46 (1.26–1.94) | 53.1 | 76.4 |
+| FinnGen Graves ophthalmopathy | Reference | 2,480 | 2.12 (1.58–3.81) | 19.4 | 45.5 |
+| FinnGen Graves ophthalmopathy | Cohort frequencies | 2,481 | 2.17 (1.60–3.87) | 17.6 | 44.5 |
+
+Percentages are the proportions of estimable genes with at least 80% power to detect the specified OR under the normal approximation. Alpha is 0.05/2,544 in BBJ and 0.05 in UKB/FinnGen. OR is per reconstructed expression unit. These calculations assess MR association detection, not colocalization or the combined filter. Full precision and identical-variant comparisons are retained in Supplementary Data 4.
+
+**Figure S1. Descriptive orbital expression.** Transcript abundance for TSHR, IGF1R and CTLA4 in four TED samples and one control. Points are biological samples; the horizontal line is the TED mean. Log2 fold changes use a 0.01-TPM pseudocount. Axes differ by gene. With one control, group variance cannot be estimated reliably; no differential-expression test or P value is reported. These observations did not determine the genetic conclusions.

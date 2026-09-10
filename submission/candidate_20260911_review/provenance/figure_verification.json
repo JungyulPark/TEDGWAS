@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "date": "2026-09-11",
+  "main_figures": 2,
+  "supplementary_figures": 1,
+  "source_numeric_audit": "integrity_audit.json",
+  "source_manifest_sha256": "1f4df715ed294b55c747cf1d25de6542816d88aaf49674d4d017addfc08635e9",
+  "figures": [
+    {
+      "name": "Figure1",
+      "png_sha256": "52583b6b6daac197cf60c744cc5fb6f628ee63f30e43b999c691cf3691c8d22e",
+      "pixels": [
+        1734,
+        1700
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_sha256": "8b3b63954646a919e2d825a1a0928d06d4ea47962a19668c7b219db03f99a7c2",
+      "visual_review": "PASS",
+      "source": "clinical_figure_sources.json"
+    },
+    {
+      "name": "Figure2",
+      "png_sha256": "2383bc47ab8fc1d2477b3b1ef556dce059ea222a7a7a151197a7c5968ae3ddb4",
+      "pixels": [
+        2823,
+        1977
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_sha256": "736af09ebb60da308672a4ea646de3ddea7962136bc5b436272f31e7669c80f1",
+      "visual_review": "PASS",
+      "source": "clinical_figure_sources.json"
+    },
+    {
+      "name": "FigureS1",
+      "png_sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b",
+      "pixels": [
+        2128,
+        988
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
+      "visual_review": "PASS",
+      "source": "Preserved descriptive figure from analytical baseline; only aggregate tissue summaries redistributed."
+    }
+  ]
+}

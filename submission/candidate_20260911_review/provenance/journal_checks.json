@@ -1,0 +1,22 @@
+{
+  "date": "2026-09-11",
+  "target_assumed": "Endocrine Connections",
+  "publisher_general_guidance": {
+    "url": "https://www.bioscientifica.com/publishing/authors/author-resource-centre/how-to-publish/prepare-for-submission/",
+    "checked": "Double spacing, continuous line numbers, ordered Vancouver references, first ten authors then et al."
+  },
+  "journal_specific_guidance": {
+    "url": "https://ec.bioscientifica.com/page/author",
+    "status": "HTTP 403; all current journal-specific requirements not independently verified"
+  },
+  "working_word_limits_from_project_not_currently_verified": {
+    "main": 5000,
+    "abstract": 250
+  },
+  "author_review_pending": [
+    "Author affiliations, degrees and co-corresponding email",
+    "All author approval of interpretation and declarations",
+    "Related manuscript status and overlap disclosure",
+    "Live submission requirements and publication charges"
+  ]
+}

@@ -1,0 +1,8 @@
+suppressPackageStartupMessages(library(data.table))
+a<-commandArgs(trailingOnly=TRUE);stopifnot(length(a)==1)
+p<-file.path(a[1],"sensitivity_v1")
+dest<-file.path(p,"harmonized_eqtlgen_validation.csv")
+if(file.exists(dest))stop("Versioned export exists")
+h<-readRDS(file.path(p,"harmonized_eqtlgen.rds"))
+fwrite(h,dest)
+cat("Exported",nrow(h),"harmonized variant rows for independent validation.\n")
