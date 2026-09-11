@@ -10,8 +10,9 @@ making changes. The guiding value of this project is **정확하고 진실한게
 Druggable-gene-wide Mendelian randomization (MR) + colocalization +
 orbital transcriptomics distinguishing **TSHR-anchored genetic susceptibility**
 from **IGF1R pharmacologic effector biology** in Graves disease (GD) and
-thyroid eye disease (TED). Current state: **v5**, prepared for submission to the
-Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
+thyroid eye disease (TED). Current state: **v5 clinical revision (11 Sep 2026)**,
+prepared for **Endocrine Connections**. The one live package is
+`submission/candidate_20260911_review/`; everything else is archived.
 
 ## Non-negotiable data rules
 1. **NEVER commit IRB raw data.** The in-house orbital RNA-seq (`data.txt`,
@@ -30,19 +31,31 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 ## Locked scientific ground truths (do not silently change)
 - **EUR-only LD reference is a locked rule** for clumping/coloc (eQTLGen is
   EUR-based; EAS LD mismatch produced artifactual COJO signals).
-- **TSHR** — single-instrument, locus-level anchor (rs179252, chr14:81,435,985
-  hg19). SuSiE = 1 credible set; no independent secondary IV. MR β: BBJ −2.10,
-  UKB −2.44, FinnGen −2.33. Coloc PP.H4: BBJ 0.951 / FinnGen 0.986.
-- **IGF1R** — effector, NOT expression-colocalized. Multi-IV (4). Nominal risk
-  direction (BBJ P=0.021, UKB P=0.012, FinnGen NS). Coloc H2-dominant
-  (0.043/0.036). Tissue log2FC +0.41 (NS).
-- **CTLA4** — positive control. BBJ H3-dominant (0.79), FinnGen H4=0.978.
+- **TSHR** — single-instrument locus (rs179252, chr14:81,435,985 hg19) under the
+  European selection reference; the East Asian panel gives two. OR 0.12 (BBJ,
+  *P* = 1.09×10⁻¹⁴) / 0.09 (UKB, 8.77×10⁻²⁸) / 0.10 (FinnGen, 2.82×10⁻⁷).
+  PP.H4 0.951 BBJ / **0.226 UKB** / 0.986 FinnGen — the UKB non-colocalization is
+  a headline finding and must never be dropped. The SuSiE fine-mapping layer was
+  **withdrawn as invalid**; do not restore credible sets, PIPs or SuSiE r².
+- **IGF1R** — 4 instruments (3 in FinnGen). OR 1.56 (BBJ, *P* = 0.0212) / 1.35
+  (UKB, 0.0117) / 1.41 (FinnGen, **0.182, not significant**). PP.H4 0.073 / 0.404
+  / 0.032 — UKB splits H2 0.400 vs H4 0.404, i.e. **unresolved**, not "eQTL only".
+  Write it comparatively (weaker genetic support than *TSHR*), never as "IGF1R is
+  not a susceptibility locus" and never as proof of an exclusive effector role.
+- **CTLA4** — biologically selected comparator, not a validating positive control:
+  PP.H4 0.201 BBJ (H3 0.799) / 0.953 UKB / 0.978 FinnGen, so it **fails** the
+  combined BBJ-plus-FinnGen criterion. OR 0.18 / 0.21 / 0.17.
+- **eQTLGen allele-frequency sensitivity is DONE** (2026-09-11). All 13 discovery
+  hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
+  in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
+  14.6% → 12.5%. Never describe this analysis as unperformed again.
 - **robust_novel = 0** after MHC + chr16p11.2 LD-spillover + cross-outcome coloc
   filtering. This is an *informative* result, not a negative one — do not reframe
   it as a discovery.
 - **Tissue n=4 TED + 1 control**, biological-sample level (technical replicates
-  collapsed). Correct TSHR padj = 0.032; earlier pseudoreplicated padj values
-  (6.6e-5 / 0.006) are WRONG.
+  collapsed). **Descriptive only** — with one control, control-side variance is not
+  estimable, so no *P* value, no DESeq2 result and no significance language may
+  appear anywhere. Earlier padj values (0.032, 6.6e-5, 0.006) are all withdrawn.
 - **No "first systematic" claim** — druggable GD MR is already published.
 - **FinnGen Graves ophthalmopathy is NOT a TED-specific contrast.** Cases are ascertained among Graves
   disease patients and compared with population controls, so its associations substantially re-measure GD
@@ -55,8 +68,9 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
 
 ## Framing rules (reviewer-proof, locked)
 - "Replicated" → "directionally reproduced".
-- IGF1R: present as *effector axis*, never as susceptibility anchor. Absence of
-  coloc for IGF1R is *not* evidence against its therapeutic role.
+- IGF1R: the genetic evidence is **weaker and unresolved**, not absent. Absence of
+  colocalization is *not* evidence against its therapeutic role, and the manuscript
+  must never imply that the teprotumumab evidence is challenged by these data.
 - **IGF1R significance is outcome-specific**: nominal in BBJ (P=0.021) and UKB (P=0.012), **not** in
   FinnGen (P=0.182). Never write "nominal across outcomes" — say "directionally consistent, nominally
   significant in BBJ and UKB but not FinnGen".
@@ -68,26 +82,30 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   biological and therapeutic grounds**; write it that way, never "prespecified backbone genes".
 - **TSHR and IGF1R do NOT share instruments** (TSHR = 1 IV, IGF1R = 4 IVs). What is shared is the
   outcome hierarchy and the analytic framework — never write "identical/same instruments".
-- **PP.H2 is NOT "no disease association".** IGF1R has a nominal MR association (BBJ P=0.021, UKB
-  P=0.012). PP.H2 = 0.79/0.68 says the *cis*-eQTL signal does not resolve to a variant shared with
-  the outcome. Never write "no detectable disease/outcome association" for IGF1R — it contradicts
-  the paper's own Table 2 row. Say "does not resolve to a variant shared with the outcome".
+- **PP.H2 is NOT "no disease association".** IGF1R has a nominal MR association (BBJ P=0.0212, UKB
+  P=0.0117). A high H2 says the *cis*-eQTL signal does not resolve to a variant shared with the
+  outcome. Never write "no detectable disease/outcome association" for IGF1R — it contradicts the
+  paper's own Table 2 row. Say "does not resolve to a variant shared with the outcome", and for UKB
+  say the posterior is **split** between H2 (0.400) and H4 (0.404).
 - **The null CONSTRAINS, it does not EXCLUDE.** Only 35.6% of genes were powered for OR≥2.0 and
   14.6% for OR≥1.5. Write "constrains additional large expression-mediated effects, particularly
   among well-powered genes, but does not exclude moderate effects" — never "excludes" / "evidence
   against" / "rules out".
-- **Fine-mapping was run only at TSHR.** Never write that all three backbone genes went through
-  "every evidence layer" — the shared layers are MR, colocalization and orbital tissue.
-- **One master, one copy.** `submission/` must not hold a second copy of the manuscript markdown; a
-  mirror there went stale once and re-introduced fixed errors. `scripts/audit_paper1_integrity.py`
-  now fails if a duplicate reappears.
+- **Fine-mapping is withdrawn entirely.** The SuSiE run had an allele-harmonisation defect; no
+  credible set, PIP, purity or SuSiE-derived r² may appear. The evidence layers are MR and
+  colocalization; the orbital tissue is descriptive context only.
+- **One master, one package.** `submission/` must not hold a second copy of the manuscript markdown
+  (a mirror went stale once and re-introduced fixed errors), and must hold exactly **one**
+  `candidate_*` directory — three accumulated once, each with a different manuscript, cover letter
+  and figure set. Superseded packages go to `archives/submission_candidates/`.
+  `scripts/audit_paper1_integrity.py` fails on either.
 - Tissue evidence is *exploratory* (single control), never confirmatory.
 - **Call the FinnGen outcome "TED-enriched", never "TED-specific"** (it is GO cases vs population
   controls). "TED-specific" survives ONLY where it denotes the *concept* of a TED-specific effect or
   the field's future TED GWAS — never as a label for our outcome.
-- **IGF1R wording is comparative, never categorical**: "more compatible with an effector-target
-  interpretation than with the TSHR-like expression-colocalized susceptibility architecture" —
-  do not write that IGF1R "is not a susceptibility locus".
+- **IGF1R wording is comparative, never categorical**: "weaker genetic support for *IGF1R* than for
+  *TSHR* in the two Graves disease outcomes; they do not show that *IGF1R* has no inherited
+  contribution" — do not write that IGF1R "is not a susceptibility locus".
 - External GEO is **not** included (Option A): three external cohorts did not
   reproduce the TSHR tissue direction (lacrimal-enriched / inactive TED). The
   "not externally replicated" limitation is honest and stays. Record:
@@ -99,19 +117,28 @@ Journal of Endocrinological Investigation (JEI). Final package in `submission/`.
   `TrackA_MR/v5_upgrade/` — do not fill from memory.
 - Figures are built by the R/Python scripts in the repo; **verify figure inputs
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
-  Figure 3B β-axis scale MUST match Table 2.
+  The current set is Figures 1-2 plus Figure S1; Figure 2's OR axis MUST match Table 2.
+- **Run `python3 scripts/audit_paper1_integrity.py` after every manuscript edit.** It runs the
+  framing guards (each one encodes a defect that was actually removed) and then the candidate's
+  numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `d6b944ecedbe091b3453492ae536304d`,
-  normalised `eb72ed12849aaa48236457163244aa05` (placeholders = 0).
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently 4,423 (Introduction–Discussion,
-  headings excluded; 4,501 with headings). Abstract is a **single unstructured paragraph**, 245 words (≤250).
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `581e939055d221991a3e3b3771e66ada`,
+  normalised `f0718f9c3fa23139c9bcbd157920a5db` (placeholders = 0).
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **2,275**
+  (Introduction–Discussion; 2,305 with sub-headings, which is what Word reports). Abstract is a
+  **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **217** words
+  (≤250). `scripts/26_wordcount_main_text.py` is the number of record; the candidate README quotes
+  2,319/217 under a slightly different heading convention.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)
 ```
-submission/        # FINAL JEI package: docx, cover letter, 5 figures, checklist
-TrackA_MR/         # v5 core: MR, coloc, fine-mapping, tissue
+submission/candidate_20260911_review/   # THE package: docx, cover letter,
+                   #   STROBE-MR checklist, Figures 1-2 + S1, Supplementary Data 1-4,
+                   #   provenance/ (incl. maf/) and reproducibility/
+archives/submission_candidates/         # superseded packages -- never submit from here
+TrackA_MR/         # v5 core: MR, coloc, tissue (fine-mapping withdrawn)
   v5_upgrade/      #   final analysis results + 07_manuscript/figures (canonical PNGs)
 TrackB_Network/    # network / pathway analysis
 TrackC_Offtarget/  # off-target + insulin cassette (SEPARATE paper — not v5)

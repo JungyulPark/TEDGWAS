@@ -1,5 +1,4 @@
 # Preserve exact reviewed bytes so SHA-256 provenance survives checkout.
 MANUSCRIPT_TED_TRAP_v5_MASTER.md -text
-submission/candidate_20260905/** -text
-submission/candidate_20260905_maf/** -text
+archives/submission_candidates/** -text
 submission/candidate_20260911_review/** -text

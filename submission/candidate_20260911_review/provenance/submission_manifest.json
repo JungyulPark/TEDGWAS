@@ -112,8 +112,8 @@
       "sha256": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97"
     },
     "provenance/integrity_audit.json": {
-      "bytes": 329,
-      "sha256": "736c1ab9eea88abd3fdf7c3815d867f6bc08fc6090211056889430fe65b14597"
+      "bytes": 323,
+      "sha256": "3c8c25d7595f00e3ffe679a0800f34498aed9c9632e0c05c8708ff55abdac97c"
     },
     "provenance/journal_checks.json": {
       "bytes": 1471,
@@ -256,8 +256,8 @@
       "sha256": "fefd0d34ae657a2913af1735dd53124a03b046f3ceec74937fd718408742baa2"
     },
     "reproducibility/README.md": {
-      "bytes": 1797,
-      "sha256": "b35437b4e5464b05f0b1c5e8e1fd031bbe239f62aa1a7529fa31e8e79e11e1ac"
+      "bytes": 1928,
+      "sha256": "8e27c498c26b9cc42332636365ad99e9a3b889bd6bc68d599fc9dd73a3bf4b92"
     },
     "reproducibility/requirements.txt": {
       "bytes": 64,
@@ -299,5 +299,6 @@
       "bytes": 100099,
       "sha256": "405d765b7f9a233a2370deef82765a7002f145b84cef475db4be0e553a401784"
     }
-  }
+  },
+  "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed."
 }

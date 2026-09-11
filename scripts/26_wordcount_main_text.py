@@ -5,9 +5,10 @@ Main text = Introduction + Methods + Results + Discussion (the sections journals
 count toward a word limit). Abstract, Declarations, References, Figure Legends
 and Tables are counted separately and reported but excluded from the total.
 
-Markdown emphasis/heading markers are stripped before counting so that
-`*TSHR*` counts as one word and `### Heading` lines are dropped, matching how a
-Word-processor count behaves on the rendered .docx.
+Markdown emphasis markers are stripped so `*TSHR*` counts as one word. The main
+total drops sub-heading lines; the "+ headings" line adds them back, which is what
+a Word-processor count reports on the rendered .docx. The `**Keywords:**` line is
+metadata and is excluded from the abstract, which has its own 250-word limit.
 
 Usage: python3 scripts/26_wordcount_main_text.py [path/to/master.md]
 """
@@ -36,15 +37,21 @@ def split_sections(text: str) -> dict[str, list[str]]:
     return sections
 
 
-def count_words(lines: list[str]) -> int:
+def count_words(lines: list[str], headings: bool = False) -> int:
+    """Words in a section. With headings=True the sub-headings count too, which
+    is what a Word-processor count does on the rendered .docx."""
     body = []
     for line in lines:
         s = line.strip()
         if not s or s == "---":
             continue
-        if s.startswith("#"):          # sub-headings do not count
+        if s.startswith("**Keywords:**"):  # metadata, not part of the abstract
             continue
-        if s.startswith("|"):          # markdown table rows
+        if s.startswith("#"):              # sub-headings
+            if not headings:
+                continue
+            s = s.lstrip("#").strip()
+        if s.startswith("|"):              # markdown table rows
             continue
         body.append(s)
     text = " ".join(body)
@@ -58,20 +65,24 @@ def main() -> int:
     sections = split_sections(path.read_text(encoding="utf-8"))
 
     print(f"== Word count: {path} ==")
-    total = 0
+    total = head_total = 0
     for name in MAIN:
         if name not in sections:
             print(f"  MISSING section: {name}")
             continue
         n = count_words(sections[name])
         total += n
+        head_total += count_words(sections[name], headings=True)
         print(f"  {name:<14} {n:>6}")
     print(f"  {'MAIN TEXT':<14} {total:>6}   (Endocrine Connections limit 5,000)")
+    print(f"  {'  + headings':<14} {head_total:>6}   (what a Word count reports)")
 
     print("  --- not counted toward the limit ---")
     for name in OTHER:
         if name in sections:
-            print(f"  {name:<14} {count_words(sections[name]):>6}")
+            n = count_words(sections[name])
+            flag = "   OVER 250" if name == "Abstract" and n > 250 else ""
+            print(f"  {name:<14} {n:>6}{flag}")
 
     if total > 5000:
         print(f"\nOVER LIMIT by {total - 5000} words")
