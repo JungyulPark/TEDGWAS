@@ -8,7 +8,7 @@
   "figures": [
     {
       "name": "Figure1",
-      "png_sha256": "52583b6b6daac197cf60c744cc5fb6f628ee63f30e43b999c691cf3691c8d22e",
+      "png_sha256": "ce49c861ada1fe85a70d1650fd986fb92fe11549ab562485333f1d2595ca6227",
       "pixels": [
         1734,
         1700
@@ -17,13 +17,13 @@
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "8b3b63954646a919e2d825a1a0928d06d4ea47962a19668c7b219db03f99a7c2",
-      "visual_review": "PASS",
+      "pdf_sha256": "0dc54bce61a1985bc98af39f7a66686a2e82a871cc5071194b49f99c1a4fbdac",
+      "visual_review": "PASS (remote, rendered and inspected 2026-09-11 after the italic-P and layout pass)",
       "source": "clinical_figure_sources.json"
     },
     {
       "name": "Figure2",
-      "png_sha256": "2383bc47ab8fc1d2477b3b1ef556dce059ea222a7a7a151197a7c5968ae3ddb4",
+      "png_sha256": "401c4cc9393468aa6005b2ac5b7e63a245368c5bb7c148c6a36c0e203d4ac6f5",
       "pixels": [
         2823,
         1977
@@ -32,8 +32,8 @@
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "736af09ebb60da308672a4ea646de3ddea7962136bc5b436272f31e7669c80f1",
-      "visual_review": "PASS",
+      "pdf_sha256": "00022f77453ba2f22fdddfdabe2d062ca16e791c429889ddf12743649884244f",
+      "visual_review": "PASS (remote, rendered and inspected 2026-09-11 after the italic-P and layout pass)",
       "source": "clinical_figure_sources.json"
     },
     {
@@ -51,5 +51,7 @@
       "visual_review": "PASS",
       "source": "Preserved descriptive figure from analytical baseline; only aggregate tissue summaries redistributed."
     }
-  ]
+  ],
+  "rebuilt_utc": "2026-09-11T03:42:34.982765+00:00",
+  "rebuild_note": "Figures 1-2 rebuilt after remote review: italic P (journal convention), CONSORT exclusion counts (1,918 without a valid instrument; 310 not estimable in BBJ), the selected-genes note boxed instead of floating, and scientific-notation P values drawn as mathtext because Liberation Serif (the Times substitute on Linux) has no U+207B. Rendered here with Liberation Serif; rebuild on a machine with Times New Roman for the original face. No plotted value changed. Visual page QA predates this rebuild."
 }

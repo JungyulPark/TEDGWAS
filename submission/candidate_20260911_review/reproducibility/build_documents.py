@@ -47,6 +47,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             st.paragraph_format.line_spacing=1 if iscover else 2
             st.paragraph_format.space_after=Pt(5 if iscover else 0)
         for nm in ['Title','Heading 1','Heading 2','Heading 3','Heading 4']:
+            if nm not in d.styles:continue
             st=d.styles[nm];st.font.name='Times New Roman';st.font.size=Pt(15 if nm=='Title' else 12);st.font.bold=True;st.font.color.rgb=RGBColor(0,0,0)
             st.paragraph_format.line_spacing=1.15;st.paragraph_format.space_before=Pt(12);st.paragraph_format.space_after=Pt(6);st.paragraph_format.keep_with_next=True
         intables=False

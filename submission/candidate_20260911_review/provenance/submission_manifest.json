@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "581e939055d221991a3e3b3771e66ada",
-  "manuscript_sha256": "97ba4860d18f458aa26ccd85494171368ebf12672f3b729276fa78faeb18941a",
+  "manuscript_md5": "195af3754258e8c216a94221b1ff99b8",
+  "manuscript_sha256": "cbca3ffba6ebf8db9ca00586577a500e455d5e9d89fe11d0f3a49eb368d1f2fa",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 311,
@@ -32,28 +32,28 @@
   ],
   "files": {
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13624,
-      "sha256": "a3ea2c071632ad730993ee37ef6ffeae73f28364c8a4c28f54760e725cce346d"
+      "bytes": 13025,
+      "sha256": "7d1141286e609e573129a03401876888307a4e1cf734e4a5031df7b917624d46"
     },
     "COVER_LETTER_EndocrineConnections.md": {
-      "bytes": 2803,
-      "sha256": "24e653598dc204bf8b3e966d292e4bb178feaf1140d4406259657e64aaadf2cd"
+      "bytes": 2805,
+      "sha256": "175ffbeedc7565d751f9705f3e906fe4e19d0e6ec179bfa89833c634591ed599"
     },
     "figures/Figure1.pdf": {
-      "bytes": 41229,
-      "sha256": "8b3b63954646a919e2d825a1a0928d06d4ea47962a19668c7b219db03f99a7c2"
+      "bytes": 20190,
+      "sha256": "0dc54bce61a1985bc98af39f7a66686a2e82a871cc5071194b49f99c1a4fbdac"
     },
     "figures/Figure1.png": {
-      "bytes": 154385,
-      "sha256": "52583b6b6daac197cf60c744cc5fb6f628ee63f30e43b999c691cf3691c8d22e"
+      "bytes": 183519,
+      "sha256": "ce49c861ada1fe85a70d1650fd986fb92fe11549ab562485333f1d2595ca6227"
     },
     "figures/Figure2.pdf": {
-      "bytes": 86462,
-      "sha256": "736af09ebb60da308672a4ea646de3ddea7962136bc5b436272f31e7669c80f1"
+      "bytes": 41546,
+      "sha256": "00022f77453ba2f22fdddfdabe2d062ca16e791c429889ddf12743649884244f"
     },
     "figures/Figure2.png": {
-      "bytes": 196754,
-      "sha256": "2383bc47ab8fc1d2477b3b1ef556dce059ea222a7a7a151197a7c5968ae3ddb4"
+      "bytes": 226059,
+      "sha256": "401c4cc9393468aa6005b2ac5b7e63a245368c5bb7c148c6a36c0e203d4ac6f5"
     },
     "figures/FigureS1.pdf": {
       "bytes": 56247,
@@ -64,8 +64,8 @@
       "sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 27888,
-      "sha256": "033b403f7e62af447f70abe502ffb1e07346f83e457b2a75d7994a2d78720202"
+      "bytes": 27354,
+      "sha256": "32b212148dc60d9127794e09b7125fe0020cd0e7ec36d8dc6688b4af134b42eb"
     },
     "provenance/clinical_data_consolidation.json": {
       "bytes": 1228,
@@ -76,8 +76,8 @@
       "sha256": "4448f2eeb1cec4a87ad0936711cc35d75e5b658f403846d60449403542ccd518"
     },
     "provenance/clinical_figure_sources.json": {
-      "bytes": 2722,
-      "sha256": "1f4df715ed294b55c747cf1d25de6542816d88aaf49674d4d017addfc08635e9"
+      "bytes": 2626,
+      "sha256": "e4f0be30d514224b41ad2af63c315b4eb5f9594583e4155d08847ff2da911d9c"
     },
     "provenance/clinical_revision.json": {
       "bytes": 1071,
@@ -104,8 +104,8 @@
       "sha256": "ad17c021066b2e0d3e7357cba6166a0125bb4f249bca45bf87b2e029f40957a3"
     },
     "provenance/figure_verification.json": {
-      "bytes": 1606,
-      "sha256": "6a1aec9b01d5b1ab301b4176e3374fe296a2bdb1de5d9713f0543079933bf844"
+      "bytes": 2281,
+      "sha256": "32ba2aba3d0de5aaed4754c419ff898bbace5761ed1f9127b20a792ca51d42df"
     },
     "provenance/instruments_verified.csv": {
       "bytes": 507694,
@@ -244,16 +244,16 @@
       "sha256": "4d53ffff80df4bf879c7dde83a2a554472ecce5debe89a1558a8f0d61ed99af7"
     },
     "reproducibility/audit_submission.py": {
-      "bytes": 9269,
-      "sha256": "302722c0e60305342eeb70e6f51e505febf75f2d073b426a87400f9be43f1a4e"
+      "bytes": 9203,
+      "sha256": "3523f7c7e261fc5dda95c5bdb16bd104e9c20779c0e33cae87015acdc324b144"
     },
     "reproducibility/build_documents.py": {
-      "bytes": 9618,
-      "sha256": "4af013206d96a72ccb5cfb7ced55583e9e8147d67fa3a92d62e36c1e4ab0bcb7"
+      "bytes": 9661,
+      "sha256": "c27c12af195575bfbcf2a50f1096d12cb21d2ee42b1af4ed010ec9499fdc2e81"
     },
     "reproducibility/build_figures.py": {
-      "bytes": 4576,
-      "sha256": "fefd0d34ae657a2913af1735dd53124a03b046f3ceec74937fd718408742baa2"
+      "bytes": 5390,
+      "sha256": "3a53f85010e96d613248ac2d4bfbc7bb1f0467a899855dc9f04cde507ee89931"
     },
     "reproducibility/README.md": {
       "bytes": 1928,
@@ -268,8 +268,8 @@
       "sha256": "4c6ae5be0986f43582f45011544b84ee3a69147dec44f27555c7ea21d06f2109"
     },
     "STROBE_MR_CHECKLIST.docx": {
-      "bytes": 15242,
-      "sha256": "1408334ee0d2c2b09888eff21528eccce19d902b509d6bb1f620df7439d8bb18"
+      "bytes": 14622,
+      "sha256": "7167ddb31f9f129c68074e9027121b7f4cd53838e8754276541fbbfbf78ee08f"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 4890,
@@ -296,9 +296,10 @@
       "sha256": "820f9f25f898c593ca1ed659ea03b803f13ba2912e76d12aab38b4c4d4c9f851"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 100099,
-      "sha256": "405d765b7f9a233a2370deef82765a7002f145b84cef475db4be0e553a401784"
+      "bytes": 99515,
+      "sha256": "aa835e7bac5acd24a460b30171d2b0718543da11c3b3d8dee7630d334432c3c0"
     }
   },
-  "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed."
+  "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
+  "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed."
 }
