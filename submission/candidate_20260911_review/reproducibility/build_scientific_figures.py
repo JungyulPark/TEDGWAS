@@ -1,6 +1,6 @@
 """Reproduce all three main figures from preserved aggregate results."""
 from pathlib import Path
-import json,hashlib
+import argparse,json,hashlib
 import numpy as np,pandas as pd
 import matplotlib
 matplotlib.use('Agg')
@@ -9,6 +9,9 @@ from matplotlib.patches import FancyBboxPatch,Rectangle,Patch
 from matplotlib.lines import Line2D
 from matplotlib.colors import LinearSegmentedColormap
 O=Path(__file__).resolve().parents[1];P=O/'provenance';F=O/'figures'
+parser=argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--figures',nargs='+',choices=['Figure1','Figure2','Figure3'],default=['Figure1','Figure2','Figure3'])
+selected=set(parser.parse_args().figures)
 mr=pd.read_csv(P/'MR_primary_canonical.csv');inst=pd.read_csv(P/'instruments_verified.csv');co=pd.read_csv(P/'coloc_canonical_v2.csv')
 OC=['BBJ_Graves','UKB_hyperthyroid','FinnGen_GO'];LABEL=['BBJ Graves disease','UKB hyperthyroidism','FinnGen ophthalmopathy']
 GENES=['TSHR','IGF1R','CTLA4'];CAND=['TNFSF14','IFNGR1','MAPKAPK5','HSD3B7','VKORC1','PRSS36']
@@ -16,7 +19,9 @@ GC={'TSHR':'#0072B2','IGF1R':'#D55E00','CTLA4':'#6B5B95'};OCOLOR=list(GC.values(
 INK='#172F40';MUTED='#607482';GRID='#DEE5E9';H=['PP.H2','PP.H3','PP.H4'];HC=['#8DA8BE','#E6B966','#258E83'];OTHER='#E5E9ED'
 plt.rcParams.update({'font.family':'sans-serif','font.sans-serif':['Arial','DejaVu Sans'],'font.size':9,'pdf.fonttype':42,'ps.fonttype':42,'axes.spines.top':False,'axes.spines.right':False,'axes.labelcolor':INK,'text.color':INK,'xtick.color':MUTED,'ytick.color':MUTED,'axes.edgecolor':MUTED,'mathtext.fontset':'stix'})
 def save(fig,name):
-    fig.savefig(F/(name+'.png'),dpi=300,facecolor='white');fig.savefig(F/(name+'.pdf'),facecolor='white');plt.close(fig)
+    if name in selected:
+        fig.savefig(F/(name+'.png'),dpi=300,facecolor='white');fig.savefig(F/(name+'.pdf'),facecolor='white')
+    plt.close(fig)
 def panel(fig,x,y,letter,title):
     fig.text(x,y,letter,fontsize=14,fontweight='bold',va='top');fig.text(x+.028,y-.001,title,fontsize=10.5,fontweight='bold',va='top')
 def rec(g,o,pr=1e-5):return co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,pr,rtol=1e-9,atol=0)].iloc[0]
@@ -55,28 +60,46 @@ r=screen[screen.gene_symbol=='IGF1R'].iloc[0];ax.scatter(r.x,r.y,s=42,fc=GC['IGF
 ax.axhline(-np.log10(.05/2544),color='#D55E00',ls=(0,(4,3)),lw=.85,zorder=1)
 ax.set(xlim=(-25,offset),ylim=(-.4,25.5),ylabel=r'Association strength ($-\log_{10}P$)',xlabel='Chromosome of strongest selected expression instrument');ax.set_xticks(ticks,chrom);ax.tick_params(axis='x',labelsize=8);ax.set_yticks([0,5,10,15,20,25]);ax.grid(axis='y',color=GRID,lw=.6,zorder=0)
 fig.text(.385,.06,'One point per gene  |  All 2,234 estimable genes shown  |  13 discovery genes labelled',fontsize=8.5,color=MUTED);save(fig,'Figure1')
-# Matched rows make association and colocalization directly comparable.
-fig=plt.figure(figsize=(12.0,7.2));gs=fig.add_gridspec(1,6,left=.025,right=.985,top=.84,bottom=.15,width_ratios=[2.0,2.1,1.65,1.1,2.4,.65],wspace=.045)
-la,fa,ea,pa,ba,ha=[fig.add_subplot(gs[0,i]) for i in range(6)];panel(fig,.025,.965,'A','Association estimates');panel(fig,.686,.965,'B','Regional genetic evidence')
-for a in [la,fa,ea,pa,ba,ha]:a.set_ylim(-.9,10.6)
-for a in [la,ea,pa,ha]:a.set_xlim(0,1);a.axis('off')
-fa.set_xscale('log');fa.set_xlim(.035,3.0);fa.set_yticks([]);fa.axvline(1,color=MUTED,ls='--',lw=.8);fa.spines['left'].set_visible(False);fa.set_xticks([.05,.1,.2,.5,1,2],[.05,.1,.2,.5,1,2]);fa.tick_params(axis='x',labelsize=8);fa.set_xlabel('Odds ratio (log scale)',fontsize=9)
-ba.set_xlim(0,1);ba.set_yticks([]);ba.spines['left'].set_visible(False);ba.set_xticks([0,.5,1]);ba.set_xlabel('Posterior probability',fontsize=9)
-ea.text(.5,10.3,'OR (95% CI)',ha='center',fontweight='bold',fontsize=9);pa.text(.5,10.3,r'$P$ value',ha='center',fontweight='bold');ha.text(.5,10.3,'H4',ha='center',fontweight='bold')
-for g,base in zip(GENES,[9,5.5,2]):
-    for a in [la,fa,ea,pa,ba,ha]:a.axhspan(base-2.45,base+.85,color=GC[g],alpha=.045,zorder=0)
-    la.text(.025,base+.60,g,fontstyle='italic',fontweight='bold',color=GC[g],fontsize=11)
-    for i,(oc,label) in enumerate(zip(OC,LABEL)):
-        r=mr[(mr.gene_symbol==g)&(mr.outcome==oc)].iloc[0];y=base-i;odds,lo,hi=np.exp([r.beta,r.beta-1.96*r.se,r.beta+1.96*r.se])
-        la.text(.045,y,label,va='center',fontsize=8.2);fa.errorbar(odds,y,xerr=[[odds-lo],[hi-odds]],fmt=['o','s','^'][i],color=GC[g],capsize=2.5,lw=1.2,markersize=5)
-        ea.text(.5,y,f'{odds:.2f} ({lo:.2f}–{hi:.2f})',ha='center',va='center',fontsize=8.5);pa.text(.5,y,pdrawing(r.pvalue),ha='center',va='center',fontweight='bold',fontsize=9)
-        source['Figure2'].append({'gene':g,'outcome':oc,'or':odds,'lower95':lo,'upper95':hi,'pvalue':r.pvalue,'displayed_p':pv(r.pvalue)})
-        c=rec(g,oc);left=0
-        for key,color in zip(H,HC):ba.barh(y,c[key],left=left,height=.46,color=color,edgecolor='white',lw=.35);left+=c[key]
-        ba.barh(y,c['PP.H0']+c['PP.H1'],left=left,height=.46,color=OTHER,edgecolor='none');ha.text(.5,y,f"{c['PP.H4']:.3f}",ha='center',va='center',fontsize=9,fontweight='bold' if c['PP.H4']>=.8 else 'normal',color=HC[2] if c['PP.H4']>=.8 else INK)
-        source['Figure2_posteriors'].append({'gene':g,'outcome':oc,**{key:float(c[key]) for key in ['PP.H0','PP.H1',*H]}})
-fig.legend(handles=[Patch(fc=c,label=l) for c,l in zip(HC+[OTHER],['Expression only (H2)','Distinct variants (H3)','Shared variant (H4)','Other (H0/H1)'])],loc='lower center',bbox_to_anchor=(.73,.035),ncol=2,frameon=False,fontsize=8,columnspacing=1.2)
-fig.text(.03,.055,'BBJ: discovery threshold $P$ < 0.05/2,544\nUKB and FinnGen: nominal threshold $P$ < 0.05',fontsize=8.5,color=MUTED,linespacing=1.5);save(fig,'Figure2')
+# Separate grids and a reserved gutter distinguish A from B while preserving matched rows.
+with plt.rc_context({'font.family':'DejaVu Sans','mathtext.fontset':'dejavusans','text.color':'#202020','axes.labelcolor':'#202020','xtick.color':'#555555','axes.edgecolor':'#777777'}):
+    fig=plt.figure(figsize=(12.5,7.2))
+    ag=fig.add_gridspec(1,4,left=.025,right=.650,top=.85,bottom=.20,width_ratios=[2.2,2.05,1.75,1.1],wspace=.055)
+    bg=fig.add_gridspec(1,2,left=.730,right=.982,top=.85,bottom=.20,width_ratios=[2.65,.60],wspace=.08)
+    la,fa,ea,pa=[fig.add_subplot(ag[0,i]) for i in range(4)]
+    ba,ha=[fig.add_subplot(bg[0,i]) for i in range(2)]
+    panel(fig,.025,.965,'A','Association estimates')
+    panel(fig,.730,.965,'B','Regional genetic evidence')
+    fig.add_artist(Line2D([.690,.690],[.045,.965],transform=fig.transFigure,color='#D1D1D1',lw=.8))
+    for ax in [la,fa,ea,pa,ba,ha]:ax.set_ylim(-.9,10.6)
+    for ax in [la,ea,pa,ha]:ax.set_xlim(0,1);ax.axis('off')
+    fa.set_xscale('log');fa.set_xlim(.035,3.0);fa.set_yticks([]);fa.axvline(1,color='#777777',ls='--',lw=.8);fa.spines['left'].set_visible(False)
+    fa.set_xticks([.05,.1,.2,.5,1,2],[.05,.1,.2,.5,1,2]);fa.tick_params(axis='x',labelsize=8);fa.set_xlabel('Odds ratio (log scale)',fontsize=8.5)
+    ba.set_xlim(0,1);ba.set_yticks([]);ba.spines['left'].set_visible(False);ba.set_xticks([0,.5,1]);ba.set_xlabel('Posterior probability',fontsize=8.5)
+    ea.text(.5,10.3,'OR (95% CI)',ha='center',fontweight='bold',fontsize=9)
+    pa.text(.5,10.3,r'$P$ value',ha='center',fontweight='bold',fontsize=9)
+    ha.text(.5,10.3,'H4',ha='center',fontweight='bold',fontsize=9)
+    # Neutral rules separate gene groups; all A-panel marks and statistics are monochrome.
+    for y in [6.45,2.95]:
+        fy=la.transData.transform((0,y))[1]/fig.bbox.height
+        for left,right in [(.025,.650),(.730,.982)]:
+            fig.add_artist(Line2D([left,right],[fy,fy],transform=fig.transFigure,color='#DDDDDD',lw=.6))
+    for g,base in zip(GENES,[9,5.5,2]):
+        la.text(.025,base+.60,g,fontstyle='italic',fontweight='bold',color='#202020',fontsize=10.5)
+        for i,(oc,label) in enumerate(zip(OC,LABEL)):
+            r=mr[(mr.gene_symbol==g)&(mr.outcome==oc)].iloc[0];y=base-i;odds,lo,hi=np.exp([r.beta,r.beta-1.96*r.se,r.beta+1.96*r.se])
+            la.text(.045,y,label,va='center',fontsize=8.0)
+            fa.errorbar(odds,y,xerr=[[odds-lo],[hi-odds]],fmt=['o','s','^'][i],color='#202020',capsize=2.5,lw=1.15,markersize=5)
+            ea.text(.5,y,f'{odds:.2f} ({lo:.2f}–{hi:.2f})',ha='center',va='center',fontsize=8.3)
+            pa.text(.5,y,pdrawing(r.pvalue),ha='center',va='center',fontweight='bold',fontsize=8.8)
+            source['Figure2'].append({'gene':g,'outcome':oc,'or':odds,'lower95':lo,'upper95':hi,'pvalue':r.pvalue,'displayed_p':pv(r.pvalue)})
+            c=rec(g,oc);left=0
+            for key,color in zip(H,HC):ba.barh(y,c[key],left=left,height=.46,color=color,edgecolor='white',lw=.35);left+=c[key]
+            ba.barh(y,c['PP.H0']+c['PP.H1'],left=left,height=.46,color=OTHER,edgecolor='none')
+            ha.text(.5,y,f"{c['PP.H4']:.3f}",ha='center',va='center',fontsize=8.7,fontweight='bold' if c['PP.H4']>=.8 else 'normal',color='#202020')
+            source['Figure2_posteriors'].append({'gene':g,'outcome':oc,**{key:float(c[key]) for key in ['PP.H0','PP.H1',*H]}})
+    fig.legend(handles=[Patch(fc=c,label=l) for c,l in zip(HC+[OTHER],['Expression only (H2)','Distinct variants (H3)','Shared variant (H4)','Other (H0/H1)'])],loc='lower left',bbox_to_anchor=(.730,.015),ncol=1,frameon=False,fontsize=7.6,borderaxespad=0,labelspacing=.35)
+    fig.text(.03,.075,'BBJ: discovery threshold $P$ < 0.05/2,544\nUKB and FinnGen: nominal threshold $P$ < 0.05',fontsize=8.3,color='#555555',linespacing=1.6)
+    save(fig,'Figure2')
 # Complete candidate matrix and the selected-gene prior sensitivity.
 fig=plt.figure(figsize=(11.8,6.5));heat=fig.add_axes([.13,.16,.30,.66]);panel(fig,.03,.965,'A','Shared-variant support across genes');panel(fig,.48,.965,'B','Sensitivity to the shared-association prior')
 allg=GENES+CAND;mat=np.array([[rec(g,o)['PP.H4'] for o in OC] for g in allg]);cmap=LinearSegmentedColormap.from_list('shared',['#F1F5F6','#B7DAD5','#258E83'])
@@ -101,4 +124,4 @@ axes[0].annotate('0.661',(2,float(rec('TSHR',OC[0],1e-6)['PP.H4'])),xytext=(-5,-
 fig.legend(handles=[Line2D([0],[0],color=c,marker=m,ms=4,label=l) for c,m,l in zip(OCOLOR,['o','s','^'],LABEL)],loc='lower center',bbox_to_anchor=(.74,.075),ncol=1,frameon=False,fontsize=8)
 fig.text(.13,.06,'Outlined cells: PP.H4 ≥ 0.80\nCombined criterion: BBJ AND FinnGen',fontsize=8.5,color=MUTED,linespacing=1.5);fig.text(.50,.20,'D  Default     I  Intermediate     C  Conservative',fontsize=8.5,color=MUTED);save(fig,'Figure3')
 source['input_sha256']={n:hashlib.sha256((P/n).read_bytes()).hexdigest() for n in ['MR_primary_canonical.csv','instruments_verified.csv','coloc_canonical_v2.csv']}
-(P/'clinical_figure_sources.json').write_text(json.dumps(source,indent=2),encoding='utf-8');print('Built Figures 1–3 from preserved results; Figure S1 retained.')
+(P/'clinical_figure_sources.json').write_text(json.dumps(source,indent=2),encoding='utf-8');print('Built '+', '.join(sorted(selected))+' from preserved results; other figure files retained.')

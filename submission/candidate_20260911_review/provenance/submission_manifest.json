@@ -44,12 +44,12 @@
       "sha256": "eb135ba44e1fe9972a22c3a847cb4d11955a5201d775d9cae64f7bebafb1ad19"
     },
     "README.md": {
-      "bytes": 2373,
-      "sha256": "6b9222abe419d6fc03096fdffbe2969f864851d873273d9f3b025f6163fc8344"
+      "bytes": 2620,
+      "sha256": "c365d9e1ed5fa4a4c9a07f177af3fbfd04acba7d74442043ddf7d773435d5775"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 3802,
-      "sha256": "a35e04b33f87e5605d8bc3cebac1a944b3aa8cf9a98738ab2313ee3ca91cbe76"
+      "bytes": 4233,
+      "sha256": "4f16e8526e23ca943a298f1d768d8dee0a62670f5b86e74116209e535085986a"
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 15242,
@@ -92,12 +92,12 @@
       "sha256": "67955df0de7f4a858cb84e1243d966b341b64e8c300699a5db8848780a8d91c3"
     },
     "figures/Figure2.pdf": {
-      "bytes": 72706,
-      "sha256": "9503bb0a6205dbe69e86d66c46290dec6cd4d2ac56ba7574bc90766cc2a9fff4"
+      "bytes": 36751,
+      "sha256": "ff03f7e037a82c3cbc6c4fb79401bb4385bb8c80737c7f22246c44a3df4627f9"
     },
     "figures/Figure2.png": {
-      "bytes": 310433,
-      "sha256": "37e71f607e51d0ddfa3a8748a710962072e5ea7db9287988ae3619619c73fe73"
+      "bytes": 267647,
+      "sha256": "49ab6164497f0e4e33d1fda87c1f552db3e5919bbdd00ade2bc639b0b0bc8e8f"
     },
     "figures/Figure3.pdf": {
       "bytes": 79288,
@@ -164,8 +164,8 @@
       "sha256": "be460fd643d84c7a05a92dd95fb8f2f1b809820526dbcc4a1d51c7b8fbb3ed7a"
     },
     "provenance/figure_verification.json": {
-      "bytes": 2839,
-      "sha256": "0916c1dc165b29bed635962afc398799d8e53b6964e6b665967722e48b87c5d4"
+      "bytes": 3220,
+      "sha256": "78197f6663313a7a72b4956db39fe99cd58a91c8448d73341b2d7deeb0ee859b"
     },
     "provenance/instruments_verified.csv": {
       "bytes": 507694,
@@ -260,8 +260,8 @@
       "sha256": "5960773d03b43626729cdc54195ff962717b864e97fb926d2c160981425c4d0b"
     },
     "reproducibility/README.md": {
-      "bytes": 2665,
-      "sha256": "57d795e614d88d437c7f71ce3c1297b9d6c387d14e5f679ba9942c1d99e54c49"
+      "bytes": 2989,
+      "sha256": "f023238423c98ff7dae53d980301efe0f11cc5f0cfadd99b343763b7e8e8ca4d"
     },
     "reproducibility/analysis_scripts/export_maf_validation_inputs_v1.R": {
       "bytes": 399,
@@ -316,8 +316,8 @@
       "sha256": "1e5bc2f57eaae35a2c5069a874f6e1af1d76bec94015cd8db5abeb1f6d5a4678"
     },
     "reproducibility/build_scientific_figures.py": {
-      "bytes": 12176,
-      "sha256": "ec51efcf0208f4ff69f9e79c87eed033c3d7560b0a2e0a70bf9ea5992dc45a21"
+      "bytes": 13367,
+      "sha256": "b133e7371849c02c1c38c8c9e882bf36b3a52b76719aae28959c319b0c605b1b"
     },
     "reproducibility/requirements.txt": {
       "bytes": 64,
@@ -339,7 +339,7 @@
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
   "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed.",
   "revision_note_20260912_external_review": "External review round 8. Accepted and applied: TSHR BBJ prior sensitivity stated in the abstract and the opening Discussion; PP.H3 added to Table 2 so the distinct-variant and unresolved readings rest on displayed numbers; the '81 comparisons crossed the 0.80 threshold' sentence rewritten as a classification statement with its 9x3x3 decomposition; per-locus variant counts (1,479-7,740) and the purpose of the BBJ-plus-FinnGen criterion stated in Methods; the reconstructed exposure unit defined as approximately one standard deviation; gene-specific 80% detection limits reported, showing the IGF1R estimate fell below its own limit in all three outcomes; 'modest IGF1R contribution' widened to 'inherited contribution' because the FinnGen CI reaches 2.33; MAPKAPK5 given three decimals in a footnote; the 1000 Genomes panel given its own citation (new reference 18, all later references renumbered). Rejected after checking the data: no re-analysis was needed for colocalization input, which used unfiltered regional statistics (eQTL P up to 1.0; 1,479-7,740 variants per comparison). The UKB log-odds rescaling formula and the FinnGen 858/499,490 counts were already correct and documented.",
-  "updated_at_utc": "2026-09-12T14:15:38.180134+00:00",
+  "updated_at_utc": "2026-09-12T14:22:05.435568+00:00",
   "revision_20260912": "Correct outcome-specific detection thresholds and interpretation; clarify standardized expression unit; renumber all 27 references by first citation and synchronize verification; remove residual modest inherited contribution claim; restrict bold P-value formatting to P columns; rebuild and visually inspect all core documents and separate upload tables; replace stale release records.",
   "figure_numeric_audit": {
     "status": "PASS",
@@ -348,5 +348,6 @@
     "posterior_comparisons": 63,
     "errors": []
   },
-  "revision_20260912_expanded": "Expand Results and Discussion using preserved results and existing references; seven interpretation paragraphs, two limitations paragraphs and one conclusion; add full gene-level screen, matched OR/CI/P and posterior evidence, and candidate/prior sensitivity figures; preserve all analytical estimates and sensitivity limitations; update and verify documents, references and release identities."
+  "revision_20260912_expanded": "Expand Results and Discussion using preserved results and existing references; seven interpretation paragraphs, two limitations paragraphs and one conclusion; add full gene-level screen, matched OR/CI/P and posterior evidence, and candidate/prior sensitivity figures; preserve all analytical estimates and sensitivity limitations; update and verify documents, references and release identities.",
+  "revision_20260912_figure2_layout": "Separate panels A and B with independent grids, wider gutter and vertical divider; remove background and gene colour from panel A, unify numeric typography and preserve panel B category colours. Numerical source record and manuscript/documents unchanged."
 }

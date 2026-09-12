@@ -23,17 +23,17 @@
     },
     {
       "name": "Figure2",
-      "png_sha256": "37e71f607e51d0ddfa3a8748a710962072e5ea7db9287988ae3619619c73fe73",
+      "png_sha256": "49ab6164497f0e4e33d1fda87c1f552db3e5919bbdd00ade2bc639b0b0bc8e8f",
       "pixels": [
-        3600,
+        3750,
         2160
       ],
       "dpi": [
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "9503bb0a6205dbe69e86d66c46290dec6cd4d2ac56ba7574bc90766cc2a9fff4",
-      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "pdf_sha256": "ff03f7e037a82c3cbc6c4fb79401bb4385bb8c80737c7f22246c44a3df4627f9",
+      "visual_review": "PASS; inspected 2026-09-12 after separating panel grids with a gutter and vertical rule, removing group background fills, and making panel A monochrome. All nine matched rows, numerical labels and panel B legend are legible without overlap.",
       "source": "clinical_figure_sources.json"
     },
     {
@@ -67,5 +67,6 @@
       "source": "Preserved descriptive aggregate tissue figure; no inferential P values."
     }
   ],
-  "rebuild_note": "Three main figures rebuilt from the preserved aggregate results: complete gene-level screen, matched association/posterior evidence, and candidate matrix with prior sensitivity. No analytical estimate altered."
+  "rebuild_note": "Three main figures rebuilt from the preserved aggregate results: complete gene-level screen, matched association/posterior evidence, and candidate matrix with prior sensitivity. No analytical estimate altered.",
+  "figure2_layout_revision": "Panel A uses white background, black forest marks and numerical labels, uniform statistical typography and neutral group rules. Panel B retains categorical posterior colours and has an independent title, axis and legend. Plotted source data unchanged."
 }
