@@ -41,7 +41,8 @@ for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERI
 for row in tables['2']['rows']:
     g=clean(row[0]);o=ocs[row[1]];r=get(g,o);label=f'Table2 {g}/{o}'
     agree(row[2],r.n_iv,label+' instruments');effect(row[3],r,label);agree(row[4],r.pvalue,label+' P')
-    c=co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,1e-5,atol=1e-12)].iloc[0];agree(row[5],c['PP.H4'],label+' H4')
+    c=co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,1e-5,atol=1e-12)].iloc[0]
+    agree(row[5],c['PP.H3'],label+' H3');agree(row[6],c['PP.H4'],label+' H4')
 for row in tables['3']['rows']:
     r=get(clean(row[0]),'BBJ_Graves');agree(row[1],r.n_iv,'Table3 instruments');effect(row[2],r,'Table3 effect');agree(row[3],r.pvalue,'Table3 P');check(r.pvalue<.05/2544,'Table3 discovery threshold')
 check(len(tables['3']['rows'])==13,'All thirteen discovery hits retained')

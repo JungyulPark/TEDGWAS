@@ -49,7 +49,8 @@
         "Instruments",
         "OR (95% CI)",
         "*P* value",
-        "Shared-variant support"
+        "Distinct variants (PP.H3)",
+        "Shared variant (PP.H4)"
       ],
       "rows": [
         [
@@ -58,6 +59,7 @@
           "1",
           "0.12 (0.07–0.21)",
           "1.09×10⁻¹⁴",
+          "0.049",
           "0.951"
         ],
         [
@@ -66,6 +68,7 @@
           "1",
           "0.09 (0.06–0.14)",
           "8.77×10⁻²⁸",
+          "0.774",
           "0.226"
         ],
         [
@@ -74,6 +77,7 @@
           "1",
           "0.10 (0.04–0.24)",
           "2.82×10⁻⁷",
+          "0.014",
           "0.986"
         ],
         [
@@ -82,6 +86,7 @@
           "4",
           "1.56 (1.07–2.28)",
           "0.0212",
+          "0.236",
           "0.073"
         ],
         [
@@ -90,6 +95,7 @@
           "4",
           "1.35 (1.07–1.70)",
           "0.0117",
+          "0.196",
           "0.404"
         ],
         [
@@ -98,6 +104,7 @@
           "3",
           "1.41 (0.85–2.33)",
           "0.182",
+          "0.346",
           "0.032"
         ],
         [
@@ -106,6 +113,7 @@
           "1",
           "0.18 (0.11–0.27)",
           "5.45×10⁻¹⁵",
+          "0.799",
           "0.201"
         ],
         [
@@ -114,6 +122,7 @@
           "2",
           "0.21 (0.08–0.57)",
           "0.0022",
+          "0.047",
           "0.953"
         ],
         [
@@ -122,10 +131,11 @@
           "2",
           "0.17 (0.04–0.68)",
           "0.0118",
+          "0.022",
           "0.978"
         ]
       ],
-      "note": "ORs are per unit increase in reconstructed, genetically proxied blood expression. Wald ratio was used for one instrument and IVW for multiple instruments. P values are two-sided and shown to three significant digits. BBJ discovery significance requires P < 1.965×10⁻⁵; P < 0.05 in other outcomes is nominal support. Shared-variant support is the colocalization posterior probability (PP.H4), not a P value; ≥0.80 was the criterion for strong support. All nine estimates are shown. Sensitivity results are in Tables S1–S3."
+      "note": "Primary associations for the three selected genes**"
     },
     "3": {
       "caption": "All thirteen discovery associations",
@@ -229,7 +239,7 @@
           "Additional candidate"
         ]
       ],
-      "note": "All genes met the same multiple-testing threshold and are listed by discovery P value. The five MHC genes were not treated as new independent targets. The six additional candidates were TNFSF14, IFNGR1, MAPKAPK5, HSD3B7, VKORC1 and PRSS36; none showed strong shared-variant support in both BBJ and FinnGen. Full outcome comparisons and model probabilities remain in Supplementary Data 2–3."
+      "note": "All thirteen discovery associations**"
     },
     "S1": {
       "caption": "Sensitivity tests for genes with multiple instruments",

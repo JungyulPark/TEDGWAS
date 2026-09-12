@@ -123,14 +123,13 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `195af3754258e8c216a94221b1ff99b8`,
-  normalised `fdb230cd3a31c9a934e81810b777e5bd` (placeholders = 0).
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `b5c855fa1b63c2929ced2870aeee4305`,
+  normalised `baad73dbba578ac07f26675344f47194` (placeholders = 0). **27 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **2,275**
-  (Introduction–Discussion; 2,305 with sub-headings, which is what Word reports). Abstract is a
-  **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **217** words
-  (≤250). `scripts/26_wordcount_main_text.py` is the number of record; the candidate README quotes
-  2,319/217 under a slightly different heading convention.
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **2,542**
+  (Introduction–Discussion; 2,572 with sub-headings, which is what Word reports). Abstract is a
+  **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **227** words
+  (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
 
 ## Repo layout (actual)
