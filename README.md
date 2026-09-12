@@ -4,7 +4,7 @@ Druggable-gene-wide Mendelian randomization and colocalization comparing genetic
 
 **Current manuscript: [12 September 2026 final author-review candidate](submission/candidate_20260911_review/README.md).** Prepared for Endocrine Connections; final author information, declarations and journal checks remain pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
 
-The clinical revision contains 2,539 main-text words, 227 abstract words, 27 references, three main tables, two main figures, four supplementary tables and one supplementary figure. ORs, 95% CIs and P values lead the presentation. All 36 Word pages were visually reviewed, including three separately supplied tables. The content audit passes 1,113 checks covering 324 displayed numerical values; the release audit also verifies current file identities and review records.
+The clinical revision contains 3,182 main-text words, 227 abstract words, 27 references, three main tables, three main figures, four supplementary tables and one supplementary figure. ORs, 95% CIs and P values lead the presentation. All 39 Word pages were visually reviewed, including three separately supplied tables. The content audit passes 1,131 checks covering 328 displayed numerical values; the release audit also verifies current file identities and review records.
 
 ## Current evidence
 
@@ -25,12 +25,14 @@ The clinical revision contains 2,539 main-text words, 227 abstract words, 27 ref
 | `TrackA_MR/v5_upgrade/` | Historical analysis outputs used as evidence |
 | `internal/` | Internal records, not journal upload files |
 
-The current numerical audit compares 311 displayed values and passes 983 checks. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
+The current figure audit passes 6,819 checks across all 2,234 plotted genes and 63 posterior comparisons. Results now contains 958 words; Discussion contains 1,148 words in seven interpretation paragraphs, two limitations paragraphs and one conclusion. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
 
 Run the current audit from the repository root after installing the packages in the candidate's `reproducibility/requirements.txt`:
 
 ```powershell
-python submission/candidate_20260911_review/reproducibility/audit_submission.py
+python scripts/audit_paper1_integrity.py
+python submission/candidate_20260911_review/reproducibility/audit_figures.py
+python submission/candidate_20260911_review/reproducibility/audit_release.py
 ```
 
 See the candidate reproduction README before rebuilding. Source-data extracts are local-only; the repository contains scripts and aggregate results. IRB raw RNA-seq, patent materials and restricted source datasets must not be committed. Earlier submission binaries, scientific summaries and build/audit instructions elsewhere are historical and may disagree with this reviewed candidate.

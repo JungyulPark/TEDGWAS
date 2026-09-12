@@ -1,39 +1,54 @@
 {
   "status": "PASS",
-  "date": "2026-09-11",
-  "main_figures": 2,
+  "date": "2026-09-12",
+  "main_figures": 3,
   "supplementary_figures": 1,
-  "source_numeric_audit": "integrity_audit.json",
-  "source_manifest_sha256": "1f4df715ed294b55c747cf1d25de6542816d88aaf49674d4d017addfc08635e9",
+  "source_numeric_audit": "figure_numeric_audit.json; integrity_audit.json for OR/CI/P comparisons",
+  "source_manifest_sha256": "940bb513a07e49bf71f58c323120d67f700863e2aa4a908894ea4c75e5056d36",
   "figures": [
     {
       "name": "Figure1",
-      "png_sha256": "ce49c861ada1fe85a70d1650fd986fb92fe11549ab562485333f1d2595ca6227",
+      "png_sha256": "67955df0de7f4a858cb84e1243d966b341b64e8c300699a5db8848780a8d91c3",
       "pixels": [
-        1734,
-        1700
+        3540,
+        1920
       ],
       "dpi": [
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "0dc54bce61a1985bc98af39f7a66686a2e82a871cc5071194b49f99c1a4fbdac",
-      "visual_review": "PASS (remote, rendered and inspected 2026-09-11 after the italic-P and layout pass)",
+      "pdf_sha256": "4763a766df9cba695f18963f82c006c15245fd62facf73c29f5218158cdb20f2",
+      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
       "source": "clinical_figure_sources.json"
     },
     {
       "name": "Figure2",
-      "png_sha256": "401c4cc9393468aa6005b2ac5b7e63a245368c5bb7c148c6a36c0e203d4ac6f5",
+      "png_sha256": "37e71f607e51d0ddfa3a8748a710962072e5ea7db9287988ae3619619c73fe73",
       "pixels": [
-        2823,
-        1977
+        3600,
+        2160
       ],
       "dpi": [
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "00022f77453ba2f22fdddfdabe2d062ca16e791c429889ddf12743649884244f",
-      "visual_review": "PASS (remote, rendered and inspected 2026-09-11 after the italic-P and layout pass)",
+      "pdf_sha256": "9503bb0a6205dbe69e86d66c46290dec6cd4d2ac56ba7574bc90766cc2a9fff4",
+      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "source": "clinical_figure_sources.json"
+    },
+    {
+      "name": "Figure3",
+      "png_sha256": "4446d8136c53706cb964d8e3e3682ca1b07698e2f38963a986c6839a65b551d2",
+      "pixels": [
+        3540,
+        1950
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "pdf_sha256": "e83043230ec184836fcbdfb46f9b6f66bf0a5ae883ba091451f79720d83d9eab",
+      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
       "source": "clinical_figure_sources.json"
     },
     {
@@ -48,10 +63,9 @@
         299.9994
       ],
       "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
-      "visual_review": "PASS",
-      "source": "Preserved descriptive figure from analytical baseline; only aggregate tissue summaries redistributed."
+      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "source": "Preserved descriptive aggregate tissue figure; no inferential P values."
     }
   ],
-  "rebuilt_utc": "2026-09-11T03:42:34.982765+00:00",
-  "rebuild_note": "Figures 1-2 rebuilt after remote review: italic P (journal convention), CONSORT exclusion counts (1,918 without a valid instrument; 310 not estimable in BBJ), the selected-genes note boxed instead of floating, and scientific-notation P values drawn as mathtext because Liberation Serif (the Times substitute on Linux) has no U+207B. Rendered here with Liberation Serif; rebuild on a machine with Times New Roman for the original face. No plotted value changed. Visual page QA predates this rebuild."
+  "rebuild_note": "Three main figures rebuilt from the preserved aggregate results: complete gene-level screen, matched association/posterior evidence, and candidate matrix with prior sensitivity. No analytical estimate altered."
 }

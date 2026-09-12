@@ -18,7 +18,7 @@ Two layers run here, and both matter:
      with its full-precision source and checks the Word structure. It is run at
      the end of this file so one command covers both layers.
 
-Structure targets follow the 11 September 2026 clinical revision: two main
+Structure targets follow the 12 September 2026 expanded revision: three main
 figures plus Figure S1, three main tables, Supplementary Tables S1-S4.
 
 Checks against the master MANUSCRIPT_TED_TRAP_v5_MASTER.md:
@@ -100,7 +100,7 @@ for sec in ["## Abstract","## Methods","## Results","## Discussion","## Declarat
     ok(sec in t, f"section present: {sec}")
 for d in ["Funding","Conflict of interest","Ethics approval","Informed consent","Data availability","Author contributions"]:
     ok(f"**{d}.**" in t, f"declaration present: {d}")
-for fig in ["Figure 1.","Figure 2.","Figure S1."]:
+for fig in ["Figure 1.","Figure 2.","Figure 3.","Figure S1."]:
     ok(f"**{fig}" in t, f"figure legend present: {fig}")
 ok(all(f"**Table {i}." in t for i in (1,2,3)), "main Tables 1-3 present")
 ok(all(f"Table S{i}" in t for i in range(1,5)), "Supplementary Tables S1-S4 all referenced")

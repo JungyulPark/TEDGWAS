@@ -82,7 +82,7 @@ fs=json.loads((P/'clinical_figure_sources.json').read_text(encoding='utf-8'))
 for r in fs['Figure2']:
     m=get(r['gene'],r['outcome']);check(np.isclose(r['pvalue'],m.pvalue,rtol=1e-12,atol=0),'Figure2 source P');check(np.isclose(r['or'],np.exp(m.beta)),'Figure2 source OR');agree(r['displayed_p'],m.pvalue,'Figure2 display P')
 check(not re.search(r'\b(?:Table|Tables) S(?:[5-9]|1[0-2])\b',text),'No old supplementary table references')
-check('Figure 3.' not in text and 'Figure S2.' not in text,'No removed figure references')
+check('Figure 4.' not in text and 'Figure S2.' not in text,'No removed figure references')
 check('{{' not in text and 'TODO' not in text,'No unresolved generation placeholders')
 check(not any(q in text for q in ['AI-assisted','artificial intelligence','language model','Codex','OpenAI','Claude','ChatGPT']),'Remote author decision: no manuscript AI-tool declaration')
 check(not any('prespecified' in line and 'outcome hierarchy' not in line for line in text.splitlines()),'No unregistered threshold described as prespecified')
@@ -124,6 +124,17 @@ for gene,outcome,shown in [('TSHR','BBJ_Graves','1.39'),('IGF1R','BBJ_Graves','0
     limit=(NormalDist().inv_cdf(1-a/2)+NormalDist().inv_cdf(.8))*get(gene,outcome).se
     agree(shown,limit,'Gene-specific 80% detection limit '+gene+'/'+outcome)
 check('BBJ (α = 0.05/2,544)' in text and 'respectively (α = 0.05)' in text,'Outcome-specific detection thresholds disclosed')
+# Expanded Results: quantitative candidate comparisons and complete screen counts.
+bbj=mr[mr.outcome=='BBJ_Graves'];hits=bbj[bbj.pvalue<.05/2544]
+check(sum(hits.beta<0)==7 and sum(hits.beta>0)==6,'Seven lower-odds and six higher-odds discovery genes')
+for g,o,shown in [('TNFSF14','BBJ_Graves','0.994'),('IFNGR1','BBJ_Graves','0.989'),('TNFSF14','FinnGen_GO','0.017'),('IFNGR1','FinnGen_GO','0.020')]:
+    r=co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,1e-5,atol=1e-12)].iloc[0]
+    agree(shown,r['PP.H4'],'Expanded candidate narrative '+g+'/'+o)
+    check(shown in text,'Expanded candidate probability present')
+disc=text.split('## Discussion',1)[1].split('## Declarations',1)[0]
+lim=disc.split('### Limitations',1)[1].split('### Conclusions',1)[0]
+check(len([p for p in lim.strip().split('\n\n') if p.strip()])==2,'Two complete limitation paragraphs')
+check(len([p for p in disc.split('### Limitations')[0].strip().split('\n\n') if p.strip()])==7,'Seven interpretation paragraphs before limitations')
 counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'));check(counts['abstract_words']<=250,'Abstract within working 250-word ceiling');check(counts['main_words_including_headings']<=5000,'Main within working 5000-word ceiling')
 check('modest inherited contribution' not in text,'No unsupported restriction on inherited effect size')
 for number in range(1,4):

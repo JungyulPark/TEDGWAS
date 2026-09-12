@@ -19,6 +19,9 @@ check(sha(master)==manifest['manuscript_sha256'],'Master SHA256')
 check(hashlib.md5(master.read_bytes()).hexdigest()==manifest['manuscript_md5'],'Master MD5')
 check(manifest['numeric_audit']==read('integrity_audit.json'),'Current numerical audit summary')
 check(manifest['numeric_audit']['status']=='PASS','Numerical audit passed')
+figure_audit=read('figure_numeric_audit.json')
+check(manifest['figure_numeric_audit']==figure_audit,'Current figure audit summary')
+check(figure_audit['status']=='PASS','Figure numerical audit passed')
 for name,rec in manifest['files'].items():
     p=O/name
     check(p.exists() and sha(p)==rec['sha256'] and p.stat().st_size==rec['bytes'],'Manifest file: '+name)
@@ -28,10 +31,20 @@ check(qa['total_pages']==sum(r['page_count'] for r in qa['documents']),'Visual p
 for rec in qa['documents']:
     check(sha(O/rec['document'])==rec['sha256'],'Reviewed DOCX identity: '+rec['document'])
     check(rec['all_pages_visually_reviewed'] and rec['page_count']==len(rec['page_images']),'All pages recorded: '+rec['document'])
+figures=read('figure_verification.json')
+check(figures['status']=='PASS','Figure visual review status')
+check(figures['source_manifest_sha256']==sha(P/'clinical_figure_sources.json'),'Reviewed figure source identity')
+check(figures['main_figures']==3 and figures['supplementary_figures']==1,'Complete figure set')
+check({r['name'] for r in figures['figures']}=={'Figure1','Figure2','Figure3','FigureS1'},'Exact reviewed figure names')
+for rec in figures['figures']:
+    for ext in ['png','pdf']:
+        check(sha(O/'figures'/(rec['name']+'.'+ext))==rec[ext+'_sha256'],'Reviewed figure identity: '+rec['name']+'.'+ext)
+    check(min(rec['dpi'])>=299,'Figure resolution: '+rec['name'])
+    check(rec['visual_review'].startswith('PASS'),'Figure reviewed: '+rec['name'])
 wc=runpy.run_path(str(master.parent/'scripts/26_wordcount_main_text.py'))
 sections=wc['split_sections'](master.read_text(encoding='utf-8'))
 counts=read('word_counts.json')
 check(counts['abstract_words']==wc['count_words'](sections['Abstract']),'Current abstract count')
 check(counts['main_words_excluding_headings']==sum(wc['count_words'](sections[k]) for k in wc['MAIN']),'Current main count')
-print(json.dumps({'status':'FAIL' if errors else 'PASS','manifest_files':len(manifest['files']),'reviewed_documents':len(qa['documents']),'reviewed_pages':qa['total_pages'],'errors':errors},indent=2))
+print(json.dumps({'status':'FAIL' if errors else 'PASS','manifest_files':len(manifest['files']),'reviewed_documents':len(qa['documents']),'reviewed_pages':qa['total_pages'],'reviewed_figures':len(figures['figures']),'errors':errors},indent=2))
 raise SystemExit(bool(errors))

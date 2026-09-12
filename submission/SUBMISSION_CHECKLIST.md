@@ -7,7 +7,9 @@
 - [x] 원고 해석·노출 단위·검출한계 설명 수정 및 27개 참고문헌 순서 정리.
 - [x] 요청한 eQTLGen 빈도 민감도 결과 반영; 원본 분석 결과 유지.
 - [x] 본문·보충자료·커버레터·STROBE MR Word 파일 재빌드 및 조판 확인.
-- [x] Tables 1–3 개별 Word 파일, Figures 1–2/S1 PDF·PNG, Supplementary Data 1–4 준비.
+- [x] Tables 1–3 개별 Word 파일, Figures 1–3/S1 PDF·PNG, Supplementary Data 1–4 준비.
+- [x] Results·Discussion 보강; Discussion 해석 7문단 / Limitations 2문단 / 결론 1문단.
+- [x] 전체 2,234개 유전자 그림 및 후보·민감도 그림 원본 대조.
 - [x] 최신 수치·인용·문서·파일 해시 감사 및 검증 기록 갱신.
 
 ## 투고 전 저자 확인
