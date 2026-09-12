@@ -1,11 +1,11 @@
 # Cover letter
 
-11 September 2026
+12 September 2026
 
-The Editors  
+The Editor-in-Chief  
 *Endocrine Connections*
 
-Dear Editors,
+Dear Editor-in-Chief,
 
 Please consider “Genetic evidence for TSHR and IGF1R in Graves disease and thyroid eye disease” as an original research article.
 
@@ -26,3 +26,5 @@ Corresponding author, on behalf of Jungyul Park, Min-Seon Kim, Kyung-Hwa Shin an
 Department of Ophthalmology, Seoul St. Mary's Hospital  
 College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
 E-mail: yswoph@catholic.ac.kr
+
+Author institutions: Jungyul Park and Suk-Woo Yang — Department of Ophthalmology, Seoul St. Mary’s Hospital, College of Medicine, The Catholic University of Korea, Seoul; Min-Seon Kim — Department of Ophthalmology, College of Medicine, The Catholic University of Korea, Seoul; Kyung-Hwa Shin — Department of Laboratory Medicine, Pusan National University Hospital, Busan. All institutions are in the Republic of Korea.

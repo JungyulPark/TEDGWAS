@@ -2,9 +2,9 @@
 
 Druggable-gene-wide Mendelian randomization and colocalization comparing genetically proxied TSHR and IGF1R expression across Graves disease, hyperthyroidism and a TED-enriched outcome.
 
-**Current manuscript: [11 September 2026 final author-review candidate](submission/candidate_20260911_review/README.md).** Prepared for Endocrine Connections; final author information, declarations and journal checks remain pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
+**Current manuscript: [12 September 2026 final author-review candidate](submission/candidate_20260911_review/README.md).** Prepared for Endocrine Connections; final author information, declarations and journal checks remain pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
 
-The clinical revision contains 2,319 main-text words, 217 abstract words, three main tables, two main figures, four supplementary tables and one supplementary figure. ORs, 95% CIs and P values lead the presentation. All 32 Word pages were visually reviewed.
+The clinical revision contains 2,539 main-text words, 227 abstract words, 27 references, three main tables, two main figures, four supplementary tables and one supplementary figure. ORs, 95% CIs and P values lead the presentation. All 36 Word pages were visually reviewed, including three separately supplied tables. The content audit passes 1,113 checks covering 324 displayed numerical values; the release audit also verifies current file identities and review records.
 
 ## Current evidence
 

@@ -113,14 +113,7 @@
   },
   {
     "number": 17,
-    "reference": "17. Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM, et al. Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. Nat Genet. 2016;48:481-487. doi:10.1038/ng.3538.",
-    "doi": "10.1038/ng.3538",
-    "id": "27019110",
-    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Integration+of+summary+data+from+GWAS+and+eQTL+studies+predicts+complex+trait+gene+targets%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
-  },
-  {
-    "number": 18,
-    "reference": "18. Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7. doi:10.1186/s13742-015-0047-8.",
+    "reference": "17. Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-generation PLINK: rising to the challenge of larger and richer datasets. Gigascience. 2015;4:7. doi:10.1186/s13742-015-0047-8.",
     "doi": "10.1186/s13742-015-0047-8",
     "id": "25722852",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Second-generation+PLINK%3A+rising+to+the+challenge+of+larger+and+richer+datasets%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20",
@@ -129,57 +122,72 @@
     "correction": "Removed duplicate Vattikuti S; checked the six-author list."
   },
   {
+    "doi": "10.1038/nature15393",
+    "id": "26432245",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/26432245/",
+    "verified_on": "2026-09-12",
+    "number": 18,
+    "reference": "18. 1000 Genomes Project Consortium, Auton A, Brooks LD, Durbin RM, Garrison EP, Kang HM, Korbel JO, Marchini JL, McCarthy S, McVean GA, et al. A global reference for human genetic variation. Nature. 2015;526:68-74. doi:10.1038/nature15393."
+  },
+  {
     "number": 19,
-    "reference": "19. Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R, et al. The MR-Base platform supports systematic causal inference across the human phenome. Elife. 2018;7:e34408. doi:10.7554/elife.34408.",
+    "reference": "19. Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, Goddard ME, Wray NR, Visscher PM, et al. Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets. Nat Genet. 2016;48:481-487. doi:10.1038/ng.3538.",
+    "doi": "10.1038/ng.3538",
+    "id": "27019110",
+    "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Integration+of+summary+data+from+GWAS+and+eQTL+studies+predicts+complex+trait+gene+targets%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 20,
+    "reference": "20. Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C, Burgess S, Bowden J, Langdon R, et al. The MR-Base platform supports systematic causal inference across the human phenome. Elife. 2018;7:e34408. doi:10.7554/elife.34408.",
     "doi": "10.7554/elife.34408",
     "id": "29846171",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+MR-Base+platform+supports+systematic+causal+inference+across+the+human+phenome%22+AND+FIRST_PDATE%3A2018+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 20,
-    "reference": "20. Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int J Epidemiol. 2015;44:512-525. doi:10.1093/ije/dyv080.",
+    "number": 21,
+    "reference": "21. Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invalid instruments: effect estimation and bias detection through Egger regression. Int J Epidemiol. 2015;44:512-525. doi:10.1093/ije/dyv080.",
     "doi": "10.1093/ije/dyv080",
     "id": "26050253",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Mendelian+randomization+with+invalid+instruments%3A+effect+estimation+and+bias+detection+through+Egger+regression%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 21,
-    "reference": "21. Bowden J, Davey Smith G, Haycock PC, Burgess S. Consistent Estimation in Mendelian Randomization with Some Invalid Instruments Using a Weighted Median Estimator. Genet Epidemiol. 2016;40:304-314. doi:10.1002/gepi.21965.",
+    "number": 22,
+    "reference": "22. Bowden J, Davey Smith G, Haycock PC, Burgess S. Consistent Estimation in Mendelian Randomization with Some Invalid Instruments Using a Weighted Median Estimator. Genet Epidemiol. 2016;40:304-314. doi:10.1002/gepi.21965.",
     "doi": "10.1002/gepi.21965",
     "id": "27061298",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Consistent+estimation+in+Mendelian+randomization+with+some+invalid+instruments+using+a+weighted+median+estimator%22+AND+FIRST_PDATE%3A2016+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 22,
-    "reference": "22. Hemani G, Tilling K, Davey Smith G. Orienting the causal relationship between imprecisely measured traits using GWAS summary data. PLoS Genet. 2017;13:e1007081. doi:10.1371/journal.pgen.1007081.",
+    "number": 23,
+    "reference": "23. Hemani G, Tilling K, Davey Smith G. Orienting the causal relationship between imprecisely measured traits using GWAS summary data. PLoS Genet. 2017;13:e1007081. doi:10.1371/journal.pgen.1007081.",
     "doi": "10.1371/journal.pgen.1007081",
     "id": "29149188",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Orienting+the+causal+relationship+between+imprecisely+measured+traits+using+GWAS+summary+data%22+AND+FIRST_PDATE%3A2017+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 23,
-    "reference": "23. Wallace C. Eliciting priors and relaxing the single causal variant assumption in colocalisation analyses. PLoS Genet. 2020;16:e1008720. doi:10.1371/journal.pgen.1008720.",
+    "number": 24,
+    "reference": "24. Wallace C. Eliciting priors and relaxing the single causal variant assumption in colocalisation analyses. PLoS Genet. 2020;16:e1008720. doi:10.1371/journal.pgen.1008720.",
     "doi": "10.1371/journal.pgen.1008720",
     "id": "32310995",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Eliciting+priors+and+relaxing+the+single+causal+variant+assumption+in+colocalisation+analyses%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 24,
-    "reference": "24. Ueda H, Howson JM, Esposito L, Heward J, Snook H, Chamberlain G, Rainbow DB, Hunter KM, Smith AN, Di Genova G, et al. Association of the T-cell regulatory gene CTLA4 with susceptibility to autoimmune disease. Nature. 2003;423:506-511. doi:10.1038/nature01621.",
+    "number": 25,
+    "reference": "25. Ueda H, Howson JM, Esposito L, Heward J, Snook H, Chamberlain G, Rainbow DB, Hunter KM, Smith AN, Di Genova G, et al. Association of the T-cell regulatory gene CTLA4 with susceptibility to autoimmune disease. Nature. 2003;423:506-511. doi:10.1038/nature01621.",
     "doi": "10.1038/nature01621",
     "id": "12724780",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22Association+of+the+T-cell+regulatory+gene+CTLA4+with+susceptibility+to+autoimmune+disease%22+AND+FIRST_PDATE%3A2003+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 25,
-    "reference": "25. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318-1330. doi:10.1126/science.aaz1776.",
+    "number": 26,
+    "reference": "26. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318-1330. doi:10.1126/science.aaz1776.",
     "doi": "10.1126/science.aaz1776",
     "id": "32913098",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+GTEx+Consortium+atlas+of+genetic+regulatory+effects+across+human+tissues%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 26,
-    "reference": "26. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.",
+    "number": 27,
+    "reference": "27. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.",
     "doi": "10.1038/ng.3314",
     "id": "26121088",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+support+of+human+genetic+evidence+for+approved+drug+indications%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"

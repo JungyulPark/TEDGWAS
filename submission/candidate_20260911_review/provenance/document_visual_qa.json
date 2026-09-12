@@ -1,14 +1,14 @@
 {
   "status": "PASS",
-  "review_date": "2026-09-11",
-  "renderer": "LibreOffice plus Poppler via documents skill render_docx.py; 120 dpi",
-  "total_pages": 32,
-  "review_scope": "Every page inspected for clipping, overlap, page breaks, tables, legends, symbols and footers. Eight unchanged supplement pages were reused only after byte-identical PNG hashes were confirmed. Corrected S1 header and checklist alignment were re-inspected. After remote author changes were integrated, the revised main manuscript pages 12–20 and the cover letter were re-inspected; main pages 1–11 were byte-identical to inspected pages. All final files remain 32 pages in total.",
+  "review_date": "2026-09-12",
+  "renderer": "documents skill render_docx.py; workspace LibreOffice 26.2.6 and Poppler; 120 dpi",
+  "total_pages": 36,
+  "review_scope": "All 33 pages of the four core documents and all three separate table pages inspected. After the final wording/formatting update, main pages 10 and 20 were reinspected; the other 19 main pages and all nine supplementary pages were byte-identical to the pages inspected during this review. The final cover letter and three separate tables were independently inspected.",
   "documents": [
     {
       "document": "MANUSCRIPT_Submission.docx",
-      "sha256": "033b403f7e62af447f70abe502ffb1e07346f83e457b2a75d7994a2d78720202",
-      "page_count": 20,
+      "sha256": "ff41e85cc54b17baa9ada917880daa880408fe51bb284a68e6551f89143f1ac6",
+      "page_count": 21,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
@@ -17,96 +17,100 @@
         },
         {
           "page": 2,
-          "sha256": "cd6ae46d05ba3fba5c8ad09e60e118402af306ee56259044e36eaaca7853eea7"
+          "sha256": "03a61a693741e848d42fa965d1526b298fb3347cae35e4a7e8ba731dc0b290e8"
         },
         {
           "page": 3,
-          "sha256": "8552d281b48e5301d6c646ef62e17cb37c317709b2e625da10a695d13755b492"
+          "sha256": "f04483dad788f2e0479773b427d9792a4cba906cb10226e58105d08a043ce365"
         },
         {
           "page": 4,
-          "sha256": "cfde6f5ba1d4c293c060742a5c62f8e70348992d17f23273b37d9f2e220ba6cd"
+          "sha256": "1cbce6f977b4e69d9141794d15515df174466eea199aad4b5772ca52494e3164"
         },
         {
           "page": 5,
-          "sha256": "1199d785304723efaccb5ba9603177be5ea28e727cd084ddc65b7b05960a5560"
+          "sha256": "6319d2e5ad663b4fdd8372927bdfcefdf2b3aa3227c98615332eed8829f9753e"
         },
         {
           "page": 6,
-          "sha256": "886c4646e7431dfe14b29a919c52b8f7d2abcab297f5f4535b662e81e3e7dc7a"
+          "sha256": "7cf02a3a8acf56fe0dd66a0a1fd47fbce383628e3697581d61834fbc578a146e"
         },
         {
           "page": 7,
-          "sha256": "409b2c8b3c015d4225c5adab0b9dfdfdfc152c2f2de4946138465ff1f1138e31"
+          "sha256": "e5b489d9b24d6fde1b4310a18b2fea5ed8c57bf4cba68e8a90941e3b2de3812e"
         },
         {
           "page": 8,
-          "sha256": "a6615a72a2a0c1f834fe384f678585becdb47ed1420b32f5d65e757502372019"
+          "sha256": "c67a3e69b1a54780140df7d8ccae5aec1b7d4c69485d82aa4c4bb3f4581688d0"
         },
         {
           "page": 9,
-          "sha256": "1ad0fb9abacaf825bb876178668fac93a076cc01922553350b55542b8c5f1306"
+          "sha256": "0f9b9dbf771510366a6d5929999bc2ab9933e09d72dfc5605f05fb3b7625e842"
         },
         {
           "page": 10,
-          "sha256": "9da21051e07fb371f2075cbf388b37c30f10877bca30b2b0fc0082be63740c49"
+          "sha256": "e14d69c7ff45bc9a872a76247cece1d5483ec7b946837f580fc8c13cea48359b"
         },
         {
           "page": 11,
-          "sha256": "1dc8ed3a3784f4a984a0744036ea43f28cc687afa36d69efc16cc7d05ef16f84"
+          "sha256": "8c9cf7e6ab3f11c5215464f2c5051d1b8cccf25042e05912821e88fbf06f3e0a"
         },
         {
           "page": 12,
-          "sha256": "82396abff6e70595bfd800d0679a9a0168eaf40ee504fe0b2dabac48b247c322"
+          "sha256": "526038f18b4939c8ee8b3beb3d622fa1185f75bbe17dd1f0b2b005ee4261a99c"
         },
         {
           "page": 13,
-          "sha256": "c8dceff05cb0fff228643772fc1b532d1f72a564bc2cb145a33439cf5d9a5076"
+          "sha256": "682ae30dcd8e05fd568e2d0c8b2db12e3329651d0d1ced97bc145a80941e735c"
         },
         {
           "page": 14,
-          "sha256": "4b9e14f5e76b28eb36ed23df0c69a51dae271d2c689f864d409a2ca9404d487e"
+          "sha256": "04bfd54d35f9833c20e63070ff02d9f715e8fdaf45980151df9d2462c5cdd11a"
         },
         {
           "page": 15,
-          "sha256": "e5377c1d625c4df1a1705c4d23200002cec5d8448ed2627d7d63da6e75b256e3"
+          "sha256": "bb499c33922ceade7609eb4c6cb0419d1817ce051cae4003281a47b85dd55281"
         },
         {
           "page": 16,
-          "sha256": "9199a61f55165de943e4b0ead41e210692532a9df82199b01cbc80154b22337a"
+          "sha256": "21d8b45ea04d3b51782f8c5625a94f57a320e06bf8d484ce1414cea7cc5be341"
         },
         {
           "page": 17,
-          "sha256": "1df97dc8885b84151b08d032dc406c16733d58cc440a1ea8940e1c2985ce0915"
+          "sha256": "0efe00484023b2b62e31d41e800a6ea63bdb04482822dea279f9d82db0ae84a6"
         },
         {
           "page": 18,
-          "sha256": "1d6237dcf595d133a5d18d0061551abd5759f0ddf72fcf5bc228b9bd64a5075d"
+          "sha256": "9e596a926f51fb4817e5ce69f953d1854b9f24c2921370d2890e5913e0e705db"
         },
         {
           "page": 19,
-          "sha256": "2602e0b8b791a2a7ebf1b39cc389e8cec00a185fa98bcacf39f10124968effd6"
+          "sha256": "d84172e0f7e51bf7674147ec41c810f4dae7af02efd9ea57a9fa665f65149406"
         },
         {
           "page": 20,
-          "sha256": "60c2054238062922733b2cd6d878ad71b867821b1a345685fad1cfab9af4f069"
+          "sha256": "6075b3a17f7dd83677de4e22069e075e2f320cc478a47fed391c023703fcfd29"
+        },
+        {
+          "page": 21,
+          "sha256": "8b359b59b06bf3b3e866e74893fcf7751d8926b59c84eee9961334391b80bb98"
         }
       ],
-      "render_pdf_sha256": "c1c7d23290d16215412225141d76e71429e796eedea6369e2631bcfb05eb0fec"
+      "render_pdf_sha256": "46bd950ef4f0c7a229d71189a4fc69c3cc04fee31d85869f86c5835b87f0275c"
     },
     {
       "document": "SUPPLEMENTARY_MATERIAL.docx",
-      "sha256": "405d765b7f9a233a2370deef82765a7002f145b84cef475db4be0e553a401784",
+      "sha256": "c8389d833b77e8f02363c139aed63fe45d789a30c2e090f09f03bc9e67aa8622",
       "page_count": 9,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "bbf0c54dbd6875f1a347a28d2767eb2d510836418de6c0132ca188693e2f60ce"
+          "sha256": "4fdd3b64a25cd0b9d16a83027aeb55f85c8eebc52c21ee356e588e8ac583c1bc"
         },
         {
           "page": 2,
-          "sha256": "45e86295f199406f025fbcdf3689d49aed0037973c8f8920c7b50715463e689c"
+          "sha256": "09847d6b13798b96201abdabf32f076cd53c23a8d136f1af9a454aca6cae1ee6"
         },
         {
           "page": 3,
@@ -114,7 +118,7 @@
         },
         {
           "page": 4,
-          "sha256": "4a2a8a6150425b31e24a24175d5cc2451a4d6f153768777ccf65a13f03699469"
+          "sha256": "399f0f32494e930178bd06f24e0259177e9e7c938d3c5af639638ad883094bd3"
         },
         {
           "page": 5,
@@ -122,7 +126,7 @@
         },
         {
           "page": 6,
-          "sha256": "09221fce97187c7ae496758f14aa6196d65ffab5048dc9381b588f28176b7845"
+          "sha256": "43de42bc17ab0ab90f702a83c7d46b5739a2a49ffced79dcf404cc00801ec919"
         },
         {
           "page": 7,
@@ -134,27 +138,27 @@
         },
         {
           "page": 9,
-          "sha256": "9bafd2a105057c2a79c747bd788ae9fa5c1895a248d18c83ed1aafc8fc8cf608"
+          "sha256": "c6ccd61125a1e43f159fe88bcde09945929880ece8d54d53590a3a5d6ac99643"
         }
       ],
-      "render_pdf_sha256": "26dd05484ce71fed94a3019c217296bff1c501389b55afbebba54f052a297c1f"
+      "render_pdf_sha256": "e0b3437b4cd8dc36f5989055dc407d4d226cbb26437fa7cec969e653cad70084"
     },
     {
       "document": "COVER_LETTER_EndocrineConnections.docx",
-      "sha256": "a3ea2c071632ad730993ee37ef6ffeae73f28364c8a4c28f54760e725cce346d",
+      "sha256": "594a27985f1b4a69c372c34f9a9a1048ba0a74002d68bf582da25fdd63bb06a3",
       "page_count": 1,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "6ac3348973c1f7d0c4a8d5ae9d40a59f057f7c7601139e330a32039a9ddf6791"
+          "sha256": "8620f8252f6006646f9bb8be3afe39b15ffb6d4b98408240775871419947c0f0"
         }
       ],
-      "render_pdf_sha256": "da17b3ce56ac71837d22420cda3485f912ec18f2f2b7a88e84cec4451a7d0f21"
+      "render_pdf_sha256": "202c3632321d6270d03c87ec99b5c5fd77d4068aecdc476acf33b85d2b5e3168"
     },
     {
       "document": "STROBE_MR_CHECKLIST.docx",
-      "sha256": "1408334ee0d2c2b09888eff21528eccce19d902b509d6bb1f620df7439d8bb18",
+      "sha256": "3b70b629b69606b65436191f004610f95e3fe78c18960e2b743c03eb3b2af7d1",
       "page_count": 2,
       "all_pages_visually_reviewed": true,
       "page_images": [
@@ -167,7 +171,46 @@
           "sha256": "fa30f35a1bdc0e28826792d52004fc5fd74c3f4e90bb7cb1de9dd9a2169cf5de"
         }
       ],
-      "render_pdf_sha256": "e424bfc5010de64b15fa2f76d5cf4712406d2e47f83d0a0028806a45ef30b1e1"
+      "render_pdf_sha256": "16e0f4728d7e92908d9e16f8be4259b0cb8e327f2954d4e9235197fa622202ad"
+    },
+    {
+      "document": "tables/Table1.docx",
+      "sha256": "dbebe14f947203f11901455b7c0c5def82151337856addab35538a79b4c50b79",
+      "page_count": 1,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "7f05ddf710ed95fbe636a7698f4ad21ecc3bec7ab0352359945f8c91336d907e"
+        }
+      ],
+      "render_pdf_sha256": "9c2cfb386a3a2eda2eeb2f8302d2c3564f037190a24307ab945c4759d2601742"
+    },
+    {
+      "document": "tables/Table2.docx",
+      "sha256": "82be22afcb1f1beae11eb1ac861e31a840b2c4c7b88bff278562ca5904a93461",
+      "page_count": 1,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "0a94cf9e4fdf06cfb7233249357cd7acca6edb0dbcae2f6d5a530bef161e222e"
+        }
+      ],
+      "render_pdf_sha256": "51e77b57eba0ea48e3b6b143f761e0cbf94f88bd4d24e4d788476486cff74fdd"
+    },
+    {
+      "document": "tables/Table3.docx",
+      "sha256": "7dffb511709bcc2a932ff7055d102f15955420382c2aaa5957651981ba99205e",
+      "page_count": 1,
+      "all_pages_visually_reviewed": true,
+      "page_images": [
+        {
+          "page": 1,
+          "sha256": "53583bf0140d2badf5414aec776b7b03150192b315b2a684fb7126fb8a2d1586"
+        }
+      ],
+      "render_pdf_sha256": "0ddaa5fba92ed087a634f455d07e0c4216d502f54bb1b1b8f3268ebb369ef063"
     }
   ]
 }

@@ -91,7 +91,45 @@ check('All authors read and approved the final manuscript.' not in text,'No clai
 plain=text.replace('*','')
 check('not a P value' in plain and 'not treatment effects' in plain,'Probability and treatment-effect interpretation retained')
 check('P* = 0.0056' in text,'TNFSF14 UKB nominal result retained')
+# Independently check current text rather than trusting historical metadata.
+import runpy
+from statistics import NormalDist
+wc=runpy.run_path(str(master.parent/'scripts/26_wordcount_main_text.py'))
+sections=wc['split_sections'](text)
+actual_counts={'abstract_words':wc['count_words'](sections['Abstract']),
+ 'main_words_excluding_headings':sum(wc['count_words'](sections[s]) for s in wc['MAIN']),
+ 'main_words_including_headings':sum(wc['count_words'](sections[s],headings=True) for s in wc['MAIN'])}
+saved_counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'))
+for key,value in actual_counts.items():check(saved_counts.get(key)==value,'Current word-count record: '+key)
+before,rest=text.split('## References',1);refblock,after=rest.split('## Figure Legends',1)
+references={int(n):s.strip() for n,s in re.findall(r'(?m)^(\d+)\. (.+)$',refblock)}
+order=[]
+for match in re.finditer(r'\[([\d,–\- ]+)\]',before+'\n'+after):
+    for part in match.group(1).split(','):
+        ends=re.split('[–-]',part.strip())
+        for n in range(int(ends[0]),int(ends[-1])+1):
+            check(n in references,'Citation in reference range')
+            if n not in order:order.append(n)
+check(order==list(range(1,len(references)+1)),'References follow first appearance throughout manuscript')
+verified=json.loads((P/'references_verified.json').read_text(encoding='utf-8'))
+check(len(verified)==len(references),'Reference verification count current')
+for r in verified:check(r['reference']==str(r['number'])+'. '+references.get(r['number'],''),'Reference verification text matches '+str(r['number']))
+main_doc=Document(O/'MANUSCRIPT_Submission.docx')
+doc_ref_text='\n'.join(p.text for p in main_doc.paragraphs)
+for line in references.values():check(clean(line).replace('’', "'") in clean(doc_ref_text).replace('’', "'"),'DOCX reference matches current master')
+check('does not standardize the genetic predictor itself' in text,'Standardized expression scale distinguished from genetic predictor')
+check('comparing them with observed effects cannot distinguish an absent effect from limited power' in text,'No inference from observed effect versus detection limit')
+for gene,outcome,shown in [('TSHR','BBJ_Graves','1.39'),('IGF1R','BBJ_Graves','0.99'),('IGF1R','UKB_hyperthyroid','0.33'),('IGF1R','FinnGen_GO','0.72')]:
+    a=.05/2544 if outcome=='BBJ_Graves' else .05
+    limit=(NormalDist().inv_cdf(1-a/2)+NormalDist().inv_cdf(.8))*get(gene,outcome).se
+    agree(shown,limit,'Gene-specific 80% detection limit '+gene+'/'+outcome)
+check('BBJ (α = 0.05/2,544)' in text and 'respectively (α = 0.05)' in text,'Outcome-specific detection thresholds disclosed')
 counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'));check(counts['abstract_words']<=250,'Abstract within working 250-word ceiling');check(counts['main_words_including_headings']<=5000,'Main within working 5000-word ceiling')
+check('modest inherited contribution' not in text,'No unsupported restriction on inherited effect size')
+for number in range(1,4):
+    upload=Document(O/'tables'/f'Table{number}.docx')
+    check(len(upload.tables)==1,'Separate Table '+str(number)+' exists')
+    check([[c.text for c in r.cells] for r in upload.tables[0].rows]==[[c.text for c in r.cells] for r in main_doc.tables[number-1].rows],'Separate Table '+str(number)+' matches manuscript')
 checklist=Document(O/'STROBE_MR_CHECKLIST.docx');check(len(checklist.tables)==1,'Separate reporting checklist exists')
 result={'status':'PASS' if not errors else 'FAIL','numeric_cells_compared':numeric,'checks':len(checks),'errors':errors,'scope':'Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review.'}
 (P/'integrity_audit.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print(json.dumps(result,indent=2));sys.exit(bool(errors))

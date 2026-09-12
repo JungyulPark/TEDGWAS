@@ -101,7 +101,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
                     for p in c.paragraphs:
                         p.style='Normal';p.paragraph_format.line_spacing=1.05;p.paragraph_format.space_before=Pt(0);p.paragraph_format.space_after=Pt(0);p.paragraph_format.keep_with_next=False
                         p.alignment=WD_ALIGN_PARAGRAPH.LEFT if ischeck or ci<2 or (cols==5 and ci==4) else WD_ALIGN_PARAGRAPH.CENTER
-                        for r in p.runs:r.font.name='Times New Roman';r.font.size=Pt(9.5 if cols==8 or ischeck else 10);r.bold=True if ri==0 or ('P' in heads[ci] and r.text!='NA') else r.bold
+                        for r in p.runs:r.font.name='Times New Roman';r.font.size=Pt(9.5 if cols==8 or ischeck else 10);r.bold=True if ri==0 or (re.search(r'\bP\b', heads[ci]) and 'PP.H' not in heads[ci] and r.text!='NA') else r.bold
         if issup:
             for p in list(d.paragraphs):
                 if p.text.startswith('Figure S1.'):
@@ -125,3 +125,18 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             for el in els:sec._sectPr.remove(el)
             for el in sorted(els,key=lambda x:order.index(x.tag.split('}')[-1]) if x.tag.split('}')[-1] in order else 99):sec._sectPr.append(el)
         d.save(out);print(name,'tables',len(d.tables))
+
+# Separate editable tables for the publisher's upload workflow.
+if 'MANUSCRIPT_Submission' in texts:
+    (O/'tables').mkdir(exist_ok=True)
+    for number in range(1,4):
+        table_doc=Document(O/'MANUSCRIPT_Submission.docx')
+        target=table_doc.tables[number-1]._tbl
+        keep=[target.getprevious(),target,target.getnext(),table_doc._element.body.sectPr]
+        for el in list(table_doc._element.body):
+            if el not in keep:table_doc._element.body.remove(el)
+        setsec(table_doc.sections[-1],True,False)
+        for p in table_doc.paragraphs:p.paragraph_format.page_break_before=False
+        table_doc.core_properties.title=f'Table {number}'
+        table_doc.core_properties.identifier=f'Table{number}'
+        table_doc.save(O/'tables'/f'Table{number}.docx')

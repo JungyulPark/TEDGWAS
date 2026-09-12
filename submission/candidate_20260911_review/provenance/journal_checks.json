@@ -1,13 +1,13 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-12",
   "target_assumed": "Endocrine Connections",
   "publisher_general_guidance": {
     "url": "https://www.bioscientifica.com/publishing/authors/author-resource-centre/how-to-publish/prepare-for-submission/",
-    "checked": "Double spacing, continuous line numbers, ordered Vancouver references, first ten authors then et al."
+    "checked": "Double spacing, continuous line numbers, first-appearance Vancouver references; separate Word tables and PDF figures; one-page cover letter addressed to Editor-in-Chief with all authors and institutions."
   },
   "journal_specific_guidance": {
     "url": "https://ec.bioscientifica.com/page/author",
-    "status": "HTTP 403; all current journal-specific requirements not independently verified"
+    "status": "Live retrieval failed again on 2026-09-12; journal-specific portal requirements remain unverified."
   },
   "working_word_limits_from_project_not_currently_verified": {
     "main": 5000,

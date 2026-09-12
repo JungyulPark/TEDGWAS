@@ -1,3 +1,5 @@
+> **2026-09-12 release:** Interpretation, reference order and all release records updated; 27 references, 1,113 content checks / 324 displayed values, 36 visually reviewed pages including separate Tables 1–3. Run both content and release audits. Final author details/approval and portal requirements remain pending.
+
 > **2026-09-11 reviewed revision:** The current master and `submission/candidate_20260911_review/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the current revision report before editing. Outdated SuSiE/tissue P-value claims must not be restored; IGF1R UKB remains split H2/H4. The requested eQTLGen frequency sensitivity is completed (Tables S3–S4; Supplementary Data 2–4). This is a final author-review candidate, with author details/declarations and live journal checks pending. The non-negotiable data-management rules below remain in force. The 2026-09-05 author decision to omit the manuscript AI-tool declaration is retained; journal disclosure requirements remain an explicit final-review item. "Prespecified" must not describe unregistered thresholds. The old root package remains archived in `archives/submission_pre20260905/`.
 
 # CLAUDE.md — TED-TRAP project rules
@@ -123,11 +125,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `b5c855fa1b63c2929ced2870aeee4305`,
-  normalised `baad73dbba578ac07f26675344f47194` (placeholders = 0). **27 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `b042655c744e70d942ed5e077db0d527`,
+  normalised `9af230c35858f0adc469bb3721856e98` (placeholders = 0). **27 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **2,542**
-  (Introduction–Discussion; 2,572 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **2,539**
+  (Introduction–Discussion; 2,569 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **227** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
