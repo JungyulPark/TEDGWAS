@@ -1,6 +1,6 @@
 # STROBE MR reporting checklist
 
-Genetic evidence for TSHR and IGF1R in Graves disease and thyroid eye disease
+TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization
 
 This adapted reporting map identifies where each item is addressed and explicitly records unavailable information. It does not certify that all methodological limitations are resolved.
 
@@ -9,7 +9,7 @@ This adapted reporting map identifies where each item is addressed and explicitl
 | 1 | MR design | Abstract identifies Mendelian randomization; Methods specifies the two-sample design. |
 | 2 | Rationale | Introduction: blood expression, disease susceptibility and therapeutic interpretation. |
 | 3 | Objectives | Introduction final paragraph; Methods defines the hierarchy and biological backbone. No prospective registration identifier is available. |
-| 4a–b | Design, participants and sample size | Methods; Table 1; source reports [12–15]. Recruitment and eligibility details are those of the original studies; available sample sizes determined the analysis. Detection thresholds were calculated from observed MR standard errors, not for prospective recruitment. |
+| 4a–b | Design, participants and sample size | Methods; Table 1; source reports [12, 13, 14, 15]. Recruitment and eligibility details are those of the original studies; available sample sizes determined the analysis. Detection thresholds were calculated from observed MR standard errors, not for prospective recruitment. |
 | 4c–d | Variants and phenotype definitions | Methods and Supplementary Methods describe selection and harmonization; Table 1 gives accessions; Supplementary Data 1 lists instruments. Source studies provide their genotyping and phenotype procedures. |
 | 4e | Ethics and consent | Declarations; in-house IRB approval and written consent. |
 | 5 | Instrument assumptions | Methods states relevance, independence and exclusion restriction; Discussion discusses limits of verification. |
@@ -28,7 +28,7 @@ This adapted reporting map identifies where each item is addressed and explicitl
 | 16a–c | Interpretation and clinical meaning | Discussion: genetic expression effects do not establish a pharmacologic mechanism, treatment direction or intervention effect size. |
 | 17 | Generalizability | Discussion: ancestry and tissue context, broad hyperthyroidism and population controls; inherited expression proxies do not estimate acute or dose-specific treatment effects. |
 | 18 | Funding | Declarations states no specific grant; original data-source funding is reported in the cited source publications. |
-| 19 | Data and code access | Declarations lists source repositories and access restrictions. Supplementary Data 1–4 provide instruments, primary results and frequency-sensitivity MR, coloc and power summaries. Analysis code is available from the corresponding author on request. |
+| 19 | Data and code access | Declarations lists source repositories and access restrictions. Supplementary Data 1–5 provide instruments, primary results and frequency-sensitivity MR, coloc and power summaries. Analysis code is available from the corresponding author on request. |
 | 20 | Competing interests | Declarations. |
 
 Adapted from the STROBE-MR checklist (EQUATOR Network, CC BY 3.0), https://www.strobe-mr.org/download/strobe-mr-checklist/. The checklist is a reporting map, not a claim that all study limitations have been resolved.

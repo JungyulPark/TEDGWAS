@@ -1,0 +1,137 @@
+{
+  "status": "PASS",
+  "TSHR_scale_check": [
+    {
+      "outcome": "BBJ_Graves",
+      "variant_log_or": -0.22102904050103,
+      "variant_or": 0.8016933983741764,
+      "exposure_beta": 0.10545515593020054,
+      "MR_beta": -2.09595290577662,
+      "MR_SE": 0.271220127645136
+    },
+    {
+      "outcome": "UKB_hyperthyroid",
+      "variant_log_or": -0.25691345421214107,
+      "variant_or": 0.773435148423229,
+      "exposure_beta": 0.10545515593020054,
+      "MR_beta": -2.4362341693581,
+      "MR_SE": 0.222999475017391
+    },
+    {
+      "outcome": "FinnGen_GO",
+      "variant_log_or": -0.245868,
+      "variant_or": 0.7820254454715736,
+      "exposure_beta": 0.10545515593020054,
+      "MR_beta": -2.3314933995521,
+      "MR_SE": 0.454022371667541
+    }
+  ],
+  "TSHR_effect_allele": "G",
+  "TSHR_reference_LD": [
+    {
+      "CHR_A": 14,
+      "BP_A": 81432546,
+      "SNP_A": "rs179247",
+      "CHR_B": 14,
+      "BP_B": 81435985,
+      "SNP_B": "rs179252",
+      "R2": 0.957116,
+      "ancestry": "EUR",
+      "reference_n": 503
+    },
+    {
+      "CHR_A": 14,
+      "BP_A": 81432546,
+      "SNP_A": "rs179247",
+      "CHR_B": 14,
+      "BP_B": 81451052,
+      "SNP_B": "rs12101255",
+      "R2": 0.445465,
+      "ancestry": "EUR",
+      "reference_n": 503
+    },
+    {
+      "CHR_A": 14,
+      "BP_A": 81435985,
+      "SNP_A": "rs179252",
+      "CHR_B": 14,
+      "BP_B": 81451052,
+      "SNP_B": "rs12101255",
+      "R2": 0.459227,
+      "ancestry": "EUR",
+      "reference_n": 503
+    },
+    {
+      "CHR_A": 14,
+      "BP_A": 81432546,
+      "SNP_A": "rs179247",
+      "CHR_B": 14,
+      "BP_B": 81435985,
+      "SNP_B": "rs179252",
+      "R2": 0.991625,
+      "ancestry": "EAS",
+      "reference_n": 504
+    },
+    {
+      "CHR_A": 14,
+      "BP_A": 81432546,
+      "SNP_A": "rs179247",
+      "CHR_B": 14,
+      "BP_B": 81451052,
+      "SNP_B": "rs12101255",
+      "R2": 0.847504,
+      "ancestry": "EAS",
+      "reference_n": 504
+    },
+    {
+      "CHR_A": 14,
+      "BP_A": 81435985,
+      "SNP_A": "rs179252",
+      "CHR_B": 14,
+      "BP_B": 81451052,
+      "SNP_B": "rs12101255",
+      "R2": 0.855574,
+      "ancestry": "EAS",
+      "reference_n": 504
+    }
+  ],
+  "FinnGen_H2_dominant_loci": 7,
+  "CTLA4_FinnGen_H4": 0.977951568723346,
+  "IGF1R_regional_model_and_marginal_P": [
+    {
+      "outcome": "BBJ_Graves",
+      "PP.H2": 0.690261542464315,
+      "PP.H3": 0.236481530948026,
+      "PP.H4": 0.0732569265876538,
+      "outcome_min_p": 0.0005723712901957
+    },
+    {
+      "outcome": "UKB_hyperthyroid",
+      "PP.H2": 0.400065547917282,
+      "PP.H3": 0.196047903339427,
+      "PP.H4": 0.403886548743302,
+      "outcome_min_p": 9e-05
+    },
+    {
+      "outcome": "FinnGen_GO",
+      "PP.H2": 0.622636320654659,
+      "PP.H3": 0.345766070215064,
+      "PP.H4": 0.0315976091302701,
+      "outcome_min_p": 0.00043452
+    }
+  ],
+  "input_hashes": {
+    "eqtlgen_9genes.tsv": "3b9094f12f8ae917a7e8662ab815959a7e1f61e533b52002e7cf094f33572d5f",
+    "eur_freq_selected.tsv": "1e2e88400b72274df137bc38f58a0581c1d9a737e97fdef2736ded4d92315a32",
+    "BBJ_selected.tsv": "3a182b03afe017cf7514053f2a860ad5961f37eedaed91ad7d01d8dc341d2646",
+    "UKB_selected.tsv": "81ee7d72c05cea8072164a6a1614b0b1914a9988f95f7508306f40f52b96e721",
+    "FinnGen_selected.tsv": "f79aa7a1f66b3488d0b2499deb72af4fefd8fbfa7a92b4b4d90b4e6bca223596"
+  },
+  "top_snp_definition": "argmax of outcome log-ABF + exposure log-ABF; conditional shared-variant ranking, not necessarily the GWAS lead SNP",
+  "not_completed": [
+    "Multi-signal colocalization for UKB TSHR and BBJ CTLA4",
+    "Formal genetic directionality",
+    "Full Phase 1 contributing-cohort table inspection; participant overlap remains unquantified"
+  ],
+  "interpretation": "The aggregate checks and reference-panel LD do not validate a multi-causal model or establish thymic expression direction."
+}

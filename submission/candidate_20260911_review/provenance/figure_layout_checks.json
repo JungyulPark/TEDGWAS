@@ -1,0 +1,17 @@
+{
+  "Figure1": {
+    "text_items": 61,
+    "all_text_black": true
+  },
+  "Figure2": {
+    "text_items": 62,
+    "all_text_black": true
+  },
+  "Figure3": {
+    "text_items": 71,
+    "all_text_black": true,
+    "cell_labels_with_padding": 27,
+    "strong_support_borders": 6,
+    "border_matches_cell_geometry": true
+  }
+}

@@ -180,16 +180,60 @@
   },
   {
     "number": 26,
-    "reference": "26. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318-1330. doi:10.1126/science.aaz1776.",
+    "reference": "26. Smith TJ, Kahaly GJ, Ezra DG, Fleming JC, Dailey RA, Tang RA, Harris GJ, Antonelli A, Salvi M, Goldberg RA, et al. Teprotumumab for Thyroid-Associated Ophthalmopathy. N Engl J Med. 2017;376:1748-1761. doi:10.1056/nejmoa1614949.",
+    "doi": "10.1056/nejmoa1614949",
+    "id": "28467880",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/28467880/"
+  },
+  {
+    "number": 27,
+    "reference": "27. Douglas RS, Kahaly GJ, Ugradar S, Elflein H, Ponto KA, Fowler BT, Dailey R, Harris GJ, Schiffman J, Tang R, et al. Teprotumumab Efficacy, Safety, and Durability in Longer-Duration Thyroid Eye Disease and Re-treatment: OPTIC-X Study. Ophthalmology. 2022;129:438-449. doi:10.1016/j.ophtha.2021.10.017.",
+    "doi": "10.1016/j.ophtha.2021.10.017",
+    "id": "34688699",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34688699/"
+  },
+  {
+    "number": 28,
+    "reference": "28. Douglas RS, Couch S, Wester ST, Fowler BT, Liu CY, Subramanian PS, Tang R, Nguyen QT, Maamari RN, Ugradar S, et al. Efficacy and Safety of Teprotumumab in Patients With Thyroid Eye Disease of Long Duration and Low Disease Activity. J Clin Endocrinol Metab. 2024;109:25-35. doi:10.1210/clinem/dgad637.",
+    "doi": "10.1210/clinem/dgad637",
+    "id": "37925673",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/37925673/",
+    "issue_year_source": "https://academic.oup.com/jcem/article/109/1/25/7334391",
+    "year_note": "Cite January 2024 issue year; PubMed/Europe PMC records electronic publication during December 2023."
+  },
+  {
+    "number": 29,
+    "reference": "29. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effects across human tissues. Science. 2020;369:1318-1330. doi:10.1126/science.aaz1776.",
     "doi": "10.1126/science.aaz1776",
     "id": "32913098",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+GTEx+Consortium+atlas+of+genetic+regulatory+effects+across+human+tissues%22+AND+FIRST_PDATE%3A2020+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
   },
   {
-    "number": 27,
-    "reference": "27. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.",
+    "number": 30,
+    "reference": "30. Colobran R, Armengol Mdel P, Faner R, Gärtner M, Tykocinski LO, Lucas A, Ruiz M, Juan M, Kyewski B, Pujol-Borrell R. Association of an SNP with intrathymic transcription of TSHR and Graves' disease: a role for defective thymic tolerance. Hum Mol Genet. 2011;20:3415-3423. doi:10.1093/hmg/ddr247.",
+    "doi": "10.1093/hmg/ddr247",
+    "id": "21642385",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/21642385/"
+  },
+  {
+    "number": 31,
+    "reference": "31. Marín-Sánchez A, Álvarez-Sierra D, González O, Lucas-Martin A, Sellés-Sánchez A, Rudilla F, Enrich E, Colobran R, Pujol-Borrell R. Regulation of TSHR Expression in the Thyroid and Thymus May Contribute to TSHR Tolerance Failure in Graves' Disease Patients via Two Distinct Mechanisms. Front Immunol. 2019;10:1695. doi:10.3389/fimmu.2019.01695.",
+    "doi": "10.3389/fimmu.2019.01695",
+    "id": "31379878",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/31379878/"
+  },
+  {
+    "number": 32,
+    "reference": "32. Nelson MR, Tipney H, Painter JL, Shen J, Nicoletti P, Shen Y, Floratos A, Sham PC, Li MJ, Wang J, et al. The support of human genetic evidence for approved drug indications. Nat Genet. 2015;47:856-860. doi:10.1038/ng.3314.",
     "doi": "10.1038/ng.3314",
     "id": "26121088",
     "source": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=TITLE%3A%22The+support+of+human+genetic+evidence+for+approved+drug+indications%22+AND+FIRST_PDATE%3A2015+AND+SRC%3AMED&format=json&resultType=core&pageSize=20"
+  },
+  {
+    "number": 33,
+    "reference": "33. Wallace C. A more accurate method for colocalisation analysis allowing for multiple causal variants. PLoS Genet. 2021;17:e1009440. doi:10.1371/journal.pgen.1009440.",
+    "doi": "10.1371/journal.pgen.1009440",
+    "id": "34587156",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/34587156/"
   }
 ]

@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import FancyBboxPatch,Rectangle,Patch
 from matplotlib.lines import Line2D
 from matplotlib.colors import LinearSegmentedColormap
+from matplotlib.text import Text
 O=Path(__file__).resolve().parents[1];P=O/'provenance';F=O/'figures'
 parser=argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--figures',nargs='+',choices=['Figure1','Figure2','Figure3'],default=['Figure1','Figure2','Figure3'])
@@ -16,10 +17,17 @@ mr=pd.read_csv(P/'MR_primary_canonical.csv');inst=pd.read_csv(P/'instruments_ver
 OC=['BBJ_Graves','UKB_hyperthyroid','FinnGen_GO'];LABEL=['BBJ Graves disease','UKB hyperthyroidism','FinnGen ophthalmopathy']
 GENES=['TSHR','IGF1R','CTLA4'];CAND=['TNFSF14','IFNGR1','MAPKAPK5','HSD3B7','VKORC1','PRSS36']
 GC={'TSHR':'#0072B2','IGF1R':'#D55E00','CTLA4':'#6B5B95'};OCOLOR=list(GC.values())
-INK='#172F40';MUTED='#607482';GRID='#DEE5E9';H=['PP.H2','PP.H3','PP.H4'];HC=['#8DA8BE','#E6B966','#258E83'];OTHER='#E5E9ED'
+INK='#000000';MUTED='#000000';GRID='#DEE5E9';H=['PP.H2','PP.H3','PP.H4'];HC=['#8DA8BE','#E6B966','#258E83'];OTHER='#E5E9ED'
 plt.rcParams.update({'font.family':'sans-serif','font.sans-serif':['Arial','DejaVu Sans'],'font.size':9,'pdf.fonttype':42,'ps.fonttype':42,'axes.spines.top':False,'axes.spines.right':False,'axes.labelcolor':INK,'text.color':INK,'xtick.color':MUTED,'ytick.color':MUTED,'axes.edgecolor':MUTED,'mathtext.fontset':'stix'})
+layout_checks={}
 def save(fig,name):
     if name in selected:
+        # Colour conveys data categories only; every title, label and legend is black.
+        fig.canvas.draw()
+        labels=[t for t in fig.findobj(Text) if t.get_visible() and t.get_text().strip()]
+        for t in labels:t.set_color('#000000')
+        fig.canvas.draw()
+        layout_checks[name]={'text_items':len(labels),'all_text_black':all(matplotlib.colors.to_hex(t.get_color())=='#000000' for t in labels)}
         fig.savefig(F/(name+'.png'),dpi=300,facecolor='white');fig.savefig(F/(name+'.pdf'),facecolor='white')
     plt.close(fig)
 def panel(fig,x,y,letter,title):
@@ -28,9 +36,10 @@ def rec(g,o,pr=1e-5):return co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,pr
 def pv(p):
     if p>=.001:return f'{p:.3g}'
     b,e=f'{p:.2e}'.split('e');return b.rstrip('0').rstrip('.')+'×10'+str(int(e)).translate(str.maketrans('-0123456789','⁻⁰¹²³⁴⁵⁶⁷⁸⁹'))
-def pdrawing(p):
+def pdrawing(p,bold=False):
     if p>=.001:return f'{p:.3g}'
-    b,e=f'{p:.2e}'.split('e');return r'$\mathbf{'+b.rstrip('0').rstrip('.')+r'{\times}10^{'+str(int(e))+'}}$'
+    b,e=f'{p:.2e}'.split('e');expr=b.rstrip('0').rstrip('.')+r'{\times}10^{'+str(int(e))+'}'
+    return '$'+(r'\mathbf{'+expr+'}' if bold else expr)+'$'
 source={'Figure1':{'druggable_genes':4462,'instrumented_genes':2544,'BBJ_estimable_genes':2234,'discovery_hits':13,'known_loci':2,'MHC_genes':5,'additional_candidates':6,'additional_qualifiers':0},'Figure2':[],'Figure2_posteriors':[],'Figure3_primary':[],'Figure3_priors':[],'FigureS1':'Preserved descriptive figure; no inferential P values.'}
 # All gene-level associations, anchored to the strongest selected eQTL instrument.
 bbj=mr[mr.outcome=='BBJ_Graves'].copy();hits=bbj[bbj.pvalue<.05/2544];assert len(bbj)==2234 and len(hits)==13
@@ -56,7 +65,7 @@ dy={'HLA-A':10,'HLA-DQA2':16,'C4A':22,'TUBB':24,'PSMB8':-20,'IFNGR1':22,'HSD3B7'
 dx={'HLA-A':0,'HLA-DQA2':-24,'C4A':-25,'TUBB':-34,'PSMB8':-28,'IFNGR1':20,'HSD3B7':0,'VKORC1':-8,'PRSS36':18,'MAPKAPK5':-12,'TNFSF14':14,'CTLA4':0,'TSHR':0}
 for g in hits.gene_symbol:
     r=screen[screen.gene_symbol==g].iloc[0];ax.scatter(r.x,r.y,s=25,fc=GC.get(g,'#344E5E'),ec='white',lw=.4,zorder=4);ax.annotate(g,(r.x,r.y),xytext=(dx[g],dy[g]),textcoords='offset points',ha='center',fontsize=7.8,fontstyle='italic',color=GC.get(g,INK),arrowprops={'arrowstyle':'-','lw':.55,'color':MUTED},zorder=5)
-r=screen[screen.gene_symbol=='IGF1R'].iloc[0];ax.scatter(r.x,r.y,s=42,fc=GC['IGF1R'],ec='white',lw=.6,zorder=4);ax.annotate('IGF1R',(r.x,r.y),xytext=(6,-15),textcoords='offset points',fontsize=8.5,fontstyle='italic',color=GC['IGF1R'])
+r=screen[screen.gene_symbol=='IGF1R'].iloc[0];ax.scatter(r.x,r.y,s=48,fc='#A33E00',ec='black',lw=.45,zorder=4);ax.annotate('IGF1R',(r.x,r.y),xytext=(0,15),textcoords='offset points',ha='center',va='bottom',fontsize=8.8,fontstyle='italic',fontweight='bold',color=INK,arrowprops={'arrowstyle':'-','color':INK,'lw':.55},zorder=6)
 ax.axhline(-np.log10(.05/2544),color='#D55E00',ls=(0,(4,3)),lw=.85,zorder=1)
 ax.set(xlim=(-25,offset),ylim=(-.4,25.5),ylabel=r'Association strength ($-\log_{10}P$)',xlabel='Chromosome of strongest selected expression instrument');ax.set_xticks(ticks,chrom);ax.tick_params(axis='x',labelsize=8);ax.set_yticks([0,5,10,15,20,25]);ax.grid(axis='y',color=GRID,lw=.6,zorder=0)
 fig.text(.385,.06,'One point per gene  |  All 2,234 estimable genes shown  |  13 discovery genes labelled',fontsize=8.5,color=MUTED);save(fig,'Figure1')
@@ -90,27 +99,36 @@ with plt.rc_context({'font.family':'DejaVu Sans','mathtext.fontset':'dejavusans'
             la.text(.045,y,label,va='center',fontsize=8.0)
             fa.errorbar(odds,y,xerr=[[odds-lo],[hi-odds]],fmt=['o','s','^'][i],color='#202020',capsize=2.5,lw=1.15,markersize=5)
             ea.text(.5,y,f'{odds:.2f} ({lo:.2f}–{hi:.2f})',ha='center',va='center',fontsize=8.3)
-            pa.text(.5,y,pdrawing(r.pvalue),ha='center',va='center',fontweight='bold',fontsize=8.8)
-            source['Figure2'].append({'gene':g,'outcome':oc,'or':odds,'lower95':lo,'upper95':hi,'pvalue':r.pvalue,'displayed_p':pv(r.pvalue)})
+            nominal=bool(r.pvalue<.05);discovery=bool(oc=='BBJ_Graves' and r.pvalue<.05/2544)
+            marks=('*' if nominal else '')+('†' if discovery else '')
+            pa.text(.5,y,pdrawing(r.pvalue,bold=nominal)+(' '+marks if marks else ''),ha='center',va='center',fontweight='bold' if nominal else 'normal',fontsize=8.8)
+            source['Figure2'].append({'gene':g,'outcome':oc,'or':odds,'lower95':lo,'upper95':hi,'pvalue':r.pvalue,'displayed_p':pv(r.pvalue),'nominal_significant':nominal,'BBJ_discovery_significant':discovery,'p_bold':nominal,'significance_markers':marks})
             c=rec(g,oc);left=0
             for key,color in zip(H,HC):ba.barh(y,c[key],left=left,height=.46,color=color,edgecolor='white',lw=.35);left+=c[key]
             ba.barh(y,c['PP.H0']+c['PP.H1'],left=left,height=.46,color=OTHER,edgecolor='none')
             ha.text(.5,y,f"{c['PP.H4']:.3f}",ha='center',va='center',fontsize=8.7,fontweight='bold' if c['PP.H4']>=.8 else 'normal',color='#202020')
             source['Figure2_posteriors'].append({'gene':g,'outcome':oc,**{key:float(c[key]) for key in ['PP.H0','PP.H1',*H]}})
     fig.legend(handles=[Patch(fc=c,label=l) for c,l in zip(HC+[OTHER],['Expression only (H2)','Distinct variants (H3)','Shared variant (H4)','Other (H0/H1)'])],loc='lower left',bbox_to_anchor=(.730,.015),ncol=1,frameon=False,fontsize=7.6,borderaxespad=0,labelspacing=.35)
-    fig.text(.03,.075,'BBJ: discovery threshold $P$ < 0.05/2,544\nUKB and FinnGen: nominal threshold $P$ < 0.05',fontsize=8.3,color='#555555',linespacing=1.6)
+    fig.text(.03,.075,'* Nominal $P$ < 0.05 (bold); † BBJ discovery $P$ < 0.05/2,544\nThe asterisk alone does not indicate significance after multiple-testing correction.',fontsize=8.1,color=INK,linespacing=1.6)
     save(fig,'Figure2')
 # Complete candidate matrix and the selected-gene prior sensitivity.
 fig=plt.figure(figsize=(11.8,6.5));heat=fig.add_axes([.13,.16,.30,.66]);panel(fig,.03,.965,'A','Shared-variant support across genes');panel(fig,.48,.965,'B','Sensitivity to the shared-association prior')
-allg=GENES+CAND;mat=np.array([[rec(g,o)['PP.H4'] for o in OC] for g in allg]);cmap=LinearSegmentedColormap.from_list('shared',['#F1F5F6','#B7DAD5','#258E83'])
-heat.imshow(mat,vmin=0,vmax=1,cmap=cmap,aspect='auto',interpolation='nearest');heat.set_xticks(range(3),['BBJ GD','UKB\nhyperthyroidism','FinnGen\nophthalmopathy'],fontsize=8.5);heat.set_yticks(range(9),allg,fontstyle='italic',fontsize=9.5);heat.tick_params(length=0,pad=7)
+allg=GENES+CAND;mat=np.array([[rec(g,o)['PP.H4'] for o in OC] for g in allg]);cmap=LinearSegmentedColormap.from_list('shared',['#F7FAFA','#D3E9E5','#8EC7BD'])
+row_y=np.arange(len(allg),dtype=float);row_y[3:]+=.28
+heat.set(xlim=(-.51,2.51),ylim=(row_y[-1]+.51,-.51))
+heat.set_xticks(range(3),['BBJ GD','UKB\nhyperthyroidism','FinnGen\nophthalmopathy'],fontsize=8.5);heat.set_yticks(row_y,allg,fontstyle='italic',fontsize=9.5);heat.tick_params(length=0,pad=7)
 for s in heat.spines.values():s.set_visible(False)
+cell_labels=[];strong_cells=[]
 for i,g in enumerate(allg):
     for k,o in enumerate(OC):
-        v=mat[i,k];heat.text(k,i,'<0.001' if v<.001 else f'{v:.3f}',ha='center',va='center',fontsize=9,color='white' if v>.68 else INK)
-        if v>=.8:heat.add_patch(Rectangle((k-.46,i-.46),.92,.92,fill=False,ec=INK,lw=1.2))
+        v=mat[i,k];y=row_y[i]
+        heat.add_patch(Rectangle((k-.5,y-.5),1,1,facecolor=cmap(v),edgecolor='white',lw=.5,zorder=1))
+        label=heat.text(k,y,'<0.001' if v<.001 else f'{v:.3f}',ha='center',va='center',fontsize=9,color=INK,fontfamily='DejaVu Sans',clip_on=False,zorder=5)
+        cell_labels.append((g,o,k,y,label))
+        if v>=.8:strong_cells.append((k,y))
         source['Figure3_primary'].append({'gene':g,'outcome':o,'p12':1e-5,'PP.H4':float(v)})
-heat.axhline(2.5,color='white',lw=4);fig.text(.032,.65,'Selected\ngenes',rotation=90,fontsize=8,color=MUTED,ha='center');fig.text(.032,.33,'Additional\ncandidates',rotation=90,fontsize=8,color=MUTED,ha='center')
+for k,y in strong_cells:heat.add_patch(Rectangle((k-.5,y-.5),1,1,fill=False,ec='black',lw=1.35,zorder=3,clip_on=False))
+fig.text(.032,.65,'Selected\ngenes',rotation=90,fontsize=8,color=INK,ha='center');fig.text(.032,.33,'Additional\ncandidates',rotation=90,fontsize=8,color=INK,ha='center')
 axes=[]
 for i,g in enumerate(GENES):
     ax=fig.add_axes([.50+i*.166,.27,.145,.50]);axes.append(ax)
@@ -122,6 +140,19 @@ for i,g in enumerate(GENES):
     else:ax.set_ylabel('Shared-variant probability',fontsize=9)
 axes[0].annotate('0.661',(2,float(rec('TSHR',OC[0],1e-6)['PP.H4'])),xytext=(-5,-24),textcoords='offset points',ha='right',fontsize=8,color=OCOLOR[0],arrowprops={'arrowstyle':'-','color':OCOLOR[0],'lw':.6})
 fig.legend(handles=[Line2D([0],[0],color=c,marker=m,ms=4,label=l) for c,m,l in zip(OCOLOR,['o','s','^'],LABEL)],loc='lower center',bbox_to_anchor=(.74,.075),ncol=1,frameon=False,fontsize=8)
-fig.text(.13,.06,'Outlined cells: PP.H4 ≥ 0.80\nCombined criterion: BBJ AND FinnGen',fontsize=8.5,color=MUTED,linespacing=1.5);fig.text(.50,.20,'D  Default     I  Intermediate     C  Conservative',fontsize=8.5,color=MUTED);save(fig,'Figure3')
+fig.add_artist(Rectangle((.13,.083),.013,.014,transform=fig.transFigure,fc='none',ec='black',lw=1.35))
+fig.text(.151,.09,'Black border: PP.H4 ≥ 0.80',fontsize=8.1,color=INK,va='center')
+fig.text(.13,.059,'Strong shared-variant support (not a $P$ value)\nCombined criterion: BBJ AND FinnGen',fontsize=8.1,color=INK,linespacing=1.5,va='top')
+fig.text(.50,.20,'D  Default     I  Intermediate     C  Conservative',fontsize=8.5,color=INK)
+fig.canvas.draw();renderer=fig.canvas.get_renderer()
+for g,o,k,y,label in cell_labels:
+    text_box=label.get_window_extent(renderer);bounds=heat.transData.transform([[k-.5,y-.5],[k+.5,y+.5]])
+    lo=bounds.min(axis=0);hi=bounds.max(axis=0)
+    assert text_box.x0>lo[0]+2 and text_box.x1<hi[0]-2 and text_box.y0>lo[1]+2 and text_box.y1<hi[1]-2,'Cell label padding: '+g+'/'+o
+save(fig,'Figure3')
+if 'Figure3' in selected:layout_checks['Figure3'].update({'cell_labels_with_padding':len(cell_labels),'strong_support_borders':len(strong_cells),'border_matches_cell_geometry':True})
 source['input_sha256']={n:hashlib.sha256((P/n).read_bytes()).hexdigest() for n in ['MR_primary_canonical.csv','instruments_verified.csv','coloc_canonical_v2.csv']}
 (P/'clinical_figure_sources.json').write_text(json.dumps(source,indent=2),encoding='utf-8');print('Built '+', '.join(sorted(selected))+' from preserved results; other figure files retained.')
+layout_path=P/'figure_layout_checks.json'
+prior=json.loads(layout_path.read_text(encoding='utf-8')) if layout_path.exists() else {}
+prior.update(layout_checks);layout_path.write_text(json.dumps(prior,indent=2)+'\n',encoding='utf-8')

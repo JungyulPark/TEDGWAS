@@ -4,3 +4,4 @@ scipy
 matplotlib
 python-docx
 pypandoc_binary
+PyMuPDF

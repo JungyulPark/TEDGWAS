@@ -4,11 +4,11 @@
   "main_figures": 3,
   "supplementary_figures": 1,
   "source_numeric_audit": "figure_numeric_audit.json; integrity_audit.json for OR/CI/P comparisons",
-  "source_manifest_sha256": "940bb513a07e49bf71f58c323120d67f700863e2aa4a908894ea4c75e5056d36",
+  "source_manifest_sha256": "c54057f6d8eac8b0f91478084677610b7d3ee2521f931a6af9cddde1bd3af5f5",
   "figures": [
     {
       "name": "Figure1",
-      "png_sha256": "67955df0de7f4a858cb84e1243d966b341b64e8c300699a5db8848780a8d91c3",
+      "png_sha256": "cdf9568653959c52572ca4eab4902ce1aaaf684dfc21b867aef832071d11d2ee",
       "pixels": [
         3540,
         1920
@@ -17,13 +17,13 @@
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "4763a766df9cba695f18963f82c006c15245fd62facf73c29f5218158cdb20f2",
-      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "pdf_sha256": "ab093387dece7bf97aba3cce4d451ece2e145657a50c659e4f972118a776183f",
+      "visual_review": "PASS; final PNG inspected 2026-09-12. All exported PDF text verified black; Figure3 MAPKAPK5 row and border key also inspected in enlarged PDF render.",
       "source": "clinical_figure_sources.json"
     },
     {
       "name": "Figure2",
-      "png_sha256": "49ab6164497f0e4e33d1fda87c1f552db3e5919bbdd00ade2bc639b0b0bc8e8f",
+      "png_sha256": "d4f6fcd9aac7ebf1069cc09144597b60c94ddd308011fb230cd962e2e1f8da0d",
       "pixels": [
         3750,
         2160
@@ -32,13 +32,13 @@
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "ff03f7e037a82c3cbc6c4fb79401bb4385bb8c80737c7f22246c44a3df4627f9",
-      "visual_review": "PASS; inspected 2026-09-12 after separating panel grids with a gutter and vertical rule, removing group background fills, and making panel A monochrome. All nine matched rows, numerical labels and panel B legend are legible without overlap.",
+      "pdf_sha256": "746bc52253a0ae9dc551e4727a60d0482b4d11e95e6c876968ea1700e8ab2de7",
+      "visual_review": "PASS; final PNG inspected 2026-09-12. All exported PDF text verified black; Figure3 MAPKAPK5 row and border key also inspected in enlarged PDF render.",
       "source": "clinical_figure_sources.json"
     },
     {
       "name": "Figure3",
-      "png_sha256": "4446d8136c53706cb964d8e3e3682ca1b07698e2f38963a986c6839a65b551d2",
+      "png_sha256": "2f4b3db039b39bd4682f8db29f1f512424592b12381c5f353882769a4c43d06a",
       "pixels": [
         3540,
         1950
@@ -47,8 +47,8 @@
         299.9994,
         299.9994
       ],
-      "pdf_sha256": "e83043230ec184836fcbdfb46f9b6f66bf0a5ae883ba091451f79720d83d9eab",
-      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "pdf_sha256": "2796d62cb1343b8b859cf663006e40e27d854b8f381526dc87aa48d4f9f0e804",
+      "visual_review": "PASS; final PNG inspected 2026-09-12. All exported PDF text verified black; Figure3 MAPKAPK5 row and border key also inspected in enlarged PDF render.",
       "source": "clinical_figure_sources.json"
     },
     {
@@ -63,10 +63,11 @@
         299.9994
       ],
       "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
-      "visual_review": "PASS; Figures 1–3 inspected after final generation on 2026-09-12; unchanged Figure S1 retained with its inspected supplementary-page identity.",
+      "visual_review": "PASS; preserved descriptive figure visually inspected, with all PDF text verified black.",
       "source": "Preserved descriptive aggregate tissue figure; no inferential P values."
     }
   ],
   "rebuild_note": "Three main figures rebuilt from the preserved aggregate results: complete gene-level screen, matched association/posterior evidence, and candidate matrix with prior sensitivity. No analytical estimate altered.",
-  "figure2_layout_revision": "Panel A uses white background, black forest marks and numerical labels, uniform statistical typography and neutral group rules. Panel B retains categorical posterior colours and has an independent title, axis and legend. Plotted source data unchanged."
+  "figure2_layout_revision": "Separated monochrome panel A and coloured posterior panel B retained; significance markers and conditional P-value boldness added, with distinct nominal and BBJ discovery definitions.",
+  "figure_labels_revision": "All titles, axes, legends, annotations and matrix numbers are black. Figure1 IGF1R label raised above a darker point. Figure2 nominal P<0.05 uses bold and an asterisk; a dagger additionally marks BBJ P<0.05/2544. P=0.182 is unbolded. Figure3 uses lighter cells, six full-cell black borders for PP.H4>=0.80, an explicit border key and padded numeric labels."
 }

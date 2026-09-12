@@ -78,6 +78,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
         for table in d.tables:
             heads=[c.text for c in table.rows[0].cells];cols=len(heads);table.autofit=False;table.alignment=WD_TABLE_ALIGNMENT.CENTER
             if cols==3:weights=[.5,1.8,7.99]
+            elif cols==8 and heads[3]=='OR (95% CI)':weights=[.7,2.0,.95,1.45,1.0,1.15,1.15,1.1]
             elif cols==8:weights=[.8,2.3,.9,.85,.85,.85,1.15,1.1]
             elif cols==5 and heads[0]=='Dataset':weights=[2.7,1.8,.8,.9,3.0]
             elif cols==5 and heads[1]=='Instruments':weights=[1.0,.8,2.4,1.05,3.6]
@@ -101,7 +102,15 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
                     for p in c.paragraphs:
                         p.style='Normal';p.paragraph_format.line_spacing=1.05;p.paragraph_format.space_before=Pt(0);p.paragraph_format.space_after=Pt(0);p.paragraph_format.keep_with_next=False
                         p.alignment=WD_ALIGN_PARAGRAPH.LEFT if ischeck or ci<2 or (cols==5 and ci==4) else WD_ALIGN_PARAGRAPH.CENTER
-                        for r in p.runs:r.font.name='Times New Roman';r.font.size=Pt(9.5 if cols==8 or ischeck else 10);r.bold=True if ri==0 or (re.search(r'\bP\b', heads[ci]) and 'PP.H' not in heads[ci] and r.text!='NA') else r.bold
+                        for r in p.runs:
+                            r.font.name='Times New Roman';r.font.size=Pt(9.5 if cols==8 or ischeck else 10)
+                            if ri==0:r.bold=True
+                            elif re.search(r'\bP\b',heads[ci]) and 'PP.H' not in heads[ci]:
+                                value=c.text.translate(str.maketrans('⁻⁰¹²³⁴⁵⁶⁷⁸⁹','-0123456789'))
+                                try:
+                                    bits=value.split('×10');pv=float(bits[0])*(10**int(bits[1]) if len(bits)==2 else 1)
+                                    r.bold=pv<.05
+                                except ValueError:r.bold=False
         if issup:
             for p in list(d.paragraphs):
                 if p.text.startswith('Figure S1.'):
@@ -127,11 +136,12 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
         d.save(out);print(name,'tables',len(d.tables))
 
 # Separate editable tables for the publisher's upload workflow.
-if 'MANUSCRIPT_Submission' in texts:
-    (O/'tables').mkdir(exist_ok=True)
-    for number in range(1,4):
-        table_doc=Document(O/'MANUSCRIPT_Submission.docx')
-        target=table_doc.tables[number-1]._tbl
+(O/'tables').mkdir(exist_ok=True)
+for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4'])]:
+    if source not in texts:continue
+    for index,number in enumerate(keys):
+        table_doc=Document(O/(source+'.docx'))
+        target=table_doc.tables[index]._tbl
         keep=[target.getprevious(),target,target.getnext(),table_doc._element.body.sectPr]
         for el in list(table_doc._element.body):
             if el not in keep:table_doc._element.body.remove(el)

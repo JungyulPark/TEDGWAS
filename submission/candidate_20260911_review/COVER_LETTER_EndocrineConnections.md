@@ -7,7 +7,7 @@ The Editor-in-Chief
 
 Dear Editor-in-Chief,
 
-Please consider “Genetic evidence for TSHR and IGF1R in Graves disease and thyroid eye disease” as an original research article.
+Please consider “TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization” as an original research article.
 
 Teprotumumab is effective in thyroid eye disease, but therapeutic efficacy and inherited disease susceptibility address different questions. We compared genetically proxied blood expression of TSHR and IGF1R within a screen of 2,544 druggable genes. Biobank Japan Graves disease was the discovery outcome, with UK Biobank hyperthyroidism and FinnGen Graves ophthalmopathy providing additional comparisons.
 

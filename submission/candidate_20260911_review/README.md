@@ -1,23 +1,16 @@
-# TED TRAP submission package
+# TED–TRAP final review package
 
-Updated 12 September 2026 for Endocrine Connections. Technical manuscript preparation completed; final author details, declarations/approval and journal-portal checks pending. Requested eQTLGen frequency sensitivity is complete; this revision expands the Results and Discussion and adds data-rich figures without changing analytical estimates.
+Updated 13 September 2026. **TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization**
 
-## Files for review and upload
+Tables, figures and manuscript presentation have been reviewed. The new multi-signal colocalization question, formal directionality, cohort-overlap verification and final author/journal checks remain unresolved; this is not an unconditional submit-ready certification. The requested eQTLGen allele-frequency sensitivity is completed.
 
-- [Main manuscript](MANUSCRIPT_Submission.docx): 3,182 main-text words (3,214 with subheadings), 227 abstract words, 27 references, Tables 1–3 and Figures 1–3 legends.
-- [Supplementary material](SUPPLEMENTARY_MATERIAL.docx): detailed methods, Tables S1–S4 and descriptive Figure S1.
-- [Cover letter](COVER_LETTER_EndocrineConnections.docx) and [STROBE MR checklist](STROBE_MR_CHECKLIST.docx).
-- [Separate Word tables](tables/): Table1.docx, Table2.docx and Table3.docx, with titles and notes; identical to the manuscript tables.
-- [Figures](figures/): Figures 1–3 and S1, as vector PDFs and 300-dpi PNGs. Use separate figure files as requested by the portal.
-- Supplementary Data 1–4; see [data guide](SUPPLEMENTARY_DATA_README.md).
-- [Final revision report](REVIEW_REPORT_KO.md) and [submission checklist](../SUBMISSION_CHECKLIST.md).
+- Main manuscript: 3,326 words (3,358 with headings), abstract 231 words, 33 references, Tables 1–3 and figure legends.
+- Supplementary material: Methods, Tables S1–S4 and descriptive Figure S1.
+- Separate editable tables: Tables 1–3 and S1–S4, including titles/notes.
+- Four figures, each as vector PDF and 300-dpi PNG.
+- Supplementary Data 1–5, with all original MR estimators now included; see SUPPLEMENTARY_DATA_README.md and TABLES_GUIDE_KO.md.
+- Cover letter, STROBE-MR reporting map and REVIEW_REPORT_KO.md.
 
-The [repository-root master](../../MANUSCRIPT_TED_TRAP_v5_MASTER.md) remains the sole editable manuscript source. Do not upload archives, provenance or reproducibility scripts as manuscript files.
+Verification: 1,250 content checks / 350 displayed numbers, 6,864 figure checks, and 44 reviewed pages across 11 Word documents. Current identities are in provenance. These checks do not establish causal assumptions. Table 2 now shows H2/H3/H4 and the variant-level TSHR scale; Table 3 gives MAPKAPK5 to three decimals. All figure text is black, Figure 2 has nominal/discovery markers, and Figure 3 has aligned border keys and unclipped labels.
 
-## Verification
-
-Content audit: 1,131 checks and 328 displayed numerical values, PASS. All 39 pages of seven Word documents were visually reviewed. Figure audit: 6,819 checks across all 2,234 plotted genes and 63 posterior comparisons, PASS. Discussion has seven interpretation paragraphs, two limitations paragraphs and one conclusion. Current file hashes, word counts, reference mappings and review identities are recorded in provenance. These checks do not certify author declarations, causal assumptions or journal acceptance.
-
-Run `python scripts/audit_paper1_integrity.py` from the repository root, then `python submission/candidate_20260911_review/reproducibility/audit_figures.py` and `python submission/candidate_20260911_review/reproducibility/audit_release.py`. Any rebuild invalidates the recorded document identity until its rendering is reviewed and the release records are refreshed.
-
-Figure 2 layout update (12 September): the panels have separate grids and a visible gutter; panel A uses a white background and monochrome effect estimates/statistics, while panel B retains posterior-category colours. No plotted value changed.
+The repository-root master is the only manuscript source. Run scripts/audit_paper1_integrity.py, then reproducibility/audit_figures.py and audit_release.py after changes. Rebuilding invalidates the visual file records until the new output is reviewed.

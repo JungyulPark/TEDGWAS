@@ -24,7 +24,7 @@ figures plus Figure S1, three main tables, Supplementary Tables S1-S4.
 Checks against the master MANUSCRIPT_TED_TRAP_v5_MASTER.md:
   1. master exists; print current md5 (integrity anchor)
   2. zero placeholders (to be tabulated / TODO / [ ])
-  3. references: 27 listed, all cited (incl. grouped [a, b]) in body
+  3. references: 33 listed, all cited (incl. grouped [a, b]) in body
   4. OR = exp(beta) for the 3 backbone genes x 3 outcomes (2-dp display)
   5. structural completeness: sections, 6 declarations, figure legends, tables
   6. no stale author names (Yae-Eun Kang / 강예은 / 박정율)
@@ -83,7 +83,7 @@ for grp in re.findall(r'\[([\d,\s–-]+)\]', body):
         cited.update(range(int(a), int(b) + 1))
     for n in re.findall(r'\d+', grp):
         cited.add(int(n))
-ok(nref == 27, f"references listed = {nref} (expect 27)")
+ok(nref == 33, f"references listed = {nref} (expect 33)")
 missing = [i for i in range(1, nref + 1) if i not in cited]
 ok(not missing, f"all refs cited in body (missing: {missing or 'none'})")
 

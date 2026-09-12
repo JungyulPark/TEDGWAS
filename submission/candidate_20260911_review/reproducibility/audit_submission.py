@@ -15,6 +15,7 @@ def agree(shown,value,label):
     global numeric
     numeric+=1;s=clean(shown).replace(',','').translate(tr)
     if s=='NA':check(pd.isna(value),label+' unavailable');return
+    if s.startswith('<'):check(np.isfinite(value) and 0<=value<float(s[1:]),label+' below display threshold');return
     if '×10' in s:
         mant,exp=s.split('×10');actual=float(mant)*10**int(exp);unit=10**int(exp)*10**(-len(mant.split('.')[1]) if '.' in mant else 0)
     else:
@@ -42,7 +43,7 @@ for row in tables['2']['rows']:
     g=clean(row[0]);o=ocs[row[1]];r=get(g,o);label=f'Table2 {g}/{o}'
     agree(row[2],r.n_iv,label+' instruments');effect(row[3],r,label);agree(row[4],r.pvalue,label+' P')
     c=co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,1e-5,atol=1e-12)].iloc[0]
-    agree(row[5],c['PP.H3'],label+' H3');agree(row[6],c['PP.H4'],label+' H4')
+    agree(row[5],c['PP.H2'],label+' H2');agree(row[6],c['PP.H3'],label+' H3');agree(row[7],c['PP.H4'],label+' H4')
 for row in tables['3']['rows']:
     r=get(clean(row[0]),'BBJ_Graves');agree(row[1],r.n_iv,'Table3 instruments');effect(row[2],r,'Table3 effect');agree(row[3],r.pvalue,'Table3 P');check(r.pvalue<.05/2544,'Table3 discovery threshold')
 check(len(tables['3']['rows'])==13,'All thirteen discovery hits retained')
@@ -137,10 +138,51 @@ check(len([p for p in lim.strip().split('\n\n') if p.strip()])==2,'Two complete 
 check(len([p for p in disc.split('### Limitations')[0].strip().split('\n\n') if p.strip()])==7,'Seven interpretation paragraphs before limitations')
 counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'));check(counts['abstract_words']<=250,'Abstract within working 250-word ceiling');check(counts['main_words_including_headings']<=5000,'Main within working 5000-word ceiling')
 check('modest inherited contribution' not in text,'No unsupported restriction on inherited effect size')
-for number in range(1,4):
-    upload=Document(O/'tables'/f'Table{number}.docx')
-    check(len(upload.tables)==1,'Separate Table '+str(number)+' exists')
-    check([[c.text for c in r.cells] for r in upload.tables[0].rows]==[[c.text for c in r.cells] for r in main_doc.tables[number-1].rows],'Separate Table '+str(number)+' matches manuscript')
+for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4'])]:
+    source=Document(O/(name+'.docx'))
+    for index,number in enumerate(keys):
+        upload=Document(O/'tables'/f'Table{number}.docx')
+        check(len(upload.tables)==1,'Separate Table '+number+' exists')
+        check([[c.text for c in r.cells] for r in upload.tables[0].rows]==[[c.text for c in r.cells] for r in source.tables[index].rows],'Separate Table '+number+' matches manuscript')
+        for p in upload.paragraphs:
+            check(not p.paragraph_format.page_break_before,'Separate Table '+number+' no leading page break')
+# The complete estimator supplement retains coefficients/P values and discloses
+# test-specific intervals; do not infer P values from rounded displayed CIs.
+extra=pd.read_csv(O/'Supplementary_Data_5_MR_estimators.csv')
+check(len(extra)==len(raw)==13039,'Complete estimator supplement row count')
+joined=extra.merge(raw,on=['gene_symbol','outcome','method'],suffixes=('_new','_raw'),validate='one_to_one')
+for col in ['beta','se','pvalue','n_iv']:
+    check(np.allclose(joined[col+'_new'],joined[col+'_raw'],rtol=1e-12,atol=0),'All estimator '+col+' preserved')
+from scipy import stats
+for method, group in extra.groupby('method'):
+    dfs=group.n_iv-(2 if method=='MR Egger' else 1)
+    is_t=method in ['MR Egger','Weighted mode']
+    prob=2*(stats.t.sf(abs(group.beta/group.se),dfs) if is_t else stats.norm.sf(abs(group.beta/group.se)))
+    critical=stats.t.ppf(.975,dfs) if is_t else stats.norm.ppf(.975)
+    check(np.allclose(prob,group.pvalue,rtol=1e-6,atol=1e-300),'All '+method+' P values match original test')
+    check(np.allclose(group.log_or_ci_lower,group.beta-critical*group.se),'All '+method+' lower CIs use matching test')
+    check(np.allclose(group.log_or_ci_upper,group.beta+critical*group.se),'All '+method+' upper CIs use matching test')
+    check((group.test_distribution==('Student t' if is_t else 'normal')).all(),'All '+method+' distributions labelled')
+for scenario, group in allmr.groupby('scenario'):
+    valid=group.dropna(subset=['beta','se','pvalue'])
+    prob=2*stats.norm.sf(abs(valid.beta/valid.se))
+    check(np.allclose(prob,valid.pvalue,rtol=1e-6,atol=1e-300),'All primary/scenario P values: '+scenario)
+check(np.allclose(allco[[f'PP.H{i}' for i in range(5)]].sum(axis=1),1,rtol=0,atol=1e-12),'Every posterior row sums to one')
+check((allco[[f'PP.H{i}' for i in range(5)]].values>=0).all(),'All posterior probabilities non-negative')
+check('top_snp field' in text and 'conditional on H4' in text,'Conditional top-SNP definition disclosed')
+check('exact rule preceded inspection of results' in text,'Combined-filter timing uncertainty disclosed')
+evidence=json.loads((P/'major_review_evidence.json').read_text(encoding='utf8'))
+check(evidence['status']=='PASS','Local source verification passed')
+for record in evidence['TSHR_scale_check']:
+    for key in ['variant_log_or','variant_or','exposure_beta']:
+        shown=f"{record[key]:.3f}" if key=='variant_or' else f"{record[key]:.5f}"
+        agree(shown,record[key],'TSHR source scale '+key)
+        check(shown.replace('-','−') in text,'TSHR source scale printed '+shown)
+for record in evidence['TSHR_reference_LD']:
+    if 'rs179252' in [record['SNP_A'],record['SNP_B']]:
+        shown=f"{record['R2']:.6f}";agree(shown,record['R2'],'Reference LD');check(shown in text,'Reference LD printed')
+check(evidence['FinnGen_H2_dominant_loci']==7,'Seven H2-dominant FinnGen loci')
+check(evidence['CTLA4_FinnGen_H4']>=.8,'CTLA4 failure does not originate in FinnGen')
 checklist=Document(O/'STROBE_MR_CHECKLIST.docx');check(len(checklist.tables)==1,'Separate reporting checklist exists')
 result={'status':'PASS' if not errors else 'FAIL','numeric_cells_compared':numeric,'checks':len(checks),'errors':errors,'scope':'Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review.'}
 (P/'integrity_audit.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print(json.dumps(result,indent=2));sys.exit(bool(errors))

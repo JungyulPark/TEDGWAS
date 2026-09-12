@@ -1,20 +1,20 @@
 {
   "created_at_utc": "2026-09-10T23:38:37.398801+00:00",
-  "status": "Technical manuscript preparation completed; final author details, declarations/approval and journal-portal checks pending",
+  "status": "Final review candidate; presentation and numerical checks complete, with new scientific analyses, overlap verification and author/journal checks unresolved",
   "target_journal_assumed": "Endocrine Connections",
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "4795583333ec7614046686e95c6ba51c",
-  "manuscript_sha256": "5b2e51a11965e4ffc0fc19032adc577f185b2d3e8fde9cf4761c1aaa8a21bf03",
+  "manuscript_md5": "0382456e12b5ce18d2b4f969c393b5fc",
+  "manuscript_sha256": "92a28aa00906ef1b26012c7e2861ce052c4010550bc8cec8f872bfa89cb8a983",
   "numeric_audit": {
     "status": "PASS",
-    "numeric_cells_compared": 328,
-    "checks": 1131,
+    "numeric_cells_compared": 350,
+    "checks": 1250,
     "errors": [],
     "scope": "Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review."
   },
-  "visual_qa": "document_visual_qa.json; 39 pages of seven DOCX files visually reviewed; figure_verification.json for all four figures",
+  "visual_qa": "document_visual_qa.json; 44 reviewed pages of 11 DOCX files; figure_verification.json for all four figures",
   "clinical_revision": "clinical_revision.json; no analytical estimates changed by clinical editing",
   "MAF_sensitivity": {
     "status": "Completed",
@@ -32,40 +32,40 @@
   ],
   "files": {
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13732,
-      "sha256": "594a27985f1b4a69c372c34f9a9a1048ba0a74002d68bf582da25fdd63bb06a3"
+      "bytes": 13742,
+      "sha256": "59e74b797c1b975dc84935aec34da51f3fa43925da0ad2a199483f071a53e4ee"
     },
     "COVER_LETTER_EndocrineConnections.md": {
-      "bytes": 3251,
-      "sha256": "8da3df650fe5ff295861c879905a30568e3d59dde616c8fea62ce4e6138bcce6"
+      "bytes": 3261,
+      "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 31228,
-      "sha256": "eb135ba44e1fe9972a22c3a847cb4d11955a5201d775d9cae64f7bebafb1ad19"
+      "bytes": 32864,
+      "sha256": "202fa7a72c764527d09fd17ff0069fe1fe90773988a2f1c93f990dd9d9415920"
     },
     "README.md": {
-      "bytes": 2620,
-      "sha256": "c365d9e1ed5fa4a4c9a07f177af3fbfd04acba7d74442043ddf7d773435d5775"
+      "bytes": 1730,
+      "sha256": "98ec4b437e4be6825ffcc9d2a2bf5b8304159d23aa1da79bd05fd8c23c883e94"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 4233,
-      "sha256": "4f16e8526e23ca943a298f1d768d8dee0a62670f5b86e74116209e535085986a"
+      "bytes": 7849,
+      "sha256": "792177cc1c8cf983539646b5632d7f0324e4b4d415920f92462a69694d4791fc"
     },
     "STROBE_MR_CHECKLIST.docx": {
-      "bytes": 15242,
-      "sha256": "3b70b629b69606b65436191f004610f95e3fe78c18960e2b743c03eb3b2af7d1"
+      "bytes": 15230,
+      "sha256": "bb4964315911e235c15aee74e6b8826a2854dfe4a25bce239cacc5a8f898365a"
     },
     "STROBE_MR_CHECKLIST.md": {
-      "bytes": 4890,
-      "sha256": "4b7f44b171f2c719b23b0ae5943959624f886aad9055c163cb20aa9e06cdccb2"
+      "bytes": 4907,
+      "sha256": "b32d8103bfc4a90bef2d36e74ab4de94d787eb83fa974197d4c6016dca1a9ab8"
     },
     "SUPPLEMENTARY_DATA_README.md": {
-      "bytes": 3498,
-      "sha256": "820f9f25f898c593ca1ed659ea03b803f13ba2912e76d12aab38b4c4d4c9f851"
+      "bytes": 5346,
+      "sha256": "eaa2f136931cb3fc09860586362317d6b2c0d58951135648c2cc7264232302aa"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 100341,
-      "sha256": "9d2f3c44e7f72e01ebd95fc69c6554560551341ea9d00df938296f62b9d41eff"
+      "bytes": 100719,
+      "sha256": "4fe22475d02a2dc926f3a1fcff75011d827d781d516d8e5f9c7857ba0b7c70f7"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -83,29 +83,37 @@
       "bytes": 1899,
       "sha256": "ff8a74be01b3aaab3ccc14ae26198e87f2f2dc14c291108ee8bbfc7d8cea63f4"
     },
+    "Supplementary_Data_5_MR_estimators.csv": {
+      "bytes": 4481989,
+      "sha256": "680df8bd4c875ccb21a3499f9250413df1e427b2855a1160fe77e4b3d0724414"
+    },
+    "TABLES_GUIDE_KO.md": {
+      "bytes": 2011,
+      "sha256": "e4af011eebe4bff4ef5a8862555b33b8a10e8a198f921d78c817ce5b012cf855"
+    },
     "figures/Figure1.pdf": {
-      "bytes": 117638,
-      "sha256": "4763a766df9cba695f18963f82c006c15245fd62facf73c29f5218158cdb20f2"
+      "bytes": 127113,
+      "sha256": "ab093387dece7bf97aba3cce4d451ece2e145657a50c659e4f972118a776183f"
     },
     "figures/Figure1.png": {
-      "bytes": 362353,
-      "sha256": "67955df0de7f4a858cb84e1243d966b341b64e8c300699a5db8848780a8d91c3"
+      "bytes": 348921,
+      "sha256": "cdf9568653959c52572ca4eab4902ce1aaaf684dfc21b867aef832071d11d2ee"
     },
     "figures/Figure2.pdf": {
-      "bytes": 36751,
-      "sha256": "ff03f7e037a82c3cbc6c4fb79401bb4385bb8c80737c7f22246c44a3df4627f9"
+      "bytes": 42669,
+      "sha256": "746bc52253a0ae9dc551e4727a60d0482b4d11e95e6c876968ea1700e8ab2de7"
     },
     "figures/Figure2.png": {
-      "bytes": 267647,
-      "sha256": "49ab6164497f0e4e33d1fda87c1f552db3e5919bbdd00ade2bc639b0b0bc8e8f"
+      "bytes": 276934,
+      "sha256": "d4f6fcd9aac7ebf1069cc09144597b60c94ddd308011fb230cd962e2e1f8da0d"
     },
     "figures/Figure3.pdf": {
-      "bytes": 79288,
-      "sha256": "e83043230ec184836fcbdfb46f9b6f66bf0a5ae883ba091451f79720d83d9eab"
+      "bytes": 85126,
+      "sha256": "2796d62cb1343b8b859cf663006e40e27d854b8f381526dc87aa48d4f9f0e804"
     },
     "figures/Figure3.png": {
-      "bytes": 335878,
-      "sha256": "4446d8136c53706cb964d8e3e3682ca1b07698e2f38963a986c6839a65b551d2"
+      "bytes": 340989,
+      "sha256": "2f4b3db039b39bd4682f8db29f1f512424592b12381c5f353882769a4c43d06a"
     },
     "figures/FigureS1.pdf": {
       "bytes": 56247,
@@ -123,17 +131,21 @@
       "bytes": 1665839,
       "sha256": "408a72540c1d3518d0a368b436117daee594a63c01a5ea50be60591e71eb2ef2"
     },
+    "provenance/TSHR_reference_LD_review.csv": {
+      "bytes": 427,
+      "sha256": "33137685732f8dc12723cbfab6c7fc19685d131b57b475a34870103903dad7e3"
+    },
     "provenance/clinical_data_consolidation.json": {
       "bytes": 1228,
       "sha256": "8543e72109593a4d47fdb806c4ffcfe2eed3b5d66d17cab9afb9797cd7c23d10"
     },
     "provenance/clinical_display_sources.json": {
-      "bytes": 14659,
-      "sha256": "10101f5bb978b3edbec452582ae04ec23cc393ddcab5c9ac68c56642b7bd13d0"
+      "bytes": 15485,
+      "sha256": "e5e6dc0b87f253114fac62b80db6f54ee834326000b161a6e82d7d0e65751eb3"
     },
     "provenance/clinical_figure_sources.json": {
-      "bytes": 429521,
-      "sha256": "940bb513a07e49bf71f58c323120d67f700863e2aa4a908894ea4c75e5056d36"
+      "bytes": 430774,
+      "sha256": "c54057f6d8eac8b0f91478084677610b7d3ee2521f931a6af9cddde1bd3af5f5"
     },
     "provenance/clinical_revision.json": {
       "bytes": 1071,
@@ -155,17 +167,29 @@
       "bytes": 539,
       "sha256": "ff901e6dbe64ff4fde2a0d958e8ba7248d00a2de815ba9ce3834e639e05f69c5"
     },
+    "provenance/complete_statistics_export.json": {
+      "bytes": 1247,
+      "sha256": "3bfe6a86164019a8916b697d087a9a70ae3ef7a1db8b4c69fe73bdee4bef7879"
+    },
     "provenance/document_visual_qa.json": {
-      "bytes": 8297,
-      "sha256": "82a61d698c9a7797f376ae72baa686ba5f7db8ec17586178af5a604635092873"
+      "bytes": 10240,
+      "sha256": "e46b19dbdc50a47dc4d9f7b57c4a23db686c49cc992404ed9d2cdad7ff1ac7d8"
+    },
+    "provenance/figure_layout_checks.json": {
+      "bytes": 338,
+      "sha256": "28332ba7ca0bd8ccb13c6677eaad04fcfc177e8b825c19be62aae5758a76ffb2"
     },
     "provenance/figure_numeric_audit.json": {
       "bytes": 119,
-      "sha256": "be460fd643d84c7a05a92dd95fb8f2f1b809820526dbcc4a1d51c7b8fbb3ed7a"
+      "sha256": "207e08c92c6d4196affa9f2c2cf518da0bf827b3765a24a0025433dccfb64461"
+    },
+    "provenance/figure_pdf_text_checks.json": {
+      "bytes": 678,
+      "sha256": "7042b771564da113f03a378354cd0112e2881e8327ddbb30b3a895c043ee58a6"
     },
     "provenance/figure_verification.json": {
-      "bytes": 3220,
-      "sha256": "78197f6663313a7a72b4956db39fe99cd58a91c8448d73341b2d7deeb0ee859b"
+      "bytes": 3407,
+      "sha256": "db4254893ec6ad2db61e81d8bb6a7cc3e749491adae0fc0010df3629f88a5e37"
     },
     "provenance/instruments_verified.csv": {
       "bytes": 507694,
@@ -173,7 +197,7 @@
     },
     "provenance/integrity_audit.json": {
       "bytes": 330,
-      "sha256": "86f34dbe51895020cde26f7200602e79618d5477b14ca46e52d726610252514d"
+      "sha256": "e6ed3c4e9b34cc5b20d8c81387093cff3add1424631afcd4dac373b558a67ef8"
     },
     "provenance/journal_checks.json": {
       "bytes": 1594,
@@ -239,13 +263,17 @@
       "bytes": 513,
       "sha256": "850d1766fa03b288cb12525fa6ec3b8844000818dd5ad5bb8ae51f1b3dedabe0"
     },
+    "provenance/major_review_evidence.json": {
+      "bytes": 4001,
+      "sha256": "267272c88189d83d681dc5e9c7b18911318a08864496c0191bef30b833426ea5"
+    },
     "provenance/power_summary_verified.csv": {
       "bytes": 706,
       "sha256": "cac6cebcf3b2fe88ce683f9627284a16a05b3371bb43afc179fa7fd9686338ab"
     },
     "provenance/references_verified.json": {
-      "bytes": 15810,
-      "sha256": "c7cb3eec4017b756647c9e2af80ab52b08e710a856646be1fc28cfb61a500edd"
+      "bytes": 18716,
+      "sha256": "48eddc41b8b947913f7bbf1c58aaa68a671b3167668b372c842e8f1fac514894"
     },
     "provenance/source_manifest.json": {
       "bytes": 2037,
@@ -257,11 +285,11 @@
     },
     "provenance/word_counts.json": {
       "bytes": 297,
-      "sha256": "5960773d03b43626729cdc54195ff962717b864e97fb926d2c160981425c4d0b"
+      "sha256": "b110ce47af821ef716a840c3eabf9f18b1edebc23680774d00ac1fef4cf6ed5e"
     },
     "reproducibility/README.md": {
-      "bytes": 2989,
-      "sha256": "f023238423c98ff7dae53d980301efe0f11cc5f0cfadd99b343763b7e8e8ca4d"
+      "bytes": 4245,
+      "sha256": "003b36a18150442342544f86aaa56bd35a5f0731c57316d4fe458b2546af3a37"
     },
     "reproducibility/analysis_scripts/export_maf_validation_inputs_v1.R": {
       "bytes": 399,
@@ -296,58 +324,89 @@
       "sha256": "4d53ffff80df4bf879c7dde83a2a554472ecce5debe89a1558a8f0d61ed99af7"
     },
     "reproducibility/audit_figures.py": {
-      "bytes": 2354,
-      "sha256": "2c2d6c723ee103c5cb712040a2739a48f16352a5ca09748377e8310feea1c0bf"
+      "bytes": 4394,
+      "sha256": "97d736c63ceff3d3eea8266a54509beaf09f3b947400b39d78366ffd3e0cc8b5"
     },
     "reproducibility/audit_release.py": {
-      "bytes": 3215,
-      "sha256": "ceb62c5b7f4e31c9d948b35c487ffee0779c34fcdb00d9b7900d793dd4f3812f"
+      "bytes": 3856,
+      "sha256": "bc8f089e436db36173688b20bbb23f4f203ce34b91d2fc445d7458c61fc34766"
     },
     "reproducibility/audit_submission.py": {
-      "bytes": 13512,
-      "sha256": "6e177f2aba66316d07cfc11623fcbfbcd930ff0b20fc818f628e8bfc311ba127"
+      "bytes": 16915,
+      "sha256": "0b29d23999a0e2f1edc5de2dcfaea469591eaed5eaccdbcf537da363f7131bdd"
+    },
+    "reproducibility/build_complete_statistics.py": {
+      "bytes": 2682,
+      "sha256": "38350365d1932b15dbd0fd5ea494e0e02e01dde488ae0cbd14aacc6cc0605637"
     },
     "reproducibility/build_documents.py": {
-      "bytes": 10634,
-      "sha256": "eecb6695990663dfdfdea604afa404db7c4dcaac5db258079c400f9a633bb4ef"
+      "bytes": 11271,
+      "sha256": "fc8709d81b477cc6fe03f0c5c0a0528de764affadaa4ae441810bd08f30d4994"
     },
     "reproducibility/build_figures.py": {
       "bytes": 204,
       "sha256": "1e5bc2f57eaae35a2c5069a874f6e1af1d76bec94015cd8db5abeb1f6d5a4678"
     },
     "reproducibility/build_scientific_figures.py": {
-      "bytes": 13367,
-      "sha256": "b133e7371849c02c1c38c8c9e882bf36b3a52b76719aae28959c319b0c605b1b"
+      "bytes": 15649,
+      "sha256": "e5e375c77f8ac7c75ecaa860e23f4c724bd9912b7d6d62a29db583651473880d"
     },
     "reproducibility/requirements.txt": {
-      "bytes": 64,
-      "sha256": "6bf50247d38a26f49b519eed65347d3ae45d9d0d8f189ac8d4d50d29d232669e"
+      "bytes": 73,
+      "sha256": "8a55a35cd2bc4284dfcf3811fe4f74fa693766f7f9d72aeb2295f32e8a3a691a"
+    },
+    "reproducibility/verify_major_review_evidence.py": {
+      "bytes": 3526,
+      "sha256": "4f771e8cf8d56dfdd86e8b9e9db65b2d6fd86eb6468d1a61d5a6eb520dc6b683"
     },
     "tables/Table1.docx": {
-      "bytes": 13269,
-      "sha256": "e031b05ceff1cc33edec651b6f22001ead5528ae3889bb47e2e6ef426d4521ff"
+      "bytes": 13268,
+      "sha256": "7795adfdbfc4c9c02e54d5911ef626b7d9c2fda3730562981d2009dcb0f081a9"
     },
     "tables/Table2.docx": {
-      "bytes": 14066,
-      "sha256": "5bea8195005641731b3e61a9adec2c7451d56efa79b2c93f41e084103b9395b5"
+      "bytes": 14358,
+      "sha256": "8a4d166f1d704fbfc6fbeef9a46205559ab15925a43b5838071906e1cc97add1"
     },
     "tables/Table3.docx": {
-      "bytes": 13954,
-      "sha256": "834733c22e8163f5eddb294708a3c87c90ceac030c8e85beaed862f73f6a4372"
+      "bytes": 13922,
+      "sha256": "100782e831d061d527a261a16b2453896a951c3e635d8ac6b74437f134b811f9"
+    },
+    "tables/TableS1.docx": {
+      "bytes": 93640,
+      "sha256": "943062635d61b93ff86c47e6f79944f0de24befbacfa4f00afcdd82f442c7fba"
+    },
+    "tables/TableS2.docx": {
+      "bytes": 93311,
+      "sha256": "b67c8a8e06e2309c0a0df595d57b4c5cdc2131df0ec1a6024cbdbc4da9574075"
+    },
+    "tables/TableS3.docx": {
+      "bytes": 93614,
+      "sha256": "e4e63f22c797c2f966b42346b3b29b3f2771ebd72465a753dbdb33345953ea15"
+    },
+    "tables/TableS4.docx": {
+      "bytes": 93360,
+      "sha256": "f7e45e397fb5b4a4d1ff373ab618ea90e13f60c35adc72561e20fd83d959a49c"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
   "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed.",
   "revision_note_20260912_external_review": "External review round 8. Accepted and applied: TSHR BBJ prior sensitivity stated in the abstract and the opening Discussion; PP.H3 added to Table 2 so the distinct-variant and unresolved readings rest on displayed numbers; the '81 comparisons crossed the 0.80 threshold' sentence rewritten as a classification statement with its 9x3x3 decomposition; per-locus variant counts (1,479-7,740) and the purpose of the BBJ-plus-FinnGen criterion stated in Methods; the reconstructed exposure unit defined as approximately one standard deviation; gene-specific 80% detection limits reported, showing the IGF1R estimate fell below its own limit in all three outcomes; 'modest IGF1R contribution' widened to 'inherited contribution' because the FinnGen CI reaches 2.33; MAPKAPK5 given three decimals in a footnote; the 1000 Genomes panel given its own citation (new reference 18, all later references renumbered). Rejected after checking the data: no re-analysis was needed for colocalization input, which used unfiltered regional statistics (eQTL P up to 1.0; 1,479-7,740 variants per comparison). The UKB log-odds rescaling formula and the FinnGen 858/499,490 counts were already correct and documented.",
-  "updated_at_utc": "2026-09-12T14:22:05.435568+00:00",
+  "updated_at_utc": "2026-09-12T15:10:13.433075+00:00",
   "revision_20260912": "Correct outcome-specific detection thresholds and interpretation; clarify standardized expression unit; renumber all 27 references by first citation and synchronize verification; remove residual modest inherited contribution claim; restrict bold P-value formatting to P columns; rebuild and visually inspect all core documents and separate upload tables; replace stale release records.",
   "figure_numeric_audit": {
     "status": "PASS",
-    "checks": 6819,
+    "checks": 6864,
     "screen_genes": 2234,
     "posterior_comparisons": 63,
     "errors": []
   },
   "revision_20260912_expanded": "Expand Results and Discussion using preserved results and existing references; seven interpretation paragraphs, two limitations paragraphs and one conclusion; add full gene-level screen, matched OR/CI/P and posterior evidence, and candidate/prior sensitivity figures; preserve all analytical estimates and sensitivity limitations; update and verify documents, references and release identities.",
-  "revision_20260912_figure2_layout": "Separate panels A and B with independent grids, wider gutter and vertical divider; remove background and gene colour from panel A, unify numeric typography and preserve panel B category colours. Numerical source record and manuscript/documents unchanged."
+  "revision_20260912_figure2_layout": "Separate panels A and B with independent grids, wider gutter and vertical divider; remove background and gene colour from panel A, unify numeric typography and preserve panel B category colours. Numerical source record and manuscript/documents unchanged.",
+  "revision_20260912_figure_labels": "Black text throughout all four figures; raised IGF1R label and darker point; nominal and BBJ discovery P markers with non-significant P unbolded; full-cell strong-support borders and padded matrix labels. Synchronize Figure 2–3 manuscript legends, regenerate main DOCX and table exports, review changed pages and preserve original numerical estimates.",
+  "review_20260913": "Title and 33-reference order; H2 and variant-scale footnote; full estimator export with matching CIs; new TSHR reference-panel LD; conditional tolerance discussion; explicit unresolved multi-signal and directionality checks. This review supersedes prior readiness statements.",
+  "unresolved_scientific_checks": [
+    "Multi-signal colocalization for UKB TSHR and BBJ CTLA4",
+    "Formal genetic directionality",
+    "Full Phase 1 contributing-cohort table inspection; participant overlap remains unquantified"
+  ]
 }

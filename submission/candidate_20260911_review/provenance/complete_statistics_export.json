@@ -1,0 +1,38 @@
+{
+  "status": "PASS",
+  "rows": 13039,
+  "methods": [
+    {
+      "method": "Inverse variance weighted",
+      "rows": 3963,
+      "P_values_match_original_test": true
+    },
+    {
+      "method": "MR Egger",
+      "rows": 1940,
+      "P_values_match_original_test": true
+    },
+    {
+      "method": "Wald ratio",
+      "rows": 3256,
+      "P_values_match_original_test": true
+    },
+    {
+      "method": "Weighted median",
+      "rows": 1940,
+      "P_values_match_original_test": true
+    },
+    {
+      "method": "Weighted mode",
+      "rows": 1940,
+      "P_values_match_original_test": true
+    }
+  ],
+  "original_estimates_unchanged": true,
+  "CI_definition": "Two-sided 95% intervals use the original test distribution: normal for Wald/IVW/weighted median; Student t with n_iv-2 for MR Egger and n_iv-1 for weighted mode. Log-scale interval endpoints are retained if exponentiation overflows.",
+  "sources": [
+    "https://github.com/MRCIEU/TwoSampleMR/blob/master/R/mr.R",
+    "https://github.com/MRCIEU/TwoSampleMR/blob/master/R/mr_mode.R"
+  ],
+  "scope": "Export and arithmetic verification of preserved analyses; this does not rerun estimation, directionality, or multi-signal colocalization."
+}

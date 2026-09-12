@@ -17,7 +17,11 @@
       "lower95": 0.07225567878622186,
       "upper95": 0.20922156779058154,
       "pvalue": 1.09364048102808e-14,
-      "displayed_p": "1.09\u00d710\u207b\u00b9\u2074"
+      "displayed_p": "1.09\u00d710\u207b\u00b9\u2074",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": true,
+      "p_bold": true,
+      "significance_markers": "*\u2020"
     },
     {
       "gene": "TSHR",
@@ -26,7 +30,11 @@
       "lower95": 0.056511385921817446,
       "upper95": 0.1354496630180239,
       "pvalue": 8.76922860229631e-28,
-      "displayed_p": "8.77\u00d710\u207b\u00b2\u2078"
+      "displayed_p": "8.77\u00d710\u207b\u00b2\u2078",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     },
     {
       "gene": "TSHR",
@@ -35,7 +43,11 @@
       "lower95": 0.03990006811198512,
       "upper95": 0.23654671808578612,
       "pvalue": 2.8185167306492e-07,
-      "displayed_p": "2.82\u00d710\u207b\u2077"
+      "displayed_p": "2.82\u00d710\u207b\u2077",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     },
     {
       "gene": "IGF1R",
@@ -44,7 +56,11 @@
       "lower95": 1.0689168938068945,
       "upper95": 2.2830600926743285,
       "pvalue": 0.0212078300317169,
-      "displayed_p": "0.0212"
+      "displayed_p": "0.0212",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     },
     {
       "gene": "IGF1R",
@@ -53,7 +69,11 @@
       "lower95": 1.0688254562001664,
       "upper95": 1.702122174189913,
       "pvalue": 0.0117111535884687,
-      "displayed_p": "0.0117"
+      "displayed_p": "0.0117",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     },
     {
       "gene": "IGF1R",
@@ -62,7 +82,11 @@
       "lower95": 0.851900913258346,
       "upper95": 2.32592790282512,
       "pvalue": 0.182060477180186,
-      "displayed_p": "0.182"
+      "displayed_p": "0.182",
+      "nominal_significant": false,
+      "BBJ_discovery_significant": false,
+      "p_bold": false,
+      "significance_markers": ""
     },
     {
       "gene": "CTLA4",
@@ -71,7 +95,11 @@
       "lower95": 0.11350432265538225,
       "upper95": 0.2716037038697431,
       "pvalue": 5.45314198265834e-15,
-      "displayed_p": "5.45\u00d710\u207b\u00b9\u2075"
+      "displayed_p": "5.45\u00d710\u207b\u00b9\u2075",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": true,
+      "p_bold": true,
+      "significance_markers": "*\u2020"
     },
     {
       "gene": "CTLA4",
@@ -80,7 +108,11 @@
       "lower95": 0.07621651025082894,
       "upper95": 0.5685240206571092,
       "pvalue": 0.002201417858103,
-      "displayed_p": "0.0022"
+      "displayed_p": "0.0022",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     },
     {
       "gene": "CTLA4",
@@ -89,7 +121,11 @@
       "lower95": 0.0431056950565351,
       "upper95": 0.6763622931705265,
       "pvalue": 0.0118436767817885,
-      "displayed_p": "0.0118"
+      "displayed_p": "0.0118",
+      "nominal_significant": true,
+      "BBJ_discovery_significant": false,
+      "p_bold": true,
+      "significance_markers": "*"
     }
   ],
   "Figure2_posteriors": [
