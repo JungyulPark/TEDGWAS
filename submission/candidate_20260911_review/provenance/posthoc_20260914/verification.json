@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "baseline_comparisons": 9,
+  "eligible_comparisons": 5,
+  "omission_estimates": 15,
+  "not_estimable": [
+    {
+      "gene": "TSHR",
+      "outcome": "BBJ_Graves",
+      "reason": "Only one original instrument"
+    },
+    {
+      "gene": "TSHR",
+      "outcome": "UKB_hyperthyroid",
+      "reason": "Only one original instrument"
+    },
+    {
+      "gene": "TSHR",
+      "outcome": "FinnGen_GO",
+      "reason": "Only one original instrument"
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "BBJ_Graves",
+      "reason": "Only one original instrument"
+    }
+  ],
+  "summary": [
+    {
+      "gene": "IGF1R",
+      "outcome": "BBJ_Graves",
+      "original_n_iv": 4,
+      "all_OR": 1.562178447756825,
+      "all_P": 0.021207830031716918,
+      "LOO_OR_min": 1.487614606671572,
+      "LOO_OR_max": 1.8300431474814776,
+      "LOO_P_min": 0.022196297878209433,
+      "LOO_P_max": 0.07511754068514011,
+      "direction_reversals": 0,
+      "nominal_P_crossings": 2
+    },
+    {
+      "gene": "IGF1R",
+      "outcome": "UKB_hyperthyroid",
+      "original_n_iv": 4,
+      "all_OR": 1.3488037326968487,
+      "all_P": 0.011711153588468533,
+      "LOO_OR_min": 1.1571030709920118,
+      "LOO_OR_max": 1.4720631869383627,
+      "LOO_P_min": 0.0005313897917910058,
+      "LOO_P_max": 0.467626273584672,
+      "direction_reversals": 0,
+      "nominal_P_crossings": 2
+    },
+    {
+      "gene": "IGF1R",
+      "outcome": "FinnGen_GO",
+      "original_n_iv": 3,
+      "all_OR": 1.4076434579075017,
+      "all_P": 0.18206047718018625,
+      "LOO_OR_min": 1.2594774864871414,
+      "LOO_OR_max": 1.5765159587454103,
+      "LOO_P_min": 0.08992975991801122,
+      "LOO_P_max": 0.5458734444344719,
+      "direction_reversals": 0,
+      "nominal_P_crossings": 0
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "UKB_hyperthyroid",
+      "original_n_iv": 2,
+      "all_OR": 0.20816079565627943,
+      "all_P": 0.002201417858102971,
+      "LOO_OR_min": 0.17640518450303624,
+      "LOO_OR_max": 1.0182403200460977,
+      "LOO_P_min": 4.040168314452228e-25,
+      "LOO_P_max": 0.9722145095415625,
+      "direction_reversals": 1,
+      "nominal_P_crossings": 1
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "FinnGen_GO",
+      "original_n_iv": 2,
+      "all_OR": 0.1707485483310107,
+      "all_P": 0.011843676781788427,
+      "LOO_OR_min": 0.1378968719306444,
+      "LOO_OR_max": 1.7172299764466448,
+      "LOO_P_min": 1.0295780477272549e-07,
+      "LOO_P_max": 0.6585797507163615,
+      "direction_reversals": 1,
+      "nominal_P_crossings": 1
+    }
+  ],
+  "not_tested": [
+    "Age or sex subgroups",
+    "Multivariable clinical adjustment",
+    "Multi-signal colocalization",
+    "Formal directionality"
+  ]
+}

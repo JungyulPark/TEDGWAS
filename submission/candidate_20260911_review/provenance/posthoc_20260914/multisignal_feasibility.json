@@ -1,0 +1,35 @@
+{
+  "status": "Input-availability check only; multi-signal analysis not performed",
+  "comparisons": [
+    {
+      "gene": "TSHR",
+      "outcome": "UKB",
+      "eqtl_rows": 7309,
+      "common_eqtl_outcome_rsIDs": 5732,
+      "common_in_EUR_reference": 5667,
+      "common_in_EAS_reference": 4780,
+      "common_in_both_reference_panels": 4780
+    },
+    {
+      "gene": "CTLA4",
+      "outcome": "BBJ",
+      "eqtl_rows": 5402,
+      "common_eqtl_outcome_rsIDs": 3044,
+      "common_in_EUR_reference": 3014,
+      "common_in_EAS_reference": 2997,
+      "common_in_both_reference_panels": 2970
+    }
+  ],
+  "reference_sample_counts": {
+    "EUR": 503,
+    "EAS": 504
+  },
+  "binary_panels_present": true,
+  "remaining": [
+    "Determine final matched allele pairs and ambiguous-variant exclusions",
+    "Create signed LD with verified effect-allele and SNP order",
+    "Use EUR exposure LD and ancestry-appropriate outcome LD",
+    "Check summary-statistic/LD compatibility, convergence and sensitivity before interpretation"
+  ],
+  "caution": "rsID presence does not establish valid alignment or sufficient LD accuracy. These counts are not final analysis variant counts."
+}

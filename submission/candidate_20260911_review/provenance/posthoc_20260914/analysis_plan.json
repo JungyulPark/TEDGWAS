@@ -1,0 +1,18 @@
+{
+  "status": "Post hoc exploratory sensitivity; not incorporated in manuscript",
+  "genes": [
+    "TSHR",
+    "IGF1R",
+    "CTLA4"
+  ],
+  "outcomes": [
+    "BBJ_Graves",
+    "UKB_hyperthyroid",
+    "FinnGen_GO"
+  ],
+  "selection": "All three manuscript-selected genes and all three outcomes; no selection on new P values",
+  "method": "Drop each retained SNP in turn. Use multiplicative random-effects IVW with no under-dispersion for >=2 retained SNPs; Wald ratio if one remains. Single-SNP starting sets cannot be examined.",
+  "frequency_scenario": "original_reference",
+  "interpretation": "Report all estimates and intervals. P<0.05 crossings are descriptive stability checks, not additional discoveries.",
+  "input_sha256": "31450aa0ae57697ff5a957a09209a270dadbedf2b6d0e37b1b144e433356a86f"
+}

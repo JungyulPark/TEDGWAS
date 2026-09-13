@@ -66,7 +66,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             if p.style.name.startswith('List') or re.match(r'^\d+\. ',p.text):p.paragraph_format.line_spacing=1;p.paragraph_format.space_after=Pt(6)
             if iscover and p.text.startswith(('Sincerely','Suk-Woo Yang')):p.paragraph_format.keep_with_next=True
             if iscover and p.text=='Cover letter':p.paragraph_format.space_before=Pt(0)
-        if ismain or issup:setsec(d.sections[-1],True,False)
+        if ismain or issup:setsec(d.sections[-1],issup,False)
         for old in list(d.tables):
             fresh=d.add_table(rows=len(old.rows),cols=len(old.columns))
             for sr,tr in zip(old.rows,fresh.rows):
@@ -77,7 +77,10 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             old._tbl.addprevious(fresh._tbl);old._tbl.getparent().remove(old._tbl)
         for table in d.tables:
             heads=[c.text for c in table.rows[0].cells];cols=len(heads);table.autofit=False;table.alignment=WD_TABLE_ALIGNMENT.CENTER
-            if cols==3:weights=[.5,1.8,7.99]
+            if ismain and cols==8:weights=[.48,1.10,.90,1.10,.75,.75,.67,.62]
+            elif ismain and cols==5 and heads[0]=='Dataset':weights=[1.65,1.12,.58,.70,2.32]
+            elif ismain and cols==5:weights=[.83,.95,1.32,.88,2.39]
+            elif cols==3:weights=[.5,1.8,7.99]
             elif cols==8 and heads[3]=='OR (95% CI)':weights=[.7,2.0,.95,1.45,1.0,1.15,1.15,1.1]
             elif cols==8:weights=[.8,2.3,.9,.85,.85,.85,1.15,1.1]
             elif cols==5 and heads[0]=='Dataset':weights=[2.7,1.8,.8,.9,3.0]
@@ -87,8 +90,12 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             elif cols==6 and heads[2]=='Instruments':weights=[.8,2.8,.85,2.1,1.05,1.4]
             elif cols==6:weights=[.85,2.45,2.15,1,2.15,1]
             else:weights=[1]*cols
-            widths=[10.29*x/sum(weights) for x in weights]
-            tw=table._tbl.tblPr.find(qn('w:tblW'));tw.set(qn('w:type'),'dxa');tw.set(qn('w:w'),str(round(10.29*1440)))
+            # Main-text tables use the portrait text width so viewers that
+            # display the whole document at its first-page width cannot crop them.
+            sec=d.sections[-1]
+            usable_width=(sec.page_width-sec.left_margin-sec.right_margin)/914400
+            widths=[usable_width*x/sum(weights) for x in weights]
+            tw=table._tbl.tblPr.find(qn('w:tblW'));tw.set(qn('w:type'),'dxa');tw.set(qn('w:w'),str(round(usable_width*1440)))
             for col,width in zip(table.columns,widths):col.width=Inches(width)
             for ri,row in enumerate(table.rows):
                 pr=row._tr.get_or_add_trPr();pr.append(OxmlElement('w:cantSplit'))
@@ -96,7 +103,8 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
                 for ci,c in enumerate(row.cells):
                     c.width=Inches(widths[ci]);c.vertical_alignment=WD_CELL_VERTICAL_ALIGNMENT.CENTER
                     cp=c._tc.get_or_add_tcPr();m=OxmlElement('w:tcMar')
-                    for side,val in [('top','80'),('bottom','80'),('left','80'),('right','80')]:x=OxmlElement('w:'+side);x.set(qn('w:w'),val);x.set(qn('w:type'),'dxa');m.append(x)
+                    horizontal='40' if ismain and cols==8 and ci==0 else '80'
+                    for side,val in [('top','80'),('bottom','80'),('left',horizontal),('right',horizontal)]:x=OxmlElement('w:'+side);x.set(qn('w:w'),val);x.set(qn('w:type'),'dxa');m.append(x)
                     cp.append(m)
                     if ri==0:x=OxmlElement('w:shd');x.set(qn('w:fill'),'EEEEEE');cp.append(x)
                     for p in c.paragraphs:
@@ -145,7 +153,7 @@ for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATE
         keep=[target.getprevious(),target,target.getnext(),table_doc._element.body.sectPr]
         for el in list(table_doc._element.body):
             if el not in keep:table_doc._element.body.remove(el)
-        setsec(table_doc.sections[-1],True,False)
+        setsec(table_doc.sections[-1],source=='SUPPLEMENTARY_MATERIAL',False)
         for p in table_doc.paragraphs:p.paragraph_format.page_break_before=False
         table_doc.core_properties.title=f'Table {number}'
         table_doc.core_properties.identifier=f'Table{number}'

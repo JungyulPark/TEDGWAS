@@ -1,6 +1,6 @@
 # TED–TRAP final review package
 
-Updated 13 September 2026. **TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization**
+Updated 14 September 2026. **TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization**
 
 Tables, figures and manuscript presentation have been reviewed. The new multi-signal colocalization question, formal directionality, cohort-overlap verification and final author/journal checks remain unresolved; this is not an unconditional submit-ready certification. The requested eQTLGen allele-frequency sensitivity is completed.
 
@@ -14,3 +14,5 @@ Tables, figures and manuscript presentation have been reviewed. The new multi-si
 Verification: 1,250 content checks / 350 displayed numbers, 6,864 figure checks, and 44 reviewed pages across 11 Word documents. Current identities are in provenance. These checks do not establish causal assumptions. Table 2 now shows H2/H3/H4 and the variant-level TSHR scale; Table 3 gives MAPKAPK5 to three decimals. All figure text is black, Figure 2 has nominal/discovery markers, and Figure 3 has aligned border keys and unclipped labels.
 
 The repository-root master is the only manuscript source. Run scripts/audit_paper1_integrity.py, then reproducibility/audit_figures.py and audit_release.py after changes. Rebuilding invalidates the visual file records until the new output is reviewed.
+
+14 September layout correction: Tables 1–3 now use portrait text width in the main manuscript and independent table files. Numeric content is unchanged. ADDITIONAL_ANALYSIS_REVIEW_KO.md explains the methods and records exploratory SNP leave-one-out estimates and multi-signal input availability. The new exploration is not incorporated into the manuscript results.

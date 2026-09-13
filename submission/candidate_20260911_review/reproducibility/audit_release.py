@@ -5,6 +5,8 @@ Rebuilding a DOCX invalidates its visual record until it is inspected again.
 """
 from pathlib import Path
 import hashlib,json,runpy
+from docx import Document
+from docx.oxml.ns import qn
 
 O=Path(__file__).resolve().parents[1]
 P=O/'provenance'
@@ -31,6 +33,15 @@ check(qa['total_pages']==sum(r['page_count'] for r in qa['documents']),'Visual p
 for rec in qa['documents']:
     check(sha(O/rec['document'])==rec['sha256'],'Reviewed DOCX identity: '+rec['document'])
     check(rec['all_pages_visually_reviewed'] and rec['page_count']==len(rec['page_images']),'All pages recorded: '+rec['document'])
+    if rec['document'] in ['MANUSCRIPT_Submission.docx','tables/Table1.docx','tables/Table2.docx','tables/Table3.docx']:
+        doc=Document(O/rec['document'])
+        check(all(s.page_width<s.page_height for s in doc.sections),'Portrait review pages: '+rec['document'])
+        available=min((s.page_width-s.left_margin-s.right_margin)/635 for s in doc.sections)
+        for table in doc.tables:
+            width=int(table._tbl.tblPr.find(qn('w:tblW')).get(qn('w:w')))
+            check(width<=available+2,'Table fits portrait text width: '+rec['document'])
+            check(abs(sum(c.width/635 for c in table.columns)-width)<=len(table.columns),'Column grid matches table width: '+rec['document'])
+            check(not table._tbl.xpath('.//w:trHeight[@w:hRule="exact"]'),'No fixed row heights: '+rec['document'])
 figures=read('figure_verification.json')
 pdf_text=read('figure_pdf_text_checks.json')
 layout=read('figure_layout_checks.json')

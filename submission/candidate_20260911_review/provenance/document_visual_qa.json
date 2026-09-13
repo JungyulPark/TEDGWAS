@@ -1,13 +1,13 @@
 {
   "status": "PASS",
-  "review_date": "2026-09-13",
+  "review_date": "2026-09-14",
   "renderer": "documents render_docx.py; workspace LibreOffice and Poppler",
   "total_pages": 44,
-  "review_scope": "All 25 main, 9 supplementary, 1 cover, 2 checklist and 7 individual-table pages inspected. After final SD/citation/header edits, main pages 2,10,24 and Table2 were inspected again. The other main-page body pixels were identical outside the line-number margin; Tables1/3 were entirely pixel-identical. All independent table titles and notes fit on one landscape page. No clipped numbers, captions or table headers.",
+  "review_scope": "Main manuscript and separate Tables1-3 were rebuilt with portrait-width tables. All new main table pages 23-25 and the three separate table pages were visually inspected after wrapping corrections. Main pages 1-22 are byte-identical rendered PNGs to the preceding reviewed version. Other seven DOCX files are unchanged from their recorded review. Main tables fit one portrait page with their notes; supplementary tables retain reviewed landscape pages. The check establishes rendered layout, not the behavior of every external viewer.",
   "documents": [
     {
       "document": "MANUSCRIPT_Submission.docx",
-      "sha256": "202fa7a72c764527d09fd17ff0069fe1fe90773988a2f1c93f990dd9d9415920",
+      "sha256": "c98819d35062ef12bc187d9c7259643d4e5ab9a1b738d43f1d9ce7d27167c9a9",
       "page_count": 25,
       "all_pages_visually_reviewed": true,
       "page_images": [
@@ -101,15 +101,15 @@
         },
         {
           "page": 23,
-          "sha256": "1b540dc595ab82f15ac36e18ed70f39ddd45190367bc75853c76e08588654bfc"
+          "sha256": "7697c27621f06736963bf0779b9af3577886408c152c9b078392f96ac9dbf677"
         },
         {
           "page": 24,
-          "sha256": "b12d396c5c5a07a2f046ee55540cf919eb240f65c17d22d4c992564a307dbb34"
+          "sha256": "82ff5d440f8cf143ac4ae2c98138f4228a6dc8afe43fa1bca5ada5ad8f8514dd"
         },
         {
           "page": 25,
-          "sha256": "94a2e1f5552f51f5760daa8d381d855bb478c92727789a561fb1fcb8fb435cc9"
+          "sha256": "13572ea908edcfa43afcbda383e375e6655c4070e0b819836d747ac41aeae342"
         }
       ],
       "render_pdf_sha256": "5e504da6515cd4d6f5ebbe90cd27cbfa1623b694274f2b24f19a587a10044305"
@@ -191,39 +191,39 @@
     },
     {
       "document": "tables/Table1.docx",
-      "sha256": "7795adfdbfc4c9c02e54d5911ef626b7d9c2fda3730562981d2009dcb0f081a9",
+      "sha256": "112943805933e1419451dfc406a2ab11fe743cf9a9cb25fc668af1174d8598ef",
       "page_count": 1,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "f5d4c0400aa7f240af1d96f84ea43e9d544033789debe020803ae38fe34ba8c5"
+          "sha256": "b7a67cc3032b933a4058e0ec9956c8ac6097df1f281c05d93d54395b30f083a2"
         }
       ],
       "render_pdf_sha256": "695fa41c60099b8d8ec7cb504253c1ba2ccd3cb47b23333e46eb235d815d3300"
     },
     {
       "document": "tables/Table2.docx",
-      "sha256": "8a4d166f1d704fbfc6fbeef9a46205559ab15925a43b5838071906e1cc97add1",
+      "sha256": "b0140ce93f65f948aba801bba7ee43256eee82adef71bce724a2412a4b646468",
       "page_count": 1,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "5c091215c4e1b687937de60da80f2243218c838ba5958491bd8ba3115cb48810"
+          "sha256": "c41ed36188ccc4f9dba802a6412e910665688b04e9fe22fe19c6f3c69a31bf33"
         }
       ],
       "render_pdf_sha256": "b44f655241dc896369013edcf5351dc1b1a5450fcfff69244420ec40484ebe09"
     },
     {
       "document": "tables/Table3.docx",
-      "sha256": "100782e831d061d527a261a16b2453896a951c3e635d8ac6b74437f134b811f9",
+      "sha256": "ec82bcc32c9f626db4cf2f0c0dd84824ade219b4bef982ec4684730da7b59cff",
       "page_count": 1,
       "all_pages_visually_reviewed": true,
       "page_images": [
         {
           "page": 1,
-          "sha256": "44c80f50ae5abbec6fce206442e3ee95e66b7629bef9d21a71ee7c3efaa2729b"
+          "sha256": "a713fa45df325243909b2f2962ddbddaf97039b9a7530a759277f97dc2aba30c"
         }
       ],
       "render_pdf_sha256": "96fa7b45badd94c26196eab074ed613b8d1bf7379c16ae74e45de0cbab31b0fe"

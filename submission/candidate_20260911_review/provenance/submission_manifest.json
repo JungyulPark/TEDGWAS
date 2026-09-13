@@ -31,6 +31,10 @@
     "Raw and per-sample tissue CSV data"
   ],
   "files": {
+    "ADDITIONAL_ANALYSIS_REVIEW_KO.md": {
+      "bytes": 7267,
+      "sha256": "0f3276bf2abe7c3a5bef18f73b00b7404dc2ec8a660fc0b60ec15c6e6222ed4f"
+    },
     "COVER_LETTER_EndocrineConnections.docx": {
       "bytes": 13742,
       "sha256": "59e74b797c1b975dc84935aec34da51f3fa43925da0ad2a199483f071a53e4ee"
@@ -40,16 +44,16 @@
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 32864,
-      "sha256": "202fa7a72c764527d09fd17ff0069fe1fe90773988a2f1c93f990dd9d9415920"
+      "bytes": 32854,
+      "sha256": "c98819d35062ef12bc187d9c7259643d4e5ab9a1b738d43f1d9ce7d27167c9a9"
     },
     "README.md": {
-      "bytes": 1730,
-      "sha256": "98ec4b437e4be6825ffcc9d2a2bf5b8304159d23aa1da79bd05fd8c23c883e94"
+      "bytes": 2100,
+      "sha256": "a6736cdfb9a8adaeb18d80720cd39eb975a9d381ce122d3c9e4ac4b4e75ce9c9"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 7849,
-      "sha256": "792177cc1c8cf983539646b5632d7f0324e4b4d415920f92462a69694d4791fc"
+      "bytes": 8624,
+      "sha256": "361a3038e32d406b988fe08d7f4e3f1cd1c0e0a4f16733f13cfdb284cc9293aa"
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 15230,
@@ -88,8 +92,8 @@
       "sha256": "680df8bd4c875ccb21a3499f9250413df1e427b2855a1160fe77e4b3d0724414"
     },
     "TABLES_GUIDE_KO.md": {
-      "bytes": 2011,
-      "sha256": "e4af011eebe4bff4ef5a8862555b33b8a10e8a198f921d78c817ce5b012cf855"
+      "bytes": 2310,
+      "sha256": "5da896573bc01a9106c36a0b3aaf3ac481f9b971b340651eafc4c8ae2ff5b268"
     },
     "figures/Figure1.pdf": {
       "bytes": 127113,
@@ -172,8 +176,8 @@
       "sha256": "3bfe6a86164019a8916b697d087a9a70ae3ef7a1db8b4c69fe73bdee4bef7879"
     },
     "provenance/document_visual_qa.json": {
-      "bytes": 10240,
-      "sha256": "e46b19dbdc50a47dc4d9f7b57c4a23db686c49cc992404ed9d2cdad7ff1ac7d8"
+      "bytes": 10361,
+      "sha256": "be445861bd54de257537915dba980583f8fd4a90eb680c9679663d8ec8db4bb8"
     },
     "provenance/figure_layout_checks.json": {
       "bytes": 338,
@@ -267,6 +271,26 @@
       "bytes": 4001,
       "sha256": "267272c88189d83d681dc5e9c7b18911318a08864496c0191bef30b833426ea5"
     },
+    "provenance/posthoc_20260914/analysis_plan.json": {
+      "bytes": 818,
+      "sha256": "1cea3a5d97344c0c0d7f4c354f0d189f301ebfd745a9968d382c08e7c12e4806"
+    },
+    "provenance/posthoc_20260914/leave_one_out_estimates.csv": {
+      "bytes": 3949,
+      "sha256": "9fa7ff39eac0279ac59b5142a9fcca392672fa096c3bd039d6042341fa002d1b"
+    },
+    "provenance/posthoc_20260914/leave_one_out_summary.csv": {
+      "bytes": 847,
+      "sha256": "4e55afed2478a8a70ff5eae26bb3c968b294b8af34c0c2760815ec443430d3a4"
+    },
+    "provenance/posthoc_20260914/multisignal_feasibility.json": {
+      "bytes": 1212,
+      "sha256": "ab4c163781257744b6826f3e97fc781103f6c9ab1e0b276e5d015b6cd90fc9b8"
+    },
+    "provenance/posthoc_20260914/verification.json": {
+      "bytes": 2827,
+      "sha256": "34080fa785cff7deee4b258789d47f09d9a91d7865f8b0d75cf696bd63263d9f"
+    },
     "provenance/power_summary_verified.csv": {
       "bytes": 706,
       "sha256": "cac6cebcf3b2fe88ce683f9627284a16a05b3371bb43afc179fa7fd9686338ab"
@@ -328,8 +352,8 @@
       "sha256": "97d736c63ceff3d3eea8266a54509beaf09f3b947400b39d78366ffd3e0cc8b5"
     },
     "reproducibility/audit_release.py": {
-      "bytes": 3856,
-      "sha256": "bc8f089e436db36173688b20bbb23f4f203ce34b91d2fc445d7458c61fc34766"
+      "bytes": 4729,
+      "sha256": "6bd239fc0109280673deb868b9490c4e31cab0d3f56967bdc663fe81fe0a9d52"
     },
     "reproducibility/audit_submission.py": {
       "bytes": 16915,
@@ -340,8 +364,8 @@
       "sha256": "38350365d1932b15dbd0fd5ea494e0e02e01dde488ae0cbd14aacc6cc0605637"
     },
     "reproducibility/build_documents.py": {
-      "bytes": 11271,
-      "sha256": "fc8709d81b477cc6fe03f0c5c0a0528de764affadaa4ae441810bd08f30d4994"
+      "bytes": 11910,
+      "sha256": "33d4444dc81e30e66b4c4e0599bb38e6627fc6f230aa67d05de895a9d2881969"
     },
     "reproducibility/build_figures.py": {
       "bytes": 204,
@@ -350,6 +374,10 @@
     "reproducibility/build_scientific_figures.py": {
       "bytes": 15649,
       "sha256": "e5e375c77f8ac7c75ecaa860e23f4c724bd9912b7d6d62a29db583651473880d"
+    },
+    "reproducibility/explore_leave_one_out.py": {
+      "bytes": 4932,
+      "sha256": "b4d3f5e1a4275741ed3f00622f69aecdcb6b32b5e1471dcc47053273c4003a39"
     },
     "reproducibility/requirements.txt": {
       "bytes": 73,
@@ -360,16 +388,16 @@
       "sha256": "4f771e8cf8d56dfdd86e8b9e9db65b2d6fd86eb6468d1a61d5a6eb520dc6b683"
     },
     "tables/Table1.docx": {
-      "bytes": 13268,
-      "sha256": "7795adfdbfc4c9c02e54d5911ef626b7d9c2fda3730562981d2009dcb0f081a9"
+      "bytes": 13255,
+      "sha256": "112943805933e1419451dfc406a2ab11fe743cf9a9cb25fc668af1174d8598ef"
     },
     "tables/Table2.docx": {
-      "bytes": 14358,
-      "sha256": "8a4d166f1d704fbfc6fbeef9a46205559ab15925a43b5838071906e1cc97add1"
+      "bytes": 14347,
+      "sha256": "b0140ce93f65f948aba801bba7ee43256eee82adef71bce724a2412a4b646468"
     },
     "tables/Table3.docx": {
-      "bytes": 13922,
-      "sha256": "100782e831d061d527a261a16b2453896a951c3e635d8ac6b74437f134b811f9"
+      "bytes": 13902,
+      "sha256": "ec82bcc32c9f626db4cf2f0c0dd84824ade219b4bef982ec4684730da7b59cff"
     },
     "tables/TableS1.docx": {
       "bytes": 93640,
@@ -391,7 +419,7 @@
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
   "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed.",
   "revision_note_20260912_external_review": "External review round 8. Accepted and applied: TSHR BBJ prior sensitivity stated in the abstract and the opening Discussion; PP.H3 added to Table 2 so the distinct-variant and unresolved readings rest on displayed numbers; the '81 comparisons crossed the 0.80 threshold' sentence rewritten as a classification statement with its 9x3x3 decomposition; per-locus variant counts (1,479-7,740) and the purpose of the BBJ-plus-FinnGen criterion stated in Methods; the reconstructed exposure unit defined as approximately one standard deviation; gene-specific 80% detection limits reported, showing the IGF1R estimate fell below its own limit in all three outcomes; 'modest IGF1R contribution' widened to 'inherited contribution' because the FinnGen CI reaches 2.33; MAPKAPK5 given three decimals in a footnote; the 1000 Genomes panel given its own citation (new reference 18, all later references renumbered). Rejected after checking the data: no re-analysis was needed for colocalization input, which used unfiltered regional statistics (eQTL P up to 1.0; 1,479-7,740 variants per comparison). The UKB log-odds rescaling formula and the FinnGen 858/499,490 counts were already correct and documented.",
-  "updated_at_utc": "2026-09-12T15:10:13.433075+00:00",
+  "updated_at_utc": "2026-09-13T23:01:14.839791+00:00",
   "revision_20260912": "Correct outcome-specific detection thresholds and interpretation; clarify standardized expression unit; renumber all 27 references by first citation and synchronize verification; remove residual modest inherited contribution claim; restrict bold P-value formatting to P columns; rebuild and visually inspect all core documents and separate upload tables; replace stale release records.",
   "figure_numeric_audit": {
     "status": "PASS",
@@ -408,5 +436,7 @@
     "Multi-signal colocalization for UKB TSHR and BBJ CTLA4",
     "Formal genetic directionality",
     "Full Phase 1 contributing-cohort table inspection; participant overlap remains unquantified"
-  ]
+  ],
+  "layout_revision_20260914": "Portrait main tables with explicit width checks and new visual review; manuscript numerical content unchanged",
+  "exploratory_posthoc_20260914": "Nine baseline reproductions, five eligible comparisons, fifteen SNP omission estimates. Kept separate from manuscript analyses; multi-signal analysis not performed."
 }
