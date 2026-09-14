@@ -18,5 +18,10 @@
     "all_pdf_text_black": true,
     "pdf_text_spans": 43,
     "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b"
+  },
+  "FigureS2": {
+    "all_pdf_text_black": true,
+    "pdf_text_spans": 89,
+    "pdf_sha256": "0232a4139eb05ff0490c0112773db57d708422475126fcf356f6cf635f13b0fd"
   }
 }

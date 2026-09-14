@@ -1,7 +1,8 @@
 {
   "status": "PASS",
-  "checks": 6864,
+  "checks": 7032,
   "screen_genes": 2234,
   "posterior_comparisons": 63,
+  "leave_one_out_plot_rows": 20,
   "errors": []
 }

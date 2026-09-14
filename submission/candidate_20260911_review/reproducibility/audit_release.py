@@ -47,8 +47,8 @@ pdf_text=read('figure_pdf_text_checks.json')
 layout=read('figure_layout_checks.json')
 check(figures['status']=='PASS','Figure visual review status')
 check(figures['source_manifest_sha256']==sha(P/'clinical_figure_sources.json'),'Reviewed figure source identity')
-check(figures['main_figures']==3 and figures['supplementary_figures']==1,'Complete figure set')
-check({r['name'] for r in figures['figures']}=={'Figure1','Figure2','Figure3','FigureS1'},'Exact reviewed figure names')
+check(figures['main_figures']==3 and figures['supplementary_figures']==2,'Complete figure set')
+check({r['name'] for r in figures['figures']}=={'Figure1','Figure2','Figure3','FigureS1','FigureS2'},'Exact reviewed figure names')
 for rec in figures['figures']:
     for ext in ['png','pdf']:
         check(sha(O/'figures'/(rec['name']+'.'+ext))==rec[ext+'_sha256'],'Reviewed figure identity: '+rec['name']+'.'+ext)
@@ -56,6 +56,7 @@ for rec in figures['figures']:
     check(rec['visual_review'].startswith('PASS'),'Figure reviewed: '+rec['name'])
     check(pdf_text[rec['name']]['all_pdf_text_black'],'Black PDF text: '+rec['name'])
     check(pdf_text[rec['name']]['pdf_sha256']==rec['pdf_sha256'],'Checked PDF text identity: '+rec['name'])
+check(figures['leave_one_out_source_sha256']==sha(P/'leave_one_out_figure_sources.json'),'Reviewed Figure S2 source identity')
 for name in ['Figure1','Figure2','Figure3']:
     check(layout[name]['all_text_black'],'Black plot labels: '+name)
 check(layout['Figure3']['cell_labels_with_padding']==27,'All Figure3 matrix labels fit inside cells')

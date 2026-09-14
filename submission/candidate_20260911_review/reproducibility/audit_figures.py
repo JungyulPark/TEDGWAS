@@ -37,8 +37,30 @@ for key,count in [('Figure2_posteriors',9),('Figure3_primary',27),('Figure3_prio
         for name,v in r.items():
             if name.startswith('PP.H'):check(np.isclose(v,c[name],rtol=1e-12,atol=1e-15),key+' '+r['gene']+'/'+r['outcome']+'/'+name)
         if key=='Figure2_posteriors':check(abs(sum(r[h] for h in ['PP.H0','PP.H1','PP.H2','PP.H3','PP.H4'])-1)<1e-10,'Posterior bars sum to one')
+# Figure S2 must include all 15 omissions plus five full-set estimates.
+data=O/'Supplementary_Data_6_Leave_one_out.csv';loo=pd.read_csv(data)
+ls=json.loads((P/'leave_one_out_figure_sources.json').read_text(encoding='utf8'))
+check(ls['data_sha256']==hashlib.sha256(data.read_bytes()).hexdigest(),'Figure S2 source hash')
+for ext in ['png','pdf']:check(ls[ext+'_sha256']==hashlib.sha256((O/'figures'/('FigureS2.'+ext)).read_bytes()).hexdigest(),'Figure S2 export hash '+ext)
+check(len(ls['rows'])==len(loo)==20,'All 20 Figure S2 rows included')
+seen=set()
+for row in ls['rows']:
+    key=(row['gene'],row['outcome'],row['excluded_SNP']);seen.add(key)
+    r=loo[(loo.gene==key[0])&(loo.outcome==key[1])&(loo.excluded_SNP==key[2])].iloc[0]
+    for col in ['n_iv','OR','CI_lower','CI_upper','pvalue']:check(np.isclose(row[col],r[col],rtol=1e-12,atol=1e-300),'Figure S2 source '+col+' '+str(key))
+    check(row['displayed_effect']==f'{r.OR:.3f} ({r.CI_lower:.3f}–{r.CI_upper:.3f})','Figure S2 displayed OR/CI '+str(key))
+    if r.pvalue>=.001:shown_p=f'{r.pvalue:.3g}'
+    else:
+        mant,exponent=f'{r.pvalue:.2e}'.split('e')
+        shown_p=mant.rstrip('0').rstrip('.')+'×10'+str(int(exponent)).translate(str.maketrans('-0123456789','⁻⁰¹²³⁴⁵⁶⁷⁸⁹'))
+    check(row['displayed_p']==shown_p,'Figure S2 displayed P '+str(key))
+    check(row['p_bold']==bool(r.pvalue<.05),'Figure S2 nominal P boldness '+str(key))
+check(seen==set(zip(loo.gene,loo.outcome,loo.excluded_SNP)),'No selected or duplicated LOO rows')
+check(ls['omission_rows']==15 and ls['full_set_rows']==5,'Figure S2 omission/baseline counts')
+check(ls['all_text_black'] and ls['all_CIs_within_axis'] and ls['row_labels_within_canvas'],'Figure S2 layout assertions')
+
 pdf_records={}
-for name in ['Figure1','Figure2','Figure3','FigureS1']:
+for name in ['Figure1','Figure2','Figure3','FigureS1','FigureS2']:
     path=O/'figures'/(name+'.pdf')
     with pymupdf.open(path) as doc:
         page=doc[0]
@@ -52,6 +74,6 @@ for name in ['Figure1','Figure2','Figure3','FigureS1']:
             marks=[s for s in spans if '*' in s['text'] and .55*page.rect.width<s['bbox'][0]<.66*page.rect.width and s['bbox'][1]<.85*page.rect.height]
             check(len(marks)==8 and all(s['flags']&16 for s in marks),'Eight bold nominal asterisks in exported P column')
             check(sum('†' in s['text'] for s in marks)==2,'Two BBJ discovery daggers in exported P column')
-(P/'figure_pdf_text_checks.json').write_text(json.dumps(pdf_records,indent=2)+'\n',encoding='utf-8')
-result={'status':'FAIL' if errors else 'PASS','checks':checks,'screen_genes':len(screen),'posterior_comparisons':63,'errors':errors}
-(P/'figure_numeric_audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8');print(json.dumps(result,indent=2));raise SystemExit(bool(errors))
+(P/'figure_pdf_text_checks.json').write_text(json.dumps(pdf_records,indent=2)+'\n',encoding='utf-8',newline='\r\n')
+result={'status':'FAIL' if errors else 'PASS','checks':checks,'screen_genes':len(screen),'posterior_comparisons':63,'leave_one_out_plot_rows':20,'errors':errors}
+(P/'figure_numeric_audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\r\n');print(json.dumps(result,indent=2));raise SystemExit(bool(errors))

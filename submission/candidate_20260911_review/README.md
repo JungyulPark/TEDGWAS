@@ -1,18 +1,16 @@
-# TED–TRAP final review package
+# TED–TRAP final author-review package
 
-Updated 14 September 2026. **TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization**
+Updated 14 September 2026: leave-one-out integrated. **TSHR and IGF1R expression in Graves disease: Mendelian randomization and colocalization**
 
-Tables, figures and manuscript presentation have been reviewed. The new multi-signal colocalization question, formal directionality, cohort-overlap verification and final author/journal checks remain unresolved; this is not an unconditional submit-ready certification. The requested eQTLGen allele-frequency sensitivity is completed.
+The requested post hoc SNP-exclusion analysis is reported in the manuscript, Table S5, Figure S2, Data 6 and STROBE checklist. It contains all 15 eligible omissions (11 IGF1R, four CTLA4), with five full-set comparators. Independent base-R calculations reproduced all nine selected-gene full-set estimates and all omissions. European CTLA4 MR support is concentrated in rs13030124; the other SNP alone has imprecise CIs including OR = 1. The prior eQTLGen frequency-sensitivity analysis remains completed.
 
-- Main manuscript: 3,326 words (3,358 with headings), abstract 231 words, 33 references, Tables 1–3 and figure legends.
-- Supplementary material: Methods, Tables S1–S4 and descriptive Figure S1.
-- Separate editable tables: Tables 1–3 and S1–S4, including titles/notes.
-- Four figures, each as vector PDF and 300-dpi PNG.
-- Supplementary Data 1–5, with all original MR estimators now included; see SUPPLEMENTARY_DATA_README.md and TABLES_GUIDE_KO.md.
-- Cover letter, STROBE-MR reporting map and REVIEW_REPORT_KO.md.
+- Main manuscript: 3,540 words (3,572 with headings), abstract 231 words, 33 references, Tables 1–3 and figure legends.
+- Supplementary material: Methods, Tables S1–S5, descriptive Figure S1 and leave-one-out Figure S2.
+- Eight separate editable tables, with titles and notes; main tables use portrait pages.
+- Five figures, each as vector PDF and 300-dpi PNG, with black text.
+- Supplementary Data 1–6: instruments, primary/frequency-sensitivity MR, colocalization, detection limits, complete MR estimators and leave-one-out.
+- Cover letter, STROBE checklist and Korean review/table/method guides.
 
-Verification: 1,250 content checks / 350 displayed numbers, 6,864 figure checks, and 44 reviewed pages across 11 Word documents. Current identities are in provenance. These checks do not establish causal assumptions. Table 2 now shows H2/H3/H4 and the variant-level TSHR scale; Table 3 gives MAPKAPK5 to three decimals. All figure text is black, Figure 2 has nominal/discovery markers, and Figure 3 has aligned border keys and unclipped labels.
+This revision is prepared for final author review within the stated analysis scope. Multi-signal colocalization was deliberately left outside this revision; the regional model limitation remains disclosed. Directionality and participant overlap have not been established. Final author approval, declarations, live journal requirements and the portal-generated PDF still require review. Audit PASS certifies numerical/document consistency within its scope, not those scientific assumptions or author declarations.
 
-The repository-root master is the only manuscript source. Run scripts/audit_paper1_integrity.py, then reproducibility/audit_figures.py and audit_release.py after changes. Rebuilding invalidates the visual file records until the new output is reviewed.
-
-14 September layout correction: Tables 1–3 now use portrait text width in the main manuscript and independent table files. Numeric content is unchanged. ADDITIONAL_ANALYSIS_REVIEW_KO.md explains the methods and records exploratory SNP leave-one-out estimates and multi-signal input availability. The new exploration is not incorporated into the manuscript results.
+The repository-root master is the only manuscript source. Run scripts/audit_paper1_integrity.py, then reproducibility/audit_figures.py and audit_release.py. Current counts and reviewed file identities are recorded in provenance and REVIEW_REPORT_KO.md. Rebuilding requires renewed visual review.

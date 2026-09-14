@@ -1,6 +1,4 @@
-> **13 September 2026 review status:** Tables 1–3/S1–S4 and Data 1–5 are complete for presentation; 33 references, 1,250 content checks / 350 displayed values, 6,864 figure checks and 44 reviewed Word pages. New TSHR reference-panel LD was calculated. Multi-signal colocalization, formal directionality, cohort-overlap verification and author/journal checks remain unresolved. This supersedes earlier statements that only author/journal checks remain. Read the current REVIEW_REPORT_KO.md.
-
-> **2026-09-13 expanded review:** Three data-rich main figures; Results 982 words; Discussion 1,235 words (seven interpretation paragraphs, two limitations paragraphs, one conclusion). References now 33; 1,250 content checks / 350 displayed values and 6,864 figure checks PASS; 44 visually reviewed pages including separate Tables 1–3 and S1–S4. Run content, figure and release audits. The scientific and author/journal checks listed above remain pending.
+> **14 September 2026 integrated review:** Leave-one-out is now reported in Methods/Results/Discussion, Table S5, Figure S2, Data 6 and STROBE item 13. Fifteen omissions comprise 11 IGF1R and 4 CTLA4 results; all nine full-set estimates and every omission were independently checked in base R. The European CTLA4 dependence on rs13030124 is disclosed in Table 2. No new multi-signal colocalization was undertaken: its absence and the single-causal-variant assumption remain explicit limitations. Formal directionality and participant overlap remain unverified. Read the current REVIEW_REPORT_KO.md for review status and audit counts.
 
 > **2026-09-11 reviewed revision:** The current master and `submission/candidate_20260911_review/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the current revision report before editing. Outdated SuSiE/tissue P-value claims must not be restored; IGF1R UKB remains split H2/H4. The requested eQTLGen frequency sensitivity is completed (Tables S3–S4; Supplementary Data 2–4). This is a final author-review candidate, with author details/declarations and live journal checks pending. The non-negotiable data-management rules below remain in force. The 2026-09-05 author decision to omit the manuscript AI-tool declaration is retained; journal disclosure requirements remain an explicit final-review item. "Prespecified" must not describe unregistered thresholds. The old root package remains archived in `archives/submission_pre20260905/`.
 
@@ -14,7 +12,7 @@ making changes. The guiding value of this project is **정확하고 진실한게
 Druggable-gene-wide Mendelian randomization (MR) + colocalization +
 orbital transcriptomics distinguishing **TSHR-anchored genetic susceptibility**
 from **IGF1R pharmacologic effector biology** in Graves disease (GD) and
-thyroid eye disease (TED). Current state: **v5 expanded clinical revision (12 Sep 2026)**,
+thyroid eye disease (TED). Current state: **v5 leave-one-out integrated revision (14 Sep 2026)**,
 prepared for **Endocrine Connections**. The one live package is
 `submission/candidate_20260911_review/`; everything else is archived.
 
@@ -53,6 +51,7 @@ prepared for **Endocrine Connections**. The one live package is
   hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
   in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
   14.6% → 12.5%. Never describe this analysis as unperformed again.
+- **Leave-one-out is reported** (2026-09-14): 15 omissions = 11 IGF1R + 4 CTLA4; Table S5, Figure S2, Data 6 and STROBE item 13. European CTLA4 support is concentrated in rs13030124; imprecision of the other SNP is not proof of no effect. New multi-signal coloc is outside this revision; retain model limitations. Do not restore the superseded "not reported" statement.
 - **robust_novel = 0** after MHC + chr16p11.2 LD-spillover + cross-outcome coloc
   filtering. This is an *informative* result, not a negative one — do not reframe
   it as a discovery.
@@ -121,17 +120,17 @@ prepared for **Endocrine Connections**. The one live package is
   `TrackA_MR/v5_upgrade/` — do not fill from memory.
 - Figures are built by the R/Python scripts in the repo; **verify figure inputs
   against the locked master** before trusting a render (`FIGURE_VERIFICATION.md`).
-  The current set is Figures 1-3 plus Figure S1; Figure 2's OR axis MUST match Table 2. All figure text must remain black; asterisks denote nominal P<0.05, with an additional dagger only for BBJ discovery P<0.05/2,544. Figure3 borders denote PP.H4>=0.80, not P-value significance.
+  The current set is Figures 1-3 plus Figures S1-S2; Figure 2's OR axis MUST match Table 2. All figure text must remain black; asterisks denote nominal P<0.05, with an additional dagger only for BBJ discovery P<0.05/2,544. Figure3 borders denote PP.H4>=0.80, not P-value significance.
 - **Run `python3 scripts/audit_paper1_integrity.py` after every manuscript edit.** It runs the
   framing guards (each one encodes a defect that was actually removed) and then the candidate's
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `0382456e12b5ce18d2b4f969c393b5fc`,
-  normalised `a164369f7e52589abf0121cf4a2d6a6c` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `7c825ea83f9adb22c6dc2b3663780566`,
+  normalised `2f15ef37386640412ec5d8aa3dcfeb80` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,326**
-  (Introduction–Discussion; 3,358 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,540**
+  (Introduction–Discussion; 3,572 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **231** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
@@ -139,7 +138,7 @@ prepared for **Endocrine Connections**. The one live package is
 ## Repo layout (actual)
 ```
 submission/candidate_20260911_review/   # THE package: docx, cover letter,
-                   #   STROBE-MR checklist, Figures 1-3 + S1, Supplementary Data 1-4,
+                   #   STROBE-MR checklist, Figures 1-3 + S1-S2, Supplementary Data 1-6,
                    #   provenance/ (incl. maf/) and reproducibility/
 archives/submission_candidates/         # superseded packages -- never submit from here
 TrackA_MR/         # v5 core: MR, coloc, tissue (fine-mapping withdrawn)

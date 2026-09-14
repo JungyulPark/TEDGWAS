@@ -1,4 +1,4 @@
-> **Current figure verification:** [candidate_20260911_review/provenance/figure_verification.json](submission/candidate_20260911_review/provenance/figure_verification.json). The current set contains two main figures and one descriptive supplementary figure, using verified primary results. CTLA4 BBJ PP.H3 is 0.799 and PP.H4 is 0.201. The record below is historical and must not be used to rebuild the current candidate.
+> **Current figure verification:** [candidate_20260911_review/provenance/figure_verification.json](submission/candidate_20260911_review/provenance/figure_verification.json). The current set contains three main figures, descriptive Figure S1 and the new leave-one-out Figure S2. The latter reports all 15 omissions and five full-set comparators from Supplementary Data 6; its source record is leave_one_out_figure_sources.json. All exported figure text is black. CTLA4 BBJ PP.H3 is 0.799 and PP.H4 is 0.201. The record below is historical and must not be used to rebuild the current candidate.
 
 # Figure verification against locked master (v5)
 

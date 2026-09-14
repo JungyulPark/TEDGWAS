@@ -1,6 +1,6 @@
 # Supplementary data guide
 
-Five files retain the complete primary and frequency-sensitivity results without duplicating the original and sensitivity datasets as separate uploads. Blank values mean unavailable or not estimable, not zero. Clinical tables use rounded values; these files preserve full numerical precision.
+Six files retain the primary, frequency-sensitivity and reported post hoc leave-one-out results without duplicating the original and sensitivity datasets as separate uploads. Blank values mean unavailable or not estimable, not zero. Clinical tables use rounded values; these files preserve full numerical precision.
 
 ## Supplementary Data 1 Instruments
 
@@ -34,3 +34,11 @@ Twelve rows retain all four frequency scenarios in each outcome. `or_median`, `o
 `beta`, `se`, `pvalue`, instrument counts and diagnostic statistics are unchanged from the verified analysis. `test_distribution` and `test_df` make each test explicit. The 95% interval uses the matching normal distribution for Wald/IVW/median and Student t for Egger (n_iv−2 degrees of freedom) or mode (n_iv−1). `log_or_ci_lower/upper` and `or_ci_lower/upper` give its endpoints. These method-specific intervals differ from generic normal intervals in historical export files; no coefficient or P value was changed. The P values for all 13,039 estimates were independently verified against these distributions. If exponentiation overflows for an extremely wide interval, use the finite log-scale endpoints; this indicates imprecision, not a missing estimate.
 
 Egger-intercept and Cochran-Q columns are gene–outcome diagnostics copied across estimator rows; they are not separate tests of each estimator. Unavailable values are NA, and the Steiger columns remain NA because directionality has not been established in this package. These analyses use the original reference frequencies; they are not a new frequency-sensitivity rerun.
+
+## Supplementary Data 6 Leave-one-out sensitivity
+
+Twenty aggregate rows report all 15 eligible SNP omissions and five full-set comparators for the three selected genes. Eleven omissions concern IGF1R (four BBJ, four UKB, three FinnGen) and four concern CTLA4 (two UKB, two FinnGen). TSHR in all outcomes and CTLA4 in BBJ each had one SNP and could not undergo omission.
+
+`excluded_SNP` names the SNP removed; `None (all instruments)` marks a comparator. `original_n_iv` gives the starting set size and `n_iv` the remaining count. Remaining sets of two or more SNPs use multiplicative random-effects IVW with the original underdispersion correction; one remaining SNP uses the Wald ratio. `beta` and `se` are on the MR log-OR scale; `OR`, `CI_lower`, `CI_upper` and `pvalue` use the two-sided normal test and qnorm(0.975) intervals. `Q` is residual heterogeneity and is unavailable for single-SNP estimates. `analysis_timing=post_hoc`, `frequency_scenario=original_reference`, `test_distribution=normal` and `ci_level=0.95` identify the analysis scope. These results were not rerun after eQTLGen frequency substitution.
+
+All rows were checked against an independent base-R implementation; all nine full-set selected-gene estimates were reproduced before assessing exclusions. Table S5 gives all omissions, while Figure S2 also shows all five comparators. Display rounding can place a CI endpoint at 1.000; use the unrounded values and reported P value for threshold comparisons. Bold nominal P values in displays are descriptive, not corrected discoveries or independent replication. An imprecise interval including one does not establish equivalence or absence of an effect.

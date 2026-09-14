@@ -44,7 +44,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
         for nm in ['Normal','Body Text','First Paragraph','Compact','Caption','Table','List Paragraph']:
             if nm not in d.styles:continue
             st=d.styles[nm];st.font.name='Times New Roman';st.font.size=Pt(11 if iscover else 12)
-            st.paragraph_format.line_spacing=1 if iscover else 2
+            st.paragraph_format.line_spacing=1 if iscover else 1.9 if issup else 2
             st.paragraph_format.space_after=Pt(5 if iscover else 0)
         for nm in ['Title','Heading 1','Heading 2','Heading 3','Heading 4']:
             if nm not in d.styles:continue
@@ -56,7 +56,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             if p.style.name=='Heading 1' and p.text in [title,'Supplementary material','Cover letter','STROBE MR reporting checklist']:p.style='Title'
             if p.text in ['Abstract','Introduction','References','Figure Legends']:p.paragraph_format.page_break_before=True
             if p.text=='Tables':p._element.getparent().remove(p._element);continue
-            if re.match(r'^Table (S?[1-4])\.',p.text):
+            if re.match(r'^Table (S?[1-5])\.',p.text):
                 if (ismain and p.text.startswith('Table 1.')) or (issup and p.text.startswith('Table S1.')):boundary(d,p,ismain)
                 else:p.paragraph_format.page_break_before=True
                 intables=True;p.paragraph_format.keep_with_next=True
@@ -89,6 +89,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
             elif cols==6 and heads[0]=='Outcome':weights=[2.4,1.45,.8,2.25,1.1,1.1]
             elif cols==6 and heads[2]=='Instruments':weights=[.8,2.8,.85,2.1,1.05,1.4]
             elif cols==6:weights=[.85,2.45,2.15,1,2.15,1]
+            elif cols==7:weights=[.70,.80,1.40,.95,1.20,2.80,1.30]
             else:weights=[1]*cols
             # Main-text tables use the portrait text width so viewers that
             # display the whole document at its first-page width cannot crop them.
@@ -124,6 +125,13 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
                 if p.text.startswith('Figure S1.'):
                     p.paragraph_format.page_break_before=True;p.paragraph_format.keep_with_next=True
                     np=d.add_paragraph();p._p.addnext(np._p);np.add_run().add_picture(str(O/'figures/FigureS1.png'),width=Inches(8.9));np.alignment=WD_ALIGN_PARAGRAPH.CENTER;np.paragraph_format.line_spacing=1
+                elif p.text.startswith('Figure S2.'):
+                    boundary(d,p,False)
+                    setsec(d.sections[-1],False,False)
+                    p.paragraph_format.keep_with_next=True
+                    np=d.add_paragraph();p._p.addnext(np._p)
+                    np.add_run().add_picture(str(O/'figures/FigureS2.png'),width=Inches(6.25))
+                    np.alignment=WD_ALIGN_PARAGRAPH.CENTER;np.paragraph_format.line_spacing=1
         seen=set()
         for sec in d.sections:
             for foot in [sec.footer,sec.first_page_footer,sec.even_page_footer]:
@@ -145,7 +153,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
 
 # Separate editable tables for the publisher's upload workflow.
 (O/'tables').mkdir(exist_ok=True)
-for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4'])]:
+for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
     if source not in texts:continue
     for index,number in enumerate(keys):
         table_doc=Document(O/(source+'.docx'))

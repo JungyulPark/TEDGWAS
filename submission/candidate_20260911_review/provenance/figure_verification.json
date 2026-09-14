@@ -1,8 +1,8 @@
 {
   "status": "PASS",
-  "date": "2026-09-12",
+  "date": "2026-09-14",
   "main_figures": 3,
-  "supplementary_figures": 1,
+  "supplementary_figures": 2,
   "source_numeric_audit": "figure_numeric_audit.json; integrity_audit.json for OR/CI/P comparisons",
   "source_manifest_sha256": "c54057f6d8eac8b0f91478084677610b7d3ee2521f931a6af9cddde1bd3af5f5",
   "figures": [
@@ -65,9 +65,26 @@
       "pdf_sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
       "visual_review": "PASS; preserved descriptive figure visually inspected, with all PDF text verified black.",
       "source": "Preserved descriptive aggregate tissue figure; no inferential P values."
+    },
+    {
+      "name": "FigureS2",
+      "png_sha256": "37a3b9255444a36ba737142f088a35af71d576a49dceb152bebdd4cb77a8603e",
+      "pdf_sha256": "0232a4139eb05ff0490c0112773db57d708422475126fcf356f6cf635f13b0fd",
+      "pixels": [
+        2490,
+        3000
+      ],
+      "dpi": [
+        299.9994,
+        299.9994
+      ],
+      "visual_review": "PASS; all 20 rows inspected, including all 15 omissions, five baselines, full-width CIs, nominal P boldness, black text, headers and SNP exclusion labels. Final embedding and legend inspected on supplementary page 11.",
+      "source": "leave_one_out_figure_sources.json"
     }
   ],
   "rebuild_note": "Three main figures rebuilt from the preserved aggregate results: complete gene-level screen, matched association/posterior evidence, and candidate matrix with prior sensitivity. No analytical estimate altered.",
   "figure2_layout_revision": "Separated monochrome panel A and coloured posterior panel B retained; significance markers and conditional P-value boldness added, with distinct nominal and BBJ discovery definitions.",
-  "figure_labels_revision": "All titles, axes, legends, annotations and matrix numbers are black. Figure1 IGF1R label raised above a darker point. Figure2 nominal P<0.05 uses bold and an asterisk; a dagger additionally marks BBJ P<0.05/2544. P=0.182 is unbolded. Figure3 uses lighter cells, six full-cell black borders for PP.H4>=0.80, an explicit border key and padded numeric labels."
+  "figure_labels_revision": "All titles, axes, legends, annotations and matrix numbers are black. Figure1 IGF1R label raised above a darker point. Figure2 nominal P<0.05 uses bold and an asterisk; a dagger additionally marks BBJ P<0.05/2544. P=0.182 is unbolded. Figure3 uses lighter cells, six full-cell black borders for PP.H4>=0.80, an explicit border key and padded numeric labels.",
+  "leave_one_out_source_sha256": "7420297928a052bd15fb6c4297750594a7a5b5148f01c2fac4bfa4692cda34b6",
+  "leave_one_out_revision": "New post hoc Figure S2 from independently verified original-reference-frequency results; three main figures and Figure S1 unchanged."
 }

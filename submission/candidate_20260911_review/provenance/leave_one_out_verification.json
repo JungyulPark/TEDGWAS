@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "analysis_timing": "Post hoc; integrated into manuscript, Table S5 and Figure S2",
+  "genes": [
+    "TSHR",
+    "IGF1R",
+    "CTLA4"
+  ],
+  "baseline_estimates_reproduced": 9,
+  "eligible_comparisons": 5,
+  "omission_estimates": 15,
+  "IGF1R_omissions": 11,
+  "CTLA4_omissions": 4,
+  "R_version": "4.3.3",
+  "independent_implementation": "Base-R lm and Wald formulas; Python weighted cross-products and whitened least-squares",
+  "max_absolute_R_Python_differences": {
+    "n_iv": 0.0,
+    "beta": 3.1086244689504383e-15,
+    "se": 4.440892098500626e-16,
+    "pvalue": 4.440892098500626e-16,
+    "OR": 4.884981308350689e-15,
+    "CI_lower": 4.6629367034256575e-15,
+    "CI_upper": 2.842170943040401e-14
+  },
+  "source_sha256": "9fa7ff39eac0279ac59b5142a9fcca392672fa096c3bd039d6042341fa002d1b",
+  "R_validation_sha256": "5337fd67dbc9e385853e10adeae12e18978d6f51abb575bb4cd9205021b18cc1",
+  "data6_sha256": "84227f9face63d2f33b1c0dcd789936c923cb56da4a4d0a1e47d976c205807c6",
+  "scope": "Original reference-frequency harmonized SNP sets. All eligible omissions reported. No age/sex subgroup, additional covariate adjustment, or new independent participants.",
+  "limitations": [
+    "TSHR in all outcomes and CTLA4 in BBJ have only one SNP and cannot undergo SNP omission.",
+    "For two-SNP CTLA4 sets an omission leaves a single-SNP Wald ratio.",
+    "P-value changes reflect changes in precision as well as effect estimates; repeated tests are not independent replication.",
+    "This leave-one-out analysis was not repeated under substituted eQTLGen frequencies."
+  ]
+}

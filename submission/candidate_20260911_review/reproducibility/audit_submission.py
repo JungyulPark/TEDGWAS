@@ -26,7 +26,7 @@ def effect(s,r,label):
     for a,b in zip(v,np.exp([r.beta,r.beta-1.96*r.se,r.beta+1.96*r.se])):agree(a,b,label)
 ocs={'BBJ Graves disease':'BBJ_Graves','UKB hyperthyroidism':'UKB_hyperthyroid','FinnGen Graves ophthalmopathy':'FinnGen_GO'}
 def get(g,o):return mr[(mr.gene_symbol==g)&(mr.outcome==o)].iloc[0]
-for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4'])]:
+for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
     doc=Document(O/(name+'.docx'));check(len(doc.tables)==len(keys),name+' table count')
     for tb,key in zip(doc.tables,keys):
         expected=[tables[key]['header']]+tables[key]['rows'];check(len(tb.rows)==len(expected),key+' row count')
@@ -82,8 +82,8 @@ for r in display['narrative_estimates']:
 fs=json.loads((P/'clinical_figure_sources.json').read_text(encoding='utf-8'))
 for r in fs['Figure2']:
     m=get(r['gene'],r['outcome']);check(np.isclose(r['pvalue'],m.pvalue,rtol=1e-12,atol=0),'Figure2 source P');check(np.isclose(r['or'],np.exp(m.beta)),'Figure2 source OR');agree(r['displayed_p'],m.pvalue,'Figure2 display P')
-check(not re.search(r'\b(?:Table|Tables) S(?:[5-9]|1[0-2])\b',text),'No old supplementary table references')
-check('Figure 4.' not in text and 'Figure S2.' not in text,'No removed figure references')
+check(not re.search(r'\b(?:Table|Tables) S(?:[6-9]|1[0-2])\b',text),'No old supplementary table references')
+check('Figure 4.' not in text and 'Figure S3.' not in text and 'Figure S2.' in text,'No removed figure references')
 check('{{' not in text and 'TODO' not in text,'No unresolved generation placeholders')
 check(not any(q in text for q in ['AI-assisted','artificial intelligence','language model','Codex','OpenAI','Claude','ChatGPT']),'Remote author decision: no manuscript AI-tool declaration')
 check(not any('prespecified' in line and 'outcome hierarchy' not in line for line in text.splitlines()),'No unregistered threshold described as prespecified')
@@ -138,7 +138,7 @@ check(len([p for p in lim.strip().split('\n\n') if p.strip()])==2,'Two complete 
 check(len([p for p in disc.split('### Limitations')[0].strip().split('\n\n') if p.strip()])==7,'Seven interpretation paragraphs before limitations')
 counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'));check(counts['abstract_words']<=250,'Abstract within working 250-word ceiling');check(counts['main_words_including_headings']<=5000,'Main within working 5000-word ceiling')
 check('modest inherited contribution' not in text,'No unsupported restriction on inherited effect size')
-for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4'])]:
+for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
     source=Document(O/(name+'.docx'))
     for index,number in enumerate(keys):
         upload=Document(O/'tables'/f'Table{number}.docx')
@@ -183,6 +183,53 @@ for record in evidence['TSHR_reference_LD']:
         shown=f"{record['R2']:.6f}";agree(shown,record['R2'],'Reference LD');check(shown in text,'Reference LD printed')
 check(evidence['FinnGen_H2_dominant_loci']==7,'Seven H2-dominant FinnGen loci')
 check(evidence['CTLA4_FinnGen_H4']>=.8,'CTLA4 failure does not originate in FinnGen')
+# Independently verified post hoc leave-one-out results: report every omission.
+loo=pd.read_csv(O/'Supplementary_Data_6_Leave_one_out.csv')
+rv=pd.read_csv(P/'leave_one_out_R_validation.csv')
+lv=json.loads((P/'leave_one_out_verification.json').read_text(encoding='utf8'))
+check(lv['status']=='PASS','LOO independent R verification passed')
+for name,key in [('Supplementary_Data_6_Leave_one_out.csv','data6_sha256'),('provenance/leave_one_out_R_validation.csv','R_validation_sha256'),('provenance/posthoc_20260914/leave_one_out_estimates.csv','source_sha256')]:
+    check(hashlib.sha256((O/name).read_bytes()).hexdigest()==lv[key],'LOO verified source hash '+name)
+check(len(loo)==20 and len(rv)==24,'LOO complete exported and independently verified counts')
+joined=loo.merge(rv,on=['gene','outcome','excluded_SNP'],validate='one_to_one',suffixes=('_py','_R'))
+check(len(joined)==20,'All displayed LOO results independently matched')
+for col in ['n_iv','beta','se','pvalue','OR','CI_lower','CI_upper']:
+    check(np.allclose(joined[col+'_py'],joined[col+'_R'],rtol=1e-10,atol=1e-300),'LOO R/Python '+col)
+check(np.allclose(2*stats.norm.sf(abs(loo.beta/loo.se)),loo.pvalue,rtol=1e-10,atol=1e-300),'LOO normal P values verified')
+check(np.allclose(np.exp(loo.beta-stats.norm.ppf(.975)*loo.se),loo.CI_lower,rtol=1e-10),'LOO lower CIs verified')
+check(np.allclose(np.exp(loo.beta+stats.norm.ppf(.975)*loo.se),loo.CI_upper,rtol=1e-10),'LOO upper CIs verified')
+omissions=loo[loo.excluded_SNP!='None (all instruments)']
+check(len(omissions)==15 and sum(omissions.gene=='IGF1R')==11 and sum(omissions.gene=='CTLA4')==4,'LOO 15 = 11 IGF1R + 4 CTLA4')
+check((omissions.n_iv==omissions.original_n_iv-1).all(),'Exactly one SNP omitted per row')
+check((loo.frequency_scenario=='original_reference').all(),'LOO frequency scenario disclosed')
+check((omissions.loc[omissions.gene=='IGF1R','beta']>0).all(),'All eleven IGF1R omission directions retained')
+brief={'BBJ':'BBJ_Graves','UKB':'UKB_hyperthyroid','FinnGen':'FinnGen_GO'}
+seen=set()
+for row in tables['S5']['rows']:
+    key=(clean(row[0]),brief[row[1]],row[2]);seen.add(key)
+    found=omissions[(omissions.gene==key[0])&(omissions.outcome==key[1])&(omissions.excluded_SNP==key[2])]
+    check(len(found)==1,'S5 unique omitted SNP '+str(key));r=found.iloc[0]
+    agree(row[3],r.n_iv,'S5 remaining SNPs')
+    check(row[4]==('Wald ratio' if r.n_iv==1 else 'IVW'),'S5 estimator matches remaining count')
+    for shown,value in zip(re.findall(r'\d+\.\d+',row[5]),[r.OR,r.CI_lower,r.CI_upper]):agree(shown,value,'S5 OR/CI '+str(key))
+    agree(row[6],r.pvalue,'S5 P '+str(key))
+check(seen==set(zip(omissions.gene,omissions.outcome,omissions.excluded_SNP)),'Table S5 includes every omission exactly once')
+for outcome,pv,orr,lo,hi in [('BBJ_Graves','0.0751','1.49','0.96','2.30'),('UKB_hyperthyroid','0.468','1.16','0.78','1.72')]:
+    r=omissions[(omissions.gene=='IGF1R')&(omissions.outcome==outcome)&(omissions.excluded_SNP=='rs2654980')].iloc[0]
+    for shown,value in [(pv,r.pvalue),(orr,r.OR),(lo,r.CI_lower),(hi,r.CI_upper)]:
+        agree(shown,value,'IGF1R LOO narrative');check(shown in text,'LOO narrative value present')
+    check(sum(omissions[(omissions.gene=='IGF1R')&(omissions.outcome==outcome)].pvalue>=.05)==2,'Two IGF1R omissions lose nominal significance '+outcome)
+for outcome,orr,lo,hi in [('UKB_hyperthyroid','1.02','0.37','2.82'),('FinnGen_GO','1.72','0.16','18.90')]:
+    r=omissions[(omissions.gene=='CTLA4')&(omissions.outcome==outcome)&(omissions.excluded_SNP=='rs13030124')].iloc[0]
+    for shown,value in [(orr,r.OR),(lo,r.CI_lower),(hi,r.CI_upper)]:
+        agree(shown,value,'CTLA4 LOO narrative');check(shown in text,'CTLA4 narrative value present')
+check('European *CTLA4* MR support was concentrated in rs13030124' in text,'Table 2 CTLA4 dependence disclosed')
+check('This analysis was not repeated under substituted eQTLGen frequencies' in text,'LOO scope limitation disclosed')
+check('Supplementary Data 1–6' in text.split('**Data availability.**',1)[1].split('**Author contributions.**',1)[0],'Data availability includes Data 6')
+check('Multi-signal colocalization was not performed' in text,'Multi-signal analysis explicitly unperformed')
+checktext=(O/'STROBE_MR_CHECKLIST.md').read_text(encoding='utf8')
+check('no leave-one-out result is reported' not in checktext and 'Table S5' in checktext and 'Figure S2' in checktext,'STROBE updated to report LOO')
+
 checklist=Document(O/'STROBE_MR_CHECKLIST.docx');check(len(checklist.tables)==1,'Separate reporting checklist exists')
 result={'status':'PASS' if not errors else 'FAIL','numeric_cells_compared':numeric,'checks':len(checks),'errors':errors,'scope':'Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review.'}
 (P/'integrity_audit.json').write_text(json.dumps(result,indent=2),encoding='utf-8',newline='\r\n');print(json.dumps(result,indent=2));sys.exit(bool(errors))
