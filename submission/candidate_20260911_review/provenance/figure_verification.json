@@ -1,6 +1,6 @@
 {
   "status": "PASS",
-  "date": "2026-09-14",
+  "date": "2026-09-15",
   "main_figures": 3,
   "supplementary_figures": 2,
   "source_numeric_audit": "figure_numeric_audit.json; integrity_audit.json for OR/CI/P comparisons",
@@ -78,7 +78,7 @@
         299.9994,
         299.9994
       ],
-      "visual_review": "PASS; all 20 rows inspected, including all 15 omissions, five baselines, full-width CIs, nominal P boldness, black text, headers and SNP exclusion labels. Final embedding and legend inspected on supplementary page 11.",
+      "visual_review": "PASS; all 20 rows inspected, including all 15 omissions, five baselines, full-width CIs, nominal P boldness, black text, headers and SNP exclusion labels. Final embedding and legend inspected on supplementary page 8.",
       "source": "leave_one_out_figure_sources.json"
     }
   ],

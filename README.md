@@ -1,4 +1,4 @@
-> **14 September 2026 integrated review:** Leave-one-out is now reported in Methods/Results/Discussion, Table S5, Figure S2, Data 6 and STROBE item 13. Fifteen omissions comprise 11 IGF1R and 4 CTLA4 results; all nine full-set estimates and every omission were independently checked in base R. The European CTLA4 dependence on rs13030124 is disclosed in Table 2. No new multi-signal colocalization was undertaken: its absence and the single-causal-variant assumption remain explicit limitations. Formal directionality and participant overlap remain unverified. Read the current REVIEW_REPORT_KO.md for review status and audit counts.
+> **15 September 2026 compact supplementary review:** Leave-one-out is now reported in Methods/Results/Discussion, Figure S2, Data 6 and STROBE item 13. Fifteen omissions comprise 11 IGF1R and 4 CTLA4 results; all nine full-set estimates and every omission were independently checked in base R. The European CTLA4 dependence on rs13030124 is disclosed in Table 2. No new multi-signal colocalization was undertaken: its absence and the single-causal-variant assumption remain explicit limitations. Formal directionality and participant overlap remain unverified. Read the current REVIEW_REPORT_KO.md for review status and audit counts.
 
 # TEDGWAS — TED–TRAP
 
@@ -6,7 +6,7 @@ Druggable-gene-wide Mendelian randomization and colocalization comparing genetic
 
 **Current manuscript: [14 September 2026 leave-one-out integrated candidate](submission/candidate_20260911_review/README.md).** Prepared for final author review toward Endocrine Connections submission. The multi-signal model is explicitly outside this revision; directionality and participant overlap remain unverified, with final author/journal checks pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
 
-The clinical revision contains 3,540 main-text words, 231 abstract words, 33 references, three main tables, three main figures, five supplementary tables and two supplementary figures. ORs, 95% CIs and P values lead the presentation. The package includes eight separately supplied tables. Current audit and visual-review totals are recorded in the candidate review report; the release audit also verifies current file identities and review records.
+The clinical revision contains 3,546 main-text words, 231 abstract words, 33 references, three main tables, three main figures, three supplementary tables and two supplementary figures. ORs, 95% CIs and P values lead the presentation. The package includes six separately supplied tables. Current audit and visual-review totals are recorded in the candidate review report; the release audit also verifies current file identities and review records.
 
 ## Current evidence
 
@@ -27,7 +27,7 @@ The clinical revision contains 3,540 main-text words, 231 abstract words, 33 ref
 | `TrackA_MR/v5_upgrade/` | Historical analysis outputs used as evidence |
 | `internal/` | Internal records, not journal upload files |
 
-The current figure audit passes 7,032 checks across all 2,234 plotted genes and 63 posterior comparisons, plus all 20 leave-one-out plot rows. Results now contains 1,098 words; Discussion contains 1,292 words in seven interpretation paragraphs, two limitations paragraphs and one conclusion. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
+The current figure audit passes 7,032 checks across all 2,234 plotted genes and 63 posterior comparisons, plus all 20 leave-one-out plot rows. Results now contains 1,100 words; Discussion contains 1,292 words in seven interpretation paragraphs, two limitations paragraphs and one conclusion. All 7,219 baseline primary MR estimates and 81 coloc rows were reproduced. Cohort-frequency sensitivity reran primary MR and harmonization, compared all 81 coloc settings and recalculated whole-screen power; independent primary-MR formula checks passed. These checks do not establish clinical causality or certify author declarations.
 
 Run the current audit from the repository root after installing the packages in the candidate's `reproducibility/requirements.txt`:
 

@@ -8,10 +8,8 @@
 | Table2.docx | TSHR·IGF1R·CTLA4의 9개 비교 | 도구변수 수, OR·95% CI·P값, H2·H3·H4 |
 | Table3.docx | 발견 유전자 13개 전체 | 도구변수 수, BBJ OR·95% CI·P값 |
 | TableS1.docx | 다중 도구변수 민감도 | 추정법별 P값, Egger 절편, 이질성 검사 |
-| TableS2.docx | 사전확률 민감도 | 세 prior에서의 H4 |
-| TableS3.docx | 빈도 교체 전후 | OR·95% CI·P값 비교 |
-| TableS4.docx | 검출한계 | 유전자 수, 검출 OR 중앙값·IQR, OR 1.5·2.0 검출 비율 |
-| TableS5.docx | 15개 SNP 제외 민감도 결과 | 제외 SNP·남은 개수·추정법·OR·95% CI·P값 |
+| TableS2.docx | 빈도 교체 전후 | OR·95% CI·P값 비교 |
+| TableS3.docx | 검출한계 | 유전자 수, 검출 OR 중앙값·IQR, OR 1.5·2.0 검출 비율 |
 
 Data 1은 6,135개 도구변수 기록, Data 2는 주 분석·빈도 민감도 30,115행, Data 3은 공위치화 324행, Data 4는 검출한계 12행, Data 5는 모든 MR 추정법 13,039행, Data 6은 leave-one-out 20행(15개 제외 결과와 5개 전체 SNP 비교값)입니다. 자세한 변수 정의는 SUPPLEMENTARY_DATA_README.md에 있습니다.
 
@@ -19,6 +17,8 @@ Data 1은 6,135개 도구변수 기록, Data 2는 주 분석·빈도 민감도 3
 
 간결한 Table S1에서 생략된 효과크기·SE·CI는 Data 5에서 모두 확인할 수 있습니다. MR-Egger와 weighted mode의 CI는 원래 P값 검정과 같은 t 분포를 사용합니다. 원래 계수·P값은 보존했고 반올림된 CI로 P값을 역산해 교체하지 않았습니다.
 
-본문 주표 1–3과 개별 주표는 세로 페이지, 보충표 S1–S5는 가로 페이지입니다. 모든 개별 표는 제목·각주까지 한 페이지에 배치했습니다. 새 Table S5와 Figure S2의 SNP 이름은 제외한 SNP입니다. 두-SNP CTLA4에서 하나를 제외하면 남은 하나의 Wald ratio가 됩니다. TSHR 및 CTLA4 BBJ는 처음부터 한 SNP라 제외 분석을 할 수 없습니다.
+본문 주표 1–3과 개별 주표는 세로 페이지, 보충표 S1–S3는 가로 페이지입니다. 모든 개별 표는 제목·각주까지 한 페이지에 배치했습니다. Figure S2의 SNP 이름은 제외한 SNP입니다. 두-SNP CTLA4에서 하나를 제외하면 남은 하나의 Wald ratio가 됩니다. TSHR 및 CTLA4 BBJ는 처음부터 한 SNP라 제외 분석을 할 수 없습니다.
 
 기존 빈도 민감도와 새 LOO는 서로 다른 검증입니다. LOO는 원래 참조 빈도에서만 시행했습니다. 다중 신호 공위치화는 이번 범위에서 시행하지 않고 한계로 남겼습니다. 자세한 방법과 결과는 ADDITIONAL_ANALYSIS_REVIEW_KO.md에 있습니다.
+
+사전확률 민감도는 Figure 3B와 Data 3, 전체 leave-one-out 결과는 Figure S2와 Data 6에서 확인합니다. 동일 수치가 반복되던 두 표를 제외했으며 분석 결과는 삭제하지 않았습니다.

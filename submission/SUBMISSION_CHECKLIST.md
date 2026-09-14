@@ -1,14 +1,15 @@
 # TED–TRAP 최종 저자 검토 체크리스트
 
-2026-09-14 leave-one-out 반영본. 현재 후보는 candidate_20260911_review 하나입니다.
+2026-09-15 보충자료 간소화 반영본. 현재 후보는 candidate_20260911_review 하나입니다.
 
 ## 완료
 
 - [x] 기존 eQTLGen 빈도 민감도, 원본 주 분석 추정치 보존 및 통계 대조.
 - [x] Leave-one-out 15개 제외 결과와 5개 비교값; 독립 R 계산 검증.
-- [x] 본문·Table 2 CTLA4 각주·Table S5·Figure S2·Data 6·STROBE 항목 13 동기화.
-- [x] 주표 3개·보충표 5개 개별 Word와 Supplementary Data 1–6.
+- [x] 본문·Table 2 CTLA4 각주·Figure S2·Data 6·STROBE 항목 13 동기화.
+- [x] 주표 3개·보충표 3개 개별 Word와 Supplementary Data 1–6.
 - [x] 제목·Discussion·33개 참고문헌의 최초 인용 순서와 Word 동기화.
+- [x] Data 3 설명서의 실제 CSV 열 검증 및 보충표 3개로 통합.
 - [x] 그림의 검정 글자, 유의수준 표식, CI·범례 및 표 너비 점검.
 
 ## 명시적으로 유지한 분석 한계

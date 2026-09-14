@@ -1,6 +1,6 @@
-> **14 September 2026 integrated review:** Leave-one-out is now reported in Methods/Results/Discussion, Table S5, Figure S2, Data 6 and STROBE item 13. Fifteen omissions comprise 11 IGF1R and 4 CTLA4 results; all nine full-set estimates and every omission were independently checked in base R. The European CTLA4 dependence on rs13030124 is disclosed in Table 2. No new multi-signal colocalization was undertaken: its absence and the single-causal-variant assumption remain explicit limitations. Formal directionality and participant overlap remain unverified. Read the current REVIEW_REPORT_KO.md for review status and audit counts.
+> **15 September 2026 compact supplementary review:** Leave-one-out is now reported in Methods/Results/Discussion, Figure S2, Data 6 and STROBE item 13. Fifteen omissions comprise 11 IGF1R and 4 CTLA4 results; all nine full-set estimates and every omission were independently checked in base R. The European CTLA4 dependence on rs13030124 is disclosed in Table 2. No new multi-signal colocalization was undertaken: its absence and the single-causal-variant assumption remain explicit limitations. Formal directionality and participant overlap remain unverified. Read the current REVIEW_REPORT_KO.md for review status and audit counts.
 
-> **2026-09-11 reviewed revision:** The current master and `submission/candidate_20260911_review/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the current revision report before editing. Outdated SuSiE/tissue P-value claims must not be restored; IGF1R UKB remains split H2/H4. The requested eQTLGen frequency sensitivity is completed (Tables S3–S4; Supplementary Data 2–4). This is a final author-review candidate, with author details/declarations and live journal checks pending. The non-negotiable data-management rules below remain in force. The 2026-09-05 author decision to omit the manuscript AI-tool declaration is retained; journal disclosure requirements remain an explicit final-review item. "Prespecified" must not describe unregistered thresholds. The old root package remains archived in `archives/submission_pre20260905/`.
+> **2026-09-11 reviewed revision:** The current master and `submission/candidate_20260911_review/` supersede the historical numerical claims, fixed scientific assertions, journal status and build instructions below. See the current revision report before editing. Outdated SuSiE/tissue P-value claims must not be restored; IGF1R UKB remains split H2/H4. The requested eQTLGen frequency sensitivity is completed (Tables S2–S3; Supplementary Data 2–4). This is a final author-review candidate, with author details/declarations and live journal checks pending. The non-negotiable data-management rules below remain in force. The 2026-09-05 author decision to omit the manuscript AI-tool declaration is retained; journal disclosure requirements remain an explicit final-review item. "Prespecified" must not describe unregistered thresholds. The old root package remains archived in `archives/submission_pre20260905/`.
 
 # CLAUDE.md — TED-TRAP project rules
 
@@ -51,7 +51,7 @@ prepared for **Endocrine Connections**. The one live package is
   hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
   in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
   14.6% → 12.5%. Never describe this analysis as unperformed again.
-- **Leave-one-out is reported** (2026-09-14): 15 omissions = 11 IGF1R + 4 CTLA4; Table S5, Figure S2, Data 6 and STROBE item 13. European CTLA4 support is concentrated in rs13030124; imprecision of the other SNP is not proof of no effect. New multi-signal coloc is outside this revision; retain model limitations. Do not restore the superseded "not reported" statement.
+- **Leave-one-out is reported** (2026-09-14): 15 omissions = 11 IGF1R + 4 CTLA4; Figure S2, Data 6 and STROBE item 13. European CTLA4 support is concentrated in rs13030124; imprecision of the other SNP is not proof of no effect. New multi-signal coloc is outside this revision; retain model limitations. Do not restore the superseded "not reported" statement.
 - **robust_novel = 0** after MHC + chr16p11.2 LD-spillover + cross-outcome coloc
   filtering. This is an *informative* result, not a negative one — do not reframe
   it as a discovery.
@@ -126,11 +126,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `7c825ea83f9adb22c6dc2b3663780566`,
-  normalised `2f15ef37386640412ec5d8aa3dcfeb80` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `652681f3e0df5cc2341b8819341bb4df`,
+  normalised `51cf3354cf76b507120f2c8f9e35f598` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,540**
-  (Introduction–Discussion; 3,572 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,546**
+  (Introduction–Discussion; 3,578 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **231** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.

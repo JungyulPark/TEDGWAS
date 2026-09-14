@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-15",
+  "baseline_commit": "dc066300385f03ff76bc9acb97f0d8c6b39dddf3",
+  "status": "PASS",
+  "table_mapping": {
+    "S1": "Previous S1: MR diagnostics",
+    "S2": "Previous S3: cohort-frequency sensitivity",
+    "S3": "Previous S4: detection limits"
+  },
+  "duplicate_reporting_removed": {
+    "Previous S2": "27 probabilities retained in main Figure 3B and full Data 3",
+    "Previous S5": "All 15 omissions and five comparators retained in Figure S2 and full Data 6"
+  },
+  "methods_whitespace_word_count_including_headings": {
+    "before": 1148,
+    "after": 837
+  },
+  "supplement_pages": {
+    "before": 11,
+    "after": 8
+  },
+  "data3_documentation_fix": "Removed nonexistent outcome_min_p column claim; all eleven actual CSV columns are now documented and checked by audit_submission.py.",
+  "preserved_file_sha256": {
+    "Supplementary_Data_1_Instruments.csv": "2288ec8fab3f81473fbf9524836ffcdbbdd9c18b2c04e8572863b0ff0c27fd97",
+    "Supplementary_Data_2_MR.csv": "183bcd2e9c83fd0296e9231582ecfb80396daacaa317c2b1fbc0c121d5126cdf",
+    "Supplementary_Data_3_Colocalization.csv": "b15a1c426740aa5024ffb2a54579045447cddd83e2d19cd98d51c8c6e76798ae",
+    "Supplementary_Data_4_Power.csv": "ff8a74be01b3aaab3ccc14ae26198e87f2f2dc14c291108ee8bbfc7d8cea63f4",
+    "Supplementary_Data_5_MR_estimators.csv": "680df8bd4c875ccb21a3499f9250413df1e427b2855a1160fe77e4b3d0724414",
+    "Supplementary_Data_6_Leave_one_out.csv": "84227f9face63d2f33b1c0dcd789936c923cb56da4a4d0a1e47d976c205807c6",
+    "figures\\Figure1.png": "cdf9568653959c52572ca4eab4902ce1aaaf684dfc21b867aef832071d11d2ee",
+    "figures\\Figure2.png": "d4f6fcd9aac7ebf1069cc09144597b60c94ddd308011fb230cd962e2e1f8da0d",
+    "figures\\Figure3.png": "2f4b3db039b39bd4682f8db29f1f512424592b12381c5f353882769a4c43d06a",
+    "figures\\FigureS1.png": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b",
+    "figures\\FigureS2.png": "37a3b9255444a36ba737142f088a35af71d576a49dceb152bebdd4cb77a8603e",
+    "figures\\Figure1.pdf": "ab093387dece7bf97aba3cce4d451ece2e145657a50c659e4f972118a776183f",
+    "figures\\Figure2.pdf": "746bc52253a0ae9dc551e4727a60d0482b4d11e95e6c876968ea1700e8ab2de7",
+    "figures\\Figure3.pdf": "2796d62cb1343b8b859cf663006e40e27d854b8f381526dc87aa48d4f9f0e804",
+    "figures\\FigureS1.pdf": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b",
+    "figures\\FigureS2.pdf": "0232a4139eb05ff0490c0112773db57d708422475126fcf356f6cf635f13b0fd"
+  }
+}

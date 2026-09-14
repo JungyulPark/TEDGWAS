@@ -34,7 +34,7 @@ out=loo.copy();out['analysis_timing']='post_hoc';out['frequency_scenario']='orig
 out['test_distribution']='normal';out['ci_level']=.95
 out.to_csv(D/'Supplementary_Data_6_Leave_one_out.csv',index=False,na_rep='NA',lineterminator='\r\n')
 (P/'leave_one_out_R_validation.csv').write_bytes(a.r_validation.read_bytes())
-j={'status':'PASS','analysis_timing':'Post hoc; integrated into manuscript, Table S5 and Figure S2',
+j={'status':'PASS','analysis_timing':'Post hoc; integrated into manuscript, Figure S2 and Supplementary Data 6',
    'genes':['TSHR','IGF1R','CTLA4'],'baseline_estimates_reproduced':9,'eligible_comparisons':5,
    'omission_estimates':15,'IGF1R_omissions':11,'CTLA4_omissions':4,
    'R_version':'4.3.3','independent_implementation':'Base-R lm and Wald formulas; Python weighted cross-products and whitened least-squares',

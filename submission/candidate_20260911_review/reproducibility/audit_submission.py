@@ -26,7 +26,7 @@ def effect(s,r,label):
     for a,b in zip(v,np.exp([r.beta,r.beta-1.96*r.se,r.beta+1.96*r.se])):agree(a,b,label)
 ocs={'BBJ Graves disease':'BBJ_Graves','UKB hyperthyroidism':'UKB_hyperthyroid','FinnGen Graves ophthalmopathy':'FinnGen_GO'}
 def get(g,o):return mr[(mr.gene_symbol==g)&(mr.outcome==o)].iloc[0]
-for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
+for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3'])]:
     doc=Document(O/(name+'.docx'));check(len(doc.tables)==len(keys),name+' table count')
     for tb,key in zip(doc.tables,keys):
         expected=[tables[key]['header']]+tables[key]['rows'];check(len(tb.rows)==len(expected),key+' row count')
@@ -54,17 +54,13 @@ for row in tables['S1']['rows']:
         v=rr[rr.method==method];agree(row[col],v.iloc[0].pvalue if len(v) else np.nan,'S1 '+method)
     agree(row[6],r.egger_intercept_p,'S1 Egger intercept');agree(row[7],r.cochran_q_p,'S1 Q')
 for row in tables['S2']['rows']:
-    g=clean(row[0]);o=ocs[row[1]]
-    for col,p12 in [(2,1e-5),(3,5e-6),(4,1e-6)]:
-        c=co[(co.gene==g)&(co.outcome==o)&np.isclose(co.p12,p12,atol=1e-12)].iloc[0];agree(row[col],c['PP.H4'],'S2 H4')
-for row in tables['S3']['rows']:
     g=clean(row[0]);o=ocs[row[1]];r=get(g,o);new=allmr[(allmr.gene_symbol==g)&(allmr.outcome==o)&(allmr.scenario=='reharmonized_eqtlgen')].iloc[0]
-    effect(row[2],r,'S3 reference');agree(row[3],r.pvalue,'S3 reference P');effect(row[4],new,'S3 cohort');agree(row[5],new.pvalue,'S3 cohort P')
-for row in tables['S4']['rows']:
+    effect(row[2],r,'S2 reference');agree(row[3],r.pvalue,'S2 reference P');effect(row[4],new,'S2 cohort');agree(row[5],new.pvalue,'S2 cohort P')
+for row in tables['S3']['rows']:
     o=ocs[row[0]];scenario='original_reference' if row[1]=='Reference' else 'reharmonized_eqtlgen';r=power[(power.outcome==o)&(power.scenario==scenario)].iloc[0]
-    agree(row[2],r.n_genes,'S4 genes')
-    for a,b in zip(re.findall(r'\d+\.\d+',row[3]),[r.or_median,r.or_q1,r.or_q3]):agree(a,b,'S4 detectable OR')
-    agree(row[4],100*r.frac_OR1_5,'S4 OR1.5 percentage');agree(row[5],100*r.frac_OR2,'S4 OR2 percentage')
+    agree(row[2],r.n_genes,'S3 genes')
+    for a,b in zip(re.findall(r'\d+\.\d+',row[3]),[r.or_median,r.or_q1,r.or_q3]):agree(a,b,'S3 detectable OR')
+    agree(row[4],100*r.frac_OR1_5,'S3 OR1.5 percentage');agree(row[5],100*r.frac_OR2,'S3 OR2 percentage')
 # Confirm the consolidated data retain the old primary results and full scenarios.
 ref=allmr[allmr.scenario=='original_reference'].merge(mr,on=['gene_symbol','outcome'],suffixes=('_new','_old'),validate='one_to_one');check(len(ref)==7219,'All original MR estimates in consolidated file')
 for col in ['beta','se','pvalue','n_iv']:check(np.allclose(ref[col+'_new'],ref[col+'_old'],atol=1e-12,rtol=1e-12),col+' primary data unchanged')
@@ -82,7 +78,7 @@ for r in display['narrative_estimates']:
 fs=json.loads((P/'clinical_figure_sources.json').read_text(encoding='utf-8'))
 for r in fs['Figure2']:
     m=get(r['gene'],r['outcome']);check(np.isclose(r['pvalue'],m.pvalue,rtol=1e-12,atol=0),'Figure2 source P');check(np.isclose(r['or'],np.exp(m.beta)),'Figure2 source OR');agree(r['displayed_p'],m.pvalue,'Figure2 display P')
-check(not re.search(r'\b(?:Table|Tables) S(?:[6-9]|1[0-2])\b',text),'No old supplementary table references')
+check(not re.search(r'\b(?:Table|Tables) S(?:[4-9]|1[0-2])\b',text),'No old supplementary table references')
 check('Figure 4.' not in text and 'Figure S3.' not in text and 'Figure S2.' in text,'No removed figure references')
 check('{{' not in text and 'TODO' not in text,'No unresolved generation placeholders')
 check(not any(q in text for q in ['AI-assisted','artificial intelligence','language model','Codex','OpenAI','Claude','ChatGPT']),'Remote author decision: no manuscript AI-tool declaration')
@@ -138,7 +134,7 @@ check(len([p for p in lim.strip().split('\n\n') if p.strip()])==2,'Two complete 
 check(len([p for p in disc.split('### Limitations')[0].strip().split('\n\n') if p.strip()])==7,'Seven interpretation paragraphs before limitations')
 counts=json.loads((P/'word_counts.json').read_text(encoding='utf-8'));check(counts['abstract_words']<=250,'Abstract within working 250-word ceiling');check(counts['main_words_including_headings']<=5000,'Main within working 5000-word ceiling')
 check('modest inherited contribution' not in text,'No unsupported restriction on inherited effect size')
-for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
+for name,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3'])]:
     source=Document(O/(name+'.docx'))
     for index,number in enumerate(keys):
         upload=Document(O/'tables'/f'Table{number}.docx')
@@ -203,17 +199,6 @@ check(len(omissions)==15 and sum(omissions.gene=='IGF1R')==11 and sum(omissions.
 check((omissions.n_iv==omissions.original_n_iv-1).all(),'Exactly one SNP omitted per row')
 check((loo.frequency_scenario=='original_reference').all(),'LOO frequency scenario disclosed')
 check((omissions.loc[omissions.gene=='IGF1R','beta']>0).all(),'All eleven IGF1R omission directions retained')
-brief={'BBJ':'BBJ_Graves','UKB':'UKB_hyperthyroid','FinnGen':'FinnGen_GO'}
-seen=set()
-for row in tables['S5']['rows']:
-    key=(clean(row[0]),brief[row[1]],row[2]);seen.add(key)
-    found=omissions[(omissions.gene==key[0])&(omissions.outcome==key[1])&(omissions.excluded_SNP==key[2])]
-    check(len(found)==1,'S5 unique omitted SNP '+str(key));r=found.iloc[0]
-    agree(row[3],r.n_iv,'S5 remaining SNPs')
-    check(row[4]==('Wald ratio' if r.n_iv==1 else 'IVW'),'S5 estimator matches remaining count')
-    for shown,value in zip(re.findall(r'\d+\.\d+',row[5]),[r.OR,r.CI_lower,r.CI_upper]):agree(shown,value,'S5 OR/CI '+str(key))
-    agree(row[6],r.pvalue,'S5 P '+str(key))
-check(seen==set(zip(omissions.gene,omissions.outcome,omissions.excluded_SNP)),'Table S5 includes every omission exactly once')
 for outcome,pv,orr,lo,hi in [('BBJ_Graves','0.0751','1.49','0.96','2.30'),('UKB_hyperthyroid','0.468','1.16','0.78','1.72')]:
     r=omissions[(omissions.gene=='IGF1R')&(omissions.outcome==outcome)&(omissions.excluded_SNP=='rs2654980')].iloc[0]
     for shown,value in [(pv,r.pvalue),(orr,r.OR),(lo,r.CI_lower),(hi,r.CI_upper)]:
@@ -228,7 +213,19 @@ check('This analysis was not repeated under substituted eQTLGen frequencies' in 
 check('Supplementary Data 1–6' in text.split('**Data availability.**',1)[1].split('**Author contributions.**',1)[0],'Data availability includes Data 6')
 check('Multi-signal colocalization was not performed' in text,'Multi-signal analysis explicitly unperformed')
 checktext=(O/'STROBE_MR_CHECKLIST.md').read_text(encoding='utf8')
-check('no leave-one-out result is reported' not in checktext and 'Table S5' in checktext and 'Figure S2' in checktext,'STROBE updated to report LOO')
+check('no leave-one-out result is reported' not in checktext and 'Supplementary Data 6' in checktext and 'Figure S2' in checktext,'STROBE updated to report LOO')
+
+# Supplementary structure and column documentation must match the delivered files.
+check(set(tables)=={'1','2','3','S1','S2','S3'},'Exactly three main and three supplementary display tables')
+check({p.stem for p in (O/'tables').glob('Table*.docx')}=={'Table1','Table2','Table3','TableS1','TableS2','TableS3'},'No obsolete individual tables in current package')
+guide=(O/'SUPPLEMENTARY_DATA_README.md').read_text(encoding='utf8')
+data3guide=guide.split('## Supplementary Data 3 Colocalization',1)[1].split('## Supplementary Data 4',1)[0]
+scenario_names=set(allco.scenario)
+for field in re.findall(r'`([^`]+)`',data3guide):
+    check(field in set(allco.columns)|scenario_names,'Data 3 documented field/scenario exists: '+field)
+check(set(allco.columns).issubset(set(re.findall(r'`([^`]+)`',data3guide))),'Every Data 3 CSV column is documented')
+check('outcome_min_p' not in data3guide,'No nonexistent outcome_min_p column in Data 3 guide')
+check('Figure 3B' in text and 'Figure S2' in text,'Removed duplicate tables retain figure reporting')
 
 checklist=Document(O/'STROBE_MR_CHECKLIST.docx');check(len(checklist.tables)==1,'Separate reporting checklist exists')
 result={'status':'PASS' if not errors else 'FAIL','numeric_cells_compared':numeric,'checks':len(checks),'errors':errors,'scope':'Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review.'}

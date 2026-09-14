@@ -28,6 +28,12 @@ for name,rec in manifest['files'].items():
     p=O/name
     check(p.exists() and sha(p)==rec['sha256'] and p.stat().st_size==rec['bytes'],'Manifest file: '+name)
 qa=read('document_visual_qa.json')
+expected_tables={'tables/Table'+n+'.docx' for n in ['1','2','3','S1','S2','S3']}
+check({n for n in manifest['files'] if n.startswith('tables/Table') and n.endswith('.docx')}==expected_tables,'Exactly six editable tables in manifest')
+check({r['document'] for r in qa['documents']}==expected_tables|{'MANUSCRIPT_Submission.docx','SUPPLEMENTARY_MATERIAL.docx','STROBE_MR_CHECKLIST.docx','COVER_LETTER_EndocrineConnections.docx'},'Exact current document review set')
+compact=read('compact_supplement_revision.json')
+for name,expected_sha in compact['preserved_file_sha256'].items():
+    check(sha(O/name)==expected_sha,'Unchanged aggregate data or figure: '+name)
 check(qa['status']=='PASS','Visual review status')
 check(qa['total_pages']==sum(r['page_count'] for r in qa['documents']),'Visual page total')
 for rec in qa['documents']:

@@ -1,6 +1,6 @@
 # 통계 방법과 추가 분석 검토
 
-2026-09-14 최종 반영본. 사후 leave-one-out 분석을 본문·Table S5·Figure S2·Supplementary Data 6·STROBE 항목 13에 편입했습니다. 기존 주 분석값은 보존했습니다. 총 15개 제외 조건은 IGF1R 11개와 CTLA4 4개입니다.
+2026-09-15 보충자료 간소화 반영본. 사후 leave-one-out 분석을 본문·Figure S2·Supplementary Data 6·STROBE 항목 13에 편입했습니다. 기존 주 분석값은 보존했습니다. 총 15개 제외 조건은 IGF1R 11개와 CTLA4 4개입니다.
 
 ## 현재 통계는 어떤 분석인가
 
@@ -10,10 +10,10 @@
 |---|---|---|
 | Table 1 | 자료원 기술 | 연구별 사례·대조군 수, 인종, 역할. 환자 특성 비교 P값 표가 아님 |
 | Tables 2–3 | Wald ratio 또는 IVW MR | 유전적으로 예측된 발현 증가와 질병의 관계, OR·95% CI·P값 |
-| Table 2, S2 | Bayesian colocalization 및 prior 민감도 | 발현과 질병이 같은 변이를 공유한다는 모형의 지지. H2/H3/H4는 P값이 아님 |
+| Table 2, Figure 3B | Bayesian colocalization 및 prior 민감도 | 발현과 질병이 같은 변이를 공유한다는 모형의 지지. H2/H3/H4는 P값이 아님 |
 | Table S1 | Weighted median·mode, MR-Egger 절편, Cochran Q | 추정법에 따른 안정성, 다른 경로의 영향과 SNP 효과 불일치 점검 |
-| Table S5, Figure S2 | SNP를 하나씩 제외하는 사후 민감도 | 개별 SNP 의존성, 제외 후 OR·95% CI·P값 |
-| Tables S3–S4 | 빈도 교체 재분석, 검출한계 계산 | 노출 재구성 가정의 영향과 효과를 검출할 정밀도 |
+| Figure S2 | SNP를 하나씩 제외하는 사후 민감도 | 개별 SNP 의존성, 제외 후 OR·95% CI·P값 |
+| Tables S2–S3 | 빈도 교체 재분석, 검출한계 계산 | 노출 재구성 가정의 영향과 효과를 검출할 정밀도 |
 
 도구변수의 강도·LD 독립성·대립유전자 정렬, 2,544개 유전자에 대한 다중검정 보정 및 세 outcome 비교도 포함됩니다. IVW는 multiplicative random-effects 추정법이며 과소산포로 SE가 지나치게 작아지지 않도록 보정합니다. 방법은 [TwoSampleMR 공식 문서](https://mrcieu.github.io/TwoSampleMR/reference/mr_ivw.html)와 일치합니다.
 
@@ -31,13 +31,13 @@
 | CTLA4 UKB | 0.208 / 0.00220 | 0.176–1.018 | 4.04×10⁻²⁵–0.972 |
 | CTLA4 FinnGen | 0.171 / 0.0118 | 0.138–1.717 | 1.03×10⁻⁷–0.659 |
 
-범위의 양 끝은 서로 다른 제외 조건일 수 있으며 서로 대응하는 OR/P 한 쌍이 아닙니다. 전체 조건별 OR·95% CI·P는 `Supplementary_Data_6_Leave_one_out.csv`에 제공했습니다. Table S5에는 제외 결과 15행, Figure S2와 Data 6에는 이 결과와 전체 SNP 비교값 5행을 모두 담았습니다. TSHR 세 결과와 CTLA4 BBJ는 원래 SNP가 하나라 이 검사를 할 수 없습니다. CTLA4의 두 SNP 중 하나를 빼면 남은 하나의 Wald ratio가 되므로 여러 SNP에서 반복 확인된 결과로 해석할 수 없습니다.
+범위의 양 끝은 서로 다른 제외 조건일 수 있으며 서로 대응하는 OR/P 한 쌍이 아닙니다. 전체 조건별 OR·95% CI·P는 `Supplementary_Data_6_Leave_one_out.csv`에 제공했습니다. Figure S2와 Data 6에 제외 결과 15행과 전체 SNP 비교값 5행을 모두 담았습니다. TSHR 세 결과와 CTLA4 BBJ는 원래 SNP가 하나라 이 검사를 할 수 없습니다. CTLA4의 두 SNP 중 하나를 빼면 남은 하나의 Wald ratio가 되므로 여러 SNP에서 반복 확인된 결과로 해석할 수 없습니다.
 
 IGF1R의 방향은 모두 유지됐으나 BBJ/UKB 각각 4개 제외 조건 중 2개에서 명목상 유의성이 사라졌습니다. SNP 제외에 따른 정보 감소와 효과 추정 변화가 함께 작용하므로, P=0.05 통과 여부만으로 특정 SNP의 편향을 단정하지 않습니다. CTLA4에서 rs13030124를 제외하면 UKB OR 1.018 (95% CI 0.368–2.816), FinnGen OR 1.717 (0.156–18.898)로 정밀도가 낮고 1을 포함합니다. 따라서 유럽계 CTLA4 MR 근거는 rs13030124에 집중되어 있습니다. 이를 Results와 Table 2 각주에 명시했습니다. 다른 SNP가 무효과라고 입증된 것은 아니며, 정밀도가 낮다는 뜻입니다. 두 outcome의 유사한 패턴만으로 우연을 배제하거나 독립 재현을 주장하지 않습니다. [Leave-one-out 방법](https://mrcieu.github.io/TwoSampleMR/reference/mr_leaveoneout.html)은 특정 SNP에 대한 민감도를 보는 검사입니다.
 
 IGF1R에서 rs2654980 제외 후 BBJ P=0.0751, UKB P=0.468이었고, 각각 다른 한 SNP를 제외해도 명목상 유의성을 잃었습니다. 따라서 특정 한 SNP만 유일한 원인으로 적지 않았습니다. 모든 11개 효과 방향은 유지됐으나 정밀도와 유의성은 민감했습니다. rs2654980은 H4 조건부 top SNP이기도 하지만 LOO와 공위치화는 같은 자료를 쓰므로 독립적인 추가 증거라고 부르지 않습니다.
 
-이 분석은 원래 참조 빈도와 정렬된 SNP 집합을 사용했습니다. 별도의 R 구현은 계산을 검증했으며, 원자료부터 새로운 대립유전자 정렬을 독립 재현했다는 뜻은 아닙니다. eQTLGen 빈도로 치환한 시나리오에서 LOO를 반복하지 않았고, 이 범위는 보충방법·Table S5·Data 6에 명시했습니다. 역사적 예비 출력은 provenance/posthoc_20260914에 남아 있으며 현재 보고 상태는 본 문서와 leave_one_out_verification.json을 따릅니다.
+이 분석은 원래 참조 빈도와 정렬된 SNP 집합을 사용했습니다. 별도의 R 구현은 계산을 검증했으며, 원자료부터 새로운 대립유전자 정렬을 독립 재현했다는 뜻은 아닙니다. eQTLGen 빈도로 치환한 시나리오에서 LOO를 반복하지 않았고, 이 범위는 보충방법·Figure S2·Data 6에 명시했습니다. 역사적 예비 출력은 provenance/posthoc_20260914에 남아 있으며 현재 보고 상태는 본 문서와 leave_one_out_verification.json을 따릅니다.
 
 ## 다중 신호 공위치화의 처리
 

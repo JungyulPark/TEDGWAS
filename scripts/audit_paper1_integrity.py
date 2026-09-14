@@ -18,8 +18,8 @@ Two layers run here, and both matter:
      with its full-precision source and checks the Word structure. It is run at
      the end of this file so one command covers both layers.
 
-Structure targets follow the 12 September 2026 expanded revision: three main
-figures plus Figures S1-S2, three main tables, Supplementary Tables S1-S5.
+Structure targets follow the 15 September 2026 compact supplementary revision: three main
+figures plus Figures S1-S2, three main tables, Supplementary Tables S1-S3.
 
 Checks against the master MANUSCRIPT_TED_TRAP_v5_MASTER.md:
   1. master exists; print current md5 (integrity anchor)
@@ -103,9 +103,9 @@ for d in ["Funding","Conflict of interest","Ethics approval","Informed consent",
 for fig in ["Figure 1.","Figure 2.","Figure 3.","Figure S1.","Figure S2."]:
     ok(f"**{fig}" in t, f"figure legend present: {fig}")
 ok(all(f"**Table {i}." in t for i in (1,2,3)), "main Tables 1-3 present")
-ok(all(f"Table S{i}" in t for i in range(1,6)), "Supplementary Tables S1-S5 all referenced")
+ok(all(f"Table S{i}" in t for i in range(1,4)), "Supplementary Tables S1-S3 all referenced")
 # withdrawn supplementary tables must not be referenced any more
-ghosts = [f"Table S{i}" for i in range(6,10) if f"Table S{i}" in t]
+ghosts = [f"Table S{i}" for i in range(4,10) if f"Table S{i}" in t]
 ok(not ghosts, f"no reference to withdrawn supplementary tables (found: {ghosts or 'none'})")
 
 # 6. stale names

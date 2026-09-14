@@ -153,7 +153,7 @@ with tempfile.TemporaryDirectory(prefix='tedtrap-documents-') as scratch:
 
 # Separate editable tables for the publisher's upload workflow.
 (O/'tables').mkdir(exist_ok=True)
-for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3','S4','S5'])]:
+for source,keys in [('MANUSCRIPT_Submission',['1','2','3']),('SUPPLEMENTARY_MATERIAL',['S1','S2','S3'])]:
     if source not in texts:continue
     for index,number in enumerate(keys):
         table_doc=Document(O/(source+'.docx'))
