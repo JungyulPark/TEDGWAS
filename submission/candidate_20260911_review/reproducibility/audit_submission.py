@@ -185,4 +185,4 @@ check(evidence['FinnGen_H2_dominant_loci']==7,'Seven H2-dominant FinnGen loci')
 check(evidence['CTLA4_FinnGen_H4']>=.8,'CTLA4 failure does not originate in FinnGen')
 checklist=Document(O/'STROBE_MR_CHECKLIST.docx');check(len(checklist.tables)==1,'Separate reporting checklist exists')
 result={'status':'PASS' if not errors else 'FAIL','numeric_cells_compared':numeric,'checks':len(checks),'errors':errors,'scope':'Rounded values versus original analytical outputs, complete consolidated data, DOCX table transcription and essential limitations. Visual layout, author declarations and live journal requirements require separate review.'}
-(P/'integrity_audit.json').write_text(json.dumps(result,indent=2),encoding='utf-8');print(json.dumps(result,indent=2));sys.exit(bool(errors))
+(P/'integrity_audit.json').write_text(json.dumps(result,indent=2),encoding='utf-8',newline='\r\n');print(json.dumps(result,indent=2));sys.exit(bool(errors))

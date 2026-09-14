@@ -356,8 +356,8 @@
       "sha256": "6bd239fc0109280673deb868b9490c4e31cab0d3f56967bdc663fe81fe0a9d52"
     },
     "reproducibility/audit_submission.py": {
-      "bytes": 16915,
-      "sha256": "0b29d23999a0e2f1edc5de2dcfaea469591eaed5eaccdbcf537da363f7131bdd"
+      "bytes": 16790,
+      "sha256": "14d7227c57d97af0783f8eb3e9f09a6c1ae9b1cebd3b135c3983cd07af217d1f"
     },
     "reproducibility/build_complete_statistics.py": {
       "bytes": 2682,
@@ -438,5 +438,6 @@
     "Full Phase 1 contributing-cohort table inspection; participant overlap remains unquantified"
   ],
   "layout_revision_20260914": "Portrait main tables with explicit width checks and new visual review; manuscript numerical content unchanged",
-  "exploratory_posthoc_20260914": "Nine baseline reproductions, five eligible comparisons, fifteen SNP omission estimates. Kept separate from manuscript analyses; multi-signal analysis not performed."
+  "exploratory_posthoc_20260914": "Nine baseline reproductions, five eligible comparisons, fifteen SNP omission estimates. Kept separate from manuscript analyses; multi-signal analysis not performed.",
+  "revision_note_20260914_remote": "audit_submission.py now writes integrity_audit.json with CRLF. The package is marked -text in .gitattributes to preserve reviewed bytes and the manifest records this file's SHA-256, so a Linux audit run previously rewrote it with LF -- identical content, different bytes -- dirtying the tree and breaking its recorded hash on every run. No check, value or result changed."
 }
