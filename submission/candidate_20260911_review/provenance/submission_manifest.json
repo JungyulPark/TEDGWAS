@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "3b5e79a668436d80bb53c6107eadd0aa",
-  "manuscript_sha256": "c1725a646518ea923db771979761399b85d06b35bec02b2d50c9f480014553ba",
+  "manuscript_md5": "06e43bb6edebc7357a71a0b73167c062",
+  "manuscript_sha256": "d86d2b94ce4e9ba0c8ae876aaada443176c882651fc846b12c62d3ad11a92b5c",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13121,
-      "sha256": "fef515990b226b052711525dd5734e551d76d1c2cb8618c712cef254905c4db9"
+      "bytes": 13124,
+      "sha256": "e39424d774d334a0f7fb1886eeeb8240bf29ead31f171b627a6b8dc992d26467"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33432,
-      "sha256": "8172c8b90136df16b5b9948e76b75c681d372a475a21138a967e27ff5b295711"
+      "bytes": 33445,
+      "sha256": "b4cbdf4ff9f0c0f6d932e6317f3c0810478b037144409f8c792b133f24f1bcbd"
     },
     "README.md": {
       "bytes": 2394,
@@ -57,7 +57,7 @@
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 14706,
-      "sha256": "8c69ab745dc4438e574c89770bd2d9df38f013ea909b5eab0a24a3b94c489c36"
+      "sha256": "7e5c16460b4ee212b3c7edca0cfbd41166d4c9756d254895f7ee7c334bc55623"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -69,7 +69,7 @@
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
       "bytes": 494285,
-      "sha256": "5508fab19f8c6e750d4639e40961d7ec0dfc4abe4b601db4bae17897d0f0998e"
+      "sha256": "4f0381430b8394abeb37e1f1978c0fadfffcc8a1766a321e66869cf1ea2b6a77"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "dc94bc5d36f83f295a1d31fda12ac2eb5d30a608d4afef2c6cec27566ac51e7d"
+      "sha256": "0cab91ec0e5f535327d1e875ac845b04e622047e009bc3a0e26329e7fed66fc2"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -429,27 +429,27 @@
     },
     "tables/Table1.docx": {
       "bytes": 12627,
-      "sha256": "e5528c95241d65d80cd62cf756a74640eaeeacc89fd5c68569fe11af9f524c3c"
+      "sha256": "d8870e38374714692f0926030f894be5bbf3c5aca9bbfd35e881f4029780d396"
     },
     "tables/Table2.docx": {
       "bytes": 13820,
-      "sha256": "8e950b3aee5a1c91e2b0a7d170982b8c3246b5ffd4d59ff5df8bdea2767320f0"
+      "sha256": "e101db987c3d6831e6de018b0864400acbbfbaa9780ae42d9ee757db84ef4de2"
     },
     "tables/Table3.docx": {
       "bytes": 13295,
-      "sha256": "e21f6d724a81ef9bf15b4eb0fc390e9428b13fd6d9b3d94775d9fe7cf88de135"
+      "sha256": "3b0b23a12e32e985e6b5af221503fe95aacf185714908b7223ad171c6afbac5f"
     },
     "tables/TableS1.docx": {
       "bytes": 487815,
-      "sha256": "0efc486cde0509c0a2f32903d12a40bd7bce4674470a5c873d858182a0b94cef"
+      "sha256": "00baeeb789db21f843a7117f195cbec4da5a62ecab976641653e2ad043f5428b"
     },
     "tables/TableS2.docx": {
       "bytes": 487803,
-      "sha256": "ef93b816c382d9ddb357599e5e928d403b7e0fb829616e7a1caca2f218643b8a"
+      "sha256": "c2719f430f992506bdcbd77f57d5b9bd19bae208b2d73ec597a150725d121622"
     },
     "tables/TableS3.docx": {
       "bytes": 487525,
-      "sha256": "911e66284f2f75be314181fb5a43cb80069ee857a35ac0939e9b25460a8d3188"
+      "sha256": "d6a43b161a8c94ecb6b8c32b68da213b0ec33e3334ad843ded2185d4d9957993"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -496,5 +496,6 @@
   },
   "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained",
   "revision_note_20260915_remote": "Introduction rewritten for readers new to MR/colocalization (medical-student/resident level), by an independently verified process: three parallel rewrites with different strategies, one synthesis, and an adversarial verify pass checking citation-by-citation fidelity against the original text and against CLAUDE.md's locked framing rules (verdict: clean, no issues). Verified again independently outside the workflow: all 6 citation groupings ([1,2],[3],[4,5,6],[7],[8],[9,10]) identical in order/count; all 7 gene-name italics preserved; paragraphs 1-2 verbatim unchanged; 4-paragraph structure kept; no banned phrase introduced. Added one further sentence (user-requested) previewing that MR results are reported as OR/95% CI/P and colocalization results as a posterior probability, not a P value. Introduction grew 298 -> 491 words; main text 3,546 -> 3,739 words, still well under the 5,000-word limit. No numeric result, citation, or locked scientific claim changed.",
-  "revision_note_20260915_merge": "Merged two concurrent edits to the same master: the remote/local session's Abstract clarification (e55906f) and this session's Introduction rewrite for first-time MR/colocalization readers (2a1db74). MANUSCRIPT_TED_TRAP_v5_MASTER.md auto-merged cleanly (non-overlapping sections, verified both edits present post-merge); CLAUDE.md's two numeric-summary lines were hand-resolved to the true combined values; all derived docx and this manifest were rebuilt fresh from the merged master rather than hand-merging generated artifacts. Post-merge: abstract 250 words, main text 3,739 words (5,000 limit)."
+  "revision_note_20260915_merge": "Merged two concurrent edits to the same master: the remote/local session's Abstract clarification (e55906f) and this session's Introduction rewrite for first-time MR/colocalization readers (2a1db74). MANUSCRIPT_TED_TRAP_v5_MASTER.md auto-merged cleanly (non-overlapping sections, verified both edits present post-merge); CLAUDE.md's two numeric-summary lines were hand-resolved to the true combined values; all derived docx and this manifest were rebuilt fresh from the merged master rather than hand-merging generated artifacts. Post-merge: abstract 250 words, main text 3,739 words (5,000 limit).",
+  "revision_note_20260915_intro_voice": "Introduction paragraphs 3-4 restructured on author feedback: paragraph 3 now defines MR and colocalization impersonally, with no first-person statement of what this study did, and refers only to a generic 'exposure'; the study-specific declarations (blood gene expression as the exposure, and the use of both MR and colocalization) moved into the final aims paragraph, which now opens 'Here, we...'. Citation groupings, gene italics and the four-paragraph structure unchanged. Introduction 491 -> 499 words; main text 3,747 words."
 }

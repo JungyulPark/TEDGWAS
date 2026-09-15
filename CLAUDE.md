@@ -126,11 +126,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `3b5e79a668436d80bb53c6107eadd0aa`,
-  normalised `729a4f48191a915e5e793daef2fc8bc7` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `06e43bb6edebc7357a71a0b73167c062`,
+  normalised `590bca46a983f312e5a1188857cebdb5` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,739**
-  (Introduction–Discussion; 3,771 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,747**
+  (Introduction–Discussion; 3,779 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
@@ -138,7 +138,10 @@ prepared for **Endocrine Connections**. The one live package is
   2026-09-15): MR and colocalization are each glossed with their core intuition on first use,
   "genetically proxied expression" and "druggable genes" are defined at first use, and one sentence
   previews that MR results are OR/95% CI/*P* while colocalization results are a posterior probability,
-  not a *P* value. Keep this register if the Introduction is edited again; do not revert to the terser
+  not a *P* value. **Paragraph 3 stays impersonal** — it defines the two methods generically, with no
+  "we used X" statement and only a generic "exposure"; every first-person statement of what this study
+  did belongs in the final aims paragraph, which opens "Here, we...".
+  Keep this register if the Introduction is edited again; do not revert to the terser
   original phrasing.
 
 ## Repo layout (actual)
