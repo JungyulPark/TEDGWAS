@@ -126,8 +126,8 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `017fcd0c1fae1312d9ad6f956ee7514c`,
-  normalised `95cc7b252ecd9c0cdedba1e58cd1ee65` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `9705d9ae51096434e4cbadb676d101fd`,
+  normalised `f83f1ffbeab3329f02fb3c49c519d965` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
 - **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,546**
   (Introduction–Discussion; 3,578 with sub-headings, which is what Word reports). Abstract is a

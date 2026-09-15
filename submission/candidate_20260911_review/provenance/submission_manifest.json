@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "017fcd0c1fae1312d9ad6f956ee7514c",
-  "manuscript_sha256": "8e347c3fa3d3bf29000ac28e36ab609c898959c057694f12f4f43d88cf995f64",
+  "manuscript_md5": "9705d9ae51096434e4cbadb676d101fd",
+  "manuscript_sha256": "b0c8330f624e76f9d13b032e55d98d4ee9384bed0a554cac5882f7573ed0ee42",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -44,16 +44,16 @@
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33624,
-      "sha256": "67c2cd931c19d3da58e51efab9188aa1da046991071df3464ede94c6fcc42887"
+      "bytes": 33634,
+      "sha256": "6b981d8ebb7b0e836bb714937aa110b29ead9e6fa151e4aaa3a8497b3ea050a0"
     },
     "README.md": {
       "bytes": 2394,
       "sha256": "671574b9019ade4de627e332428fa80c47017e0dfcdb8b5726330825083c06ba"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 10707,
-      "sha256": "b2fdf9418fe96b2591894fe386d47a66a0679966999303c62524e984ca578d35"
+      "bytes": 11536,
+      "sha256": "ddbd77b0d8ef82eab39986b82b76d73dd4bfa16a2c4e53f845298619e8a206d1"
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 15328,
@@ -155,6 +155,10 @@
       "bytes": 891,
       "sha256": "7c586fe2d2632f7d45ca5ff92696510e9536d731232a11715b1903d4a49f91fd"
     },
+    "provenance/abstract_logic_refinement.json": {
+      "bytes": 966,
+      "sha256": "6b76dd426add83405632f63ef0708823cad88d1e585a23583ed2ba94b79ad3a5"
+    },
     "provenance/abstract_revision_20260915.json": {
       "bytes": 1199,
       "sha256": "a1df978fc582f638f85cfe398b1b4f71c34204936c7fa4688e5306bb020089a2"
@@ -201,7 +205,7 @@
     },
     "provenance/document_visual_qa.json": {
       "bytes": 9614,
-      "sha256": "3bf4b502d530600f0fe4d2412de80440356e44f257aebf017aff082159404be7"
+      "sha256": "380cd0de635c7e67c9ccbc0119dd047c8181454a1445d00584b6dcb72bcf8f2f"
     },
     "provenance/figure_layout_checks.json": {
       "bytes": 338,
@@ -463,7 +467,7 @@
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
   "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed.",
   "revision_note_20260912_external_review": "External review round 8. Accepted and applied: TSHR BBJ prior sensitivity stated in the abstract and the opening Discussion; PP.H3 added to Table 2 so the distinct-variant and unresolved readings rest on displayed numbers; the '81 comparisons crossed the 0.80 threshold' sentence rewritten as a classification statement with its 9x3x3 decomposition; per-locus variant counts (1,479-7,740) and the purpose of the BBJ-plus-FinnGen criterion stated in Methods; the reconstructed exposure unit defined as approximately one standard deviation; gene-specific 80% detection limits reported, showing the IGF1R estimate fell below its own limit in all three outcomes; 'modest IGF1R contribution' widened to 'inherited contribution' because the FinnGen CI reaches 2.33; MAPKAPK5 given three decimals in a footnote; the 1000 Genomes panel given its own citation (new reference 18, all later references renumbered). Rejected after checking the data: no re-analysis was needed for colocalization input, which used unfiltered regional statistics (eQTL P up to 1.0; 1,479-7,740 variants per comparison). The UKB log-odds rescaling formula and the FinnGen 858/499,490 counts were already correct and documented.",
-  "updated_at_utc": "2026-09-15T05:16:18.010584+00:00",
+  "updated_at_utc": "2026-09-15T07:10:11.010899+00:00",
   "revision_20260912": "Correct outcome-specific detection thresholds and interpretation; clarify standardized expression unit; renumber all 27 references by first citation and synchronize verification; remove residual modest inherited contribution claim; restrict bold P-value formatting to P columns; rebuild and visually inspect all core documents and separate upload tables; replace stale release records.",
   "figure_numeric_audit": {
     "status": "PASS",
@@ -504,5 +508,6 @@
   },
   "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained",
   "abstract_revision_20260915": "abstract_revision_20260915.json; 250-word plain-language abstract; analytical results unchanged",
-  "abstract_clinical_refinement": "abstract_clinical_refinement.json; current 250-word abstract"
+  "abstract_clinical_refinement": "abstract_clinical_refinement.json; current 250-word abstract",
+  "abstract_logic_refinement": "abstract_logic_refinement.json; current 250-word abstract"
 }
