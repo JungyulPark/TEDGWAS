@@ -55,6 +55,15 @@ prepared for **Endocrine Connections**. The one live package is
   hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
   in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
   14.6% → 12.5%. Never describe this analysis as unperformed again.
+- **OPEN: the [9, 10] citation on "*TNFSF14* and *IFNGR1* remain relevant to follow-up"** (Discussion,
+  filter paragraph). Ji et al. [9] does appear to support *IFNGR1* — published summaries list it among
+  genes positively associated with GD risk and among putative causal genes, alongside *TSHR* — but
+  lists **TNFSF13, not TNFSF14**. Li et al. [10] is a gut-microbiota → inflammatory-protein mediation
+  study of GO (FinnGen 691 cases, a different release from our 858) and does not appear to report
+  either gene. Checked from search summaries only; nature.com and PMC are egress-blocked here, so the
+  papers were not read. **Authors should confirm against the PDFs** and consider either dropping [10]
+  from that sentence or, if Ji et al. really does report *IFNGR1*, saying so explicitly — independent
+  corroboration of a candidate our filter rejected would strengthen that paragraph's own argument.
 - **Why the *TSHR* MR OR looks so large.** rs179252 shifts reconstructed expression by only **0.10546
   SD**, and the MR estimate is the per-allele effect divided by that shift: variant log OR / 0.10546
   reproduces the MR β exactly (−0.22103 → −2.09595 BBJ; −0.25691 → −2.43623 UKB; −0.24587 → −2.33149
@@ -169,11 +178,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `3813be7bff2b14970982ffe6e0a8a852`,
-  normalised `dc19b9f461cf460a4063757639ee30c5` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `e02d080c7711968935af1182576fdea4`,
+  normalised `fb916a11df2020d3c3e4b58eb11f5440` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,886**
-  (Introduction–Discussion; 3,918 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,871**
+  (Introduction–Discussion; 3,903 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
