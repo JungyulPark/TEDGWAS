@@ -6,7 +6,7 @@ Druggable-gene-wide Mendelian randomization and colocalization comparing genetic
 
 **Current manuscript: [14 September 2026 leave-one-out integrated candidate](submission/candidate_20260911_review/README.md).** Prepared for final author review toward Endocrine Connections submission. The multi-signal model is explicitly outside this revision; directionality and participant overlap remain unverified, with final author/journal checks pending. The GitHub repository is public. Data-management rules are in `CLAUDE.md`.
 
-The clinical revision contains 3,546 main-text words, 231 abstract words, 33 references, three main tables, three main figures, three supplementary tables and two supplementary figures. ORs, 95% CIs and P values lead the presentation. The package includes six separately supplied tables. Current audit and visual-review totals are recorded in the candidate review report; the release audit also verifies current file identities and review records.
+The clinical revision contains 3,546 main-text words, 250 abstract words, 33 references, three main tables, three main figures, three supplementary tables and two supplementary figures. ORs, 95% CIs and P values lead the presentation. The package includes six separately supplied tables. Current audit and visual-review totals are recorded in the candidate review report; the release audit also verifies current file identities and review records.
 
 ## Current evidence
 

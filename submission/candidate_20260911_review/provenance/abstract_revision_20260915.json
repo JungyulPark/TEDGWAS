@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-15",
+  "baseline_commit": "3b5c1022ce27dc991a317d9da151a662624adc09",
+  "scope": "Abstract only; all text from Introduction onwards unchanged",
+  "words_including_labels": 250,
+  "changes": [
+    "Define GD and TED",
+    "Name Wald-ratio/IVW MR and colocalization",
+    "Describe in-house orbital tissue RNA-seq as descriptive, four TED and one control",
+    "Lead Results with the central expression-disease finding",
+    "Explain prior sensitivity and P<0.05 without nominal terminology",
+    "Specify expression and GD susceptibility as the evidence target"
+  ],
+  "background_definition_checked": "https://www.niddk.nih.gov/health-information/endocrine-diseases/graves-disease",
+  "page_comparison": {
+    "identical_pages": [
+      1
+    ],
+    "line_number_only_pages": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "changed_pages": [
+      2
+    ],
+    "out_of_page_text": []
+  },
+  "scientific_results_changed": false
+}

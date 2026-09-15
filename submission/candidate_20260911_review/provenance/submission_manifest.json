@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "652681f3e0df5cc2341b8819341bb4df",
-  "manuscript_sha256": "12329e406cd02bc7d9c0fc07fb7fff06ddb28f76fa0d897151b5a9577216a742",
+  "manuscript_md5": "f3044f2a74245c9e9406f68207a4b011",
+  "manuscript_sha256": "5071f73f59a67c0f8b91d91581e2caad8565f217b984b297368f02e3c648a07a",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -44,16 +44,16 @@
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33488,
-      "sha256": "146a6f1238b4db30c31fb85e8761f8a32e619eff215bb1a6bdd9cbefe0134f42"
+      "bytes": 33576,
+      "sha256": "4edf2d6f2d8ff6cf4ff29f2db870b8cc8c7fd485c32fddd76d0ee55f28d738ae"
     },
     "README.md": {
       "bytes": 2394,
-      "sha256": "16b7f9673e7be28f2e1cd2ca2e0c62a16d5869238f48797f8e8f4d62a6222a06"
+      "sha256": "671574b9019ade4de627e332428fa80c47017e0dfcdb8b5726330825083c06ba"
     },
     "REVIEW_REPORT_KO.md": {
-      "bytes": 9646,
-      "sha256": "e51c7c75fda79a7d64e61ad62c3636136d6ae2a8513ee95dfd2a0c23fde059c2"
+      "bytes": 10205,
+      "sha256": "6c3460e9ed1c35e3bf12fa97b617ca4bb3e9e89ace78c53857d034b430bb77ef"
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 15328,
@@ -151,6 +151,10 @@
       "bytes": 427,
       "sha256": "33137685732f8dc12723cbfab6c7fc19685d131b57b475a34870103903dad7e3"
     },
+    "provenance/abstract_revision_20260915.json": {
+      "bytes": 1199,
+      "sha256": "a1df978fc582f638f85cfe398b1b4f71c34204936c7fa4688e5306bb020089a2"
+    },
     "provenance/clinical_data_consolidation.json": {
       "bytes": 1228,
       "sha256": "8543e72109593a4d47fdb806c4ffcfe2eed3b5d66d17cab9afb9797cd7c23d10"
@@ -192,8 +196,8 @@
       "sha256": "3bfe6a86164019a8916b697d087a9a70ae3ef7a1db8b4c69fe73bdee4bef7879"
     },
     "provenance/document_visual_qa.json": {
-      "bytes": 9806,
-      "sha256": "285c5f901b1ffdc266b2003518796ecd9db791fb90e8ba3742a73154f398eb3f"
+      "bytes": 9845,
+      "sha256": "3b4cf11c95c16e3758b17a2982ac68d989627096e543255533e4b6ff3036267d"
     },
     "provenance/figure_layout_checks.json": {
       "bytes": 338,
@@ -337,7 +341,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 297,
-      "sha256": "eafaf862ac6f0be8f11888da03e9d8f8881ba2ad2f1261cc823541e1678674a0"
+      "sha256": "da4f536d002ba7503767b9c2caa12808d7c20c05ec5c42f30f2667c46183401f"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -455,7 +459,7 @@
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
   "revision_note_20260911_remote_2": "Copy-edit and figure pass: every bare P italicised in the manuscript and cover letter (50 occurrences of *P*); Figures 1-2 rebuilt; documents rebuilt. No displayed value changed.",
   "revision_note_20260912_external_review": "External review round 8. Accepted and applied: TSHR BBJ prior sensitivity stated in the abstract and the opening Discussion; PP.H3 added to Table 2 so the distinct-variant and unresolved readings rest on displayed numbers; the '81 comparisons crossed the 0.80 threshold' sentence rewritten as a classification statement with its 9x3x3 decomposition; per-locus variant counts (1,479-7,740) and the purpose of the BBJ-plus-FinnGen criterion stated in Methods; the reconstructed exposure unit defined as approximately one standard deviation; gene-specific 80% detection limits reported, showing the IGF1R estimate fell below its own limit in all three outcomes; 'modest IGF1R contribution' widened to 'inherited contribution' because the FinnGen CI reaches 2.33; MAPKAPK5 given three decimals in a footnote; the 1000 Genomes panel given its own citation (new reference 18, all later references renumbered). Rejected after checking the data: no re-analysis was needed for colocalization input, which used unfiltered regional statistics (eQTL P up to 1.0; 1,479-7,740 variants per comparison). The UKB log-odds rescaling formula and the FinnGen 858/499,490 counts were already correct and documented.",
-  "updated_at_utc": "2026-09-14T23:37:32.003089+00:00",
+  "updated_at_utc": "2026-09-15T04:54:32.008680+00:00",
   "revision_20260912": "Correct outcome-specific detection thresholds and interpretation; clarify standardized expression unit; renumber all 27 references by first citation and synchronize verification; remove residual modest inherited contribution claim; restrict bold P-value formatting to P columns; rebuild and visually inspect all core documents and separate upload tables; replace stale release records.",
   "figure_numeric_audit": {
     "status": "PASS",
@@ -488,11 +492,12 @@
     "new_multisignal_colocalization": "Not undertaken by agreed revision scope; single-causal-variant limitation retained"
   },
   "current_word_counts": {
-    "abstract_words": 231,
+    "abstract_words": 250,
     "main_words_excluding_headings": 3546,
     "main_words_including_headings": 3578,
     "title_characters": 87,
     "count_scope": "scripts/26_wordcount_main_text.py; abstract excludes keywords; main Introduction through Discussion; subheadings separately included."
   },
-  "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained"
+  "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained",
+  "abstract_revision_20260915": "abstract_revision_20260915.json; 250-word plain-language abstract; analytical results unchanged"
 }
