@@ -3,11 +3,11 @@
   "review_date": "2026-09-15",
   "renderer": "documents render_docx.py; workspace LibreOffice and Poppler",
   "total_pages": 43,
-  "review_scope": "Nine rebuilt Word documents were rendered: 20 changed pages were visually inspected at full page size; 22 other page images matched previously reviewed hashes. The unchanged cover retains its prior verified identity. The supplement has three methods pages, three one-page tables, and two figure pages. All captions, notes, labels and tables fit; no out-of-page PDF words. Appearance was assessed in the LibreOffice render, not every external viewer.",
+  "review_scope": "Abstract revision: all 26 main-manuscript pages rendered. The revised abstract page was inspected at full page size; other page content matched the previously reviewed manuscript outside the line-number margin. Updated line-number pages were reviewed together for alignment and page boundaries. No out-of-page PDF text. All other documents retain the verified compact-supplement identities and page records. The supplement remains eight pages and the complete review set remains 43 pages.",
   "documents": [
     {
       "document": "MANUSCRIPT_Submission.docx",
-      "sha256": "146a6f1238b4db30c31fb85e8761f8a32e619eff215bb1a6bdd9cbefe0134f42",
+      "sha256": "4edf2d6f2d8ff6cf4ff29f2db870b8cc8c7fd485c32fddd76d0ee55f28d738ae",
       "page_count": 26,
       "all_pages_visually_reviewed": true,
       "page_images": [
@@ -17,106 +17,106 @@
         },
         {
           "page": 2,
-          "sha256": "916ab20f0b818063704d0a426305d46714b042d6774e08d7d357f2dc147b7f3d"
+          "sha256": "6074596a1d33bf2ce99c30f1e28996d2e633f9e344bc9c2d6a41453daa56b9f1"
         },
         {
           "page": 3,
-          "sha256": "64b7c9e32ca53fe6c759aee16bf71ca68a92cee88990dc61bf7cf775b18f909c"
+          "sha256": "80b47e879b524f1a73fd486da2358ac8ff88eae639ce6561e34d219978865ad3"
         },
         {
           "page": 4,
-          "sha256": "9ef928a572d9b23754bd3eb81a6299b9ea10d74da8200e40cc4c873a35b4f617"
+          "sha256": "c2f2fb8a99ef55024871c8abaec8f2589ea6a901b233fedbc208160f98ba12c6"
         },
         {
           "page": 5,
-          "sha256": "644b199749c48a77e794e1a0f4144a9450e82dd9495be6d4c079db2ae457f3c8"
+          "sha256": "e1ffc0d7da291bd3d2d1792e1538a50c0947df1cf004b2bba493653795758c68"
         },
         {
           "page": 6,
-          "sha256": "a60b0464a88df7884bc92d6812fb52e527cd38571dd7e0b2468501aa817260c7"
+          "sha256": "f0d287909698ff5a0bc305e5600af6c1419c8e9b62831edcd4235c89cc88252e"
         },
         {
           "page": 7,
-          "sha256": "5f07f5b2f0047689a4c1c9ee77aadd68494187df7bed1cc0edf26e007d74961d"
+          "sha256": "5108500c6fb84beec6dd5513e75e94a9fd444b2db3c917ec3e20aab8ddfb40a6"
         },
         {
           "page": 8,
-          "sha256": "09e54583620c566cf1a6ed281f09d3191e3b45ccfeeb854645b41a2c2bd38390"
+          "sha256": "1c9d01e7fa6408ddda82545d2093763fc1296d11b7ac1f345f0b18148f89ff30"
         },
         {
           "page": 9,
-          "sha256": "f668260d95b94833633134a7f8788b3a79e5960a8e5f98595a316cc69ecc4efb"
+          "sha256": "b3dee7678f6ca5da1f7a14419c07307be3c07dbf8536e07c5f6d4843e06ada32"
         },
         {
           "page": 10,
-          "sha256": "3d8b0a6cd5c7ab9578a35918fd7ed6d8ef019ead5d708e1e377b3fa2c85ad170"
+          "sha256": "1957909fcae65e4858bac8663f2de1d734108fa6418b245e5a3f3ed49d2264f1"
         },
         {
           "page": 11,
-          "sha256": "6f75b3c7bd0d37b8778c28ebf9b7e4e239ea7e5863d24108ac595d0136a56363"
+          "sha256": "416651bd6b37e7dcf87071281aa98e81093954e40443e9d7c080d8cfa59e0137"
         },
         {
           "page": 12,
-          "sha256": "ebe13d10371505870d599dde24e1d9ba0fad2142aef7f19162ca740994eb0895"
+          "sha256": "1db6963b786c56aa0bf5306e42d5ae14f41ff8be7f1e75a11e332fa36ed7482c"
         },
         {
           "page": 13,
-          "sha256": "4d36a357001c7855acf8e8572795759b3df4528f107d4191d5b033c5709007ea"
+          "sha256": "5412ca5c07bdb4c8154301720fb14a78dab45117e446e016886dd0521776fd51"
         },
         {
           "page": 14,
-          "sha256": "421db329e589f5f84d61845e01cf4895888a58d08768b1d8fcd158b120070597"
+          "sha256": "20d7090cce51e3f16951ae855fa47b5ab7a28057236166f10e0868bd8640746e"
         },
         {
           "page": 15,
-          "sha256": "554e2ec3a03e144c17ef08beeac6a7ff3f80dbd5bfcc702124402f19cf733155"
+          "sha256": "2ad5ec3c7b7c0a492b26f027c3239c9d11e99e21f5100ddfbc86fdd560449ece"
         },
         {
           "page": 16,
-          "sha256": "9427b2d00476117757b554904fafec5626d17103f60d4392e6a7167f36361e91"
+          "sha256": "909a62259514b60bb1fa008fe0aea3715e98c7f53f1d7ecd4f807cdba542e563"
         },
         {
           "page": 17,
-          "sha256": "0cf64441fad09df4a7dd21a0b40d6f85d6f2b81419078494217df13dfe3147b8"
+          "sha256": "bb39aa7a121e0ba88bd5a4df115d27159f8f877f0401cc7c6d0bc80d3f42c0df"
         },
         {
           "page": 18,
-          "sha256": "353e2b450aebe7260aa861f4dda249c3a2b92ba1e805ba7048c4676dfef01302"
+          "sha256": "c6b9d632ed2dcf456026f38253b782b11963a6691bfaec6574a9bc30cfb9d54f"
         },
         {
           "page": 19,
-          "sha256": "8ea73ea2f6bea826a860ec664b2ef195f921c9c5dd220850b5a3851d1ead9461"
+          "sha256": "334f5cc064242af0a8d7ced777a3241bc6e266c1bd814902dc1ba9a7cd99c666"
         },
         {
           "page": 20,
-          "sha256": "494ce15941149d136e9768e218930c5aaa79d99ce4b762738a3ccb8949ced699"
+          "sha256": "c95f27221339d7dbf92a587b1bb78172f17b3401128fd9ce7a30c83cc7cb7eec"
         },
         {
           "page": 21,
-          "sha256": "cd4bf21f0e8e6d002f6f5070e26e5df6feff56e85b5b9e2928d3d0b1029dad9c"
+          "sha256": "d3cb381f4473426645e99573283cb1f386e7a9ca498aa75adb9388ba8b6c33a7"
         },
         {
           "page": 22,
-          "sha256": "6e0bb5922b88a7b20fc4aeb0579eb1611996e6dcce892eb073da0b6464f4f287"
+          "sha256": "e25b8f8c4e63fc1e05f307e26e68a303f753598c6c2539ccea2d582cf9d85c32"
         },
         {
           "page": 23,
-          "sha256": "b9ba355a3285ecfcf0c68069de7099d5e8f8d6c2f7e689e3cb748e3e3a35b671"
+          "sha256": "3c5ea0f186be7899f6496adb116ffb365171ef52f6d409607c34c81a59618913"
         },
         {
           "page": 24,
-          "sha256": "bc7bd71ee458b8905c3e35db33ee7802cfe2073e3f5d4a0af865f8a9ef76d052"
+          "sha256": "f458420b5a26f75c8cebb67088801d43b41c73b5ff402b449d530ab6d689a088"
         },
         {
           "page": 25,
-          "sha256": "d2ce702956a9cf05a1da2f73a267bfadc30d4f8a72336f45ec3f384e599b5b1f"
+          "sha256": "c859b762e158e29067fd0e398e8cb5bd31dbf0a37fb52a66180b7b69a904d3d3"
         },
         {
           "page": 26,
-          "sha256": "87b298b3a725ddca186996dafcaa6aa7411172ba59227029963445b5c9f0535c"
+          "sha256": "5a3a9f1fe5bcbfbf3e6f8caeb8e014021bcbd1eea4e5e0baee9f026761c6820c"
         }
       ],
-      "render_pdf_sha256": "28fe5201cadb217aa8d758b2b7e86818716da5dc846a94d0037a77bbac627029"
+      "render_pdf_sha256": "7343ab01d8f677de257b96f67ffae3ecfb4ee925e310a41df06013800df06b72"
     },
     {
       "document": "SUPPLEMENTARY_MATERIAL.docx",
