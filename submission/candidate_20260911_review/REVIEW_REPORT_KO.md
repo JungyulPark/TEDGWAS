@@ -69,3 +69,7 @@ Steiger 방향성 검증은 시행하지 않았으며 eQTLGen–유럽계 outcom
 ### 2026-09-15 초록 가독성 수정
 
 초록 250단어. GD·TED의 기본 개념, Wald ratio/IVW MR·공위치화와 자체 안와조직 RNA-seq(4 TED·1 control)의 기술적 분석을 명시했습니다. Results 첫 문장은 핵심 발견을 먼저 제시합니다. nominal과 conservative prior를 풀어쓰고, Conclusion에서 유전적 근거의 대상이 혈중 발현과 GD 발생 소인의 연관성임을 밝혔습니다. 원고의 Introduction 이후 문장과 모든 분석값은 동일합니다. 수정 초록은 2쪽에 배치됩니다.
+
+### 2026-09-15 초록 통계 용어와 임상적 가독성 보완
+
+250단어를 유지하며 2,544개 적격 유전자와 Bonferroni P < 0.05/2,544를 Results에 명시했습니다. Colocalization을 쉬운 설명과 병기하고 기준 확률 0.80 및 공유변이 사전확률 10⁻⁵→10⁻⁶을 명시했습니다. TSHR의 낮은 odds와 IGF1R의 높은 odds 방향, IGF1R의 발견 기준 미충족을 구분했습니다. 초록 이외 본문과 분석값은 변경하지 않았습니다.

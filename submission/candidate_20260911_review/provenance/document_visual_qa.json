@@ -3,11 +3,11 @@
   "review_date": "2026-09-15",
   "renderer": "documents render_docx.py; workspace LibreOffice and Poppler",
   "total_pages": 43,
-  "review_scope": "Abstract revision: all 26 main-manuscript pages rendered. The revised abstract page was inspected at full page size; other page content matched the previously reviewed manuscript outside the line-number margin. Updated line-number pages were reviewed together for alignment and page boundaries. No out-of-page PDF text. All other documents retain the verified compact-supplement identities and page records. The supplement remains eight pages and the complete review set remains 43 pages.",
+  "review_scope": "Clinical abstract refinement: revised page 2 inspected at full-page size after rendering. All other 25 manuscript page images exactly match the reviewed e55906f baseline. No out-of-page PDF text. Other documents and figures retain their reviewed identities.",
   "documents": [
     {
       "document": "MANUSCRIPT_Submission.docx",
-      "sha256": "4edf2d6f2d8ff6cf4ff29f2db870b8cc8c7fd485c32fddd76d0ee55f28d738ae",
+      "sha256": "67c2cd931c19d3da58e51efab9188aa1da046991071df3464ede94c6fcc42887",
       "page_count": 26,
       "all_pages_visually_reviewed": true,
       "page_images": [
@@ -17,7 +17,7 @@
         },
         {
           "page": 2,
-          "sha256": "6074596a1d33bf2ce99c30f1e28996d2e633f9e344bc9c2d6a41453daa56b9f1"
+          "sha256": "214190317d05f078173a66e06d6d27c28062c09680f40477268c6f370b580ab7"
         },
         {
           "page": 3,
@@ -116,7 +116,7 @@
           "sha256": "5a3a9f1fe5bcbfbf3e6f8caeb8e014021bcbd1eea4e5e0baee9f026761c6820c"
         }
       ],
-      "render_pdf_sha256": "7343ab01d8f677de257b96f67ffae3ecfb4ee925e310a41df06013800df06b72"
+      "render_pdf_sha256": "538667d247c8ebc703ba66227a512d8153295f73d89e30165fecb8b680562c92"
     },
     {
       "document": "SUPPLEMENTARY_MATERIAL.docx",
