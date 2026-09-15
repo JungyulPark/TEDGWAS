@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "58f81a603dff5d1605c562fb7389e35d",
-  "manuscript_sha256": "079dff8395ccdb97af57369db95635df8ef77f8304dd72afbd29771667a1304a",
+  "manuscript_md5": "d057165db3b6863024927b389656b328",
+  "manuscript_sha256": "7f5cfc8d3db6e02935424e902d2585665bee5895dc24351972cfed358b5aaed1",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13125,
-      "sha256": "15c48213d19aab99fb047f15c80048e55aa8b97bfa0c8e473fe8bc31cda58164"
+      "bytes": 13121,
+      "sha256": "302aefdc2513539366dd0ab62c9530c4a21f477ea2c215716dd009bff913fec2"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33554,
-      "sha256": "8af41ebdd32bcffcaea418f91fa9093f6e4adf1d4f26ad273dc85432a2e3912f"
+      "bytes": 33568,
+      "sha256": "e6ff5bf22649062a4794590a38c79e726a591752840169e6435cd38eefe93734"
     },
     "README.md": {
       "bytes": 2394,
@@ -57,7 +57,7 @@
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 14706,
-      "sha256": "32d0d05e1b602528189f07b0b502d2f3ba26f6d12dfc9cba6657bb18f1196332"
+      "sha256": "f49f5413747fc0e18d37d154d37950f8da4b35595b533d17a82adcfcf7d4e4b9"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -68,8 +68,8 @@
       "sha256": "98a2ce6d2f1d64a59e25d717eedd1229504eb04a475208bcc8b48979f5640bdc"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 494285,
-      "sha256": "6a56cdb690fbd010e32beae59fb0ab93a704e286c0521bb9f2ddc74aa3ef5956"
+      "bytes": 494289,
+      "sha256": "81d35fc680d7397e4ca8d63c3014edbacf78aefb1443e5bad16e4a4c97040918"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "d9e28e94701970564f510690431a3464d62273f0525e4399fba8bdc25717f359"
+      "sha256": "372eabc85defffaaffde50de04f3e8dd8b8ad72b68caac80f70a7ac552b566f1"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -384,8 +384,8 @@
       "sha256": "e43de40c9f7a88fce201c528dcd908754affb44db4cdc73ae19aa81b9bc327d9"
     },
     "reproducibility/audit_submission.py": {
-      "bytes": 21481,
-      "sha256": "9fd114f1bcbd36f427637712de39a3889dc0248dd6e707edfc49fb9bcd323f06"
+      "bytes": 21355,
+      "sha256": "82c65b48ad333e0c186573f4647f5872bea12a0f2814bacbf825e8c965436ea7"
     },
     "reproducibility/build_complete_statistics.py": {
       "bytes": 2682,
@@ -429,27 +429,27 @@
     },
     "tables/Table1.docx": {
       "bytes": 12628,
-      "sha256": "8551d479947cedf760f0c399324fbb94dd836bdcc8c667d4627133b91a666455"
+      "sha256": "ff66454618f57589a2e364137246087ac134c4742808471e7df8162d60e6ed92"
     },
     "tables/Table2.docx": {
       "bytes": 13820,
-      "sha256": "253513b55cef1fa566d471dcafa98fd3a664c9c3cad86fa3554e7e58d4c5296e"
+      "sha256": "2c55ff2fbad7aa3e8bb57eedff625fdda6aa7a21fef60c258ee1621e582a37a8"
     },
     "tables/Table3.docx": {
       "bytes": 13295,
-      "sha256": "ba02c002d849c59af75e1ea7e831b0aa14c91d6033f6ddb0ae05fb102e068bbf"
+      "sha256": "be6c9830157163c1f7224394c34ea76cbc7ae8e609696fd545c1c3849281ef4b"
     },
     "tables/TableS1.docx": {
       "bytes": 487815,
-      "sha256": "dd9c95403bcd8f0fe2687ab260ba66d1455651beab399ea72ad74cb893d37385"
+      "sha256": "2323009cc576f171d17ae2325ea3164919c94df331f16de76ea0e75cc5561f6b"
     },
     "tables/TableS2.docx": {
       "bytes": 487803,
-      "sha256": "fc0908955bbc07b5a2e7180baba5bb215e320cc8f6a969ce93b999c097d224e8"
+      "sha256": "610cfc2fcfc0ef49c78de7d6754e55afa887f562d3b47963f8b4dd121f5d41cd"
     },
     "tables/TableS3.docx": {
-      "bytes": 487525,
-      "sha256": "7e0eb6d1998f461aa6f0d1b278ff5cee3a0e0b1a105865b9fb0369732f144a11"
+      "bytes": 487526,
+      "sha256": "4fd506480b544e1709298c2875e7af60f8a5668331f245a4b675237ff5dc87f2"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -499,5 +499,6 @@
   "revision_note_20260915_merge": "Merged two concurrent edits to the same master: the remote/local session's Abstract clarification (e55906f) and this session's Introduction rewrite for first-time MR/colocalization readers (2a1db74). MANUSCRIPT_TED_TRAP_v5_MASTER.md auto-merged cleanly (non-overlapping sections, verified both edits present post-merge); CLAUDE.md's two numeric-summary lines were hand-resolved to the true combined values; all derived docx and this manifest were rebuilt fresh from the merged master rather than hand-merging generated artifacts. Post-merge: abstract 250 words, main text 3,739 words (5,000 limit).",
   "revision_note_20260915_intro_voice": "Introduction paragraphs 3-4 restructured on author feedback: paragraph 3 now defines MR and colocalization impersonally, with no first-person statement of what this study did, and refers only to a generic 'exposure'; the study-specific declarations (blood gene expression as the exposure, and the use of both MR and colocalization) moved into the final aims paragraph, which now opens 'Here, we...'. Citation groupings, gene italics and the four-paragraph structure unchanged. Introduction 491 -> 499 words; main text 3,747 words.",
   "revision_note_20260915_intro_tissue": "Introduction now discloses the in-house orbital RNA-sequencing dataset, which the Abstract already announced but the Introduction had never set up. Added to the aims paragraph, framed to the same standard used in Methods, Figure S1 and the Discussion: descriptive context only, no statistical comparison possible with a single control, no genetic conclusion resting on it. No P value, significance or validation language. Introduction 499 -> 536 words; main text 3,784.",
-  "revision_note_20260915_eqtl_n": "Methods now quantifies the eQTLGen per-variant sample size (median 28,092, range 232-31,684) instead of only 'up to 31,684'. Verified against Supplementary_Data_1_Instruments.csv: max n_samples is exactly 31,684, median 28,092, min 232; 27.4% of the 6,135 instruments have n < 20,000. Instrument strength is unaffected -- the P < 5e-8 selection threshold guarantees F >= 29.7 at any n -- and all instruments behind the reported backbone genes have n between 20,515 and 31,567 (F 33.0-375.0)."
+  "revision_note_20260915_eqtl_n": "Methods now quantifies the eQTLGen per-variant sample size (median 28,092, range 232-31,684) instead of only 'up to 31,684'. Verified against Supplementary_Data_1_Instruments.csv: max n_samples is exactly 31,684, median 28,092, min 232; 27.4% of the 6,135 instruments have n < 20,000. Instrument strength is unaffected -- the P < 5e-8 selection threshold guarantees F >= 29.7 at any n -- and all instruments behind the reported backbone genes have n between 20,515 and 31,567 (F 33.0-375.0).",
+  "revision_note_20260915_methods": "Methods reviewed line by line. References [8] and [11]-[24] each verified to resolve to the paper the sentence relies on. Three edits: (1) 'MR, colocalization and detectable effect sizes were compared (Tables S2-S3)' pointed at tables that hold MR estimates and detection limits but no colocalization -- the coloc frequency scenarios live only in Supplementary Data 3, and the sentence now says so; (2) the minimum F of 29.7 is now given against the conventional threshold of 10, so the number means something to a reader; (3) the two sentences on the reconstructed exposure scale merged into one without losing either fact (expression variance set to one; the genetic predictor is not standardized). The audit guard for that distinction matched one exact sentence and now accepts either voice while still failing if the distinction is dropped."
 }

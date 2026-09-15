@@ -114,7 +114,9 @@ for r in verified:check(r['reference']==str(r['number'])+'. '+references.get(r['
 main_doc=Document(O/'MANUSCRIPT_Submission.docx')
 doc_ref_text='\n'.join(p.text for p in main_doc.paragraphs)
 for line in references.values():check(clean(line).replace('’', "'") in clean(doc_ref_text).replace('’', "'"),'DOCX reference matches current master')
-check('does not standardize the genetic predictor itself' in text,'Standardized expression scale distinguished from genetic predictor')
+check(any(q in text for q in ('does not standardize the genetic predictor itself',
+                              'genetic predictor itself is not standardized')),
+      'Standardized expression scale distinguished from genetic predictor')
 check('comparing them with observed effects cannot distinguish an absent effect from limited power' in text,'No inference from observed effect versus detection limit')
 for gene,outcome,shown in [('TSHR','BBJ_Graves','1.39'),('IGF1R','BBJ_Graves','0.99'),('IGF1R','UKB_hyperthyroid','0.33'),('IGF1R','FinnGen_GO','0.72')]:
     a=.05/2544 if outcome=='BBJ_Graves' else .05
