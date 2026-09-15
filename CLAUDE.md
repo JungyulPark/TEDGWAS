@@ -72,6 +72,9 @@ prepared for **Endocrine Connections**. The one live package is
 - **Results must not restate the figure legends.** The Figure 1 legend already carries "Each point
   represents one gene, not a SNP association" and the not-estimable-is-not-negative caveat; Results
   had duplicated both and no longer does.
+- **The "screen recovered a known autoimmune locus" claim rests on BBJ**, where *CTLA4* has a single
+  instrument at *P* = 5.45×10⁻¹⁵. The rs13030124 dependence is a UKB/FinnGen two-SNP issue and does not
+  touch that claim — keep the two separate, and keep the takeaway after the caveat, not before it.
 - **IGF1R leave-one-out detail**: BBJ (full-set *P* = 0.0212) loses nominal significance under
   rs2654980 (0.0751) and rs59467480 (0.0503); UKB (0.0117) under rs2654980 (0.468) and rs117212126
   (0.0529) — **two of four omissions in each**. **FinnGen never reached nominal significance**
@@ -151,11 +154,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `2041af629f9cb6384bbb0049445a8909`,
-  normalised `dfb2785222da7ee64b08445b0c36dc80` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `f94f42cfdcec78434095775827a60bef`,
+  normalised `061835a623617918aaf2f5d171e57141` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,801**
-  (Introduction–Discussion; 3,833 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,811**
+  (Introduction–Discussion; 3,843 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.

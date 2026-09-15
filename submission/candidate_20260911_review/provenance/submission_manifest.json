@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "2041af629f9cb6384bbb0049445a8909",
-  "manuscript_sha256": "f03d42513234f90f3d2f057d97960773f190e2aa4a2c034b6973147747574372",
+  "manuscript_md5": "f94f42cfdcec78434095775827a60bef",
+  "manuscript_sha256": "66826e917d44b500becfa40406049ffd79517d90d0a2da08706e112ce0e90583",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13121,
-      "sha256": "62f5396bc3d641036299ee886fd8a531b747c29a6e4c5c08a3371a9114ebf576"
+      "bytes": 13120,
+      "sha256": "1ec76ab57586077146e5dc4bfceefebe60c16120f18da421de4d161daee541a4"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33528,
-      "sha256": "9dc1322aa21a9a471bbcf7ae872ff809c55bf62a04f7236f200570e7796c34b6"
+      "bytes": 33550,
+      "sha256": "7258e2265cf9dc4e097b4632012933cea9101bcfbb7fe7f9c03ecbe6f561796a"
     },
     "README.md": {
       "bytes": 2394,
@@ -57,7 +57,7 @@
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 14706,
-      "sha256": "973906400ee360846100343d77e4334a35b4dbae57ca655eab0590fda4462a56"
+      "sha256": "4b65b84280c6b913467a71aaf2c45b7981248b4b6af174b62e071fad48ccae4a"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -69,7 +69,7 @@
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
       "bytes": 494285,
-      "sha256": "2fff69493d67f5a319d39df546633d052fa0f95333c6aa2392f4887a6c6c312e"
+      "sha256": "8796a5e1ec2be3533af575ddc0802b5edf26bc22ff07fe27b87e26f0f3f9d7d0"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "cf4bcee44bc9cbbaefcd7f1952c7b8c02aea55ac4874f99abf4077f5b15cda5c"
+      "sha256": "94f15483aa0e9b8a1ed9e76ca278b82afb945a874acbb4bc93da88836fb39c19"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -429,27 +429,27 @@
     },
     "tables/Table1.docx": {
       "bytes": 12627,
-      "sha256": "fef1af5fb0acfb4012cd1bf04d687c22f3c0fe8acb540ab0e8ea7dccfbd1a47e"
+      "sha256": "d590dfeeb6b3c65eb91a7d44a3ae808e8fb528173762edff3b87d3898be180ed"
     },
     "tables/Table2.docx": {
       "bytes": 13819,
-      "sha256": "269ff23d35dfe06cb751d15b37b3d53a4464c41ceadaeb2e665352eb4cb86ee9"
+      "sha256": "11258e0e0530754204df6052a637e6c30f971d6c71057a6fa1dbdd584326075d"
     },
     "tables/Table3.docx": {
-      "bytes": 13295,
-      "sha256": "837fb4827cec5995984940bc522c5166574359514ccc1a5ef05e1d6f038ed559"
+      "bytes": 13294,
+      "sha256": "3a1e6d830d35ff49fdc00f457011f80c86e0105d4e8b20945f67ec7b738b1741"
     },
     "tables/TableS1.docx": {
       "bytes": 487815,
-      "sha256": "b6c5c9a23a97cd3d41232ae1fa46fc3a22ba10c4a9556398cca34878506aa4a1"
+      "sha256": "f21a847786f5b7a3f2377b885158c1c47376e899630c50283e834e64a0101ed4"
     },
     "tables/TableS2.docx": {
       "bytes": 487803,
-      "sha256": "0e7bf26e26e1a7262862ec42378d4565eceed4a8b256032979313310c818728f"
+      "sha256": "354cb31c485b6d8aa9926eb8be4639186e3ffb45b905b4f011106d9427bc0d66"
     },
     "tables/TableS3.docx": {
       "bytes": 487525,
-      "sha256": "f3e55248e21dded4c57a1a68051b037e899334b4cc7839412dd21d8d3e63fadd"
+      "sha256": "f79a6585ec5c1dc6a579e6ac7367171ac4d23692d5ebb5c38c3f8e88f8c4a98b"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -503,5 +503,6 @@
   "revision_note_20260915_methods": "Methods reviewed line by line. References [8] and [11]-[24] each verified to resolve to the paper the sentence relies on. Three edits: (1) 'MR, colocalization and detectable effect sizes were compared (Tables S2-S3)' pointed at tables that hold MR estimates and detection limits but no colocalization -- the coloc frequency scenarios live only in Supplementary Data 3, and the sentence now says so; (2) the minimum F of 29.7 is now given against the conventional threshold of 10, so the number means something to a reader; (3) the two sentences on the reconstructed exposure scale merged into one without losing either fact (expression variance set to one; the genetic predictor is not standardized). The audit guard for that distinction matched one exact sentence and now accepts either voice while still failing if the distinction is dropped.",
   "revision_note_20260915_results_p1": "First Results paragraph reordered and de-duplicated. The abbreviation MHC was used one sentence before 'major histocompatibility complex (MHC)' defined it. Two sentences restated the Figure 1 legend almost verbatim ('each plotted point represents a gene-level MR result, not a single-SNP GWAS association' vs the legend's 'Each point represents one gene, not a SNP association'); the legend keeps that guidance and Results no longer repeats it. The 310-not-estimable caveat now follows the counts it derives from, and the composition of the 13 hits now follows the count of 13 instead of being separated from it. Verified: 5 of the 13 sit in the MHC (chr6:25-34 Mb; HLA-A, HLA-DQA2, C4A, TUBB, PSMB8) and 8 outside -- IFNGR1 is on chr6 but at 137 Mb -- so 'not confined to the MHC region' is accurate. 127 -> 116 words; no displayed value changed.",
   "revision_note_20260915_results_tshr": "TSHR Results paragraph tightened. It made the same point three times (UKB strong MR but no shared-variant support) and one of those sentences described Figure 2 rather than reporting a result. Merged to state it once and keep the interpretive takeaway. Two precision gains: the posteriors are now labelled 'under the primary prior' where they are first given, and UKB is identified as carrying the strongest MR association of the three outcomes (P = 8.77e-28 against 1.09e-14 BBJ and 2.82e-07 FinnGen, verified), which is what makes its non-colocalization worth reporting. 117 -> 98 words; no displayed value changed. Prior sensitivity was deliberately NOT repeated here -- the manuscript already states it in the Abstract, the Robustness subsection, the Discussion opening, the sensitivity paragraph, Limitations and Conclusions.",
-  "revision_note_20260915_results_igf1r": "IGF1R Results: a 223-word single paragraph covering colocalization, alternative estimators, leave-one-out and the overall takeaway was split into colocalization (77 words) and MR sensitivity plus takeaway (175 words). One factual imprecision fixed: 'Each outcome also lost nominal significance under one other omission' read as all three outcomes, but FinnGen never reached nominal significance (full-set P = 0.182) and so had none to lose. Verified from the leave-one-out estimates: BBJ (full-set P = 0.0212) lost it under rs2654980 (0.0751) and rs59467480 (0.0503); UKB (0.0117) under rs2654980 (0.468) and rs117212126 (0.0529) -- two of four omissions in each of the two outcomes that reached P < 0.05. The text now says exactly that. Estimator claims re-verified: weighted median 0.0288 BBJ / 0.00244 UKB / 0.124 FinnGen; weighted mode 0.512 / 0.367 / 0.633."
+  "revision_note_20260915_results_igf1r": "IGF1R Results: a 223-word single paragraph covering colocalization, alternative estimators, leave-one-out and the overall takeaway was split into colocalization (77 words) and MR sensitivity plus takeaway (175 words). One factual imprecision fixed: 'Each outcome also lost nominal significance under one other omission' read as all three outcomes, but FinnGen never reached nominal significance (full-set P = 0.182) and so had none to lose. Verified from the leave-one-out estimates: BBJ (full-set P = 0.0212) lost it under rs2654980 (0.0751) and rs59467480 (0.0503); UKB (0.0117) under rs2654980 (0.468) and rs117212126 (0.0529) -- two of four omissions in each of the two outcomes that reached P < 0.05. The text now says exactly that. Estimator claims re-verified: weighted median 0.0288 BBJ / 0.00244 UKB / 0.124 FinnGen; weighted mode 0.512 / 0.367 / 0.633.",
+  "revision_note_20260915_results_ctla4": "CTLA4 Results: the takeaway ('the screen therefore recovered a known autoimmune association...') sat in the middle of the paragraph, ahead of the rs13030124 caveat that qualifies it, so a reader met the conclusion and then the reason to doubt it. Moved to the end and anchored to the arm it actually rests on -- BBJ, a single instrument, P = 5.45e-15 -- which the European two-SNP dependence does not touch. Added a Supplementary Methods pointer to the chromosome 16p11.2 one-regional-signal conclusion, whose LD (EAS r2 0.854/0.761/0.863) and GCTA-COJO evidence a reader could not otherwise locate from Results. All posteriors re-verified: CTLA4 0.201 BBJ (H3 0.799) / 0.953 UKB / 0.978 FinnGen; TNFSF14 0.994 BBJ and 0.017 FinnGen; IFNGR1 0.989 and 0.020; the 16p11.2 trio 0.636/0.388/0.168 in BBJ with a maximum of 0.115 across UKB and FinnGen; MAPKAPK5 0.000 BBJ. No displayed value changed."
 }
