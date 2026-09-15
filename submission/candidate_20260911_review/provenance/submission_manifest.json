@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "c20e8979eddc2d4af674bf76581e152c",
-  "manuscript_sha256": "c61fee9c12903d51cbf86b11adf4ac91350055aa2b00fca7d586f9f13e2a026e",
+  "manuscript_md5": "3813be7bff2b14970982ffe6e0a8a852",
+  "manuscript_sha256": "1976c031af9fdaaee4fcccb8cf6d78917fdbb925b66fde0097aceefe19bcbcee",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -37,15 +37,15 @@
     },
     "COVER_LETTER_EndocrineConnections.docx": {
       "bytes": 13122,
-      "sha256": "2119b6a50cf935070d6de54917f30f830f5b237966db04f9b2a0be3c033a3b28"
+      "sha256": "8f7deb4a1cde1560810b54afe064cc151456d25cbe5a6f00f27486f6aa4d856f"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33579,
-      "sha256": "04a5d9447cc9212c8ec6b6bb3acf5a5aee1431238862385e3d030a7ac8923088"
+      "bytes": 33636,
+      "sha256": "cae07056f9168b2e70b872d265cea1c7dadd16a36ad566090432a216b2a282fa"
     },
     "README.md": {
       "bytes": 2394,
@@ -57,7 +57,7 @@
     },
     "STROBE_MR_CHECKLIST.docx": {
       "bytes": 14707,
-      "sha256": "d18319b94c17e86d145a2da227fb956b3fd1d25bcf0936a3a2d399db763ec5a7"
+      "sha256": "c8cca31655bc955cdd5c529795f0cbcf238efb5957dd7b8c1e8c9e519a337aeb"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -68,8 +68,8 @@
       "sha256": "98a2ce6d2f1d64a59e25d717eedd1229504eb04a475208bcc8b48979f5640bdc"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 494287,
-      "sha256": "d9ae4fe1a0b84fbeb27356b5705c9527ccc42c4377859ebe0600383f95194cd0"
+      "bytes": 494285,
+      "sha256": "f12aaaff9920b9374304abb4121b9f9e0e82a77d945383132cd86161a3a02de1"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "c95ecf656504885336a60d9e8ba61d8a209de6f479269954c295938525fa59fc"
+      "sha256": "b9b119d6b48e1921eff841822a14fc10ddde331ed803dd301b413e6ccc5efcf7"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -429,27 +429,27 @@
     },
     "tables/Table1.docx": {
       "bytes": 12628,
-      "sha256": "9e079c0a724c4c5e477f53e559660dcebd44ef2fd840df4af6beca625ebb17df"
+      "sha256": "ab86b597d72786d7d6ca3a5b57cb65c07c61d110ede7926e9af362749ac046db"
     },
     "tables/Table2.docx": {
       "bytes": 13820,
-      "sha256": "781289eaecf40d72ab91633e56bde02ca6f12db5fd016c2f29307ba9ee93d128"
+      "sha256": "4d3fd052ff5a52936f005080a8d6345f8befd0b313440c5a7aac55154a6615b7"
     },
     "tables/Table3.docx": {
       "bytes": 13295,
-      "sha256": "e7e5202e089e21a8d409b9b4a5e7ca9aa41923aba3a37850bff3fcc6043c8c27"
+      "sha256": "c48e315396ca6d842706ceee40aec8269fc55903a79d0cf95e37ca390cd3dcfe"
     },
     "tables/TableS1.docx": {
-      "bytes": 487815,
-      "sha256": "70e358894fdbf82c9423ff775e5fcf1aa7974f5b436eed8ee995a541cd1e199f"
+      "bytes": 487816,
+      "sha256": "11de069d1763acf1a02248c5e0db6d4ed71e5725d43c2b0f78827fe0714bb5b8"
     },
     "tables/TableS2.docx": {
-      "bytes": 487803,
-      "sha256": "7d07e2c3627ec1c63152f56dec19677634aa17d8c50b2c6a149e2bcfd11d4fa3"
+      "bytes": 487804,
+      "sha256": "df9b2bd98e3010684b673ba982d5dfb7a9111c9e89524f9980489811b55aa820"
     },
     "tables/TableS3.docx": {
       "bytes": 487526,
-      "sha256": "0eaeba54afcc3a613b886d1ef3c9d69bf0949697bfb74e2039f700029dcec07c"
+      "sha256": "f1b09aaa6445a9d380e7883eb95172b11c49794c9dcde6fd897ccfd677fb86bf"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -506,5 +506,6 @@
   "revision_note_20260915_results_igf1r": "IGF1R Results: a 223-word single paragraph covering colocalization, alternative estimators, leave-one-out and the overall takeaway was split into colocalization (77 words) and MR sensitivity plus takeaway (175 words). One factual imprecision fixed: 'Each outcome also lost nominal significance under one other omission' read as all three outcomes, but FinnGen never reached nominal significance (full-set P = 0.182) and so had none to lose. Verified from the leave-one-out estimates: BBJ (full-set P = 0.0212) lost it under rs2654980 (0.0751) and rs59467480 (0.0503); UKB (0.0117) under rs2654980 (0.468) and rs117212126 (0.0529) -- two of four omissions in each of the two outcomes that reached P < 0.05. The text now says exactly that. Estimator claims re-verified: weighted median 0.0288 BBJ / 0.00244 UKB / 0.124 FinnGen; weighted mode 0.512 / 0.367 / 0.633.",
   "revision_note_20260915_results_ctla4": "CTLA4 Results: the takeaway ('the screen therefore recovered a known autoimmune association...') sat in the middle of the paragraph, ahead of the rs13030124 caveat that qualifies it, so a reader met the conclusion and then the reason to doubt it. Moved to the end and anchored to the arm it actually rests on -- BBJ, a single instrument, P = 5.45e-15 -- which the European two-SNP dependence does not touch. Added a Supplementary Methods pointer to the chromosome 16p11.2 one-regional-signal conclusion, whose LD (EAS r2 0.854/0.761/0.863) and GCTA-COJO evidence a reader could not otherwise locate from Results. All posteriors re-verified: CTLA4 0.201 BBJ (H3 0.799) / 0.953 UKB / 0.978 FinnGen; TNFSF14 0.994 BBJ and 0.017 FinnGen; IFNGR1 0.989 and 0.020; the 16p11.2 trio 0.636/0.388/0.168 in BBJ with a maximum of 0.115 across UKB and FinnGen; MAPKAPK5 0.000 BBJ. No displayed value changed.",
   "revision_note_20260915_results_robustness": "Robustness subsection: two redundancies removed and two numbers added. The sentence 'This distinguished stability to the frequency substitution from sensitivity to the assumed prior...' restated the two sentences before it; replaced by one clause carrying the same principle. Three consecutive caveats about the detection benchmarks were merged to two. Added: that 0.661 is below the 0.80 threshold (previously the reader had to recall the threshold), and FinnGen's conservative-prior value of 0.875 (previously only 'remained above threshold'). Verified against Supplementary Data 3: TSHR BBJ 0.951/0.907/0.661 and FinnGen 0.986/0.972/0.875 across p12 = 1e-5/5e-6/1e-6. Power values re-verified 14.6 -> 12.5% (OR 1.5) and 35.6 -> 34.2% (OR 2.0); IGF1R cohort-frequency P = 0.02198, 0.01566, 0.1772 displayed as 0.022, 0.016, 0.177.",
-  "revision_note_20260915_discussion_p1p2": "Discussion opening: the claim of stronger TSHR evidence was stated for 'the same outcomes' without scope, but in UKB IGF1R's shared-variant support (0.404) exceeds TSHR's (0.226) -- both below 0.80 -- while Results and Conclusions had both scoped the claim to BBJ and FinnGen. The paragraph now states that in UKB neither gene reached the threshold, closing the gap a reader would find in Table 2. On author request it also states the direction of the TSHR association (higher genetically proxied expression, lower odds) and what the FinnGen recovery means for TED: the signal extends to a TED-enriched population but, because that outcome uses population controls, does not isolate eye-disease susceptibility within GD. Dropped a sentence that only described Figures 1-3. In the second paragraph, 'Experimental receptor crosstalk [5] and tissue-specific regulation [29] provide complementary biological context' asserted relevance without stating it; the two citations now carry the premises the following hypothesis rests on (receptors physically scaffolded; regulation tissue-dependent). Citation-claim mapping unchanged. Verified MR P values: TSHR beats IGF1R in all three outcomes (1.09e-14 vs 0.0212; 8.77e-28 vs 0.0117; 2.82e-07 vs 0.182), so the MR half of the claim needed no scoping."
+  "revision_note_20260915_discussion_p1p2": "Discussion opening: the claim of stronger TSHR evidence was stated for 'the same outcomes' without scope, but in UKB IGF1R's shared-variant support (0.404) exceeds TSHR's (0.226) -- both below 0.80 -- while Results and Conclusions had both scoped the claim to BBJ and FinnGen. The paragraph now states that in UKB neither gene reached the threshold, closing the gap a reader would find in Table 2. On author request it also states the direction of the TSHR association (higher genetically proxied expression, lower odds) and what the FinnGen recovery means for TED: the signal extends to a TED-enriched population but, because that outcome uses population controls, does not isolate eye-disease susceptibility within GD. Dropped a sentence that only described Figures 1-3. In the second paragraph, 'Experimental receptor crosstalk [5] and tissue-specific regulation [29] provide complementary biological context' asserted relevance without stating it; the two citations now carry the premises the following hypothesis rests on (receptors physically scaffolded; regulation tissue-dependent). Citation-claim mapping unchanged. Verified MR P values: TSHR beats IGF1R in all three outcomes (1.09e-14 vs 0.0212; 8.77e-28 vs 0.0117; 2.82e-07 vs 0.182), so the MR half of the claim needed no scoping.",
+  "revision_note_20260915_discussion_p3p4": "Discussion paragraphs 3-4. Paragraph 3: the variant behind the scale comparison was unnamed and the two numbers were juxtaposed without the mechanism joining them. It is rs179252, and the link is exact -- per major_review_evidence.json the variant shifts reconstructed expression by 0.10546 SD, and variant log OR / 0.10546 reproduces the MR beta to 1e-4 in all three outcomes (-0.22103/0.10546 = -2.09595 BBJ; -0.25691 = -2.43623 UKB; -0.24587 = -2.33149 FinnGen). The text now states that the larger MR estimates follow from the scale, not from a larger effect, which pre-empts the obvious objection that OR 0.12 is implausible. Variant ORs 0.8017/0.7734/0.7820 displayed as 0.80/0.77/0.78, verified. Two sentences both saying the thymic step is unproven were merged. Paragraph 4: the single-causal-variant constraint was stated four times; the pure restatement ('These findings are therefore interpreted within the single-causal-variant model') removed, and 'fitted' no longer appears in two consecutive sentences."
 }
