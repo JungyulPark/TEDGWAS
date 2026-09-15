@@ -33,7 +33,7 @@ Here, we used blood gene expression as the exposure and screened genes considere
 
 ### Study design and data sources
 
-We conducted a two-sample MR study using public genetic association summary statistics and followed STROBE-MR reporting guidance [11]. Blood gene-expression data came from the eQTLGen Consortium, comprising up to 31,684 participants, predominantly of European ancestry [12]. Disease outcomes were Biobank Japan (BBJ) GD, with 2,809 cases [13]; UK Biobank (UKB) hyperthyroidism, with 3,731 cases [14]; and FinnGen R12 Graves ophthalmopathy, with 858 cases [15] (Table 1).
+We conducted a two-sample MR study using public genetic association summary statistics and followed STROBE-MR reporting guidance [11]. Blood gene-expression data came from the eQTLGen Consortium, comprising up to 31,684 participants, predominantly of European ancestry [12]; the number contributing to each variant varied widely (median 28,092, range 232–31,684). Disease outcomes were Biobank Japan (BBJ) GD, with 2,809 cases [13]; UK Biobank (UKB) hyperthyroidism, with 3,731 cases [14]; and FinnGen R12 Graves ophthalmopathy, with 858 cases [15] (Table 1).
 
 The defined outcome hierarchy used BBJ for discovery, UKB for comparison across ancestry and a broader phenotype, and FinnGen as a TED-enriched sensitivity outcome. FinnGen cases were compared with population controls. Consequently, that analysis includes susceptibility to GD and cannot isolate susceptibility to eye disease among people who already have GD. We selected *TSHR*, *IGF1R* and *CTLA4* on biological and therapeutic grounds and evaluated them across all outcomes, regardless of discovery significance.
 

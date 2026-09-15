@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "04a1263a376f5f80a3c31e66c57366ce",
-  "manuscript_sha256": "a3ed2441322cce8cc892a0abb77a52cd37b30177702a5408875225f05c34433d",
+  "manuscript_md5": "58f81a603dff5d1605c562fb7389e35d",
+  "manuscript_sha256": "079dff8395ccdb97af57369db95635df8ef77f8304dd72afbd29771667a1304a",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13120,
-      "sha256": "63ecf1f27ba487d84550c331309fcb9f28a38e9598e7aaca697ccd6b8cb24299"
+      "bytes": 13125,
+      "sha256": "15c48213d19aab99fb047f15c80048e55aa8b97bfa0c8e473fe8bc31cda58164"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33512,
-      "sha256": "11334423aa534afa99fc01c3664712b4e5c9524284cbc62579fe6ce1ee9d85ce"
+      "bytes": 33554,
+      "sha256": "8af41ebdd32bcffcaea418f91fa9093f6e4adf1d4f26ad273dc85432a2e3912f"
     },
     "README.md": {
       "bytes": 2394,
@@ -56,8 +56,8 @@
       "sha256": "6c3460e9ed1c35e3bf12fa97b617ca4bb3e9e89ace78c53857d034b430bb77ef"
     },
     "STROBE_MR_CHECKLIST.docx": {
-      "bytes": 14707,
-      "sha256": "0c46e7b727abd4a91f711aea08aaa2c2ceaadb70be40b44087f9b84668ce61b5"
+      "bytes": 14706,
+      "sha256": "32d0d05e1b602528189f07b0b502d2f3ba26f6d12dfc9cba6657bb18f1196332"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -69,7 +69,7 @@
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
       "bytes": 494285,
-      "sha256": "36e07b04a834c7130a00187757d180d932ed1a171a631d03f36d831a002eb574"
+      "sha256": "6a56cdb690fbd010e32beae59fb0ab93a704e286c0521bb9f2ddc74aa3ef5956"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "2ce95333e4f8da0c73816d30bd9f511a64e9c47508ca37840b9fe9f54c918e9a"
+      "sha256": "d9e28e94701970564f510690431a3464d62273f0525e4399fba8bdc25717f359"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -429,27 +429,27 @@
     },
     "tables/Table1.docx": {
       "bytes": 12628,
-      "sha256": "e1e22ee18111206b52cd4106484ba011d6b4bb25fe1184729456cf3c515e118d"
+      "sha256": "8551d479947cedf760f0c399324fbb94dd836bdcc8c667d4627133b91a666455"
     },
     "tables/Table2.docx": {
       "bytes": 13820,
-      "sha256": "f45f1f90fb23717fcb8a11a174e1a702bd3b4fc3726737410971e6614dcc39ec"
+      "sha256": "253513b55cef1fa566d471dcafa98fd3a664c9c3cad86fa3554e7e58d4c5296e"
     },
     "tables/Table3.docx": {
       "bytes": 13295,
-      "sha256": "a0b92093fce064fd65c4e959031108c8c1ef3f99852ec185c0a9f56d68193532"
+      "sha256": "ba02c002d849c59af75e1ea7e831b0aa14c91d6033f6ddb0ae05fb102e068bbf"
     },
     "tables/TableS1.docx": {
       "bytes": 487815,
-      "sha256": "898cd9aa267c629aa5ae14b004a02f1741a0f32a82dd011715cfdde63096f96a"
+      "sha256": "dd9c95403bcd8f0fe2687ab260ba66d1455651beab399ea72ad74cb893d37385"
     },
     "tables/TableS2.docx": {
-      "bytes": 487804,
-      "sha256": "cd9d41bb82c57d0c112828b4344bbc93a704ce96cdd69d94cd689c47012fb71f"
+      "bytes": 487803,
+      "sha256": "fc0908955bbc07b5a2e7180baba5bb215e320cc8f6a969ce93b999c097d224e8"
     },
     "tables/TableS3.docx": {
-      "bytes": 487526,
-      "sha256": "f3620a6b4396bcc0b5cd65ce244c30ed4c0ccc3cf1e0ab21ffdb772090589852"
+      "bytes": 487525,
+      "sha256": "7e0eb6d1998f461aa6f0d1b278ff5cee3a0e0b1a105865b9fb0369732f144a11"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -498,5 +498,6 @@
   "revision_note_20260915_remote": "Introduction rewritten for readers new to MR/colocalization (medical-student/resident level), by an independently verified process: three parallel rewrites with different strategies, one synthesis, and an adversarial verify pass checking citation-by-citation fidelity against the original text and against CLAUDE.md's locked framing rules (verdict: clean, no issues). Verified again independently outside the workflow: all 6 citation groupings ([1,2],[3],[4,5,6],[7],[8],[9,10]) identical in order/count; all 7 gene-name italics preserved; paragraphs 1-2 verbatim unchanged; 4-paragraph structure kept; no banned phrase introduced. Added one further sentence (user-requested) previewing that MR results are reported as OR/95% CI/P and colocalization results as a posterior probability, not a P value. Introduction grew 298 -> 491 words; main text 3,546 -> 3,739 words, still well under the 5,000-word limit. No numeric result, citation, or locked scientific claim changed.",
   "revision_note_20260915_merge": "Merged two concurrent edits to the same master: the remote/local session's Abstract clarification (e55906f) and this session's Introduction rewrite for first-time MR/colocalization readers (2a1db74). MANUSCRIPT_TED_TRAP_v5_MASTER.md auto-merged cleanly (non-overlapping sections, verified both edits present post-merge); CLAUDE.md's two numeric-summary lines were hand-resolved to the true combined values; all derived docx and this manifest were rebuilt fresh from the merged master rather than hand-merging generated artifacts. Post-merge: abstract 250 words, main text 3,739 words (5,000 limit).",
   "revision_note_20260915_intro_voice": "Introduction paragraphs 3-4 restructured on author feedback: paragraph 3 now defines MR and colocalization impersonally, with no first-person statement of what this study did, and refers only to a generic 'exposure'; the study-specific declarations (blood gene expression as the exposure, and the use of both MR and colocalization) moved into the final aims paragraph, which now opens 'Here, we...'. Citation groupings, gene italics and the four-paragraph structure unchanged. Introduction 491 -> 499 words; main text 3,747 words.",
-  "revision_note_20260915_intro_tissue": "Introduction now discloses the in-house orbital RNA-sequencing dataset, which the Abstract already announced but the Introduction had never set up. Added to the aims paragraph, framed to the same standard used in Methods, Figure S1 and the Discussion: descriptive context only, no statistical comparison possible with a single control, no genetic conclusion resting on it. No P value, significance or validation language. Introduction 499 -> 536 words; main text 3,784."
+  "revision_note_20260915_intro_tissue": "Introduction now discloses the in-house orbital RNA-sequencing dataset, which the Abstract already announced but the Introduction had never set up. Added to the aims paragraph, framed to the same standard used in Methods, Figure S1 and the Discussion: descriptive context only, no statistical comparison possible with a single control, no genetic conclusion resting on it. No P value, significance or validation language. Introduction 499 -> 536 words; main text 3,784.",
+  "revision_note_20260915_eqtl_n": "Methods now quantifies the eQTLGen per-variant sample size (median 28,092, range 232-31,684) instead of only 'up to 31,684'. Verified against Supplementary_Data_1_Instruments.csv: max n_samples is exactly 31,684, median 28,092, min 232; 27.4% of the 6,135 instruments have n < 20,000. Instrument strength is unaffected -- the P < 5e-8 selection threshold guarantees F >= 29.7 at any n -- and all instruments behind the reported backbone genes have n between 20,515 and 31,567 (F 33.0-375.0)."
 }

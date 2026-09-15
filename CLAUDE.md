@@ -47,6 +47,10 @@ prepared for **Endocrine Connections**. The one live package is
 - **CTLA4** — biologically selected comparator, not a validating positive control:
   PP.H4 0.201 BBJ (H3 0.799) / 0.953 UKB / 0.978 FinnGen, so it **fails** the
   combined BBJ-plus-FinnGen criterion. OR 0.18 / 0.21 / 0.17.
+- **eQTLGen per-variant sample size**: max **31,684**, median **28,092**, min **232** across the 6,135
+  instruments; 27.4% have n < 20,000. Methods reports the median and range, not just "up to 31,684".
+  Instrument strength is unaffected (P < 5e-8 forces F >= 29.7 at any n), and every instrument behind
+  the reported backbone genes has n 20,515-31,567.
 - **eQTLGen allele-frequency sensitivity is DONE** (2026-09-11). All 13 discovery
   hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
   in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
@@ -126,11 +130,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `04a1263a376f5f80a3c31e66c57366ce`,
-  normalised `cb9cca081f873151a1b36237f06b9710` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `58f81a603dff5d1605c562fb7389e35d`,
+  normalised `7361d2d9bdaa8dd02fc8626ec1b19a4c` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,784**
-  (Introduction–Discussion; 3,816 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,796**
+  (Introduction–Discussion; 3,828 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
