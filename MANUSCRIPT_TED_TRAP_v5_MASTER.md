@@ -61,7 +61,7 @@ Analyses used R 4.3.3, TwoSampleMR 0.7.4, coloc 5.2.3 and PLINK 1.9. Python repr
 
 ### Discovery across druggable genes
 
-Of 2,544 genes with selected instruments, 2,234 had estimable MR results in BBJ; the corresponding numbers were 2,505 in UKB and 2,480 in FinnGen. Thirteen genes met the BBJ multiple-testing threshold: seven were associated with lower odds and six with higher odds of disease (Table 3; Figure 1). The 310 genes without estimable BBJ results were not classified as negative findings. The genomic distribution shows both the MHC cluster and signals outside that region; each plotted point represents a gene-level MR result, not a single-SNP GWAS association. The discovery genes included *TSHR*, *CTLA4*, five genes in the major histocompatibility complex (MHC), and six additional candidates. The three biologically selected genes are compared in Table 2 and Figure 2, which aligns effect estimates with the corresponding shared-variant evidence.
+Of 2,544 genes with selected instruments, 2,234 had estimable MR results in BBJ; the corresponding numbers were 2,505 in UKB and 2,480 in FinnGen. The 310 genes without an estimable BBJ result were not treated as negative findings. Thirteen genes met the BBJ discovery threshold: seven were associated with lower odds and six with higher odds of disease (Table 3; Figure 1). They comprised *TSHR*, *CTLA4*, five genes in the major histocompatibility complex (MHC) and six additional candidates, so the discovery signal was not confined to the MHC region. The three genes selected on biological and therapeutic grounds are compared in Table 2 and Figure 2, which aligns each effect estimate with the corresponding shared-variant evidence.
 
 ### TSHR
 
