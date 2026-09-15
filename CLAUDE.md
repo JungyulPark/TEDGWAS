@@ -55,6 +55,11 @@ prepared for **Endocrine Connections**. The one live package is
   hits retained, no PP.H4 crossed 0.80 (max |Δ| 0.002142), *IGF1R* stayed nominal
   in BBJ/UKB and non-significant in FinnGen. Detection fell: BBJ OR 1.5 power
   14.6% → 12.5%. Never describe this analysis as unperformed again.
+- **In UKB, *IGF1R*'s PP.H4 (0.404) is HIGHER than *TSHR*'s (0.226)** — both below 0.80. So "stronger
+  *TSHR* evidence" holds unscoped only on the MR axis (TSHR beats IGF1R in all three outcomes:
+  1.09×10⁻¹⁴ vs 0.0212; 8.77×10⁻²⁸ vs 0.0117; 2.82×10⁻⁷ vs 0.182). On colocalization it holds in BBJ
+  and FinnGen only. Results, Discussion and Conclusions must all scope it, or say that neither gene
+  reached the threshold in UKB.
 - **TSHR PP.H4 across the three priors** (p12 = 10⁻⁵ / 5×10⁻⁶ / 10⁻⁶): BBJ **0.951 / 0.907 / 0.661**,
   FinnGen **0.986 / 0.972 / 0.875**, UKB 0.226 / 0.128 / 0.028. Only BBJ crosses 0.80; FinnGen keeps a
   margin. **Frequency stability and prior stability are different claims** — never let one stand in for
@@ -158,11 +163,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `b2c9293a53e984b909e352b128a3c4f7`,
-  normalised `dc4fd43f0dab6c91b10308aa5cb93ed1` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `c20e8979eddc2d4af674bf76581e152c`,
+  normalised `4d5f87be20dac00202a5bc080b5c709f` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,802**
-  (Introduction–Discussion; 3,834 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,861**
+  (Introduction–Discussion; 3,893 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
