@@ -62,6 +62,13 @@ prepared for **Endocrine Connections**. The one live package is
 - **MHC composition of the 13 discovery genes**: exactly **5 inside** chr6:25-34 Mb (HLA-A, HLA-DQA2,
   C4A, TUBB, PSMB8) and **8 outside**. *IFNGR1* is on chr6 but at 137 Mb, so it is NOT an MHC gene —
   do not recount it as one. Results may therefore say the signal is not confined to the MHC region.
+- **Prior sensitivity is already stated six times** (Abstract, Results/Robustness, Discussion opening,
+  Discussion sensitivity paragraph, Limitations, Conclusions). Do not add a seventh — the TSHR Results
+  paragraph labels its posteriors "under the primary prior" and stops there, which is specification,
+  not another hedge.
+- **UKB carries the strongest TSHR MR association** of the three outcomes (*P* = 8.77×10⁻²⁸ vs BBJ
+  1.09×10⁻¹⁴ and FinnGen 2.82×10⁻⁷). That is precisely why its PP.H4 of 0.226 is worth reporting;
+  keep the contrast explicit.
 - **Results must not restate the figure legends.** The Figure 1 legend already carries "Each point
   represents one gene, not a SNP association" and the not-estimable-is-not-negative caveat; Results
   had duplicated both and no longer does.
@@ -140,11 +147,11 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `d49d35271c590f09b448bc9b4bb53610`,
-  normalised `674e0e5cef7407ee39c4d15f423a329e` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `8b3cc868bd8766cf0cf20f87abc5aba5`,
+  normalised `d00a8ae6682fb76d874ddddc7bc43fd6` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,791**
-  (Introduction–Discussion; 3,823 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,772**
+  (Introduction–Discussion; 3,804 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
