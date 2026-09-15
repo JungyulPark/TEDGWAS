@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "652681f3e0df5cc2341b8819341bb4df",
-  "manuscript_sha256": "12329e406cd02bc7d9c0fc07fb7fff06ddb28f76fa0d897151b5a9577216a742",
+  "manuscript_md5": "d9dcfdcb4657786780f39cbae7f21f4f",
+  "manuscript_sha256": "dd78f8f4664e63895160687b0d858280130761844c6079bf878529be5f5ef28e",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13742,
-      "sha256": "59e74b797c1b975dc84935aec34da51f3fa43925da0ad2a199483f071a53e4ee"
+      "bytes": 13120,
+      "sha256": "fb05794b9a1d16b61b8e9c55f493c39c67bf874f591d69b8af2f4b66ed2c0001"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33488,
-      "sha256": "146a6f1238b4db30c31fb85e8761f8a32e619eff215bb1a6bdd9cbefe0134f42"
+      "bytes": 33336,
+      "sha256": "26cb0660d7dcfbffc4f46497334273c1d5791938e5131b38c7817ce5bf4b1743"
     },
     "README.md": {
       "bytes": 2394,
@@ -56,8 +56,8 @@
       "sha256": "e51c7c75fda79a7d64e61ad62c3636136d6ae2a8513ee95dfd2a0c23fde059c2"
     },
     "STROBE_MR_CHECKLIST.docx": {
-      "bytes": 15328,
-      "sha256": "1993ff8d6384a754c379e60b226a6e7c2ff5ded66b9e680fa814e7aee285e9a0"
+      "bytes": 14706,
+      "sha256": "e9ec931a76f762f29b90b68c8d426a6bd245f54fb196c9ba3e1e4ac073226271"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -68,8 +68,8 @@
       "sha256": "98a2ce6d2f1d64a59e25d717eedd1229504eb04a475208bcc8b48979f5640bdc"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 494912,
-      "sha256": "3d75ffcc058be0a409088c6a36cd4ea733986ce9e89a2630ba14fcbc7a5f888f"
+      "bytes": 494285,
+      "sha256": "c2fc53c42673a4fdb7ea8a3fa4e422e66b87231b1939d73cf75625909c7cb9c6"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 297,
-      "sha256": "eafaf862ac6f0be8f11888da03e9d8f8881ba2ad2f1261cc823541e1678674a0"
+      "sha256": "a0eca98f9981735099b8ed8630ab2cff06a1cd15f88efdfce4f3c5a478aa4347"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -428,28 +428,28 @@
       "sha256": "4f771e8cf8d56dfdd86e8b9e9db65b2d6fd86eb6468d1a61d5a6eb520dc6b683"
     },
     "tables/Table1.docx": {
-      "bytes": 13254,
-      "sha256": "353f3f90fb4894dc8f990e0c109c3da07672d37b9cd32dd4287f142d07a7aa4e"
+      "bytes": 12627,
+      "sha256": "e0be21b2e40f6c651d2d83444fb95df8dc086319ff064fd9e700c442fab25d8c"
     },
     "tables/Table2.docx": {
-      "bytes": 14439,
-      "sha256": "b13543b118e64d4d0d902d450621fcdbb650aff779ade91978999f24abb3d589"
+      "bytes": 13820,
+      "sha256": "74205372640147eb2940198dbe78e87ae04c689999546d3ae8ab10558afe1553"
     },
     "tables/Table3.docx": {
-      "bytes": 13901,
-      "sha256": "8fb5c84e469cbcc4ae7a110792a957559a00326b2c30c5243769b2ffbbe9e3eb"
+      "bytes": 13294,
+      "sha256": "a6a5d3e7da2a7a146a8f8ebe687f02575a71ac138b82abd0a27806445b7ed6fa"
     },
     "tables/TableS1.docx": {
-      "bytes": 488431,
-      "sha256": "9d432975cc8081c7570c04d876270e14fbd0bfb4fd78ce194f68c59742df4932"
+      "bytes": 487815,
+      "sha256": "67c99a26e40421b989c9025ea87c1a6d848a69aac55f260f63020b5cf0490e26"
     },
     "tables/TableS2.docx": {
-      "bytes": 488406,
-      "sha256": "bb5a3c95eb5c4b52f7caf46acb72e05e6ab60d202890ee26ff6577e49fd89db6"
+      "bytes": 487803,
+      "sha256": "554d1f66ed9cb9a7ddfecedf153ffe7a514dfbb3ba18226600281b310555f146"
     },
     "tables/TableS3.docx": {
-      "bytes": 488151,
-      "sha256": "4f448b30bd012ae50a5fd97d259cfcc2f2bcee97d90123007230ffac623f5c97"
+      "bytes": 487525,
+      "sha256": "8290a75fe78fc6f5f649fa633ad566ad5f5c6df28bb90c6b7cd5a1ba1297d2b0"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -494,5 +494,6 @@
     "title_characters": 87,
     "count_scope": "scripts/26_wordcount_main_text.py; abstract excludes keywords; main Introduction through Discussion; subheadings separately included."
   },
-  "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained"
+  "compact_supplement_revision_20260915": "compact_supplement_revision.json; three supplementary tables, both supplementary figures and all six data files retained",
+  "revision_note_20260915_remote": "Introduction rewritten for readers new to MR/colocalization (medical-student/resident level), by an independently verified process: three parallel rewrites with different strategies, one synthesis, and an adversarial verify pass checking citation-by-citation fidelity against the original text and against CLAUDE.md's locked framing rules (verdict: clean, no issues). Verified again independently outside the workflow: all 6 citation groupings ([1,2],[3],[4,5,6],[7],[8],[9,10]) identical in order/count; all 7 gene-name italics preserved; paragraphs 1-2 verbatim unchanged; 4-paragraph structure kept; no banned phrase introduced. Added one further sentence (user-requested) previewing that MR results are reported as OR/95% CI/P and colocalization results as a posterior probability, not a P value. Introduction grew 298 -> 491 words; main text 3,546 -> 3,739 words, still well under the 5,000-word limit. No numeric result, citation, or locked scientific claim changed."
 }

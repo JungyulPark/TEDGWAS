@@ -126,14 +126,20 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `652681f3e0df5cc2341b8819341bb4df`,
-  normalised `51cf3354cf76b507120f2c8f9e35f598` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `d9dcfdcb4657786780f39cbae7f21f4f`,
+  normalised (see `scripts/audit_paper1_integrity.py` output) (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,546**
-  (Introduction–Discussion; 3,578 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,739**
+  (Introduction–Discussion; 3,771 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **231** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
+- **Introduction is written for a first-time MR/colocalization reader** (medical-student/resident level,
+  2026-09-15): MR and colocalization are each glossed with their core intuition on first use,
+  "genetically proxied expression" and "druggable genes" are defined at first use, and one sentence
+  previews that MR results are OR/95% CI/*P* while colocalization results are a posterior probability,
+  not a *P* value. Keep this register if the Introduction is edited again; do not revert to the terser
+  original phrasing.
 
 ## Repo layout (actual)
 ```
