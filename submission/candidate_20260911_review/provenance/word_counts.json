@@ -1,7 +1,7 @@
 {
   "abstract_words": 250,
-  "main_words_excluding_headings": 3772,
-  "main_words_including_headings": 3804,
+  "main_words_excluding_headings": 3801,
+  "main_words_including_headings": 3833,
   "title_characters": 87,
   "count_scope": "scripts/26_wordcount_main_text.py; abstract excludes keywords; main Introduction through Discussion; subheadings separately included."
 }
