@@ -178,8 +178,8 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `9f12b45ba6dcb2a86f6544fac4b15574`,
-  normalised `06f647aa98f556387e3651b830f88d47` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `9f6a59e51e78a4aa7fd0c687e4b162b8`,
+  normalised `28c30a9c4c9d8f9ef45ed59f6f8836cd` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - **Gene names are italic; protein names and headings are not.** The bare `TSHR` in "TSHR and IGF-1R
   interact" and "recognition of TSHR as self" is the **protein** and stays bare, as do the `### TSHR`
   / `### IGF1R` / `### CTLA4` subsection headings. Everything else referring to the gene takes
@@ -190,6 +190,12 @@ prepared for **Endocrine Connections**. The one live package is
   the general population, and a GO case is by definition a GD case — never write that their
   *participants* overlap. (eQTLGen-vs-European-outcome overlap is a separate, real, unquantified issue.)
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
+- **The Abstract carries the tissue direction and the numeric thresholds** (2026-09-16). It reports
+  PP.H4 > 0.80, the 10⁻⁵ → 10⁻⁶ prior drop and "Mean orbital *TSHR* and *IGF1R* transcript levels
+  exceeded the control" (verified: TED mean 0.651 vs 0.0998 TPM and 5.051 vs 2.894;
+  `provenance/tissue_descriptive.csv`) — direction only, never a test. A parallel Abstract lives on
+  `origin/codex/abstract-clinical-refinement-20260915` (3468bf3) and is **not** merged; its useful
+  parts are now in the master, so do not re-merge that branch wholesale.
 - **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,921**
   (Introduction–Discussion; 3,953 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
