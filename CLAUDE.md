@@ -178,8 +178,8 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `9f6a59e51e78a4aa7fd0c687e4b162b8`,
-  normalised `28c30a9c4c9d8f9ef45ed59f6f8836cd` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `164b37a9cc0e236f2a7a531bb40033e2`,
+  normalised `1a27f0b668e80a7d4dedad85164b31bb` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - **Gene names are italic; protein names and headings are not.** The bare `TSHR` in "TSHR and IGF-1R
   interact" and "recognition of TSHR as self" is the **protein** and stays bare, as do the `### TSHR`
   / `### IGF1R` / `### CTLA4` subsection headings. Everything else referring to the gene takes
