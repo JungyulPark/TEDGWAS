@@ -113,7 +113,7 @@ Additional limitations concern the genetic models and detection range. *TSHR* wa
 
 ### Conclusions
 
-Within these limits, *TSHR* showed stronger expression–disease evidence than *IGF1R* in BBJ Graves disease and FinnGen Graves ophthalmopathy. The findings distinguish genetic susceptibility evidence from evidence of therapeutic efficacy, while preserving the uncertainty around *IGF1R* and the prior dependence of the BBJ *TSHR* result. They support further investigation in relevant tissues and a direct comparison of GD patients with and without TED; they do not establish treatment direction or expected clinical benefit.
+Within these limits, *TSHR* showed stronger expression–disease evidence than *IGF1R* in BBJ Graves disease and FinnGen Graves ophthalmopathy; in UKB hyperthyroidism neither gene reached the shared-variant threshold. The findings distinguish genetic susceptibility evidence from evidence of therapeutic efficacy: weaker and unresolved genetic support for *IGF1R* does not argue against its therapeutic relevance, and the BBJ *TSHR* result depends on the shared-association prior. They support further investigation in relevant tissues and a direct comparison of GD patients with and without TED; they do not establish treatment direction or expected clinical benefit.
 
 ## Declarations
 

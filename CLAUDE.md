@@ -178,8 +178,8 @@ prepared for **Endocrine Connections**. The one live package is
   numeric audit, which compares every displayed value with its full-precision source.
 - Master integrity is tracked by MD5. The master is stored with CRLF line endings
   (`.gitattributes -text`); `scripts/audit_paper1_integrity.py` prints the LF-normalised
-  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `a1651ef9ad36354f8b25edb4c16ee520`,
-  normalised `d24cf39862f396cb89b366e403b629e8` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
+  hash. Current master `MANUSCRIPT_TED_TRAP_v5_MASTER.md`: raw `9f12b45ba6dcb2a86f6544fac4b15574`,
+  normalised `06f647aa98f556387e3651b830f88d47` (placeholders = 0). **33 references** since the 1000 Genomes panel got its own.
 - **Gene names are italic; protein names and headings are not.** The bare `TSHR` in "TSHR and IGF-1R
   interact" and "recognition of TSHR as self" is the **protein** and stays bare, as do the `### TSHR`
   / `### IGF1R` / `### CTLA4` subsection headings. Everything else referring to the gene takes
@@ -190,8 +190,8 @@ prepared for **Endocrine Connections**. The one live package is
   the general population, and a GO case is by definition a GD case — never write that their
   *participants* overlap. (eQTLGen-vs-European-outcome overlap is a separate, real, unquantified issue.)
 - ***P* is always italic** — in "*P* value" and "*P* <" too, not only before a number.
-- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,903**
-  (Introduction–Discussion; 3,935 with sub-headings, which is what Word reports). Abstract is a
+- **Length budget (Endocrine Connections):** main text ≤ 5,000 words — currently **3,921**
+  (Introduction–Discussion; 3,953 with sub-headings, which is what Word reports). Abstract is a
   **single paragraph** with inline `Objective:/Methods:/Results:/Conclusions:` labels, **250** words
   (≤250). `scripts/26_wordcount_main_text.py` is the number of record.
   Recount with `python3 scripts/26_wordcount_main_text.py` after any edit.
