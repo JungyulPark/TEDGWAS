@@ -5,8 +5,8 @@
   "original_analysis_commit": "7c2a25aa3c4a19bbc6b5a6a78bff656cf4ce71c3",
   "completed_MAF_baseline_commit": "8c644251e610f4cac6db46141c7ab469002129a0",
   "master_path": "../../MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-  "manuscript_md5": "e02d080c7711968935af1182576fdea4",
-  "manuscript_sha256": "ef1108a709d81c38a4e4a20d0aa649c8b0ae89f8422b09dd2f0c4f8f483816ca",
+  "manuscript_md5": "a1651ef9ad36354f8b25edb4c16ee520",
+  "manuscript_sha256": "755f5059228c37e0a50503682b09a16168feaf3e7535f106a58632d912288321",
   "numeric_audit": {
     "status": "PASS",
     "numeric_cells_compared": 337,
@@ -36,16 +36,16 @@
       "sha256": "bd699bbe6567a4f5ce10ce450103c788c240fa4d7a9bbb877231f551e221a8d6"
     },
     "COVER_LETTER_EndocrineConnections.docx": {
-      "bytes": 13123,
-      "sha256": "c7b70022cc7c8a9eefaf23951839da580d664fb0428682a0c96deea5ed990113"
+      "bytes": 13119,
+      "sha256": "02304b7ab0f1c0dca60d16f7065c736949c51cbea5370c72ca70de54f92859fe"
     },
     "COVER_LETTER_EndocrineConnections.md": {
       "bytes": 3261,
       "sha256": "8562c66dc169aaeba2f93fe0b4e3a30aa033f1bde35e9d685a267273a853b177"
     },
     "MANUSCRIPT_Submission.docx": {
-      "bytes": 33602,
-      "sha256": "1bf893444c6efafd8f482272f6f646280765fc88407629c2bda2cc15f27db869"
+      "bytes": 33646,
+      "sha256": "580a93611cf91e8020adfd241aa88d5de6c04074fc1620562ec8646ad366c966"
     },
     "README.md": {
       "bytes": 2394,
@@ -56,8 +56,8 @@
       "sha256": "6c3460e9ed1c35e3bf12fa97b617ca4bb3e9e89ace78c53857d034b430bb77ef"
     },
     "STROBE_MR_CHECKLIST.docx": {
-      "bytes": 14708,
-      "sha256": "e889af322929094cf6ac1c703b97249692e788abe7432c87869af70ee0cceeca"
+      "bytes": 14706,
+      "sha256": "dfedd6ee21040f393eacc825b777d3879ad63e9a7fd865fd74f7e40bb73f98f4"
     },
     "STROBE_MR_CHECKLIST.md": {
       "bytes": 5136,
@@ -68,8 +68,8 @@
       "sha256": "98a2ce6d2f1d64a59e25d717eedd1229504eb04a475208bcc8b48979f5640bdc"
     },
     "SUPPLEMENTARY_MATERIAL.docx": {
-      "bytes": 494287,
-      "sha256": "9fc39d9aff4de396d31675bd92f57ea8b56ab6ced31118ce12bdefd39c2271a1"
+      "bytes": 494285,
+      "sha256": "a6b75cf06c6009a557b783335282057dac27435c52b67128b646da6275dcf108"
     },
     "Supplementary_Data_1_Instruments.csv": {
       "bytes": 507694,
@@ -337,7 +337,7 @@
     },
     "provenance/word_counts.json": {
       "bytes": 290,
-      "sha256": "7f92abeafad1600cd1488769ac75a1f8503b372f3c1633aa81c3777b194826bb"
+      "sha256": "5183e93644d7a92756c55ab7bd69880e47daa7a7a8d1296ec280b39d27999e5a"
     },
     "reproducibility/README.md": {
       "bytes": 6205,
@@ -428,28 +428,28 @@
       "sha256": "4f771e8cf8d56dfdd86e8b9e9db65b2d6fd86eb6468d1a61d5a6eb520dc6b683"
     },
     "tables/Table1.docx": {
-      "bytes": 12628,
-      "sha256": "26699151db633151584be087e5e5bd97fd380c26875310ef1110cc941b67efef"
+      "bytes": 12627,
+      "sha256": "6ef09efa83a171c6af1d99e3b845c3eb0a12164b777aef0b3ea67f8a2fab781a"
     },
     "tables/Table2.docx": {
-      "bytes": 13820,
-      "sha256": "6ebef59d9248628429d66e726dfb52d5ee7c9aad161e5952185344c85f9071f8"
+      "bytes": 13819,
+      "sha256": "534f414bce18459293f04726fc22a099f222110178365cae7fd099792f0352d5"
     },
     "tables/Table3.docx": {
-      "bytes": 13295,
-      "sha256": "570b32851840307990e3c22ca0b4aae2d055dd56fa261242c41e0a1c400ec3f9"
+      "bytes": 13294,
+      "sha256": "00d35e541bc7adc77c9df0ceffd9fb2f0f0e8a404b0d177be0b6c12c49741504"
     },
     "tables/TableS1.docx": {
       "bytes": 487815,
-      "sha256": "ae3daf242766d1c57e7da3482182af09670c6fdc6aa27133361a2d2b738056b1"
+      "sha256": "96fcda3f2ae4480ad0f803f2b52c44d54e97ac1b28f0cdadd4d88d2104621051"
     },
     "tables/TableS2.docx": {
       "bytes": 487803,
-      "sha256": "247b0cde0e073d95ab1aebc7ece17fb03f3a97f0d1123e3f9368cea4135ca120"
+      "sha256": "7300acb1c0af65e8733abeae990d6bb12e0f7abc68f04ff4cb8ffef403492020"
     },
     "tables/TableS3.docx": {
       "bytes": 487525,
-      "sha256": "012ae021db6c9464953e09d07b4179b156fdf5cfece5e532fdca93230c542f48"
+      "sha256": "ba10076d4085475fd62d02c8edfcb3704cdd315165a0ef9cdc35263ef9519daa"
     }
   },
   "revision_note_20260911_remote": "Remote review: the framing guards removed from scripts/audit_paper1_integrity.py were restored and now run ahead of this candidate's numeric audit; the superseded candidate_20260905 and candidate_20260905_maf packages were moved to archives/submission_candidates/ so submission/ holds one package; reproduction input records were carried into this package. No displayed value changed.",
@@ -508,5 +508,6 @@
   "revision_note_20260915_results_robustness": "Robustness subsection: two redundancies removed and two numbers added. The sentence 'This distinguished stability to the frequency substitution from sensitivity to the assumed prior...' restated the two sentences before it; replaced by one clause carrying the same principle. Three consecutive caveats about the detection benchmarks were merged to two. Added: that 0.661 is below the 0.80 threshold (previously the reader had to recall the threshold), and FinnGen's conservative-prior value of 0.875 (previously only 'remained above threshold'). Verified against Supplementary Data 3: TSHR BBJ 0.951/0.907/0.661 and FinnGen 0.986/0.972/0.875 across p12 = 1e-5/5e-6/1e-6. Power values re-verified 14.6 -> 12.5% (OR 1.5) and 35.6 -> 34.2% (OR 2.0); IGF1R cohort-frequency P = 0.02198, 0.01566, 0.1772 displayed as 0.022, 0.016, 0.177.",
   "revision_note_20260915_discussion_p1p2": "Discussion opening: the claim of stronger TSHR evidence was stated for 'the same outcomes' without scope, but in UKB IGF1R's shared-variant support (0.404) exceeds TSHR's (0.226) -- both below 0.80 -- while Results and Conclusions had both scoped the claim to BBJ and FinnGen. The paragraph now states that in UKB neither gene reached the threshold, closing the gap a reader would find in Table 2. On author request it also states the direction of the TSHR association (higher genetically proxied expression, lower odds) and what the FinnGen recovery means for TED: the signal extends to a TED-enriched population but, because that outcome uses population controls, does not isolate eye-disease susceptibility within GD. Dropped a sentence that only described Figures 1-3. In the second paragraph, 'Experimental receptor crosstalk [5] and tissue-specific regulation [29] provide complementary biological context' asserted relevance without stating it; the two citations now carry the premises the following hypothesis rests on (receptors physically scaffolded; regulation tissue-dependent). Citation-claim mapping unchanged. Verified MR P values: TSHR beats IGF1R in all three outcomes (1.09e-14 vs 0.0212; 8.77e-28 vs 0.0117; 2.82e-07 vs 0.182), so the MR half of the claim needed no scoping.",
   "revision_note_20260915_discussion_p3p4": "Discussion paragraphs 3-4. Paragraph 3: the variant behind the scale comparison was unnamed and the two numbers were juxtaposed without the mechanism joining them. It is rs179252, and the link is exact -- per major_review_evidence.json the variant shifts reconstructed expression by 0.10546 SD, and variant log OR / 0.10546 reproduces the MR beta to 1e-4 in all three outcomes (-0.22103/0.10546 = -2.09595 BBJ; -0.25691 = -2.43623 UKB; -0.24587 = -2.33149 FinnGen). The text now states that the larger MR estimates follow from the scale, not from a larger effect, which pre-empts the obvious objection that OR 0.12 is implausible. Variant ORs 0.8017/0.7734/0.7820 displayed as 0.80/0.77/0.78, verified. Two sentences both saying the thymic step is unproven were merged. Paragraph 4: the single-causal-variant constraint was stated four times; the pure restatement ('These findings are therefore interpreted within the single-causal-variant model') removed, and 'fitted' no longer appears in two consecutive sentences.",
-  "revision_note_20260915_discussion_p5p6": "Discussion paragraphs 5-6. Verified: seven of nine FinnGen loci are H2-dominant (IGF1R, TNFSF14, IFNGR1, MAPKAPK5, HSD3B7, VKORC1, PRSS36; not TSHR or CTLA4). Paragraph 6's closing restated the Results Robustness closing almost in function -- both said the benchmarks measure precision and cannot separate absence from low power -- so 42 words were compressed to 27 while keeping the distinction. OPEN ITEM for the authors, not changed here: the citation [9, 10] on 'Significant associations such as TNFSF14 and IFNGR1 remain relevant to follow-up'. Ji et al. [9] does support IFNGR1 -- published summaries list it among genes positively associated with GD risk and among putative causal genes, alongside TSHR -- but lists TNFSF13, not TNFSF14. Li et al. [10] is a gut-microbiota-to-inflammatory-protein mediation study of Graves ophthalmopathy (FinnGen 691 cases, a different release from the 858 used here) and does not appear to report either gene. Verified from search summaries only; nature.com and PMC are blocked from this environment, so the papers themselves were not read."
+  "revision_note_20260915_discussion_p5p6": "Discussion paragraphs 5-6. Verified: seven of nine FinnGen loci are H2-dominant (IGF1R, TNFSF14, IFNGR1, MAPKAPK5, HSD3B7, VKORC1, PRSS36; not TSHR or CTLA4). Paragraph 6's closing restated the Results Robustness closing almost in function -- both said the benchmarks measure precision and cannot separate absence from low power -- so 42 words were compressed to 27 while keeping the distinction. OPEN ITEM for the authors, not changed here: the citation [9, 10] on 'Significant associations such as TNFSF14 and IFNGR1 remain relevant to follow-up'. Ji et al. [9] does support IFNGR1 -- published summaries list it among genes positively associated with GD risk and among putative causal genes, alongside TSHR -- but lists TNFSF13, not TNFSF14. Li et al. [10] is a gut-microbiota-to-inflammatory-protein mediation study of Graves ophthalmopathy (FinnGen 691 cases, a different release from the 858 used here) and does not appear to report either gene. Verified from search summaries only; nature.com and PMC are blocked from this environment, so the papers themselves were not read.",
+  "revision_note_20260916_discussion_p7_limitations": "Discussion paragraph 7 and Limitations. Three corrections. (1) 'Similar effects in two population-control GWAS would not by themselves resolve this issue because the phenotypes and participants can overlap' -- UKB and FinnGen draw from different national biobanks, so their participants do not meaningfully overlap; the real argument is that both use population controls rather than GD patients without eye disease, and that a Graves ophthalmopathy case is by definition also a GD case. Rewritten to say that. (2) 'the UKB TSHR and BBJ CTLA4 discordances remain unresolved by a multi-signal model' read as though a multi-signal model had been fitted and failed, one sentence after stating it was not evaluated; now 'Without such a model, ... remain unresolved'. The same phrase in Discussion paragraph 4 italicises both genes and this one did not -- the only genuine gene-italic defect in the main text. (3) The two unspaced em-dashes in 'observations-four TED samples and one control-remain' were the only ones in the main text against 13 spaced; now 15 spaced, 0 unspaced. Audited gene italics across Introduction-Discussion: the remaining bare occurrences are correct -- 'TSHR and IGF-1R interact' and 'recognition of TSHR as self' are the PROTEIN, and '### TSHR', '### IGF1R', '### CTLA4' are subsection headings, all deliberately unitalicised."
 }
