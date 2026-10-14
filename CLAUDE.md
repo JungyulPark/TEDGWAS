@@ -10,13 +10,14 @@ review-status section below).
 ## Current source of truth
 - Sole editable manuscript: `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (exact local final bytes).
 - One active package: `submission/candidate_20261011_review/`.
-- Main Tables 1–3 (Table 3A–C), Figures 1–3; Tables S1–S3 and Figures S1–S2;
-  one `Supplementary_Dataset.xlsx`. Table S3 is now the tissue extension;
-  historical detection results are in the workbook's `Detection_original` sheet.
+- Main Tables 1–3, Figures 1–3; Tables S1–S4 and Figures S1–S2; one
+  `Supplementary_Dataset.xlsx`. S1 additional FinnGen GD discoveries, S2 frequency-sensitive
+  candidates, S3 *TSHR* regional/prior sensitivity, S4 tissue extension (numbered by first
+  citation). Historical detection results are in the workbook's `Detection_original` sheet.
 - Old candidate and earlier instructions are historical. Do not restore their
   three-outcome framing, six separate Data files, or obsolete sample sizes.
 - Read-only current check: `python scripts/audit_paper1_integrity.py`.
-  It checks delivery integrity, tissue formulas and 52 framing guards (added 14 October).
+  It checks delivery integrity, tissue formulas and 56 framing guards (added 14 October).
 
 ## Data-management rules (retained)
 Never commit IRB raw orbital RNA-seq (data.txt, FASTQ/BAM, raw count matrices),
@@ -79,7 +80,11 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 4,951 (4,998 with sub-headings) of 5,000 — effectively no headroom.
+- Abstract 248/250; main text 4,943 (4,990 with sub-headings) of 5,000 — effectively no headroom.
+- Display decisions after the three-reviewer check (author, 14 October): Table 2 keeps all numbers
+  (with a Q-test *P* column; *CTLA4* IVW retained) and Figure 2 shows none; Figure 2B stacks H4 from
+  zero so the dotted line is PP.H4 = 0.80; old Table 3A became Figure 3/Table 3, 3B became Table S1,
+  3C was deleted (duplicate of S2). A *TSHR* regional plot with r² awaits local LD data.
 - Author decisions (14 October): no grant funded this work, so "no specific grant" stands; the
   companion orbital whole-transcriptome manuscript is not under review; orbital tissue was
   collected during decompression from patients with inactive TED. Keep the orbital data brief and
@@ -87,8 +92,9 @@ Locked from this revision:
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
-   (`Tables.md`, `Figure_Legends.md`, `Supplementary_Material.md`, `SupplementaryTables_S1_S2.md`,
-   `TableS3_Tissue_extension.md`, `Cover_Letter_Draft.md`).
+   (`Figure_Legends.md`, `Supplementary_Material.md`, `Cover_Letter_Draft.md`). `Tables.md` and
+   `SupplementaryTables.md` are generated from the workbook by
+   `reproducibility/build_tables_20261014.py`; edit footnotes there, never the generated Markdown.
 2. Figures 1–3 and S2: `python3 submission/candidate_20261011_review/reproducibility/build_figures_20261014.py`
    (reads only the workbook; no in-image titles, italic genes and *P*, † = *P* < 0.05/2,544 in Figure 2;
    Figure S1 needs IRB sample data and is not redrawn). Then rebuild documents:

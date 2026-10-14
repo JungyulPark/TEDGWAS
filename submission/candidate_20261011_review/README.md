@@ -6,8 +6,9 @@ The sole Markdown master is `../../MANUSCRIPT_TED_TRAP_v5_MASTER.md`; there is n
 second editable manuscript in this folder. Word/PDF files are generated deliverables.
 
 Start with Manuscript.docx or Full_Review.pdf. Final_Tables_Figures.pdf contains
-Tables 1–3, Figures 1–3, Tables S1–S3 and Figures S1–S2. Figures/ and Tables/ contain
-individual assets. Supplementary_Material.docx/pdf and Supplementary_Dataset.xlsx
+Tables 1–3, Figures 1–3, Tables S1–S4 and Figures S1–S2. Figures/ and Tables/ contain
+individual assets. Tables.md and SupplementaryTables.md are generated from the workbook by
+reproducibility/build_tables_20261014.py; figures by reproducibility/build_figures_20261014.py. Supplementary_Material.docx/pdf and Supplementary_Dataset.xlsx
 are the consolidated supplement and detailed data. Additional_analysis_figure/
 and Review_only/ are author-review/presentation aids, not extra numbered paper figures.
 
@@ -17,5 +18,7 @@ reference genotypes/logs. GIT_EXPORT.json lists omissions and path sanitization;
 GIT_MANIFEST.json verifies this checkout. Source manifests describe the original
 local package; missing local-only inputs are not expected to appear in Git.
 
-The 13 October review remains open. Read ../../HANDOFF_TO_CLAUDE_20261014.md.
+The 13 October review items were addressed on 14 October (see the Resolution section of
+../../internal/REVIEW_codex_package_20261011.md); journal requirements and all-author
+approval remain author items.
 Cover_Letter_Draft remains a draft; this package is not a journal submission approval.

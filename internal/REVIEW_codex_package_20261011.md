@@ -138,3 +138,16 @@ STROBE heading font and page size. The orbital tissue methods were added to the 
 authors' companion manuscript, pending their confirmation; the companion manuscript's PNUH grant
 versus this manuscript's "no specific grant" is flagged for the authors. Figure re-plots (Figure 2
 dagger, Figure 1 label collision, in-image titles) remain open.
+
+### Display review of tables and figures (2026-10-14, third pass)
+Three independent reviewers checked Tables 1–3, S1–S3 and Figures 1–3, S2 against the workbook.
+All displayed numbers matched. One plotting error, inherited from the imported design, was found:
+Figure 2B stacked PP.H4 last, so the dotted line at 0.80 marked PP.H4 = 0.20; H4 is now stacked
+from zero. Author decisions: Table 2 keeps the numbers (Q-test *P* column added; *CTLA4* IVW kept
+with its rs13030124 dependence in the footnote) and Figure 2 shows none; Table 3A is replaced by
+Table 3 plus Figure 3, Table 3B became Table S1, Table 3C (a duplicate of S2) was deleted, and the
+*TSHR* regional table (S3) was expanded with matched variants, disease lead, rs179252 *P* and
+per-allele OR. Supplementary tables are renumbered S1–S4 in first-citation order (S4 tissue).
+Tables are now generated from the workbook (`reproducibility/build_tables_20261014.py`); figures
+were redrawn at final width with text ≥7 pt. Open: a *TSHR* regional association plot with LD r²
+needs the local reference panel.

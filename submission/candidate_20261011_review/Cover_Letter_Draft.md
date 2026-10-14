@@ -17,7 +17,7 @@ Further analyses test how far these results can be pushed. An allele-direction a
 
 We are equally explicit about what the study does not show. The FinnGen endpoints overlap and use population controls, so they cannot isolate eye-disease susceptibility among people who already have GD. Nothing here predicts treatment response, and weaker genetic evidence for *IGF1R* is not an argument against IGF-1R blockade. The FinnGen extensions and tissue analyses were post hoc and are labeled as such.
 
-The submission includes three main tables, three main figures, a supplement with three tables and two figures, a single results workbook and a STROBE-MR reporting crosswalk.
+The submission includes three main tables, three main figures, a supplement with four tables and two figures, a single results workbook and a STROBE-MR reporting crosswalk.
 
 An earlier, narrower version was considered at thyroid-focused journals; the work was subsequently restructured around the broader genetic screen. The orbital dataset also underlies a separate whole-transcriptome analysis, which is not under review elsewhere; here only three genes are described, and no genome-wide expression or pathway catalogue is presented.
 

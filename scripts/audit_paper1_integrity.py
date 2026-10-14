@@ -103,7 +103,7 @@ def framing_guards():
     conclusions = text.split('### Conclusions')[1].split('## Declarations')[0]
     pkg = {n: (CANDIDATE / n).read_text(encoding='utf-8') for n in
            ['Supplementary_Material.md', 'Figure_Legends.md', 'Tables.md', 'Cover_Letter_Draft.md',
-            'TableS3_Tissue_extension.md', 'SupplementaryTables_S1_S2.md']}
+            'SupplementaryTables.md']}
     everything = text + '\n'.join(pkg.values())
     words = lambda s: len([w for w in re.sub(r'[*_`]', '', s).split() if w])
     sections = re.split(r'(?m)^## ', text)
@@ -144,6 +144,19 @@ def framing_guards():
        'No internal to-do or version-history notes in reviewer-facing text')
     ok(not re.search(r'(?<![*\w])P (?:=|<) ', main_text), 'P italic in the main text')
     ok('| PP.H2 |' in pkg['Tables.md'], 'Table 2 shows PP.H2')
+    ok('| Q-test *P* |' in pkg['Tables.md'], 'Table 2 shows the Q-test P (2026-10-14 display review)')
+    ok(not re.search(r'Table 3[ABC]\b', everything), 'No Table 3A-C after the display review')
+    first = {}
+    for kind, nums in re.findall(r'\b(Tables?|Figures?) (S?\d(?:(?:, | and |–)S?\d)*)', main_text):
+        for n in re.split(r', | and |–', nums):
+            seen = first.setdefault((kind.rstrip('s'), n.startswith('S')), [])
+            if n not in seen:
+                seen.append(n)
+    ok(first.get(('Table', False)) == ['1', '2', '3'] and first.get(('Table', True)) == ['S1', 'S2', 'S3', 'S4']
+       and first.get(('Figure', False)) == ['1', '2', '3'] and first.get(('Figure', True)) == ['S1', 'S2'],
+       'Tables and figures numbered in order of first citation')
+    ok(re.findall(r'(?m)^## (Table S\d)', pkg['SupplementaryTables.md']) == ['Table S1', 'Table S2', 'Table S3', 'Table S4'],
+       'Supplementary tables S1-S4 in one source file')
     refs = re.findall(r'(?m)^(\d+)\. ', body['References'])
     cited = {int(n) for grp in re.findall(r'\[(\d+(?:[,–-]\s*\d+)*)\]', main_text) for n in re.split(r'[,–-]\s*', grp)}
     ok(len(refs) == 33 and cited == set(range(1, 34)), '33 references, all cited')

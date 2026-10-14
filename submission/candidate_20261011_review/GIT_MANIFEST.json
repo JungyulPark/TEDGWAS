@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-      "bytes": 49609,
-      "sha256": "d06f1036a57db8cc0e4240a667fe9fe7e2ca387fe6462377f63f3849f9fb1a41"
+      "bytes": 49572,
+      "sha256": "633ae599e56d9d4e648ed05de655ab744cf53da49ad92b0e0e0686ba6bfe0c3a"
     },
     {
       "path": "submission/candidate_20261011_review/ANALYSIS_REPORT_KO.md",
@@ -34,23 +34,23 @@
     },
     {
       "path": "submission/candidate_20261011_review/All_Figures.pdf",
-      "bytes": 300868,
-      "sha256": "08ef5b31641f2fed0da60d8d172c2b187452feb8a21cdac6d62b21b48c3cf888"
+      "bytes": 320468,
+      "sha256": "843424ad05ea59a3a4665e44431c4749159094bb55fbcd85a2d5fa38ab5b2fb1"
     },
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.docx",
-      "bytes": 11958,
-      "sha256": "db428ba7b27e02ee881fddf38a79303f6fc95ad6febc0c2b8591087f03271f50"
+      "bytes": 11959,
+      "sha256": "ba5357f851c768d549134a7351d667bdff8a327e81c4ab2665cb134a739ec622"
     },
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.md",
-      "bytes": 4227,
-      "sha256": "06463d84fd9cd31d7b57ed33afc29b61b650f3e9d023fd2ce99216ca02a9e57f"
+      "bytes": 4226,
+      "sha256": "c935ad7eeaf4f6af6b401871c8d2a396f8b5e69fef77f4bd726a88046dd1d1b2"
     },
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.pdf",
-      "bytes": 45988,
-      "sha256": "4b663aa27caed26f3468eea252fab9f778506b40a03f721b5baf7fbb3c04595b"
+      "bytes": 45987,
+      "sha256": "c7e0de368aa72256c7b86e3fff2e03303ebaeba0e0c7a10d70fd3d7a59fa75b3"
     },
     {
       "path": "submission/candidate_20261011_review/FINAL_RESULTS_INSIGHTS_KO.md",
@@ -59,38 +59,38 @@
     },
     {
       "path": "submission/candidate_20261011_review/Figure_Legends.md",
-      "bytes": 3179,
-      "sha256": "d07fe426b03724eecfdfc0665b9224bd7737f06399f68b8f7b7c2d44378c5ac2"
+      "bytes": 5236,
+      "sha256": "4278d2ca212b75400414db913020b4c0de15ed4b6b761723c2cc38c9fd976e71"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure1.pdf",
-      "bytes": 85216,
-      "sha256": "a540e3c163678e934b670c9a2480a1b790bc25b73f181ccda088add21e519e38"
+      "bytes": 126859,
+      "sha256": "dd84caa5a3b19e37ddd9f1be9efe3a974ee7e180282b8d82345ed04e2916597e"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure1.png",
-      "bytes": 427424,
-      "sha256": "57d40875120f1242e16bfa71953166b434f5d1e6be46eb08dc415c7f72bd969e"
+      "bytes": 484857,
+      "sha256": "ace9bb3d39c50c3dc37ba2b7de1ac17dfc7683b44df051c07f896c72e71b81f6"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure2.pdf",
-      "bytes": 43835,
-      "sha256": "de788cdb388f614c428617ffc7e2e548159e175da393d9541386fe426b8c8e9f"
+      "bytes": 31967,
+      "sha256": "6e3e21f063c7dd08ab4d605bfe7c127dddeeace6f8f2d0cd394a373655248fd2"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure2.png",
-      "bytes": 425495,
-      "sha256": "a772e7a02892aad98673472c78c5ef6ccecb353dbb49649b0a2dcfb931518bcf"
+      "bytes": 266652,
+      "sha256": "b8e2cb0715c6072c6af6a9f1952a001e90d62a476a5f99bc3911717d1d53d994"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure3.pdf",
-      "bytes": 72566,
-      "sha256": "96bbba9a80f0c11f161c70c23d5817f95e9a4894e6932274ed38e0c50c1cfe82"
+      "bytes": 63518,
+      "sha256": "1bc46feb3d47e98f70ac92aa0f9910cf0790bf02b3184dce40d04e302bdcae45"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/Figure3.png",
-      "bytes": 621846,
-      "sha256": "640c7b1ae9219eb2971d6991399265da5a05f2e9d319aaf942ba55cf219bdab6"
+      "bytes": 680746,
+      "sha256": "b845ec64c0774d066ca85f2fa1ddd5d356e2e4411f8e6920993aa7ef94ef7c31"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/FigureS1.pdf",
@@ -104,23 +104,23 @@
     },
     {
       "path": "submission/candidate_20261011_review/Figures/FigureS2.pdf",
-      "bytes": 43114,
-      "sha256": "43d7566d89c6aea6a75b79fb27d6ba6f427f7134f2b89455529570e4468f6b14"
+      "bytes": 42259,
+      "sha256": "36866c0072d21b989388ef5fccc38d97fc1940afae2a37d4ab3eca0946f64685"
     },
     {
       "path": "submission/candidate_20261011_review/Figures/FigureS2.png",
-      "bytes": 399376,
-      "sha256": "bf4d2ed51956174bb46efc6b0481943745a226b4d73614598176ea61f4022e5b"
+      "bytes": 596866,
+      "sha256": "16e6a1eae0ed27818306aaab1782bd62a67edf9224333c28f5359719f44e1f57"
     },
     {
       "path": "submission/candidate_20261011_review/Final_Tables_Figures.pdf",
-      "bytes": 1223734,
-      "sha256": "be27bffe16b145223269378dfb935e2596de2c3a9f52a216e9b60809a26dbff2"
+      "bytes": 1351846,
+      "sha256": "de0db2ffa440a7fc97b81be3dd7a2a9e80c6e22705e1055108ccecb7618410d4"
     },
     {
       "path": "submission/candidate_20261011_review/Full_Review.pdf",
-      "bytes": 1301639,
-      "sha256": "9c7f9e6db227f029df866370ce7a381c096bf0440c41c1a1db3a73b9c5f1fe64"
+      "bytes": 1478016,
+      "sha256": "528781c1b393b2a7ce1cdeb21f04fd5081cb6cdae952f79909ad188c4790b7b4"
     },
     {
       "path": "submission/candidate_20261011_review/GIT_ADDITIONAL_RESULTS.json",
@@ -144,18 +144,18 @@
     },
     {
       "path": "submission/candidate_20261011_review/Manuscript.docx",
-      "bytes": 33282,
-      "sha256": "b512cf284cd381f73f161b7bebdb7c0791e9c3b80b1a86467ad2421a55bc49c6"
+      "bytes": 33692,
+      "sha256": "81c2e9c9ad40efb01dc6c12e4af4876555547cfc78b01f9c1a62cbecd6cf681a"
     },
     {
       "path": "submission/candidate_20261011_review/Manuscript.pdf",
-      "bytes": 176911,
-      "sha256": "7cf9af0851c19cf7b45219d74b448e68da3574eabadb1f5fdea6a1cdba3b9535"
+      "bytes": 180143,
+      "sha256": "ca0c9152da68b9d42f63b5b830bdc23a4d2bbca522e8d110b5286a067a711362"
     },
     {
       "path": "submission/candidate_20261011_review/README.md",
-      "bytes": 1355,
-      "sha256": "e13ef5e2a728a0cd0966248a956267b71f0a429f9970a42586a641bf29bf0de5"
+      "bytes": 1649,
+      "sha256": "46461843edeab15b5a044a392f3fa9414a2e23dc91107e896335c72721bb7232"
     },
     {
       "path": "submission/candidate_20261011_review/README_KO.md",
@@ -209,28 +209,28 @@
     },
     {
       "path": "submission/candidate_20261011_review/STROBE_MR_Checklist.docx",
-      "bytes": 39352,
-      "sha256": "49d8ee20c23d39e985de70a3743c09595559ac51fed6c432401a0cb6626b8f43"
+      "bytes": 39347,
+      "sha256": "9b4b2db726baa9d4e3311fdcdb7b82b2c83e42cd3b4c7ff45d2ec32997c4888b"
     },
     {
       "path": "submission/candidate_20261011_review/STROBE_MR_Checklist.pdf",
-      "bytes": 54517,
-      "sha256": "cad1180acf093bf7aed5087c35ed0d459750132834a5f77cd8a137ade185338e"
+      "bytes": 54512,
+      "sha256": "5d79fabb3cd4ee70491601291c27e8f2b3997b21c513043b7c12e64b0b6da338"
     },
     {
-      "path": "submission/candidate_20261011_review/SupplementaryTables_S1_S2.md",
-      "bytes": 1994,
-      "sha256": "d7a9398513dd56b835269f2747eb042560e824879b9ea09438d7356e12eca9c4"
+      "path": "submission/candidate_20261011_review/SupplementaryTables.md",
+      "bytes": 10298,
+      "sha256": "b725ef97e1ca406dcc511bd72e5fde09ba0d8645e71305df3ce705587a308665"
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Dataset.xlsx",
-      "bytes": 9986603,
-      "sha256": "02a1df0e11b4b8a2faa2ba8457697a8c9b2f9d59776f7a9973e1e2b965c4b909"
+      "bytes": 9986606,
+      "sha256": "ab5211a734ad1e062616cd1716ca1a2b5a2bfc83afb60ade681939860958260e"
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.docx",
-      "bytes": 424770,
-      "sha256": "2c449c5fbf615b8b00d35b00c44d83b4b108dadbffeeb0d40217a23d5cf6bd78"
+      "bytes": 610064,
+      "sha256": "b0f3af334292d441d83b3ee073ce27cf1825d4f756aa507a906bacdf5cd7d0ee"
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.md",
@@ -239,48 +239,58 @@
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.pdf",
-      "bytes": 418653,
-      "sha256": "ff05fe3304127a9d04e5aca8f6e45aa74d550468636f5ceecf2fc8134bf8922b"
-    },
-    {
-      "path": "submission/candidate_20261011_review/TableS3_Tissue_extension.md",
-      "bytes": 1937,
-      "sha256": "c7f916e6b87f35ac4f516f3c51ee8d9f9ce6a209dad7af4c86460fd0b7506629"
-    },
-    {
-      "path": "submission/candidate_20261011_review/TableS3_Tissue_extension.pdf",
-      "bytes": 74724,
-      "sha256": "3644e31302f34818750bc4ce18f0d0c0419c1c5ca6cc2f52ad2e5b69464b1883"
+      "bytes": 658269,
+      "sha256": "1217952c615ae349a0a3d4ac4eb757d05a725c2e3ebd35cba38ef34f937dd23d"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table1.pdf",
-      "bytes": 37671,
-      "sha256": "4fb174711535c83652e7275b9cc0c4cf719b3cb57d5c7a5d443716661e24d71b"
+      "bytes": 42089,
+      "sha256": "0adb11de7d5e66f43a6e3eb5a805bdda47a96d3ebb897ab183f936762bc44ffd"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table2.pdf",
-      "bytes": 104028,
-      "sha256": "f0f1e90b5db8ed9861bf55695a5f51a623bb86eee12b54a14e80df863cd4a80d"
+      "bytes": 110504,
+      "sha256": "01fcf38936ae3a158429d8a29b8383d02969a2b97dce7277a9d3883ff333f699"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table3.pdf",
-      "bytes": 127924,
-      "sha256": "0bf049d246379b17cbe2b2330b1931374d1c848e39e86e0272c597c82fee24ce"
+      "bytes": 97671,
+      "sha256": "33aa915e3eac80da8cc07b1adb8c9993b265dda470c9324e879ae683fc92dff9"
+    },
+    {
+      "path": "submission/candidate_20261011_review/Tables/TableS1.pdf",
+      "bytes": 76359,
+      "sha256": "08d523d1c9a6c65422d351de603615215827d21b8deb2bd158c682385d71c964"
+    },
+    {
+      "path": "submission/candidate_20261011_review/Tables/TableS2.pdf",
+      "bytes": 67787,
+      "sha256": "d6ee772f1921d62a1d06a32723108af5441463e4ad8333c138fa0927796b0f40"
+    },
+    {
+      "path": "submission/candidate_20261011_review/Tables/TableS3.pdf",
+      "bytes": 65269,
+      "sha256": "0bc955be90b7e7fd8745a895a32f6238a9c23c3a9905d3f41c48e2aa3b6882e0"
+    },
+    {
+      "path": "submission/candidate_20261011_review/Tables/TableS4.pdf",
+      "bytes": 125382,
+      "sha256": "a6bccf430fa5627645977326fc5b651511aeeaf8334dba64c2aca8abf2fd427f"
     },
     {
       "path": "submission/candidate_20261011_review/Tables.docx",
-      "bytes": 15945,
-      "sha256": "a0749ce5abe61437432657868642a9cbd67804983c234a29ca2918aa082cccd1"
+      "bytes": 16568,
+      "sha256": "713821e0e6c8d110aa196ee8ffaa499ee1fca02b4d1802fa9591ee3afcba5f8a"
     },
     {
       "path": "submission/candidate_20261011_review/Tables.md",
-      "bytes": 6884,
-      "sha256": "032317f67b2dd071ba0be1fdf5186ae985bd9a4510244371413c0682ea6d6f01"
+      "bytes": 8336,
+      "sha256": "723c7cd0922c96091b1fca3feef801589de02fa3f442edd7a5486461bdb26f82"
     },
     {
       "path": "submission/candidate_20261011_review/Tables.pdf",
-      "bytes": 205327,
-      "sha256": "7318194d9007081e7583cece43598b1f16adad2ebf04a89da8b76ebd106d3108"
+      "bytes": 186885,
+      "sha256": "4ec334947d486034a3199bfc7d47dacedec1c6a1c9ef338a9d480687416ae3f7"
     },
     {
       "path": "submission/candidate_20261011_review/Verification/Delivery_QA_20261011.json",
@@ -1024,13 +1034,18 @@
     },
     {
       "path": "submission/candidate_20261011_review/reproducibility/build_documents_20261014.py",
-      "bytes": 14879,
-      "sha256": "4d587b4aede43cf45029e6f76e1b02e69d748d469ef6ead731d5f19925da6e59"
+      "bytes": 15706,
+      "sha256": "4f2d1c21e42fdf559653818ada762e7dbacc219439f4d27ab7b4aaf0c76116dc"
     },
     {
       "path": "submission/candidate_20261011_review/reproducibility/build_figures_20261014.py",
-      "bytes": 13965,
-      "sha256": "970d8ab876eb577231bfd76576928c72fc7e46a644be4846eab2f8d3a0815434"
+      "bytes": 16244,
+      "sha256": "bdb6b0d6c0b2faa812f4f18ff51237cd4a4eeea2df5836831d661b52ebd6bf71"
+    },
+    {
+      "path": "submission/candidate_20261011_review/reproducibility/build_tables_20261014.py",
+      "bytes": 20800,
+      "sha256": "64ed745485cfd0aec53bf046bc83413506844554d56e9f01448171c63c531c4b"
     },
     {
       "path": "submission/candidate_20261011_review/reproducibility/derive_review_values_20261014.py",
