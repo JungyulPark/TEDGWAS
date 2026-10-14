@@ -89,7 +89,10 @@ Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
    (`Tables.md`, `Figure_Legends.md`, `Supplementary_Material.md`, `SupplementaryTables_S1_S2.md`,
    `TableS3_Tissue_extension.md`, `Cover_Letter_Draft.md`).
-2. Rebuild: `python3 submission/candidate_20261011_review/reproducibility/build_documents_20261014.py`
+2. Figures 1–3 and S2: `python3 submission/candidate_20261011_review/reproducibility/build_figures_20261014.py`
+   (reads only the workbook; no in-image titles, italic genes and *P*, † = *P* < 0.05/2,544 in Figure 2;
+   Figure S1 needs IRB sample data and is not redrawn). Then rebuild documents:
+   `python3 submission/candidate_20261011_review/reproducibility/build_documents_20261014.py`
    (pandoc + python-docx + LibreOffice + poppler) and inspect rendered pages.
 3. If new numbers were added, extend `reproducibility/derive_review_values_20261014.py` and rerun it.
 4. `python3 scripts/26_wordcount_main_text.py`; then `python3 scripts/29_refresh_manifest.py YYYY-MM-DD`;

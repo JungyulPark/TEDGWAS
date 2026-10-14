@@ -9,8 +9,8 @@ package's Markdown files; scientific figures are reused unchanged.
 
 Outputs (package root): Manuscript, Tables, Supplementary_Material and
 Cover_Letter_Draft as DOCX + PDF; Tables/Table1-3.pdf; TableS3_Tissue_extension.pdf;
-STROBE_MR_Checklist.pdf (from its edited DOCX); Final_Tables_Figures.pdf and
-Full_Review.pdf, in which each figure is shown on its own page with its legend. All_Figures.pdf and the Figures/ directory are not touched.
+STROBE_MR_Checklist.pdf (from its edited DOCX); All_Figures.pdf; Final_Tables_Figures.pdf and
+Full_Review.pdf, in which each figure is shown on its own page with its legend. Figures are drawn by build_figures_20261014.py.
 """
 from __future__ import annotations
 
@@ -370,6 +370,8 @@ def main() -> int:
         sfigs = to_pdf(build_figures(["Figure S1", "Figure S2"], Path(td) / "SuppFigures.docx", "Figures S1-S2"))
         merge([tables_pdf, figs, s12_pdf, PKG / "TableS3_Tissue_extension.pdf", sfigs], PKG / "Final_Tables_Figures.pdf")
         merge([ms, tables_pdf, figs, supp_pdf], PKG / "Full_Review.pdf")
+    merge([PKG / "Figures" / f"{n}.pdf" for n in ("Figure1", "Figure2", "Figure3", "FigureS1", "FigureS2")],
+          PKG / "All_Figures.pdf")
     to_pdf(build_cover())
     to_pdf(PKG / "STROBE_MR_Checklist.docx")
     for name in ["Manuscript", "Tables", "Supplementary_Material", "Cover_Letter_Draft", "STROBE_MR_Checklist",
