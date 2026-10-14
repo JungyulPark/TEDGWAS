@@ -29,11 +29,11 @@ GD, Graves disease; GO, Graves ophthalmopathy; HT, hyperthyroidism/thyrotoxicosi
 | *IGF1R* | FinnGen GO strict | 3 | 1.52 (0.92–2.49) | 0.0996 | 0.571 | 0.391 | 0.038 |
 | *CTLA4* | BBJ GD | 1 | 0.18 (0.11–0.27) | **5.45×10⁻¹⁵** | <0.001 | 0.799 | 0.201 |
 | *CTLA4* | FinnGen GD | 2 | 0.17 (0.08–0.36) | **2.15×10⁻⁶** | <0.001 | 0.746 | 0.254 |
-| *CTLA4* | UKB HT | 2 | 0.21 (0.08–0.57) | **0.00220** | <0.001 | 0.047 | **0.953** |
+| *CTLA4* | UKB HT | 2 | 0.21 (0.08–0.57) | **0.0022** | <0.001 | 0.047 | **0.953** |
 | *CTLA4* | FinnGen GO | 2 | 0.17 (0.04–0.68) | **0.0118** | <0.001 | 0.022 | **0.978** |
 | *CTLA4* | FinnGen GO strict | 2 | 0.17 (0.05–0.64) | **0.00888** | <0.001 | 0.021 | **0.979** |
 
-IVs, instrumental variables (retained genetic variants). Wald ratio for one IV; random-effects IVW for multiple IVs. ORs are per approximately one SD higher reconstructed blood expression. Bold *P* values denote nominal *P* < 0.05 only. Discovery uses 0.05/2,544. PP.H2 supports an expression-only signal; PP.H3 supports distinct variants; PP.H4 supports one shared variant. Bold PP.H4 denotes ≥0.80 under p12 = 10⁻⁵. These are probabilities, not *P* values. *CTLA4* multi-IV results are concentrated in rs13030124; *TSHR* is single-IV in all datasets.
+GD, Graves disease; GO, Graves ophthalmopathy; HT, hyperthyroidism/thyrotoxicosis. IVs, instrumental variables (retained genetic variants). Wald ratio for one IV; random-effects IVW for multiple IVs. ORs are per approximately one SD higher reconstructed blood expression. Bold *P* values denote nominal *P* < 0.05 only. Discovery uses 0.05/2,544. PP.H2 supports an expression-only signal; PP.H3 supports distinct variants; PP.H4 supports one shared variant. Bold PP.H4 denotes ≥0.80 under p12 = 10⁻⁵. These are probabilities, not *P* values. *CTLA4* multi-IV results are concentrated in rs13030124; *TSHR* is single-IV in all datasets.
 
 ## Table 3. Screen and supporting analyses
 

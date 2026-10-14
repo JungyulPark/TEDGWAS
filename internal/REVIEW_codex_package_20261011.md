@@ -124,3 +124,17 @@ seriously missing, correct overstatements and remove the AI-assisted wording.
   absent from both A and B and must come from the tissue investigators; STROBE crosswalk remains
   condensed; Figure 1 label collision not re-plotted; companion-manuscript status, journal
   requirements and author approval remain for the authors.
+
+### Verification of the revision (2026-10-14, second pass)
+An independent four-lens check (numbers, claims, coverage, rendering; 17 agents) confirmed the new
+numbers and found defects introduced or left by the first pass, now fixed: the Abstract had dropped
+"Mean" from the orbital sentence (false for one IGF1R sample); prior sensitivity was flagged for BBJ
+only (strict GO falls further, 0.891 → 0.451); "two largest datasets" is true only by cases; the
+thyroid IGF1R direction was generalised; MR_new_freq was cited for BBJ evidence; antecedent and
+naming problems ("its", "Their", undefined "GO"); reproduction-paragraph counts unexplained and the
+TSHR strict-GO 0.449 vs 0.451 difference undisclosed; roman gene names, P and flat subscripts in the
+supplement; cover letter overstated the STROBE crosswalk and restated unconfirmed declarations;
+STROBE heading font and page size. The orbital tissue methods were added to the supplement from the
+authors' companion manuscript, pending their confirmation; the companion manuscript's PNUH grant
+versus this manuscript's "no specific grant" is flagged for the authors. Figure re-plots (Figure 2
+dagger, Figure 1 label collision, in-image titles) remain open.

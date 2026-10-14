@@ -30,8 +30,8 @@ def main():
     a = pd.read_excel(X, sheet_name="TSHR_allele_audit", header=None).values.tolist()
     hdr_i = next(i for i, r in enumerate(a) if "aligned_G_OR" in [str(v) for v in r])
     hdr = [str(v) for v in a[hdr_i]]
-    names = {"BBJ": "BBJ", "UKB": "UKB", "FinnGen_GO": "FinnGen GO", "E4_GRAVES_STRICT": "FinnGen GD",
-             "E4_GRAVES_OPHT_STRICT": "strict GO"}
+    names = {"BBJ": "BBJ", "UKB": "UKB", "FinnGen_GO": "FinnGen ophthalmopathy", "E4_GRAVES_STRICT": "FinnGen GD",
+             "E4_GRAVES_OPHT_STRICT": "strict ophthalmopathy"}
     for r in a[hdr_i + 1:]:
         if pd.isna(r[0]) or str(r[0]).strip() == "" or "outcome" in [str(v) for v in r]:
             break  # end of section C
@@ -84,8 +84,11 @@ def main():
     pos = eq.set_index("SNP").SNPPos
     add("rs12101255 - rs179252 distance (bp)", int(pos["rs12101255"] - pos["rs179252"]), "15 kb", "eqtl_TSHR_all GRCh37")
     add("rs74064796 - rs12101255 distance (bp)", int(pos["rs74064796"] - pos["rs12101255"]), "50 bp", "eqtl_TSHR_all GRCh37")
+    sup = str.maketrans("-0123456789", "⁻⁰¹²³⁴⁵⁶⁷⁸⁹")
     for s in ("rs12101255", "rs74064796"):
-        add(f"{s} blood eQTL P", float(eq.set_index("SNP").Pvalue[s]), "10⁻³⁴", "eqtl_TSHR_all")
+        v = float(eq.set_index("SNP").Pvalue[s])
+        mant, exp = f"{v:.1e}".split("e")
+        add(f"{s} blood eQTL P", v, f"{mant}×10{str(int(exp)).translate(sup)}", "eqtl_TSHR_all")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(OUT, index=False)

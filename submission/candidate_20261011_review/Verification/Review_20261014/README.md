@@ -27,8 +27,11 @@ Outcome:
 - 1000 Genomes EUR was not reachable, so gnomAD v2.1.1 European frequencies were
   substituted. Identity control: max |ΔPP.H4| 4.1e-4, max |ΔPP| 2.8e-3.
 - New endpoints: max |ΔPP.H4| vs reported 1.2e-3; no setting crosses 0.80.
-  Restricting TSHR to the 6,579 variants in the 1000G EUR reference reproduces the
-  reported values to ≤2.3e-6.
+  The reproduction analysed 6,674 / 7,850 / 4,992 variants (gnomAD frequency available)
+  versus 6,579 / 7,740 / 4,924 in the reported analysis (1000G EUR frequency available).
+  Restricting TSHR to those 6,579 variants reproduces the GO and strict GO values to
+  ≤2.3e-6; FinnGen GD keeps a 4.9e-4 residual from the eQTL-side frequency term.
+  TSHR strict GO at p12 = 1e-6 is 0.449 with all gnomAD-covered variants (0.451 reported).
 - IGF1R PP.H2/PP.H3 differ by up to 0.003 at the third decimal (same shift as the
   identity control: frequency source), so the printed IGF1R H2/H3 values are
   reproduced to within 0.003, not to the printed digit.
@@ -36,5 +39,11 @@ Outcome:
   on the original exposure scale.
 
 Not included: FinnGen regional extracts, gnomAD extracts and per-SNP inputs
-(source data are not redistributed). Machine paths in scripts are replaced by
-`<scratch>`/`<home>` placeholders; the scripts need those inputs re-fetched.
+(source data are not redistributed). Scratch paths in scripts are replaced by a
+`<scratch>` placeholder; repository inputs keep their `/home/user/TEDGWAS/...` container
+paths. The scripts need the source extracts re-fetched before they can run.
+
+References 9, 11 and 29–32 were checked in PubMed on 2026-10-14 (PMIDs 41162548,
+42204533, 12813025, 26872090, 42473870, 19221109); the attributed statements match
+their abstracts. Ji et al.'s colocalization prior exponent is lost in the PMC text,
+so only their PP.H4 > 0.5 threshold is cited.

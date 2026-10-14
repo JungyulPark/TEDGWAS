@@ -2,11 +2,11 @@
 
 | Dataset | Full cis SNPs | Primary PP.H4 | Lower-prior PP.H4 | PP.H4 range across windows |
 |---|---|---|---|---|
-| BBJ GD | 4336 | 0.951 | 0.661 | 0.951–0.951 |
-| FinnGen GD | 6579 | 0.264 | 0.035 | 0.264–0.264 |
-| UKB HT | 5667 | 0.226 | 0.028 | 0.226–0.226 |
-| FinnGen GO | 6579 | 0.986 | 0.875 | 0.986–0.987 |
-| FinnGen GO strict | 6579 | 0.891 | 0.451 | 0.891–0.905 |
+| BBJ GD | 4,336 | 0.951 | 0.661 | 0.951–0.951 |
+| FinnGen GD | 6,579 | 0.264 | 0.035 | 0.264–0.264 |
+| UKB HT | 5,667 | 0.226 | 0.028 | 0.226–0.226 |
+| FinnGen GO | 6,579 | 0.986 | 0.875 | 0.986–0.987 |
+| FinnGen GO strict | 6,579 | 0.891 | 0.451 | 0.891–0.905 |
 
 Lower prior: p12 = 10⁻⁶; p1 = p2 = 10⁻⁴ throughout. Window range uses the full source cis-region, ±500 kb, ±250 kb and five-outcome intersection at the primary prior. It is not a confidence interval. Full regional disease lead variants were retained. All 240 settings are in TSHR_windows.
 

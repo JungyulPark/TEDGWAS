@@ -122,7 +122,9 @@ def framing_guards():
     ok(not re.search(r'AI-assisted|artificial intelligence|language model|ChatGPT|OpenAI|Codex|Claude', text + pkg['Cover_Letter_Draft.md'] + pkg['Supplementary_Material.md']),
        'No AI-tool declaration (2026-09-05 author decision)')
     ok('0.226' in abstract and '0.264' in abstract, 'Abstract discloses TSHR non-colocalization in UKB and FinnGen GD')
-    ok('prior-sensitive' in abstract, 'Abstract keeps BBJ prior sensitivity')
+    ok('prior-sensitiv' in abstract and 'strict GO' in abstract.split('prior-sensitiv')[1][:40],
+       'Abstract flags prior sensitivity for BBJ and strict GO')
+    ok('Mean orbital' in abstract, 'Abstract orbital sentence keeps "Mean" (IGF1R exceeds control in 3 of 4)')
     ok('colocalization' in conclusions.lower() and 'UKB' in conclusions and 'FinnGen GD' in conclusions,
        'Conclusions scope colocalization to the datasets where it failed')
     ok('does not argue against' in conclusions, 'Conclusions keep the IGF1R therapy guard')
@@ -132,7 +134,7 @@ def framing_guards():
     ok('consistently indicated higher odds' not in everything, 'IGF1R not described as consistently indicating higher odds')
     ok(not re.search(r'[Ss]econdary colocalization|secondary interpretive', everything), 'Colocalization not relabelled secondary')
     ok('strengthens the plausibility' not in text, 'Allele audit not overstated')
-    ok('0.80 (BBJ), 0.77 (UKB), 0.78 (FinnGen GO), 0.77 (FinnGen GD) and 0.82 (strict GO)' in text,
+    ok('0.80 (BBJ), 0.77 (UKB), 0.78 (FinnGen ophthalmopathy), 0.77 (FinnGen GD) and 0.82 (strict ophthalmopathy)' in text,
        'TSHR per-allele ORs explain the per-SD scale')
     ok('5×10⁻⁵ and a PP.H4' not in text, 'Unverifiable Ji et al. prior not asserted')
     ok(not re.search(r'case series|prespecified|pre-specified|first systematic|SuSiE|credible set|DESeq2|padj', everything),

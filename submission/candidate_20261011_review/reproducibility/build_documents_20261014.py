@@ -219,6 +219,12 @@ def build_manuscript():
     pandoc(text, out)
     d = Document(out)
     styles(d, 12, 2.0)
+    if "Line Number" not in {s.name for s in d.styles}:
+        from docx.enum.style import WD_STYLE_TYPE
+        ln = d.styles.add_style("Line Number", WD_STYLE_TYPE.CHARACTER)
+        ln.element.set(qn("w:styleId"), "LineNumber")
+        set_font(ln)
+        ln.font.size = Pt(9)
     for sec in d.sections:
         page(sec)
         line_numbers(sec)

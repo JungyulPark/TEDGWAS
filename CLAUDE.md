@@ -16,7 +16,7 @@ review-status section below).
 - Old candidate and earlier instructions are historical. Do not restore their
   three-outcome framing, six separate Data files, or obsolete sample sizes.
 - Read-only current check: `python scripts/audit_paper1_integrity.py`.
-  It checks delivery integrity, tissue formulas and 51 framing guards (added 14 October).
+  It checks delivery integrity, tissue formulas and 52 framing guards (added 14 October).
 
 ## Data-management rules (retained)
 Never commit IRB raw orbital RNA-seq (data.txt, FASTQ/BAM, raw count matrices),
@@ -58,8 +58,10 @@ declarations and journal requirements, companion-manuscript status, all-author a
 orbital tissue collection/sequencing methods (absent from every version; do not invent them).
 
 Locked from this revision:
-- The Abstract reports TSHR PP.H4 in UKB (0.226) and FinnGen GD (0.264) and that BBJ is
-  prior-sensitive. Never again reduce this to "support varied".
+- The Abstract reports TSHR PP.H4 in UKB (0.226) and FinnGen GD (0.264) and that BBJ and strict
+  GO support is prior-sensitive (0.661 and 0.451 at p12 = 1e-6). Never again reduce this to
+  "support varied". Orbital data are "Mean ... exceeded the control" — IGF1R is higher in only 3 of 4
+  TED samples, so never drop "Mean".
 - FinnGen GD/strict GO colocalization and MR for TSHR/IGF1R/CTLA4 were independently reproduced
   (`Verification/Review_20261014/finngen_coloc_reproduction/`): PP.H4 within 1.2e-3, MR exact on
   the original exposure scale; IGF1R PP.H2/H3 only within 0.003 (frequency source). The FinnGen GD
@@ -70,11 +72,20 @@ Locked from this revision:
 - IGF1R: all ORs > 1, nominal only in BBJ/UKB; FinnGen GD OR 1.07 (0.86–1.33) is the most precise
   and near-null (detectable OR ~1.36 at P < 0.05). Never write "consistently indicated higher odds".
   Weighted median BBJ 1.56 (P 0.0288), UKB 1.42 (P 0.00244); Egger intercepts P 0.66/0.56/0.43.
-- Per-allele TSHR ORs 0.80/0.77/0.78/0.77/0.82 (BBJ/UKB/GO/GD/strict GO) explain the per-SD ORs.
+- Per-allele TSHR ORs 0.80/0.77/0.78/0.77/0.82 (BBJ/UKB/GO/GD/strict GO) explain the per-SD ORs;
+  call them moderate, not small. The main text writes "FinnGen ophthalmopathy"/"strict ophthalmopathy";
+  "GO" is defined only in the Abstract and table footnotes.
+- Thyroid IGF1R: only the primary FinnGen GD estimate is below 1 (0.76); the four secondary ones are
+  above 1. Write "directions were inconsistent", never "opposite to blood" without that scope.
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 250/250; main text 4,939 (4,986 with sub-headings) of 5,000.
+- Abstract 248/250; main text 4,951 (4,998 with sub-headings) of 5,000 — effectively no headroom.
+- Orbital tissue methods in the supplement were taken from the authors' companion manuscript
+  (`RNAseq_fulltext.txt`: inactive TED, CAS < 3, decompression; control nasal fat pad; NovaSeq; HISAT2/
+  StringTie) and need author confirmation. That companion text declares PNUH Biomedical Research
+  Institute Grant 20210027001 for the same dataset, while this manuscript declares no specific grant:
+  an open author decision. The cover letter defers to the manuscript declarations.
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
@@ -84,7 +95,7 @@ Editing workflow:
    (pandoc + python-docx + LibreOffice + poppler) and inspect rendered pages.
 3. If new numbers were added, extend `reproducibility/derive_review_values_20261014.py` and rerun it.
 4. `python3 scripts/26_wordcount_main_text.py`; then `python3 scripts/29_refresh_manifest.py YYYY-MM-DD`;
-   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 51 framing guards).
+   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 52 framing guards).
 Do not edit scientific output CSVs or workbook data sheets to make an audit pass; the workbook's
 Readme sheet was changed by editing only `xl/worksheets/sheet1.xml`. Keep exact reviewed bytes under
 the package's `-text` attribute.

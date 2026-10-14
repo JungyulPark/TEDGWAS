@@ -1,9 +1,9 @@
 item,value,displayed,source
 per-allele OR BBJ,0.8016933983741764,0.80 (BBJ),TSHR_allele_audit C
 per-allele OR UKB,0.773435148423229,0.77 (UKB),TSHR_allele_audit C
-per-allele OR FinnGen GO,0.7820254454715736,0.78 (FinnGen GO),TSHR_allele_audit C
+per-allele OR FinnGen ophthalmopathy,0.7820254454715736,0.78 (FinnGen ophthalmopathy),TSHR_allele_audit C
 per-allele OR FinnGen GD,0.7660751553656817,0.77 (FinnGen GD),TSHR_allele_audit C
-per-allele OR strict GO,0.8180801207898873,0.82 (strict GO),TSHR_allele_audit C
+per-allele OR strict ophthalmopathy,0.8180801207898873,0.82 (strict ophthalmopathy),TSHR_allele_audit C
 IGF1R weighted median OR BBJ,1.55603939578267,1.56,MR_estimators_original
 IGF1R weighted median P BBJ,0.0288137288082998,0.0288,MR_estimators_original
 IGF1R weighted median OR UKB,1.41853245640937,1.42,MR_estimators_original
@@ -26,5 +26,5 @@ IGF1R detectable OR alpha 0.05 FinnGen GD,1.3644475044085533,1.36,MR_primary SE
 HLA-A FinnGen GD Q P,0.0387107830488656,0.0387,reanalysis mr_v1 MR_14genes_all_scenarios
 rs12101255 - rs179252 distance (bp),15067.0,15 kb,eqtl_TSHR_all GRCh37
 rs74064796 - rs12101255 distance (bp),50.0,50 bp,eqtl_TSHR_all GRCh37
-rs12101255 blood eQTL P,4.1217e-34,10⁻³⁴,eqtl_TSHR_all
-rs74064796 blood eQTL P,6.5303e-34,10⁻³⁴,eqtl_TSHR_all
+rs12101255 blood eQTL P,4.1217e-34,4.1×10⁻³⁴,eqtl_TSHR_all
+rs74064796 blood eQTL P,6.5303e-34,6.5×10⁻³⁴,eqtl_TSHR_all
