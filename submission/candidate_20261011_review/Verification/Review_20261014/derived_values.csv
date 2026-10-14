@@ -1,0 +1,30 @@
+item,value,displayed,source
+per-allele OR BBJ,0.8016933983741764,0.80 (BBJ),TSHR_allele_audit C
+per-allele OR UKB,0.773435148423229,0.77 (UKB),TSHR_allele_audit C
+per-allele OR FinnGen GO,0.7820254454715736,0.78 (FinnGen GO),TSHR_allele_audit C
+per-allele OR FinnGen GD,0.7660751553656817,0.77 (FinnGen GD),TSHR_allele_audit C
+per-allele OR strict GO,0.8180801207898873,0.82 (strict GO),TSHR_allele_audit C
+IGF1R weighted median OR BBJ,1.55603939578267,1.56,MR_estimators_original
+IGF1R weighted median P BBJ,0.0288137288082998,0.0288,MR_estimators_original
+IGF1R weighted median OR UKB,1.41853245640937,1.42,MR_estimators_original
+IGF1R weighted median P UKB,0.0024440058023122,0.00244,MR_estimators_original
+IGF1R Egger/mode minimum P,0.325233126152554,0.32,MR_estimators_original (displayed as P >= 0.32)
+IGF1R Egger intercept P BBJ,0.662690490208203,0.66,MR_estimators_original
+IGF1R Egger intercept P UKB,0.56236400133199,0.56,MR_estimators_original
+IGF1R Egger intercept P FinnGen GO,0.432913310128032,0.43,MR_estimators_original
+IGF1R LOO P BBJ_Graves without rs2654980,0.0751175406851401,0.0751,LOO_original
+IGF1R LOO P UKB_hyperthyroid without rs2654980,0.467626273584672,0.468,LOO_original
+IGF1R LOO P BBJ_Graves without rs59467480,0.0502546462528504,0.0503,LOO_original
+IGF1R LOO P UKB_hyperthyroid without rs117212126,0.0528590611125866,0.0529,LOO_original
+detectable fraction BBJ OR 1.5,0.14637421665174574,14.6%,MR_primary SE
+detectable fraction BBJ OR 2.0,0.355863921217547,35.6%,MR_primary SE
+detectable fraction FinnGen GD OR 1.5,0.24758064516129033,24.8%,MR_primary SE
+detectable fraction FinnGen GD OR 2.0,0.5221774193548387,52.2%,MR_primary SE
+IGF1R detectable OR alpha 0.05 BBJ,1.7200570423078614,1.72,MR_primary SE
+IGF1R detectable OR alpha 0.05 UKB,1.394528495848567,1.39,MR_primary SE
+IGF1R detectable OR alpha 0.05 FinnGen GD,1.3644475044085533,1.36,MR_primary SE
+HLA-A FinnGen GD Q P,0.0387107830488656,0.0387,reanalysis mr_v1 MR_14genes_all_scenarios
+rs12101255 - rs179252 distance (bp),15067.0,15 kb,eqtl_TSHR_all GRCh37
+rs74064796 - rs12101255 distance (bp),50.0,50 bp,eqtl_TSHR_all GRCh37
+rs12101255 blood eQTL P,4.1217e-34,10⁻³⁴,eqtl_TSHR_all
+rs74064796 blood eQTL P,6.5303e-34,10⁻³⁴,eqtl_TSHR_all

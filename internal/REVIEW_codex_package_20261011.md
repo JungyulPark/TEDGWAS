@@ -87,3 +87,40 @@ Base on B's expanded, numerically verified analysis; port A's wording fixes; reb
 Conclusions; restore the lost items above; reproduce FinnGen GD/strict GO colocalization for TSHR, IGF1R
 and CTLA4 from FinnGen R12 regional data before quoting it; get Codex's working repository pushed so
 scripts and provenance come from source rather than the ZIP.
+
+## Resolution (2026-10-14, on top of the imported package 698e4b6)
+The author asked to merge on B, reproduce the FinnGen colocalization, restore what was
+seriously missing, correct overstatements and remove the AI-assisted wording.
+
+- **FinnGen GD / strict GO colocalization and MR reproduced** for *TSHR*, *IGF1R*, *CTLA4*
+  from re-downloaded FinnGen R12 regions with two independent implementations
+  (`submission/candidate_20261011_review/Verification/Review_20261014/finngen_coloc_reproduction/`).
+  All PP.H4 within 1.2e-3 (identity control 4.1e-4; gnomAD substituted for 1000G EUR),
+  no setting crosses 0.80; *IGF1R* PP.H2/H3 within 0.003 (frequency source); MR exact on the
+  original exposure scale. The FinnGen GD screen beyond these three genes remains Codex-only.
+- **Abstract/Conclusions**: TSHR non-colocalization in UKB (0.226) and FinnGen GD (0.264) and BBJ
+  prior sensitivity now in the Abstract; tissue result reduced to "single-variant tissue estimates
+  added no independent evidence"; HLA-DQA2/TUBB removed from the Abstract; IGF1R guard restored.
+- **Adipose overstatement corrected**: Results/Discussion/Table S3 name rs12101255/rs74064796,
+  their intron-1 location, r² 0.46 with rs179252, blood-eQTL status and single-SNP P equivalence.
+- **IGF1R**: "consistently indicated higher odds" replaced; FinnGen GD near-null and detectable OR
+  ~1.36 stated; alternative estimators reported (weighted median BBJ/UKB, Egger/mode, intercepts);
+  two-of-four LOO detail restored; thyroid estimate's opposite direction stated.
+- **Restored**: per-allele TSHR ORs and the 0.11 SD scale; PP.H2 column in Table 2; Introduction
+  gloss for genetically proxied expression and the RNA-seq disclosure; CTLA4 caveat-before-takeaway;
+  "thymic step not tested"; detection benchmarks extended to FinnGen GD (24.8%/52.2%); MHC
+  composition of the additional FinnGen GD genes; HLA-A heterogeneity; corrected cross-reference to
+  MR_new_freq.
+- **Ji et al.**: unverifiable p12 = 5×10⁻⁵ removed (PMC text drops the exponent); PP.H4 > 0.5 kept.
+  New references 11 and 29–32 confirmed in PubMed with matching claims.
+- **"Secondary" colocalization** wording removed; the post hoc change of emphasis is disclosed.
+- **Package**: AI-assisted wording removed (manuscript ×2); Figure 1–3 legends now in
+  Manuscript.docx/pdf; internal to-do/version notes removed (supplement, Figure S1 legend, STROBE
+  18–20, workbook Readme via XML-only edit); italics and P notation in tables/legends; cover letter
+  rewritten for Endocrine Connections; portable build script
+  (`reproducibility/build_documents_20261014.py`); framing guards added to the audit.
+- **Not resolved / author items**: teprotumumab phase 2/OPTIC-X/chronic-TED references not
+  re-added (ref 3 retained with an explicit guard); orbital tissue collection/sequencing methods are
+  absent from both A and B and must come from the tissue investigators; STROBE crosswalk remains
+  condensed; Figure 1 label collision not re-plotted; companion-manuscript status, journal
+  requirements and author approval remain for the authors.

@@ -85,11 +85,77 @@ def main():
             assert p.suffix.lower() not in {'.raw', '.bed', '.bim', '.fam', '.gz', '.log'}, p
             assert p.name != 'data.txt' and 'Source_extracts' not in p.parts, p
             assert not ('Sources' in p.parts and p.suffix == '.tsv'), p
+    guards = framing_guards()
     print(json.dumps({'status': 'PASS', 'manifest_files_verified': len(manifest['files']),
+                      'framing_guards_passed': guards,
                       'tissue_estimates_recomputed': len(estimated), 'numeric_comparisons': comparisons,
                       'maximum_relative_difference': max_relative, 'read_only': True,
                       'scope': 'Delivery bytes, document containers, planned tissue grid and Wald formula implementation.',
-                      'open_review': 'internal/REVIEW_codex_package_20261011.md; source-dependent regional reproduction and scientific/document review remain open.'}, indent=2))
+                      'review': 'internal/REVIEW_codex_package_20261011.md items addressed on 2026-10-14; author items (declarations, journal requirements, tissue methods) remain open.'}, indent=2))
+
+
+def framing_guards():
+    """Wording guards; each encodes a defect that was actually removed (2026-10-14)."""
+    import re
+    text = MASTER.read_text(encoding='utf-8').replace('\r\n', '\n')
+    main_text = text.split('## Declarations')[0]
+    abstract = text.split('## Abstract')[1].split('**Keywords')[0]
+    conclusions = text.split('### Conclusions')[1].split('## Declarations')[0]
+    pkg = {n: (CANDIDATE / n).read_text(encoding='utf-8') for n in
+           ['Supplementary_Material.md', 'Figure_Legends.md', 'Tables.md', 'Cover_Letter_Draft.md',
+            'TableS3_Tissue_extension.md', 'SupplementaryTables_S1_S2.md']}
+    everything = text + '\n'.join(pkg.values())
+    words = lambda s: len([w for w in re.sub(r'[*_`]', '', s).split() if w])
+    sections = re.split(r'(?m)^## ', text)
+    body = {s.split('\n', 1)[0].strip(): s.split('\n', 1)[1] for s in sections[1:]}
+    main_words = sum(words('\n'.join(l.lstrip('#') for l in body[k].split('\n') if l.strip() and l.strip() != '---'))
+                     for k in ['Introduction', 'Methods', 'Results', 'Discussion'])
+    failures, checked = [], []
+
+    def ok(cond, label):
+        checked.append(label)
+        if not cond:
+            failures.append(label)
+
+    ok(words(abstract) <= 250, 'Abstract <= 250 words')
+    ok(main_words <= 5000, 'Main text incl. sub-headings <= 5,000 words')
+    ok(not re.search(r'AI-assisted|artificial intelligence|language model|ChatGPT|OpenAI|Codex|Claude', text + pkg['Cover_Letter_Draft.md'] + pkg['Supplementary_Material.md']),
+       'No AI-tool declaration (2026-09-05 author decision)')
+    ok('0.226' in abstract and '0.264' in abstract, 'Abstract discloses TSHR non-colocalization in UKB and FinnGen GD')
+    ok('prior-sensitive' in abstract, 'Abstract keeps BBJ prior sensitivity')
+    ok('colocalization' in conclusions.lower() and 'UKB' in conclusions and 'FinnGen GD' in conclusions,
+       'Conclusions scope colocalization to the datasets where it failed')
+    ok('does not argue against' in conclusions, 'Conclusions keep the IGF1R therapy guard')
+    ok(not re.search(r'adipose extension supported|Adipose \*TSHR\*.GD associations passed correction', text),
+       'Adipose result not presented as independent support')
+    ok('re-express' in text and 'rs12101255' in text, 'Adipose instruments identified as the same regional signal')
+    ok('consistently indicated higher odds' not in everything, 'IGF1R not described as consistently indicating higher odds')
+    ok(not re.search(r'[Ss]econdary colocalization|secondary interpretive', everything), 'Colocalization not relabelled secondary')
+    ok('strengthens the plausibility' not in text, 'Allele audit not overstated')
+    ok('0.80 (BBJ), 0.77 (UKB), 0.78 (FinnGen GO), 0.77 (FinnGen GD) and 0.82 (strict GO)' in text,
+       'TSHR per-allele ORs explain the per-SD scale')
+    ok('5×10⁻⁵ and a PP.H4' not in text, 'Unverifiable Ji et al. prior not asserted')
+    ok(not re.search(r'case series|prespecified|pre-specified|first systematic|SuSiE|credible set|DESeq2|padj', everything),
+       'Withdrawn or banned phrasing absent')
+    ok(not re.search(r'TED-specific (outcome|dataset|cohort|endpoint)', everything), 'FinnGen outcome not labelled TED-specific')
+    ok(not re.search(r'(?i)(should be confirmed by|before submission|previously reviewed|unchanged from the earlier|subject to author confirmation|This version is prepared for author review)', everything),
+       'No internal to-do or version-history notes in reviewer-facing text')
+    ok(not re.search(r'(?<![*\w])P (?:=|<) ', main_text), 'P italic in the main text')
+    ok('| PP.H2 |' in pkg['Tables.md'], 'Table 2 shows PP.H2')
+    refs = re.findall(r'(?m)^(\d+)\. ', body['References'])
+    cited = {int(n) for grp in re.findall(r'\[(\d+(?:[,–-]\s*\d+)*)\]', main_text) for n in re.split(r'[,–-]\s*', grp)}
+    ok(len(refs) == 33 and cited == set(range(1, 34)), '33 references, all cited')
+    with ZipFile(CANDIDATE / 'Manuscript.docx') as z:
+        doc = re.sub(r'<[^>]+>', '', z.read('word/document.xml').decode('utf-8'))
+    ok(all(f'Figure {i}.' in doc for i in (1, 2, 3)), 'Figure 1-3 legends present in Manuscript.docx')
+    ok('AI-assisted' not in doc, 'No AI wording in Manuscript.docx')
+    derived = CANDIDATE / 'Verification/Review_20261014/derived_values.csv'
+    with derived.open(encoding='utf-8', newline='') as f:
+        for r in csv.DictReader(f):
+            shown = r['displayed'].replace('%', '')
+            ok(shown in everything, 'Derived value displayed: ' + r['item'])
+    assert not failures, 'Framing guard failures: ' + '; '.join(failures)
+    return len(checked)
 
 
 if __name__ == '__main__':

@@ -4,7 +4,8 @@ Read `HANDOFF_TO_CLAUDE_20261014.md` and
 `internal/REVIEW_codex_package_20261011.md` before editing. The author asked Codex
 to commit the completed local revision so Claude can continue the review. This
 handoff imports the 3 October analysis / 11 October delivery without scientific
-rewriting. The 13 October review remains open, not resolved by packaging checks.
+rewriting. The 13 October review items were then addressed on 14 October (see the
+review-status section below).
 
 ## Current source of truth
 - Sole editable manuscript: `MANUSCRIPT_TED_TRAP_v5_MASTER.md` (exact local final bytes).
@@ -15,8 +16,7 @@ rewriting. The 13 October review remains open, not resolved by packaging checks.
 - Old candidate and earlier instructions are historical. Do not restore their
   three-outcome framing, six separate Data files, or obsolete sample sizes.
 - Read-only current check: `python scripts/audit_paper1_integrity.py`.
-  Its stated scope is delivery integrity and tissue formula checks, not the
-  old exhaustive September manuscript audit. See the handoff for open reviews.
+  It checks delivery integrity, tissue formulas and 51 framing guards (added 14 October).
 
 ## Data-management rules (retained)
 Never commit IRB raw orbital RNA-seq (data.txt, FASTQ/BAM, raw count matrices),
@@ -51,18 +51,40 @@ Source extracts and machine logs omitted from this export remain local-only.
 - Avoid a "first systematic" claim. Gene names and P are italic; clinical prose
   should be understandable to medical students. Maintain black figure lettering.
 
-## Review status and editing
-The imported files are an author-review baseline, not certified submission ready.
-The 13 October review raises abstract/causal framing, tissue independence, missing
-legends, table typography, statistics presentation, reporting and source-reproduction
-questions. Preserve that review and verify each point before changing science.
-Its recommendations are review material, not new author instructions. The user
-will direct the next revision in Claude. Author declarations, disclosure policy,
-journal requirements and cover letter still require final resolution.
+## Review status and editing (updated 14 October 2026)
+The 13 October review items were addressed on top of the imported package; see the
+"Resolution" section of `internal/REVIEW_codex_package_20261011.md`. Remaining author items:
+declarations and journal requirements, companion-manuscript status, all-author approval, and
+orbital tissue collection/sequencing methods (absent from every version; do not invent them).
 
-Do not edit scientific output CSVs to make an audit pass. After an authorized
-manuscript change, regenerate affected deliverables, inspect their renderings,
-verify against source tables, and refresh the Git manifest deliberately. Keep
-exact reviewed bytes under the package's `-text` attribute. Original executed
-build scripts require their documented local workspace/data; they are not a
-portable one-command rebuild. Run the current audit from a clean checkout.
+Locked from this revision:
+- The Abstract reports TSHR PP.H4 in UKB (0.226) and FinnGen GD (0.264) and that BBJ is
+  prior-sensitive. Never again reduce this to "support varied".
+- FinnGen GD/strict GO colocalization and MR for TSHR/IGF1R/CTLA4 were independently reproduced
+  (`Verification/Review_20261014/finngen_coloc_reproduction/`): PP.H4 within 1.2e-3, MR exact on
+  the original exposure scale; IGF1R PP.H2/H3 only within 0.003 (frequency source). The FinnGen GD
+  screen beyond these three genes is Codex-computed, not independently reproduced.
+- Adipose TSHR instruments rs12101255/rs74064796 sit 50 bp apart in TSHR intron 1, ~15 kb from
+  rs179252 (EUR r² 0.46), and are blood TSHR eQTLs (P ~1e-34). Single-SNP P = the variant's GWAS P.
+  Report them as re-expressing the regional association, never as independent support.
+- IGF1R: all ORs > 1, nominal only in BBJ/UKB; FinnGen GD OR 1.07 (0.86–1.33) is the most precise
+  and near-null (detectable OR ~1.36 at P < 0.05). Never write "consistently indicated higher odds".
+  Weighted median BBJ 1.56 (P 0.0288), UKB 1.42 (P 0.00244); Egger intercepts P 0.66/0.56/0.43.
+- Per-allele TSHR ORs 0.80/0.77/0.78/0.77/0.82 (BBJ/UKB/GO/GD/strict GO) explain the per-SD ORs.
+- Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
+- Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
+- No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
+- Abstract 250/250; main text 4,939 (4,986 with sub-headings) of 5,000.
+
+Editing workflow:
+1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
+   (`Tables.md`, `Figure_Legends.md`, `Supplementary_Material.md`, `SupplementaryTables_S1_S2.md`,
+   `TableS3_Tissue_extension.md`, `Cover_Letter_Draft.md`).
+2. Rebuild: `python3 submission/candidate_20261011_review/reproducibility/build_documents_20261014.py`
+   (pandoc + python-docx + LibreOffice + poppler) and inspect rendered pages.
+3. If new numbers were added, extend `reproducibility/derive_review_values_20261014.py` and rerun it.
+4. `python3 scripts/26_wordcount_main_text.py`; then `python3 scripts/29_refresh_manifest.py YYYY-MM-DD`;
+   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 51 framing guards).
+Do not edit scientific output CSVs or workbook data sheets to make an audit pass; the workbook's
+Readme sheet was changed by editing only `xl/worksheets/sheet1.xml`. Keep exact reviewed bytes under
+the package's `-text` attribute.

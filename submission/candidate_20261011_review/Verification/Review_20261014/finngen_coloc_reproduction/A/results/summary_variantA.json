@@ -1,0 +1,35 @@
+{
+  "freq_qc": {
+    "TSHR": {
+      "n_eqtl": 7309,
+      "n_pos_allele_matched": 7270,
+      "n_freq_defined": 7270,
+      "n_gnomad_nonpass": 14,
+      "n_rsid_disagree": 65
+    },
+    "IGF1R": {
+      "n_eqtl": 8499,
+      "n_pos_allele_matched": 8471,
+      "n_freq_defined": 8471,
+      "n_gnomad_nonpass": 59,
+      "n_rsid_disagree": 61
+    },
+    "CTLA4": {
+      "n_eqtl": 5402,
+      "n_pos_allele_matched": 5357,
+      "n_freq_defined": 5357,
+      "n_gnomad_nonpass": 22,
+      "n_rsid_disagree": 40
+    }
+  },
+  "identity_max_abs_delta_PP_vs_september": 0.0028433141263994877,
+  "identity_max_abs_delta_H4_vs_september": 0.00041052650275208435,
+  "max_abs_delta_H4_vs_codex_new_endpoints": 0.0012155583392363112,
+  "max_abs_delta_any_PP_vs_codex_new_endpoints": 0.00279993206335466,
+  "max_abs_delta_H4_vs_codex_all": 0.0012155583392363112,
+  "sept_exposure_fit_residuals": {
+    "TSHR": 2.4453046675817115e-16,
+    "IGF1R": 2.3831451948322946e-15,
+    "CTLA4": 1.6330843104452048e-15
+  }
+}

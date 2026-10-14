@@ -1,0 +1,95 @@
+{
+ "codex_vs_sept_GO": {
+  "n_rows": 9,
+  "max_abs_dPP": 2.192690473634684e-15,
+  "n_equal": true,
+  "top_equal": true
+ },
+ "A_vs_B_same_frequency": {
+  "A_composite__vs__B_composite_404nfe_99fin": {
+   "n_rows": 27,
+   "max_abs_dPP": 4.840379264070549e-08,
+   "n_diff": [],
+   "top_equal": true
+  },
+  "A_AF_nfe_only__vs__B_nfe_primary": {
+   "n_rows": 27,
+   "max_abs_dPP": 5.942310393747263e-08,
+   "n_diff": [],
+   "top_equal": true
+  },
+  "A_gnomAD_PASS_only__vs__B_composite_404nfe_99fin": {
+   "n_rows": 27,
+   "max_abs_dPP": 0.00031033606697999927,
+   "n_diff": [
+    {
+     "gene": "IGF1R",
+     "endpoint": "FinnGen_GO",
+     "p12k": "1e-05",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "FinnGen_GO",
+     "p12k": "5e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "FinnGen_GO",
+     "p12k": "1e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_STRICT",
+     "p12k": "1e-05",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_STRICT",
+     "p12k": "5e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_STRICT",
+     "p12k": "1e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_OPHT_STRICT",
+     "p12k": "1e-05",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_OPHT_STRICT",
+     "p12k": "5e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    },
+    {
+     "gene": "IGF1R",
+     "endpoint": "E4_GRAVES_OPHT_STRICT",
+     "p12k": "1e-06",
+     "n_x": 7841,
+     "n_y": 7850
+    }
+   ],
+   "top_equal": true
+  }
+ },
+ "dL2_endpoint_invariance_max_range": 4.263256414560601e-13,
+ "recompute_max_diff_A": 1.4988010832439613e-14,
+ "recompute_max_diff_B": 2.098321516541546e-14
+}

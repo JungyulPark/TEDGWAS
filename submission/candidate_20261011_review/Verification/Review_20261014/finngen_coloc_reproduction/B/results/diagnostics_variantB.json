@@ -1,0 +1,92 @@
+{
+ "created_utc": "2026-10-14T00:56:39.029118+00:00",
+ "numpy": "2.4.6",
+ "pandas": "3.0.6",
+ "python": "3.11.17 (main, Oct  1 2026, 15:41:07) [GCC 13.3.0]",
+ "gnomad_frequency_matching": {
+  "TSHR": {
+   "eqtl_snps": 7309,
+   "gnomad_pos_present": 7272,
+   "allele_matched": 7270,
+   "assessed_is_ref": 985,
+   "multiallelic_ref_assessed": 82,
+   "strand_complement_only": 0,
+   "non_pass": 14
+  },
+  "IGF1R": {
+   "eqtl_snps": 8499,
+   "gnomad_pos_present": 8475,
+   "allele_matched": 8471,
+   "assessed_is_ref": 1685,
+   "multiallelic_ref_assessed": 165,
+   "strand_complement_only": 0,
+   "non_pass": 59
+  },
+  "CTLA4": {
+   "eqtl_snps": 5402,
+   "gnomad_pos_present": 5366,
+   "allele_matched": 5357,
+   "assessed_is_ref": 1038,
+   "multiallelic_ref_assessed": 74,
+   "strand_complement_only": 0,
+   "non_pass": 22
+  }
+ },
+ "september_implied_exposure": {
+  "rs179252": {
+   "beta_exp": 0.10545515593020054,
+   "beta_exp_from_point": 0.10545515593020052,
+   "stated": 0.10546,
+   "implied_maf_1000G": 0.4940000000000016,
+   "gnomad_nfe_f_effect": 0.530722,
+   "composite_f_effect": 0.5447311888667992,
+   "beta_exp_nfe": 0.10564717981015696,
+   "beta_exp_composite": 0.10587208854847523
+  },
+  "rs148849825": {
+   "beta_exp": -0.175639360244367,
+   "beta_exp_from_point": -0.175639360244367,
+   "implied_maf_1000G": 0.019879999999999953,
+   "gnomad_nfe_f_effect": 0.021464,
+   "composite_f_effect": 0.01901210459244533,
+   "beta_exp_nfe": -0.16917100467275717,
+   "beta_exp_composite": -0.17952409271197306
+  },
+  "rs13030124": {
+   "beta_exp": 0.141157408719134,
+   "beta_exp_from_point": 0.141157408719134,
+   "implied_maf_1000G": 0.45029999999998566,
+   "gnomad_nfe_f_effect": 0.399454,
+   "composite_f_effect": 0.38438061033797216,
+   "beta_exp_nfe": 0.1433874009247868,
+   "beta_exp_composite": 0.14437122389979037
+  },
+  "rs2654980": {
+   "beta_exp": -0.21602093244721204,
+   "solve_max_abs_residual": 5.551115123125783e-17,
+   "implied_maf_1000G": 0.18389999999999918,
+   "gnomad_nfe_f_effect": 0.237635,
+   "composite_f_effect": 0.23706776739562627,
+   "beta_exp_nfe": -0.19661729280481152,
+   "beta_exp_composite": -0.19677918308870754
+  },
+  "rs7181339": {
+   "beta_exp": 0.22008939842349765,
+   "solve_max_abs_residual": 5.551115123125783e-17,
+   "implied_maf_1000G": 0.0477099999999997,
+   "gnomad_nfe_f_effect": 0.04009499999999999,
+   "composite_f_effect": 0.04026052485089462,
+   "beta_exp_nfe": 0.23912732613961032,
+   "beta_exp_composite": 0.23865583019537867
+  },
+  "rs59467480": {
+   "beta_exp": 0.0570945548766026,
+   "solve_max_abs_residual": 5.551115123125783e-17,
+   "implied_maf_1000G": 0.27239999999999975,
+   "gnomad_nfe_f_effect": 0.29035900000000003,
+   "composite_f_effect": 0.2761437415506958,
+   "beta_exp_nfe": 0.05599607578493295,
+   "beta_exp_composite": 0.056852663908665016
+  }
+ }
+}
