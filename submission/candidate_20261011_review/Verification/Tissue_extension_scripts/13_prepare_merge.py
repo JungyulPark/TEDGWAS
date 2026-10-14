@@ -1,0 +1,17 @@
+from pathlib import Path
+W=Path(__file__).resolve().parent
+s=(W.parent/'allele_integration_20261003/merge_workbook.py').read_text(encoding='utf-8')
+s=s.replace("outputs/TED_Research_Contribution_20261003/Supplementary_Dataset.xlsx","outputs/TED_Allele_Integrated_20261003/Supplementary_Dataset.xlsx")
+s=s.replace("O=R/'outputs/TED_Allele_Integrated_20261003'","O=R/'outputs/TED_Tissue_Integrated_20261003'")
+s=s.replace("[(1,24),(2,278)]","[(1,25),(2,353)]")
+s=s.replace('sheet20.xml','sheet21.xml').replace("'name':'TSHR_allele_audit','sheetId':'20'","'name':'Tissue_extension','sheetId':'21'")
+s=s.replace('range(3,20)','range(3,21)').replace("len(wb.find(q('sheets')))==20","len(wb.find(q('sheets')))==21")
+s=s.replace("from xml.etree import ElementTree as E","from xml.etree import ElementTree as E\nfrom openpyxl.utils.cell import get_column_letter")
+s=s.replace('chr(65+ci)','get_column_letter(ci+1)')
+s=s.replace("            if block['headers'][ci]=='method':val='PLINK ML, unphased'\n",'')
+s=s.replace("            if block['headers'][ci]=='phase_basis':val='Inferred from unphased genotypes'\n",'')
+s=s.replace("'unchanged_data_worksheets':17","'unchanged_data_worksheets':18")
+s=s.replace('Readme B1 and row25','Readme B1 and row26').replace('Column_dictionary new rows279:353','Column_dictionary new rows354:484')
+s=s.replace("'new_sheet':'TSHR_allele_audit'","'new_sheet':'Tissue_extension'")
+s=s.replace("print(json.dumps(report,indent=2))", "from openpyxl import load_workbook\nwb_check=load_workbook(O/'Supplementary_Dataset.xlsx',read_only=True,data_only=True)\nassert len(wb_check.sheetnames)==21 and wb_check.sheetnames[-1]=='Tissue_extension'\nassert wb_check['Tissue_extension']['AE20'].value=='snps'\nwb_check.close()\nprint(json.dumps(report,indent=2))")
+(W/'14_merge_workbook.py').write_text(s,encoding='utf-8')

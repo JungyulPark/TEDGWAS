@@ -1,0 +1,37 @@
+{
+  "outcome": "E4_GRAVES_STRICT",
+  "path": "C:\\ProjectTEDGWAS\\finngen_R12_E4_GRAVES_STRICT.gz",
+  "source_sha256": "f69d32ffc1e0ca16aa838145792aef2bd0accb5a60b848358a1e43dedda55a51",
+  "rows_scanned": 21327062,
+  "full_source_scan": true,
+  "genome_build": "GRCh38",
+  "found": [
+    {
+      "chromosome": "14",
+      "pos38": "80984708",
+      "expected_snp": "rs12101255",
+      "source_ids": "rs12101255"
+    },
+    {
+      "chromosome": "14",
+      "pos38": "80984758",
+      "expected_snp": "rs74064796",
+      "source_ids": "rs74064796"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98643092",
+      "expected_snp": "rs6598538",
+      "source_ids": "rs6598538"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98961442",
+      "expected_snp": "rs1815009",
+      "source_ids": "rs1815009"
+    }
+  ],
+  "extract": "E4_GRAVES_STRICT.tsv",
+  "extract_sha256": "7c59040cd4be764f510aa179eef1d3c39125819801074a5edd2fd90478f13298",
+  "utc": "2026-10-03T11:55:32.577606+00:00"
+}

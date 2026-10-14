@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "genes": 14,
+  "settings": 504,
+  "existing_324_max_abs_delta": 1.1102230246251565e-16,
+  "stage1_rows": 7632,
+  "stage1_genes": 2544,
+  "discovery_genes": [
+    "HLA-A",
+    "HLA-DQA2",
+    "CTLA4",
+    "TSHR",
+    "C4A",
+    "HSD3B7",
+    "TUBB",
+    "VKORC1",
+    "TNFSF14",
+    "PRSS36",
+    "MAPKAPK5",
+    "PSMB8",
+    "IFNGR1"
+  ],
+  "combined_primary": [
+    "TSHR"
+  ],
+  "combined_low_prior": [],
+  "MHC_eqtl_region": "All reported cis variants within 1 Mb of the source GenePos (GRCh37); no significance filtering",
+  "posthoc": "Five MHC genes added after review; no prospective selection claim",
+  "independent_R": "504 rows; max absolute posterior difference 5.51e-14; independent base-R equations",
+  "frequency_threshold_crossings": 0,
+  "frequency_max_abs_H4_delta": 0.002622705449059598
+}

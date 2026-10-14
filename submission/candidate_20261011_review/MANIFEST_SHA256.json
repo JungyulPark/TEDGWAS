@@ -1,0 +1,1102 @@
+{
+  "delivery_date": "2026-10-11",
+  "scientific_content_version": "2026-10-03",
+  "scope": "Every file in this delivery except this manifest itself.",
+  "files": [
+    {
+      "path": "Additional_analysis_figure/Tissue_extension_forest.pdf",
+      "bytes": 6264,
+      "sha256": "b5341ea127245d1bca8a15394a7f71be82c16afaca40175d99eb303169d6a2de"
+    },
+    {
+      "path": "Additional_analysis_figure/Tissue_extension_forest.png",
+      "bytes": 122932,
+      "sha256": "855ae1b9fc3b5614f211f0494091f2c0a3e082d4b1184c1af7af4a6b52132e32"
+    },
+    {
+      "path": "Additional_analysis_figure/Tissue_primary_summary.pdf",
+      "bytes": 5768,
+      "sha256": "fd4365dd953680ee90ad8546eb9342a37fbc1ba18de829446befe683467dd17a"
+    },
+    {
+      "path": "Additional_analysis_figure/Tissue_primary_summary.png",
+      "bytes": 122605,
+      "sha256": "a95c7ae9286ad5c51bff715ce773bfa25356937ba3c75db5b04fda11d7f6bc47"
+    },
+    {
+      "path": "All_Figures.pdf",
+      "bytes": 272068,
+      "sha256": "861d6931dee23258acb4644199066891aad9fd0dd2145937a5a7ad0b235e941e"
+    },
+    {
+      "path": "ANALYSIS_REPORT_KO.md",
+      "bytes": 8540,
+      "sha256": "e6040e3c4391f23b62b4a15ebcd7dd75122e258884b8fa3deaf87caa5a19b03a"
+    },
+    {
+      "path": "Cover_Letter_Draft.docx",
+      "bytes": 38541,
+      "sha256": "52758bfe022a88dcf932baf24b5650a6a325ab8c3913378aadb05c6e563f3f89"
+    },
+    {
+      "path": "Cover_Letter_Draft.md",
+      "bytes": 2273,
+      "sha256": "5749babb128f33a9309f5f01ade1b9bc1230d8f09b57b86fd68e29a33651f148"
+    },
+    {
+      "path": "Cover_Letter_Draft.pdf",
+      "bytes": 62382,
+      "sha256": "82b13360d9eef0702f192da543f2953d96202cca190c5ddb7a0a751d9e9f158e"
+    },
+    {
+      "path": "Figure_Legends.md",
+      "bytes": 3123,
+      "sha256": "8d448a657981b81cdf8521bd6fb55d1631f675e6786dc71e73d960e95dbe18b1"
+    },
+    {
+      "path": "Figures/Figure1.pdf",
+      "bytes": 85481,
+      "sha256": "86d349005d982c368e63b00fc2aeaa14e126c4edab9b5afb396de6fb9f301edf"
+    },
+    {
+      "path": "Figures/Figure1.png",
+      "bytes": 339133,
+      "sha256": "f52b56e93725e11ed13970601074466966cdb64e55e1a44f80c0d00b088a7c80"
+    },
+    {
+      "path": "Figures/Figure2.pdf",
+      "bytes": 40841,
+      "sha256": "6840486697e4d50ec33f15d165063e24b2c05a3d93fb57159601118f8ca3bd3e"
+    },
+    {
+      "path": "Figures/Figure2.png",
+      "bytes": 324886,
+      "sha256": "394835e159939c6ba8ae4dfe6c6b4943adc8bc21cbac61d9a00980ab229e3802"
+    },
+    {
+      "path": "Figures/Figure3.pdf",
+      "bytes": 59641,
+      "sha256": "479fbe30395f11fb1b77e212ef04a9955168f60863b4f01349466613307a57e5"
+    },
+    {
+      "path": "Figures/Figure3.png",
+      "bytes": 489019,
+      "sha256": "c95d232c266b9d4db493c2be298b7c978692bbfae5d6db28b1f2ae1b0ed5f6b2"
+    },
+    {
+      "path": "Figures/FigureS1.pdf",
+      "bytes": 56247,
+      "sha256": "9920bf7a710fa8e3c3f9df77fba36c94000782b2745e4c387de549f6dc51f75b"
+    },
+    {
+      "path": "Figures/FigureS1.png",
+      "bytes": 92994,
+      "sha256": "db14ccc6ca58aea4d35c688724d0bf26ad27e56b88fdbcf7eeb30ea5f66f3d7b"
+    },
+    {
+      "path": "Figures/FigureS2.pdf",
+      "bytes": 42476,
+      "sha256": "2017438babd3d0bf8b1a84a0fe00551da460a872cb6c333dde691071118f700e"
+    },
+    {
+      "path": "Figures/FigureS2.png",
+      "bytes": 359500,
+      "sha256": "57e8e70d0298820548a620b3ad23a8d5e78b9482b66b83490c5d50044fc7cb16"
+    },
+    {
+      "path": "FINAL_RESULTS_INSIGHTS_KO.md",
+      "bytes": 8522,
+      "sha256": "429f21835978e586d537d81f25c152954c176ad95f45b359eb82284f9e7a8276"
+    },
+    {
+      "path": "Final_Tables_Figures.pdf",
+      "bytes": 1868511,
+      "sha256": "6a8921ce0c50fd871fd9fc0cebedf1fc9ff0690b9bc22eaff41ec9deab3ffa43"
+    },
+    {
+      "path": "Full_Review.pdf",
+      "bytes": 910979,
+      "sha256": "2770a8fa4f40d6743614796c51620e4d83f8d70762963bcedc31a16f8650b719"
+    },
+    {
+      "path": "Manuscript.docx",
+      "bytes": 56485,
+      "sha256": "a441cf2a1618834d2085a04db3653979dbefd21e921ae956e2f2848cec341586"
+    },
+    {
+      "path": "Manuscript.md",
+      "bytes": 47546,
+      "sha256": "cb42169326bbab6d342c5c5eb0f32dbb9fec32fa3c3e56fc8dacaf161b4c759c"
+    },
+    {
+      "path": "Manuscript.pdf",
+      "bytes": 208182,
+      "sha256": "8f19b422adac4e6f7bc55d6e8a519e67498a2cd914af47ae725a74a6173a8c94"
+    },
+    {
+      "path": "README_KO.md",
+      "bytes": 2401,
+      "sha256": "9290ddd057ab10d4885ca652e50c65029c1aef2093b8a2e64130e3280fcf307d"
+    },
+    {
+      "path": "Research_planning/CLARIFICATIONS_FREEZE.json",
+      "bytes": 247,
+      "sha256": "d7c99b3769a965992ee79cafd2f8699e8f4e0d02338ffe6be809aebd3048fa1a"
+    },
+    {
+      "path": "Research_planning/IMPLEMENTATION_CLARIFICATIONS.md",
+      "bytes": 2866,
+      "sha256": "2e99f145c2908406435b39407b97553fbdf537ff1d205ecd29e8a82b977d14d4"
+    },
+    {
+      "path": "Research_planning/PROTOCOL_FREEZE.json",
+      "bytes": 297,
+      "sha256": "e4ebd068111718ae3369bb1b3b8b158da114f7cebc9cf6d605ed2515f590d22b"
+    },
+    {
+      "path": "Research_planning/PROTOCOL_v1.md",
+      "bytes": 8983,
+      "sha256": "7ac81a62df6043cb63fe18c7dd79479526340331bfffd917ab2de3bd9cda3ff1"
+    },
+    {
+      "path": "Research_planning/Tissue_planned_results_50_cells.csv",
+      "bytes": 7061,
+      "sha256": "6d4c17ef88fc5cbaafa52b2bca795ddbee2876570adbce759a853ed9e9d0b53b"
+    },
+    {
+      "path": "Review_only/PLACEMENT_KO.md",
+      "bytes": 6612,
+      "sha256": "fde65ae91c60d106022b595920d933bad7d6620ef41bd85450c29b1482e500eb"
+    },
+    {
+      "path": "Review_only/Tissue_result_tables.docx",
+      "bytes": 40350,
+      "sha256": "3fa8e782aef09f725ad2812f68d7af62f2a0380e0b9a30bf0369150dfce15d31"
+    },
+    {
+      "path": "Review_only/Tissue_result_tables.pdf",
+      "bytes": 181639,
+      "sha256": "f1b5f7a9f47b585113280a8ffb43c3e8c0c57f5d668c87ef26a7c59ab58b3ba6"
+    },
+    {
+      "path": "Review_only/Tissue_results_review.pdf",
+      "bytes": 119351,
+      "sha256": "751362fe7e36e38a6abcccca4ea091ca37c4f7a72f49e8cb12d4a889cd7c7d93"
+    },
+    {
+      "path": "STROBE_MR_Checklist.docx",
+      "bytes": 39271,
+      "sha256": "20ac7dcaa94668aa8a013820af43eab6fa264b514cbc83be52f91bf9d5f49221"
+    },
+    {
+      "path": "STROBE_MR_Checklist.pdf",
+      "bytes": 102757,
+      "sha256": "aeb837a90623a5e0df8d1557792fd608fa7786fdd5c8eb74b0747d6e40d42e1e"
+    },
+    {
+      "path": "Supplementary_Dataset.xlsx",
+      "bytes": 9986636,
+      "sha256": "fae0136df36e46e2a1f1492927722a3be3541e9324678e7f3daa32c1dedb0048"
+    },
+    {
+      "path": "Supplementary_Material.docx",
+      "bytes": 438365,
+      "sha256": "e366b0728c46e5acb53a2206b5dbb5ff1fa229e4997365c4f171c8cfa56f19d3"
+    },
+    {
+      "path": "Supplementary_Material.md",
+      "bytes": 13351,
+      "sha256": "1a31ca274e3b6feac1a3acab3a16f1d7ef75c1385067c2456d6d6f7b19845dc7"
+    },
+    {
+      "path": "Supplementary_Material.pdf",
+      "bytes": 533216,
+      "sha256": "0c6023c9e4ce864fe1d2e47e8277b582464a1c73633b030fbe3adb809b6675f6"
+    },
+    {
+      "path": "Tables/Table1.pdf",
+      "bytes": 93797,
+      "sha256": "7332a015c26772e1af83ebfc6e16d7467d6168db2a83d4931bf1cf028a19d3cc"
+    },
+    {
+      "path": "Tables/Table2.pdf",
+      "bytes": 94758,
+      "sha256": "886959fcc0794b5d6524cd339e718887ecb09a3f084146cc90ccbf70962ec958"
+    },
+    {
+      "path": "Tables/Table3.pdf",
+      "bytes": 98202,
+      "sha256": "4f1e434a7e781a1e872ce206f4985c198a6607bc12374545d09847036a865a50"
+    },
+    {
+      "path": "Tables.docx",
+      "bytes": 43308,
+      "sha256": "4ac0c53922bc525aa29819dd8f61f29f83621d76c7442c2575b80e375dc01645"
+    },
+    {
+      "path": "Tables.md",
+      "bytes": 6455,
+      "sha256": "c0870f5097c21b2d6ff0bb4548610b3d32cf22f4432a40da4e12520b9394ac4e"
+    },
+    {
+      "path": "Tables.pdf",
+      "bytes": 236962,
+      "sha256": "80efe7973aaad6cce957d287c3372194fcb0b23eb2d20171be447d355425dc20"
+    },
+    {
+      "path": "TableS3_Tissue_extension.md",
+      "bytes": 1565,
+      "sha256": "75109b529beccd93d8ee562071144b248f22260a017ddcf19185a53ee7570aaa"
+    },
+    {
+      "path": "TableS3_Tissue_extension.pdf",
+      "bytes": 433294,
+      "sha256": "920fdf890a717528c1cbccf2f3b99201e81f2e68dace69b0db836103ff689abb"
+    },
+    {
+      "path": "Verification/Delivery_QA_20261011.json",
+      "bytes": 1185,
+      "sha256": "3f00d7cc3ea760ed4ba98708ecee982c984179e877029716551f31e139d76d8c"
+    },
+    {
+      "path": "Verification/Delivery_scripts/01_check_sources.py",
+      "bytes": 1195,
+      "sha256": "65f30d5b172d62b63cbad27d91d297ef385ec3b2d06c6904c78988e3eda91bb4"
+    },
+    {
+      "path": "Verification/Delivery_scripts/02_package.py",
+      "bytes": 2809,
+      "sha256": "cbef658dadc230ef2bbb318a6471331a1e584f4796634fa3407fab6e0fc12dc0"
+    },
+    {
+      "path": "Verification/Delivery_scripts/03_verify_render.py",
+      "bytes": 2459,
+      "sha256": "af0fc4e2560564050307ed26f026401595fcc5b9d510144d845106ad9b84be58"
+    },
+    {
+      "path": "Verification/Delivery_scripts/04_seal_delivery.py",
+      "bytes": 2945,
+      "sha256": "18809da026db0fcd3b5e34ee402e769f63e4dccfed3ec143f25c0639a22176c3"
+    },
+    {
+      "path": "Verification/Delivery_source_verification_20261011.json",
+      "bytes": 244,
+      "sha256": "b56bdbb3b1bb8960d85fa9dbed9e83291dd5bf05b528e643a47c080a80506f5b"
+    },
+    {
+      "path": "Verification/final_checks.json",
+      "bytes": 12510,
+      "sha256": "2e2df88dfc6b4bd04d808ff620e3aafdc02a88d0a63d512d0b176a4569347032"
+    },
+    {
+      "path": "Verification/full_review_contents.json",
+      "bytes": 494,
+      "sha256": "f8095e520c13ac8a47c8d8a456766ce8977f2c46032840dcfc0199d192b6d5f0"
+    },
+    {
+      "path": "Verification/Integrated_source_manifest_20261003.json",
+      "bytes": 36467,
+      "sha256": "bf9964c40a13a0498d372d9a359226f03f3c0e664f963a1210b48d6280c0d723"
+    },
+    {
+      "path": "Verification/integration_summary.json",
+      "bytes": 746,
+      "sha256": "b2d89c3b2b1873fcdd519f926fa10b3b57451acd3bd908d807f55ece94340ac9"
+    },
+    {
+      "path": "Verification/Manuscript_changes.diff",
+      "bytes": 33339,
+      "sha256": "c38a77ea3c7d10daa062af99a54287c128dd62d123a56c167d3af8869f620b30"
+    },
+    {
+      "path": "Verification/PDF_assembly_checks.json",
+      "bytes": 250,
+      "sha256": "e64bfca36066e77f7a159c53bd0681b23fdcbadbf519e332c8309e7bf1d4dad4"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/AUDIT_RESULT.json",
+      "bytes": 5275,
+      "sha256": "fbc93509d8e3d4cdd2477aee7f7759ed773d552873324dfb320a2cfc78138461"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/EXECUTION_NOTES.md",
+      "bytes": 2258,
+      "sha256": "86e2ded506a51e07b06fec4be10bc82c30f110017daf79da3c6805822a499961"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/counted_alleles.txt",
+      "bytes": 24,
+      "sha256": "15dc3c124560c24f8722cca1976dee2aaaf6291cabc8c54feeaec7385c019358"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_G_dosage.console.txt",
+      "bytes": 2860,
+      "sha256": "bc17c0f11c13cb7c99bc9f2f12333fd7702b7473e2a119644bc15a5f4ec5cf8b"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_G_dosage.log",
+      "bytes": 1649,
+      "sha256": "30104fc3ca8171e285865b9fefe6a9d8097217807c79daec996355063bf47da1"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_G_dosage.raw",
+      "bytes": 15173,
+      "sha256": "14531dccc4efe60224ecfdff6199854d04fc95582b2c2addc1b0a8a143b8fcfe"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_haplotype.console.txt",
+      "bytes": 2330,
+      "sha256": "e622989f0fa4903a8d65cb461d0a7043983180dbf04e90a79aa0c6d6b13f9231"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_haplotype.log",
+      "bytes": 1698,
+      "sha256": "d3685950060144a6f190ef67c1cb989c5244c53cee9defc159fa0ea6aa85a727"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_signed.console.txt",
+      "bytes": 2307,
+      "sha256": "b6189192d1c7b8350ab956997d47eac329320ce2d53a5fd027a03e9d90f8badc"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_signed.ld",
+      "bytes": 220,
+      "sha256": "e6685f343046dec048c87049fcc09509fcaa8feaa1e5c02ef87c2ced2bca2d1b"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EAS_signed.log",
+      "bytes": 1606,
+      "sha256": "51bd00904b52e259598f87f924161f602a854662582409a1b1ca9c7589a3e7d6"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_G_dosage.console.txt",
+      "bytes": 2860,
+      "sha256": "c572c3989be600bc9378a762241efe843779d7e46a03ddc2e6e41b547a606881"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_G_dosage.log",
+      "bytes": 1649,
+      "sha256": "113c1b550e7e62a6b91032aa2827e21027f4870dbcb8672d1bc39ade6426d859"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_G_dosage.raw",
+      "bytes": 15143,
+      "sha256": "86505183a4fa0dd68416181ad5731838bd782509965bc213e66fa64c3cdb92ec"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_haplotype.console.txt",
+      "bytes": 2337,
+      "sha256": "99629de3eebc08e71c2a4cad507ef1c89c1d03d4f3779e41c7c7b1c347eaba41"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_haplotype.log",
+      "bytes": 1705,
+      "sha256": "8ff21d3441ea79432d880af543b4608915edd5a7bc72ebfb90e63773f38a73cc"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_signed.console.txt",
+      "bytes": 2307,
+      "sha256": "0014bf1cdd3279898eebb3000af192a94b437ae66eda55e2dcfe59ed3f5060db"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_signed.ld",
+      "bytes": 220,
+      "sha256": "4f433ed787125dcf218ef98356b8b41831ffb0551510449a391f896e1178b74c"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/EUR_signed.log",
+      "bytes": 1606,
+      "sha256": "64317334ab5d5cd60480c69344eaf97b6eb313591a23edb6189bed81e4b1a6ae"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/LD_verification/variants.txt",
+      "bytes": 20,
+      "sha256": "a7cb493f772680ed74b4d0208eadf9ded5c72d4effecbf0cfb504fb1ca4929ef"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Manuscript_insertions.md",
+      "bytes": 5391,
+      "sha256": "d430e8cc9e9208394d65d439262793824c413619cbe81dd3888bef6bb9a34a44"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/PACKAGE_MANIFEST.json",
+      "bytes": 7495,
+      "sha256": "8cf423201113672eea6515c7b4d5d80dbdcee682a335815226103c2bc1df3344"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/PROTOCOL_FREEZE.json",
+      "bytes": 297,
+      "sha256": "e4ebd068111718ae3369bb1b3b8b158da114f7cebc9cf6d605ed2515f590d22b"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/PROTOCOL_v1.md",
+      "bytes": 8983,
+      "sha256": "7ac81a62df6043cb63fe18c7dd79479526340331bfffd917ab2de3bd9cda3ff1"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/READ_RESULTS_KO.md",
+      "bytes": 9350,
+      "sha256": "75b8b3caa2b9b13d66014f728ac74add1cacc0f57eb7174541044a9eeceabc8d"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Reproduce/01_audit.py",
+      "bytes": 12996,
+      "sha256": "d6964f8ce7c00def9d0d7892b427bd55b5578af837d851fc550e764e3a000906"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Reproduce/02_report.py",
+      "bytes": 23376,
+      "sha256": "41cceb52049f44840836cb8d3f075d7c2b9c6a914fa0a525f3bfbb0e51c789fc"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Reproduce/freeze_protocol.py",
+      "bytes": 10653,
+      "sha256": "404b12f1654cec986e3dbf6c61dde622a4a5c0857c29a6d2d7070da29010ae3f"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Reproduce/README.md",
+      "bytes": 1246,
+      "sha256": "91a21fc417a43962e993e7c4d9b9318d14f55e03da997921f962779791e4d455"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/BBJ_original_rows.tsv",
+      "bytes": 382,
+      "sha256": "2137e9745b2ca865d7d6e39ad8935b9d99f766fe67bc95598b8139ced4b493dc"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/E4_GRAVES_OPHT_STRICT_original_rows.tsv",
+      "bytes": 290,
+      "sha256": "92f9c14d6417cbb64e737b4967d65d3910dd1157c4d30135a8808c2fbfcf01be"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/E4_GRAVES_STRICT_original_rows.tsv",
+      "bytes": 291,
+      "sha256": "a31c1b94d225caeb5b2f88ddf79a8b78e7359305210dff31cd339b9c57dc157f"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/eQTLGen_original_rows.tsv",
+      "bytes": 327,
+      "sha256": "161928de725f4135fe7b8257468afe80f26fa9ea729b1604b831a76449cb9c53"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/FinnGen_GO_original_rows.tsv",
+      "bytes": 290,
+      "sha256": "f83d0f0d10d466549801d70fef28cef087d260a49b691c434ede40542256d3f2"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Source_extracts/UKB_original_rows.tsv",
+      "bytes": 611,
+      "sha256": "3121357186331f93a662888962451c9eebdca603bf32a9d152cb0a965133c707"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/SOURCE_MANIFEST.json",
+      "bytes": 6942,
+      "sha256": "5f1beef7619c87fec10b340be07d9ca8a00200c409d5354fda163a45a7856c18"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Reference_two_locus_genotype_counts.csv",
+      "bytes": 259,
+      "sha256": "3c13e8aa08b87163736b47944cb08da8afd18cb329a3d7f5fe66c2428ed9af76"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Table_A1_eQTL_original_direction.csv",
+      "bytes": 342,
+      "sha256": "f14f6db5e0e2ec347ee18b4eea6043b4bc1416d5aae8a79c6bc1b7db1c5d49be"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Table_A2_signed_LD.csv",
+      "bytes": 707,
+      "sha256": "78f931f20fd8d08fc7aad99afa4f655c36b9c8821a7a3ca8ab2503c53ad0cd2b"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Table_A2b_inferred_haplotype_frequencies.csv",
+      "bytes": 883,
+      "sha256": "a94d7b92ef760e054a3e86083ce18a58f75f3e8ba0bbde8107c47383ffaa9a1c"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Table_A3_both_variants_five_disease_GWAS.csv",
+      "bytes": 2313,
+      "sha256": "b7250848c53d2b53434c68d13f5816c2fdd0cbb40ab95c076754755987343716"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tables/Table_A4_MR_reproduction.csv",
+      "bytes": 1708,
+      "sha256": "ecbea3852c7d8b5092e1ff941f4482f4232efbfc81f86d8b6aed94d525e235c2"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/Tissue_planned_results_50_cells.csv",
+      "bytes": 7061,
+      "sha256": "6d4c17ef88fc5cbaafa52b2bca795ddbee2876570adbce759a853ed9e9d0b53b"
+    },
+    {
+      "path": "Verification/Previous_allele_audit/verification_checks.csv",
+      "bytes": 5056,
+      "sha256": "95d14a5cf1063a381a28c09195e574481902a09e0b3f216d85a1ece1ea6f86f1"
+    },
+    {
+      "path": "Verification/Previous_package_SHA256.json",
+      "bytes": 10743,
+      "sha256": "f1fd3d691ec9eadbd25a2c3317149df0f5a3bb5885f30acd2c5b676ec2f56fce"
+    },
+    {
+      "path": "Verification/Supplementary_Material_changes.diff",
+      "bytes": 4524,
+      "sha256": "90af239fa2923c356b6924dae97d2c0d31073cea32ba29e3f4464f0fab81d3a4"
+    },
+    {
+      "path": "Verification/Tables_figures_contents.json",
+      "bytes": 820,
+      "sha256": "8866b1d54597907043bf0d7b073940ff133bcef8d4fc1113bbff081c6af23ad8"
+    },
+    {
+      "path": "Verification/Tissue_display_source_manifest_20261003.json",
+      "bytes": 2181,
+      "sha256": "25ea0fbd92f432d50028823043c9e991b5d08ff6b4b38d806492c6dd2a28a092"
+    },
+    {
+      "path": "Verification/Tissue_extension/Figures/Tissue_extension_forest.pdf",
+      "bytes": 6264,
+      "sha256": "b5341ea127245d1bca8a15394a7f71be82c16afaca40175d99eb303169d6a2de"
+    },
+    {
+      "path": "Verification/Tissue_extension/Figures/Tissue_extension_forest.png",
+      "bytes": 122932,
+      "sha256": "855ae1b9fc3b5614f211f0494091f2c0a3e082d4b1184c1af7af4a6b52132e32"
+    },
+    {
+      "path": "Verification/Tissue_extension/Instrument_checks.json",
+      "bytes": 17672,
+      "sha256": "1d562fa9f62f441eff08b8dc95cb27b5a318a294a7e874ea0adf5fb59fa90342"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/EUR_candidates.bim",
+      "bytes": 914,
+      "sha256": "61dd6776010a79a9dd760f5d9fe8884f58751cc65b0413fed7d8427d2f511602"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/EUR_candidates.log",
+      "bytes": 1749,
+      "sha256": "7d734ab4b39bfc0861a144af616dc6b571e80922f74712cb3998c0d5794ac87b"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/extract.console.txt",
+      "bytes": 2949,
+      "sha256": "223c781be3a6a3f2fb02738f59187ac64126806f4053d50562284d8987535374"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/extract_initial_memory_limit_failure.txt",
+      "bytes": 1072,
+      "sha256": "99c22d3d96dc44a32aaa6ce60aae2f547987f68d9e46e3584456762dfc920157"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/extract_snps.txt",
+      "bytes": 356,
+      "sha256": "11e5ec834162adcb408f2c1cd275db3ab4c4bfa0331fdf31cb6a04a9aa478c41"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Cells_Cultured_fibroblasts.clump_input.tsv",
+      "bytes": 28,
+      "sha256": "8fb4a9538b0c6ef344c389d87a578e2e79e2c713eeb1cc4aefa06a361c8ceb3c"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Cells_Cultured_fibroblasts.clumped",
+      "bytes": 192,
+      "sha256": "17f652e164feb7b09a2699cd5e58957f509fddaf98ab9e46641fde45c09b9c9f"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Cells_Cultured_fibroblasts.console.txt",
+      "bytes": 2268,
+      "sha256": "6c3ba37eff086bcd1b3ee8328e0d63cc57f3b24e481a7871e5de30491c32211d"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Cells_Cultured_fibroblasts.log",
+      "bytes": 1629,
+      "sha256": "55fd60de4106fd27082d6f181180c74a4499070bdfe3c24c7bac32d3d8bc4615"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Thyroid.clump_input.tsv",
+      "bytes": 451,
+      "sha256": "d88124b9a745bce00c53946316573c33fb7afae90cded5442fdeca17743cb62f"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Thyroid.clumped",
+      "bytes": 430,
+      "sha256": "7bdaf06454ba108abf6292969c75f9e8fae266a1cf5bd7cfc00e66245b32e060"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Thyroid.console.txt",
+      "bytes": 2194,
+      "sha256": "6da39e301fd73665d1a1bf1a2bd6a3510ced73c7c585d61a163d29e380d59eac"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/IGF1R__Thyroid.log",
+      "bytes": 1574,
+      "sha256": "65d5fe9135012dc8aacc4659dee462fd78a3d7bd3e6443302be538e348e31797"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Subcutaneous.clump_input.tsv",
+      "bytes": 242,
+      "sha256": "2e3a2994b1ed50b4c2aeded4781b3b94f606ab06c683f804863484f06057a2c9"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Subcutaneous.clumped",
+      "bytes": 308,
+      "sha256": "76f15710a435e598c30850887de8ae47277f29e22a14fa400e1c6df7ba08dbbb"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Subcutaneous.console.txt",
+      "bytes": 2242,
+      "sha256": "38ccd9c867e58582bc0f7ee21d81fb2a65c08a6df53294f95783bb2c5f76aa68"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Subcutaneous.log",
+      "bytes": 1610,
+      "sha256": "47b4717898f735349e0248cbba1cef585c5849201f66cad59dee3584490cf834"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Visceral_Omentum.clump_input.tsv",
+      "bytes": 126,
+      "sha256": "b8454e3f68ac771a61ee7c8e365cc13ffb305bc30c863342d9646668b968a674"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Visceral_Omentum.clumped",
+      "bytes": 242,
+      "sha256": "eae0ffc2aad98a6f03b4e478cd4689d6322fea91b8753a94ebcb80b00775b148"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Visceral_Omentum.console.txt",
+      "bytes": 2257,
+      "sha256": "daa40e620cf7e4abef981475952d86bd5b6640dabff4bbb49798b165e86cff99"
+    },
+    {
+      "path": "Verification/Tissue_extension/LD/TSHR__Adipose_Visceral_Omentum.log",
+      "bytes": 1621,
+      "sha256": "94d138b5843b748a74980ab821954e2e83debd5fa3fde174a8213c26caa11d43"
+    },
+    {
+      "path": "Verification/Tissue_extension/MR_checks.json",
+      "bytes": 12859,
+      "sha256": "754437ae9701ef2060ec83f985df4a0fa262448a4d8381a1b5a0704d5e85810f"
+    },
+    {
+      "path": "Verification/Tissue_extension/Protocol/CLARIFICATIONS_FREEZE.json",
+      "bytes": 247,
+      "sha256": "d7c99b3769a965992ee79cafd2f8699e8f4e0d02338ffe6be809aebd3048fa1a"
+    },
+    {
+      "path": "Verification/Tissue_extension/Protocol/IMPLEMENTATION_CLARIFICATIONS.md",
+      "bytes": 2866,
+      "sha256": "2e99f145c2908406435b39407b97553fbdf537ff1d205ecd29e8a82b977d14d4"
+    },
+    {
+      "path": "Verification/Tissue_extension/Protocol/PROTOCOL_FREEZE.json",
+      "bytes": 297,
+      "sha256": "e4ebd068111718ae3369bb1b3b8b158da114f7cebc9cf6d605ed2515f590d22b"
+    },
+    {
+      "path": "Verification/Tissue_extension/Protocol/PROTOCOL_v1.md",
+      "bytes": 8983,
+      "sha256": "7ac81a62df6043cb63fe18c7dd79479526340331bfffd917ab2de3bd9cda3ff1"
+    },
+    {
+      "path": "Verification/Tissue_extension/Protocol/Tissue_planned_results_50_cells.csv",
+      "bytes": 7061,
+      "sha256": "6d4c17ef88fc5cbaafa52b2bca795ddbee2876570adbce759a853ed9e9d0b53b"
+    },
+    {
+      "path": "Verification/Tissue_extension/R_independent_verification.csv",
+      "bytes": 1511,
+      "sha256": "e781783623aa279b233afc6de3fb030c78d291ecaec5df67999f7f50e1e872df"
+    },
+    {
+      "path": "Verification/Tissue_extension/R_sessionInfo.txt",
+      "bytes": 414,
+      "sha256": "76f6b61c731c3ddca231b30ddceb6e65f052290c06af0d93f39d219a6c65847d"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Adipose_Subcutaneous.v8.egenes.target_genes.tsv",
+      "bytes": 926,
+      "sha256": "1db9892072817da6b59f4591bd88d29c53cffd476a696f4b92f48ec214d32f90"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Adipose_Subcutaneous.v8.signif_variant_gene_pairs.target_genes.tsv",
+      "bytes": 23000,
+      "sha256": "91493105e2162a7123f560342dfab81ae441f57cf264d5ee0f02d14d388f7bc0"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Adipose_Visceral_Omentum.v8.egenes.target_genes.tsv",
+      "bytes": 919,
+      "sha256": "3559c85f574c4688e01f9a042b411c7f4e7fbf08c04cb817ed9cfe4aa1c78c15"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Adipose_Visceral_Omentum.v8.signif_variant_gene_pairs.target_genes.tsv",
+      "bytes": 13951,
+      "sha256": "eb31296c289da579f72b6ea42e94cbb600f2e5608e6557983c871bb9c8c82d20"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/allpairs_objects.json",
+      "bytes": 1258,
+      "sha256": "7436e1ec60cdac38b90ebc8f909a935d6f7a61a401fe18d8766baae4f86a435c"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/allpairs_objects.provenance.json",
+      "bytes": 323,
+      "sha256": "fd384524aad70c6d0a34154c5de4edf6d1c2a831fa35e698696e75c004a55f37"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Cells_Cultured_fibroblasts.v8.egenes.target_genes.tsv",
+      "bytes": 642,
+      "sha256": "5d7dd3829a49e514c0946b449227b0ebe8b7d7f07818ee37ed34008cb448c299"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Cells_Cultured_fibroblasts.v8.signif_variant_gene_pairs.target_genes.tsv",
+      "bytes": 6321,
+      "sha256": "b821649b6a3be1b1a6f622059e6f8e74df6c7e99e38a699336cb81bf943320e6"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/cloud_objects.json",
+      "bytes": 19135,
+      "sha256": "39e1c3de08fe2a692c94bafa0ad694286b5093d267fdeedbf7d399c41ad83db8"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/cloud_objects.provenance.json",
+      "bytes": 286,
+      "sha256": "26f373f9fcd79e7a89a029d8c5d76ef0e871858cc8487a4cdbcf3c3f00341a82"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/BBJ_Graves.manifest.json",
+      "bytes": 1073,
+      "sha256": "a3d892a1e06008ae2d0541b9e8f6af46726777ee41b4d697bbd9ee8cc5d82e30"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/BBJ_Graves.tsv",
+      "bytes": 601,
+      "sha256": "30b9de4a07a20c6d9cb25e226418a587b49b3b389686a75b9046400c45fdbebd"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/E4_GRAVES_OPHT_STRICT.manifest.json",
+      "bytes": 1045,
+      "sha256": "c12566c852cab1801949b7db91ec526cf0d48854ef05cc7761a18fa93f9475df"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/E4_GRAVES_OPHT_STRICT.tsv",
+      "bytes": 500,
+      "sha256": "b554660c179bd9ff0c1d27dfc3903972bc6bd0dc35186853c06f3dbdd750b291"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/E4_GRAVES_STRICT.manifest.json",
+      "bytes": 1030,
+      "sha256": "6aacc1bd171ba6ab9f4c5224df78c4a288d98a6cbd57a6b63ef71a9b55942b66"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/E4_GRAVES_STRICT.tsv",
+      "bytes": 501,
+      "sha256": "7c59040cd4be764f510aa179eef1d3c39125819801074a5edd2fd90478f13298"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/FinnGen_GO.manifest.json",
+      "bytes": 1013,
+      "sha256": "9fe5c6da2e24d504a895385538b0bb9e482023190746c4f3cf727fb311900cab"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/FinnGen_GO.tsv",
+      "bytes": 500,
+      "sha256": "0e29a2aa6100acf17de72b16416cd781efb3c4726bc41f11999445b72dac1ddf"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/UKB_hyperthyroid.manifest.json",
+      "bytes": 1084,
+      "sha256": "cd521938d2181106ba1a3c100b6220174841866b1510309fb4bd3a965bcee63d"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_extracts/UKB_hyperthyroid.tsv",
+      "bytes": 942,
+      "sha256": "3df2c53d300d271b626ca5449f195b4c50af29dc7e9cca29502f97ed88002f81"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/disease_source_manifest.json",
+      "bytes": 5633,
+      "sha256": "848017c459c65b1e02d108a853ea0b121c698a46586a1e7f0b4f083f4265ad22"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/download_metadata.json",
+      "bytes": 313188,
+      "sha256": "0eb1c7ebc30bcad74ea39097af198c0ecccb5c3795460014e486865e3c02305d"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/genes.json",
+      "bytes": 874,
+      "sha256": "d623324c7e7b2c42585ff30e0bfa0a0573cec53fba722a344052fdc9c9cefbcc"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/genes.provenance.json",
+      "bytes": 242,
+      "sha256": "2b490a6404b6a6a8e16be225fb5b652dfb19bf36ff17b96fc45bdd81abb8f656"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/gtex_extraction_manifest.json",
+      "bytes": 8621,
+      "sha256": "5aa0c28314bc7bfb5c5c5fb0cec723f9dd134a3929837280c06a48e01e789396"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/http_range_log.json",
+      "bytes": 21889,
+      "sha256": "1c3afe2ada1e74db78aa93a885a74174d30d235d470cf119daa17f370bccc19e"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/openapi.json",
+      "bytes": 179723,
+      "sha256": "5cc28ae92cc01c2fcf6c553b3faf3b5b8700bf85b659505538397311a2667dbd"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/openapi.provenance.json",
+      "bytes": 214,
+      "sha256": "14c5386ce877a3c2953cfa2fe6e47ce52479c420fa29da81ad1e7ab94b84642f"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/readme.provenance.json",
+      "bytes": 248,
+      "sha256": "fac6774ff3329270b494c3525cea863783226395abfa55aa3da8d4ed65302b0a"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/readme.txt",
+      "bytes": 5110,
+      "sha256": "509899b71f0dc790e862f36366043e66c6bdb886efc7281bd1708737d6062ab0"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/tar_index.json",
+      "bytes": 15745,
+      "sha256": "e99de75d39471b28319620862532ccd705717a3b305fefe4980648db03c7089d"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Thyroid.v8.egenes.target_genes.tsv",
+      "bytes": 923,
+      "sha256": "ef098dc41bcc63952512a5b67873b7a36ea94e3f528d68560dad015e571767d5"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Thyroid.v8.signif_variant_gene_pairs.target_genes.tsv",
+      "bytes": 12018,
+      "sha256": "dabd564ff2ac1ad824acefeea96d8015613698b937c99f46403d18ec630b7da7"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/tissues.json",
+      "bytes": 44921,
+      "sha256": "f8e857cdbcb40fa373dcbe7a913eb74bac8cbdbd717fc1ff961318f29f186162"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/tissues.provenance.json",
+      "bytes": 243,
+      "sha256": "29f465179a4b9a24b55044ba4566453ce09b6674540b2866903b3936e24fe77c"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/variant_api_example.json",
+      "bytes": 325,
+      "sha256": "3c257c2926778a246272981653ab32f68b0e5af6cfcdfc6d6881c6b3bea823c1"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/variant_mapping/chr14.json",
+      "bytes": 2631,
+      "sha256": "70203b329daaccec109936391e44ec9cf8217c22745eca248df76699d6265ad2"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/variant_mapping/chr14.provenance.json",
+      "bytes": 395,
+      "sha256": "efedfa3bc426268749dac0d2bb62c08a0adc80c323d73aee15708c29b7a17221"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/variant_mapping/chr15.json",
+      "bytes": 4942,
+      "sha256": "52a361b4b327a450ee31e4166a1c74bd818f7cc6a7714d354f47e697655a8e13"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/variant_mapping/chr15.provenance.json",
+      "bytes": 525,
+      "sha256": "6d44df811fadf77435cc0e839ec0bab291e78c236ecd866efa07b57d97b5e034"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Whole_Blood.v8.egenes.target_genes.tsv",
+      "bytes": 913,
+      "sha256": "67019a4f5cd2e82c29722a75d3350a0488be4524fe00d9f1e7de70e5ae8b807d"
+    },
+    {
+      "path": "Verification/Tissue_extension/Sources/Whole_Blood.v8.signif_variant_gene_pairs.target_genes.tsv",
+      "bytes": 135,
+      "sha256": "29167f587173a287d77ea53636765ba74ccbf221edc4e39f96344fac3e0b4119"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Candidate_instruments_before_LD.csv",
+      "bytes": 9187,
+      "sha256": "5234d8353177a9bd9fed9ea1d26bdb7356e9e2b185fdebafe4623ab07b4ea941"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Candidate_instruments_mapped.csv",
+      "bytes": 10837,
+      "sha256": "de7369a0090490e2cb09e160d51f351ce8f13083484d952b992e0dd1cd449d7b"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Harmonized_instruments_all_outcomes.csv",
+      "bytes": 5652,
+      "sha256": "97b9fb9e667f5101e7efa9137ba903a19ad50e29e6b3b834a23bfb80d60ff581"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/R_recomputed_estimates.csv",
+      "bytes": 3426,
+      "sha256": "f4885bfe03ae4c4e3b39da8dfef23b1ec96710ec85fb3ffac8d3e6a2cdcd3fc4"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Retained_instrument_LD.csv",
+      "bytes": 37,
+      "sha256": "14db3775b9f7cc41e2c459bb4fa97877e33d599d16b0f3f1fd66fea62a18a68e"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Selected_instruments.csv",
+      "bytes": 1616,
+      "sha256": "786f7659c399020550539fb80c56e917b2d92988b61802f70683202dc4aced9a"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Selected_instruments_verified.csv",
+      "bytes": 1835,
+      "sha256": "4c3e98210936c8110b53f4be0d81bd50365335c4f195a866175a6029c32c64ca"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Tissue_availability_10_combinations.csv",
+      "bytes": 2077,
+      "sha256": "e410cb486081bbb6ae4a5d909ee2382e05e10f5123439f40c7ae943e8bf1437e"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Tissue_MR_50_planned_combinations.csv",
+      "bytes": 17913,
+      "sha256": "b32a861ef0fda50a74cb19e578be6e957b23c971c80bfda58f87ecfe35912cbe"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Tissue_MR_all_estimable.csv",
+      "bytes": 9314,
+      "sha256": "e2732cd501afe88ac4b68231bab78d40fc253a4869c4e66ab0029936f7e8d28c"
+    },
+    {
+      "path": "Verification/Tissue_extension/Tables/Tissue_MR_primary_10.csv",
+      "bytes": 3842,
+      "sha256": "0dae1f3c941fbfe2a52076706bb7613d2a3819547b102a36cec6b700444e4a96"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/01_metadata.py",
+      "bytes": 1541,
+      "sha256": "fb1b872a9b89626ea8f22ec9470f4a6afd5f1fa98a39770c89933d11ad782482"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/02_fetch_gtex.py",
+      "bytes": 3578,
+      "sha256": "b5ef726635a51cccd7dfec69959d160676f152c6672f9d3fc2db444663552f3f"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/03_instruments.py",
+      "bytes": 7967,
+      "sha256": "4737777e7d6896c9e63b8e7a0fb2d6a60f09ac9c499d9bde7bec80e0571c1651"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/04_extract_outcomes.py",
+      "bytes": 3738,
+      "sha256": "636eb03f4010ce5ca957a1e132df643e7ff49552fd6f1c1ed2e69f15e022216d"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/05_mr.py",
+      "bytes": 6508,
+      "sha256": "f746ba37e828230b10611ec607280cfc13e012c742f6f57fe6670f375247f3ab"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/06_verify_R.R",
+      "bytes": 1427,
+      "sha256": "b8a9a61b56fd6fcc1d21c0da28118d81064a7ff60478bc3ff492328cfcd232f5"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/07_forest.R",
+      "bytes": 3190,
+      "sha256": "52aa02e2f3c9e60adaeef17cd0f8e13ae9d60131d91357a1d9f97c9716a271c9"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/08_integrate.py",
+      "bytes": 16741,
+      "sha256": "2c0e3d64681176244cd63ca0defcb739629602cc34ff78bafde56825d416682e"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/09_render.py",
+      "bytes": 1632,
+      "sha256": "3eb79ac9507aa8711f79676a14e06c1f237b711f9e162d1534d4f953d4d6f6b6"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/10_prepare_workbook.py",
+      "bytes": 2442,
+      "sha256": "5c02811833fb322ea923c11f23103053bfbeff84db527fcaaf7df8e8bc7a7418"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/11_workbook.mjs",
+      "bytes": 6759,
+      "sha256": "85eacd263da887f4f773e5a55511c6fc23906446314582a74253276f68738a57"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/12_finalize_text.py",
+      "bytes": 1435,
+      "sha256": "8e82466c9bf2b488a6ee3448f95efdb7dd7bb10ef453a4b669bfa426f4d62a90"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/13_prepare_merge.py",
+      "bytes": 1836,
+      "sha256": "3af85e9a9e781553a2d609dbedb18b5d20532f304efc45158c5815d7b65f93a8"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/14_merge_workbook.py",
+      "bytes": 6792,
+      "sha256": "bba6c0cf899ad890406db2bb12f83866b6d5db98151d66a5f96ef5057ab9e2eb"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/15_qa_pages.py",
+      "bytes": 1193,
+      "sha256": "f2bf7e73c17a0c3810f85fcddfc348f6d94b6f8fedfa98058de0494ac2a360db"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/16_final_precision.py",
+      "bytes": 2627,
+      "sha256": "8583c6a4700f9ceec09bddc1a4b9e8dd1b4c6a138d1131856b5cd62d24c8baaf"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/17_verify_release.py",
+      "bytes": 7191,
+      "sha256": "c668c1731cb7c570b5c8d2415d4fde38ba01925583219d3741674f27e03238ba"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/18_package.py",
+      "bytes": 5159,
+      "sha256": "33821eea0478c6acda22a630bfb87379bddf18ddf79813a31f087ae3b336471d"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/19_seal.py",
+      "bytes": 2012,
+      "sha256": "6f3b03dc17900ae77a719bfdf11784def01680e10a0c788e5ffdcee0cc19e1df"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/blocks.json",
+      "bytes": 47477,
+      "sha256": "636f5f34cd309b4b59b8e823031096d548d612ec4075644dff5ac8a63d818b64"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/previous_merge_workbook.py",
+      "bytes": 6508,
+      "sha256": "1c36d115eca2cf968ecc7517d232078a3e700fdabe0fd986ad71880ba20f0815"
+    },
+    {
+      "path": "Verification/Tissue_extension_scripts/REPRODUCE.md",
+      "bytes": 1944,
+      "sha256": "b029a6c2159c72de6e5e7da24e308941e79f339596fbcd4e34c119a4ec548c6c"
+    },
+    {
+      "path": "Verification/visual_QA.json",
+      "bytes": 636,
+      "sha256": "d3e3076cd860d6fb67a44fd07f4056e2df88b15756b5d9d3373c2e77e42eb15d"
+    },
+    {
+      "path": "Verification/workbook_checks.json",
+      "bytes": 494,
+      "sha256": "34663f3673dc4a80b22805af56f7e83d304210a31c76183ad759d2868b8aa2ea"
+    }
+  ]
+}

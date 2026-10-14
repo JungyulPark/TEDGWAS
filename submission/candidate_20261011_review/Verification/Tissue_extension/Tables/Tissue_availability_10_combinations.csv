@@ -1,0 +1,11 @@
+gene,tissue,gencode_id,n_exposure,genome_build,tested,regional_variants_tested,minimum_eQTL_P,gene_qvalue,release_nominal_threshold,n_GWS_candidates,availability_status,full_regional_summary_available,coloc_status,n_LD_reference_candidates,n_selected_instruments
+TSHR,Thyroid,ENSG00000165409.16,574,GRCh38,True,7751.0,9.60474e-08,0.000130628,0.000257902,0,no_eQTL_P_below_5e-8,False,not_run_full_regional_statistics_unavailable,0,0
+IGF1R,Thyroid,ENSG00000140443.13,574,GRCh38,True,9669.0,3.14081e-14,3.06753e-10,0.000124659,20,candidate_instruments_available,False,not_run_full_regional_statistics_unavailable,19,1
+TSHR,Cells_Cultured_fibroblasts,ENSG00000165409.16,483,GRCh38,False,,,,,0,not_tested_in_GTEx_tissue,False,not_run_full_regional_statistics_unavailable,0,0
+IGF1R,Cells_Cultured_fibroblasts,ENSG00000140443.13,483,GRCh38,True,9669.0,1.227e-08,4.0604e-05,0.000112088,1,candidate_instruments_available,False,not_run_full_regional_statistics_unavailable,1,1
+TSHR,Adipose_Subcutaneous,ENSG00000165409.16,581,GRCh38,True,7751.0,1.11546e-09,3.95428e-06,0.000238246,10,candidate_instruments_available,False,not_run_full_regional_statistics_unavailable,10,1
+IGF1R,Adipose_Subcutaneous,ENSG00000140443.13,581,GRCh38,True,9669.0,3.56445e-07,0.00108198,0.000104848,0,no_eQTL_P_below_5e-8,False,not_run_full_regional_statistics_unavailable,0,0
+TSHR,Adipose_Visceral_Omentum,ENSG00000165409.16,469,GRCh38,True,7751.0,2.77278e-08,0.000105877,0.000145196,5,candidate_instruments_available,False,not_run_full_regional_statistics_unavailable,5,1
+IGF1R,Adipose_Visceral_Omentum,ENSG00000140443.13,469,GRCh38,True,9669.0,7.75886e-06,0.0222996,6.17885e-05,0,no_eQTL_P_below_5e-8,False,not_run_full_regional_statistics_unavailable,0,0
+TSHR,Whole_Blood,ENSG00000165409.16,670,GRCh38,True,7751.0,0.000246187,0.11795,0.000178107,0,no_eQTL_P_below_5e-8,False,not_run_full_regional_statistics_unavailable,0,0
+IGF1R,Whole_Blood,ENSG00000140443.13,670,GRCh38,True,9669.0,5.41993e-05,0.073982,7.90981e-05,0,no_eQTL_P_below_5e-8,False,not_run_full_regional_statistics_unavailable,0,0

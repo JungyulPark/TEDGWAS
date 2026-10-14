@@ -1,0 +1,32 @@
+[
+  {
+    "section": "Manuscript",
+    "first_page": 1,
+    "pages": 15
+  },
+  {
+    "section": "Tables 1\u20133",
+    "first_page": 16,
+    "pages": 5
+  },
+  {
+    "section": "Figure 1",
+    "first_page": 21,
+    "pages": 1
+  },
+  {
+    "section": "Figure 2",
+    "first_page": 22,
+    "pages": 1
+  },
+  {
+    "section": "Figure 3",
+    "first_page": 23,
+    "pages": 1
+  },
+  {
+    "section": "Supplementary material",
+    "first_page": 24,
+    "pages": 9
+  }
+]

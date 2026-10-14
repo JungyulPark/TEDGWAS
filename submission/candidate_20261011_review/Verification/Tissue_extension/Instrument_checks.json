@@ -1,0 +1,810 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "Thyroid TSHR single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Thyroid IGF1R single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Thyroid IGF1R significant release complete at fixed threshold",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98946036_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98946036_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98946687_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98946687_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98947367_A_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98947367_A_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98947683_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98947683_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98950424_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98950424_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98953111_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98953111_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98953478_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98953478_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98953630_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98953630_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98954238_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98954238_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98955183_G_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98955183_G_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98955204_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98955204_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98955650_T_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98955650_T_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98956205_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98956205_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98956264_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98956264_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98957027_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98957027_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98960297_TTTG_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98960297_TTTG_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98960900_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98960900_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98961442_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98961442_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98962087_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98962087_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98962194_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98962194_G_T_b38",
+      "pass": true
+    },
+    {
+      "check": "Cells_Cultured_fibroblasts TSHR single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Cells_Cultured_fibroblasts IGF1R single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Cells_Cultured_fibroblasts IGF1R significant release complete at fixed threshold",
+      "pass": true
+    },
+    {
+      "check": "build chr15_98643092_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr15_98643092_A_G_b38",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Subcutaneous TSHR single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Subcutaneous TSHR significant release complete at fixed threshold",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80955001_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80955001_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80957974_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80957974_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80984708_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80984708_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80984885_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80984885_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80985612_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80985612_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80985828_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80985828_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80990913_A_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80990913_A_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80995128_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80995128_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80995939_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80995939_T_C_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80996305_C_G_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80996305_C_G_b38",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Subcutaneous IGF1R single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Visceral_Omentum TSHR single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Visceral_Omentum TSHR significant release complete at fixed threshold",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80984708_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80984708_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80984758_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80984758_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80984885_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80984885_C_T_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80985612_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80985612_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "build chr14_80985828_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "source TSS chr14_80985828_G_A_b38",
+      "pass": true
+    },
+    {
+      "check": "Adipose_Visceral_Omentum IGF1R single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Whole_Blood TSHR single eGene row",
+      "pass": true
+    },
+    {
+      "check": "Whole_Blood IGF1R single eGene row",
+      "pass": true
+    },
+    {
+      "check": "variant mapping pagination 14",
+      "pass": true
+    },
+    {
+      "check": "variant mapping pagination 15",
+      "pass": true
+    },
+    {
+      "check": "all candidate variant IDs resolved",
+      "pass": true
+    },
+    {
+      "check": "no duplicate variant within gene tissue",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs8022139",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs45585237",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12101255",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs74064796",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12101261",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs8003061",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs17111346",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs28414437",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs2160215",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs1023586",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs4903961",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs6598538",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs10438491",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs7162314",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12592205",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs35115159",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12437796",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12148482",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs34895288",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12437963",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs72752895",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs12591122",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs9672965",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs8033670",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs8038415",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs2872060",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs2593053",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs3743251",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs1815009",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs3743250",
+      "pass": true
+    },
+    {
+      "check": "unique reference SNP rs3743249",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs10438491",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs10438491",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs7162314",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs7162314",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12592205",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12592205",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs35115159",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs35115159",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12437796",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12437796",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12148482",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12148482",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs34895288",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs34895288",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12437963",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12437963",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs72752895",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs72752895",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12591122",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12591122",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs9672965",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs9672965",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs8033670",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs8033670",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs8038415",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs8038415",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs2872060",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs2872060",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs2593053",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs2593053",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs3743251",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs3743251",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs1815009",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs1815009",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs3743250",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs3743250",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs3743249",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs3743249",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs6598538",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs6598538",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs8022139",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs8022139",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs45585237",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs45585237",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12101255",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12101255",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12101261",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12101261",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs8003061",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs8003061",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs17111346",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs17111346",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs28414437",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs28414437",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs2160215",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs2160215",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs1023586",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs1023586",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs4903961",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs4903961",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12101255",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12101255",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs74064796",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs74064796",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs12101261",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs12101261",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs8003061",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs8003061",
+      "pass": true
+    },
+    {
+      "check": "reference coordinate rs17111346",
+      "pass": true
+    },
+    {
+      "check": "reference allele pair rs17111346",
+      "pass": true
+    },
+    {
+      "check": "extract PLINK",
+      "pass": true
+    },
+    {
+      "check": "BED header",
+      "pass": true
+    },
+    {
+      "check": "IGF1R__Thyroid PLINK",
+      "pass": true
+    },
+    {
+      "check": "IGF1R__Thyroid independent greedy clump matches PLINK",
+      "pass": true
+    },
+    {
+      "check": "IGF1R__Cells_Cultured_fibroblasts PLINK",
+      "pass": true
+    },
+    {
+      "check": "IGF1R__Cells_Cultured_fibroblasts independent greedy clump matches PLINK",
+      "pass": true
+    },
+    {
+      "check": "TSHR__Adipose_Subcutaneous PLINK",
+      "pass": true
+    },
+    {
+      "check": "TSHR__Adipose_Subcutaneous independent greedy clump matches PLINK",
+      "pass": true
+    },
+    {
+      "check": "TSHR__Adipose_Visceral_Omentum PLINK",
+      "pass": true
+    },
+    {
+      "check": "TSHR__Adipose_Visceral_Omentum independent greedy clump matches PLINK",
+      "pass": true
+    }
+  ],
+  "n_reference": 503
+}

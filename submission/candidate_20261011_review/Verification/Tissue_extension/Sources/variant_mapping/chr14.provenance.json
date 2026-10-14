@@ -1,0 +1,5 @@
+{
+  "url": "https://gtexportal.org/api/v2/dataset/variant?datasetId=gtex_v8&chromosome=chr14&itemsPerPage=1000&pos=80955001&pos=80957974&pos=80984708&pos=80984758&pos=80984885&pos=80985612&pos=80985828&pos=80990913&pos=80995128&pos=80995939&pos=80996305",
+  "retrieved_utc": "2026-10-03T11:50:43.299344+00:00",
+  "sha256": "70203b329daaccec109936391e44ec9cf8217c22745eca248df76699d6265ad2"
+}

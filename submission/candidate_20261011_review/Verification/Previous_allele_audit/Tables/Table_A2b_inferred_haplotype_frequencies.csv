@@ -1,0 +1,9 @@
+population,rs179252_allele,rs179247_allele,haplotype,estimated_frequency,method
+EUR,T,G,TG,0.001004,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EUR,G,G,GG,0.496014,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EUR,T,A,TA,0.493032,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EUR,G,A,GA,0.00995,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EAS,G,G,GG,0.392857,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EAS,T,G,TG,0.001984,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EAS,G,A,GA,0.0,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals
+EAS,T,A,TA,0.605159,PLINK unphased two-locus maximum likelihood; log output rounded to six decimals

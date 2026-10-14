@@ -1,0 +1,85 @@
+check,pass_check,detail
+Protocol unchanged,True,
+EUR both variants present,True,
+EUR BED header,True,
+EUR rs179247 G allele present,True,
+EUR rs179252 G allele present,True,
+EUR old r2 reproduced,True,"{'new': 0.9571155240931575, 'old': np.float64(0.957116)}"
+EUR_signed PLINK execution,True,
+EUR_haplotype PLINK execution,True,
+EUR_G_dosage PLINK execution,True,
+EUR rs179252 direct BED equals PLINK G dosage,True,
+EUR rs179247 direct BED equals PLINK G dosage,True,
+EUR signed r independent calculation,True,
+EUR no missing pair genotypes,True,
+EAS both variants present,True,
+EAS BED header,True,
+EAS rs179247 G allele present,True,
+EAS rs179252 G allele present,True,
+EAS old r2 reproduced,True,"{'new': 0.9916254450020668, 'old': np.float64(0.991625)}"
+EAS_signed PLINK execution,True,
+EAS_haplotype PLINK execution,True,
+EAS_G_dosage PLINK execution,True,
+EAS rs179252 direct BED equals PLINK G dosage,True,
+EAS rs179247 direct BED equals PLINK G dosage,True,
+EAS signed r independent calculation,True,
+EAS no missing pair genotypes,True,
+rs179252 source versus gene extract AssessedAllele,True,
+rs179252 source versus gene extract OtherAllele,True,
+rs179252 source versus gene extract Zscore,True,
+rs179252 source versus gene extract NrSamples,True,
+rs179252 source versus gene extract SNPPos,True,
+rs179247 source versus gene extract AssessedAllele,True,
+rs179247 source versus gene extract OtherAllele,True,
+rs179247 source versus gene extract Zscore,True,
+rs179247 source versus gene extract NrSamples,True,
+rs179247 source versus gene extract SNPPos,True,
+exposure beta reconstructed,True,
+exposure SE reconstructed,True,
+effect allele definition,True,
+BBJ rs179247 G present,True,
+BBJ rs179247 fresh GWAS versus regional cache,True,
+BBJ rs179252 G present,True,
+BBJ rs179252 fresh GWAS versus regional cache,True,
+BBJ canonical row unique,True,['BBJ_Graves']
+BBJ MR full precision reproduced,True,"{'beta': 3.552713678800501e-15, 'se': 0.0, 'OR': 4.440892098500626e-16, 'CI_lower': 3.469446951953614e-16, 'CI_upper': 7.494005416219807e-16}"
+BBJ MR P reproduced,True,"{'new': 1.093640481028082e-14, 'canonical': np.float64(1.09364048102808e-14)}"
+UKB rs179247 G present,True,
+UKB rs179247 fresh GWAS versus regional cache,True,
+UKB rs179252 G present,True,
+UKB rs179252 fresh GWAS versus regional cache,True,
+UKB canonical row unique,True,['UKB_hyperthyroid']
+UKB MR full precision reproduced,True,"{'beta': 4.440892098500626e-16, 'se': 2.7755575615628914e-16, 'OR': 4.163336342344337e-17, 'CI_lower': 7.632783294297951e-17, 'CI_upper': 1.1102230246251565e-16}"
+UKB MR P reproduced,True,"{'new': 8.769228602296335e-28, 'canonical': np.float64(8.76922860229631e-28)}"
+FinnGen_GO rs179247 G present,True,
+FinnGen_GO rs179247 fresh GWAS versus regional cache,True,
+FinnGen_GO rs179252 G present,True,
+FinnGen_GO rs179252 fresh GWAS versus regional cache,True,
+FinnGen_GO canonical row unique,True,['FinnGen_GO']
+FinnGen_GO MR full precision reproduced,True,"{'beta': 4.440892098500626e-16, 'se': 0.0, 'OR': 6.938893903907228e-17, 'CI_lower': 4.163336342344337e-17, 'CI_upper': 1.1102230246251565e-16}"
+FinnGen_GO MR P reproduced,True,"{'new': 2.818516730649206e-07, 'canonical': np.float64(2.818516730649201e-07)}"
+E4_GRAVES_STRICT rs179247 G present,True,
+E4_GRAVES_STRICT rs179247 fresh GWAS versus regional cache,True,
+E4_GRAVES_STRICT rs179252 G present,True,
+E4_GRAVES_STRICT rs179252 fresh GWAS versus regional cache,True,
+E4_GRAVES_STRICT canonical row unique,True,['E4_GRAVES_STRICT']
+E4_GRAVES_STRICT MR full precision reproduced,True,"{'beta': 3.9968028886505635e-15, 'se': 4.440892098500626e-16, 'OR': 1.3877787807814457e-17, 'CI_lower': 3.469446951953614e-17, 'CI_upper': 4.440892098500626e-16}"
+E4_GRAVES_STRICT MR P reproduced,True,"{'new': 3.1879035688387596e-32, 'canonical': np.float64(3.18790356883871e-32)}"
+E4_GRAVES_OPHT_STRICT rs179247 G present,True,
+E4_GRAVES_OPHT_STRICT rs179247 fresh GWAS versus regional cache,True,
+E4_GRAVES_OPHT_STRICT rs179252 G present,True,
+E4_GRAVES_OPHT_STRICT rs179252 fresh GWAS versus regional cache,True,
+E4_GRAVES_OPHT_STRICT canonical row unique,True,['E4_GRAVES_OPHT_STRICT']
+E4_GRAVES_OPHT_STRICT MR full precision reproduced,True,"{'beta': 8.881784197001252e-16, 'se': 5.551115123125783e-16, 'OR': 2.220446049250313e-16, 'CI_lower': 6.938893903907228e-18, 'CI_upper': 3.885780586188048e-16}"
+E4_GRAVES_OPHT_STRICT MR P reproduced,True,"{'new': 9.015184900881168e-05, 'canonical': np.float64(9.01518490088115e-05)}"
+EUR PLINK default A1 coding reconciled,True,
+EUR four haplotypes retained,True,
+EUR most common two haplotypes are GG and TA,True,
+EAS PLINK default A1 coding reconciled,True,
+EAS four haplotypes retained,True,
+EAS most common two haplotypes are GG and TA,True,
+All ten disease rows retained,True,
+All ten G-allele disease estimates lower odds,True,
+Both G alleles increase blood TSHR,True,
+50 planned cells including ten primary cells,True,
+Frozen protocol unchanged at reporting,True,

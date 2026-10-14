@@ -83,3 +83,20 @@ submission/_build/
 !submission/candidate_20260905/*.docx
 !submission/candidate_20260905/figures/*.png
 !submission/candidate_20260905/figures/*.pdf
+
+# Reviewed October deliverables only; raw/reference exclusions stay in force.
+!submission/candidate_20261011_review/*.docx
+!submission/candidate_20261011_review/*.pdf
+!submission/candidate_20261011_review/*.xlsx
+!submission/candidate_20261011_review/Figures/*.pdf
+!submission/candidate_20261011_review/Figures/*.png
+!submission/candidate_20261011_review/Tables/*.pdf
+!submission/candidate_20261011_review/Additional_analysis_figure/*.pdf
+!submission/candidate_20261011_review/Additional_analysis_figure/*.png
+!submission/candidate_20261011_review/Review_only/*.pdf
+!submission/candidate_20261011_review/Review_only/*.docx
+!submission/candidate_20261011_review/Verification/Tissue_extension/Figures/*.pdf
+!submission/candidate_20261011_review/Verification/Tissue_extension/Figures/*.png
+submission/candidate_20261011_review/**/Source_extracts/
+submission/candidate_20261011_review/**/Sources/**/*.tsv
+submission/candidate_20261011_review/**/*.raw

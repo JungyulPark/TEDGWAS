@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "review": "Visual inspection of all modified DOCX pages (15 manuscript, 9 supplement, 1 checklist), final changed manuscript pages 2/5/6/12, the complete new forest plot, and 13 workbook range previews. No overlapping or clipped content observed. Other manuscript pages were pixel-identical after final wording changes.",
+  "main_tables_figures": "Byte-identical to the prior integrated package; not regenerated.",
+  "supplement": "Tables S1/S2 and embedded figures preserved; S3 replaced and inspected on page 7.",
+  "new_plot_role": "Author-review figure, not an additional numbered manuscript figure."
+}

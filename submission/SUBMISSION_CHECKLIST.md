@@ -1,29 +1,13 @@
-# TED–TRAP 최종 저자 검토 체크리스트
+# Current candidate checklist
 
-2026-09-15 보충자료 간소화 반영본. 현재 후보는 candidate_20260911_review 하나입니다.
+Current package: `candidate_20261011_review/`; sole manuscript master is at repository root.
 
-## 완료
+- [x] Local 3 October analysis / 11 October delivery imported without scientific rewriting.
+- [x] Main Tables 1–3, Figures 1–3; Supplementary Tables S1–S3, Figures S1–S2; one XLSX.
+- [x] Original source hashes and aggregate results retained; restricted/local-only inputs excluded.
+- [ ] Resolve `internal/REVIEW_codex_package_20261011.md` against source data and rendered files.
+- [ ] Reproduce source-dependent analyses as specified in that review where necessary.
+- [ ] Resolve final journal, authorship/approvals, ethics/consent and disclosure statements.
+- [ ] Finalize the cover letter and journal upload files after the next scientific/document review.
 
-- [x] 기존 eQTLGen 빈도 민감도, 원본 주 분석 추정치 보존 및 통계 대조.
-- [x] Leave-one-out 15개 제외 결과와 5개 비교값; 독립 R 계산 검증.
-- [x] 본문·Table 2 CTLA4 각주·Figure S2·Data 6·STROBE 항목 13 동기화.
-- [x] 주표 3개·보충표 3개 개별 Word와 Supplementary Data 1–6.
-- [x] 제목·Discussion·33개 참고문헌의 최초 인용 순서와 Word 동기화.
-- [x] Data 3 설명서의 실제 CSV 열 검증 및 보충표 3개로 통합.
-- [x] 그림의 검정 글자, 유의수준 표식, CI·범례 및 표 너비 점검.
-
-## 명시적으로 유지한 분석 한계
-
-- 새 다중 신호 공위치화는 이번 수정 범위에서 시행하지 않음. 단일 인과변이 모형 한계와 지역 구조의 불확실성을 유지함. 철회 결과는 복원하지 않음.
-- Steiger 방향성은 미검증이며, 참여자 중복은 정량화하지 못함.
-- LOO는 원래 참조 빈도에만 적용. TSHR 및 CTLA4 BBJ의 단일-SNP 시작 집합에는 적용 불가.
-
-## 저자 및 실제 투고 확인
-
-- [ ] 위에 명시한 분석 한계를 포함한 전체 해석의 전 저자 최종 승인.
-- [ ] 저자 소속·학위·ORCID·공동교신저자 연락처.
-- [ ] 기여·연구비·이해상충·윤리·동의 문구와 관련 원고 상태·커버레터 서명.
-- [ ] 저널 포털의 최신 파일·요금·라이선스·AI 사용 공개 요건.
-- [ ] 포털 생성 PDF 확인 후 제출.
-
-현재 감사·육안 검토 수치는 REVIEW_REPORT_KO.md와 provenance의 완료 기록을 확인하십시오. 과학적 한계와 실제 저자 승인은 자동 감사로 완료 처리하지 않습니다.
+Passing the current handoff audit is not a claim that these open items are complete.

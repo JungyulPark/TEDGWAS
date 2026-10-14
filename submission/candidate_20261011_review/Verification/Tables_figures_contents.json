@@ -1,0 +1,57 @@
+[
+  {
+    "item": "Table 1",
+    "first_page": 1,
+    "pages": 1
+  },
+  {
+    "item": "Table 2",
+    "first_page": 2,
+    "pages": 1
+  },
+  {
+    "item": "Table 3",
+    "first_page": 3,
+    "pages": 3
+  },
+  {
+    "item": "Figure 1",
+    "first_page": 6,
+    "pages": 1
+  },
+  {
+    "item": "Figure 2",
+    "first_page": 7,
+    "pages": 1
+  },
+  {
+    "item": "Figure 3",
+    "first_page": 8,
+    "pages": 1
+  },
+  {
+    "item": "Table S1",
+    "first_page": 9,
+    "pages": 1
+  },
+  {
+    "item": "Table S2",
+    "first_page": 10,
+    "pages": 1
+  },
+  {
+    "item": "Table S3",
+    "first_page": 11,
+    "pages": 1
+  },
+  {
+    "item": "Figure S1",
+    "first_page": 12,
+    "pages": 1
+  },
+  {
+    "item": "Figure S2",
+    "first_page": 13,
+    "pages": 1
+  }
+]

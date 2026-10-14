@@ -1,0 +1,493 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "E4_GRAVES_STRICT rs1815009 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs1815009 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs1815009 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs1815009 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs1815009 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs6598538 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs6598538 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs6598538 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs6598538 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs6598538 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs12101255 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs12101255 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs12101255 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs12101255 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs12101255 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs74064796 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs74064796 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs74064796 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs74064796 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_STRICT rs74064796 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs1815009 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs1815009 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs1815009 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs1815009 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs6598538 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs6598538 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs6598538 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs6598538 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs12101255 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs12101255 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs12101255 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs12101255 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs74064796 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs74064796 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs74064796 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "BBJ_Graves rs74064796 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs1815009 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs1815009 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs1815009 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "UKB raw vs harmonized sign rs1815009",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs1815009 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs6598538 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs6598538 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs6598538 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "UKB raw vs harmonized sign rs6598538",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs6598538 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs12101255 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs12101255 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs12101255 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "UKB raw vs harmonized sign rs12101255",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs12101255 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs74064796 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs74064796 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs74064796 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "UKB raw vs harmonized sign rs74064796",
+      "pass": true
+    },
+    {
+      "check": "UKB_hyperthyroid rs74064796 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs1815009 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs1815009 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs1815009 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs1815009 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs1815009 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs6598538 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs6598538 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs6598538 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs6598538 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs6598538 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs12101255 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs12101255 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs12101255 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs12101255 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs12101255 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs74064796 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs74064796 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs74064796 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs74064796 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "FinnGen_GO rs74064796 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs1815009 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs1815009 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs1815009 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs1815009 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs1815009 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs6598538 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs6598538 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs6598538 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs6598538 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs6598538 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs12101255 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs12101255 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs12101255 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs12101255 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs12101255 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs74064796 one coordinate record",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs74064796 identifier agrees",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs74064796 valid source stats",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs74064796 GRCh38 REF/ALT identical",
+      "pass": true
+    },
+    {
+      "check": "E4_GRAVES_OPHT_STRICT rs74064796 nonpalindromic exact allele alignment",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Thyroid E4_GRAVES_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Thyroid BBJ_Graves single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Thyroid UKB_hyperthyroid single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Thyroid FinnGen_GO single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Thyroid E4_GRAVES_OPHT_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Cells_Cultured_fibroblasts E4_GRAVES_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Cells_Cultured_fibroblasts BBJ_Graves single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Cells_Cultured_fibroblasts UKB_hyperthyroid single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Cells_Cultured_fibroblasts FinnGen_GO single IV expected",
+      "pass": true
+    },
+    {
+      "check": "IGF1R Cells_Cultured_fibroblasts E4_GRAVES_OPHT_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Subcutaneous E4_GRAVES_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Subcutaneous BBJ_Graves single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Subcutaneous UKB_hyperthyroid single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Subcutaneous FinnGen_GO single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Subcutaneous E4_GRAVES_OPHT_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Visceral_Omentum E4_GRAVES_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Visceral_Omentum BBJ_Graves single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Visceral_Omentum UKB_hyperthyroid single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Visceral_Omentum FinnGen_GO single IV expected",
+      "pass": true
+    },
+    {
+      "check": "TSHR Adipose_Visceral_Omentum E4_GRAVES_OPHT_STRICT single IV expected",
+      "pass": true
+    },
+    {
+      "check": "all 50 planned cells",
+      "pass": true
+    },
+    {
+      "check": "10 primary and 40 secondary tests retained",
+      "pass": true
+    },
+    {
+      "check": "all 4 eligible combinations x 5 outcomes estimated",
+      "pass": true
+    },
+    {
+      "check": "all 30 unestimable cells retained",
+      "pass": true
+    },
+    {
+      "check": "all estimates F>10",
+      "pass": true
+    }
+  ],
+  "no_threshold_relaxation": true,
+  "n_estimated": 20,
+  "n_not_estimable": 30,
+  "n_total": 50
+}

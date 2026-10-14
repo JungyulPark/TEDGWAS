@@ -1,0 +1,12 @@
+{
+  "baseline_vectors": 60,
+  "baseline_max_delta": 6.494804694057166e-15,
+  "new_window_vectors": 180,
+  "intersection_sizes": {
+    "original_reference": 4030,
+    "paired_reference": 4030,
+    "paired_eqtlgen": 4030,
+    "available_eqtlgen": 4031
+  },
+  "status": "Python PASS; R pending"
+}

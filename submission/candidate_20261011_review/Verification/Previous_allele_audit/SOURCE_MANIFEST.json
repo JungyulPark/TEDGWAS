@@ -1,0 +1,155 @@
+[
+  {
+    "path": "C:\\ProjectTEDGWAS\\tools\\plink.exe",
+    "role": "PLINK executable",
+    "bytes": 37009441,
+    "mtime_utc": "2025-08-19T20:42:20+00:00",
+    "sha256": "221aa35a6a3ee283a86b463b9cd55fefb1e06e2d79be8ae595f9774d003cf411"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EUR_phase3\\EUR_chr14.bed",
+    "role": "EUR reference genotypes",
+    "bytes": 90379299,
+    "mtime_utc": "2026-05-22T05:45:08.675522+00:00",
+    "sha256": "dfe3e5366d44e6c2855b0198777191457d3bc0a2fc7d2fa5deea7529a4bce52e"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EUR_phase3\\EUR_chr14.bim",
+    "role": "EUR reference genotypes",
+    "bytes": 21899107,
+    "mtime_utc": "2026-05-22T05:45:08.788572+00:00",
+    "sha256": "af6e98e6a776b17aab182cbb9c80be3f68140681c4c3e5adac536b2599f62f9e"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EUR_phase3\\EUR_chr14.fam",
+    "role": "EUR reference genotypes",
+    "bytes": 13078,
+    "mtime_utc": "2026-05-22T05:45:08.676035+00:00",
+    "sha256": "ebb670fee9d8c7ca8833b30e910d2589d7c3f08ce2ee7e72e1171d671f179523"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EAS_phase3\\EAS_chr14.bed",
+    "role": "EAS reference genotypes",
+    "bytes": 89806629,
+    "mtime_utc": "2026-05-22T05:45:14.416107+00:00",
+    "sha256": "a8775f111e7c1f4b81a4b584920cba8be73a0c4a5286e49065841de50da2bfb1"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EAS_phase3\\EAS_chr14.bim",
+    "role": "EAS reference genotypes",
+    "bytes": 21808381,
+    "mtime_utc": "2026-05-22T05:45:14.530771+00:00",
+    "sha256": "58b4149af659e8614402866dd7a32ab414982fb0854f5c11012ba47f3cd4f514"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\data\\1000G_EAS_phase3\\EAS_chr14.fam",
+    "role": "EAS reference genotypes",
+    "bytes": 13104,
+    "mtime_utc": "2026-05-22T05:45:14.417164+00:00",
+    "sha256": "f050f3f1b82a572c1570df1b49580f2eb52f106d6b7120f371dbc38b3ce9f90f"
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\data\\2019-12-11-cis-eQTLsFDR-ProbeLevel-CohortInfoRemoved-BonferroniAdded.txt.gz",
+    "role": "eQTLGen original source",
+    "bytes": 3880187026,
+    "mtime_utc": "2026-05-22T07:46:29.432216+00:00",
+    "sha256": "1133a89fe33b795dde7e480e39841fbd0787bfdb5d18ef19058fa749a936f814",
+    "found": [
+      "rs179252",
+      "rs179247"
+    ],
+    "extract_sha256": "161928de725f4135fe7b8257468afe80f26fa9ea729b1604b831a76449cb9c53",
+    "genome_build": "GRCh37",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90018627_harmonised.tsv.gz",
+    "role": "BBJ original source",
+    "bytes": 561736011,
+    "mtime_utc": "2026-05-25T23:32:55.438912+00:00",
+    "sha256": "2364419b2dc857c5c30d96feae8a4eaaf92fb85b2c4cdc44158fa4889cdce2f6",
+    "found": [
+      "rs179247",
+      "rs179252"
+    ],
+    "extract_sha256": "2137e9745b2ca865d7d6e39ad8935b9d99f766fe67bc95598b8139ced4b493dc",
+    "genome_build": "GRCh38",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90038636_harmonised.tsv.gz",
+    "role": "UKB original source",
+    "bytes": 396669017,
+    "mtime_utc": "2026-05-25T23:28:41.569522+00:00",
+    "sha256": "264d5573e86f3698568e0e8bb4530347ac98ad572a3d3a9c648b950def681586",
+    "found": [
+      "rs179247",
+      "rs179252"
+    ],
+    "extract_sha256": "3121357186331f93a662888962451c9eebdca603bf32a9d152cb0a965133c707",
+    "genome_build": "GRCh38",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_GRAVES_OPHT.gz",
+    "role": "FinnGen_GO original source",
+    "bytes": 798476004,
+    "mtime_utc": "2026-04-23T04:13:38.928182+00:00",
+    "sha256": "26f26b390b608af944c29d61b6c74a67fade090ec97523958ef8e8b77a579df6",
+    "found": [
+      "rs179247",
+      "rs179252"
+    ],
+    "extract_sha256": "f83d0f0d10d466549801d70fef28cef087d260a49b691c434ede40542256d3f2",
+    "genome_build": "GRCh38",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_E4_GRAVES_STRICT.gz",
+    "role": "E4_GRAVES_STRICT original source",
+    "bytes": 811507884,
+    "mtime_utc": "2026-04-23T04:14:09.102801+00:00",
+    "sha256": "f69d32ffc1e0ca16aa838145792aef2bd0accb5a60b848358a1e43dedda55a51",
+    "found": [
+      "rs179247",
+      "rs179252"
+    ],
+    "extract_sha256": "a31c1b94d225caeb5b2f88ddf79a8b78e7359305210dff31cd339b9c57dc157f",
+    "genome_build": "GRCh38",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_E4_GRAVES_OPHT_STRICT.gz",
+    "role": "E4_GRAVES_OPHT_STRICT original source",
+    "bytes": 796979657,
+    "mtime_utc": "2026-04-23T04:14:11.155766+00:00",
+    "sha256": "0b751933f26387c7f4f91c1136eac31ebd5be6fef2133a382f3e5e3d3fa16112",
+    "found": [
+      "rs179247",
+      "rs179252"
+    ],
+    "extract_sha256": "92f9c14d6417cbb64e737b4967d65d3910dd1157c4d30135a8808c2fbfcf01be",
+    "genome_build": "GRCh38",
+    "extraction": "freshly extracted in first attempt on 2026-10-03; reused after a downstream CI-convention check halted execution",
+    "rows_scanned_until_both_found": null
+  },
+  {
+    "path": "${LOCAL_USER_HOME}/Documents\\Codex\\2026-09-05\\prior-conversation-with-codex-conversation-role-4\\work\\maf_sensitivity_20260905\\inputs\\eur_freq_selected.tsv",
+    "role": "existing rounded reference MAF used in manuscript",
+    "bytes": 1775847,
+    "mtime_utc": "2026-09-05T03:40:11.488796+00:00",
+    "sha256": "1e2e88400b72274df137bc38f58a0581c1d9a737e97fdef2736ded4d92315a32"
+  },
+  {
+    "path": "${LOCAL_USER_HOME}/Documents\\Codex\\2026-09-05\\prior-conversation-with-codex-conversation-role-4\\work\\reanalysis_20261002\\mr_v1\\exposure_comparison.csv",
+    "role": "canonical reconstructed exposure",
+    "bytes": 1534040,
+    "mtime_utc": "2026-10-02T05:56:18.653600+00:00",
+    "sha256": "065538ba032edc2814316a540c08292519843bc353e90470ca6b7e6745682a3a"
+  }
+]

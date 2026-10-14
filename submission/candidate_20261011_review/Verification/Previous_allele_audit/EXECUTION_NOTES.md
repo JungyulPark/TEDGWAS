@@ -1,0 +1,11 @@
+# Execution notes
+
+The first audit attempt stopped before writing final results because an overly strict CI identity check assumed qnorm(0.975) for every historical result. The BBJ, UKB and original GO pipeline used 1.96; the later FinnGen GD and strict GO pipeline used qnorm(0.975). The audit was corrected to reproduce each documented historical convention. Beta, SE, OR and P calculations were unchanged. Freshly extracted raw rows were reused after this downstream failure; source files were SHA-256 hashed during recovery. The final successful audit retained both raw GWAS P and recomputed MR P.
+
+No tissue-specific GTEx or ImmuNexUT association results were newly retrieved or analysed. No SuSiE or MVMR was run. The protocol is prospective only for this extension, not for the original manuscript or historical exploratory tissue analyses.
+
+The supporting reference panel consists of unphased PLINK genotypes derived from 1000 Genomes phase 3. “Phase 3” is a project release label and does not mean that phased haplotypes are retained in BED files. Haplotype coupling reported here is inferred from those genotypes. The primary LD values are genotype correlations squared; the haplotype estimates are separately labelled.
+
+Full-source extraction in the first successful input pass stopped after both target SNP rows were found: eQTLGen 2,397,210 rows, BBJ 9,971,383, UKB 7,751,092, FinnGen GO 16,383,732, FinnGen GD and strict GO 16,383,733 each. This is not an exhaustive duplicate-variant scan; earlier full-source and harmonization audits supply that context. Both exact allele pairs and source rows were independently compared with the prior extracts.
+
+External sources consulted: eQTLGen cis-eQTL page (https://eqtlgen.org/cis-eqtls.html); Marín-Sánchez 2019 (https://doi.org/10.3389/fimmu.2019.01695); Colobran 2011 PubMed abstract (https://pubmed.ncbi.nlm.nih.gov/21642385/); PLINK LD and file-format documentation (https://www.cog-genomics.org/plink/1.9/ld, https://www.cog-genomics.org/plink/1.9/formats#bed). The eQTLGen README download could not be read through the web viewer; local raw column names and the official page's allele/Z-score definitions were retained as evidence. No TLS exception was applied in this task.

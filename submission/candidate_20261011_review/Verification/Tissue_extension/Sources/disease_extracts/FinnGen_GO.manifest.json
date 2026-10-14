@@ -1,0 +1,37 @@
+{
+  "outcome": "FinnGen_GO",
+  "path": "C:\\ProjectTEDGWAS\\finngen_R12_GRAVES_OPHT.gz",
+  "source_sha256": "26f26b390b608af944c29d61b6c74a67fade090ec97523958ef8e8b77a579df6",
+  "rows_scanned": 21327060,
+  "full_source_scan": true,
+  "genome_build": "GRCh38",
+  "found": [
+    {
+      "chromosome": "14",
+      "pos38": "80984708",
+      "expected_snp": "rs12101255",
+      "source_ids": "rs12101255"
+    },
+    {
+      "chromosome": "14",
+      "pos38": "80984758",
+      "expected_snp": "rs74064796",
+      "source_ids": "rs74064796"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98643092",
+      "expected_snp": "rs6598538",
+      "source_ids": "rs6598538"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98961442",
+      "expected_snp": "rs1815009",
+      "source_ids": "rs1815009"
+    }
+  ],
+  "extract": "FinnGen_GO.tsv",
+  "extract_sha256": "0e29a2aa6100acf17de72b16416cd781efb3c4726bc41f11999445b72dac1ddf",
+  "utc": "2026-10-03T11:55:10.219079+00:00"
+}

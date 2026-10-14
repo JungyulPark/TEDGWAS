@@ -1,0 +1,5 @@
+R 4.3.3
+Implementation: independent base-R ABF and prefix/suffix sum of distinct-variant pairs; not a coloc package run.
+Rows 504
+Max absolute posterior difference 5.506706202140776e-14
+PASS

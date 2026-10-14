@@ -1,0 +1,27 @@
+{
+  "kind": "storage#objects",
+  "items": [
+    {
+      "kind": "storage#object",
+      "id": "adult-gtex/bulk-qtl/v8/single-tissue-cis-qtl/eQTL-Tissue-Specific-All-SNP-Gene-Associations//1695134532267297",
+      "selfLink": "https://www.googleapis.com/storage/v1/b/adult-gtex/o/bulk-qtl%2Fv8%2Fsingle-tissue-cis-qtl%2FeQTL-Tissue-Specific-All-SNP-Gene-Associations%2F",
+      "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/adult-gtex/o/bulk-qtl%2Fv8%2Fsingle-tissue-cis-qtl%2FeQTL-Tissue-Specific-All-SNP-Gene-Associations%2F?generation=1695134532267297&alt=media",
+      "name": "bulk-qtl/v8/single-tissue-cis-qtl/eQTL-Tissue-Specific-All-SNP-Gene-Associations/",
+      "bucket": "adult-gtex",
+      "generation": "1695134532267297",
+      "metageneration": "1",
+      "contentType": "text/plain",
+      "storageClass": "STANDARD",
+      "size": "0",
+      "md5Hash": "1B2M2Y8AsgTpgAmY7PhCfg==",
+      "crc32c": "AAAAAA==",
+      "etag": "CKHakZ30toEDEAE=",
+      "temporaryHold": false,
+      "eventBasedHold": false,
+      "timeCreated": "2023-09-19T14:42:12.271Z",
+      "updated": "2023-09-19T14:42:12.271Z",
+      "timeStorageClassUpdated": "2023-09-19T14:42:12.271Z",
+      "timeFinalized": "2023-09-19T14:42:12.271Z"
+    }
+  ]
+}

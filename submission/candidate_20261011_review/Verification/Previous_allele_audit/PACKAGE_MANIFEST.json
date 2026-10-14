@@ -1,0 +1,220 @@
+{
+  "created_utc": "2026-10-03T11:17:35.683425+00:00",
+  "files": [
+    {
+      "path": "AUDIT_RESULT.json",
+      "bytes": 5275,
+      "sha256": "fbc93509d8e3d4cdd2477aee7f7759ed773d552873324dfb320a2cfc78138461"
+    },
+    {
+      "path": "EXECUTION_NOTES.md",
+      "bytes": 2258,
+      "sha256": "86e2ded506a51e07b06fec4be10bc82c30f110017daf79da3c6805822a499961"
+    },
+    {
+      "path": "LD_verification/counted_alleles.txt",
+      "bytes": 24,
+      "sha256": "15dc3c124560c24f8722cca1976dee2aaaf6291cabc8c54feeaec7385c019358"
+    },
+    {
+      "path": "LD_verification/EAS_G_dosage.console.txt",
+      "bytes": 2860,
+      "sha256": "bc17c0f11c13cb7c99bc9f2f12333fd7702b7473e2a119644bc15a5f4ec5cf8b"
+    },
+    {
+      "path": "LD_verification/EAS_G_dosage.log",
+      "bytes": 1649,
+      "sha256": "30104fc3ca8171e285865b9fefe6a9d8097217807c79daec996355063bf47da1"
+    },
+    {
+      "path": "LD_verification/EAS_G_dosage.raw",
+      "bytes": 15173,
+      "sha256": "14531dccc4efe60224ecfdff6199854d04fc95582b2c2addc1b0a8a143b8fcfe"
+    },
+    {
+      "path": "LD_verification/EAS_haplotype.console.txt",
+      "bytes": 2330,
+      "sha256": "e622989f0fa4903a8d65cb461d0a7043983180dbf04e90a79aa0c6d6b13f9231"
+    },
+    {
+      "path": "LD_verification/EAS_haplotype.log",
+      "bytes": 1698,
+      "sha256": "d3685950060144a6f190ef67c1cb989c5244c53cee9defc159fa0ea6aa85a727"
+    },
+    {
+      "path": "LD_verification/EAS_signed.console.txt",
+      "bytes": 2307,
+      "sha256": "b6189192d1c7b8350ab956997d47eac329320ce2d53a5fd027a03e9d90f8badc"
+    },
+    {
+      "path": "LD_verification/EAS_signed.ld",
+      "bytes": 220,
+      "sha256": "e6685f343046dec048c87049fcc09509fcaa8feaa1e5c02ef87c2ced2bca2d1b"
+    },
+    {
+      "path": "LD_verification/EAS_signed.log",
+      "bytes": 1606,
+      "sha256": "51bd00904b52e259598f87f924161f602a854662582409a1b1ca9c7589a3e7d6"
+    },
+    {
+      "path": "LD_verification/EUR_G_dosage.console.txt",
+      "bytes": 2860,
+      "sha256": "c572c3989be600bc9378a762241efe843779d7e46a03ddc2e6e41b547a606881"
+    },
+    {
+      "path": "LD_verification/EUR_G_dosage.log",
+      "bytes": 1649,
+      "sha256": "113c1b550e7e62a6b91032aa2827e21027f4870dbcb8672d1bc39ade6426d859"
+    },
+    {
+      "path": "LD_verification/EUR_G_dosage.raw",
+      "bytes": 15143,
+      "sha256": "86505183a4fa0dd68416181ad5731838bd782509965bc213e66fa64c3cdb92ec"
+    },
+    {
+      "path": "LD_verification/EUR_haplotype.console.txt",
+      "bytes": 2337,
+      "sha256": "99629de3eebc08e71c2a4cad507ef1c89c1d03d4f3779e41c7c7b1c347eaba41"
+    },
+    {
+      "path": "LD_verification/EUR_haplotype.log",
+      "bytes": 1705,
+      "sha256": "8ff21d3441ea79432d880af543b4608915edd5a7bc72ebfb90e63773f38a73cc"
+    },
+    {
+      "path": "LD_verification/EUR_signed.console.txt",
+      "bytes": 2307,
+      "sha256": "0014bf1cdd3279898eebb3000af192a94b437ae66eda55e2dcfe59ed3f5060db"
+    },
+    {
+      "path": "LD_verification/EUR_signed.ld",
+      "bytes": 220,
+      "sha256": "4f433ed787125dcf218ef98356b8b41831ffb0551510449a391f896e1178b74c"
+    },
+    {
+      "path": "LD_verification/EUR_signed.log",
+      "bytes": 1606,
+      "sha256": "64317334ab5d5cd60480c69344eaf97b6eb313591a23edb6189bed81e4b1a6ae"
+    },
+    {
+      "path": "LD_verification/variants.txt",
+      "bytes": 20,
+      "sha256": "a7cb493f772680ed74b4d0208eadf9ded5c72d4effecbf0cfb504fb1ca4929ef"
+    },
+    {
+      "path": "Manuscript_insertions.md",
+      "bytes": 5391,
+      "sha256": "d430e8cc9e9208394d65d439262793824c413619cbe81dd3888bef6bb9a34a44"
+    },
+    {
+      "path": "PROTOCOL_FREEZE.json",
+      "bytes": 297,
+      "sha256": "e4ebd068111718ae3369bb1b3b8b158da114f7cebc9cf6d605ed2515f590d22b"
+    },
+    {
+      "path": "PROTOCOL_v1.md",
+      "bytes": 8983,
+      "sha256": "7ac81a62df6043cb63fe18c7dd79479526340331bfffd917ab2de3bd9cda3ff1"
+    },
+    {
+      "path": "READ_RESULTS_KO.md",
+      "bytes": 9350,
+      "sha256": "75b8b3caa2b9b13d66014f728ac74add1cacc0f57eb7174541044a9eeceabc8d"
+    },
+    {
+      "path": "Reproduce/01_audit.py",
+      "bytes": 12996,
+      "sha256": "d6964f8ce7c00def9d0d7892b427bd55b5578af837d851fc550e764e3a000906"
+    },
+    {
+      "path": "Reproduce/02_report.py",
+      "bytes": 23376,
+      "sha256": "41cceb52049f44840836cb8d3f075d7c2b9c6a914fa0a525f3bfbb0e51c789fc"
+    },
+    {
+      "path": "Reproduce/freeze_protocol.py",
+      "bytes": 10653,
+      "sha256": "404b12f1654cec986e3dbf6c61dde622a4a5c0857c29a6d2d7070da29010ae3f"
+    },
+    {
+      "path": "Reproduce/README.md",
+      "bytes": 1246,
+      "sha256": "91a21fc417a43962e993e7c4d9b9318d14f55e03da997921f962779791e4d455"
+    },
+    {
+      "path": "Source_extracts/BBJ_original_rows.tsv",
+      "bytes": 382,
+      "sha256": "2137e9745b2ca865d7d6e39ad8935b9d99f766fe67bc95598b8139ced4b493dc"
+    },
+    {
+      "path": "Source_extracts/E4_GRAVES_OPHT_STRICT_original_rows.tsv",
+      "bytes": 290,
+      "sha256": "92f9c14d6417cbb64e737b4967d65d3910dd1157c4d30135a8808c2fbfcf01be"
+    },
+    {
+      "path": "Source_extracts/E4_GRAVES_STRICT_original_rows.tsv",
+      "bytes": 291,
+      "sha256": "a31c1b94d225caeb5b2f88ddf79a8b78e7359305210dff31cd339b9c57dc157f"
+    },
+    {
+      "path": "Source_extracts/eQTLGen_original_rows.tsv",
+      "bytes": 327,
+      "sha256": "161928de725f4135fe7b8257468afe80f26fa9ea729b1604b831a76449cb9c53"
+    },
+    {
+      "path": "Source_extracts/FinnGen_GO_original_rows.tsv",
+      "bytes": 290,
+      "sha256": "f83d0f0d10d466549801d70fef28cef087d260a49b691c434ede40542256d3f2"
+    },
+    {
+      "path": "Source_extracts/UKB_original_rows.tsv",
+      "bytes": 611,
+      "sha256": "3121357186331f93a662888962451c9eebdca603bf32a9d152cb0a965133c707"
+    },
+    {
+      "path": "SOURCE_MANIFEST.json",
+      "bytes": 6942,
+      "sha256": "5f1beef7619c87fec10b340be07d9ca8a00200c409d5354fda163a45a7856c18"
+    },
+    {
+      "path": "Tables/Reference_two_locus_genotype_counts.csv",
+      "bytes": 259,
+      "sha256": "3c13e8aa08b87163736b47944cb08da8afd18cb329a3d7f5fe66c2428ed9af76"
+    },
+    {
+      "path": "Tables/Table_A1_eQTL_original_direction.csv",
+      "bytes": 342,
+      "sha256": "f14f6db5e0e2ec347ee18b4eea6043b4bc1416d5aae8a79c6bc1b7db1c5d49be"
+    },
+    {
+      "path": "Tables/Table_A2_signed_LD.csv",
+      "bytes": 707,
+      "sha256": "78f931f20fd8d08fc7aad99afa4f655c36b9c8821a7a3ca8ab2503c53ad0cd2b"
+    },
+    {
+      "path": "Tables/Table_A2b_inferred_haplotype_frequencies.csv",
+      "bytes": 883,
+      "sha256": "a94d7b92ef760e054a3e86083ce18a58f75f3e8ba0bbde8107c47383ffaa9a1c"
+    },
+    {
+      "path": "Tables/Table_A3_both_variants_five_disease_GWAS.csv",
+      "bytes": 2313,
+      "sha256": "b7250848c53d2b53434c68d13f5816c2fdd0cbb40ab95c076754755987343716"
+    },
+    {
+      "path": "Tables/Table_A4_MR_reproduction.csv",
+      "bytes": 1708,
+      "sha256": "ecbea3852c7d8b5092e1ff941f4482f4232efbfc81f86d8b6aed94d525e235c2"
+    },
+    {
+      "path": "Tissue_planned_results_50_cells.csv",
+      "bytes": 7061,
+      "sha256": "6d4c17ef88fc5cbaafa52b2bca795ddbee2876570adbce759a853ed9e9d0b53b"
+    },
+    {
+      "path": "verification_checks.csv",
+      "bytes": 5056,
+      "sha256": "95d14a5cf1063a381a28c09195e574481902a09e0b3f216d85a1ece1ea6f86f1"
+    }
+  ]
+}

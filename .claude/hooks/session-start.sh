@@ -1,5 +1,5 @@
 #!/bin/bash
-# SessionStart hook: surface the Paper 1 submission-ready integrity audit.
+# SessionStart hook: surface the Paper 1 current delivery integrity audit.
 # Read-only and non-blocking — never fails the session.
 set -uo pipefail
 
@@ -10,7 +10,7 @@ fi
 
 cd "${CLAUDE_PROJECT_DIR:-.}" || exit 0
 
-echo "── TED-TRAP Paper 1 submission-ready audit (SessionStart) ──"
+echo "── TED-TRAP Paper 1 delivery integrity audit (SessionStart) ──"
 if [ -f scripts/audit_paper1_integrity.py ]; then
   python3 scripts/audit_paper1_integrity.py \
     || echo "⚠️  Integrity audit reported FAIL — review before submitting."

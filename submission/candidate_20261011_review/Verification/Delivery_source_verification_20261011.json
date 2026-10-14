@@ -1,0 +1,12 @@
+[
+  {
+    "package": "TED_Tissue_Integrated_20261003",
+    "verified_files": 201,
+    "all_sha256_match": true
+  },
+  {
+    "package": "TED_Tissue_Tables_Figures_20261003",
+    "verified_files": 21,
+    "all_sha256_match": true
+  }
+]

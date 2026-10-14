@@ -1,0 +1,13 @@
+{
+  "python_independent_MR_estimates": 80,
+  "MR_max_abs_delta": 8.881784197001252e-16,
+  "retained_instrument_source_identity_rows": 18,
+  "raw_frequency_max_abs_delta": 0.0,
+  "raw_Z_max_abs_delta": 0.0,
+  "coloc_posterior_vectors": 840,
+  "TSHR_baseline_vectors_reproduced": 60,
+  "new_TSHR_window_vectors": 180,
+  "new_candidate_vectors": 600,
+  "candidate_H4_ge_0_8": 0,
+  "PASS": true
+}

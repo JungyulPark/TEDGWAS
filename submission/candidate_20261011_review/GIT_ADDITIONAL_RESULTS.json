@@ -1,0 +1,225 @@
+{
+  "scope": "Original aggregate analysis outputs and independent verification reports. Regional/raw source inputs excluded.",
+  "files": [
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/MR_all_genes_all_scenarios.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/MR_all_genes_all_scenarios.csv",
+      "sha256": "d81fc329bedb1cda704830fccbbcc9b05fafac99da8858c2bd964c9b2a55b6a4"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/MR_14genes_all_scenarios.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/MR_14genes_all_scenarios.csv",
+      "sha256": "a492545ce97ef5d161e9519fd9c43d8790d3bdce9aadae7425fb3ef84c0e7f73"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/leave_one_out_14genes.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/leave_one_out_14genes.csv",
+      "sha256": "906d8f800b3a212a9d926f6bf730a7c327954e9213dbc82bb259116c6cd145d1"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/identity_control_original_FinnGen.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/identity_control_original_FinnGen.csv",
+      "sha256": "70f3f0f99af53c4f4d7dbda990d8baba639606958c904c170f3d925af3d3006f"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/harmonization_counts.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/harmonization_counts.csv",
+      "sha256": "91584c5f7d86670824242ea8afdd801ff4c37ea1c04673e5453d46aeb2d535a8"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/mr_v1/verification.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/mr_v1/verification.csv",
+      "sha256": "79e6e5f19a34efe474743b7f97618510c75ae313789ffe4bf00e9d0ca02f57de"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/Coloc_all_settings_with_identity.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/Coloc_all_settings_with_identity.csv",
+      "sha256": "35b7808011eb8a8bdbc482f2ce8508c15c796c37fe990345a52659deaf3ab239"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/Coloc_new_336_settings.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/Coloc_new_336_settings.csv",
+      "sha256": "fb82bca88deace298d64b056d003286dc552dafa68f8e4a13de56fad4caf1fef"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/coverage.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/coverage.csv",
+      "sha256": "b0882abbacf7e111cac54b8c6f933f3eb809be4b11900f11710f8be26e1722a6"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/eqtl_region_check.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/eqtl_region_check.csv",
+      "sha256": "7c58c841d95f2cbc97d27ba70c0e933b7d327552b9541df1d2f4ebf72b7490cc"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/python_verification.json",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/python_verification.json",
+      "sha256": "22e033b3d66436c85f6885073e5ec8b182f30cd623ddd21586c8f08cf73b2694"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/R_coloc_posteriors.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/R_coloc_posteriors.csv",
+      "sha256": "8d5b561fa7463f74509797001a2ba04d5f4abc26f09b786d754cccf4f87c0647"
+    },
+    {
+      "source_workspace_relative": "work/reanalysis_20261002/coloc_v1/R_coloc_verification.csv",
+      "candidate_relative": "reproducibility/work/reanalysis_20261002/coloc_v1/R_coloc_verification.csv",
+      "sha256": "664e3a66fd2b33c979f13d9b7afd423733b1f43553784f45da73c406d3cea8d4"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/TSHR_240_coloc_settings.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/TSHR_240_coloc_settings.csv",
+      "sha256": "8e56e913773cdb5345236ada8a1c06064b1612f98b29911b6771b91b8884ecdd"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/baseline_identity.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/baseline_identity.csv",
+      "sha256": "022af421178e73adcf0b0f56ba2cd283eef8a1fdc6d98701cd885bb9e4dd0df6"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/regional_coverage_counts.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/regional_coverage_counts.csv",
+      "sha256": "4963d72f382a87a33254641ea4dacecb071c5d654f50dd45aaf83e352babc2b6"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/python_verification.json",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/python_verification.json",
+      "sha256": "389478e4c12243388da4dcfb5d99d34ed2c6668d15700c1eb5b11018b9038188"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/R_posteriors.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/R_posteriors.csv",
+      "sha256": "b1034450ec7bd610ded16e7fd9bb0b787c0472701715a74a4c04d3cb68713648"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/TSHR_v2/R_verification.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/TSHR_v2/R_verification.csv",
+      "sha256": "0de7a7997d9c6c8c2ae72dc5da3168238b2a3a6babbcf4746211113dfe53caf6"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/Candidate_600_coloc_settings.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/Candidate_600_coloc_settings.csv",
+      "sha256": "54dcef2f3aa65dc787d66710d38d7499045cff525476cc3a24ea08f98799c01b"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/Candidate_primary_MR_coloc.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/Candidate_primary_MR_coloc.csv",
+      "sha256": "008d383c9525242d3af177d911a728efb26b738d0abb991963756ebe714d5b97"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/coverage.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/coverage.csv",
+      "sha256": "6fc23a68dfb7b116cb49bea22adf2478b10ea4ca0c4413cb4b351b8f1baa6738"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/python_verification.json",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/python_verification.json",
+      "sha256": "bec4d8f3dfb1bdd7e74b361be021b623ca9ce74b719061ad91e6de41a14c4879"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/R_posteriors.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/R_posteriors.csv",
+      "sha256": "9d72a2ca8120aadfd34b816618173f14b1ed7c95ab21b4345cd32b2b4d3ff825"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/R_verification.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/R_verification.csv",
+      "sha256": "abca04f40d9e3ec54e44d5d6435ba5dccac93b0b6564f0c8855e803440490ec7"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/candidates_v1/shared_selected_instruments.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/candidates_v1/shared_selected_instruments.csv",
+      "sha256": "00ff9108582edc1c6e23fefd70931483f29d03095e6eb88a24a66723eb4cb130"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/instruments_v1/exposure_frequency_scaling.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/instruments_v1/exposure_frequency_scaling.csv",
+      "sha256": "ce6cf2dc86b815a06f7577359aad10ab496c7fe8b0ddde346b13da3fcca93b45"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/instruments_v1/full_MR.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/instruments_v1/full_MR.csv",
+      "sha256": "b912b93cdc98d41b22e4f1d15c12d2ff00e0d8a24e515d5820ca2c85abe78b5e"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/instruments_v1/leave_one_out.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/instruments_v1/leave_one_out.csv",
+      "sha256": "68a3f88a6af36253bb58c697ae3a2d53a585fe0ff9f5de263f6e1c01b02a1d1a"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/instruments_v1/R_verification.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/instruments_v1/R_verification.csv",
+      "sha256": "0b4c6bc6918c68865af931d8df7376b09b768d8081dd9f756115a14f45e83001"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/instruments_v1/SNP_estimates_weights.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/instruments_v1/SNP_estimates_weights.csv",
+      "sha256": "9512d8e5bcdfc2cc26802fa7dd1dd32c301bb4886c3ea9c0990ab96596e906a2"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/final_checks_v1/marginal_signal_coverage.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/final_checks_v1/marginal_signal_coverage.csv",
+      "sha256": "cbc885d22f35758b88bfe86ce5bccde77279e434b593c28cd868d105ba921363"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/final_checks_v1/retained_instrument_source_identity.csv",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/final_checks_v1/retained_instrument_source_identity.csv",
+      "sha256": "2036c2e754a9ff907c2161d4a95bf3cc273603f69e26070c1f55e92c25957581"
+    },
+    {
+      "source_workspace_relative": "work/followup_validation_20261002/final_checks_v1/verification.json",
+      "candidate_relative": "reproducibility/work/followup_validation_20261002/final_checks_v1/verification.json",
+      "sha256": "f79dbe842fea650439e2eef764644b7018db905e4f72017a7d1880f69fa6799b"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage1_13_discovery_genes.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage1_13_discovery_genes.csv",
+      "sha256": "8b1d6fb8c1b661188eea075caac15493ab37f003488629359ca30fca940f4979"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage1_all_2544_genes_3_outcomes.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage1_all_2544_genes_3_outcomes.csv",
+      "sha256": "01c135f4c2c2c87575f22810f85d764a0f964af3be92bc99241c6aeca7b7b02d"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage2_14_genes_primary.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage2_14_genes_primary.csv",
+      "sha256": "b87d19118307811863ab6943a391e6c867ec87df3aa580aaf5dd3ccf943fb13b"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage2_all_504_colocalization_settings.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage2_all_504_colocalization_settings.csv",
+      "sha256": "c393d9e0185ca6970e1f1c1eec661406fdcbe2e11b21180fc55fa3d60b505e87"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage2_integrated_summary.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage2_integrated_summary.csv",
+      "sha256": "c8160b2e4c2d805963afa01cbfbb13707afa8e3a0a6748ad7b15103ef60cbebf"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/Stage2_variant_coverage.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/Stage2_variant_coverage.csv",
+      "sha256": "d6457ef845666c1dd1343050ca2a4572a60ae482ef0a3a469657670ad79eb399"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/independent_R_posteriors.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/independent_R_posteriors.csv",
+      "sha256": "dd9e16027a0eccea0fd80a77b4257456e087c048784d9247746a42a41c6bdbb2"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/independent_R_verification.txt",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/independent_R_verification.txt",
+      "sha256": "2d18a0484cf32321d9641f4c37d29049e9a0f26bed067a3f085c982866ee28c8"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/MHC_input_coverage.csv",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/MHC_input_coverage.csv",
+      "sha256": "e57f79a6c08642a343e5e1632fbc50f5ba0958485697dc7fb36f5b5db1b265ba"
+    },
+    {
+      "source_workspace_relative": "work/expanded_analysis_20260930/results/verification.json",
+      "candidate_relative": "reproducibility/work/expanded_analysis_20260930/results/verification.json",
+      "sha256": "c1c774d3baa7ae0cb12a77862e1a1a116814803a896f7e2800c3130702caf700"
+    }
+  ]
+}

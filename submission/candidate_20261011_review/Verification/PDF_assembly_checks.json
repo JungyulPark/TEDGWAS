@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "pages": 13,
+  "all_page_text_unchanged": true,
+  "maximum_page_size_serialization_difference_points": 3.8840005345264217e-07,
+  "note": "PDF coordinate serialization rounds sub-micropoint precision; no layout change."
+}

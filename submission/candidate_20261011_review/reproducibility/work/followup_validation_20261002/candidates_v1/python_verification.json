@@ -1,0 +1,7 @@
+{
+  "settings": 600,
+  "n_genes": 10,
+  "n_outcomes": 5,
+  "settings_with_adjusted_p1": 0,
+  "status": "Python PASS; R pending"
+}

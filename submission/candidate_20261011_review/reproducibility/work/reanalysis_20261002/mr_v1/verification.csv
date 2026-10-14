@@ -1,0 +1,6 @@
+test,value
+reference_identity_rows,2480
+independent_MR_max_delta,8.88178419700125e-16
+max_delta_exposure_Z,1.4210854715202e-14
+same_SNP_single_IV_max_delta_P,3.88578058618805e-16
+new_primary_gene_endpoint_rows,5088

@@ -1,0 +1,481 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "Abstract <=250 words",
+      "pass": true
+    },
+    {
+      "check": "Main text <=5000 words",
+      "pass": true
+    },
+    {
+      "check": "Eight discussion paragraphs",
+      "pass": true
+    },
+    {
+      "check": "Two limitation paragraphs",
+      "pass": true
+    },
+    {
+      "check": "All 33 references first-cited in order",
+      "pass": true
+    },
+    {
+      "check": "33 numbered reference records",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: **Methods:** We screened 2,544 druggable genes using Mendelian randomizatio",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: **Results:** Thirteen genes met the BBJ discovery threshold (*P* < 0.05/2,5",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: We subsequently assessed both genes in a fixed panel of five GTEx v8 tissue",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: Frequency substitution preserved the original 13 BBJ discoveries and the pr",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: Four of ten gene–tissue combinations provided a qualifying instrument, each",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: The principal limitations involve the exposure and phenotype definitions. P",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: Genetically proxied blood *TSHR* expression showed consistent associations ",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: **Data availability.** Instruments, primary MR and colocalization results, ",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: **Acknowledgements.** We thank the eQTLGen Consortium, the GTEx Consortium,",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 1. Bahn RS. Graves' ophthalmopathy. N Engl J Med. 2010;362:726-738. doi:10.",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 2. Smith TJ, Hegedüs L. Graves' Disease. N Engl J Med. 2016;375:1552-1565. ",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 3. Douglas RS, Kahaly GJ, Patel A, Sile S, Thompson EHZ, Perdok R, Fleming ",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 4. Smith TJ. The insulin-like growth factor-I receptor and its role in thyr",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 5. Krieger CC, Boutin A, Jang D, Morgan SJ, Banga JP, Kahaly GJ, Klubo-Gwie",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 6. Smith TJ. Potential Roles of CD34+ Fibrocytes Masquerading as Orbital Fi",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 7. Sanderson E, Glymour MM, Holmes MV, Kang H, Morrison J, Munafò MR, Palme",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 8. Giambartolomei C, Vukcevic D, Schadt EE, Franke L, Hingorani AD, Wallace",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 9. Ji Q, Xu H, Chen H, Chen X, Wang S, Zou J. Pathogenic genes associated w",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 10. Li Y, Chen L, Lin S, An W, Miao L, Wan M, Zhang B. Inflammatory Protein",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 11. Zhang H, Jiang S, Zhu T, Liu Y, Li J, Fang S, Li Y, Sun J, He X, Tong C",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 12. Skrivankova VW, Richmond RC, Woolf BAR, Yarmolinsky J, Davies NM, Swans",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 13. Võsa U, Claringbould A, Westra HJ, Bonder MJ, Deelen P, Zeng B, Kirsten",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 14. Sakaue S, Kanai M, Tanigawa Y, Karjalainen J, Kurki M, Koshiba S, Narit",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 15. Dönertaş HM, Fabian DK, Valenzuela MF, Partridge L, Thornton JM. Common",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 16. Kurki MI, Karjalainen J, Palta P, Sipilä TP, Kristiansson K, Donner KM,",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 17. Finan C, Gaulton A, Kruger FA, Lumbers RT, Shah T, Engmann J, Galver L,",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 18. Chang CC, Chow CC, Tellier LC, Vattikuti S, Purcell SM, Lee JJ. Second-",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 19. 1000 Genomes Project Consortium, Auton A, Brooks LD, Durbin RM, Garriso",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 20. Zhu Z, Zhang F, Hu H, Bakshi A, Robinson MR, Powell JE, Montgomery GW, ",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 21. Hemani G, Zheng J, Elsworth B, Wade KH, Haberland V, Baird D, Laurin C,",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 22. Bowden J, Davey Smith G, Burgess S. Mendelian randomization with invali",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 23. Bowden J, Davey Smith G, Haycock PC, Burgess S. Consistent Estimation i",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 24. Wallace C. Eliciting priors and relaxing the single causal variant assu",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 25. GTEx Consortium. The GTEx Consortium atlas of genetic regulatory effect",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 26. Ueda H, Howson JM, Esposito L, Heward J, Snook H, Chamberlain G, Rainbo",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 27. Colobran R, Armengol Mdel P, Faner R, Gärtner M, Tykocinski LO, Lucas A",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 28. Marín-Sánchez A, Álvarez-Sierra D, González O, Lucas-Martin A, Sellés-S",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 29. Chen CR, Pichurin P, Nagayama Y, Latrofa F, Rapoport B, McLachlan SM. T",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 30. Berchner-Pfannschmidt U, Moshkelgosha S, Diaz-Cano S, Edelmann B, Görtz",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 31. Daser A, Gulbins A, Horstmann M, Kalisch J, Nolte I, Hashemi Arani F, L",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 32. Eckstein AK, Lösch C, Glowacka D, Schott M, Mann K, Esser J, Morgenthal",
+      "pass": true
+    },
+    {
+      "check": "DOCX/MD text: 33. Wallace C. A more accurate method for colocalisation analysis allowing ",
+      "pass": true
+    },
+    {
+      "check": "Abstract tissue scope and blood scope explicit",
+      "pass": true
+    },
+    {
+      "check": "Instrument_checks.json passed",
+      "pass": true
+    },
+    {
+      "check": "MR_checks.json passed",
+      "pass": true
+    },
+    {
+      "check": "50 cells; 20 estimable; 30 unavailable",
+      "pass": true
+    },
+    {
+      "check": "20 independent R estimates pass",
+      "pass": true
+    },
+    {
+      "check": "Ten primary / forty secondary denominators",
+      "pass": true
+    },
+    {
+      "check": "TSHR eight corrected, one nominal, one nonsignificant",
+      "pass": true
+    },
+    {
+      "check": "All 10 IGF1R P values >0.05",
+      "pass": true
+    },
+    {
+      "check": "Four selected instruments, one per estimable combination",
+      "pass": true
+    },
+    {
+      "check": "TSHR thyroid not relaxed",
+      "pass": true
+    },
+    {
+      "check": "Exactly three supplementary tables",
+      "pass": true
+    },
+    {
+      "check": "Supplementary Table S1 unchanged",
+      "pass": true
+    },
+    {
+      "check": "Supplementary Table S2 unchanged",
+      "pass": true
+    },
+    {
+      "check": "S3 includes ten planned combinations",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 1",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 1",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 2",
+      "pass": true
+    },
+    {
+      "check": "S3 OR/CI 2",
+      "pass": true
+    },
+    {
+      "check": "S3 P 2 0.0692",
+      "pass": true
+    },
+    {
+      "check": "S3 P 2 0.692",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 3",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 3",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 4",
+      "pass": true
+    },
+    {
+      "check": "S3 OR/CI 4",
+      "pass": true
+    },
+    {
+      "check": "S3 P 4 0.3591",
+      "pass": true
+    },
+    {
+      "check": "S3 P 4 1.000",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 5",
+      "pass": true
+    },
+    {
+      "check": "S3 OR/CI 5",
+      "pass": true
+    },
+    {
+      "check": "S3 P 5 1.28e-34",
+      "pass": true
+    },
+    {
+      "check": "S3 P 5 1.28e-33",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 6",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 6",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 7",
+      "pass": true
+    },
+    {
+      "check": "S3 OR/CI 7",
+      "pass": true
+    },
+    {
+      "check": "S3 P 7 4.09e-19",
+      "pass": true
+    },
+    {
+      "check": "S3 P 7 4.09e-18",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 8",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 8",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 9",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 9",
+      "pass": true
+    },
+    {
+      "check": "S3 identity 10",
+      "pass": true
+    },
+    {
+      "check": "S3 unavailable 10",
+      "pass": true
+    },
+    {
+      "check": "Tables.docx unchanged",
+      "pass": true
+    },
+    {
+      "check": "Tables.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "Tables.md unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure_Legends.md unchanged",
+      "pass": true
+    },
+    {
+      "check": "All_Figures.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure1.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure1.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure2.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure2.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure3.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "Figure3.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "FigureS1.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "FigureS1.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "FigureS2.pdf unchanged",
+      "pass": true
+    },
+    {
+      "check": "FigureS2.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "Supplementary figure media word/media/image1.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "Supplementary figure media word/media/image2.png unchanged",
+      "pass": true
+    },
+    {
+      "check": "Old detection data retained",
+      "pass": true
+    },
+    {
+      "check": "Manuscript has no blank PDF pages",
+      "pass": true
+    },
+    {
+      "check": "Manuscript has no replacement-glyph text",
+      "pass": true
+    },
+    {
+      "check": "Rendered manuscript contains new results",
+      "pass": true
+    },
+    {
+      "check": "Supplementary_Material has no blank PDF pages",
+      "pass": true
+    },
+    {
+      "check": "Supplementary_Material has no replacement-glyph text",
+      "pass": true
+    },
+    {
+      "check": "Rendered Table S3 contains estimates",
+      "pass": true
+    },
+    {
+      "check": "STROBE_MR_Checklist has no blank PDF pages",
+      "pass": true
+    },
+    {
+      "check": "STROBE_MR_Checklist has no replacement-glyph text",
+      "pass": true
+    }
+  ],
+  "abstract_words": 247,
+  "main_words": 4555,
+  "discussion_paragraphs": 8,
+  "limitations_paragraphs": 2,
+  "references": 33,
+  "independent_R_max_relative_difference": 2.60949072429402e-14,
+  "document_pages": {
+    "Manuscript": 15,
+    "Supplementary_Material": 9,
+    "STROBE_MR_Checklist": 1
+  },
+  "validation_scope": "Numerical implementation, source identities, preservation, citation order and rendering; not proof of instrumental validity or tissue mediation."
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://storage.googleapis.com/storage/v1/b/adult-gtex/o?prefix=bulk-qtl/v8/single-tissue-cis-qtl/&maxResults=1000",
+  "status": 200,
+  "retrieved_utc": "2026-10-03T11:43:35.321366+00:00",
+  "sha256": "39e1c3de08fe2a692c94bafa0ad694286b5093d267fdeedbf7d399c41ad83db8"
+}

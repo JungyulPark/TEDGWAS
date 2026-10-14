@@ -1,0 +1,187 @@
+[
+  {
+    "outcome": "BBJ_Graves",
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90018627_harmonised.tsv.gz",
+    "source_sha256": "2364419b2dc857c5c30d96feae8a4eaaf92fb85b2c4cdc44158fa4889cdce2f6",
+    "rows_scanned": 12181449,
+    "full_source_scan": true,
+    "genome_build": "GRCh38",
+    "found": [
+      {
+        "chromosome": "14",
+        "pos38": "80984708",
+        "expected_snp": "rs12101255",
+        "source_ids": "rs12101255"
+      },
+      {
+        "chromosome": "14",
+        "pos38": "80984758",
+        "expected_snp": "rs74064796",
+        "source_ids": "rs74064796"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98643092",
+        "expected_snp": "rs6598538",
+        "source_ids": "rs6598538"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98961442",
+        "expected_snp": "rs1815009",
+        "source_ids": "rs1815009"
+      }
+    ],
+    "extract": "BBJ_Graves.tsv",
+    "extract_sha256": "30b9de4a07a20c6d9cb25e226418a587b49b3b389686a75b9046400c45fdbebd",
+    "utc": "2026-10-03T11:54:49.409263+00:00"
+  },
+  {
+    "outcome": "UKB_hyperthyroid",
+    "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90038636_harmonised.tsv.gz",
+    "source_sha256": "264d5573e86f3698568e0e8bb4530347ac98ad572a3d3a9c648b950def681586",
+    "rows_scanned": 9689034,
+    "full_source_scan": true,
+    "genome_build": "GRCh38",
+    "found": [
+      {
+        "chromosome": "14",
+        "pos38": "80984708",
+        "expected_snp": "rs12101255",
+        "source_ids": "rs12101255"
+      },
+      {
+        "chromosome": "14",
+        "pos38": "80984758",
+        "expected_snp": "rs74064796",
+        "source_ids": "rs74064796"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98643092",
+        "expected_snp": "rs6598538",
+        "source_ids": "rs6598538"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98961442",
+        "expected_snp": "rs1815009",
+        "source_ids": "rs1815009"
+      }
+    ],
+    "extract": "UKB_hyperthyroid.tsv",
+    "extract_sha256": "3df2c53d300d271b626ca5449f195b4c50af29dc7e9cca29502f97ed88002f81",
+    "utc": "2026-10-03T11:54:48.119661+00:00"
+  },
+  {
+    "outcome": "FinnGen_GO",
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_GRAVES_OPHT.gz",
+    "source_sha256": "26f26b390b608af944c29d61b6c74a67fade090ec97523958ef8e8b77a579df6",
+    "rows_scanned": 21327060,
+    "full_source_scan": true,
+    "genome_build": "GRCh38",
+    "found": [
+      {
+        "chromosome": "14",
+        "pos38": "80984708",
+        "expected_snp": "rs12101255",
+        "source_ids": "rs12101255"
+      },
+      {
+        "chromosome": "14",
+        "pos38": "80984758",
+        "expected_snp": "rs74064796",
+        "source_ids": "rs74064796"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98643092",
+        "expected_snp": "rs6598538",
+        "source_ids": "rs6598538"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98961442",
+        "expected_snp": "rs1815009",
+        "source_ids": "rs1815009"
+      }
+    ],
+    "extract": "FinnGen_GO.tsv",
+    "extract_sha256": "0e29a2aa6100acf17de72b16416cd781efb3c4726bc41f11999445b72dac1ddf",
+    "utc": "2026-10-03T11:55:10.219079+00:00"
+  },
+  {
+    "outcome": "E4_GRAVES_STRICT",
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_E4_GRAVES_STRICT.gz",
+    "source_sha256": "f69d32ffc1e0ca16aa838145792aef2bd0accb5a60b848358a1e43dedda55a51",
+    "rows_scanned": 21327062,
+    "full_source_scan": true,
+    "genome_build": "GRCh38",
+    "found": [
+      {
+        "chromosome": "14",
+        "pos38": "80984708",
+        "expected_snp": "rs12101255",
+        "source_ids": "rs12101255"
+      },
+      {
+        "chromosome": "14",
+        "pos38": "80984758",
+        "expected_snp": "rs74064796",
+        "source_ids": "rs74064796"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98643092",
+        "expected_snp": "rs6598538",
+        "source_ids": "rs6598538"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98961442",
+        "expected_snp": "rs1815009",
+        "source_ids": "rs1815009"
+      }
+    ],
+    "extract": "E4_GRAVES_STRICT.tsv",
+    "extract_sha256": "7c59040cd4be764f510aa179eef1d3c39125819801074a5edd2fd90478f13298",
+    "utc": "2026-10-03T11:55:32.577606+00:00"
+  },
+  {
+    "outcome": "E4_GRAVES_OPHT_STRICT",
+    "path": "C:\\ProjectTEDGWAS\\finngen_R12_E4_GRAVES_OPHT_STRICT.gz",
+    "source_sha256": "0b751933f26387c7f4f91c1136eac31ebd5be6fef2133a382f3e5e3d3fa16112",
+    "rows_scanned": 21327061,
+    "full_source_scan": true,
+    "genome_build": "GRCh38",
+    "found": [
+      {
+        "chromosome": "14",
+        "pos38": "80984708",
+        "expected_snp": "rs12101255",
+        "source_ids": "rs12101255"
+      },
+      {
+        "chromosome": "14",
+        "pos38": "80984758",
+        "expected_snp": "rs74064796",
+        "source_ids": "rs74064796"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98643092",
+        "expected_snp": "rs6598538",
+        "source_ids": "rs6598538"
+      },
+      {
+        "chromosome": "15",
+        "pos38": "98961442",
+        "expected_snp": "rs1815009",
+        "source_ids": "rs1815009"
+      }
+    ],
+    "extract": "E4_GRAVES_OPHT_STRICT.tsv",
+    "extract_sha256": "b554660c179bd9ff0c1d27dfc3903972bc6bd0dc35186853c06f3dbdd750b291",
+    "utc": "2026-10-03T11:55:32.914320+00:00"
+  }
+]

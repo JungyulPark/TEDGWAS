@@ -1,0 +1,8 @@
+test,value
+full_estimates,8
+leave_one_out_estimates,72
+SNP_estimates,72
+R_vs_formula_max_delta,3.88578058618805e-16
+same_SNP_sets_and_outcome_estimates,1
+paired_frequency_equals_reharmonized,1
+PASS,1

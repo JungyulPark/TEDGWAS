@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "publication_artifacts_byte_identical": 37,
+  "master_byte_identical": true,
+  "scientific_changes_in_this_commit": false,
+  "review_preserved": "internal/REVIEW_codex_package_20261011.md",
+  "note": "Git export is intentionally smaller than the local delivery; see GIT_EXPORT.json."
+}

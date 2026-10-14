@@ -1,0 +1,37 @@
+{
+  "outcome": "UKB_hyperthyroid",
+  "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90038636_harmonised.tsv.gz",
+  "source_sha256": "264d5573e86f3698568e0e8bb4530347ac98ad572a3d3a9c648b950def681586",
+  "rows_scanned": 9689034,
+  "full_source_scan": true,
+  "genome_build": "GRCh38",
+  "found": [
+    {
+      "chromosome": "14",
+      "pos38": "80984708",
+      "expected_snp": "rs12101255",
+      "source_ids": "rs12101255"
+    },
+    {
+      "chromosome": "14",
+      "pos38": "80984758",
+      "expected_snp": "rs74064796",
+      "source_ids": "rs74064796"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98643092",
+      "expected_snp": "rs6598538",
+      "source_ids": "rs6598538"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98961442",
+      "expected_snp": "rs1815009",
+      "source_ids": "rs1815009"
+    }
+  ],
+  "extract": "UKB_hyperthyroid.tsv",
+  "extract_sha256": "3df2c53d300d271b626ca5449f195b4c50af29dc7e9cca29502f97ed88002f81",
+  "utc": "2026-10-03T11:54:48.119661+00:00"
+}

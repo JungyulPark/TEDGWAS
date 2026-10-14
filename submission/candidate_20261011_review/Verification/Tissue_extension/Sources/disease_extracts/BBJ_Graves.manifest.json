@@ -1,0 +1,37 @@
+{
+  "outcome": "BBJ_Graves",
+  "path": "C:\\ProjectTEDGWAS\\TrackA_MR\\v5_upgrade\\04_druggable_mr\\data\\outcomes\\GCST90018627_harmonised.tsv.gz",
+  "source_sha256": "2364419b2dc857c5c30d96feae8a4eaaf92fb85b2c4cdc44158fa4889cdce2f6",
+  "rows_scanned": 12181449,
+  "full_source_scan": true,
+  "genome_build": "GRCh38",
+  "found": [
+    {
+      "chromosome": "14",
+      "pos38": "80984708",
+      "expected_snp": "rs12101255",
+      "source_ids": "rs12101255"
+    },
+    {
+      "chromosome": "14",
+      "pos38": "80984758",
+      "expected_snp": "rs74064796",
+      "source_ids": "rs74064796"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98643092",
+      "expected_snp": "rs6598538",
+      "source_ids": "rs6598538"
+    },
+    {
+      "chromosome": "15",
+      "pos38": "98961442",
+      "expected_snp": "rs1815009",
+      "source_ids": "rs1815009"
+    }
+  ],
+  "extract": "BBJ_Graves.tsv",
+  "extract_sha256": "30b9de4a07a20c6d9cb25e226418a587b49b3b389686a75b9046400c45fdbebd",
+  "utc": "2026-10-03T11:54:49.409263+00:00"
+}

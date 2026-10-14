@@ -1,0 +1,23 @@
+{
+  "Figures/Tissue_all_estimates.pdf": "b5341ea127245d1bca8a15394a7f71be82c16afaca40175d99eb303169d6a2de",
+  "Figures/Tissue_all_estimates.png": "855ae1b9fc3b5614f211f0494091f2c0a3e082d4b1184c1af7af4a6b52132e32",
+  "Figures/Tissue_primary_summary.pdf": "fd4365dd953680ee90ad8546eb9342a37fbc1ba18de829446befe683467dd17a",
+  "Figures/Tissue_primary_summary.png": "a95c7ae9286ad5c51bff715ce773bfa25356937ba3c75db5b04fda11d7f6bc47",
+  "PLACEMENT_KO.md": "fde65ae91c60d106022b595920d933bad7d6620ef41bd85450c29b1482e500eb",
+  "README.md": "cf2420f8ca5e011daf3dfed1db794c8d74a0296fef96d183304bb0f4326813bd",
+  "Source_data/Selected_instruments_verified.csv": "4c3e98210936c8110b53f4be0d81bd50365335c4f195a866175a6029c32c64ca",
+  "Source_data/Tissue_availability_10_combinations.csv": "e410cb486081bbb6ae4a5d909ee2382e05e10f5123439f40c7ae943e8bf1437e",
+  "Source_data/Tissue_MR_50_planned_combinations.csv": "b32a861ef0fda50a74cb19e578be6e957b23c971c80bfda58f87ecfe35912cbe",
+  "Table_S3_current.pdf": "920fdf890a717528c1cbccf2f3b99201e81f2e68dace69b0db836103ff689abb",
+  "Tissue_result_tables.docx": "3fa8e782aef09f725ad2812f68d7af62f2a0380e0b9a30bf0369150dfce15d31",
+  "Tissue_result_tables.pdf": "f1b5f7a9f47b585113280a8ffb43c3e8c0c57f5d668c87ef26a7c59ab58b3ba6",
+  "Tissue_results_display.csv": "032ccb33582108e2124f64371b49408a7d9a8445e481e513e93a4d12b772f896",
+  "Tissue_results_review.pdf": "751362fe7e36e38a6abcccca4ea091ca37c4f7a72f49e8cb12d4a889cd7c7d93",
+  "Verification/01_summary.R": "c51e105a61d6d226c31af0dcf11af4825d49814b80a08e5ba397a78ff71c2941",
+  "Verification/02_tables.py": "f39c4c8110132fe03ec4e40bc5513ba113c18f63e99791c2df5fbcd46256b789",
+  "Verification/03_render.py": "848c07856fe282778ac7e08afdd56a878856e780945b098576daa1f4c26fbee7",
+  "Verification/04_verify_package.py": "8c9818d4b2f6ae59359421d5824a4d04c4eecc3f4ae60e6f2a899d6cacb790fd",
+  "Verification/05_seal.py": "498b060732184623da4164a3b35aa0729e5c7d4f0db489c63fead25a95ecca53",
+  "Verification/checks.json": "db8073c184e049f1796c42c6a849bf75f57a6aafb2ff82a41f535a935f119a9b",
+  "Verification/visual_QA.json": "cebccf2ef512b4df10ca2dfdfd836d2582fcc634eef70326aa3172397ac6bd71"
+}

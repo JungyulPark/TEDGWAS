@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": 4469,
+  "new_numeric_cells_verified": 1438,
+  "unchanged_data_worksheets": 18,
+  "changed_metadata": [
+    "Readme B1 and row26",
+    "Column_dictionary new rows354:484"
+  ],
+  "new_sheet": "Tissue_extension",
+  "preservation_method": "Artifact Tool authoring of changed content; OPC merge preserves unrelated original worksheet bytes and existing style definitions",
+  "sha256": "fae0136df36e46e2a1f1492927722a3be3541e9324678e7f3daa32c1dedb0048"
+}

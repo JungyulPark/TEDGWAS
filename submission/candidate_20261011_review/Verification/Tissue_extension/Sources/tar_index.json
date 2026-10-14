@@ -1,0 +1,590 @@
+[
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adipose_Subcutaneous.v8.egenes.txt.gz",
+    "bytes": 2775674,
+    "offset": 512,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adipose_Subcutaneous.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 62776543,
+    "offset": 2777088,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adipose_Visceral_Omentum.v8.egenes.txt.gz",
+    "bytes": 2768589,
+    "offset": 65554432,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adipose_Visceral_Omentum.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 41919605,
+    "offset": 68323840,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adrenal_Gland.v8.egenes.txt.gz",
+    "bytes": 2628992,
+    "offset": 110244352,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Adrenal_Gland.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 17746431,
+    "offset": 112873984,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Aorta.v8.egenes.txt.gz",
+    "bytes": 2675227,
+    "offset": 130620928,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Aorta.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 40926694,
+    "offset": 133297152,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Coronary.v8.egenes.txt.gz",
+    "bytes": 2693289,
+    "offset": 174224384,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Coronary.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 13137685,
+    "offset": 176918528,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Tibial.v8.egenes.txt.gz",
+    "bytes": 2624934,
+    "offset": 190056960,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Artery_Tibial.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 63555247,
+    "offset": 192682496,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Amygdala.v8.egenes.txt.gz",
+    "bytes": 2608064,
+    "offset": 256238592,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Amygdala.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 5581658,
+    "offset": 258847232,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Anterior_cingulate_cortex_BA24.v8.egenes.txt.gz",
+    "bytes": 2647297,
+    "offset": 264429568,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Anterior_cingulate_cortex_BA24.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 8930672,
+    "offset": 267077632,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Caudate_basal_ganglia.v8.egenes.txt.gz",
+    "bytes": 2713431,
+    "offset": 276008960,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Caudate_basal_ganglia.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 16275212,
+    "offset": 278723072,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cerebellar_Hemisphere.v8.egenes.txt.gz",
+    "bytes": 2742057,
+    "offset": 294999040,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cerebellar_Hemisphere.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 20535845,
+    "offset": 297741824,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cerebellum.v8.egenes.txt.gz",
+    "bytes": 2803597,
+    "offset": 318278656,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cerebellum.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 27253251,
+    "offset": 321082880,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cortex.v8.egenes.txt.gz",
+    "bytes": 2728234,
+    "offset": 348337152,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Cortex.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 19146328,
+    "offset": 351066112,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Frontal_Cortex_BA9.v8.egenes.txt.gz",
+    "bytes": 2692261,
+    "offset": 370213376,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Frontal_Cortex_BA9.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 13389500,
+    "offset": 372906496,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Hippocampus.v8.egenes.txt.gz",
+    "bytes": 2658105,
+    "offset": 386296832,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Hippocampus.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 9239266,
+    "offset": 388955648,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Hypothalamus.v8.egenes.txt.gz",
+    "bytes": 2728497,
+    "offset": 398195712,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Hypothalamus.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 9650231,
+    "offset": 400925184,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Nucleus_accumbens_basal_ganglia.v8.egenes.txt.gz",
+    "bytes": 2733393,
+    "offset": 410576384,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Nucleus_accumbens_basal_ganglia.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 16318628,
+    "offset": 413310464,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Putamen_basal_ganglia.v8.egenes.txt.gz",
+    "bytes": 2600676,
+    "offset": 429629952,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Putamen_basal_ganglia.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 12055695,
+    "offset": 432231424,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Spinal_cord_cervical_c-1.v8.egenes.txt.gz",
+    "bytes": 2671977,
+    "offset": 444288000,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Spinal_cord_cervical_c-1.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 6864694,
+    "offset": 446960640,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Substantia_nigra.v8.egenes.txt.gz",
+    "bytes": 2596581,
+    "offset": 453826048,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Brain_Substantia_nigra.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 4518655,
+    "offset": 456423424,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Breast_Mammary_Tissue.v8.egenes.txt.gz",
+    "bytes": 2883823,
+    "offset": 460942848,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Breast_Mammary_Tissue.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 32429826,
+    "offset": 463827456,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Cells_Cultured_fibroblasts.v8.egenes.txt.gz",
+    "bytes": 2478803,
+    "offset": 496258048,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Cells_Cultured_fibroblasts.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 60936237,
+    "offset": 498737664,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Cells_EBV-transformed_lymphocytes.v8.egenes.txt.gz",
+    "bytes": 2473814,
+    "offset": 559674880,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Cells_EBV-transformed_lymphocytes.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 7780295,
+    "offset": 562149376,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Colon_Sigmoid.v8.egenes.txt.gz",
+    "bytes": 2718830,
+    "offset": 569930240,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Colon_Sigmoid.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 28795346,
+    "offset": 572649984,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Colon_Transverse.v8.egenes.txt.gz",
+    "bytes": 2824900,
+    "offset": 601445888,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Colon_Transverse.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 33395891,
+    "offset": 604271616,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Gastroesophageal_Junction.v8.egenes.txt.gz",
+    "bytes": 2682118,
+    "offset": 637668352,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Gastroesophageal_Junction.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 30178993,
+    "offset": 640351232,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Mucosa.v8.egenes.txt.gz",
+    "bytes": 2688559,
+    "offset": 670531072,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Mucosa.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 54975392,
+    "offset": 673220608,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Muscularis.v8.egenes.txt.gz",
+    "bytes": 2671793,
+    "offset": 728196608,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Esophagus_Muscularis.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 52285709,
+    "offset": 730869248,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Heart_Atrial_Appendage.v8.egenes.txt.gz",
+    "bytes": 2589681,
+    "offset": 783155712,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Heart_Atrial_Appendage.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 32468968,
+    "offset": 785745920,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Heart_Left_Ventricle.v8.egenes.txt.gz",
+    "bytes": 2386332,
+    "offset": 818215424,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Heart_Left_Ventricle.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 28294791,
+    "offset": 820602368,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Kidney_Cortex.v8.egenes.txt.gz",
+    "bytes": 2638181,
+    "offset": 848898048,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Kidney_Cortex.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 1540618,
+    "offset": 851536896,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Liver.v8.egenes.txt.gz",
+    "bytes": 2441939,
+    "offset": 853078528,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Liver.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 11292562,
+    "offset": 855521280,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Lung.v8.egenes.txt.gz",
+    "bytes": 2920598,
+    "offset": 866814464,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Lung.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 49787188,
+    "offset": 869735936,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Minor_Salivary_Gland.v8.egenes.txt.gz",
+    "bytes": 2771294,
+    "offset": 919523840,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Minor_Salivary_Gland.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 7241194,
+    "offset": 922295808,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Muscle_Skeletal.v8.egenes.txt.gz",
+    "bytes": 2376282,
+    "offset": 929537536,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Muscle_Skeletal.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 57106132,
+    "offset": 931914752,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Nerve_Tibial.v8.egenes.txt.gz",
+    "bytes": 2909515,
+    "offset": 989021696,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Nerve_Tibial.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 73716924,
+    "offset": 991931904,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Ovary.v8.egenes.txt.gz",
+    "bytes": 2757761,
+    "offset": 1065649664,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Ovary.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 9881456,
+    "offset": 1068408320,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Pancreas.v8.egenes.txt.gz",
+    "bytes": 2510234,
+    "offset": 1078290432,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Pancreas.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 26170639,
+    "offset": 1080801280,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Pituitary.v8.egenes.txt.gz",
+    "bytes": 2956216,
+    "offset": 1106972672,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Pituitary.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 22230399,
+    "offset": 1109929472,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Prostate.v8.egenes.txt.gz",
+    "bytes": 2911777,
+    "offset": 1132160512,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Prostate.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 15043519,
+    "offset": 1135073280,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Skin_Not_Sun_Exposed_Suprapubic.v8.egenes.txt.gz",
+    "bytes": 2836220,
+    "offset": 1150117376,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Skin_Not_Sun_Exposed_Suprapubic.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 57020311,
+    "offset": 1152954368,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Skin_Sun_Exposed_Lower_leg.v8.egenes.txt.gz",
+    "bytes": 2831289,
+    "offset": 1209975296,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Skin_Sun_Exposed_Lower_leg.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 69800211,
+    "offset": 1212807168,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Small_Intestine_Terminal_Ileum.v8.egenes.txt.gz",
+    "bytes": 2855792,
+    "offset": 1282608128,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Small_Intestine_Terminal_Ileum.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 11267301,
+    "offset": 1285464576,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Spleen.v8.egenes.txt.gz",
+    "bytes": 2810908,
+    "offset": 1296732672,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Spleen.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 23759173,
+    "offset": 1299544576,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Stomach.v8.egenes.txt.gz",
+    "bytes": 2698273,
+    "offset": 1323304448,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Stomach.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 22788848,
+    "offset": 1326003712,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Testis.v8.egenes.txt.gz",
+    "bytes": 3881236,
+    "offset": 1348793344,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Testis.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 56556196,
+    "offset": 1352675328,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Thyroid.v8.egenes.txt.gz",
+    "bytes": 2930314,
+    "offset": 1409232384,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Thyroid.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 79545254,
+    "offset": 1412163584,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Uterus.v8.egenes.txt.gz",
+    "bytes": 2723296,
+    "offset": 1491709440,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Uterus.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 5348397,
+    "offset": 1494433280,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Vagina.v8.egenes.txt.gz",
+    "bytes": 2781046,
+    "offset": 1499782656,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Vagina.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 5555559,
+    "offset": 1502564352,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Whole_Blood.v8.egenes.txt.gz",
+    "bytes": 2285171,
+    "offset": 1508120576,
+    "type": "0"
+  },
+  {
+    "name": "GTEx_Analysis_v8_eQTL/Whole_Blood.v8.signif_variant_gene_pairs.txt.gz",
+    "bytes": 52420363,
+    "offset": 1510406656,
+    "type": "0"
+  }
+]
