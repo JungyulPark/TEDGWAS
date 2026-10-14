@@ -10,7 +10,7 @@ package's Markdown files; scientific figures are reused unchanged.
 Outputs (package root): Manuscript, Tables, Supplementary_Material and
 Cover_Letter_Draft as DOCX + PDF; Tables/Table1-3.pdf; TableS3_Tissue_extension.pdf;
 STROBE_MR_Checklist.pdf (from its edited DOCX); Final_Tables_Figures.pdf and
-Full_Review.pdf. All_Figures.pdf and the Figures/ directory are not touched.
+Full_Review.pdf, in which each figure is shown on its own page with its legend. All_Figures.pdf and the Figures/ directory are not touched.
 """
 from __future__ import annotations
 
@@ -295,6 +295,32 @@ def build_supplement():
     return out, s3md
 
 
+def build_figures(names, out: Path, title: str):
+    """One figure per page with its legend (review/combined PDFs)."""
+    leg = legends()
+    parts = []
+    for n in names:
+        width = "6.2in" if n != "Figure S1" else "6.5in"
+        parts.append(f"## {n}\n\n![](Figures/{n.replace(' ', '')}.png){{width={width}}}\n\n{leg[n]}\n")
+    pandoc("\n".join(parts), out, resource=PKG)
+    d = Document(out)
+    styles(d, 10, 1.15)
+    for sec in d.sections:
+        page(sec)
+        sec.top_margin = sec.bottom_margin = Inches(0.7)
+        page_number_footer(sec)
+    first = True
+    for p in d.paragraphs:
+        if p.style.name.startswith("Heading") and p.text.startswith("Figure"):
+            if not first:
+                p.paragraph_format.page_break_before = True
+            first = False
+            p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    strip_meta(d, title)
+    d.save(out)
+    return out
+
+
 def build_cover():
     out = PKG / "Cover_Letter_Draft.docx"
     pandoc(read(PKG / "Cover_Letter_Draft.md"), out)
@@ -340,10 +366,10 @@ def main() -> int:
         shutil.copyfile(to_pdf(s3), PKG / "TableS3_Tissue_extension.pdf")
         s12 = build_tables(read(PKG / "SupplementaryTables_S1_S2.md"), Path(td) / "S12.docx", "Tables S1-S2")
         s12_pdf = to_pdf(s12)
-        figs = [PKG / "Figures" / f"Figure{i}.pdf" for i in (1, 2, 3)]
-        sfigs = [PKG / "Figures" / f"FigureS{i}.pdf" for i in (1, 2)]
-        merge([tables_pdf, *figs, s12_pdf, PKG / "TableS3_Tissue_extension.pdf", *sfigs], PKG / "Final_Tables_Figures.pdf")
-        merge([ms, tables_pdf, *figs, supp_pdf], PKG / "Full_Review.pdf")
+        figs = to_pdf(build_figures(["Figure 1", "Figure 2", "Figure 3"], Path(td) / "MainFigures.docx", "Figures 1-3"))
+        sfigs = to_pdf(build_figures(["Figure S1", "Figure S2"], Path(td) / "SuppFigures.docx", "Figures S1-S2"))
+        merge([tables_pdf, figs, s12_pdf, PKG / "TableS3_Tissue_extension.pdf", sfigs], PKG / "Final_Tables_Figures.pdf")
+        merge([ms, tables_pdf, figs, supp_pdf], PKG / "Full_Review.pdf")
     to_pdf(build_cover())
     to_pdf(PKG / "STROBE_MR_Checklist.docx")
     for name in ["Manuscript", "Tables", "Supplementary_Material", "Cover_Letter_Draft", "STROBE_MR_Checklist",

@@ -19,9 +19,9 @@ We are equally explicit about what the study does not show. The FinnGen endpoint
 
 The submission includes three main tables, three main figures, a supplement with three tables and two figures, a single results workbook and a STROBE-MR reporting crosswalk.
 
-An earlier, narrower version was considered at thyroid-focused journals; the work was subsequently restructured around the broader genetic screen. The orbital dataset also supports a different, whole-transcriptome question in a separate manuscript under review elsewhere. Here only three genes are described, and no genome-wide expression or pathway catalogue is presented. The companion manuscript can be provided for assessment of overlap.
+An earlier, narrower version was considered at thyroid-focused journals; the work was subsequently restructured around the broader genetic screen. The orbital dataset also underlies a separate whole-transcriptome analysis, which is not under review elsewhere; here only three genes are described, and no genome-wide expression or pathway catalogue is presented.
 
-This manuscript has not been published and is not under consideration elsewhere. Funding, competing interests, ethics approval (Pusan National University Hospital IRB 2104-018-102) and written informed consent are declared in the manuscript.
+This manuscript has not been published and is not under consideration elsewhere. The study received no specific funding, and the authors report no competing interests. The orbital component was approved by the Pusan National University Hospital IRB (2104-018-102), with written informed consent.
 
 Sincerely,
 

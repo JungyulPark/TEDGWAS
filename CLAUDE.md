@@ -54,8 +54,7 @@ Source extracts and machine logs omitted from this export remain local-only.
 ## Review status and editing (updated 14 October 2026)
 The 13 October review items were addressed on top of the imported package; see the
 "Resolution" section of `internal/REVIEW_codex_package_20261011.md`. Remaining author items:
-declarations and journal requirements, companion-manuscript status, all-author approval, and
-orbital tissue collection/sequencing methods (absent from every version; do not invent them).
+journal requirements and all-author approval.
 
 Locked from this revision:
 - The Abstract reports TSHR PP.H4 in UKB (0.226) and FinnGen GD (0.264) and that BBJ and strict
@@ -81,11 +80,10 @@ Locked from this revision:
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
 - Abstract 248/250; main text 4,951 (4,998 with sub-headings) of 5,000 — effectively no headroom.
-- Orbital tissue methods in the supplement were taken from the authors' companion manuscript
-  (`RNAseq_fulltext.txt`: inactive TED, CAS < 3, decompression; control nasal fat pad; NovaSeq; HISAT2/
-  StringTie) and need author confirmation. That companion text declares PNUH Biomedical Research
-  Institute Grant 20210027001 for the same dataset, while this manuscript declares no specific grant:
-  an open author decision. The cover letter defers to the manuscript declarations.
+- Author decisions (14 October): no grant funded this work, so "no specific grant" stands; the
+  companion orbital whole-transcriptome manuscript is not under review; orbital tissue was
+  collected during decompression from patients with inactive TED. Keep the orbital data brief and
+  secondary (one short supplementary paragraph; descriptive only).
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources

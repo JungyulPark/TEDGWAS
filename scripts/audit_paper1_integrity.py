@@ -91,7 +91,7 @@ def main():
                       'tissue_estimates_recomputed': len(estimated), 'numeric_comparisons': comparisons,
                       'maximum_relative_difference': max_relative, 'read_only': True,
                       'scope': 'Delivery bytes, document containers, planned tissue grid and Wald formula implementation.',
-                      'review': 'internal/REVIEW_codex_package_20261011.md items addressed on 2026-10-14; author items (declarations, journal requirements, tissue methods) remain open.'}, indent=2))
+                      'review': 'internal/REVIEW_codex_package_20261011.md items addressed on 2026-10-14; author items (journal requirements, all-author approval) remain open.'}, indent=2))
 
 
 def framing_guards():
