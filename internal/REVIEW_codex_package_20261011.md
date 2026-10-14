@@ -151,3 +151,14 @@ per-allele OR. Supplementary tables are renumbered S1–S4 in first-citation ord
 Tables are now generated from the workbook (`reproducibility/build_tables_20261014.py`); figures
 were redrawn at final width with text ≥7 pt. Open: a *TSHR* regional association plot with LD r²
 needs the local reference panel.
+
+An independent four-dimension check of this revision (numbers, figures, claims, rendering; each
+finding adversarially re-verified) confirmed every displayed number and found 21 defects, all fixed:
+the cover letter wrongly said BBJ/strict support held "only under the primary prior" (it holds at
+p12 = 5×10⁻⁶ and fails at 10⁻⁶); Table 2 called all *CTLA4* multi-IV estimates heterogeneous (strict
+ophthalmopathy Q *P* = 0.0755); Table S4 omitted that UKB single-SNP *P* values are z-test values;
+"European" was used for the UKB *CTLA4* estimates; Figure 1 box borders were clipped; Figure 3 and
+S2 had non-black lettering; the S1 legend misnamed the log~2~ fold change; missing abbreviations;
+three roman *TSHR*/*P* in the supplement; Unicode exponents fell back to a non-Times font (now pandoc
+superscripts); a near-empty supplement page; and page numbers restarted inside the merged review
+PDFs (now continuous). Gene names in the title and headings stay roman by the earlier convention.

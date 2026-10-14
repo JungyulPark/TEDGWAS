@@ -129,7 +129,8 @@ def table1():
     note = ("The three FinnGen R12 endpoints share participants and are not independent replications. " + CONTROLS +
             " UKB hyperthyroidism is broader than GD. 'Strict' is the FinnGen endpoint label, not proof of perfect "
             "specificity. The descriptive orbital RNA-sequencing series (four TED patients, one control) is separate from "
-            "these datasets. eQTL, expression quantitative trait locus; LD, linkage disequilibrium; TED, thyroid eye disease; "
+            "these datasets. eQTL, expression quantitative trait locus; GTEx, Genotype-Tissue Expression; LD, linkage "
+            "disequilibrium; TED, thyroid eye disease; "
             + ABBR_DATA + ".")
     return "## Table 1. Data sources and their roles\n\n" + table(["Dataset / endpoint", "Cases", "Controls", "Role"], rows, [28, 8, 9, 48]) + "\n\n" + note
 
@@ -144,19 +145,23 @@ def table2(d):
                          qp(d, g, o), pp(c["PP.H2"]), pp(c["PP.H3"]), pp(c["PP.H4"], True), pp(c6["PP.H4"], True)])
     f = d["allele"]
     pa = f[(f.snp == "rs179252")].aligned_G_OR
+    ctla4_q = [float(qp(d, "CTLA4", o)) for o in ORDER if qp(d, "CTLA4", o) != "NA"]
+    assert len(ctla4_q) == 4 and sum(q < 0.05 for q in ctla4_q) == 3  # footnote: three of the four
     note = ("MR estimates are ORs per approximately one SD higher genetically predicted blood expression: Wald ratio for one "
             "IV, multiplicative random-effects IVW for several. *TSHR* used one instrument, rs179252, in every dataset; its G "
             f"allele raises blood expression by 0.105 SD per allele (F = 176), and its per-allele disease ORs were "
             f"{pa.min():.2f}–{pa.max():.2f} (Table S3). The per-SD ORs therefore rescale a moderate per-allele association, and "
             "each single-IV *P* value equals the variant's disease-association z-test *P* value. *CTLA4* multi-IV estimates "
-            "are concentrated in rs13030124 and heterogeneous (Q-test *P*); in BBJ and UKB, two of four single-instrument "
+            "are concentrated in rs13030124, and three of the four have Q-test *P* < 0.05; in BBJ and UKB, two of four "
+            "single-instrument "
             "omissions removed nominal *IGF1R* significance (Figure S2). \\* Nominal *P* < 0.05; † *P* < 0.05/2,544, the "
             "screen threshold, applied descriptively outside BBJ. PP.H2–H4 are colocalization posterior probabilities "
             "(H2, expression signal only; H3, distinct variants; H4, one shared variant) with p1 = p2 = 10^−4^ and "
             "p12 = 10^−5^ unless stated; bold, ≥0.80. They are not *P* values. BBJ colocalization pairs European eQTL "
-            "with East Asian disease statistics. " + CONTROLS + " CI, confidence interval; IV, instrumental variable; IVW, "
-            "inverse-variance weighted; MR, Mendelian randomization; NA, not applicable (one IV); OR, odds ratio; PP, "
-            "posterior probability; SD, standard deviation; " + ABBR_DATA + ".")
+            "with East Asian disease statistics. " + CONTROLS + " CI, confidence interval; eQTL, expression quantitative trait "
+            "locus; IV, instrumental variable; IVW, inverse-variance weighted; MR, Mendelian randomization; NA, not "
+            "applicable (one IV); OR, odds ratio; PP, posterior probability; SD, standard deviation; TED, thyroid eye "
+            "disease; " + ABBR_DATA + ".")
     cols = ["Gene", "Dataset", "IVs", "OR (95% CI)", "*P* value", "Q-test *P*", "PP.H2", "PP.H3", "PP.H4",
             "PP.H4, p12 = 10^−6^"]
     return ("## Table 2. MR and colocalization results for *TSHR*, *IGF1R* and *CTLA4* across five disease datasets\n\n"
@@ -181,7 +186,7 @@ def table3(d, hits):
             "three decimals to preserve its small effect. NA, not estimable (no retained instrument), not a negative result; "
             "*VKORC1* colocalization does not require an MR instrument. PP.H4, shared-variant posterior probability under "
             "p12 = 10^−5^; bold, ≥0.80. Chr, chromosome of the strongest instrument; MHC, major histocompatibility complex; "
-            "CI, confidence interval; IV, instrumental variable; OR, odds ratio; " + ABBR_DATA + ".")
+            "CI, confidence interval; IV, instrumental variable; MR, Mendelian randomization; OR, odds ratio; " + ABBR_DATA + ".")
     cols = ["BBJ discovery gene", "Chr", "IVs, BBJ/FinnGen GD", "BBJ OR (95% CI)", "BBJ *P*", "FinnGen GD OR (95% CI)",
             "FinnGen GD *P*", "Focused support", "FinnGen GD PP.H4"]
     return "## Table 3. Thirteen BBJ discoveries and their FinnGen GD comparison\n\n" + table(cols, rows, [10, 12, 11, 15, 10, 16, 11, 8, 9]) + "\n\n" + note
@@ -202,7 +207,8 @@ def tableS1(d, hits):
             "Genomes European reference frequencies). These are not independent of the screen and seven of nine are in the "
             "MHC. *APOM*/*NEU1* share rs3101018 and *IGLV2-18*/*IGLV3-12* share rs5759410. The lead *IGLV* expression "
             "variant is absent in BBJ, weakening interpretation of its low PP.H4. None reached PP.H4 ≥0.80 (p12 = 10^−5^) "
-            "in any dataset. Chr, chromosome; IV, instrumental variable; MHC, major histocompatibility complex; OR, odds "
+            "in any dataset. Chr, chromosome; CI, confidence interval; IV, instrumental variable; MHC, major histocompatibility "
+            "complex; OR, odds "
             "ratio; PP.H4, shared-variant posterior probability; " + ABBR_DATA + ".")
     cols = ["Gene", "Chr", "FinnGen GD IVs", "FinnGen GD OR (95% CI)", "FinnGen GD *P*", "BBJ PP.H4", "FinnGen GD PP.H4",
             "FinnGen GO strict PP.H4"]
@@ -219,7 +225,8 @@ def tableS2(d):
                 r = fdg[(fdg.gene == g) & (fdg.outcome == o) & (fdg.scenario == s) & (fdg.removed_snp == "none")].iloc[0]
                 rows.append([f"*{g}*", LABEL[o], lab[s], int(r.n_iv), orci(r.OR, r.CI_lower, r.CI_upper), fp(r.pvalue),
                              fp(r.Q_pvalue)])
-    note = ("Exposure effects were reconstructed with 1000 Genomes European reference allele frequencies (primary) or "
+    note = ("Exposure effects were reconstructed with 1000 Genomes Phase 3 European reference allele frequencies (1000G EUR; "
+            "primary) or "
             "eQTLGen cohort frequencies; variant sets and outcome effects were held fixed, so changes reflect rescaled "
             "expression effects and IVW weights. *HLA-G* was added because its eQTLGen-frequency *P* crossed the screen "
             "threshold (*P* < 0.05/2,544). Q tests heterogeneity, not directional pleiotropy; its *P* value is not a "
@@ -249,7 +256,8 @@ def tableS3(d):
             "is not necessarily the disease lead. PP.H4 under p12 = 10^−5^ and 10^−6^ (p1 = p2 = 10^−4^); bold, ≥0.80. "
             "Window range covers the full source cis-region, ±500 kb, ±250 kb and the five-outcome intersection at "
             "p12 = 10^−5^; it is not a confidence interval. All 240 window settings are in TSHR_windows. BBJ pairs "
-            "European eQTL with East Asian disease statistics. CI, confidence interval; OR, odds ratio; PP.H4, "
+            "European eQTL with East Asian disease statistics. CI, confidence interval; eQTL, expression quantitative trait "
+            "locus; OR, odds ratio; PP.H4, "
             "shared-variant posterior probability; " + ABBR_DATA + ".")
     cols = ["Dataset", "Matched variants", "Disease lead (*P*)", "rs179252 *P*", "rs179252-G OR (95% CI)",
             "H4 top variant", "PP.H4, 10^−5^ / 10^−6^", "PP.H4 range across windows"]
@@ -288,11 +296,13 @@ def tableS4():
             "The primary family is the ten FinnGen GD comparisons (*P* < 0.005); the secondary family is the 40 comparisons "
             "with the other datasets (*P* < 0.00125); unestimable combinations stay in both denominators. ORs are per unit "
             "of inverse-normal-transformed tissue expression and are not comparable in size with the blood ORs. With one "
-            "instrument, each *P* value equals that variant's disease-association *P* value. The adipose *TSHR* instruments "
+            "instrument, each *P* value equals that variant's disease-association z-test *P* value (UKB source BOLT-LMM *P* "
+            "values differ slightly). The adipose *TSHR* instruments "
             "(rs12101255, rs74064796; 50 bp apart in *TSHR* intron 1) are themselves blood *TSHR* eQTLs near rs179252 and "
             "re-express the regional association rather than providing independent evidence. Cultured fibroblasts and adipose "
             "tissue are not orbital tissue. Direction, compared with the blood estimate in the same dataset. CI, confidence "
-            "interval; GTEx, Genotype-Tissue Expression; OR, odds ratio; " + ABBR_DATA + ".")
+            "interval; eQTL, expression quantitative trait locus; GTEx, Genotype-Tissue Expression; OR, odds ratio; "
+            + ABBR_DATA + ".")
     return ("## Table S4. *TSHR* and *IGF1R* tissue expression extension\n\n### A. Availability\n\n"
             + table(["Gene / tissue", "GTEx N", "Instrument (F)", "Status"], rows_a, [25, 8, 20, 40])
             + "\n\n### B. Estimates\n\n"

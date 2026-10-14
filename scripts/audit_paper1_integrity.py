@@ -136,7 +136,7 @@ def framing_guards():
     ok('strengthens the plausibility' not in text, 'Allele audit not overstated')
     ok('0.80 (BBJ), 0.77 (UKB), 0.78 (FinnGen ophthalmopathy), 0.77 (FinnGen GD) and 0.82 (strict ophthalmopathy)' in text,
        'TSHR per-allele ORs explain the per-SD scale')
-    ok('5×10⁻⁵ and a PP.H4' not in text, 'Unverifiable Ji et al. prior not asserted')
+    ok('5×10⁻⁵ and a PP.H4' not in text and '5×10^−5^ and a PP.H4' not in text, 'Unverifiable Ji et al. prior not asserted')
     ok(not re.search(r'case series|prespecified|pre-specified|first systematic|SuSiE|credible set|DESeq2|padj', everything),
        'Withdrawn or banned phrasing absent')
     ok(not re.search(r'TED-specific (outcome|dataset|cohort|endpoint)', everything), 'FinnGen outcome not labelled TED-specific')

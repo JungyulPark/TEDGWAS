@@ -47,7 +47,8 @@ Source extracts and machine logs omitted from this export remain local-only.
   predict IGF-1R therapy response. Do not claim GD and TED are independent diseases.
 - Orbital RNA-seq: four TED cases, one control, descriptive only; no significance
   testing. Withdrawn SuSiE fine mapping and invalid MVMR results stay withdrawn.
-- CTLA4 is a comparator; European multi-IV estimates depend on rs13030124.
+- CTLA4 is a comparator; FinnGen/UKB multi-IV estimates depend on rs13030124 (UKB ancestry is
+  not established as exclusively European, so do not call them "European").
   Report leave-one-out limitations. P-value significance and PP.H4 are different.
 - Avoid a "first systematic" claim. Gene names and P are italic; clinical prose
   should be understandable to medical students. Maintain black figure lettering.
@@ -80,7 +81,7 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 4,943 (4,990 with sub-headings) of 5,000 — effectively no headroom.
+- Abstract 248/250; main text 4,945 (4,992 with sub-headings) of 5,000 — effectively no headroom.
 - Display decisions after the three-reviewer check (author, 14 October): Table 2 keeps all numbers
   (with a Q-test *P* column; *CTLA4* IVW retained) and Figure 2 shows none; Figure 2B stacks H4 from
   zero so the dotted line is PP.H4 = 0.80; old Table 3A became Figure 3/Table 3, 3B became Table S1,
@@ -92,17 +93,19 @@ Locked from this revision:
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
-   (`Figure_Legends.md`, `Supplementary_Material.md`, `Cover_Letter_Draft.md`). `Tables.md` and
+   (`Figure_Legends.md`, `Supplementary_Material.md`, `Cover_Letter_Draft.md`). Write exponents as
+   pandoc superscripts (`10^−14^`), not Unicode superscripts (the body font lacks U+207B). `Tables.md` and
    `SupplementaryTables.md` are generated from the workbook by
    `reproducibility/build_tables_20261014.py`; edit footnotes there, never the generated Markdown.
 2. Figures 1–3 and S2: `python3 submission/candidate_20261011_review/reproducibility/build_figures_20261014.py`
-   (reads only the workbook; no in-image titles, italic genes and *P*, † = *P* < 0.05/2,544 in Figure 2;
+   (reads only the workbook; no in-image titles, italic genes and *P*, all lettering black; Figure 2 shows no
+   numbers or † because Table 2 carries them;
    Figure S1 needs IRB sample data and is not redrawn). Then rebuild documents:
    `python3 submission/candidate_20261011_review/reproducibility/build_documents_20261014.py`
    (pandoc + python-docx + LibreOffice + poppler) and inspect rendered pages.
 3. If new numbers were added, extend `reproducibility/derive_review_values_20261014.py` and rerun it.
 4. `python3 scripts/26_wordcount_main_text.py`; then `python3 scripts/29_refresh_manifest.py YYYY-MM-DD`;
-   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 52 framing guards).
+   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 56 framing guards).
 Do not edit scientific output CSVs or workbook data sheets to make an audit pass; the workbook's
 Readme sheet was changed by editing only `xl/worksheets/sheet1.xml`. Keep exact reviewed bytes under
 the package's `-text` attribute.

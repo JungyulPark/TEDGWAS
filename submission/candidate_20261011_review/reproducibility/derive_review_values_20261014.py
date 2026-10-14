@@ -84,11 +84,10 @@ def main():
     pos = eq.set_index("SNP").SNPPos
     add("rs12101255 - rs179252 distance (bp)", int(pos["rs12101255"] - pos["rs179252"]), "15 kb", "eqtl_TSHR_all GRCh37")
     add("rs74064796 - rs12101255 distance (bp)", int(pos["rs74064796"] - pos["rs12101255"]), "50 bp", "eqtl_TSHR_all GRCh37")
-    sup = str.maketrans("-0123456789", "⁻⁰¹²³⁴⁵⁶⁷⁸⁹")
     for s in ("rs12101255", "rs74064796"):
         v = float(eq.set_index("SNP").Pvalue[s])
         mant, exp = f"{v:.1e}".split("e")
-        add(f"{s} blood eQTL P", v, f"{mant}×10{str(int(exp)).translate(sup)}", "eqtl_TSHR_all")
+        add(f"{s} blood eQTL P", v, f"{mant}×10^{str(int(exp)).replace('-', '−')}^", "eqtl_TSHR_all")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(OUT, index=False)

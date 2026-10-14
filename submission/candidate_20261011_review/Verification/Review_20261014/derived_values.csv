@@ -26,5 +26,5 @@ IGF1R detectable OR alpha 0.05 FinnGen GD,1.3644475044085533,1.36,MR_primary SE
 HLA-A FinnGen GD Q P,0.0387107830488656,0.0387,reanalysis mr_v1 MR_14genes_all_scenarios
 rs12101255 - rs179252 distance (bp),15067.0,15 kb,eqtl_TSHR_all GRCh37
 rs74064796 - rs12101255 distance (bp),50.0,50 bp,eqtl_TSHR_all GRCh37
-rs12101255 blood eQTL P,4.1217e-34,4.1×10⁻³⁴,eqtl_TSHR_all
-rs74064796 blood eQTL P,6.5303e-34,6.5×10⁻³⁴,eqtl_TSHR_all
+rs12101255 blood eQTL P,4.1217e-34,4.1×10^−34^,eqtl_TSHR_all
+rs74064796 blood eQTL P,6.5303e-34,6.5×10^−34^,eqtl_TSHR_all

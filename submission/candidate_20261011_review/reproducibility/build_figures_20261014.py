@@ -17,6 +17,7 @@ Figure S1 needs IRB-protected sample data and is not redrawn here.
 from pathlib import Path
 
 import matplotlib
+import matplotlib.colors
 import matplotlib.ticker
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
@@ -89,16 +90,16 @@ def figure1(mr, ins, hits):
              "$\\bf{BBJ\\ GD\\ discovery}$\n2,234 estimable genes\n13 discoveries\nThreshold $\\mathit{P}$ < 0.05/2,544",
              "$\\bf{Comparison\\ datasets}$\nUKB hyperthyroidism, FinnGen GO\nPost hoc: FinnGen GD,\n"
              "FinnGen GO strict, GTEx tissues"]
-    bw, gap = 0.305, 0.04
+    bw, gap = 0.300, 0.04
     for i, txt in enumerate(texts):
-        x = 0.005 + i * (bw + gap)
+        x = 0.008 + i * (bw + gap)
         flow.add_patch(FancyBboxPatch((x, 0.22), bw, 0.74, boxstyle="round,pad=0.006", facecolor="#f1f4f5",
-                                      edgecolor="#71838b", lw=0.6, transform=flow.transAxes))
+                                      edgecolor="#71838b", lw=0.6, transform=flow.transAxes, clip_on=False))
         flow.text(x + 0.012, 0.59, txt, ha="left", va="center", transform=flow.transAxes, fontsize=7.2, linespacing=1.35)
         if i < 2:
             flow.annotate("", xy=(x + bw + gap - 0.006, 0.59), xytext=(x + bw + 0.008, 0.59), xycoords="axes fraction",
                           arrowprops={"arrowstyle": "->", "color": "black", "lw": 0.7})
-    flow.text(0.005, 0.02, "Colocalization: 24 selected genes, centered on $\\mathit{TSHR}$ and $\\mathit{IGF1R}$, "
+    flow.text(0.008, 0.02, "Colocalization: 24 selected genes, centered on $\\mathit{TSHR}$ and $\\mathit{IGF1R}$, "
               "with $\\mathit{CTLA4}$ as comparator", transform=flow.transAxes, fontsize=7.5)
 
     ax = fig.add_subplot(gs[1])
@@ -201,17 +202,18 @@ def figure3(co, prim, low, hits):
     assert len(order) == 24
     m = np.array([[get(prim, g, o)["PP.H4"] for o in ORDER] for g in order])
     m6 = np.array([[get(low, g, o)["PP.H4"] for o in ORDER] for g in order])
-    im = hm.imshow(m, cmap="Blues", vmin=0, vmax=1, aspect="auto")
+    # Truncated Blues keeps every cell light enough for black lettering.
+    cmap = matplotlib.colors.ListedColormap(plt.cm.Blues(np.linspace(0, 0.55, 256)))
+    im = hm.imshow(m, cmap=cmap, vmin=0, vmax=1, aspect="auto")
     for i in range(24):
         for j in range(5):
             v = m[i, j]
-            hm.text(j, i, "<0.001" if v < 0.001 else f"{v:.3f}", ha="center", va="center", fontsize=7,
-                    color="white" if v >= 0.6 else "black")
+            hm.text(j, i, "<0.001" if v < 0.001 else f"{v:.3f}", ha="center", va="center", fontsize=7, color="black")
             if v >= 0.8:
                 hm.add_patch(Rectangle((j - 0.5, i - 0.5), 1, 1, fill=False, edgecolor="black", linewidth=1.0))
             if m6[i, j] >= 0.8:
-                hm.plot(j + 0.38, i - 0.30, marker="o", markersize=2.6, color="black" if v < 0.6 else "white")
-    hm.set_xticks(range(5), ["BBJ\nGD", "FinnGen\nGD", "UKB\nhyperthyr.", "FinnGen\nGO", "FinnGen\nGO strict"], fontsize=7)
+                hm.plot(j + 0.38, i - 0.30, marker="o", markersize=2.6, color="black")
+    hm.set_xticks(range(5), ["BBJ\nGD", "FinnGen\nGD", "UKB\nhyperthyroidism", "FinnGen\nGO", "FinnGen\nGO strict"], fontsize=7)
     hm.set_yticks(range(24), order, fontstyle="italic", fontsize=7.5)
     hm.tick_params(length=0)
     for s in hm.spines.values():
@@ -267,9 +269,6 @@ def figureS2(mr, loo):
                 bold.append(False)
                 y += 1
         ax.set_yticks(range(len(labels)), labels, fontsize=7.2)
-        for t, b in zip(ax.get_yticklabels(), bold):
-            if not b:
-                t.set_color("#333333")
         ax.tick_params(axis="y", length=0, pad=4)
         for k, b in enumerate(bold):
             if b and k:
