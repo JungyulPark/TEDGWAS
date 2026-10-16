@@ -89,6 +89,32 @@ def main():
         mant, exp = f"{v:.1e}".split("e")
         add(f"{s} blood eQTL P", v, f"{mant}×10^{str(int(exp)).replace('-', '−')}^", "eqtl_TSHR_all")
 
+    # values first displayed in the Results after the 16 October Results review
+    pa = [r["value"] for r in rows if r["item"].startswith("per-allele OR")]
+    add("per-allele OR range", max(pa), f"{min(pa):.2f}–{max(pa):.2f}", "TSHR_allele_audit C")
+    r = g[(g.outcome == "FinnGen_GO") & (g.method == "Weighted median")].iloc[0]
+    add("IGF1R weighted median OR FinnGen GO", r["or"], f"{r['or']:.2f}", "MR_estimators_original")
+    add("IGF1R weighted median P FinnGen GO", r.pvalue, sig3(r.pvalue), "MR_estimators_original")
+    add("focused FinnGen GD threshold", 0.05 / 13, f"{0.05 / 13:.3g}", "0.05/13")
+    l14 = pd.read_excel(X, sheet_name="LOO_new_fixed14")
+    l14 = l14[(l14.scenario == "leave_one_out")]
+    for gene, snp in [("TUBB", "rs149543464"), ("C4A", "rs1269852")]:
+        v = l14[(l14.gene_symbol == gene) & (l14.outcome == "E4_GRAVES_STRICT") & (l14.removed_snp == snp)].pvalue.iloc[0]
+        add(f"{gene} FinnGen GD P without {snp}", v, sig3(v), "LOO_new_fixed14")
+    ps = [lo[(lo.gene == "CTLA4") & (lo.outcome == o) & (lo.excluded_SNP == "rs13030124")].pvalue.iloc[0]
+          for o in ("UKB_hyperthyroid", "FinnGen_GO")]
+    ps += [l14[(l14.gene_symbol == "CTLA4") & (l14.outcome == o) & (l14.removed_snp == "rs13030124")].pvalue.iloc[0]
+           for o in ("E4_GRAVES_STRICT", "E4_GRAVES_OPHT_STRICT")]
+    add("CTLA4 P range without rs13030124", max(ps), f"{sig3(min(ps))}–{sig3(max(ps))}", "LOO_original, LOO_new_fixed14")
+    v = lo[(lo.gene == "IGF1R") & (lo.outcome == "UKB_hyperthyroid") & (lo.excluded_SNP == "rs2654980")].OR.iloc[0]
+    add("IGF1R UKB OR without rs2654980", v, f"{v:.2f}", "LOO_original")
+    co = pd.read_excel(X, sheet_name="Colocalization")
+    prim = co[(co.scenario == "original_reference") & np.isclose(co.p12, 1e-5)]
+    h2 = prim[(prim.gene == "IGF1R") & (prim.outcome != "UKB_hyperthyroid")]["PP.H2"]
+    add("IGF1R PP.H2 range outside UKB", h2.max(), f"{h2.min():.3f}–{h2.max():.3f}", "Colocalization")
+    v = prim[prim.gene.isin(["TNFSF14", "IFNGR1"]) & (prim.outcome != "BBJ_Graves")]["PP.H4"].max()
+    add("TNFSF14/IFNGR1 maximum PP.H4 outside BBJ", v, f"{v:.3f}", "Colocalization")
+
     OUT.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(OUT, index=False)
     print(f"{OUT.relative_to(PKG)}: {len(rows)} values")

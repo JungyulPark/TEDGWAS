@@ -162,3 +162,15 @@ S2 had non-black lettering; the S1 legend misnamed the log~2~ fold change; missi
 three roman *TSHR*/*P* in the supplement; Unicode exponents fell back to a non-Times font (now pandoc
 superscripts); a near-empty supplement page; and page numbers restarted inside the merged review
 PDFs (now continuous). Gene names in the title and headings stay roman by the earlier convention.
+
+### Results review (2026-10-16)
+Four independent reviewers (statistics, clinical reader, editorial, cross-section consistency), each
+followed by an adversarial verifier, then one synthesis. Every Results number matched the workbook and
+displays. 92 findings survived verification and were merged into 21 corrections and 19 decisions; the
+author accepted every recommendation. Corrections included selective reporting (weighted median for
+two of three datasets; CTLA4 omission omitting strict ophthalmopathy), the thyroid IGF1R "opposite to
+the blood estimates" wording (now "directions were inconsistent"), bare "ophthalmopathy", "corrected
+support" for the adipose estimates, and Discussion-style sentences. New in the Results: TUBB/C4A
+single-variant dependence, IGF1R H2-dominant colocalization, per-allele ORs, detectable OR 1.36, inactive
+TED and the control depot; the C4B/HLA-G reproduction sentence moved to the Supplementary Methods.
+Results 1,487 → 1,384 words; main text 4,992 → 4,889 with sub-headings.

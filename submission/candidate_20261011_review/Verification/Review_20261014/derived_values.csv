@@ -28,3 +28,13 @@ rs12101255 - rs179252 distance (bp),15067.0,15 kb,eqtl_TSHR_all GRCh37
 rs74064796 - rs12101255 distance (bp),50.0,50 bp,eqtl_TSHR_all GRCh37
 rs12101255 blood eQTL P,4.1217e-34,4.1×10^−34^,eqtl_TSHR_all
 rs74064796 blood eQTL P,6.5303e-34,6.5×10^−34^,eqtl_TSHR_all
+per-allele OR range,0.8180801207898873,0.77–0.82,TSHR_allele_audit C
+IGF1R weighted median OR FinnGen GO,1.45796863624753,1.46,MR_estimators_original
+IGF1R weighted median P FinnGen GO,0.124183724379839,0.124,MR_estimators_original
+focused FinnGen GD threshold,0.0038461538461538464,0.00385,0.05/13
+TUBB FinnGen GD P without rs149543464,0.026212014705339,0.0262,LOO_new_fixed14
+C4A FinnGen GD P without rs1269852,0.0470717621823562,0.0471,LOO_new_fixed14
+CTLA4 P range without rs13030124,0.9722145095415624,0.323–0.972,"LOO_original, LOO_new_fixed14"
+IGF1R UKB OR without rs2654980,1.157103070992012,1.16,LOO_original
+IGF1R PP.H2 range outside UKB,0.7308908833897463,0.571–0.731,Colocalization
+TNFSF14/IFNGR1 maximum PP.H4 outside BBJ,0.3131592621889775,0.313,Colocalization
