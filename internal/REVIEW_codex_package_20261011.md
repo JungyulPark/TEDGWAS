@@ -174,3 +174,15 @@ support" for the adipose estimates, and Discussion-style sentences. New in the R
 single-variant dependence, IGF1R H2-dominant colocalization, per-allele ORs, detectable OR 1.36, inactive
 TED and the control depot; the C4B/HLA-G reproduction sentence moved to the Supplementary Methods.
 Results 1,487 → 1,384 words; main text 4,992 → 4,889 with sub-headings.
+
+### Discussion review (2026-10-17)
+Same design as the Results review (evidence and consistency, clinical reader, editorial, citations checked
+in PubMed; adversarial verification; one synthesis). All Discussion numbers matched. 83 findings survived
+and were merged into 29 corrections, 2 companion edits and 12 decisions; the author accepted every
+recommendation. The one factual error: Ji et al. validated TSHR in FinnGen R10 E4_GRAVES_OPHT_STRICT, not
+GRAVES_OPHT (Introduction and Discussion corrected). Other changes: removal of overstatement
+("support for expression-mediated causality", "further limits confidence"), Results repetition and a
+rebuttal of an unstated hypothesis; per-SD ORs explained as lifelong inherited differences; ophthalmopathy
+estimates may largely reflect GD susceptibility; paragraph order consolidated around TSHR; [26] moved to
+the Discussion and [33] to the Limitations (order 1–33 kept). Discussion 1,739 → 1,427 words; main text
+4,889 → 4,573 with sub-headings.

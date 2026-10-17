@@ -81,13 +81,17 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 4,845 (4,889 with sub-headings) of 5,000 after the Results review.
+- Abstract 248/250; main text 4,529 (4,573 with sub-headings) of 5,000 after the Discussion review.
 - Results review (16 October, author accepted every recommendation): Results now report the TUBB/C4A
   single-variant dependence (P 0.0262/0.0471), IGF1R H2-dominant colocalization (0.571–0.731), the
   per-allele range, the FinnGen GD detectable OR 1.36, inactive TED and the different control fat depot.
-  Open for the Discussion review: shorten the detectable-OR sentence (now in Results); recheck "further
-  limits confidence", the TUBB/C4A heterogeneity sentence and the HLA-DQA2 UKB framing (two instruments);
-  decide whether [26] moves to the Discussion.
+- Discussion review (17 October, author accepted every recommendation): Ji et al. [9] validated TSHR in
+  FinnGen R10 E4_GRAVES_OPHT_STRICT ("strict ophthalmopathy"), never "FinnGen ophthalmopathy" (fixed in
+  Introduction and Discussion; PubMed full text). Discussion opens with the principal finding; the
+  colocalization paragraph follows the TSHR direction/scale paragraph; [26] is cited in the Discussion
+  CTLA4-comparator sentence and [33] in the Limitations; the adipose sentence left the Conclusions; the
+  Conclusions end with the population-control limit. Do not reintroduce the A-subunit "acting alone"
+  rebuttal or the unclear "IGF1R acts only downstream" sentence.
 - Display decisions after the three-reviewer check (author, 14 October): Table 2 keeps all numbers
   (with a Q-test *P* column; *CTLA4* IVW retained) and Figure 2 shows none; Figure 2B stacks H4 from
   zero so the dotted line is PP.H4 = 0.80; old Table 3A became Figure 3/Table 3, 3B became Table S1,
