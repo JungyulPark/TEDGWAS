@@ -4,8 +4,8 @@
   "files": [
     {
       "path": "MANUSCRIPT_TED_TRAP_v5_MASTER.md",
-      "bytes": 43573,
-      "sha256": "aa4ef9c98388651841e44b23068eec44533c80a18e01d3a40ab6f23ff2c63af0"
+      "bytes": 41961,
+      "sha256": "65da11798bb4e2092c4f441e37e4df29b04dc5ac9f3c0a7b76aa8fcc2b1a3f8f"
     },
     {
       "path": "submission/candidate_20261011_review/ANALYSIS_REPORT_KO.md",
@@ -34,13 +34,13 @@
     },
     {
       "path": "submission/candidate_20261011_review/All_Figures.pdf",
-      "bytes": 318034,
-      "sha256": "7230dee2f002b2f15cffd65b4e632d9a58eb8e8913e481fa9bacfa3959f2642d"
+      "bytes": 318036,
+      "sha256": "a1316a8b969afbb87e8f5c0859892d27c847637770fff032976b8ca43d5113fa"
     },
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.docx",
       "bytes": 11984,
-      "sha256": "79c25042d35ee1cff994c2ea0097b1d1478ee3c6b63285be9cf42b8b515c6051"
+      "sha256": "39324badcaa299ac0fa159963ed47ff66358ca7489734ddc753bb53fe190c645"
     },
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.md",
@@ -50,7 +50,7 @@
     {
       "path": "submission/candidate_20261011_review/Cover_Letter_Draft.pdf",
       "bytes": 40077,
-      "sha256": "cb60b07c19a3e8d55686d0a8065f8daf8bacd86a74be28119c73730824419759"
+      "sha256": "adfa59695bd0b8f2e44ee03dc56a60fef503b79a27cac609a2e8f7f189931297"
     },
     {
       "path": "submission/candidate_20261011_review/FINAL_RESULTS_INSIGHTS_KO.md",
@@ -119,8 +119,8 @@
     },
     {
       "path": "submission/candidate_20261011_review/Full_Review.pdf",
-      "bytes": 1942432,
-      "sha256": "f3d03bbe39299694fb58aa8ff7247c817c46704b2bd9de3909309038231a791b"
+      "bytes": 1936845,
+      "sha256": "d80808b7608b6c5159b0b5cbc2f93f49b84abbbec5c10fcc77dc990a23b58120"
     },
     {
       "path": "submission/candidate_20261011_review/GIT_ADDITIONAL_RESULTS.json",
@@ -144,13 +144,13 @@
     },
     {
       "path": "submission/candidate_20261011_review/Manuscript.docx",
-      "bytes": 31308,
-      "sha256": "654af228f62a58efd9abbd98462c5053e75428ef323d1ebe0699b982f1bd85b6"
+      "bytes": 30739,
+      "sha256": "8823335ef104ec54ce43823566692e9bc59513bff51efe82ef92c1e95a8d0797"
     },
     {
       "path": "submission/candidate_20261011_review/Manuscript.pdf",
-      "bytes": 165227,
-      "sha256": "a4f75888ab1eddd846e02dea69fe7527e3a8c1fcb4fadc2a44fa3ade95f71e4f"
+      "bytes": 164898,
+      "sha256": "160d4b154647b067406c8ace1d022d92e57794ae30cb60c1d92a13fea6f28038"
     },
     {
       "path": "submission/candidate_20261011_review/README.md",
@@ -215,7 +215,7 @@
     {
       "path": "submission/candidate_20261011_review/STROBE_MR_Checklist.pdf",
       "bytes": 54512,
-      "sha256": "b8466be91e8c4af0212ae744808bea69044c097489f759e83b06c2d19276312a"
+      "sha256": "489841d0d343c9d4ca97f2793f8910ce1a4a699dc7be9326de75b5bc003dd486"
     },
     {
       "path": "submission/candidate_20261011_review/SupplementaryTables.md",
@@ -229,8 +229,8 @@
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.docx",
-      "bytes": 611240,
-      "sha256": "4f990381f048c19c8245818324793e3ad5ad1b1b162561259f69fc028bf96e5e"
+      "bytes": 611241,
+      "sha256": "e45fd84b06d709b6601c05051f989e94db395ac90dac9a5de0799bc70ffe296d"
     },
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.md",
@@ -240,47 +240,47 @@
     {
       "path": "submission/candidate_20261011_review/Supplementary_Material.pdf",
       "bytes": 659459,
-      "sha256": "7f551c692bf66c91dc7792c35f3b299601b14ba6e8b8dd664d67f32b71a0b952"
+      "sha256": "317de27172d3b51d8929b42662fa3aaf82ee7d8dc903fafb1b9c102b7383201c"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table1.pdf",
       "bytes": 42112,
-      "sha256": "1305bd17aaafa28638fa2ba67cc38d39b22cdd207215e0e8f4f2b2082a156f3e"
+      "sha256": "82d6875d7fdf36babbabebd14bb53c67d151faa8c42c4d24bf38f938145c7c15"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table2.pdf",
       "bytes": 110570,
-      "sha256": "dd65d2ac77f60747b283de2a553e1b12e403c7b1ee08400f63e7f732a22834b2"
+      "sha256": "d5759efa2986ad2b28deebf8559778f57c65b4a285d09ff8a16f4bb3c594f689"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/Table3.pdf",
       "bytes": 97690,
-      "sha256": "40088043815c99d0f44b1a8317e908a0fd6428b2cdd11f71c49cefeaaeab9baf"
+      "sha256": "80e111b5d9b744ecfc6d6a9e916dbea7e98478f2e7328b26cbe18621a03def45"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/TableS1.pdf",
       "bytes": 76367,
-      "sha256": "04b03b9859b4ed6e9496f2308526dfb29da966f0a9cc3fe32682acbdcaafa84e"
+      "sha256": "81c3cd94acf5319065596dc9389541bfdd57ffc5a2c9d9f662bcc394ebff4b10"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/TableS2.pdf",
       "bytes": 67980,
-      "sha256": "6b4e54928f1bc13324374199c00fd6c20a83608d947bd8210a56831ed386e6d4"
+      "sha256": "611645a66c1afdf8e3aa667be693ca3886ea5020871a70f54e2b11ef4419499c"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/TableS3.pdf",
       "bytes": 65703,
-      "sha256": "43f66fec06a53ee1b6fc2a1ab5cfed5aa2d7c818c6a3d3ff9758406502eb0ca5"
+      "sha256": "184ff895beafcabb18bee099826651b64094248e2294bc328eac0a87d12c2540"
     },
     {
       "path": "submission/candidate_20261011_review/Tables/TableS4.pdf",
       "bytes": 125673,
-      "sha256": "39c108343205cf4746e4735a84e85520b39acb804e60df0538d58ba1e603aef9"
+      "sha256": "b8d79da0faa7da32eb42c216f3e7195457ac3c690406e1610f2af792146d3425"
     },
     {
       "path": "submission/candidate_20261011_review/Tables.docx",
       "bytes": 16634,
-      "sha256": "b86d8809206048f679c77078dc8848c6d1639a1420ac22a74787be6974ec53a7"
+      "sha256": "75d6089d1935e4332a3e1bdaa42f4c6fceae2869529ccc359bfec1631905c3d8"
     },
     {
       "path": "submission/candidate_20261011_review/Tables.md",
@@ -290,7 +290,7 @@
     {
       "path": "submission/candidate_20261011_review/Tables.pdf",
       "bytes": 186987,
-      "sha256": "6d3f536d63108c4c07b3e04922d6be3a294eda6e953f985b49939d89b68ba95b"
+      "sha256": "0773cf0aaff5b6ab0d7fc476637c164ba415ba4940a2c7d44ffcb6fa9fdc6195"
     },
     {
       "path": "submission/candidate_20261011_review/Verification/Delivery_QA_20261011.json",

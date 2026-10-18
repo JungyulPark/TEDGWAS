@@ -81,7 +81,13 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 4,169 (4,213 with sub-headings) of 5,000 after the second Results pass.
+- Abstract 248/250; main text 3,904 (3,948 with sub-headings) of 5,000 after the Discussion rewrite.
+- Discussion rewrite (18 October, author approved): written to the approved outline (P1 findings, P2 prior
+  work, P3 CTLA4/other genes, P4 TSHR direction/scale, P5 colocalization and causal wording, P6
+  ophthalmopathy endpoints, P7 IGF1R and IGF-1R blockade, P8 open questions; two Limitations paragraphs;
+  findings-only Conclusions WITHOUT numbers). 35 references: [29] Zuber 2022 (MR without colocalization;
+  abstract-verified, full text unavailable in PMC) and [34] Douglas 2024 (randomized trial in long-duration,
+  low-activity TED; proptosis only, diplopia not significant) were added; old 29-33 became 30-33 and 35.
 - Results second pass (18 October, author approved): findings only; numbers shown in a table or figure
   are cited, not repeated, except the TSHR/IGF1R headline OR/CI/P; workbook-only values stay. Do not
   re-add interpretation to the Results; caveats live in the Discussion, Limitations, footnotes and legends.
@@ -107,7 +113,7 @@ Locked from this revision:
 Review order (author, 18 October; the author verifies each step before the next):
 Results (second pass: findings only, less duplication of tables/figures) → Discussion plan →
 Discussion (with its references) → Methods → Introduction plan → Introduction → final reference
-list (about 45 references; the audit's "33 references" guard must then be updated) → Abstract.
+list (about 45 references; the audit's reference-count guard, now 35, must then be updated) → Abstract.
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources

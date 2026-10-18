@@ -186,3 +186,14 @@ rebuttal of an unstated hypothesis; per-SD ORs explained as lifelong inherited d
 estimates may largely reflect GD susceptibility; paragraph order consolidated around TSHR; [26] moved to
 the Discussion and [33] to the Limitations (order 1–33 kept). Discussion 1,739 → 1,427 words; main text
 4,889 → 4,573 with sub-headings.
+
+### Results second pass and Discussion rewrite (2026-10-18)
+At the author's request the Results were reduced to findings only (1,379 → 1,019 words): interpretation
+moved to the Discussion, Limitations, footnotes and legends; numbers shown in displays are cited rather
+than repeated, except the TSHR/IGF1R headline estimates; workbook-only values stay. The author then
+approved a Discussion outline and the Discussion was rewritten to it (1,427 → 1,162 words), with
+findings-only Conclusions without numbers and two new references read in PubMed: Zuber 2022 (abstract
+only; supports "a non-zero MR estimate can arise from distinct but correlated variants") and Douglas
+2024 (full text; randomized trial in long-duration, low-activity TED, primary outcome proptosis). The
+HLA-DQA2 UKB sentence is supported by MR_estimators_original (two instruments, Q 220.1). References now
+35, first-cited in order. Main text 3,948 words with sub-headings.
