@@ -53,12 +53,8 @@ def main():
         v = g[(g.outcome == oc) & (g.method == "MR Egger")].egger_intercept_p.iloc[0]
         add(f"IGF1R Egger intercept P {lab}", v, f"{v:.2f}", "MR_estimators_original")
 
-    # IGF1R leave-one-out (original outcomes)
+    # IGF1R leave-one-out (original outcomes); the per-variant P values are shown only in Figure S2
     lo = pd.read_excel(X, sheet_name="LOO_original")
-    for oc, snp in [("BBJ_Graves", "rs2654980"), ("UKB_hyperthyroid", "rs2654980"), ("BBJ_Graves", "rs59467480"),
-                    ("UKB_hyperthyroid", "rs117212126")]:
-        v = lo[(lo.gene == "IGF1R") & (lo.outcome == oc) & (lo.excluded_SNP == snp)].pvalue.iloc[0]
-        add(f"IGF1R LOO P {oc} without {snp}", v, sig3(v), "LOO_original")
 
     # detection benchmarks (same formula as Detection_original)
     mr = pd.read_excel(X, sheet_name="MR_primary")
@@ -112,8 +108,6 @@ def main():
     prim = co[(co.scenario == "original_reference") & np.isclose(co.p12, 1e-5)]
     h2 = prim[(prim.gene == "IGF1R") & (prim.outcome != "UKB_hyperthyroid")]["PP.H2"]
     add("IGF1R PP.H2 range outside UKB", h2.max(), f"{h2.min():.3f}–{h2.max():.3f}", "Colocalization")
-    v = prim[prim.gene.isin(["TNFSF14", "IFNGR1"]) & (prim.outcome != "BBJ_Graves")]["PP.H4"].max()
-    add("TNFSF14/IFNGR1 maximum PP.H4 outside BBJ", v, f"{v:.3f}", "Colocalization")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     pd.DataFrame(rows).to_csv(OUT, index=False)

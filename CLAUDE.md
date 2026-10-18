@@ -17,7 +17,7 @@ review-status section below).
 - Old candidate and earlier instructions are historical. Do not restore their
   three-outcome framing, six separate Data files, or obsolete sample sizes.
 - Read-only current check: `python scripts/audit_paper1_integrity.py`.
-  It checks delivery integrity, tissue formulas and 66 framing guards (added 14 October; derived values extended 16 October).
+  It checks delivery integrity, tissue formulas and 61 framing guards (added 14 October; derived values updated 16 and 18 October).
 
 ## Data-management rules (retained)
 Never commit IRB raw orbital RNA-seq (data.txt, FASTQ/BAM, raw count matrices),
@@ -81,7 +81,10 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 4,529 (4,573 with sub-headings) of 5,000 after the Discussion review.
+- Abstract 248/250; main text 4,169 (4,213 with sub-headings) of 5,000 after the second Results pass.
+- Results second pass (18 October, author approved): findings only; numbers shown in a table or figure
+  are cited, not repeated, except the TSHR/IGF1R headline OR/CI/P; workbook-only values stay. Do not
+  re-add interpretation to the Results; caveats live in the Discussion, Limitations, footnotes and legends.
 - Results review (16 October, author accepted every recommendation): Results now report the TUBB/C4A
   single-variant dependence (P 0.0262/0.0471), IGF1R H2-dominant colocalization (0.571–0.731), the
   per-allele range, the FinnGen GD detectable OR 1.36, inactive TED and the different control fat depot.
@@ -120,7 +123,7 @@ Editing workflow:
    (pandoc + python-docx + LibreOffice + poppler) and inspect rendered pages.
 3. If new numbers were added, extend `reproducibility/derive_review_values_20261014.py` and rerun it.
 4. `python3 scripts/26_wordcount_main_text.py`; then `python3 scripts/29_refresh_manifest.py YYYY-MM-DD`;
-   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 66 framing guards).
+   then `python3 scripts/audit_paper1_integrity.py` (manifest, tissue formulas, 61 framing guards).
 Do not edit scientific output CSVs or workbook data sheets to make an audit pass; the workbook's
 Readme sheet was changed by editing only `xl/worksheets/sheet1.xml`. Keep exact reviewed bytes under
 the package's `-text` attribute.

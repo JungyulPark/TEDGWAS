@@ -12,10 +12,6 @@ IGF1R Egger/mode minimum P,0.325233126152554,0.32,MR_estimators_original (displa
 IGF1R Egger intercept P BBJ,0.662690490208203,0.66,MR_estimators_original
 IGF1R Egger intercept P UKB,0.56236400133199,0.56,MR_estimators_original
 IGF1R Egger intercept P FinnGen GO,0.432913310128032,0.43,MR_estimators_original
-IGF1R LOO P BBJ_Graves without rs2654980,0.0751175406851401,0.0751,LOO_original
-IGF1R LOO P UKB_hyperthyroid without rs2654980,0.467626273584672,0.468,LOO_original
-IGF1R LOO P BBJ_Graves without rs59467480,0.0502546462528504,0.0503,LOO_original
-IGF1R LOO P UKB_hyperthyroid without rs117212126,0.0528590611125866,0.0529,LOO_original
 detectable fraction BBJ OR 1.5,0.14637421665174574,14.6%,MR_primary SE
 detectable fraction BBJ OR 2.0,0.355863921217547,35.6%,MR_primary SE
 detectable fraction FinnGen GD OR 1.5,0.24758064516129033,24.8%,MR_primary SE
@@ -37,4 +33,3 @@ C4A FinnGen GD P without rs1269852,0.0470717621823562,0.0471,LOO_new_fixed14
 CTLA4 P range without rs13030124,0.9722145095415624,0.323–0.972,"LOO_original, LOO_new_fixed14"
 IGF1R UKB OR without rs2654980,1.157103070992012,1.16,LOO_original
 IGF1R PP.H2 range outside UKB,0.7308908833897463,0.571–0.731,Colocalization
-TNFSF14/IFNGR1 maximum PP.H4 outside BBJ,0.3131592621889775,0.313,Colocalization
