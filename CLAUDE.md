@@ -101,6 +101,11 @@ Locked from this revision:
   collected during decompression from patients with inactive TED. Keep the orbital data brief and
   secondary (one short supplementary paragraph; descriptive only).
 
+Review order (author, 18 October; the author verifies each step before the next):
+Results (second pass: findings only, less duplication of tables/figures) → Discussion plan →
+Discussion (with its references) → Methods → Introduction plan → Introduction → final reference
+list (about 45 references; the audit's "33 references" guard must then be updated) → Abstract.
+
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
    (`Figure_Legends.md`, `Supplementary_Material.md`, `Cover_Letter_Draft.md`). Write exponents as
