@@ -117,8 +117,11 @@ Locked from this revision:
   3C was deleted (duplicate of S2). A *TSHR* regional plot with r² awaits local LD data.
 - Authors (author decision, 19 October): Jungyul Park† and Min-Seon Kim† (equal-contribution co-first
   authors) and Suk-Woo Yang* (sole corresponding author). Kyung-Hwa Shin is NOT an author (removed from the
-  author list, affiliations, cover letter and document metadata). Open: how to handle the orbital data
-  approved by the Pusan National University Hospital IRB now that its investigator is not an author.
+  author list, affiliations, cover letter and document metadata). The orbital data stay (PNUH IRB
+  2104-018-102) and Shin is thanked in the Acknowledgements for providing them; before submission the
+  authors must confirm data-use permission and the acknowledgement wording. Contributions: J.P. and M.-S.K.
+  both performed the analyses and drafted the manuscript; J.P. designed; M.-S.K. data collection and
+  interpretation; S.-W.Y. supervised and revised.
 - Author decisions (14 October): no grant funded this work, so "no specific grant" stands; the
   companion orbital whole-transcriptome manuscript is not under review; orbital tissue was
   collected during decompression from patients with inactive TED. Keep the orbital data brief and

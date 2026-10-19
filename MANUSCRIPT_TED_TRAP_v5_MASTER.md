@@ -148,9 +148,9 @@ Higher genetically proxied blood *TSHR* expression was associated with lower odd
 
 **Data availability.** Instruments, primary MR and colocalization results, and sensitivity results are supplied as Supplementary Dataset. Analysis code is available from the corresponding author on reasonable request. Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, tissue eQTL data from GTEx v8, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 GD and ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
 
-**Author contributions.** J.P. and M.-S.K. contributed equally to this work. J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. S.-W.Y. supervised the study and revised the manuscript.
+**Author contributions.** J.P. and M.-S.K. contributed equally to this work; both performed the analyses and drafted the manuscript. J.P. conceived and designed the study. M.-S.K. contributed to data collection and interpretation. S.-W.Y. supervised the study and revised the manuscript.
 
-**Acknowledgements.** We thank the eQTLGen Consortium, the GTEx Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
+**Acknowledgements.** We thank Kyung-Hwa Shin (Department of Laboratory Medicine, Pusan National University Hospital) for providing the orbital tissue RNA-sequencing data. We thank the eQTLGen Consortium, the GTEx Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
 
 ## References
 
