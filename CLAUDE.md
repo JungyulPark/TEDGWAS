@@ -81,7 +81,17 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 3,904 (3,948 with sub-headings) of 5,000 after the Discussion rewrite.
+- Abstract 248/250; main text 3,753 (3,793 with sub-headings) of 5,000 after the Methods review.
+- Methods review (19 October, author approved): Methods follow the Results order and use the Results/table
+  terms (screen threshold, focused FinnGen GD threshold, nominal, FinnGen ophthalmopathy, strict
+  ophthalmopathy); they state the detectable-OR method, the single-causal-variant coloc assumption, p1/p2/p12,
+  MHC retention and the orbital tissue sources; GTEx fibroblasts are "cultured skin fibroblasts". Removed:
+  the BBJ-ophthalmopathy combined filter, coloc frequency scenarios (supplement only) and interpretive
+  sentences. Supplementary Methods gained the BBJ case definition (Sakaue [14]), 4,479 → 4,462 druggable
+  genes, GCTA-COJO for 16p11.2, the frequency-scenario result and the RNA-seq tools (Trimmomatic 0.38,
+  HISAT2 2.1.0, StringTie 2.1.3b; author-confirmed). Before submission: add Python/NumPy/pandas/SciPy
+  versions (author environment). For the reference step: cite Hartwig 2017 (weighted mode, PMID 29040600)
+  and Lloyd-Jones 2018 (UKB linear-to-log-odds conversion, PMID 29429966).
 - Discussion rewrite (18 October, author approved): written to the approved outline (P1 findings, P2 prior
   work, P3 CTLA4/other genes, P4 TSHR direction/scale, P5 colocalization and causal wording, P6
   ophthalmopathy endpoints, P7 IGF1R and IGF-1R blockade, P8 open questions; two Limitations paragraphs;

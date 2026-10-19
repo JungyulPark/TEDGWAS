@@ -197,3 +197,10 @@ only; supports "a non-zero MR estimate can arise from distinct but correlated va
 2024 (full text; randomized trial in long-duration, low-activity TED, primary outcome proptosis). The
 HLA-DQA2 UKB sentence is supported by MR_estimators_original (two instruments, Q 220.1). References now
 35, first-cited in order. Main text 3,948 words with sub-headings.
+
+### Methods review (2026-10-19)
+Four reviewers (STROBE-MR reporting, consistency with data/sections, economy, clinical readability), each
+re-verified; one synthesis. All Methods numbers and software versions matched. 129 findings → 26
+corrections and 12 decisions; the author approved the recommendations, confirmed the orbital RNA-seq
+pipeline and the GTEx skin-fibroblast wording, and deferred the Python versions to submission. Methods
+1,170 → about 1,021 words; main text 3,793 with sub-headings; Supplementary Methods still within five pages.
