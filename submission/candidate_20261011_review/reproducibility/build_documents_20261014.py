@@ -210,7 +210,7 @@ def to_pdf(docx: Path) -> Path:
 def strip_meta(doc, title):
     cp = doc.core_properties
     cp.title = title
-    cp.author = "Jungyul Park; Min-Seon Kim; Kyung-Hwa Shin; Suk-Woo Yang"
+    cp.author = "Jungyul Park; Min-Seon Kim; Suk-Woo Yang"
     cp.last_modified_by = ""
     cp.comments = ""
 

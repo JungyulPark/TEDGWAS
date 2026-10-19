@@ -26,9 +26,9 @@ This manuscript has not been published and is not under consideration elsewhere.
 Sincerely,
 
 Suk-Woo Yang, MD, PhD  
-Corresponding author, with Kyung-Hwa Shin, MD, as co-corresponding author, on behalf of Jungyul Park, Min-Seon Kim, Kyung-Hwa Shin and Suk-Woo Yang  
+Corresponding author, on behalf of Jungyul Park, Min-Seon Kim and Suk-Woo Yang  
 Department of Ophthalmology, Seoul St. Mary's Hospital  
 College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
 E-mail: yswoph@catholic.ac.kr
 
-Author institutions: J. Park and S.-W. Yang, Department of Ophthalmology, Seoul St. Mary's Hospital, The Catholic University of Korea, Seoul; M.-S. Kim, Department of Ophthalmology, The Catholic University of Korea, Seoul; K.-H. Shin, Department of Laboratory Medicine, Pusan National University Hospital, Busan; Republic of Korea.
+Author institutions: J. Park and S.-W. Yang, Department of Ophthalmology, Seoul St. Mary's Hospital, The Catholic University of Korea, Seoul; M.-S. Kim, Department of Ophthalmology, The Catholic University of Korea, Seoul; Republic of Korea.

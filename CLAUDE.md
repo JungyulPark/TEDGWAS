@@ -115,6 +115,10 @@ Locked from this revision:
   (with a Q-test *P* column; *CTLA4* IVW retained) and Figure 2 shows none; Figure 2B stacks H4 from
   zero so the dotted line is PP.H4 = 0.80; old Table 3A became Figure 3/Table 3, 3B became Table S1,
   3C was deleted (duplicate of S2). A *TSHR* regional plot with r² awaits local LD data.
+- Authors (author decision, 19 October): Jungyul Park† and Min-Seon Kim† (equal-contribution co-first
+  authors) and Suk-Woo Yang* (sole corresponding author). Kyung-Hwa Shin is NOT an author (removed from the
+  author list, affiliations, cover letter and document metadata). Open: how to handle the orbital data
+  approved by the Pusan National University Hospital IRB now that its investigator is not an author.
 - Author decisions (14 October): no grant funded this work, so "no specific grant" stands; the
   companion orbital whole-transcriptome manuscript is not under review; orbital tissue was
   collected during decompression from patients with inactive TED. Keep the orbital data brief and

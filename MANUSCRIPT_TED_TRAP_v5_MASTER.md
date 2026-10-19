@@ -1,15 +1,14 @@
 # TSHR and IGF1R in Graves disease and thyroid eye disease: genetic evidence from blood expression
 
-Jungyul Park¹, Min-Seon Kim², Kyung-Hwa Shin³\*, Suk-Woo Yang¹\*
+Jungyul Park¹†, Min-Seon Kim²†, Suk-Woo Yang¹\*
 
 ¹ Department of Ophthalmology, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
 ² Department of Ophthalmology, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea  
-³ Department of Laboratory Medicine, Pusan National University Hospital, Busan, Republic of Korea  
 
-\* These authors contributed equally as corresponding authors.
+† These authors contributed equally to this work as first authors.  
+\* Corresponding author.
 
 **Corresponding author:** Suk-Woo Yang, MD, PhD, Department of Ophthalmology, Seoul St. Mary's Hospital, College of Medicine, The Catholic University of Korea, Seoul, Republic of Korea. E-mail: yswoph@catholic.ac.kr; Tel: +82-2-2258-2847.  
-**Co-corresponding author:** Kyung-Hwa Shin, MD, Department of Laboratory Medicine, Pusan National University Hospital, Busan, Republic of Korea.
 
 
 
@@ -149,7 +148,7 @@ Higher genetically proxied blood *TSHR* expression was associated with lower odd
 
 **Data availability.** Instruments, primary MR and colocalization results, and sensitivity results are supplied as Supplementary Dataset. Analysis code is available from the corresponding author on reasonable request. Public summary statistics analyzed in this study are available from their original repositories: blood *cis*-eQTL data from the eQTLGen Consortium, tissue eQTL data from GTEx v8, the Biobank Japan Graves disease and UK Biobank hyperthyroidism genome-wide association statistics through the GWAS Catalog, and the FinnGen Release 12 GD and ophthalmopathy statistics from FinnGen. The in-house orbital RNA-seq data are available from the corresponding author on reasonable request, subject to institutional and ethical restrictions.
 
-**Author contributions.** J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. K.-H.S. and S.-W.Y. supervised the study and revised the manuscript.
+**Author contributions.** J.P. and M.-S.K. contributed equally to this work. J.P. conceived and designed the study, performed the analyses, and drafted the manuscript. M.-S.K. contributed to data collection and interpretation. S.-W.Y. supervised the study and revised the manuscript.
 
 **Acknowledgements.** We thank the eQTLGen Consortium, the GTEx Consortium, Biobank Japan, the UK Biobank, and the FinnGen study and its participants for making their summary statistics publicly available. We acknowledge the GWAS Catalog for hosting and distributing the genome-wide association summary statistics used as outcome data.
 
