@@ -1033,11 +1033,6 @@
       "sha256": "c21c9deb90f4af89094e62730eb8a75e4cea0185810b22951bc29a5577d05eef"
     },
     {
-      "path": "submission/candidate_20261011_review/reproducibility/__pycache__/build_documents_20261014.cpython-311.pyc",
-      "bytes": 34531,
-      "sha256": "b6db4b81e515369c144307a2cdd6310c16c00df5634240aad5c9092c63a2f7d9"
-    },
-    {
       "path": "submission/candidate_20261011_review/reproducibility/build_documents_20261014.py",
       "bytes": 17489,
       "sha256": "4441c35bb381f6129225faa3ee4ddc34ab3b50b29137a94870c2d245417d7280"
