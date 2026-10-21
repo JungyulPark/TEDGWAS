@@ -204,3 +204,11 @@ re-verified; one synthesis. All Methods numbers and software versions matched. 1
 corrections and 12 decisions; the author approved the recommendations, confirmed the orbital RNA-seq
 pipeline and the GTEx skin-fibroblast wording, and deferred the Python versions to submission. Methods
 1,170 → about 1,021 words; main text 3,793 with sub-headings; Supplementary Methods still within five pages.
+
+### Introduction plan and rewrite (2026-10-19)
+Three independent outlines (clinician, methodologist, editor) were merged into a four-paragraph plan that
+the author approved; the Introduction was then rewritten from two drafts and verified (every claim checked
+against its reference in PubMed; Ji, Zhang, Ke and Minikel in full text). Zhang 2026 had reported TSHR
+PP.H4 0.986 (ophthalmopathy) and 0.259 (GD) on the same FinnGen R12 endpoints; this is now disclosed
+qualitatively. References: 43 in first-citation order; only citation numbers changed outside the
+Introduction. Introduction 597 → 481 words.

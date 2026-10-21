@@ -81,7 +81,12 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text 3,753 (3,793 with sub-headings) of 5,000 after the Methods review.
+- Abstract 248/250; main text about 3,637 (3,677 with sub-headings) of 5,000 after the Introduction rewrite.
+- Introduction rewrite (19 October, author approved): four paragraphs (clinical problem and question; MR and
+  colocalization in plain words; prior studies and gap; aim, design and scope), about 480 words. Zhang 2026
+  [19] reported the same TSHR colocalization pattern on the same FinnGen R12 endpoints; the Introduction says
+  so without numbers. 43 references in first-citation order (Introduction 1-22, Methods 23-35, Discussion
+  36-43); old Smith 2019 Eye, Smith 2019 JCEM and Li 2025 were removed; 11 PubMed-checked references added.
 - Methods review (19 October, author approved): Methods follow the Results order and use the Results/table
   terms (screen threshold, focused FinnGen GD threshold, nominal, FinnGen ophthalmopathy, strict
   ophthalmopathy); they state the detectable-OR method, the single-causal-variant coloc assumption, p1/p2/p12,
@@ -130,7 +135,7 @@ Locked from this revision:
 Review order (author, 18 October; the author verifies each step before the next):
 Results (second pass: findings only, less duplication of tables/figures) → Discussion plan →
 Discussion (with its references) → Methods → Introduction plan → Introduction → final reference
-list (about 45 references; the audit's reference-count guard, now 35, must then be updated) → Abstract.
+list (about 45 references; the audit's reference-count guard, now 43, must then be updated) → Abstract.
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
