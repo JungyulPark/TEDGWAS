@@ -212,3 +212,10 @@ against its reference in PubMed; Ji, Zhang, Ke and Minikel in full text). Zhang 
 PP.H4 0.986 (ophthalmopathy) and 0.259 (GD) on the same FinnGen R12 endpoints; this is now disclosed
 qualitatively. References: 43 in first-citation order; only citation numbers changed outside the
 Introduction. Introduction 597 → 481 words.
+
+### Final reference list (2026-10-22)
+All 43 entries were compared with PubMed (no substantive errors; DOI case normalised), Hartwig 2017 and
+Lloyd-Jones 2018 were added at their Methods sentences, Brand 2009 and Colobran/Marín-Sánchez were cited at
+existing rs179247 statements, and the list was renumbered (45 references) and converted to the Endocrine
+Connections style. Prose is unchanged apart from citation brackets. The Bioscientifica guideline page was
+unreachable from this environment, so the style rests on the official CSL file and recent articles.

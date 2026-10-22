@@ -159,7 +159,7 @@ def framing_guards():
        'Supplementary tables S1-S4 in one source file')
     refs = re.findall(r'(?m)^(\d+)\. ', body['References'])
     cited = {int(n) for grp in re.findall(r'\[(\d+(?:[,–-]\s*\d+)*)\]', main_text) for n in re.split(r'[,–-]\s*', grp)}
-    ok(len(refs) == 43 and cited == set(range(1, 44)), '43 references, all cited (Introduction rewrite, 19 October)')
+    ok(len(refs) == 45 and cited == set(range(1, 46)), '45 references, all cited (final list, 22 October)')
     with ZipFile(CANDIDATE / 'Manuscript.docx') as z:
         doc = re.sub(r'<[^>]+>', '', z.read('word/document.xml').decode('utf-8'))
     ok(all(f'Figure {i}.' in doc for i in (1, 2, 3)), 'Figure 1-3 legends present in Manuscript.docx')

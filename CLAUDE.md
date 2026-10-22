@@ -82,6 +82,13 @@ Locked from this revision:
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
 - Abstract 248/250; main text about 3,637 (3,677 with sub-headings) of 5,000 after the Introduction rewrite.
+- Final reference list (22 October, author approved): 45 references in first-citation order, entries in
+  Endocrine Connections (Bioscientifica) style — "Surname AB & Surname CD. Title. *Full Journal* Year **Vol**
+  pages. (https://doi.org/...)", et al. after ten authors — taken from the official CSL style and recent EC
+  articles (the guideline page itself was unreachable; recheck at submission, incl. round-bracket citations).
+  Added [31] Lloyd-Jones 2018 (UKB log-odds rescaling) and [35] Hartwig 2017 (weighted mode); Brand 2009 [4]
+  also cited for the GD-protective rs179247 allele; Colobran/Marin-Sanchez [36, 37] cited at the first Methods
+  mention of rs179247. All 45 entries were checked against PubMed; the audit guard is 45.
 - Introduction rewrite (19 October, author approved): four paragraphs (clinical problem and question; MR and
   colocalization in plain words; prior studies and gap; aim, design and scope), about 480 words. Zhang 2026
   [19] reported the same TSHR colocalization pattern on the same FinnGen R12 endpoints; the Introduction says
@@ -135,7 +142,7 @@ Locked from this revision:
 Review order (author, 18 October; the author verifies each step before the next):
 Results (second pass: findings only, less duplication of tables/figures) → Discussion plan →
 Discussion (with its references) → Methods → Introduction plan → Introduction → final reference
-list (about 45 references; the audit's reference-count guard, now 43, must then be updated) → Abstract.
+list (done 22 October: 45 references, Endocrine Connections style) → Abstract.
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources
