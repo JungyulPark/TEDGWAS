@@ -81,7 +81,9 @@ Locked from this revision:
 - Ji et al. [9]: PP.H4 > 0.5 is confirmed; their p12 exponent is unreadable in PMC — do not state it.
 - Colocalization is not called "secondary"; the post hoc change of emphasis is disclosed in Methods.
 - No AI-assisted wording in any submission-facing file (author decision 2026-09-05, reaffirmed 2026-10-14).
-- Abstract 248/250; main text about 3,637 (3,677 with sub-headings) of 5,000 after the Introduction rewrite.
+- Abstract 249/250 (rewritten 22 October, author approved: findings and scope only, no evaluative
+  comparisons; TSHR and IGF1R headline OR/CI/P incl. FinnGen GD IGF1R P = 0.539); main text 3,642 (3,682
+  with sub-headings) of 5,000. The eight-step review (Results → Abstract) is complete; title unchanged.
 - Final reference list (22 October, author approved): 45 references in first-citation order, entries in
   Endocrine Connections (Bioscientifica) style — "Surname AB & Surname CD. Title. *Full Journal* Year **Vol**
   pages. (https://doi.org/...)", et al. after ten authors — taken from the official CSL style and recent EC
@@ -142,7 +144,10 @@ Locked from this revision:
 Review order (author, 18 October; the author verifies each step before the next):
 Results (second pass: findings only, less duplication of tables/figures) → Discussion plan →
 Discussion (with its references) → Methods → Introduction plan → Introduction → final reference
-list (done 22 October: 45 references, Endocrine Connections style) → Abstract.
+list (done 22 October: 45 references, Endocrine Connections style) → Abstract (done 22 October).
+Remaining before submission (author items): journal requirements (recheck the guidelines incl. citation
+brackets and any extra summary), Python/NumPy/pandas/SciPy versions, orbital data-use permission and the
+acknowledgement wording, all-author approval; optional TSHR regional plot with LD r² (local data).
 
 Editing workflow:
 1. Edit `MANUSCRIPT_TED_TRAP_v5_MASTER.md` and/or the package Markdown sources

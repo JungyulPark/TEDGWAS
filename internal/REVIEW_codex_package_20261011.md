@@ -219,3 +219,7 @@ Lloyd-Jones 2018 were added at their Methods sentences, Brand 2009 and Colobran/
 existing rs179247 statements, and the list was renumbered (45 references) and converted to the Endocrine
 Connections style. Prose is unchanged apart from citation brackets. The Bioscientifica guideline page was
 unreachable from this environment, so the style rests on the official CSL file and recent articles.
+
+### Abstract (2026-10-22)
+Rewritten last from two drafts and verified against Table 2 and the workbook (249 words; all locked items
+kept; evaluative comparisons removed from the Conclusions). The eight-step author review is complete.
