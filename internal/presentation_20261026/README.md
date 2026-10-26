@@ -2,7 +2,10 @@
 
 A resident built a 17-slide conference deck from the paper. It was revised to match the final manuscript
 (`MANUSCRIPT_TED_TRAP_v5_MASTER.md`, commit f5efd35) and the package tables, figures and workbook. The result is
-21 slides: 16 main and 5 supplementary, with Korean speaker notes.
+21 slides: 16 main and 5 supplementary, with Korean speaker notes (v4). The current deck is v6 (26 October):
+24 slides with a findings-first Discussion (four slides: TSHR and protection from GD; pinpointing the TSHR signal;
+a shared TSHR signal in GD and ophthalmopathy; IGF1R and IGF-1R blockade), a "What we found / What it suggests"
+Conclusion and a supplementary Limitations slide. The change report below describes v2 to v4.
 
 ## Contents
 - [`PRESENTATION_CHANGE_REPORT_20261026.md`](PRESENTATION_CHANGE_REPORT_20261026.md) (renders on GitHub) and

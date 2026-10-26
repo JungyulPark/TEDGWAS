@@ -59,6 +59,15 @@ The 13 October review items were addressed on top of the imported package; see t
 journal requirements and all-author approval.
 
 Locked from this revision:
+- Findings-first tone (author request, 26 October): Discussion, Conclusions and cover letter lead with what
+  was found, its most plausible meaning and the next step, instead of rebutting misreadings. Required
+  content is kept in positive form: UKB/FinnGen GD distinct-variant patterns (lead rs4903961/rs1023586 as
+  fine-mapping targets), BBJ/strict prior sensitivity, "whether it is mediated by TSHR expression remains to
+  be resolved", population controls (next step: GD with vs without TED) and "compatible with the established
+  benefit of IGF-1R blockade" (replaces "does not argue against"; audit guard updated). Do not drift into
+  causal or TED-specific claims. Abstract unchanged. Resident deck v6 (24 slides) follows the same tone;
+  decks are not committed (institutional tracking metadata; public repository), see
+  `internal/presentation_20261026/`.
 - The Abstract reports TSHR PP.H4 in UKB (0.226) and FinnGen GD (0.264) and that BBJ and strict
   GO support is prior-sensitive (0.661 and 0.451 at p12 = 1e-6). Never again reduce this to
   "support varied". Orbital data are "Mean ... exceeded the control" — IGF1R is higher in only 3 of 4
@@ -123,7 +132,7 @@ Locked from this revision:
   Introduction and Discussion; PubMed full text). Discussion opens with the principal finding; the
   colocalization paragraph follows the TSHR direction/scale paragraph; [26] is cited in the Discussion
   CTLA4-comparator sentence and [33] in the Limitations; the adipose sentence left the Conclusions; the
-  Conclusions end with the population-control limit. Do not reintroduce the A-subunit "acting alone"
+  Conclusions end with the population-control limit (26 October: now as the next step, GD with vs without TED). Do not reintroduce the A-subunit "acting alone"
   rebuttal or the unclear "IGF1R acts only downstream" sentence.
 - Display decisions after the three-reviewer check (author, 14 October): Table 2 keeps all numbers
   (with a Q-test *P* column; *CTLA4* IVW retained) and Figure 2 shows none; Figure 2B stacks H4 from

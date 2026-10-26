@@ -127,7 +127,8 @@ def framing_guards():
     ok('Mean orbital' in abstract, 'Abstract orbital sentence keeps "Mean" (IGF1R exceeds control in 3 of 4)')
     ok('colocalization' in conclusions.lower() and 'UKB' in conclusions and 'FinnGen GD' in conclusions,
        'Conclusions scope colocalization to the datasets where it failed')
-    ok('does not argue against' in conclusions, 'Conclusions keep the IGF1R therapy guard')
+    ok('compatible with the established benefit of IGF-1R blockade' in conclusions and 'population controls' in conclusions,
+       'Conclusions keep the IGF1R therapy and population-control guards (positive form, 26 October)')
     ok(not re.search(r'adipose extension supported|Adipose \*TSHR\*.GD associations passed correction', text),
        'Adipose result not presented as independent support')
     ok('re-express' in text and 'rs12101255' in text, 'Adipose instruments identified as the same regional signal')

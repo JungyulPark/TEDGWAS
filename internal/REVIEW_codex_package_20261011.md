@@ -223,3 +223,14 @@ unreachable from this environment, so the style rests on the official CSL file a
 ### Abstract (2026-10-22)
 Rewritten last from two drafts and verified against Table 2 and the workbook (249 words; all locked items
 kept; evaluative comparisons removed from the Conclusions). The eight-step author review is complete.
+
+## Findings-first tone revision (2026-10-26, author request)
+
+The author asked that the Discussion argue from what was found rather than from what the data cannot show.
+Discussion paragraphs 1–8, the Conclusions and the cover letter were reworded; the Results IGF1R sentence
+was reordered; the Abstract, Methods, tables and figures are unchanged. All required content is retained in
+positive form: distinct-variant patterns in UKB and FinnGen GD (lead variants rs4903961 and rs1023586 named
+as fine-mapping targets, Table S3), prior sensitivity in BBJ and strict ophthalmopathy, mediation by TSHR
+expression left unresolved, population controls with the GD-with-versus-without-TED comparison as the next
+step, susceptibility versus treatment response, and "compatible with the established benefit of IGF-1R
+blockade" in place of "does not argue against" (audit guard updated accordingly). Main text 3,762 words.
