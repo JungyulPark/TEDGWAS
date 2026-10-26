@@ -100,3 +100,8 @@ submission/_build/
 submission/candidate_20261011_review/**/Source_extracts/
 submission/candidate_20261011_review/**/Sources/**/*.tsv
 submission/candidate_20261011_review/**/*.raw
+
+# Resident presentation review (2026-10-26): change report PDF and slide figures only.
+# The decks themselves (.pptx) are not committed: they carry institutional document-tracking metadata.
+!internal/presentation_20261026/*.pdf
+!internal/presentation_20261026/figures/*.png
