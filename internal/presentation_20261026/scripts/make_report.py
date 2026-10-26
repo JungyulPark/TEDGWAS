@@ -331,6 +331,115 @@ page = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>발
 <style>{CSS}</style></head><body>{body}</body></html>"""
 (OUT / f'{NAME}.html').write_text(page, encoding='utf-8')
 
+# ------------------------------------------------------------------ GitHub Markdown (same content, renders on GitHub)
+def gfm(s):
+    s = re.sub(r'\^([^^\s]+)\^', r'<sup>\1</sup>', s.replace('\\*', '\x00'))
+    return s.replace('|', '\\|').replace('\x00', '\\*')
+
+
+def gtable(head, rows):
+    out = ['| ' + ' | '.join(gfm(h) for h in head) + ' |', '|' + '---|' * len(head)]
+    return '\n'.join(out + ['| ' + ' | '.join(gfm(c) for c in r) + ' |' for r in rows])
+
+
+def glist(items):
+    return '\n'.join('- ' + gfm(i) for i in items)
+
+
+def gthumb(kind, n):
+    return f'<img src="thumbs/{kind}-{n:02d}.jpg" width="400" alt="{kind} slide {n}">'
+
+
+vis_md = []
+for olist, f, note in VISUAL:
+    left = '<br>'.join(f'{gthumb("orig", o)}<br><sub>원본 {o}</sub>' for o in olist) or '원본 없음(신규)'
+    vis_md.append(f'| {left} | {gthumb("final", f)}<br><sub>최종 {f} · {gfm(note)}</sub> |')
+
+MD = f"""# 발표자료 수정 보고서
+
+**전공의 원본(v2, 17장)과 수정 최종본(v4, 21장)의 차이**
+
+[PDF로 보기]({NAME}.pdf)
+
+- **발표 주제:** *TSHR* and *IGF1R* in Graves disease and thyroid eye disease (Mendelian randomization and colocalization)
+- **원본:** `6f53284e-164749_2_______F_011__________v2.pptx` (파일명의 한글 부분은 업로드 과정에서 깨짐) · 17장
+- **최종본:** `TSHR_IGF1R_MR_발표_최종.pptx`와 PDF · 21장(본문 16 + 보충 5), 한국어 발표자 노트
+- **기준 자료:** 최종 원고 `MANUSCRIPT_TED_TRAP_v5_MASTER.md`(commit f5efd35), Tables 1–3, Tables S1–S4, `Supplementary_Dataset.xlsx`, `CLAUDE.md`의 해석 원칙과 고정 문구
+- **작성:** 2026년 10월 26일
+- 두 PPT 파일은 병원 문서보안 추적 정보가 들어 있어 이 공개 저장소에는 올리지 않음
+
+## 1. 한눈에 보기
+
+| 17 → 21 | 11 | 70 | 0 |
+|---|---|---|---|
+| 슬라이드(본문 16 + 보충 5) | 필수 수정 항목 | 독립 검증에서 확인되어 반영한 지적(중복 포함) | 최종본 검증에서 나온 핵심 숫자 오류 |
+
+{glist([
+    '원본은 10월 14일 이전 원고(결과 데이터셋 3개)를 바탕으로 만들어져, 화면의 숫자는 대체로 맞았지만 FinnGen GD와 strict 안병증, '
+    '그리고 그에 달린 핵심 결과(*TSHR* 비공위치, *IGF1R* FinnGen GD의 null에 가까운 추정치)가 빠져 있었음. 저자 정보도 옛 판이었음',
+    '원본 7장(1, 2, 4, 8, 11, 16, 17)은 디자인을 살려 수정했고, 나머지 10장은 통합·대체·삭제했으며, 14장을 새로 만듦',
+    '표 6개를 새로 만들거나 다시 만들었고, 그림 4개를 워크북에서 슬라이드 크기로 다시 그림',
+    '발표자 노트 21장을 모두 원고 기준으로 다시 씀',
+    '전공의 디자인(색, 글꼴, 상단 바, 제목 위치)은 그대로 유지함',
+])}
+
+## 2. 슬라이드 대응표
+
+{gtable(['원본', '최종', '처리', '주요 변경'], MAPPING)}
+
+## 3. 필수 수정 11개
+
+원본에서 무엇이 문제였고 최종본에서 어떻게 고쳤는지, 근거가 된 원고 위치와 함께 정리함.
+
+{gtable(['항목', '원본', '최종본', '근거'], MUST)}
+
+## 4. 숫자 대조
+
+새로 넣거나 고친 숫자. 모두 원고 표와 워크북에서 다시 확인함.
+
+{gtable(['항목', '원본', '최종본', '출처'], NUMBERS)}
+
+> {gfm(KEPT)}
+
+## 5. 표와 그림
+
+### 표
+
+{gtable(['최종', '표', '변경'], TABLES)}
+
+### 그림
+
+{gtable(['최종', '그림', '변경'], FIGURES)}
+
+다시 그린 그림은 모두 `Supplementary_Dataset.xlsx`에서 원고 그림 스크립트(`build_figures_20261014.py`)와 같은 데이터·논리로 그렸고, 글꼴(Carlito, Calibri와 같은 폭)과 크기만 슬라이드에 맞춤. 슬라이드용 그림은 [`figures/`](figures/)에 있음.
+
+## 6. 형식과 디자인
+
+{glist(FORMAT)}
+
+## 7. 발표자 노트
+
+{glist(NOTES)}
+
+## 8. 검증
+
+{glist(VERIFY)}
+
+검증 기록: [`review_checklist_20261025.md`](review_checklist_20261025.md), [`deck_review_findings_20261025.md`](deck_review_findings_20261025.md)
+
+## 9. 남은 확인 사항
+
+{glist(OPEN)}
+
+## 부록. 슬라이드 비교(원본 → 최종)
+
+왼쪽은 원본, 오른쪽은 최종본. 2번의 외부 기전 그림은 출처가 확인되지 않아 이 보고서에서는 회색 상자로 가림(실제 슬라이드에는 그대로 있음).
+
+| 원본 | 최종 |
+|---|---|
+""" + '\n'.join(vis_md) + '\n'
+(OUT / f'{NAME}.md').write_text(MD, encoding='utf-8')
+
 import subprocess  # noqa: E402
 
 subprocess.run(['node', str(Path(__file__).with_name('print_pdf.js')), str(OUT / f'{NAME}.html'), str(OUT / f'{NAME}.pdf')],
